@@ -1,4 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_hr_sponsorship_transfer_user,access_hr_sponsorship_transfer_user,model_hr_sponsorship_transfer,base.group_user,1,1,1,0
-access_hr_sponsorship_transfer_officer,access_hr_sponsorship_transfer_officer,model_hr_sponsorship_transfer,hr.group_hr_user,1,1,1,0
-access_hr_sponsorship_transfer_manager,access_hr_sponsorship_transfer_manager,model_hr_sponsorship_transfer,hr.group_hr_manager,1,1,1,1

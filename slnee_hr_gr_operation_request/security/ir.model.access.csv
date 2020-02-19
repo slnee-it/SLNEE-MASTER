@@ -1,7 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_gr_operations_user,access_gr_user,model_gr_operations,base.group_user,1,1,1,0
-access_gr_operations_manager,access_gr_request_manager,model_gr_operations,hr.group_hr_manager,1,1,1,1
-access_gr_operations_officer,access_gr_request_officer,model_gr_operations,hr.group_hr_user,1,1,1,0
-access_gr_request_type_user,access_gr_request_type_user,model_gr_request_type,base.group_user,1,0,0,0
-access_gr_request_type_manager,access_gr_request_type_manager,model_gr_request_type,hr.group_hr_manager,1,1,1,1
-access_gr_request_type_officer,access_gr_request_type_officer,model_gr_request_type,hr.group_hr_user,1,0,0,0
