@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="hr_payroll.menu_hr_payroll_root" model="ir.ui.menu">
+            <field name="groups_id" eval="[(6,0,[ref('slnee_security.group_hide_menu')])]"/>
+        </record>
+
+        <record id="hr_holidays.menu_hr_holidays_root" model="ir.ui.menu">
+            <field name="groups_id" eval="[(6,0,[ref('slnee_security.group_hide_menu')])]"/>
+        </record>
+
+        <record id="hr.menu_hr_root" model="ir.ui.menu">
+            <field name="groups_id" eval="[(6,0,[ref('slnee_security.group_hide_menu')])]"/>
+        </record>
+
+        <record id="hr_attendance.menu_hr_attendance_root" model="ir.ui.menu">
+            <field name="groups_id" eval="[(6,0,[ref('slneesecurity.group_hide_menu')])]"/>
+        </record>
+
+    </data>
+</odoo>

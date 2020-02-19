@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="res_config_settings_view_form_slnee_payment_order" model="ir.ui.view">
+            <field name="name">res.config.settings.view.form.inherit.petty.cash</field>
+            <field name="model">res.config.settings</field>
+            <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                 <xpath expr="//div[@id='bank_cash']" position="inside">
+                <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_left_pane"/>
+                    <div class="o_setting_right_pane">
+                        <span class="o_form_label">Payment Order Approval</span>
+                        <div class="text-muted">
+                            Limit Amount of Payment order which need Secretary General Approval
+                        </div>
+                        <div class="content-group">
+                            <div class="row mt16">
+                                <label for="payment_order_amount_limit" class="col-lg-3 o_light_label"/>
+                                <field name="payment_order_amount_limit"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

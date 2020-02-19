@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="bills_encumberance.list">
+      <field name="name">bills_encumberance list</field>
+      <field name="model">bills_encumberance.bills_encumberance</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="bills_encumberance.action_window">
+      <field name="name">bills_encumberance window</field>
+      <field name="res_model">bills_encumberance.bills_encumberance</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="bills_encumberance.action_server">
+      <field name="name">bills_encumberance server</field>
+      <field name="model_id" ref="model_bills_encumberance_bills_encumberance"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="bills_encumberance" id="bills_encumberance.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="bills_encumberance.menu_1" parent="bills_encumberance.menu_root"/>
+    <menuitem name="Menu 2" id="bills_encumberance.menu_2" parent="bills_encumberance.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="bills_encumberance.menu_1_list" parent="bills_encumberance.menu_1"
+              action="bills_encumberance.action_window"/>
+    <menuitem name="Server to list" id="bills_encumberance" parent="bills_encumberance.menu_2"
+              action="bills_encumberance.action_server"/>
+    -->
+  </data>
+</odoo>

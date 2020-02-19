@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_crossovered_budget_lines_sections_manager,crossovered.budget.lines.sections.manager,model_crossovered_budget_lines_sections,account.group_account_manager,1,1,1,1
+access_crossovered_budget_lines_sections_user,crossovered.budget.lines.sections.user,model_crossovered_budget_lines_sections,account.group_account_user,1,1,1,0
+access_encumb_order_budget_user,encumb.order.budget.user,model_encumb_order,budget_management.group_budget_user,1,1,1,1
+access_encumb_order_budget_line_user,encumb.order.budget.line.user,model_encumb_order_line,budget_management.group_budget_user,1,1,1,1
+access_transfer_budget_user,transfer.budget.user,model_budget_transfer,budget_management.group_budget_user,1,1,1,1
+access_adjust_budget_user,adjust.budget.user,model_budget_adjust,budget_management.group_budget_user,1,1,1,1
+access_encumb_order_account_user,encumb.order.account.user,model_encumb_order,account.group_account_user,1,0,0,0
+access_encumb_order_account_line_user,encumb.order.account.line.user,model_encumb_order_line,account.group_account_user,1,0,0,0

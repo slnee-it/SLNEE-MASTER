@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="res_config_settings_view_payment_control_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.payment.control</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="10"/>
+        <field name="inherit_id" ref="account.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='accounting_reports']" position="after">
+                <h2>Outstanding Payments Control</h2>
+                <div class="row mt16 o_settings_container">
+                        <div class="col-xs-12 col-md-6 o_setting_box" >
+                            <div class="o_setting_left_pane" attrs="{'invisible': [('module_account_budget', '=', False)]}">
+                                <field name="prevent_supplier_outstanding_payment"/>
+                            </div>
+                            <div class="o_setting_right_pane" attrs="{'invisible': [('module_account_budget', '=', False)]}">
+                                <label for="prevent_supplier_outstanding_payment"/>
+                                    <div class="text-muted">
+                                        Prevent outstanding payments for supplier
+                                    </div>
+
+                            </div>
+                        </div>
+
+                </div>
+
+            </xpath>
+        </field>
+    </record>
+
+
+</odoo>

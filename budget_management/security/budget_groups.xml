@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="budget_management_category" model="ir.module.category">
+            <field name="name">Budget Management</field>
+            <field name="description">This category to manage Budget access rights</field>
+        </record>
+        <record id="group_budget_user" model="res.groups">
+            <field name="name">User</field>
+            <field name="category_id" ref="budget_management_category"/>
+        </record>
+        <record id="group_budget_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="budget_management_category"/>
+            <field name="implied_ids" eval="[(4, ref('group_budget_user'))]"/>
+            <field name="users" eval="[(4, ref('base.user_root'))]"/>
+        </record>
+    </data>
+</odoo>

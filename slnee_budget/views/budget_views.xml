@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--
+Budgets Line Sections
+-->
+    <record id="view_budget_sections_search" model="ir.ui.view">
+        <field name="name">account.budget.line.sections.search</field>
+        <field name="model">crossovered.budget.lines.sections</field>
+        <field name="arch" type="xml">
+            <search string="Budgetary Position">
+                <field name="name" filter_domain="[('name','ilike',self)]" string="Budgetary Position"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="view_budget_sections_tree" model="ir.ui.view">
+        <field name="name">account.budget.line.sections.tree</field>
+        <field name="model">crossovered.budget.lines.sections</field>
+        <field name="arch" type="xml">
+            <tree string="Budget Line Section">
+                <field name="name"/>
+                <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_budget_post_form" model="ir.ui.view">
+        <field name="name">account.budget.line.sections.form</field>
+        <field name="model">crossovered.budget.lines.sections</field>
+        <field name="arch" type="xml">
+            <form string="Budgetary Line Section">
+                <group col="4">
+                    <field name="name"/>
+                    <field name="active"/>
+                    <field name="company_id" groups="base.group_multi_company" options="{'no_create': True}"/>
+                </group>
+
+            </form>
+        </field>
+    </record>
+
+    <record id="open_view_budget_sections_post_form" model="ir.actions.act_window">
+        <field name="name">Budget Line Sections</field>
+        <field name="res_model">crossovered.budget.lines.sections</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem action="open_view_budget_sections_post_form" id="menu_budget_line_section_form"
+              parent="account.account_management_menu" sequence="6"/>
+
+    <!--add new fields to form/Tree Views-->
+    <record id="crossovered_budget_view_form" model="ir.ui.view">
+        <field name="name">crossovered.budget.view.form</field>
+        <field name="model">crossovered.budget</field>
+        <field name="inherit_id" ref="account_budget.crossovered_budget_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="/form/header" position="replace">
+                <header>
+                    <button string="Confirm" name="action_budget_confirm" groups="account.group_account_user"
+                            states="draft" type="object"
+                            class="oe_highlight"/>
+
+                    <button string="Approve" groups="account.group_account_manager" name="action_budget_validate"
+                            states="confirm" type="object"
+                            class="oe_highlight"/>
+
+                    <button string="Close" name="action_budget_done" states="validate" type="object"
+                            class="oe_highlight" groups="account.group_account_manager"/>
+
+                    <button string="Reset to Draft" groups="account.group_account_user" name="action_budget_draft"
+                            states="cancel" type="object"/>
+                    <button string="Cancel Budget" groups="account.group_account_manager" name="action_budget_cancel"
+                            states="confirm,validate" type="object"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+            </xpath>
+            <xpath expr="//field[@name='crossovered_budget_line']/tree//field[@name='general_budget_id']"
+                   position="before">
+                <field name="section_id" required="1"/>
+            </xpath>
+            <xpath expr="//field[@name='crossovered_budget_line']/form//field[@name='general_budget_id']"
+                   position="before">
+                <field name="section_id" required="1"/>
+            </xpath>
+
+            <xpath expr="//field[@name='crossovered_budget_line']/form//field[@name='planned_amount']"
+                   position="attributes">
+                <attribute name="string">Confirmed Amount</attribute>
+            </xpath>
+            <xpath expr="//field[@name='crossovered_budget_line']/tree//field[@name='planned_amount']"
+                   position="attributes">
+                <attribute name="string">Confirmed Amount</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='crossovered_budget_line']/tree//field[@name='planned_amount']" position="after">
+                <field name="cap" readonly="1"/>
+                <field name="total_amount" readonly="1" sum='Total'/>
+                <field name="correlated_amount" readonly="1" sum='Total'/>
+                <field name="correlation_percentage" readonly="1" sum='Total'/>
+                <field name="consumed_amount" readonly="1" sum='Total'/>
+                <field name="remaining_amount" readonly="1" sum='Total'/>
+                <field name="remaining_without_correlation" sum='Total' readonly="1"/>
+                <field name="remaining_without_correlation_perc" sum='Total' readonly="1"/>
+            </xpath>
+
+            <xpath expr="//field[@name='crossovered_budget_line']/tree//field[@name='practical_amount']"
+                   position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='crossovered_budget_line']/tree//field[@name='theoritical_amount']"
+                   position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='crossovered_budget_line']/tree//field[@name='percentage']"
+                   position="attributes">
+                <attribute name="invisible">False</attribute>
+            </xpath>
+		<xpath expr="//field[@name='crossovered_budget_line']"
+                   position="attributes">
+                <attribute name="attrs">{}</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_crossovered_budget_line_tree" model="ir.ui.view">
+        <field name="name">view_crossovered_budget_line_tree</field>
+        <field name="model">crossovered.budget.lines</field>
+        <field name="inherit_id" ref="account_budget.view_crossovered_budget_line_tree"/>
+        <field name="arch" type="xml">
+            <field name="general_budget_id" position="before">
+                <field name="section_id"/>
+            </field>
+            <field name="planned_amount" position="attributes">
+                <attribute name="string">Confirmed Amount</attribute>
+
+            </field>
+            <field name="planned_amount" position="after">
+		<field name="cap" readonly="1"/>                
+		<field name="total_amount" readonly="1"/>
+                <field name="correlated_amount" readonly="1"/>
+                <field name="correlation_percentage" readonly="1"/>
+                <field name="consumed_amount" readonly="1"/>
+                <field name="remaining_amount" readonly="1"/>
+                <field name="remaining_without_correlation" readonly="1"/>
+                <field name="remaining_without_correlation_perc" readonly="1"/>
+
+            </field>
+            <field name="practical_amount" position="attributes">
+                <attribute name="invisible">1</attribute>
+
+            </field>
+            <field name="theoritical_amount" position="attributes">
+                <attribute name="invisible">1</attribute>
+
+            </field>
+            <field name="percentage" position="attributes">
+                <attribute name="invisible">0</attribute>
+
+            </field>
+        </field>
+    </record>
+
+    <menuitem name="Budgeting" id="menu_main_budget"
+              parent="account.menu_finance" sequence="4"/>
+    <record id="account_budget.menu_act_crossovered_budget_view" model="ir.ui.menu">
+        <field name="parent_id" ref="menu_main_budget"/>
+	 </record>
+
+<record id="analytic_account_cap_custom_view_form" model="ir.ui.view">
+        <field name="name">analytic.account.cap.view.form</field>
+        <field name="model">account.analytic.account</field>
+        <field name="inherit_id" ref="analytic.view_account_analytic_account_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='tag_ids']" position="after">
+	    	
+		<field name="cap" />
+
+	    </xpath>
+	</field>
+</record>
+
+   
+</odoo>

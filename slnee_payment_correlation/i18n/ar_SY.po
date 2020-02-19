@@ -1,0 +1,367 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_payment_correlation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-20 16:54+0000\n"
+"PO-Revision-Date: 2019-05-20 16:54+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_payment_correlation
+#: model_terms:ir.ui.view,arch_db:slnee_payment_correlation.res_config_settings_view_form_slnee_payment_order
+msgid "<span class=\"o_form_label\">Payment Order Approval</span>"
+msgstr "حد إعتماد امر الدفع من قبل الأمين العام"
+
+#. module: slnee_payment_correlation
+#: model_terms:ir.ui.view,arch_db:slnee_payment_correlation.view_account_payment_tree
+msgid "Amount"
+msgstr "القيمة"
+
+#. module: slnee_payment_correlation
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_res_company__payment_order_amount_limit
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_res_config_settings__payment_order_amount_limit
+msgid "Amount in Payment order so SG can approve With Service Manager"
+msgstr "حد إعتماد أمر الدفع من قبل اﻷمين العام مع موافقة مدير الخدمات المشتركة"
+
+#. module: slnee_payment_correlation
+#: selection:account.payment,state:0
+msgid "Approve"
+msgstr "إعتماد"
+
+#. module: slnee_payment_correlation
+#: model_terms:ir.ui.view,arch_db:slnee_payment_correlation.view_account_payment_form
+msgid "Are you sure you want to refuse, Please write down your refusal reason?"
+msgstr "هل متأكد من الرفض... الرجاء تدوين سبب الرفض"
+
+#. module: slnee_payment_correlation
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_payment_correlation_line__available_amount
+msgid "Available Amount"
+msgstr "المبلغ المتاح"
+
+#. module: slnee_payment_correlation
+#: model:ir.model,name:slnee_payment_correlation.model_crossovered_budget_lines
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_payment_correlation_line__budget_line_id
+msgid "Budget Line"
+msgstr "بند الموازنة"
+
+#. module: slnee_payment_correlation
+#: selection:account.payment,state:0
+msgid "Cancelled"
+msgstr "ملغي"
+
+#. module: slnee_payment_correlation
+#: model:ir.model,name:slnee_payment_correlation.model_res_company
+msgid "Companies"
+msgstr "المؤسسات"
+
+#. module: slnee_payment_correlation
+#: model:ir.model,name:slnee_payment_correlation.model_res_config_settings
+msgid "Config Settings"
+msgstr "ضبط الإعدادات"
+
+#. module: slnee_payment_correlation
+#: selection:account.payment,state:0
+#: model_terms:ir.ui.view,arch_db:slnee_payment_correlation.view_account_payment_form
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: slnee_payment_correlation
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_correlation_order_line__consumed_amount
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_crossovered_budget_lines__consumed_amount
+msgid "Consumed Amount"
+msgstr "المبلغ المنصرف"
+
+#. module: slnee_payment_correlation
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_payment_correlation_line__correlation_line_id
+msgid "Correlation Budget Line"
+msgstr "بند أمر اﻹرتباط"
+
+#. module: slnee_payment_correlation
+#: model:ir.model,name:slnee_payment_correlation.model_correlation_order
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_account_payment__correlation_order_id
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_payment_correlation_line__correlation_order_id
+msgid "Correlation Order"
+msgstr "أمر اﻹرتباط"
+
+#. module: slnee_payment_correlation
+#: model:ir.model,name:slnee_payment_correlation.model_correlation_order_line
+msgid "Correlation Order Lines"
+msgstr "تفاصيل أمر اﻹرتباط"
+
+#. module: slnee_payment_correlation
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_payment_correlation_line__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: slnee_payment_correlation
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_payment_correlation_line__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: slnee_payment_correlation
+#: selection:account.payment,partner_type:0
+msgid "Customer"
+msgstr "العميل"
+
+#. module: slnee_payment_correlation
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_payment_correlation_line__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: slnee_payment_correlation
+#: selection:account.payment,state:0
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: slnee_payment_correlation
+#: selection:account.payment,partner_type:0
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: slnee_payment_correlation
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_payment_correlation_line__expense_account_id
+msgid "Expense Account"
+msgstr "حساب المصروف"
+
+#. module: slnee_payment_correlation
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_payment_correlation_line__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: slnee_payment_correlation
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_payment_correlation_line____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: slnee_payment_correlation
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_payment_correlation_line__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: slnee_payment_correlation
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_payment_correlation_line__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: slnee_payment_correlation
+#: model_terms:ir.ui.view,arch_db:slnee_payment_correlation.res_config_settings_view_form_slnee_payment_order
+msgid "Limit Amount of Payment order which need Secretary General Approval"
+msgstr "حد إعتماد أمر الدفع من قبل اﻷمين العام"
+
+#. module: slnee_payment_correlation
+#: selection:account.payment,using_correlation:0
+#: code:addons/slnee_payment_correlation/models/slnee_payment_correlation.py:32
+#, python-format
+msgid "NO"
+msgstr "لا"
+
+#. module: slnee_payment_correlation
+#: code:addons/slnee_payment_correlation/models/slnee_payment_correlation.py:85
+#, python-format
+msgid "Only a draft payment can be posted."
+msgstr "أوامر الدفع فى حالة مسودة هى التى يمكن ترحيلها فقط"
+
+#. module: slnee_payment_correlation
+#: model_terms:ir.ui.view,arch_db:slnee_payment_correlation.view_account_payment_tree
+msgid "Partner"
+msgstr "الشريك"
+
+#. module: slnee_payment_correlation
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_account_payment__partner_type
+msgid "Partner Type"
+msgstr "نوع الشريك"
+
+#. module: slnee_payment_correlation
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_account_payment__payment_line_ids
+msgid "Payment Correlation Lines"
+msgstr "تفاصيل أمر اﻹرتباط"
+
+#. module: slnee_payment_correlation
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_crossovered_budget_lines__payment_line_ids
+msgid "Payment Lines"
+msgstr "تفاصيل أوامر الدفع"
+
+#. module: slnee_payment_correlation
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_payment_correlation_line__payment_id
+#: model:ir.ui.menu,name:slnee_payment_correlation.payment_order_main_menu
+#: model:ir.ui.menu,name:slnee_payment_correlation.payment_order_main_menu_account
+#: model:ir.ui.menu,name:slnee_payment_correlation.payment_order_main_submenu
+#: model:ir.ui.menu,name:slnee_payment_correlation.payment_order_root_menu
+msgid "Payment Order"
+msgstr "أمر الدفع"
+
+#. module: slnee_payment_correlation
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_correlation_order_line__payment_line_ids
+msgid "Payment Order Lines"
+msgstr "تفاصيل أوامر الدفع"
+
+#. module: slnee_payment_correlation
+#: code:addons/slnee_payment_correlation/models/slnee_payment_correlation.py:162
+#: code:addons/slnee_payment_correlation/models/slnee_payment_correlation.py:176
+#, python-format
+msgid "Payment Order for %s had been Approved"
+msgstr ""
+
+#. module: slnee_payment_correlation
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_correlation_order__payment_order_ids
+msgid "Payment Orders"
+msgstr "أوامر الدفع"
+
+#. module: slnee_payment_correlation
+#: model:ir.model,name:slnee_payment_correlation.model_account_payment
+msgid "Payments"
+msgstr "المدفوعات"
+
+#. module: slnee_payment_correlation
+#: model:ir.actions.act_window,name:slnee_payment_correlation.action_account_payments_approved
+#: model:ir.ui.menu,name:slnee_payment_correlation.payment_order_approved_menu
+#: model:ir.ui.menu,name:slnee_payment_correlation.payment_order_approved_submenu
+msgid "Payments Approved"
+msgstr "أوامر دفع معتمدة"
+
+#. module: slnee_payment_correlation
+#: model:ir.ui.menu,name:slnee_payment_correlation.payment_order_need_approval_menu
+#: model:ir.ui.menu,name:slnee_payment_correlation.payment_order_need_approval_submenu
+msgid "Payments Need Approval"
+msgstr "أوامر دفع فى إنتظار اﻹعتماد"
+
+#. module: slnee_payment_correlation
+#: model:ir.actions.act_window,name:slnee_payment_correlation.action_account_payments
+msgid "Payments Order"
+msgstr "أمر الدفع"
+
+#. module: slnee_payment_correlation
+#: model:ir.actions.act_window,name:slnee_payment_correlation.action_account_payments_need_approve
+msgid "Payments Under Approve"
+msgstr "أوامر دفع تحت اﻷعتماد"
+
+#. module: slnee_payment_correlation
+#: model_terms:ir.actions.act_window,help:slnee_payment_correlation.action_account_payments
+#: model_terms:ir.actions.act_window,help:slnee_payment_correlation.action_account_payments_approved
+#: model_terms:ir.actions.act_window,help:slnee_payment_correlation.action_account_payments_need_approve
+msgid "Payments are used to register liquidity movements. You can process those payments by your own means or\n"
+"                by using installed facilities."
+msgstr "تسجيل المدفوعات بكافة أنواعها"
+
+#. module: slnee_payment_correlation
+#: code:addons/slnee_payment_correlation/models/slnee_payment_correlation.py:136
+#: code:addons/slnee_payment_correlation/models/slnee_payment_correlation.py:150
+#, python-format
+msgid "Please Approve Payment Order for %s"
+msgstr "الرجاء إعتماد أمر الدفع  %s"
+
+#. module: slnee_payment_correlation
+#: code:addons/slnee_payment_correlation/models/slnee_payment_correlation.py:144
+#, python-format
+msgid "Please set Payment Order limit amount for approavl through system settings, contact administrator"
+msgstr "الرجاء التواصل مع مدير النظام لتحديد حد إعتماد اﻷمين العام لامر الدفع"
+
+#. module: slnee_payment_correlation
+#: selection:account.payment,state:0
+msgid "Posted"
+msgstr "مرحّل"
+
+#. module: slnee_payment_correlation
+#: selection:account.payment,state:0
+msgid "Reconciled"
+msgstr "تم التسوية "
+
+#. module: slnee_payment_correlation
+#: model_terms:ir.ui.view,arch_db:slnee_payment_correlation.view_account_payment_form
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: slnee_payment_correlation
+#: model_terms:ir.actions.act_window,help:slnee_payment_correlation.action_account_payments
+#: model_terms:ir.actions.act_window,help:slnee_payment_correlation.action_account_payments_approved
+#: model_terms:ir.actions.act_window,help:slnee_payment_correlation.action_account_payments_need_approve
+msgid "Register a payment"
+msgstr "تسجيل المدفوعات"
+
+#. module: slnee_payment_correlation
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_payment_correlation_line__required_amount
+msgid "Required Amount"
+msgstr "القيمة المطلوبة"
+
+#. module: slnee_payment_correlation
+#: model_terms:ir.ui.view,arch_db:slnee_payment_correlation.view_account_payment_form
+msgid "Secretary General Approval"
+msgstr "إعتماد اﻷمين العام"
+
+#. module: slnee_payment_correlation
+#: selection:account.payment,state:0
+msgid "Sent"
+msgstr "تم الارسال."
+
+#. module: slnee_payment_correlation
+#: model_terms:ir.ui.view,arch_db:slnee_payment_correlation.view_account_payment_form
+msgid "Services Manager Approval"
+msgstr "إعتماد مدير الخدمات المشتركة"
+
+#. module: slnee_payment_correlation
+#: model_terms:ir.ui.view,arch_db:slnee_payment_correlation.view_account_payment_form
+msgid "Set To Draft"
+msgstr "وضع كمسودة"
+
+#. module: slnee_payment_correlation
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_account_payment__state
+msgid "Status"
+msgstr "الحالة"
+
+#. module: slnee_payment_correlation
+#: code:addons/slnee_payment_correlation/models/slnee_payment_correlation.py:88
+#, python-format
+msgid "The payment cannot be processed because the invoice is not open!"
+msgstr "لا يمكن إعتماد أمر الدفع لان الفاتورة فى غير مفتوحة"
+
+#. module: slnee_payment_correlation
+#: model_terms:ir.ui.view,arch_db:slnee_payment_correlation.view_account_payment_form
+msgid "Transfer/Post"
+msgstr "أعتماد الصرف"
+
+#. module: slnee_payment_correlation
+#: selection:account.payment,state:0
+msgid "Validate"
+msgstr "إعتماد"
+
+#. module: slnee_payment_correlation
+#: selection:account.payment,partner_type:0
+msgid "Vendor"
+msgstr "المورّد"
+
+#. module: slnee_payment_correlation
+#: model:ir.model.fields,field_description:slnee_payment_correlation.field_account_payment__using_correlation
+msgid "With Correlation"
+msgstr "بإستخدام أمر إرتباط؟"
+
+#. module: slnee_payment_correlation
+#: selection:account.payment,using_correlation:0
+#: code:addons/slnee_payment_correlation/models/slnee_payment_correlation.py:32
+#, python-format
+msgid "Yes"
+msgstr "نعم"
+
+#. module: slnee_payment_correlation
+#: code:addons/slnee_payment_correlation/models/slnee_payment_correlation.py:112
+#, python-format
+msgid "You have to define a sequence for %s in your company."
+msgstr "الرجاء تحديد مسلسل %s للشركة الحالية"
+
+#. module: slnee_payment_correlation
+#: model:ir.model,name:slnee_payment_correlation.model_payment_correlation_line
+msgid "payment.correlation.line"
+msgstr ""
+
+#. module: slnee_payment_correlation
+#: model_terms:ir.ui.view,arch_db:slnee_payment_correlation.view_account_payment_form
+msgid "refuse"
+msgstr "رفض"
+

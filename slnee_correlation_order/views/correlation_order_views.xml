@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_correlation_order_form" model="ir.ui.view">
+            <field name="name">view.correlation.order.form</field>
+            <field name="model">correlation.order</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button string="Accountant Review" name="button_confirm" type="object" states="draft" class="oe_highlight"
+                                groups="account.group_account_user"/>
+
+                        <button string="FM Approval" name="button_approve" type="object" states="confirm" class="oe_highlight"
+                                groups="account.group_account_manager"/>
+
+                        <button string="Cancel" name="button_cancel" type="object" states="confirm" class="oe_highlight"
+                                groups="account.group_account_manager"/>
+
+                        <button string="Re-Draft" name="button_redraft" type="object" states="cancel"
+                                class="oe_highlight"
+                                groups="account.group_account_user"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="code" readonly="1"/>
+                                <field name="name" required="1"/>
+                                <field name="date" required="1" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="partner_id" required="1" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            </group>
+                            <group>
+                                <field name="required_amount" invisible="1"/>
+                                <field name="correlated_amount"/>
+                                <field name="remaining_amount"/>
+                                <field name="origion"/>
+                                <field name="is_closed" invisible="1"/>
+                            </group>
+                        </group>
+
+                        <label for="correlation_order_line"/>
+                        <field name="correlation_order_line" attrs="{'readonly': [('state', '=', 'approve')]}">
+                            <tree editable="bottom">
+                                <field name="state" invisible="1"/>
+                                <field name="name" required="1"/>
+                                <field name="budget_id" options="{'no_create': True}" domain="[('state','=','validate')]" required="1"/>
+                                <field name="section_id" options="{'no_create': True}" required="1"/>
+                                <field name="budget_line_id" options="{'no_create': True}" domain="[('crossovered_budget_id','=',budget_id),('section_id','=',section_id)]"
+                                       required="1"/>
+                                <!--<field name="required_amount" required="1"-->
+                                       <!--attrs="{'readonly': [('state', '!=', 'draft')]}"/>-->
+                                 <field name="correlated_amount" required="1"
+                                       attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                                <field name="remaining_amount_without_correlation" readonly="1"/>
+
+                                <field name="remaining_amount"/>
+                                <field name="is_released" invisible="1"/>
+                                <field name="is_closed" invisible="1"/>
+                                <button name="button_release"
+                                        attrs="{'invisible':['|',('is_released','=',True),('state','=','draft')]}"
+                                        icon="fa-minus-circle" type="object" class="oe_highlight"/>
+                            </tree>
+                            <form>
+                                <group>
+                                    <group>
+                                        <field name="name" required="1"/>
+                                        <field name="budget_id" readonly="1"/>
+                                        <field name="section_id" readonly="1"/>
+                                        <field name="budget_line_id" required="1"/>
+                                        <field name="required_amount" required="1"/>
+                                    </group>
+                                    <group>
+                                        <field name="remaining_amount" readonly="1"/>
+                                    </group>
+                                </group>
+                            </form>
+                        </field>
+                        <separator/>
+                        <label for="notes"/>
+                        <field name="notes"/>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_correlation_order_tree" model="ir.ui.view">
+            <field name="name">view.correlation.order.tree</field>
+            <field name="model">correlation.order</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="code"/>
+                    <field name="date"/>
+                    <field name="name"/>
+                    <field name="partner_id"/>
+                    <field name="required_amount"/>
+                    <field name="correlated_amount"/>
+                    <field name="remaining_amount"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_correlation_order_action" model="ir.actions.act_window">
+            <field name="name">Encumbrance Orders</field>
+            <field name="res_model">correlation.order</field>
+            <field name="context">{'readonly_by_pass': True}</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="view_correlation_order_action" name="Encumbrance Order" id="menu_correlation_order"
+              parent="slnee_budget.menu_main_budget" sequence="1"/>
+
+
+        <record id="crossovered_budget_view_form" model="ir.ui.view">
+        <field name="name">crossovered.budget.view.form</field>
+        <field name="model">crossovered.budget</field>
+        <field name="inherit_id" ref="account_budget.crossovered_budget_view_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='crossovered_budget_line']/form/group"
+                   position="after">
+               <label for="correlation_line_ids"/>
+                <field name="correlation_line_ids" readonly="1">
+                    <tree>
+                        <field name="order_id"/>
+                        <field name="partner_id"/>
+                        <field name="correlated_amount"/>
+                        <field name="remaining_amount"/>
+                    </tree>
+                </field>
+            </xpath>
+
+        </field>
+    </record>
+    </data>
+</odoo>

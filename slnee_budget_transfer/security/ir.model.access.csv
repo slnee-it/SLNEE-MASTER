@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_budget_transfer_user,access.budget.transfer.accountant,model_budget_transfer,base.group_user,1,0,0,0
+access_budget_transfer_accountant,access.budget.transfer.accountant,model_budget_transfer,account.group_account_user,1,1,1,0
+access_budget_transfer_adviser,access.budget.transfer.adviser,model_budget_transfer,account.group_account_manager,1,1,1,1
+access_budget_transfer_service,access.budget.transfer.ssm,model_budget_transfer,slnee_security.group_service_manager,1,1,0,0
+access_budget_transfer_gm,access.budget.transfer.gm,model_budget_transfer,slnee_security.group_gm,1,1,0,0

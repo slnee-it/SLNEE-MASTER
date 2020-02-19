@@ -1,0 +1,32 @@
+<odoo>
+
+    <!--   adding group by filter to use it in grouping accounts of budget positions   -->
+    <record id="view_account_search_budget_custom" model="ir.ui.view">
+            <field name="name">account.account.search.custom</field>
+            <field name="model">account.account</field>
+            <field name="inherit_id" ref="account.view_account_search"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group" position='inside'>
+                    <filter name="account_type" string="Account Type" domain="" context="{'group_by':'user_type_id'}"/>
+
+                </xpath>
+
+            </field>
+        </record>
+
+
+    <!--   adding context to group by accounts of budget position   -->
+    <record model="ir.ui.view" id="view_budget_post_form_account_type_custom">
+            <field name="name">account.budget.post.form.custom</field>
+            <field name="model">account.budget.post</field>
+            <field name="inherit_id" ref="account_budget.view_budget_post_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//notebook/page/field[@name='account_ids']" position='attributes'>
+                    <attribute name="context">{'search_default_account_type': 1}</attribute>
+                </xpath>
+
+            </field>
+        </record>
+
+</odoo>

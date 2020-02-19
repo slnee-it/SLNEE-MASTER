@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="res_config_settings_view_encumberance_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.encumberance</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="10"/>
+        <field name="inherit_id" ref="account.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='account_budget']" position="inside">
+                            <div class="o_setting_left_pane" attrs="{'invisible': [('module_account_budget', '=', False)]}">
+                                <field name="allow_encumber_and_funds_check"/>
+                            </div>
+                            <div class="o_setting_right_pane" attrs="{'invisible': [('module_account_budget', '=', False)]}">
+                                <label for="allow_encumber_and_funds_check"/>
+                                    <div class="text-muted">
+                                        Absolute Budget characteristics (Funds Check , Encumberance , ... etc)
+                                    </div>
+
+                            </div>
+
+                <div class="o_setting_left_pane" attrs="{'invisible': [('module_account_budget', '=', False)]}">
+                                <field name="module_bills_encumberance"/>
+                            </div>
+                            <div class="o_setting_right_pane" attrs="{'invisible': [('module_account_budget', '=', False)]}">
+                                <label for="module_bills_encumberance"/>
+                                    <div class="text-muted">
+                                        Activate auto encumberance for invoices
+                                    </div>
+
+                            </div>
+
+                <div class="o_setting_left_pane" attrs="{'invisible': [('module_account_budget', '=', False)]}">
+                                <field name="module_purchase_encumberance"/>
+                            </div>
+                            <div class="o_setting_right_pane" attrs="{'invisible': [('module_account_budget', '=', False)]}">
+                                <label for="module_purchase_encumberance"/>
+                                    <div class="text-muted">
+                                        Activate Encumberance in the purchase module
+                                    </div>
+
+                            </div>
+
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,171 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data>
+        <record id="crossovered_budget_view_form" model="ir.ui.view">
+            <field name="name">crossovered.budget.view.form</field>
+            <field name="model">crossovered.budget</field>
+            <field name="inherit_id" ref="account_budget.crossovered_budget_view_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='crossovered_budget_line']/form//field[@name='planned_amount']" position="after">
+                    <field name="amount_transfer_out"/>
+                    <field name="amount_transfer_in"/>
+                </xpath>
+                <xpath expr="//field[@name='crossovered_budget_line']/tree//field[@name='planned_amount']" position="after">
+                    <field name="amount_transfer_out"/>
+                    <field name="amount_transfer_in"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_crossovered_budget_line_tree" model="ir.ui.view">
+            <field name="name">view_crossovered_budget_line_tree</field>
+            <field name="model">crossovered.budget.lines</field>
+            <field name="inherit_id" ref="account_budget.view_crossovered_budget_line_tree"/>
+            <field name="arch" type="xml">
+                <field name="planned_amount" position="after">
+                      <field name="amount_transfer_out"/>
+                    <field name="amount_transfer_in"/>
+
+                </field>
+            </field>
+        </record>
+
+        <record id="view_budget_transfer_form" model="ir.ui.view">
+            <field name="name">view.budget.transfer.form</field>
+            <field name="model">budget.transfer</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="btn_submit" string="Submit"
+                                type="object" class="oe_highlight"
+                                states="draft" group="account.group_account_user"/>
+
+                        <button name="btn_review" string="FM Approval"
+                                type="object" class="oe_highlight"
+                                states="review" group="account.group_account_manager"/>
+
+                        <button name="btn_refuse" string="Refuse"
+                                type="object" class="oe_highlight"
+                                states="review" group="account.group_account_manager"/>
+
+                        <button name="btn_confirm" string="S.s Approval"
+                                type="object" class="oe_highlight"
+                                states="confirm" group="slnee_security.group_service_manager"/>
+
+                        <button name="btn_refuse" string="Refuse"
+                                type="object" class="oe_highlight"
+                                states="confirm" group="slnee_security.group_service_manager"/>
+
+                        <button name="btn_approve" string="SG Approval"
+                                type="object" class="oe_highlight"
+                                states="approve" group="slnee_security.group_gm"/>
+                        <button name="btn_refuse" string="Refuse"
+                                type="object" class="oe_highlight"
+                                states="approve" group="slnee_security.group_gm"/>
+
+                        <field name="state" widget="statusbar" statusbar_visible="draft,review,confirm,approve"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" readonly="1"/>
+                                <field name="operation_type" invisible="1"/>
+                            </h1>
+                        </div>
+                        <group>
+
+                            <group string="From">
+                                <field name="from_budget_id" domain="[('state','=','validate')]" required="1" attrs="{'readonly':[('state','!=','draft')]}" options="{'no_create': True}"/>
+                                <field name="from_section_id" required="1"
+                                       attrs="{'readonly':[('state','!=','draft')]}" options="{'no_create': True}"/>
+                                <field name="from_budget_line_id" required="1" domain="[('crossovered_budget_id','=',from_budget_id),('section_id','=',from_section_id)]"
+                                       attrs="{'readonly':[('state','!=','draft')]}" options="{'no_create': True}"/>
+                                <field name="from_budget_line_planned_amount" readonly="1" force_save="1"/>
+                                <field name="from_budget_avail_amount" readonly="1" force_save="1"/>
+                                <field name="amount_required" required="1"
+                                       attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="readonly_state" invisible="1"/>
+                                <field name="reason" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            </group>
+                            <group string="TO">
+                                <field name="to_budget_id" domain="[('state','=','validate')]" options="{'no_create': True}" force_save="1" attrs="{'required':[('operation_type','!=','same_section')],'readonly':['|',('operation_type','=','same_section'),('state','!=','draft')]}"/>
+
+                                <field name="to_section_id" force_save="1" options="{'no_create': True}"
+                                       attrs="{'required':[('operation_type','!=','same_section')],'readonly':['|',('operation_type','=','same_section'),('state','!=','draft')]}"/>
+                                <field name="to_budget_line_id" options="{'no_create': True}" required="1" domain="[('crossovered_budget_id','=',to_budget_id),('section_id','=',to_section_id)]"
+                                       attrs="{'readonly':[('state','!=','draft')]}"/>
+                                <field name="to_budget_line_planned_amount" readonly="1" force_save="1"/>
+                                <field name="to_budget_line_avil_amount_before" readonly="1" force_save="1"/>
+                                <field name="to_budget_line_avil_amount_after"/>
+                            </group>
+                        </group>
+
+                        <separator/>
+                        <label for="notes"/>
+                        <field name="notes"/>
+
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_budget_transfer_tree" model="ir.ui.view">
+            <field name="name">view.budget.transfer.tree</field>
+            <field name="model">budget.transfer</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="date"/>
+                    <field name="from_budget_id"/>
+                    <field name="from_section_id"/>
+                    <field name="from_budget_line_id"/>
+                    <field name="amount_required"/>
+                    <field name="to_budget_id"/>
+                    <field name="from_section_id"/>
+                    <field name="to_budget_line_id"/>
+                    <field name="to_budget_line_avil_amount_before"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_budget_transfer_same_action" model="ir.actions.act_window">
+            <field name="name">Budget Transfer Same Section</field>
+            <field name="res_model">budget.transfer</field>
+            <field name="context">{'readonly_by_pass': True,'default_operation_type':'same_section'}</field>
+            <field name="domain">[('operation_type','=','same_section')]</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="view_budget_transfer_diff_action" model="ir.actions.act_window">
+            <field name="name">Budget Transfer Different Section</field>
+            <field name="res_model">budget.transfer</field>
+            <field name="context">{'readonly_by_pass': True,'default_operation_type':'diff_section'}</field>
+            <field name="domain">[('operation_type','=','diff_section')]</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="view_budget_transfer_same_action" id="menu_view_budget_transfer_same"
+              parent="slnee_budget.menu_main_budget" sequence="3"/>
+
+        <menuitem action="view_budget_transfer_diff_action" id="menu_view_budget_transfer_diff"
+              parent="slnee_budget.menu_main_budget" sequence="4"/>
+
+        <menuitem id="budget_transfer_root_menu" name="Budget Transfer"
+                  groups="slnee_security.group_gm,slnee_security.group_service_manager"
+                  web_icon="slnee_budget_transfer,static/description/icon.png" sequence="42"/>
+
+        <menuitem action="view_budget_transfer_same_action" id="menu_view_budget_transfer_same_out"
+              parent="budget_transfer_root_menu" sequence="1"/>
+
+        <menuitem action="view_budget_transfer_diff_action" id="menu_view_budget_transfer_diff_out"
+              parent="budget_transfer_root_menu" sequence="2"/>
+
+    </data>
+</odoo>

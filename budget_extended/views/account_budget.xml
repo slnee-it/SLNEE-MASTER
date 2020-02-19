@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <record id="view_crossovered_sbudget_lines_group_search" model="ir.ui.view">
+        <field name="name">crossovered.budget.lines.group.form</field>
+        <field name="model">crossovered.budget.lines.group</field>
+        <field name="arch" type="xml">
+            <form string="Budgetary Group">
+                <group>
+                    <field name="name"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_crossovered_budget_lines_group_tree" model="ir.ui.view">
+        <field name="name">crossovered.budget.lines.group.tree</field>
+        <field name="model">crossovered.budget.lines.group</field>
+        <field name="arch" type="xml">
+            <tree string="Budgetary Group">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_crossovered_budget_lines_group" model="ir.actions.act_window">
+        <field name="name">Budgetary Groups</field>
+        <field name="res_model">crossovered.budget.lines.group</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+    <menuitem action="action_crossovered_budget_lines_group" id="menu_crossovered_budget_lines_group_form" parent="account.account_management_menu" sequence="5"/>
+
+
+    <record id="view_crossovered_budget_line_search_inherit" model="ir.ui.view">
+        <field name="name">view.crossovered.budget.line.search.inherit</field>
+        <field name="model">crossovered.budget.lines</field>
+        <field name="inherit_id" ref="account_budget.view_crossovered_budget_line_search"/>
+        <field name="arch" type="xml">
+            <field name="analytic_account_id" position='after'>
+                <field name="group_id"/>
+                <group expand="0" string="Group By">
+                    <filter name="group_id" string="Groups" context="{'group_by':'group_id'}"/>
+                </group>
+            </field>
+        </field>
+    </record>
+    
+    <record id="view_crossovered_budget_line_tree_inherit" model="ir.ui.view">
+        <field name="name">view.crossovered.budget.line.tree.inherit</field>
+        <field name="model">crossovered.budget.lines</field>
+        <field name="inherit_id" ref="account_budget.view_crossovered_budget_line_tree"/>
+        <field name="arch" type="xml">
+            <field name="general_budget_id" position='after'>
+                <field name="group_id"/>
+            </field>
+            <field name="planned_amount" position='replace'>
+                <field name="planned_amount" widget="monetary" sum="Total Planned Amount"/>
+            </field>
+            <field name="practical_amount" position='replace'>
+                <field name="practical_amount" widget="monetary" sum="Total Practical Amount"/>
+            </field>
+            <field name="theoritical_amount" position='replace'>
+                <field name="theoritical_amount" widget="monetary" sum="Total Theoritical Amount"/>
+            </field>
+        </field>
+    </record>
+    
+    <record id="view_crossovered_budget_line_form_inherit" model="ir.ui.view">
+        <field name="name">view.crossovered.budget.line.form.inherit</field>
+        <field name="model">crossovered.budget.lines</field>
+        <field name="inherit_id" ref="account_budget.view_crossovered_budget_line_form"/>
+        <field name="arch" type="xml">
+            <field name="general_budget_id" position='after'>
+                <field name="group_id" options="{'no_create_edit': True,'no_create': True, 'no_quick_create': True}"/>
+            </field>
+        </field>
+    </record>
+    
+    <record id="view_account_analytic_account_form_inherit_budget_inherit" model="ir.ui.view">
+        <field name="name">view.account.analytic.account.form.inherit.budget.inherit</field>
+        <field name="model">account.analytic.account</field>
+        <field name="inherit_id" ref="account_budget.view_account_analytic_account_form_inherit_budget"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='crossovered_budget_line']//tree//field[@name='general_budget_id']" position='after'>
+                <field name="group_id" options="{'no_create_edit': True,'no_create': True, 'no_quick_create': True}"/>
+            </xpath>
+            <xpath expr="//field[@name='crossovered_budget_line']//form//field[@name='general_budget_id']" position='after'>
+                <field name="group_id" options="{'no_create_edit': True,'no_create': True, 'no_quick_create': True}"/>
+            </xpath>
+        </field>
+    </record>
+    
+    <record model="ir.ui.view" id="crossovered_budget_view_form_inherit">
+        <field name="name">crossovered.budget.view.form.inherit</field>
+        <field name="model">crossovered.budget</field>
+        <field name="inherit_id" ref="account_budget.crossovered_budget_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='crossovered_budget_line']//tree//field[@name='general_budget_id']" position='after'>
+                <field name="group_id" options="{'no_create_edit': True,'no_create': True, 'no_quick_create': True}"/>
+            </xpath>
+            <xpath expr="//field[@name='crossovered_budget_line']//form//field[@name='general_budget_id']" position='after'>
+                <field name="group_id" options="{'no_create_edit': True,'no_create': True, 'no_quick_create': True}"/>
+            </xpath>
+        </field>
+    </record>     
+    
+</odoo>

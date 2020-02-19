@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Sequences for correlation.order -->
+        <record id="seq_budget_transfer" model="ir.sequence">
+            <field name="name">Budget Transfer</field>
+            <field name="code">budget.transfer</field>
+            <field name="prefix">%(range_year)s/</field>
+           <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+            <field eval="True" name="use_date_range"/>
+            <field eval="False" name="company_id"/>
+            <field name="padding">4</field>
+        </record>
+
+    </data>
+</odoo>

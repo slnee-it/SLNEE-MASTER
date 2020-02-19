@@ -1,0 +1,142 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_budget
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-04 07:15+0000\n"
+"PO-Revision-Date: 2019-05-04 07:15+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_budget
+#: model:ir.model.fields,field_description:slnee_budget.field_crossovered_budget_lines_sections__active
+msgid "Active"
+msgstr "نشط"
+
+#. module: slnee_budget
+#: model:ir.model.fields,field_description:slnee_budget.field_crossovered_budget_lines__remaining_amount_without_correlation
+msgid "Available Amount"
+msgstr "المبلغ المتاح"
+
+#. module: slnee_budget
+#: model:ir.model,name:slnee_budget.model_crossovered_budget
+msgid "Budget"
+msgstr "الموازنة"
+
+#. module: slnee_budget
+#: model:ir.model,name:slnee_budget.model_crossovered_budget_lines
+msgid "Budget Line"
+msgstr "بند الموازنة"
+
+#. module: slnee_budget
+#: model_terms:ir.ui.view,arch_db:slnee_budget.view_budget_sections_tree
+msgid "Budget Line Section"
+msgstr "أبواب بنود الموازنة"
+
+#. module: slnee_budget
+#: model:ir.actions.act_window,name:slnee_budget.open_view_budget_sections_post_form
+#: model:ir.model,name:slnee_budget.model_crossovered_budget_lines_sections
+#: model:ir.ui.menu,name:slnee_budget.menu_budget_line_section_form
+msgid "Budget Line Sections"
+msgstr "أبواب بنود الموازنة"
+
+#. module: slnee_budget
+#: model_terms:ir.ui.view,arch_db:slnee_budget.view_budget_post_form
+msgid "Budgetary Line Section"
+msgstr ""
+
+#. module: slnee_budget
+#: model_terms:ir.ui.view,arch_db:slnee_budget.view_budget_sections_search
+msgid "Budgetary Position"
+msgstr "مركز الموازنة"
+
+#. module: slnee_budget
+#: model:ir.ui.menu,name:slnee_budget.menu_main_budget
+msgid "Budgeting"
+msgstr "الموازنة واﻹرتباط"
+
+#. module: slnee_budget
+#: model:ir.model.fields,field_description:slnee_budget.field_crossovered_budget_lines_sections__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: slnee_budget
+#: model:ir.model.fields,field_description:slnee_budget.field_crossovered_budget_lines__confirmed_amount
+#: model_terms:ir.ui.view,arch_db:slnee_budget.crossovered_budget_view_form
+#: model_terms:ir.ui.view,arch_db:slnee_budget.view_crossovered_budget_line_tree
+msgid "Confirmed Amount"
+msgstr "المبلغ المعتمد"
+
+#. module: slnee_budget
+#: model:ir.model.fields,field_description:slnee_budget.field_crossovered_budget_lines__correlated_amount
+msgid "Correlated Amount"
+msgstr "المبلغ المرتبط"
+
+#. module: slnee_budget
+#: model:ir.model.fields,field_description:slnee_budget.field_crossovered_budget_lines_sections__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: slnee_budget
+#: model:ir.model.fields,field_description:slnee_budget.field_crossovered_budget_lines_sections__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: slnee_budget
+#: model:ir.model.fields,field_description:slnee_budget.field_crossovered_budget_lines_sections__name
+msgid "Description"
+msgstr "الوصف"
+
+#. module: slnee_budget
+#: model:ir.model.fields,field_description:slnee_budget.field_crossovered_budget_lines_sections__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: slnee_budget
+#: model:ir.model.fields,field_description:slnee_budget.field_crossovered_budget_lines_sections__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: slnee_budget
+#: model:ir.model.fields,field_description:slnee_budget.field_crossovered_budget_lines_sections____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: slnee_budget
+#: model:ir.model.fields,field_description:slnee_budget.field_crossovered_budget_lines_sections__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: slnee_budget
+#: model:ir.model.fields,field_description:slnee_budget.field_crossovered_budget_lines_sections__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: slnee_budget
+#: model_terms:ir.ui.view,arch_db:slnee_budget.crossovered_budget_view_form
+#: model_terms:ir.ui.view,arch_db:slnee_budget.view_crossovered_budget_line_tree
+msgid "Planned Amount"
+msgstr "المبلغ المخطط"
+
+#. module: slnee_budget
+#: model:ir.model.fields,field_description:slnee_budget.field_crossovered_budget_lines__remaining_amount
+msgid "Remaining Amount"
+msgstr "المبلغ المتبقى"
+
+#. module: slnee_budget
+#: model:ir.model.fields,field_description:slnee_budget.field_crossovered_budget_lines__section_id
+msgid "Section Name"
+msgstr "الباب"
+
+#. module: slnee_budget
+#: model:ir.model.fields,field_description:slnee_budget.field_crossovered_budget_lines__state
+msgid "Status"
+msgstr "الحالة"
+

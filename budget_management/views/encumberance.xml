@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_encumb_order_form" model="ir.ui.view">
+            <field name="name">view.encumb.order.form</field>
+            <field name="model">encumb.order</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button string="Confirm" name="button_confirm" type="object" states="draft" class="oe_highlight"
+                                groups="budget_management.group_budget_user"/>
+
+                        <button string="Approve" name="button_approve" type="object" states="confirm" class="oe_highlight"
+                                groups="budget_management.group_budget_manager"/>
+
+                        <button string="Cancel" name="button_cancel" type="object" states="confirm" class="oe_highlight"
+                                groups="budget_management.group_budget_user"/>
+                        <button string="Refuse" name="button_refuse" type="object" states="confirm" class="oe_highlight"
+                                groups="budget_management.group_budget_manager"/>
+                        <button string="Reverse" name="button_reverse" type="object" states="approve" class="oe_highlight"
+                                groups="budget_management.group_budget_manager"/>
+
+                        <button string="Re-Draft" name="button_redraft" type="object" states="cancel"
+                                class="oe_highlight"
+                                groups="budget_management.group_budget_user"/>
+                        <field name="state" statusbar_visible="draft,confirm,approve" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="code" readonly="1"/>
+                                <field name="name" required="1"/>
+                                <field name="date" required="1" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="partner_id" required="1" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                                <field name="currency_company_id" invisible="1"/>
+                            </group>
+                            <group>
+
+                                <field name="encumbered_amount"/>
+                                <field name="reserved_amount"/>
+                                <field name="remaining_amount"/>
+                                <field name="released_amount"/>
+                                <!--field name="consumed_amount" readonly="1"/-->
+                                <field name="origin"/>
+                                <field name="invoice_ids" invisible="1"/>
+                                <field name="currency_company_id" groups="base.group_multi_company"/>
+                            </group>
+                        </group>
+
+                        <label for="encumb_line_ids"/>
+                        <field name="encumb_line_ids" attrs="{'readonly': [('state', '!=', 'draft')]}">
+                            <tree editable="bottom">
+                                <field name="state" invisible="1"/>
+                                <field name="name" required="1"/>
+                                <!--field name="budget_id" options="{'no_create': True}" domain="[('state','=','validate')]" required="1"/>
+                                <field name="section_id" options="{'no_create': True}" required="1"/>
+
+
+                                 <field name="correlated_amount" required="1"
+                                       attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                                <field name="remaining_amount_without_correlation" readonly="1"/-->
+                                <field name="budget_line_id" options="{'no_create': True}"
+                                       invisible="1"/>
+                                <field name="budget_post_id" options="{'no_create': True}"/>
+                                <field name="analytic_account_id" options="{'no_create': True}"
+                                       />
+                                <field name="encumbered_amount"/>
+                                <field name="reserved_amount"/>
+                                <field name="remaining_amount"/>
+                                <field name="released_amount"/>
+                                <!--button name="button_release"
+                                        attrs="{'invisible':['|',('is_released','=',True),('state','=','draft')]}"
+                                        icon="fa-minus-circle" type="object" class="oe_highlight"/-->
+                            </tree>
+                            <form>
+                                <group>
+                                    <group>
+                                        <field name="name" required="1"/>
+                                        <!--field name="budget_id" readonly="1"/>
+                                        <field name="section_id" readonly="1"/-->
+                                        <field name="budget_line_id" required="1"/>
+                                        <field name="encumbered_amount" required="1"/>
+                                    </group>
+                                    <group>
+                                        <field name="partner_id" readonly="1"/>
+                                    </group>
+                                </group>
+                            </form>
+                        </field>
+                        <separator/>
+                        <label for="notes"/>
+                        <field name="notes"/>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_encumb_order_tree" model="ir.ui.view">
+            <field name="name">view.encumb.order.tree</field>
+            <field name="model">encumb.order</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="code"/>
+                    <field name="date"/>
+                    <field name="name"/>
+                    <field name="partner_id"/>
+                    <field name="encumbered_amount"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_encumb_order_action" model="ir.actions.act_window">
+            <field name="name">Encumbrance Orders</field>
+            <field name="res_model">encumb.order</field>
+            <!--field name="context">{'readonly_by_pass': True}</field-->
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="view_encumb_order_action" name="Encumbrance Order" id="menu_encumb_order"
+              parent="budget_management.menu_main_budget"  sequence="1"/>
+
+        <record id="crossovered_budget_view_encumberance_form" model="ir.ui.view">
+        <field name="name">crossovered.budget.view.form</field>
+        <field name="model">crossovered.budget</field>
+        <field name="inherit_id" ref="budget_management.crossovered_budget_view_form_custom"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='crossovered_budget_line']/form/group"
+                   position="after">
+               <label for="encumb_line_ids"/>
+                <field name="encumb_line_ids" readonly="1">
+                    <tree>
+                        <field name="order_id"/>
+                        <field name="partner_id"/>
+                        <field name="encumbered_amount"/>
+                    </tree>
+                </field>
+            </xpath>
+
+            <xpath expr="//field[@name='crossovered_budget_line']/tree//field[@name='planned_amount']" position="after">
+                <field name="encumbered_amount" readonly="1" sum='Total'/>
+            </xpath>
+
+        </field>
+    </record>
+
+        <record id="view_crossovered_budget_line_tree_encumberance" model="ir.ui.view">
+        <field name="name">view_crossovered_budget_line_tree</field>
+        <field name="model">crossovered.budget.lines</field>
+        <field name="inherit_id" ref="budget_management.view_crossovered_budget_line_tree_custom"/>
+        <field name="arch" type="xml">
+
+            <field name="remain_amount" position="before">
+
+                <field name="encumbered_amount" readonly="1"/>
+            </field>
+
+        </field>
+    </record>
+
+
+
+
+    </data>
+</odoo>

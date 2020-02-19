@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="account.menu_finance" model="ir.ui.menu">
+            <field name="name">Finance</field>
+        </record>
+
+    </data>
+</odoo>

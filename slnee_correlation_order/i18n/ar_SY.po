@@ -1,0 +1,375 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_correlation_order
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-04 07:26+0000\n"
+"PO-Revision-Date: 2019-05-04 07:26+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_correlation_order
+#: model_terms:ir.ui.view,arch_db:slnee_correlation_order.view_correlation_order_form
+msgid "Accountant Review"
+msgstr "مراجعة المحاسب المالى"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__message_needaction
+msgid "Action Needed"
+msgstr "الإجراء المطلوب"
+
+#. module: slnee_correlation_order
+#: code:addons/slnee_correlation_order/models/slnee_correlation_order.py:33
+#: code:addons/slnee_correlation_order/models/slnee_correlation_order.py:164
+#: selection:correlation.order,state:0
+#, python-format
+msgid "Approved"
+msgstr "معتمد"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order_line__remaining_amount_without_correlation
+msgid "Available Amount"
+msgstr "المبلغ المتاح"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__partner_id
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order_line__partner_id
+msgid "Beneficiary Name"
+msgstr "المستفيد"
+
+#. module: slnee_correlation_order
+#: model:ir.model,name:slnee_correlation_order.model_crossovered_budget_lines
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order_line__budget_line_id
+msgid "Budget Line"
+msgstr "بند الموازنة"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order_line__budget_id
+msgid "Budget Name"
+msgstr "الموازنة"
+
+#. module: slnee_correlation_order
+#: model_terms:ir.ui.view,arch_db:slnee_correlation_order.view_correlation_order_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: slnee_correlation_order
+#: code:addons/slnee_correlation_order/models/slnee_correlation_order.py:35
+#: code:addons/slnee_correlation_order/models/slnee_correlation_order.py:166
+#: selection:correlation.order,state:0
+#, python-format
+msgid "Cancelled"
+msgstr "ملغاه"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__code
+msgid "Code"
+msgstr "مسلسل"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: slnee_correlation_order
+#: code:addons/slnee_correlation_order/models/slnee_correlation_order.py:32
+#: code:addons/slnee_correlation_order/models/slnee_correlation_order.py:163
+#: selection:correlation.order,state:0
+#, python-format
+msgid "Confirmed"
+msgstr "مؤكد"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__correlated_amount
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order_line__correlated_amount
+msgid "Correlated Amount"
+msgstr "المبلغ المرتبط"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_crossovered_budget_lines__correlation_line_ids
+msgid "Correlation Lines"
+msgstr ""
+
+#. module: slnee_correlation_order
+#: code:addons/slnee_correlation_order/models/slnee_correlation_order.py:139
+#: model:ir.model,name:slnee_correlation_order.model_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order_line__order_id
+#: model:ir.ui.menu,name:slnee_correlation_order.menu_correlation_order
+#, python-format
+msgid "Correlation Order"
+msgstr "أمر إرتباط"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__correlation_order_line
+msgid "Correlation Order Details"
+msgstr "تفاصيل أمر اﻹرتباط"
+
+#. module: slnee_correlation_order
+#: model:ir.model,name:slnee_correlation_order.model_correlation_order_line
+msgid "Correlation Order Lines"
+msgstr "تفاصيل أمر الإرتباط"
+
+#. module: slnee_correlation_order
+#: model:ir.actions.act_window,name:slnee_correlation_order.view_correlation_order_action
+msgid "Correlation Orders"
+msgstr "أوامر الإرتباط"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__create_uid
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order_line__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__create_date
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order_line__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__name
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order_line__name
+msgid "Description"
+msgstr "الوصف"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__display_name
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order_line__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: slnee_correlation_order
+#: code:addons/slnee_correlation_order/models/slnee_correlation_order.py:31
+#: code:addons/slnee_correlation_order/models/slnee_correlation_order.py:162
+#: selection:correlation.order,state:0
+#, python-format
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: slnee_correlation_order
+#: model_terms:ir.ui.view,arch_db:slnee_correlation_order.view_correlation_order_form
+msgid "FM Approval"
+msgstr "موافقة المدير المالي"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "المتابعون (القنوات)"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__id
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order_line__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,help:slnee_correlation_order.field_correlation_order__message_unread
+msgid "If checked new messages require your attention."
+msgstr "إذا حددته، سيتم إخطارك بالرسائل الجديدة."
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,help:slnee_correlation_order.field_correlation_order__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا حددته، سيتم إخطارك بالرسائل الجديدة."
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,help:slnee_correlation_order.field_correlation_order__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديده ، فإن بعض الرسائل بها خطأ في التسليم."
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order_line__is_closed
+msgid "Is Closed"
+msgstr "مغلق؟"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order_line__is_released
+msgid "Is Released?"
+msgstr "تم تحرير المتبقى"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order____last_update
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order_line____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__write_uid
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order_line__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__write_date
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order_line__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسائل"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__notes
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__message_has_error_counter
+msgid "Number of error"
+msgstr "عدد الاخطاء"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,help:slnee_correlation_order.field_correlation_order__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب اجراء"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,help:slnee_correlation_order.field_correlation_order__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل مع خطأ في التسليم"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,help:slnee_correlation_order.field_correlation_order__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل الجديدة"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__origion
+msgid "Origin"
+msgstr "المرجع"
+
+#. module: slnee_correlation_order
+#: code:addons/slnee_correlation_order/models/slnee_correlation_order.py:72
+#, python-format
+msgid "Please Set Required Amount for line %s"
+msgstr "الرجاء تحديد المبلغ المرتبط على البند %s"
+
+#. module: slnee_correlation_order
+#: code:addons/slnee_correlation_order/models/slnee_correlation_order.py:96
+#, python-format
+msgid "Please set your approval on %s "
+msgstr "لرجاء الموافقة على %s"
+
+#. module: slnee_correlation_order
+#: model_terms:ir.ui.view,arch_db:slnee_correlation_order.view_correlation_order_form
+msgid "Re-Draft"
+msgstr "إعادة للمسودة"
+
+#. module: slnee_correlation_order
+#: code:addons/slnee_correlation_order/models/slnee_correlation_order.py:34
+#: code:addons/slnee_correlation_order/models/slnee_correlation_order.py:165
+#: selection:correlation.order,state:0
+#, python-format
+msgid "Refused"
+msgstr "مرفوض"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__remaining_amount
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order_line__remaining_amount
+msgid "Remaining Amount"
+msgstr "المبلغ المتبقى"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__required_amount
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order_line__required_amount
+msgid "Required Amount"
+msgstr "المبلغ المطلوب"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order_line__section_id
+msgid "Section"
+msgstr "الباب"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__state
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order_line__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: slnee_correlation_order
+#: code:addons/slnee_correlation_order/models/slnee_correlation_order.py:74
+#, python-format
+msgid "There is not enough budget to correlate for line %s"
+msgstr "لا يوجد مبلغ كافى للإرتباط على البند %s"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__message_unread
+msgid "Unread Messages"
+msgstr "الرسائل الجديدة"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عدد الرسائل الجديدة"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,field_description:slnee_correlation_order.field_correlation_order__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: slnee_correlation_order
+#: model:ir.model.fields,help:slnee_correlation_order.field_correlation_order__website_message_ids
+msgid "Website communication history"
+msgstr "سجل تواصل الموقع"
+
+#. module: slnee_correlation_order
+#: code:addons/slnee_correlation_order/models/slnee_correlation_order.py:123
+#, python-format
+msgid "You can not cancel Correlation order before canceling Payment Order"
+msgstr "لا يمكنك إلغاء أمر اﻹرتباط قبل إلغاء أوامر الصرف المرتبطه به"
+
+#. module: slnee_correlation_order
+#: code:addons/slnee_correlation_order/models/slnee_correlation_order.py:133
+#, python-format
+msgid "You can not delete record"
+msgstr "لا يمكنك حذف السجل"
+

@@ -1,0 +1,21 @@
+<odoo>
+
+    <!--   adding encumberance for journal entry   -->
+    <record model="ir.ui.view" id="view_move_form_encumb">
+            <field name="name">account.move.form.encumberance</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+
+
+                <!--xpath expr="//field[@name='date_due']" position='after'>
+                    <field name="encumb_id" options="{'no_create_edit':True}" attrs="{'readonly':[('state','not in',('draft','cancel'))]}"/>
+                </xpath-->
+                <xpath expr="//button[@name='action_duplicate']" position='after'>
+                        <button name="move_fund_check" type="object" states="draft" string="Check Fund" class="oe_highlight" groups="account.group_account_user"/>
+                </xpath>
+
+            </field>
+        </record>
+
+</odoo>

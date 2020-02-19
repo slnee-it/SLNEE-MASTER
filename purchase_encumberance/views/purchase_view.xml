@@ -1,0 +1,21 @@
+<odoo>
+
+    <!--   adding encumberance for purchase order   -->
+    <record model="ir.ui.view" id="purchase_order_form_encumb">
+            <field name="name">purchase.order.form.encumberance</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='date_order']" position='after'>
+                    <field name="encumb_id" options="{'no_create_edit':True}" attrs="{'readonly':[('state','in',['purchase','done'])]}"/>
+                </xpath>
+
+                <xpath expr="//button[@name='print_quotation']" position='after'>
+                        <button name="po_fund_check" type="object" states="draft" string="Check Fund" class="oe_highlight" groups="purchase.group_purchase_user"/>
+                </xpath>
+
+            </field>
+        </record>
+
+</odoo>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.budget.transfer</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="10"/>
+        <field name="inherit_id" ref="base.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('settings')]" position="inside">
+                <div class="app_settings_block o_not_app" data-string="Budget Transfer" string="Budget Transfer" data-key="slnee_budget_transfer" groups="account.group_account_manager">
+                    <h2>Budget Transfer</h2>
+                    <div class="row mt16 o_settings_container">
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_left_pane">
+                                <field name="use_percentage_while_transfer"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="use_percentage_while_transfer"/>
+                                <span class="fa fa-lg fa-building-o" title="Values set here are company-specific." aria-label="Values set here are company-specific." groups="base.group_multi_company" role="img"/>
+                                <div class="text-muted">
+                                    Use Conditions While Budget Transfer
+                                </div>
+                                <div class="content-group"  attrs="{'invisible': [('use_percentage_while_transfer','=',False)]}">
+                                    <div class="mt16">
+                                        <span class="col-lg-3">Transfered Amount According to Planned Amount In Source Budget Line: <field name="percentage_to_approve_source_avil_amount" attrs="{'required': [('use_percentage_while_transfer', '=', True)]}"/> %</span>
+                                    </div>
+                                </div>
+                                <div class="content-group"  attrs="{'invisible': [('use_percentage_while_transfer','=',False)]}">
+                                    <div class="mt16">
+                                        <span class="col-lg-3">Transfered Amount According to Planned Amount In Destination Budget Line: <field name="percentage_to_check_trans_amount_to_planned" attrs="{'required': [('use_percentage_while_transfer', '=', True)]}"/> %</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="action_budget_transfer_config_settings" model="ir.actions.act_window">
+        <field name="name">Settings</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_id" ref="res_config_settings_view_form"/>
+        <field name="view_mode">form</field>
+        <field name="target">inline</field>
+        <field name="context">{'module' : 'slnee_budget_transfer'}</field>
+    </record>
+
+    <!--<menuitem id="menu_budget_transfer_general_settings"-->
+        <!--name="Settings"-->
+        <!--parent="menu_budget_transfer_root"-->
+        <!--sequence="100"-->
+        <!--action="action_budget_transfer_config_settings"-->
+        <!--groups="account.group_account_manager"/>-->
+
+</odoo>
