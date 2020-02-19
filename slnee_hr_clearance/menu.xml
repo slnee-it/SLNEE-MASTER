@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<odoo>
-    <!-- Employee Clearance -->
-    <menuitem action="menu_hr_employee_clearance_view" id="menu_emp_clearance_all" sequence="8" name="Employee Clearance" parent="hr.menu_hr_main" groups="base.group_user"/>
-</odoo>
