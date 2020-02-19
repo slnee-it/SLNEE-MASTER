@@ -1,7 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_correlation_order_user,access.correlation.order.accountant,model_correlation_order,base.group_user,1,0,0,0
-access_correlation_order_accountant,access.correlation.order.accountant,model_correlation_order,account.group_account_user,1,1,1,0
-access_correlation_order_adviser,access.correlation.order.adviser,model_correlation_order,account.group_account_manager,1,1,1,1
-access_correlation_order_line_user,access.correlation.order.line.accountant,model_correlation_order_line,base.group_user,1,0,0,0
-access_correlation_order_line_accountant,access.correlation.order.line.accountant,model_correlation_order_line,account.group_account_user,1,1,1,0
-access_correlation_order_line_adviser,access.correlation.order.line.adviser,model_correlation_order_line,account.group_account_manager,1,1,1,1
