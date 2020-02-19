@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Job Requition -->
+        <record id="hr_job_requitions_hr_manager" model="hr.job.requisition">
+            <field name="name">Human Resouce Manager</field>
+            <field name="no_of_recruitment">5</field>
+            <field name="state">launch</field>
+            <field name="job_id" ref="hr.job_hrm"/>
+            <field name="department_id" ref="hr.dep_administration"/>
+            <field name="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</field>
+            <field name="requirements">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</field>
+        </record>
+        <record id="hr_job_requitions_tech_officer" model="hr.job.requisition">
+            <field name="name">Chief Technical Officer</field>
+            <field name="department_id" ref="hr.dep_rd"/>
+            <field name="job_id" ref="hr.job_cto"/>
+            <field name="no_of_recruitment">7</field>
+            <field name="state">launch</field>
+            <field name="description">You will take part in the consulting services we provide to our partners and customers : design, analysis, development, testing, project management, support/coaching. You will work autonomously as well as coordinate and supervise small distributed development teams for some projects. Optionally, you will deliver Odoo training sessions to partners and customers (8-10 people/session). You will report to the Head of Professional Services and work closely with all developers and consultants.
+            The job is located in Grand-Rosière (1367), Belgium (between Louvain-La-Neuve and Namur).</field>
+            <field name="requirements">Bachelor, master or engineering degree in Computer Science or equivalent by experience
+            Preferably at least 1 years of experience
+            Interest for enterprise application development
+            Customer-minded
+            Willing to travel abroad occasionally for short term missions.
+            Passion for the Internet and its culture
+            Quick and autonomous learner, problem-solving personality, enthusiastic when faced with technical challenges
+            Team spirit and good communication
+            Required skills:
+            Good knowledge of object oriented programming, object modeling, relational databases, Unix/Linux platform
+            Fluent in English, especially read and written
+            Nice-to-have skills:
+            Good knowledge of Python
+            Good knowledge of HTML and Javascript
+            Knowledge of UML-like modeling
+            Good language skills, other than English (Dutch and French preferred, others welcome)
+            </field>
+        </record>
+
+        <!-- Updated Hr Applicant Demo data -->
+        <record id="hr_recruitment.hr_case_salesman0" model="hr.applicant">
+            <field name="name">Sales Manager</field>
+            <field name="job_id" ref="hr.job_hrm"/>
+            <field name="department_id" ref="hr.dep_administration"/>
+            <field name="type_id" ref="hr_recruitment.degree_graduate"/>
+            <field name="categ_ids" eval="[(6,0,[ref('hr_recruitment.tag_applicant_sales')])]"/>
+            <field name="user_id" ref="base.user_demo"/>
+            <field name="priority">1</field>
+            <field name="partner_mobile">9963214587</field>
+            <field name="stage_id" ref="hr_recruitment.stage_job1"/>
+            <field eval="time.strftime('%Y-%m-15 18:15:00')" name="date_action"/>
+            <field name="title_action">Send mail regarding our interview</field>
+            <field name="partner_name">Enrique</field>
+            <field name="last_name">Jones</field>
+            <field name="street">Abdullah Balkhair street</field>
+            <field name="date_of_birth">1987/07/02</field>
+            <field name="city">Jeddah</field>
+            <field name="email_from">enrique@sync.com</field>
+        </record>
+        <record id="hr_recruitment.hr_case_traineemca0" model="hr.applicant">
+            <field name="name">Trainee - MCA</field>
+            <field name="job_id" ref="hr.job_hrm"/>
+            <field name="department_id" ref="hr.dep_administration"/>
+            <field name="type_id" ref="hr_recruitment.degree_licenced"/>
+            <field name="categ_ids" eval="[(6,0,[ref('hr_recruitment.tag_applicant_manager')])]"/>
+            <field name="user_id" ref="base.user_demo"/>
+            <field name="priority">2</field>
+            <field name="partner_mobile">9988774455</field>
+            <field name="stage_id" ref="hr_recruitment.stage_job4"/>
+            <field name="partner_phone">6633225</field>
+            <field eval="time.strftime('%Y-%m-10 18:15:00')" name="date_action"/>
+            <field name="title_action">Call to define real needs about training</field>
+            <field name="partner_name">Marie</field>
+            <field name="last_name">Justine</field>
+            <field name="street">Second Ring Road Al Farsi Dearson Building</field>
+            <field name="date_of_birth">1988/09/02</field>
+            <field name="city">Jeddah</field>
+            <field name="email_from">Marie@sync.com</field>
+        </record>
+        <record id="hr_recruitment.hr_case_fresher0" model="hr.applicant">
+            <field name="name">Fresher</field>
+            <field name="job_id" ref="hr.job_hrm"/>
+            <field name="department_id" ref="hr.dep_administration"/>
+            <field name="type_id" ref="hr_recruitment.degree_bachelor"/>
+            <field name="categ_ids" eval="[(6,0,[ref('hr_recruitment.tag_applicant_it')])]"/>
+            <field name="user_id" ref="base.user_demo"/>
+            <field name="priority">0</field>
+            <field name="stage_id" ref="hr_recruitment.stage_job3"/>
+            <field name="partner_phone">999666735</field>
+            <field name="partner_mobile">9898566735</field>
+            <field eval="time.strftime('%Y-%m-5 18:15:00')" name="date_action"/>
+            <field name="title_action">Send mail regarding our interview</field>
+            <field name="partner_name">Jose</field>
+            <field name="last_name">Watson</field>
+            <field name="street">King Fahad Road</field>
+            <field name="date_of_birth">1989/10/20</field>
+            <field name="city">Riyadh</field>
+            <field name="email_from">Jose@sync.com</field>
+        </record>
+        <record id="hr_recruitment.hr_case_yrsexperienceinphp0" model="hr.applicant">
+            <field name="name">Marketing Job</field>
+            <field name="job_id" ref="hr.job_hrm"/>
+            <field name="department_id" ref="hr.dep_administration"/>
+            <field name="type_id" ref="hr_recruitment.degree_graduate"/>
+            <field name="categ_ids" eval="[(6,0,[ref('hr_recruitment.tag_applicant_manager')])]"/>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="stage_id" ref="hr_recruitment.stage_job5"/>
+            <field eval="time.strftime('%Y-%m-24 18:15:00')" name="date_action"/>
+            <field name="title_action">Call to define real needs about training</field>
+            <field name="partner_name">John</field>
+            <field name="last_name">Bruno</field>
+            <field name="street">Royal Commission Shareh Al-Aziziah Ain Al-Nawa</field>
+            <field name="partner_mobile">9885213652</field>
+            <field name="date_of_birth">1990/11/28</field>
+            <field name="city">Riyadh</field>
+            <field name="email_from">John@sync.com</field>
+        </record>
+        <record id="hr_recruitment.hr_case_marketingjob0" model="hr.applicant">
+            <field name="name">More than 5 yrs Experience in PHP</field>
+            <field name="job_id" ref="hr.job_hrm"/>
+            <field name="department_id" ref="hr.dep_administration"/>
+            <field name="type_id" ref="hr_recruitment.degree_licenced"/>
+            <field name="categ_ids" eval="[(6,0,[ref('hr_recruitment.tag_applicant_reserve')])]"/>
+            <field name="user_id" ref="base.user_demo"/>
+            <field name="stage_id" ref="hr_recruitment.stage_job5"/>
+            <field eval="time.strftime('%Y-%m-20 18:15:00')" name="date_action"/>
+            <field name="title_action">Send mail regarding our interview</field>
+            <field name="partner_name">Sandra</field>
+            <field name="last_name">Elvis</field>
+            <field name="partner_mobile">7854521521</field>
+            <field name="street">Al-Masjed Al-Haram Road 2nd Floor</field>
+            <field name="date_of_birth">1987/10/07</field>
+            <field name="city">Makkah</field>
+            <field name="email_from">Sandra@sync.com</field>
+        </record>
+        <record id="hr_recruitment.hr_case_financejob0" model="hr.applicant">
+            <field name="name">Finance Manager</field>
+            <field name="department_id" ref="hr.dep_rd"/>
+            <field name="job_id" ref="hr.job_cto"/>
+            <field name="type_id" ref="hr_recruitment.degree_licenced"/>
+            <field name="categ_ids" eval="[(6,0,[ref('hr_recruitment.tag_applicant_reserve')])]"/>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="priority">1</field>
+            <field name="stage_id" ref="hr_recruitment.stage_job2"/>
+            <field name="partner_phone">33968745</field>
+            <field eval="time.strftime('%Y-%m-18 18:15:00')" name="date_action"/>
+            <field name="title_action">Send mail regarding our interview</field>
+            <field name="partner_name">David</field>
+            <field name="partner_mobile">9898854235</field>
+            <field name="last_name">Armstrong</field>
+            <field name="street">King Fahad Road</field>
+            <field name="date_of_birth">1991/01/11</field>
+            <field name="city">Riyadh</field>
+            <field name="email_from">David@sync.com</field>
+        </record>
+        <record id="hr_recruitment.hr_case_traineemca1" model="hr.applicant">
+            <field name="name">Trainee - MCA</field>
+            <field name="department_id" ref="hr.dep_rd"/>
+            <field name="job_id" ref="hr.job_cto"/>
+            <field name="type_id" ref="hr_recruitment.degree_licenced"/>
+            <field name="categ_ids" eval="[(6,0,[ref('hr_recruitment.tag_applicant_sales')])]"/>
+            <field name="partner_mobile">9898745745</field>
+            <field name="stage_id" ref="hr_recruitment.stage_job4"/>
+            <field name="partner_phone">6630125</field>
+            <field eval="time.strftime('%Y-%m-15 18:15:00')" name="date_action"/>
+            <field name="title_action">Send mail regarding our interview</field>
+            <field name="partner_name">Tina</field>
+            <field name="partner_mobile">9898569852</field>
+            <field name="last_name">Augustie</field>
+            <field name="street">Prince Mamdouh Bin Abdulaziz Street</field>
+            <field name="date_of_birth">1990/12/21</field>
+            <field name="city">Tabuk</field>
+            <field name="email_from">augustie@sync.com</field>
+        </record>
+        <record id="hr_recruitment.hr_case_programmer" model="hr.applicant">
+            <field name="name">Programmer</field>
+            <field name="department_id" ref="hr.dep_rd"/>
+            <field name="job_id" ref="hr.job_cto"/>
+            <field name="type_id" ref="hr_recruitment.degree_licenced"/>
+            <field name="categ_ids" eval="[(6,0,[ref('hr_recruitment.tag_applicant_it')])]"/>
+            <field name="partner_mobile">9812398524</field>
+            <field name="stage_id" ref="hr_recruitment.stage_job4"/>
+            <field name="partner_phone">6630125</field>
+            <field name="partner_mobile">989885426</field>
+            <field name="salary_expected">11000.0</field>
+            <field eval="time.strftime('%Y-%m-24 18:15:00')" name="date_action"/>
+            <field name="title_action">Send mail regarding our interview</field>
+            <field name="partner_name">Shane</field>
+            <field name="last_name">Williams</field>
+            <field name="street">Al Ahsa Street Malaz</field>
+            <field name="date_of_birth">1989/04/16</field>
+            <field name="city">Riyadh</field>
+            <field name="email_from">Shane@sync.com</field>
+        </record>
+        <record id="hr_recruitment.hr_case_advertisement" model="hr.applicant">
+            <field name="name">Advertisement</field>
+            <field name="department_id" ref="hr.dep_rd"/>
+            <field name="job_id" ref="hr.job_cto"/>
+            <field name="type_id" ref="hr_recruitment.degree_licenced"/>
+            <field name="categ_ids" eval="[(6,0,[ref('hr_recruitment.tag_applicant_it')])]"/>
+            <field name="partner_mobile">9988774455</field>
+            <field name="stage_id" ref="hr_recruitment.stage_job2"/>
+            <field name="salary_expected">11000.0</field>
+            <field eval="time.strftime('%Y-%m-15 18:15:00')" name="date_action"/>
+            <field name="title_action">Send mail regarding our interview</field>
+            <field name="partner_name">David</field>
+            <field name="last_name">Armstrong</field>
+            <field name="street">Royal Commission Shareh Al-Aziziah Ain Al-Nawa</field>
+            <field name="date_of_birth">1993/10/28</field>
+            <field name="city">Yanbu</field>
+            <field name="email_from">David@sync.com</field>
+        </record>
+    </data>
+</odoo>

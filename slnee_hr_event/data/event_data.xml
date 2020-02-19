@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Learning and Development related subtypes for messaging / Chatter -->
+    <record id="mt_event_registration_new" model="mail.message.subtype">
+        <field name="name">Event Unconfirmed</field>
+        <field name="res_model">event.registration</field>
+        <field name="default" eval="False"/>
+        <field name="description">Event Unconfirmed</field>
+    </record>
+    <record id="mt_event_registration_confirm" model="mail.message.subtype">
+        <field name="name">Event Confirmed</field>
+        <field name="res_model">event.registration</field>
+        <field name="description">Event Confirmed</field>
+    </record>
+    <record id="mt_event_registration_cancel" model="mail.message.subtype">
+        <field name="name">Event Cancelled</field>
+        <field name="res_model">event.registration</field>
+        <field name="default" eval="False"/>
+        <field name="description">Event Cancelled</field>
+    </record>
+    <record id="mt_event_registration_approve" model="mail.message.subtype">
+        <field name="name">Event Attended</field>
+        <field name="res_model">event.registration</field>
+        <field name="description">Event Attended</field>
+    </record>
+    <record id="mt_event_registration_stage" model="mail.message.subtype">
+        <field name="name">Stage Changed</field>
+        <field name="res_model">event.registration</field>
+        <field name="default" eval="False"/>
+        <field name="description">Stage changed</field>
+    </record>
+
+    <!-- Internal Training Survey Feed Notification Email template -->
+    <!-- <record id="email_template_event_survey_notify" model="email.template">
+        <field name="name">Event Survey Notification - Send by Email</field>
+        <field name="email_from">${object.company_id.email}</field>
+        <field name="subject">Feed Internal Training Survey : (Ref ${object.event_id.name or 'n/a' })</field>
+        <field name="partner_ids">${object.from_email or ''}</field>
+        <field name="partner_to"></field>
+        <field name="model_id" ref="slnee_hr_event.model_event_registration" />
+        <field name="auto_delete" eval="True" />
+        <field name="body_html"><![CDATA[]]></field>
+    </record> -->
+
+</odoo>

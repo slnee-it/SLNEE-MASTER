@@ -1,0 +1,649 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_exp_info
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-11 08:58+0000\n"
+"PO-Revision-Date: 2018-09-11 08:58+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_exp_info
+#: model:mail.template,body_html:slnee_hr_exp_info.email_template_employment_reference
+msgid "\n"
+"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"    <p>Hello ${object.contact_name},</p>\n"
+"\n"
+"    <p>I am ${object.env.user.name} from ${object.env.user.company_id.name} Pvt.Ltd. This is with regard to referral check of ${object.employee_id.name or ''}, who worked with you as ${object.job_title}. Can you please let me know the following details about him/her:</p>\n"
+"    <ul>\n"
+"        <li>Period of Employment:</li>\n"
+"        <li>Designation:</li>\n"
+"        <li>Reason for leaving the organization:</li>\n"
+"        <li>Exit formalities:Completed / Uncompleted</li>\n"
+"        <li>Verified By:</li>\n"
+"    </ul>\n"
+"    <p>It would be very kind if you could spare a few minutes and provide your feedback.</p>\n"
+"    <p>Your cooperation and quick response by return e-mail would be highly appreciated.</p>\n"
+"    <p>Thanks & Regards,</p>\n"
+"    HR Manager\n"
+"</div>\n"
+""
+msgstr "\n"
+"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"    <p>مرحبا ${object.contact_name},</p>\n"
+"\n"
+"    <p>أنا $ {object.env.user.name} من $ {object.env.user.company_id.name} Pvt.Ltd. هذا يتعلق بالتحقق من الإحالة $ {object.employee_id.name or ''} ، الذين عملوا معك كـ $ {object.job_title}. هل يمكن أن تسمحوا لي بمعرفة التفاصيل التالية عنه / ها:</p>\n"
+"    <ul>\n"
+"        <li>فترة العمل:</li>\n"
+"        <li>تعيين:</li>\n"
+"        <li>سبب مغادرة المنظمة:</li>\n"
+"        <li>إجراءات الخروج: اكتمل / غير مكتمل</li>\n"
+"        <li>أكد عن طريق:</li>\n"
+"    </ul>\n"
+"    <p>سيكون من اللطيف جدا إذا أمكنك توفير بضع دقائق وتقديم ملاحظاتك.</p>\n"
+"    <p>سيكون تعاونك وردك السريع عن طريق البريد الإلكتروني المرتقب محل تقدير كبير.</p>\n"
+"    <p>مع الشكر و التقدير،</p>\ ن "
+"مدير الموارد البشرية \ n"
+"</div>\ ن"
+""
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<br/>\n"
+"                    <span>Email: </span>"
+msgstr "<br/>\n"
+"                    <span>البريد الإلكتروني: </span>"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<br/>\n"
+"                <span><strong>Period of employment</strong></span><br/>"
+msgstr "<br/>\n"
+"                <span><strong>فترة العمل</strong></span><br/>"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<br/>\n"
+"                <span><strong>Strength:</strong></span>"
+msgstr "<br/>\n"
+"                <span><strong>قوة:</strong></span>"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<br/>\n"
+"                <span>Has the applicant given satisfactory in the following?</span><br/>\n"
+"                <br/>"
+msgstr "<br/>\n"
+"                <span>هل قدم مقدم الطلب مرضية في ما يلي؟</span><br/>\n"
+"                <br/>"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<span style=\"margin-right: 30px;\"><strong>Reason for leaving your company?</strong></span>\n"
+"                <span>Voluntary / End of Contract / Dismissed / Redundancy</span>"
+msgstr "<span style=\"margin-right: 30px;\"><strong>سبب ترك شركتك؟</strong></span>\n"
+"                <span>طوعي / نهاية العقد / صرف / زيادة</span>"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<span style=\"margin-right: 30px;\"><strong>What position(s) were held by Mr.dd</strong></span>"
+msgstr "<span style=\"margin-right: 30px;\"><strong>ما هي المواقع التي شغلها السيد</strong></span>"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<span style=\"margin-right: 30px;\"><strong>Would you re-employ and if not, why?</strong></span>\n"
+"                <span>Yes / No/ other reason please specify below</span>"
+msgstr "<span style=\"margin-right: 30px;\"><strong>هل ستعيد توظيفك وما لم تفعل؟</strong></span>\n"
+"                <span>نعم / لا / سبب آخر ، يرجى التوضيح أدناه</span>"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<span style=\"padding-right:70px\">Days</span>"
+msgstr "<span style=\"padding-right:70px\">أيام</span>"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<span style=\"padding-right:70px\">Month</span>\n"
+"                                    &amp;nbsp;"
+msgstr "<span style=\"padding-right:70px\">شهر</span>\n"
+"                                    &amp;nbsp;"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<span style=\"padding-right:70px\">Year</span>"
+msgstr "<span style=\"padding-right:70px\">عام</span>"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<span>Any Other Information:</span><br/>"
+msgstr "<span>أي معلومات أخرى:</span><br/>"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<span>Attention: </span>"
+msgstr "<span>انتباه: </span>"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<span>Has the applicant given satisfactory in the following?</span><br/>\n"
+"                <span>Name:</span><br/>\n"
+"                <span>Title and Organization:</span><br/>\n"
+"                <span>Contact details (no and email address)</span><br/>\n"
+"                <span>Signature and</span><br/>\n"
+"                <span>Company Stamp (where applicable)</span><br/>"
+msgstr "<span>هل قدم مقدم الطلب مرضية في ما يلي؟</span><br/>\n"
+"                <span>اسم:</span><br/>\n"
+"                <span>العنوان والمنظمة:</span><br/>\n"
+"                <span>تفاصيل الاتصال (لا وعنوان البريد الإلكتروني)</span><br/>\n"
+"                <span>التوقيع و</span><br/>\n"
+"                <span>ختم الشركة (عند الاقتضاء)</span><br/>"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<span>Immediate Superior/HR Department/Other (please mention)</span>"
+msgstr "<span>الإدارة العليا / إدارة الموارد البشرية / أخرى (يرجى ذكرها)</span>"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<span>Strengths &amp; Weaknesses of Mr.</span>"
+msgstr "<span>نقاط القوة & amp؛ نقاط ضعف السيد</span>"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<span>Thank you for your cooperation and prompt response.</span><br/>\n"
+"                <span>Please complete and fax this back to [\"Company_Name\"] Companies on ____________ or scan it and email to us</span>"
+msgstr "<span>شكرا لتعاونكم والاستجابة السريعة.</span><br/>\n"
+"                <span>يرجى إكمال هذه الرسالة وإرسالها بالفاكس إلى [\ "Company_Name \"] الشركات على ____________ أو مسحها ضوئيًا وإرسالها إلينا عبر البريد الإلكتروني</span>"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<span>Weaknesses</span><br/>\n"
+"                <span>(Areas for further improvement)</span>"
+msgstr "<span>نقاط الضعف</span><br/>\n"
+"                <span>(مجالات لمزيد من التحسين)</span>"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<strong>Date of Birth:</strong>"
+msgstr "<strong>تاريخ الولادة:</strong>"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<strong>Employer Address</strong>"
+msgstr "<strong>عنوان صاحب العمل</strong>"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<strong>Employer Name</strong>"
+msgstr "<strong>اسم الموظف</strong>"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<strong>From : -</strong>"
+msgstr "<strong>من عند : -</strong>"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<strong>Name of Applicant:</strong>"
+msgstr "<strong>اسم صاحب الطلب:</strong>"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<strong>Strictly Private and Confidential</strong><br/>\n"
+"                <span>Please verify employment by answering the following questions:</span><br/>\n"
+"                &amp;nbsp;"
+msgstr "<strong>خاص وسري للغاية</strong><br/>\n"
+"                <span>يرجى التحقق من التوظيف عن طريق الإجابة على الأسئلة التالية:</span><br/>\n"
+"                &amp;nbsp;"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<strong>To : -</strong>"
+msgstr "<strong>إلى : -</strong>"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "<strong>Your relation to the applicant</strong>"
+msgstr "<strong>علاقتك بمقدم الطلب</strong>"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_qualification_activities
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.hr_exp_info_view_employee_form
+msgid "Activities and Societies"
+msgstr "نشاطات ومجتمعات"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.hr_exp_info_view_employee_form
+msgid "Approve"
+msgstr "موافقه"
+
+#. module: slnee_hr_exp_info
+#: selection:hr.experience,state:0
+msgid "Approved"
+msgstr "وافق"
+
+#. module: slnee_hr_exp_info
+#: selection:hr.certification,certification_month:0
+#: selection:hr.qualification,completion_month:0
+msgid "April"
+msgstr "أبريل"
+
+#. module: slnee_hr_exp_info
+#: selection:hr.certification,certification_month:0
+#: selection:hr.qualification,completion_month:0
+msgid "August"
+msgstr "أغسطس"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.hr_exp_info_view_employee_form
+msgid "Certificates"
+msgstr "الشهادات"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.hr_exp_info_view_employee_form
+msgid "Certification"
+msgstr "شهادة"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_certification_name
+msgid "Certification Name"
+msgstr "شهادة اسم"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_employee_certification_ids
+msgid "Certifications"
+msgstr "الشهادات"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_certification_company_id
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_experience_company
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_experience_company_id
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_qualification_company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: slnee_hr_exp_info
+#: selection:hr.qualification,program_type:0
+msgid "Completed"
+msgstr "الانتهاء"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_certification_contact_email
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_experience_contact_email
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_qualification_contact_email
+msgid "Contact Email"
+msgstr "الاتصال البريد الإلكتروني"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_certification_contact_name
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_experience_contact_name
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_qualification_contact_name
+msgid "Contact Name"
+msgstr "اسم جهة الاتصال"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_certification_contact_phone
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_experience_contact_phone
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_qualification_contact_phone
+msgid "Contact Phone No"
+msgstr "الاتصال رقم الهاتف"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_experience_contact_title
+msgid "Contact Title"
+msgstr "الاتصال عنوان"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_certification_create_uid
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_experience_create_uid
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_qualification_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_certification_create_date
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_experience_create_date
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_qualification_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_experience_is_current_job
+msgid "Current Job"
+msgstr "العمل الحالي"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_certification_expiry_date
+msgid "Date of Expiry"
+msgstr "تاريخ انتهاء الصلاحية"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_certification_issue_date
+msgid "Date of Issue"
+msgstr "تاريخ الإصدار"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_qualification_attended_date_from
+msgid "Dates Attended(from)"
+msgstr "(مواعيد حضور (من"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_qualification_attended_date_to
+msgid "Dates Attended(to)"
+msgstr "(مواعيد حضور (إلى"
+
+#. module: slnee_hr_exp_info
+#: selection:hr.certification,certification_month:0
+#: selection:hr.qualification,completion_month:0
+msgid "December"
+msgstr "ديسمبر"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_experience_description
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_qualification_description
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.hr_exp_info_view_employee_form
+msgid "Description"
+msgstr "الوصف"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_certification_display_name
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_experience_display_name
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_qualification_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: slnee_hr_exp_info
+#: selection:hr.experience,state:0
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.hr_exp_info_view_employee_form
+msgid "Education and Experience"
+msgstr "التعليم والخبرة"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model,name:slnee_hr_exp_info.model_hr_employee
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_certification_employee_id
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_experience_employee_id
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_qualification_employee_id
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: slnee_hr_exp_info
+#: model:mail.template,report_name:slnee_hr_exp_info.email_template_employment_reference
+#: model:mail.template,subject:slnee_hr_exp_info.email_template_employment_reference
+msgid "Employment Reference Check"
+msgstr "التحقق من التوظيف المرجعي"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.hr_exp_info_view_employee_form
+msgid "Experience"
+msgstr "تجربة"
+
+#. module: slnee_hr_exp_info
+#: selection:hr.certification,certification_month:0
+#: selection:hr.qualification,completion_month:0
+msgid "February"
+msgstr "شهر فبراير"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_qualification_field_of_study
+msgid "Field of Study"
+msgstr "مجال الدراسة"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_qualification_grade
+msgid "Grade(GPA)"
+msgstr "الصف (GPA)"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model,name:slnee_hr_exp_info.model_hr_experience
+msgid "HR Experience"
+msgstr "تجربة الموارد البشرية"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "Honesty / Conduct"
+msgstr "الصدق / السلوك"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_certification_id
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_experience_id
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_qualification_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_certification_organization_name
+msgid "Issuing Organization"
+msgstr "إصدار منظمة"
+
+#. module: slnee_hr_exp_info
+#: selection:hr.certification,certification_month:0
+#: selection:hr.qualification,completion_month:0
+msgid "January"
+msgstr "كانون الثاني"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_experience_job_title
+msgid "Job Title"
+msgstr "المسمى الوظيفي"
+
+#. module: slnee_hr_exp_info
+#: selection:hr.certification,certification_month:0
+#: selection:hr.qualification,completion_month:0
+msgid "July"
+msgstr "يوليو"
+
+#. module: slnee_hr_exp_info
+#: selection:hr.certification,certification_month:0
+#: selection:hr.qualification,completion_month:0
+msgid "June"
+msgstr "يونيو"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_certification___last_update
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_experience___last_update
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_qualification___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_certification_write_uid
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_experience_write_uid
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_qualification_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_certification_write_date
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_experience_write_date
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_qualification_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "Leadership Skills"
+msgstr "مهارات القيادة"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_experience_location
+msgid "Location"
+msgstr "المكان"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "Loyalty and Cooperation"
+msgstr "الولاء والتعاون"
+
+#. module: slnee_hr_exp_info
+#: selection:hr.certification,certification_month:0
+#: selection:hr.qualification,completion_month:0
+msgid "March"
+msgstr "مارس"
+
+#. module: slnee_hr_exp_info
+#: selection:hr.certification,certification_month:0
+#: selection:hr.qualification,completion_month:0
+msgid "May"
+msgstr "قد"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_certification_certification_month
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_qualification_completion_month
+msgid "Month"
+msgstr "شهر"
+
+#. module: slnee_hr_exp_info
+#: selection:hr.experience,is_current_job:0
+msgid "No"
+msgstr "لا"
+
+#. module: slnee_hr_exp_info
+#: selection:hr.certification,certification_month:0
+#: selection:hr.qualification,completion_month:0
+msgid "November"
+msgstr "شهر نوفمبر"
+
+#. module: slnee_hr_exp_info
+#: selection:hr.certification,certification_month:0
+#: selection:hr.qualification,completion_month:0
+msgid "October"
+msgstr "شهر اكتوبر"
+
+#. module: slnee_hr_exp_info
+#: selection:hr.qualification,program_type:0
+msgid "Ongoing"
+msgstr "جارية"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "People Management"
+msgstr "إدارة الأفراد"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_qualification_percentage
+msgid "Percentage"
+msgstr "النسبة المئوية"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_employee_experience_ids
+msgid "Previous Experience"
+msgstr "خبرة سابقة"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_qualification_degree_id
+msgid "Program"
+msgstr "برنامج"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_qualification_program_type
+msgid "Program Status"
+msgstr "الحالة برنامج"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.hr_exp_info_view_employee_form
+msgid "Qualification"
+msgstr "المؤهل"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_employee_qualification_ids
+msgid "Qualifications"
+msgstr "مؤهلات"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.hr_exp_info_view_employee_form
+msgid "Reference"
+msgstr "إشارة"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.hr_exp_info_view_employee_form
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: slnee_hr_exp_info
+#: selection:hr.experience,state:0
+msgid "Refused"
+msgstr "رفض"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_certification_reg_no
+msgid "Registration No."
+msgstr "رقم التسجيل"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "Reliability/Professionalism"
+msgstr "الموثوقية / الاحتراف"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.hr_exp_info_view_employee_form
+msgid "Send Email"
+msgstr "ارسل ايميل"
+
+#. module: slnee_hr_exp_info
+#: selection:hr.certification,certification_month:0
+#: selection:hr.qualification,completion_month:0
+msgid "September"
+msgstr "سبتمبر"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_experience_state
+msgid "Status"
+msgstr "الحالة "
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_experience_time_period_from
+msgid "Time Period(from)"
+msgstr "(الفترة الزمنية (من"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_experience_time_period_to
+msgid "Time Period(to)"
+msgstr "(الفترة الزمنية (إلى"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "Trustworthiness"
+msgstr "الثقة"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_qualification_university_id
+msgid "University Name"
+msgstr "اسم الجامعة"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_certification_certification_year
+#: model:ir.model.fields,field_description:slnee_hr_exp_info.field_hr_qualification_completion_year
+msgid "Year"
+msgstr "عام"
+
+#. module: slnee_hr_exp_info
+#: selection:hr.experience,is_current_job:0
+msgid "Yes"
+msgstr "نعم"
+
+#. module: slnee_hr_exp_info
+#: model:ir.ui.view,arch_db:slnee_hr_exp_info.report_employmentreference
+msgid "Yes/No"
+msgstr "نعم لا"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model,name:slnee_hr_exp_info.model_hr_certification
+msgid "hr.certification"
+msgstr "hr.certification"
+
+#. module: slnee_hr_exp_info
+#: model:ir.model,name:slnee_hr_exp_info.model_hr_qualification
+msgid "hr.qualification"
+msgstr "hr.qualification"
+

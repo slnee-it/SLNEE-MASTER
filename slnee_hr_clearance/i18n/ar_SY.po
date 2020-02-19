@@ -1,0 +1,635 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_clearance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-12 09:35+0000\n"
+"PO-Revision-Date: 2018-09-12 09:35+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_clearance
+#: model:mail.template,body_html:slnee_hr_clearance.email_template_send_exit_questionnaire
+msgid "\n"
+"                \n"
+"<p>Hello,</p>\n"
+"<p>We are conducting a survey, and your response would be appreciated.</p>\n"
+"<p><a style=\"margin-left: 85px; padding:5px 10px; border-radius: 3px; background-color:#875A7B; text-align:center; text-decoration:none; color:#F7FBFD;\" href=${object.public_url_html}>Please, click here to start survey</a></p>\n"
+"<p>Thanks for your participation!</p>\n"
+"                \n"
+"            "
+msgstr "\n"
+"                \n"
+"<p>مرحبا،</p>\n"
+"<p>نحن نجري مسحًا ، وسيكون ردك موضع تقدير.</p>\n"
+"<p><a style=\"margin-left: 85px; padding:5px 10px; border-radius: 3px; background-color:#875A7B; text-align:center; text-decoration:none; color:#F7FBFD;\" href=${object.public_url_html}>من فضلك ، انقر هنا لبدء الاستبيان</a></p>\n"
+"<p>شكرا لمشاركتكم!</p>\n"
+"                \n"
+"            "
+
+#. module: slnee_hr_clearance
+#: selection:clearance.department,department_type:0
+msgid "Admin"
+msgstr "مشرف"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_clearance_department_admin_dept_id
+msgid "Admin Department"
+msgstr "قسم الادارة"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_admin_dept_ids
+msgid "Admin Departments"
+msgstr "الإدارات الإدارية"
+
+#. module: slnee_hr_clearance
+#: model:survey.question,question:slnee_hr_clearance.advantage
+msgid "Advantages of working in your company\n"
+"(Please identify advantages of working in your company)"
+msgstr "مزايا العمل في شركتك \ n "
+"(يرجى تحديد مزايا العمل في شركتك)"
+
+#. module: slnee_hr_clearance
+#: model:ir.model,name:slnee_hr_clearance.model_hr_applicant
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_survey_user_input_applicant_id
+msgid "Applicant"
+msgstr "المتقدم"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_approved_date
+msgid "Approved Date"
+msgstr "التسجيل المعتمدة"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_approved_by
+msgid "Approved by"
+msgstr "التي وافقت عليها"
+
+#. module: slnee_hr_clearance
+#: model:survey.question,question:slnee_hr_clearance.new_job_question1
+msgid "Are you intending to continue working immediately?"
+msgstr "Are you intending to continue working immediately?"
+
+#. module: slnee_hr_clearance
+#: model:ir.ui.view,arch_db:slnee_hr_clearance.hr_employee_clearance_form_view1
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: slnee_hr_clearance
+#: model:survey.question,question:slnee_hr_clearance.leave_reason_question2
+msgid "Career Development (training, learning, promotion, etc.)"
+msgstr "التطوير الوظيفي (التدريب ، التعلم ، الترقية ، إلخ)"
+
+#. module: slnee_hr_clearance
+#: model:ir.model,name:slnee_hr_clearance.model_clearance_department
+msgid "Clearance Department"
+msgstr "قسم التخليص"
+
+#. module: slnee_hr_clearance
+#: model:ir.actions.act_window,help:slnee_hr_clearance.menu_hr_employee_clearance_view
+msgid "Click to Add Employee Clearance Details."
+msgstr "انقر لإضافة "تفاصيل التخليص الموظف"."
+
+#. module: slnee_hr_clearance
+#: model:ir.model,name:slnee_hr_clearance.model_res_company
+msgid "Companies"
+msgstr "الشركات"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_company_id
+#: model:ir.ui.view,arch_db:slnee_hr_clearance.view_employee_clearance_filter
+msgid "Company"
+msgstr "الشركة"
+
+#. module: slnee_hr_clearance
+#: model:survey.question,question:slnee_hr_clearance.leave_reason_question1
+msgid "Compensation and Benefits"
+msgstr "التعويضات والفوائد"
+
+#. module: slnee_hr_clearance
+#: model:ir.ui.view,arch_db:slnee_hr_clearance.hr_employee_clearance_form_view1
+msgid "Completion Information"
+msgstr "معلومات الإنجاز"
+
+#. module: slnee_hr_clearance
+#: model:ir.ui.view,arch_db:slnee_hr_clearance.hr_employee_clearance_form_view1
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_contact_phone
+msgid "Contact Phone"
+msgstr "الاتصال الهاتف"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_clearance_department_create_uid
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_clearance_department_create_date
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_department_id
+#: model:ir.ui.view,arch_db:slnee_hr_clearance.view_employee_clearance_filter
+#: model:survey.question,question:slnee_hr_clearance.staff_department
+msgid "Department"
+msgstr "القسم"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_clearance_department_department_type
+msgid "Department Type"
+msgstr "نوع الدائرة"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_clearance_department_display_name
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: slnee_hr_clearance
+#: model:survey.question,question:slnee_hr_clearance.new_job_question3
+msgid "Does your new position offer greater career responsibility?\n"
+""
+msgstr "هل يقدم منصبك الجديد مسؤولية وظيفية أكبر؟\n"
+""
+
+#. module: slnee_hr_clearance
+#: model:survey.question,question:slnee_hr_clearance.new_job_question2
+msgid "Does your new position offer higher remuneration?\n"
+""
+msgstr "هل يقدم منصبك الجديد مكافأة أعلى؟\n"
+""
+
+#. module: slnee_hr_clearance
+#: selection:hr.employee.clearance,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_clearance.hr_employee_clearance_form_view1
+msgid "Done"
+msgstr "منتهي"
+
+#. module: slnee_hr_clearance
+#: selection:hr.employee.clearance,state:0
+msgid "Draft"
+msgstr "مشروع"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_email
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_employee_id
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_survey_user_input_employee_id
+#: model:ir.ui.view,arch_db:slnee_hr_clearance.view_employee_clearance_filter
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: slnee_hr_clearance
+#: model:ir.actions.act_window,name:slnee_hr_clearance.action_hr_employee_clearance
+#: model:ir.actions.act_window,name:slnee_hr_clearance.menu_hr_employee_clearance_view
+#: model:ir.model,name:slnee_hr_clearance.model_hr_employee_clearance
+#: model:ir.ui.menu,name:slnee_hr_clearance.menu_emp_clearance_all
+#: model:ir.ui.view,arch_db:slnee_hr_clearance.hr_employee_clearance_form_view1
+#: model:ir.ui.view,arch_db:slnee_hr_clearance.hr_employee_clearance_tree_view
+msgid "Employee Clearance"
+msgstr "تخليص الموظف"
+
+#. module: slnee_hr_clearance
+#: model:ir.ui.view,arch_db:slnee_hr_clearance.hr_employee_clearance_form_view1
+msgid "Employee Information"
+msgstr "معلومات الموظف"
+
+#. module: slnee_hr_clearance
+#: model:survey.question,question:slnee_hr_clearance.staff_name
+msgid "Employee Name"
+msgstr "اسم الموظف"
+
+#. module: slnee_hr_clearance
+#: model:survey.question,question:slnee_hr_clearance.leave_reason_question4
+msgid "Environment (peers, atmosphere management support, office setup…etc.)"
+msgstr "البيئة (الأقران ، دعم إدارة الغلاف الجوي ، إعداد المكتب ... إلخ.)"
+
+#. module: slnee_hr_clearance
+#: model:mail.template,subject:slnee_hr_clearance.email_template_send_exit_questionnaire
+msgid "Exit Qestionnaire Link"
+msgstr "الخروج من استطلاع لينك"
+
+#. module: slnee_hr_clearance
+#: model:survey.page,title:slnee_hr_clearance.exit_employee_form_page1
+#: model:survey.survey,title:slnee_hr_clearance.exit_employee_form
+msgid "Exit Questionnaire (staff)"
+msgstr "الخروج من الاستبيان (الموظفين)"
+
+#. module: slnee_hr_clearance
+#: model:ir.ui.view,arch_db:slnee_hr_clearance.hr_employee_clearance_form_view1
+msgid "Extra Information"
+msgstr "معلومات اضافية"
+
+#. module: slnee_hr_clearance
+#: selection:clearance.department,department_type:0
+msgid "Finanace"
+msgstr "المالية"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_clearance_department_finance_dept_id
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_finance_dept
+#: model:ir.ui.view,arch_db:slnee_hr_clearance.hr_employee_clearance_form_view1
+msgid "Finance Department"
+msgstr "قسم المالية"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_finance_dept_ids
+msgid "Finance Departments"
+msgstr "الإدارات المالية"
+
+#. module: slnee_hr_clearance
+#: model:ir.ui.view,arch_db:slnee_hr_clearance.view_employee_clearance_filter
+msgid "Group By..."
+msgstr "تجميع حسب.."
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_hr_dept
+#: model:ir.ui.view,arch_db:slnee_hr_clearance.hr_employee_clearance_form_view1
+msgid "HR Department"
+msgstr "قسم الموارد البشرية"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_clearance_department_handled_by
+msgid "Handled by"
+msgstr "أنجز من قبل"
+
+#. module: slnee_hr_clearance
+#: model:survey.question,question:slnee_hr_clearance.future_prospects_question2
+msgid "I would consider joining your company in the future in a different Department"
+msgstr "سأفكر في الانضمام إلى شركتك في المستقبل في قسم آخر"
+
+#. module: slnee_hr_clearance
+#: model:survey.question,question:slnee_hr_clearance.future_prospects_question1
+msgid "I would consider joining your company in the future in the same Department"
+msgstr "سأفكر في الانضمام إلى شركتك في المستقبل في نفس الإدارة"
+
+#. module: slnee_hr_clearance
+#: model:survey.question,question:slnee_hr_clearance.future_prospects_question3
+msgid "I would consider working with my manager in the future in a different Organization "
+msgstr "سأفكر في العمل مع مديري في المستقبل في منظمة مختلفة "
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_clearance_department_id
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: slnee_hr_clearance
+#: selection:clearance.department,department_type:0
+msgid "IT"
+msgstr "IT"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_clearance_department_it_dept_id
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_it_dept
+#: model:ir.ui.view,arch_db:slnee_hr_clearance.hr_employee_clearance_form_view1
+msgid "IT Department"
+msgstr "قسم تكنولوجيا المعلومات"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_it_dept_ids
+msgid "IT Departments"
+msgstr "أقسام تكنولوجيا المعلومات"
+
+#. module: slnee_hr_clearance
+#: model:survey.question,comments_message:slnee_hr_clearance.advantage
+#: model:survey.question,comments_message:slnee_hr_clearance.assessment
+#: model:survey.question,comments_message:slnee_hr_clearance.future_prospects_question1
+#: model:survey.question,comments_message:slnee_hr_clearance.future_prospects_question2
+#: model:survey.question,comments_message:slnee_hr_clearance.future_prospects_question3
+#: model:survey.question,comments_message:slnee_hr_clearance.leave_reason_question1
+#: model:survey.question,comments_message:slnee_hr_clearance.leave_reason_question2
+#: model:survey.question,comments_message:slnee_hr_clearance.leave_reason_question3
+#: model:survey.question,comments_message:slnee_hr_clearance.leave_reason_question4
+#: model:survey.question,comments_message:slnee_hr_clearance.leave_reason_question5
+#: model:survey.question,comments_message:slnee_hr_clearance.leave_reason_question6
+#: model:survey.question,comments_message:slnee_hr_clearance.leave_reason_question7
+#: model:survey.question,comments_message:slnee_hr_clearance.line_manager_name
+#: model:survey.question,comments_message:slnee_hr_clearance.new_job_question1
+#: model:survey.question,comments_message:slnee_hr_clearance.new_job_question2
+#: model:survey.question,comments_message:slnee_hr_clearance.new_job_question3
+#: model:survey.question,comments_message:slnee_hr_clearance.staff_department
+#: model:survey.question,comments_message:slnee_hr_clearance.staff_name
+msgid "If other, please specify:"
+msgstr "فضلا حدد إن كنت اخترت غير ذلك:"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_is_survey
+msgid "Is survey"
+msgstr "هو المسح"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_clearance_department_item
+msgid "Item"
+msgstr "بند"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_last_working_day
+msgid "Last Day of Work"
+msgstr "آخر يوم عمل"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_clearance_department___last_update
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_clearance_department_write_uid
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_clearance_department_write_date
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: slnee_hr_clearance
+#: model:survey.question,question:slnee_hr_clearance.line_manager_name
+msgid "Line Manager's Name"
+msgstr "اسم مدير الخط"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_location
+msgid "Location"
+msgstr "المكان"
+
+#. module: slnee_hr_clearance
+#: model:survey.label,value:slnee_hr_clearance.leave_reason_q1_answer1
+#: model:survey.label,value:slnee_hr_clearance.leave_reason_q2_answer1
+#: model:survey.label,value:slnee_hr_clearance.leave_reason_q3_answer1
+#: model:survey.label,value:slnee_hr_clearance.leave_reason_q4_answer1
+#: model:survey.label,value:slnee_hr_clearance.leave_reason_q5_answer1
+#: model:survey.label,value:slnee_hr_clearance.leave_reason_q6_answer1
+#: model:survey.label,value:slnee_hr_clearance.leave_reason_q7_answer1
+msgid "Major reason"
+msgstr "السبب الرئيسي"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_line_manager_id
+msgid "Manager"
+msgstr "المدير"
+
+#. module: slnee_hr_clearance
+#: model:survey.label,value:slnee_hr_clearance.leave_reason_q1_answer2
+#: model:survey.label,value:slnee_hr_clearance.leave_reason_q2_answer2
+#: model:survey.label,value:slnee_hr_clearance.leave_reason_q3_answer2
+#: model:survey.label,value:slnee_hr_clearance.leave_reason_q4_answer2
+#: model:survey.label,value:slnee_hr_clearance.leave_reason_q5_answer2
+#: model:survey.label,value:slnee_hr_clearance.leave_reason_q6_answer2
+#: model:survey.label,value:slnee_hr_clearance.leave_reason_q7_answer2
+msgid "Minor reason"
+msgstr "سبب طفيف"
+
+#. module: slnee_hr_clearance
+#: selection:clearance.department,item_state:0
+msgid "N/A"
+msgstr "N/A"
+
+#. module: slnee_hr_clearance
+#: selection:clearance.department,item_state:0
+msgid "NO"
+msgstr "لا"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_employee_name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: slnee_hr_clearance
+#: model:survey.question,question:slnee_hr_clearance.leave_reason_question5
+msgid "Nature of the job (Job not interesting)"
+msgstr "طبيعة الوظيفة (مهمة غير مثيرة للاهتمام)"
+
+#. module: slnee_hr_clearance
+#: model:survey.label,value:slnee_hr_clearance.future_prospects_q1_answer2
+#: model:survey.label,value:slnee_hr_clearance.future_prospects_q2_answer2
+#: model:survey.label,value:slnee_hr_clearance.future_prospects_q3_answer2
+#: model:survey.label,value:slnee_hr_clearance.new_job_q1_answer2
+#: model:survey.label,value:slnee_hr_clearance.new_job_q2_answer2
+#: model:survey.label,value:slnee_hr_clearance.new_job_q3_answer2
+msgid "No"
+msgstr "لا"
+
+#. module: slnee_hr_clearance
+#: model:survey.label,value:slnee_hr_clearance.leave_reason_q1_answer3
+#: model:survey.label,value:slnee_hr_clearance.leave_reason_q2_answer3
+#: model:survey.label,value:slnee_hr_clearance.leave_reason_q3_answer3
+#: model:survey.label,value:slnee_hr_clearance.leave_reason_q4_answer3
+#: model:survey.label,value:slnee_hr_clearance.leave_reason_q5_answer3
+#: model:survey.label,value:slnee_hr_clearance.leave_reason_q6_answer3
+#: model:survey.label,value:slnee_hr_clearance.leave_reason_q7_answer3
+msgid "Not a reason"
+msgstr "ليس سببا"
+
+#. module: slnee_hr_clearance
+#: model:survey.page,title:slnee_hr_clearance.exit_employee_form_page3
+msgid "Others:\n"
+"                                Please specify "
+msgstr "آخرون: \ ن "
+"                                رجاء حدد "
+
+#. module: slnee_hr_clearance
+#: model:survey.question,question:slnee_hr_clearance.assessment
+msgid "Overall assessment\n"
+"(Please tell us about any improvements company can make to avoid one or more of the above main leaving reasons)"
+msgstr "التقييم العام \ n "
+"(من فضلك أخبرنا عن أي شركة يمكن تحسينها لتجنب واحد أو أكثر من أسباب المغادرة الرئيسية المذكورة أعلاه)"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_passport_no
+msgid "Passport No"
+msgstr "رقم جواز السفر"
+
+#. module: slnee_hr_clearance
+#: model:survey.question,question:slnee_hr_clearance.leave_reason_question7
+msgid "Personal reasons "
+msgstr "اسباب شخصية "
+
+#. module: slnee_hr_clearance
+#: model:survey.page,title:slnee_hr_clearance.exit_employee_form_page2
+msgid "Please rate the main reasons behind your leave: "
+msgstr "يرجى تقييم الأسباب الرئيسية وراء إجازتك: "
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_public_url_html
+msgid "Public link (html version)"
+msgstr "(رابط العام (إصدار HTML"
+
+#. module: slnee_hr_clearance
+#: selection:hr.employee.clearance,state:0
+msgid "Refused"
+msgstr "رفض"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_clearance_department_remarks
+msgid "Remarks"
+msgstr "ملاحظات"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_response_id
+msgid "Response"
+msgstr "استجابة"
+
+#. module: slnee_hr_clearance
+#: model:ir.ui.view,arch_db:slnee_hr_clearance.view_employee_clearance_filter
+msgid "Search Employee Clearance"
+msgstr "البحث تخليص الموظف"
+
+#. module: slnee_hr_clearance
+#: model:ir.ui.view,arch_db:slnee_hr_clearance.hr_employee_clearance_form_view1
+msgid "Select Employee..."
+msgstr "حدد الموظف ..."
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_seniority_date
+msgid "Seniority Date"
+msgstr "تاريخ الأقدمية"
+
+#. module: slnee_hr_clearance
+#: model:ir.ui.view,arch_db:slnee_hr_clearance.hr_employee_clearance_form_view1
+msgid "Set to Draft"
+msgstr "تعيين كمسودة"
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_clearance_department_item_state
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_state
+msgid "Status"
+msgstr "الحالة "
+
+#. module: slnee_hr_clearance
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_hr_employee_clearance_survey_id
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_res_company_survey_id
+#: model:ir.model.fields,field_description:slnee_hr_clearance.field_res_config_settings_survey_id
+msgid "Survey"
+msgstr "إستفتاء"
+
+#. module: slnee_hr_clearance
+#: model:ir.model,name:slnee_hr_clearance.model_survey_user_input
+msgid "Survey User Input"
+msgstr "مسح إدخالات المستخدم"
+
+#. module: slnee_hr_clearance
+#: model:survey.question,validation_error_msg:slnee_hr_clearance.advantage
+#: model:survey.question,validation_error_msg:slnee_hr_clearance.assessment
+#: model:survey.question,validation_error_msg:slnee_hr_clearance.future_prospects_question1
+#: model:survey.question,validation_error_msg:slnee_hr_clearance.future_prospects_question2
+#: model:survey.question,validation_error_msg:slnee_hr_clearance.future_prospects_question3
+#: model:survey.question,validation_error_msg:slnee_hr_clearance.leave_reason_question1
+#: model:survey.question,validation_error_msg:slnee_hr_clearance.leave_reason_question2
+#: model:survey.question,validation_error_msg:slnee_hr_clearance.leave_reason_question3
+#: model:survey.question,validation_error_msg:slnee_hr_clearance.leave_reason_question4
+#: model:survey.question,validation_error_msg:slnee_hr_clearance.leave_reason_question5
+#: model:survey.question,validation_error_msg:slnee_hr_clearance.leave_reason_question6
+#: model:survey.question,validation_error_msg:slnee_hr_clearance.leave_reason_question7
+#: model:survey.question,validation_error_msg:slnee_hr_clearance.line_manager_name
+#: model:survey.question,validation_error_msg:slnee_hr_clearance.new_job_question1
+#: model:survey.question,validation_error_msg:slnee_hr_clearance.new_job_question2
+#: model:survey.question,validation_error_msg:slnee_hr_clearance.new_job_question3
+#: model:survey.question,validation_error_msg:slnee_hr_clearance.staff_department
+#: model:survey.question,validation_error_msg:slnee_hr_clearance.staff_name
+msgid "The answer you entered has an invalid format."
+msgstr "الجواب الذي أدخلته على تنسيق غير صالح"
+
+#. module: slnee_hr_clearance
+#: sql_constraint:hr.employee.clearance:0
+msgid "This employee celarance process is already done."
+msgstr "تم بالفعل تنفيذ عملية التوظيف هذه."
+
+#. module: slnee_hr_clearance
+#: model:survey.question,constr_error_msg:slnee_hr_clearance.advantage
+#: model:survey.question,constr_error_msg:slnee_hr_clearance.assessment
+#: model:survey.question,constr_error_msg:slnee_hr_clearance.future_prospects_question1
+#: model:survey.question,constr_error_msg:slnee_hr_clearance.future_prospects_question2
+#: model:survey.question,constr_error_msg:slnee_hr_clearance.future_prospects_question3
+#: model:survey.question,constr_error_msg:slnee_hr_clearance.leave_reason_question1
+#: model:survey.question,constr_error_msg:slnee_hr_clearance.leave_reason_question2
+#: model:survey.question,constr_error_msg:slnee_hr_clearance.leave_reason_question3
+#: model:survey.question,constr_error_msg:slnee_hr_clearance.leave_reason_question4
+#: model:survey.question,constr_error_msg:slnee_hr_clearance.leave_reason_question5
+#: model:survey.question,constr_error_msg:slnee_hr_clearance.leave_reason_question6
+#: model:survey.question,constr_error_msg:slnee_hr_clearance.leave_reason_question7
+#: model:survey.question,constr_error_msg:slnee_hr_clearance.line_manager_name
+#: model:survey.question,constr_error_msg:slnee_hr_clearance.new_job_question1
+#: model:survey.question,constr_error_msg:slnee_hr_clearance.new_job_question2
+#: model:survey.question,constr_error_msg:slnee_hr_clearance.new_job_question3
+#: model:survey.question,constr_error_msg:slnee_hr_clearance.staff_department
+#: model:survey.question,constr_error_msg:slnee_hr_clearance.staff_name
+msgid "This question requires an answer."
+msgstr "هذا السؤال يحتاج إلى إجابة"
+
+#. module: slnee_hr_clearance
+#: selection:hr.employee.clearance,state:0
+msgid "Waiting Approval"
+msgstr "في انتظار الموافقة"
+
+#. module: slnee_hr_clearance
+#: model:survey.question,question:slnee_hr_clearance.leave_reason_question6
+msgid "Work Load / Stress / working hours "
+msgstr "حمل العمل / الإجهاد / ساعات العمل "
+
+#. module: slnee_hr_clearance
+#: selection:clearance.department,item_state:0
+msgid "YES"
+msgstr "نعم فعلا"
+
+#. module: slnee_hr_clearance
+#: model:survey.label,value:slnee_hr_clearance.future_prospects_q1_answer1
+#: model:survey.label,value:slnee_hr_clearance.future_prospects_q2_answer1
+#: model:survey.label,value:slnee_hr_clearance.future_prospects_q3_answer1
+#: model:survey.label,value:slnee_hr_clearance.new_job_q1_answer1
+#: model:survey.label,value:slnee_hr_clearance.new_job_q2_answer1
+#: model:survey.label,value:slnee_hr_clearance.new_job_q3_answer1
+msgid "Yes"
+msgstr "نعم فعلا"
+
+#. module: slnee_hr_clearance
+#: code:addons/slnee_hr_clearance/models/hr_employee_clearance.py:304
+#, python-format
+msgid "You cannot confirm request without complete department information."
+msgstr "لا يمكنك تأكيد الطلب دون معلومات كاملة عن القسم."
+
+#. module: slnee_hr_clearance
+#: code:addons/slnee_hr_clearance/models/hr_employee_clearance.py:70
+#, python-format
+msgid "You cannot remove the record which is in %s state!"
+msgstr "لا يمكنك إزالة السجل الموجود في حالة٪ s!"
+
+#. module: slnee_hr_clearance
+#: model:survey.question,question:slnee_hr_clearance.leave_reason_question3
+msgid "Your immediate Manager/ supervisor (style, leadership, etc.)"
+msgstr "مديرك / مشرفك المباشر (الأسلوب ، القيادة ، إلخ)"
+
+#. module: slnee_hr_clearance
+#: model:ir.ui.view,arch_db:slnee_hr_clearance.res_config_settings_view_form12
+msgid "chart on employee form"
+msgstr "الرسم البياني على شكل موظف"
+
+#. module: slnee_hr_clearance
+#: model:ir.ui.view,arch_db:slnee_hr_clearance.view_employee_clearance_filter
+msgid "company"
+msgstr "شركة"
+
+#. module: slnee_hr_clearance
+#: model:ir.model,name:slnee_hr_clearance.model_res_config_settings
+msgid "res.config.settings"
+msgstr "الدقة.التكوين.إعدادات"
+

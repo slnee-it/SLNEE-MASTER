@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_city_user,access_city_user,model_res_city,base.group_user,1,0,0,0
+access_city_officer,access_city_officer,model_res_city,hr.group_hr_user,1,1,1,0
+access_city_manager,access_city_manager,model_res_city,hr.group_hr_manager,1,1,1,1
+access_city_airfare_user,access_city_airfare_user,model_city_airfare,base.group_user,1,0,0,0
+access_city_airfare_officer,access_city_airfare_officer,model_city_airfare,hr.group_hr_user,1,1,1,1
+access_city_airfare_manager,access_city_airfare_manager,model_city_airfare,hr.group_hr_manager,1,1,1,1

@@ -1,0 +1,555 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_copy_center
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-11 12:24+0000\n"
+"PO-Revision-Date: 2018-09-11 12:24+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,copy_style:0
+msgid "1 sided to 1 sided"
+msgstr "1 من جانب واحد من جانب واحد"
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,copy_style:0
+msgid "1 sided to 2 sided"
+msgstr "1 من جانب إلى جانبين"
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,copy_style:0
+msgid "2 sided to 1 sided"
+msgstr "الوجهين إلى جانب واحد"
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,copy_style:0
+msgid "2 sided to 2 sided"
+msgstr "الوجهين إلى جانبين"
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,paper:0
+msgid "A3"
+msgstr "A3"
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,paper:0
+msgid "A4"
+msgstr "A4"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_product_line_price_subtotal
+msgid "Amount"
+msgstr "كمية"
+
+#. module: slnee_hr_copy_center
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.copy_center_request_form_view
+msgid "Approve"
+msgstr "موافقه"
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.hr_admin_copy_center_filter
+msgid "Approved"
+msgstr "وافق"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_approved_date
+msgid "Approved Date"
+msgstr "التسجيل المعتمدة"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_approved_by
+msgid "Approved by"
+msgstr "التي وافقت عليها"
+
+#. module: slnee_hr_copy_center
+#: model:product.product,description_sale:slnee_hr_copy_center.product_product_stationary4
+#: model:product.product,name:slnee_hr_copy_center.product_product_stationary4
+#: model:product.template,description_sale:slnee_hr_copy_center.product_product_stationary4_product_template
+#: model:product.template,name:slnee_hr_copy_center.product_product_stationary4_product_template
+msgid "Black and White"
+msgstr "اسود و ابيض"
+
+#. module: slnee_hr_copy_center
+#: model:product.product,description_sale:slnee_hr_copy_center.product_product_stationary3
+#: model:product.product,name:slnee_hr_copy_center.product_product_stationary3
+#: model:product.template,description_sale:slnee_hr_copy_center.product_product_stationary3_product_template
+#: model:product.template,name:slnee_hr_copy_center.product_product_stationary3_product_template
+msgid "Blue window cover with blue back"
+msgstr "غطاء نافذة أزرق مع ظهر أزرق"
+
+#. module: slnee_hr_copy_center
+#: model:product.product,description_sale:slnee_hr_copy_center.product_product_stationary8
+#: model:product.product,name:slnee_hr_copy_center.product_product_stationary8
+#: model:product.template,description_sale:slnee_hr_copy_center.product_product_stationary8_product_template
+#: model:product.template,name:slnee_hr_copy_center.product_product_stationary8_product_template
+msgid "CD Burning"
+msgstr "حرق القرص المضغوط"
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,request_type:0
+msgid "CONFIDENTIAL"
+msgstr "سري"
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,paper:0
+msgid "Cardstock"
+msgstr "البطاقات"
+
+#. module: slnee_hr_copy_center
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.copy_center_request_form_view
+msgid "Client Details"
+msgstr "تفاصيل العميل"
+
+#. module: slnee_hr_copy_center
+#: model:product.product,description_sale:slnee_hr_copy_center.product_product_stationary
+#: model:product.product,name:slnee_hr_copy_center.product_product_stationary
+#: model:product.template,description_sale:slnee_hr_copy_center.product_product_stationary_product_template
+#: model:product.template,name:slnee_hr_copy_center.product_product_stationary_product_template
+msgid "Collated"
+msgstr "المجمعة"
+
+#. module: slnee_hr_copy_center
+#: model:product.product,description_sale:slnee_hr_copy_center.product_product_stationary5
+#: model:product.product,name:slnee_hr_copy_center.product_product_stationary5
+#: model:product.template,description_sale:slnee_hr_copy_center.product_product_stationary5_product_template
+#: model:product.template,name:slnee_hr_copy_center.product_product_stationary5_product_template
+msgid "Colour"
+msgstr "اللون"
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,paper:0
+msgid "Colour Paper"
+msgstr "ورقة ملونة"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: slnee_hr_copy_center
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.copy_center_request_form_view
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_product_line_copy_center_id
+#: model:product.product,name:slnee_hr_copy_center.copy_center
+#: model:product.template,name:slnee_hr_copy_center.copy_center_product_template
+msgid "Copy Center"
+msgstr "مركز نسخ"
+
+#. module: slnee_hr_copy_center
+#: model:ir.actions.act_window,name:slnee_hr_copy_center.action_hr_admin_copy_center
+#: model:ir.ui.menu,name:slnee_hr_copy_center.menu_hr_admin_copy_center
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.copy_center_request_form_view
+msgid "Copy Center Request"
+msgstr "طلب نسخ مركز"
+
+#. module: slnee_hr_copy_center
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.copy_center_request_form_view
+msgid "Copy Details"
+msgstr "نسخ التفاصيل"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_copy_style
+msgid "Copy Style"
+msgstr "نسخ الاسلوب"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_create_uid
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_product_line_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_create_date
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_product_line_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,delivery_instructions:0
+msgid "Deliver to another employee"
+msgstr "تسليم إلى موظف آخر"
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,delivery_instructions:0
+msgid "Deliver to employee desk"
+msgstr "تسليم إلى مكتب الموظف"
+
+#. module: slnee_hr_copy_center
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.copy_center_request_form_view
+msgid "Delivery Details"
+msgstr "تفاصيل التسليم"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_delivery_instructions
+msgid "Delivery Instructions"
+msgstr "تعليمات التوصيل"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_department_id
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.hr_admin_copy_center_filter
+msgid "Department"
+msgstr "القسم"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_product_line_description
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.copy_center_request_form_view
+msgid "Description"
+msgstr "الوصف"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_display_name
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_product_line_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.copy_center_request_form_view
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.hr_admin_copy_center_filter
+msgid "Done"
+msgstr "منتهي"
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.hr_admin_copy_center_filter
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_email_contact
+msgid "Email Contact"
+msgstr "الاتصال عبر البريد الالكتروني"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_employee_id
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.hr_admin_copy_center_filter
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: slnee_hr_copy_center
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.copy_center_request_form_view
+msgid "Employee Details"
+msgstr "تفاصيل موظف"
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,delivery_instructions:0
+msgid "Employee to retrieved from copy centre "
+msgstr "موظف لاستردادها من مركز النسخ "
+
+#. module: slnee_hr_copy_center
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.copy_center_request_form_view
+msgid "Expense"
+msgstr "المصروفات"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_expense_ids
+msgid "Expenses"
+msgstr "نفقات"
+
+#. module: slnee_hr_copy_center
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.copy_center_request_form_view
+msgid "Extra Information"
+msgstr "معلومات اضافية"
+
+#. module: slnee_hr_copy_center
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.copy_center_request_form_view
+msgid "Generate Expense"
+msgstr "توليد المصروفات"
+
+#. module: slnee_hr_copy_center
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.hr_admin_copy_center_filter
+msgid "Group By..."
+msgstr "تجميع حسب.."
+
+#. module: slnee_hr_copy_center
+#: model:product.product,description_sale:slnee_hr_copy_center.product_product_stationary1
+#: model:product.product,name:slnee_hr_copy_center.product_product_stationary1
+#: model:product.template,description_sale:slnee_hr_copy_center.product_product_stationary1_product_template
+#: model:product.template,name:slnee_hr_copy_center.product_product_stationary1_product_template
+msgid "Grouped"
+msgstr "مجمعة"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_id
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_product_line_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.copy_center_request_form_view
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.hr_admin_copy_center_filter
+msgid "In Progress"
+msgstr "في تَقَدم "
+
+#. module: slnee_hr_copy_center
+#: code:addons/slnee_hr_copy_center/models/hr_copy_center.py:187
+#, python-format
+msgid "Information"
+msgstr "معلومات"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_job_description
+msgid "Job Description"
+msgstr "وصف العمل"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_job_id
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.hr_admin_copy_center_filter
+msgid "Job Position"
+msgstr "المناصب الوظيفية"
+
+#. module: slnee_hr_copy_center
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.copy_center_request_form_view
+msgid "Job Requirements"
+msgstr "متطلبات العمل"
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,orientation:0
+msgid "Landscape"
+msgstr "المناظر الطبيعيه"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center___last_update
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_product_line___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_write_uid
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_product_line_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_write_date
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_product_line_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,paper:0
+msgid "Letterhead"
+msgstr "ترويسة"
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,paper:0
+msgid "Letterhead 2nd Sheets"
+msgstr "أوراق ذات رأسية 2"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_mobile_contact
+msgid "Mobile Contact"
+msgstr "الاتصال المحمول"
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,request_type:0
+msgid "NON-CONFIDENTIAL"
+msgstr "غير سرية"
+
+#. module: slnee_hr_copy_center
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.copy_center_request_form_view
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_orientation
+msgid "Orientation"
+msgstr "الاتجاه"
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,paper:0
+msgid "Other"
+msgstr "آخر"
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,delivery_instructions:0
+msgid "Other delivery request"
+msgstr "طلب تسليم آخر"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_paper
+msgid "Paper"
+msgstr "ورقة"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_product_line_quantity
+msgid "Paper Per Set"
+msgstr "ورقة لكل مجموعة"
+
+#. module: slnee_hr_copy_center
+#: model:product.product,description_sale:slnee_hr_copy_center.product_product_stationary7
+#: model:product.product,name:slnee_hr_copy_center.product_product_stationary7
+#: model:product.template,description_sale:slnee_hr_copy_center.product_product_stationary7_product_template
+#: model:product.template,name:slnee_hr_copy_center.product_product_stationary7_product_template
+msgid "Plastic spiral binding"
+msgstr "البلاستيك لولبية ملزمة"
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,orientation:0
+msgid "Portrait"
+msgstr "صورة"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_product_ids
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_product_line_product_id
+msgid "Product"
+msgstr "المنتج"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model,name:slnee_hr_copy_center.model_product_template
+msgid "Product Template"
+msgstr "قالب المنتج"
+
+#. module: slnee_hr_copy_center
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.copy_center_request_form_view
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.hr_admin_copy_center_filter
+msgid "Refused"
+msgstr "مرفوض"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_request_type
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.copy_center_request_form_view
+msgid "Request Type"
+msgstr "نوع الطلب"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_date_required
+msgid "Require Date"
+msgstr "يتطلب التاريخ"
+
+#. module: slnee_hr_copy_center
+#: code:addons/slnee_hr_copy_center/models/hr_copy_center.py:188
+#, python-format
+msgid "Require Date must be greater than Submit Date."
+msgstr "يجب أن يكون تاريخ الطلب أكبر من تاريخ الإرسال."
+
+#. module: slnee_hr_copy_center
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.copy_center_request_form_view
+msgid "Set as Draft"
+msgstr "تعيين كمسودة"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_product_line_set
+msgid "Sets"
+msgstr "موعاتs"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_special_instructions
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.copy_center_request_form_view
+msgid "Special Instructions"
+msgstr "تعليمات خاصة"
+
+#. module: slnee_hr_copy_center
+#: model:product.product,description_sale:slnee_hr_copy_center.product_product_stationary6
+#: model:product.product,name:slnee_hr_copy_center.product_product_stationary6
+#: model:product.template,description_sale:slnee_hr_copy_center.product_product_stationary6_product_template
+#: model:product.template,name:slnee_hr_copy_center.product_product_stationary6_product_template
+msgid "Spiral binding"
+msgstr "دوامة ملزمة"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_state
+msgid "State"
+msgstr "المحافظة"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_product_product_stationary
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_product_template_stationary
+#: model:product.category,name:slnee_hr_copy_center.product_category_stationary
+msgid "Stationary"
+msgstr "ثابت"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_date_submited
+msgid "Submit Date"
+msgstr "تاريخ النشر"
+
+#. module: slnee_hr_copy_center
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.hr_admin_copy_center_filter
+msgid "Submitted Date"
+msgstr "تاريخ تقديمه"
+
+#. module: slnee_hr_copy_center
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.copy_center_request_form_view
+msgid "Total"
+msgstr "الإجمالي "
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_amount_total
+msgid "Total Amount"
+msgstr "إجمالي المبلغ"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_copy_center_expense_total
+msgid "Total Expense"
+msgstr "المصاريف الكلية"
+
+#. module: slnee_hr_copy_center
+#: model:product.product,description_sale:slnee_hr_copy_center.product_product_stationary2
+#: model:product.product,name:slnee_hr_copy_center.product_product_stationary2
+#: model:product.template,description_sale:slnee_hr_copy_center.product_product_stationary2_product_template
+#: model:product.template,name:slnee_hr_copy_center.product_product_stationary2_product_template
+msgid "Transparent Cover Page with blue back"
+msgstr "صفحة الغلاف شفافة مع ظهر أزرق"
+
+#. module: slnee_hr_copy_center
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.copy_center_request_form_view
+msgid "Type"
+msgstr "النوع"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model.fields,field_description:slnee_hr_copy_center.field_product_line_price_unit
+msgid "Unit Price"
+msgstr "سعر الوحده "
+
+#. module: slnee_hr_copy_center
+#: selection:copy.center,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.hr_admin_copy_center_filter
+msgid "Waiting Approval"
+msgstr "في انتظار الموافقة"
+
+#. module: slnee_hr_copy_center
+#: code:addons/slnee_hr_copy_center/models/hr_copy_center.py:117
+#, python-format
+msgid "You cannot remove the record which is in %s state!"
+msgstr "لا يمكنك إزالة السجل الموجود في حالة٪ s!"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model,name:slnee_hr_copy_center.model_admin_reports
+msgid "admin.reports"
+msgstr "admin.reports"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model,name:slnee_hr_copy_center.model_copy_center
+msgid "copy.center"
+msgstr "copy.center"
+
+#. module: slnee_hr_copy_center
+#: model:ir.ui.view,arch_db:slnee_hr_copy_center.hr_admin_copy_center_tree_view
+msgid "hr_admin Copy Center"
+msgstr "hr_admin مركز النسخ"
+
+#. module: slnee_hr_copy_center
+#: model:ir.model,name:slnee_hr_copy_center.model_product_line
+msgid "product.line"
+msgstr "product.line"
+

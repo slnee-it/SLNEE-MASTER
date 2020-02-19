@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- hr_payroll -->
+    <menuitem action="hr_payroll.action_view_hr_payslip_form" id="hr_payroll.menu_department_tree" parent="hr_payroll.menu_hr_payroll_root" groups="base.group_user"/>
+
+    <!-- other Payslip -->
+    <menuitem id="menu_hr_payroll" name="Other Allowance/Deduction" sequence="10"
+        parent="hr_payroll.menu_hr_payroll_root" action="action_other_hr_payslip" groups="hr_payroll.group_hr_payroll_user"/>
+
+    <menuitem action="action_hr_payslip_export" id="menu_payslip_export" parent="hr_payroll.menu_hr_payroll_configuration"
+              groups="hr.group_hr_manager,account.group_account_user"/>
+
+</odoo>

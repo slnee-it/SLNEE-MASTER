@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+hr_contract_hr_employee,hr_contract_hr_employee,hr_contract.model_hr_contract,base.group_user,1,0,0,0
+hr_contract_type_gr_supervisor,hr.contract.type.gr_supervisor,hr_contract.model_hr_contract_type,slnee_hr.group_gr_officer,1,0,0,00,0
+hr_contract_type_hr_officer,hr.contract.type.hr_officer,hr_contract.model_hr_contract_type,hr.group_hr_user,1,1,1,0
+hr_contract_hr_hof,hr_contract_hr_hof,hr_contract.model_hr_contract,slnee_hr.group_hof,1,1,1,0

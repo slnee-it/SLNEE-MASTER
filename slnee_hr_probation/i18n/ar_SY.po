@@ -1,0 +1,392 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_probation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-12 11:37+0000\n"
+"PO-Revision-Date: 2018-09-12 11:37+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_probation
+#: model:mail.template,body_html:slnee_hr_probation.email_template_employee_relieving
+msgid "\n"
+"            <div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34);\n"
+"                background-color: #FFF; \">\n"
+"                <p>Hello <b>${object.employee_id.name}</b>,</p>\n"
+"                <p>You are Relive at date <b>${object.probation_complete_date}</b>.</p>\n"
+"                </div>\n"
+"                <div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px;\n"
+"                color: rgb(34, 34, 34); background-color: #FFF; margin-left: 0px; \">\n"
+"                <p>Regards,</p>\n"
+"                <p>${(object.company_id.name)}</p>\n"
+"            </div>\n"
+"        "
+msgstr "\n"
+"            <div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34);\n"
+"                background-color: #FFF; \">\n"
+"                <p>مرحبا <b>${object.employee_id.name}</b>,</p>\n"
+"                <p>انت تستمتع في التاريخ <b>${object.probation_complete_date}</b>.</p>\n"
+"                </div>\n"
+"                <div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px;\n"
+"                color: rgb(34, 34, 34); background-color: #FFF; margin-left: 0px; \">\n"
+"                <p>مع تحياتي,</p>\n"
+"                <p>${(object.company_id.name)}</p>\n"
+"            </div>\n"
+"        "
+
+#. module: slnee_hr_probation
+#: model:mail.template,body_html:slnee_hr_probation.email_template_probation_end
+msgid "\n"
+"            <div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34);\n"
+"                background-color: #FFF; \">\n"
+"                <p>Hello <b>${object.employee_id.name}</b>,</p>\n"
+"                <p>Your probation period End at date <b>${object.probation_complete_date}</b>.</p>\n"
+"                </div>\n"
+"                <div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px;\n"
+"                color: rgb(34, 34, 34); background-color: #FFF; margin-left: 0px; \">\n"
+"                <p>Regards,</p>\n"
+"                <p>${(object.company_id.name)}</p>\n"
+"            </div>\n"
+"        "
+msgstr "\n"
+"            <div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34);\n"
+"                background-color: #FFF; \">\n"
+"                <p>مرحبا <b>${object.employee_id.name}</b>,</p>\n"
+"                <p>فترة الاختبار الخاصة بك تنتهي في التاريخ <b>${object.probation_complete_date}</b>.</p>\n"
+"                </div>\n"
+"                <div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px;\n"
+"                color: rgb(34, 34, 34); background-color: #FFF; margin-left: 0px; \">\n"
+"                <p>مع تحياتي،</p>\n"
+"                <p>${(object.company_id.name)}</p>\n"
+"            </div>\n"
+"        "
+
+#. module: slnee_hr_probation
+#: model:mail.template,body_html:slnee_hr_probation.email_template_probation_extend
+msgid "\n"
+"            <div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34);\n"
+"                background-color: #FFF; \">\n"
+"                <p>Hello <b>${object.employee_id.name}</b>,</p>\n"
+"                <p>Your probation period Extend for date <b>${object.extend_start_date}</b> to <b>${object.extend_end_date}</b>.</p>\n"
+"                </div>\n"
+"                <div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px;\n"
+"                color: rgb(34, 34, 34); background-color: #FFF; margin-left: 0px; \">\n"
+"                <p>Regards,</p>\n"
+"                <p>${(object.company_id.name)}</p>\n"
+"            </div>\n"
+"        "
+msgstr "\n"
+"            <div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34);\n"
+"                background-color: #FFF; \">\n"
+"                <p>مرحبا <b>${object.employee_id.name}</b>,</p>\n"
+"                <p>فترة الاختبار الخاصة بك تمديد لتاريخ <b>${object.extend_start_date}</b> إلى <b>${object.extend_end_date}</b>.</p>\n"
+"                </div>\n"
+"                <div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px;\n"
+"                color: rgb(34, 34, 34); background-color: #FFF; margin-left: 0px; \">\n"
+"                <p>مع تحياتي،</p>\n"
+"                <p>${(object.company_id.name)}</p>\n"
+"            </div>\n"
+"        "
+
+#. module: slnee_hr_probation
+#: selection:emp.probation.review,rating:0
+msgid "10"
+msgstr "10"
+
+#. module: slnee_hr_probation
+#: selection:emp.probation.review,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_filter
+msgid "Approved"
+msgstr "وافق"
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_approved_date
+msgid "Approved Date"
+msgstr "التسجيل المعتمدة"
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_approved_by
+msgid "Approved by"
+msgstr "التي وافقت عليها"
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: slnee_hr_probation
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_filter
+msgid "Confirmed"
+msgstr "مؤكد"
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_contract_id
+msgid "Contract"
+msgstr "العقد "
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_department_id
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_filter
+msgid "Department"
+msgstr "القسم"
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: slnee_hr_probation
+#: selection:emp.probation.review,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_form
+msgid "Done"
+msgstr "منتهي"
+
+#. module: slnee_hr_probation
+#: selection:emp.probation.review,state:0
+msgid "Draft"
+msgstr "مشروع"
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_employee_id
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_filter
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: slnee_hr_probation
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_form
+msgid "Employee Information"
+msgstr "معلومات الموظف"
+
+#. module: slnee_hr_probation
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_tree
+msgid "Employee Probation Plan"
+msgstr "خطة اختبار الموظف"
+
+#. module: slnee_hr_probation
+#: model:ir.model,name:slnee_hr_probation.model_emp_probation_review
+msgid "Employee Probation Review"
+msgstr "استعراض السلوك للموظفين"
+
+#. module: slnee_hr_probation
+#: model:mail.template,subject:slnee_hr_probation.email_template_employee_relieving
+msgid "Employee Relieve"
+msgstr "عامل تخفيف"
+
+#. module: slnee_hr_probation
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_filter
+msgid "Employee Status"
+msgstr "حالة الموظف"
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_employment_status
+msgid "Employment Status"
+msgstr "نظام العمل"
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_extend_end_date
+msgid "Extend End Date"
+msgstr "تمديد تاريخ الانتهاء"
+
+#. module: slnee_hr_probation
+#: selection:emp.probation.review,employment_status:0
+msgid "Extend Probation"
+msgstr "تمديد اختبار"
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_extend_start_date
+msgid "Extend Start Date"
+msgstr "تمديد تاريخ البدء"
+
+#. module: slnee_hr_probation
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_form
+msgid "Extra Information"
+msgstr "معلومات اضافية"
+
+#. module: slnee_hr_probation
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_filter
+msgid "Filter"
+msgstr "فلتر"
+
+#. module: slnee_hr_probation
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_filter
+msgid "Group By..."
+msgstr "تجميع حسب.."
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_hof_id
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_filter
+msgid "Head of Function"
+msgstr "رئيس وظيفة"
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_job_id
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_filter
+msgid "Job Position"
+msgstr "المناصب الوظيفية"
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_join_date
+msgid "Join Date"
+msgstr "تاريخ الانضمام"
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_line_manager_id
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_filter
+msgid "Manager"
+msgstr "المدير"
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_branch_id
+msgid "Office"
+msgstr "مكتب"
+
+#. module: slnee_hr_probation
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_form
+msgid "Plan"
+msgstr "خطّة"
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_probation_complete_date
+msgid "Probation Complete Date"
+msgstr "اختبار كامل التاريخ"
+
+#. module: slnee_hr_probation
+#: selection:emp.probation.review,employment_status:0
+msgid "Probation End"
+msgstr "نهاية الاختبار"
+
+#. module: slnee_hr_probation
+#: model:ir.ui.menu,name:slnee_hr_probation.menu_emp_probation_review
+msgid "Probation Period"
+msgstr "فترة اختبار"
+
+#. module: slnee_hr_probation
+#: model:mail.template,subject:slnee_hr_probation.email_template_probation_end
+msgid "Probation Period End"
+msgstr "نهاية فترة الاختبار"
+
+#. module: slnee_hr_probation
+#: model:mail.template,subject:slnee_hr_probation.email_template_probation_extend
+msgid "Probation Period Extend"
+msgstr "تمديد فترة الاختبار"
+
+#. module: slnee_hr_probation
+#: model:ir.actions.act_window,name:slnee_hr_probation.action_emp_probation_review
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_probation_plan
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_form
+msgid "Probation Plan"
+msgstr "خطة الاختبار"
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_rating
+msgid "Progress Rate"
+msgstr "معدل التقدم"
+
+#. module: slnee_hr_probation
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_form
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: slnee_hr_probation
+#: selection:emp.probation.review,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_filter
+msgid "Refused"
+msgstr "مرفوض"
+
+#. module: slnee_hr_probation
+#: selection:emp.probation.review,employment_status:0
+msgid "Relieve"
+msgstr "اعفاء"
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_review
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_form
+msgid "Review"
+msgstr "إعادة النظر"
+
+#. module: slnee_hr_probation
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_form
+msgid "Send Mail"
+msgstr "إرسال بريد"
+
+#. module: slnee_hr_probation
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_form
+msgid "Send Review"
+msgstr "إرسال مراجعة"
+
+#. module: slnee_hr_probation
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_form
+msgid "Set Probation Plan"
+msgstr "مجموعة خطة الاختبار"
+
+#. module: slnee_hr_probation
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_form
+msgid "Set to Draft"
+msgstr "تعيين كمسودة"
+
+#. module: slnee_hr_probation
+#: model:ir.model.fields,field_description:slnee_hr_probation.field_emp_probation_review_state
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_filter
+msgid "Status"
+msgstr "الحالة "
+
+#. module: slnee_hr_probation
+#: model:ir.ui.view,arch_db:slnee_hr_probation.emp_probation_review_filter
+msgid "To Approve"
+msgstr "للاعتماد"
+
+#. module: slnee_hr_probation
+#: code:addons/slnee_hr_probation/models/hr_employee_probation.py:188
+#, python-format
+msgid "Today's date must be 10 days less then Probation Complete Date"
+msgstr "يجب أن يكون تاريخ اليوم 10 أيام أقل من تاريخ اكتمال فترة الاختبار"
+
+#. module: slnee_hr_probation
+#: selection:emp.probation.review,state:0
+msgid "Waiting Approval"
+msgstr "في انتظار الموافقة"
+
+#. module: slnee_hr_probation
+#: code:addons/slnee_hr_probation/models/hr_employee_probation.py:148
+#, python-format
+msgid "You cannot remove the record which is in %s state!"
+msgstr "لا يمكنك إزالة السجل الموجود في حالة٪ s!"
+

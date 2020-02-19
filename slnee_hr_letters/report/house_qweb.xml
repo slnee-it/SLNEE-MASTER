@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="house_allowance_report">
+        <t t-call="web.html_container">
+            <t t-call="web.basic_layout">
+                <t t-foreach="docs" t-as="o">
+                   <div class="page" style="text-align: right;  face :Helvetica; font-size:20px;">
+                   <t t-set="arg" t-value="{'employee_id' : [o.employee_id.id, o.employee_id.name],'date':o.date,'manager_id': [o.manager_id.id, o.manager_id.name]}"/>
+                   <t t-set="result" t-value="get_data" />
+                   <t t-foreach="result" t-as="data">
+                       <t t-set="islamic_date" t-value="get_islamic_date(data['date'])"/>
+                        <p>
+                            التـاريخ‬  :‬‬<t t-if="islamic_date"><t t-esc="islamic_date" /> </t>  هـ‬‬
+                        </p>
+                        <p>
+                            الموافق‬
+                            <t t-if="data['date']">
+                                <span t-esc="time.strftime('%d-%m-%Y', time.strptime(data['date'],'%Y-%m-%d'))"/>
+                            </t> م‬
+                        </p>
+                        <p style="P6;font-weight: bold; text-align:center; Table3; font-size:20px "><u>
+                             الى من يهمه الأمر</u>
+                        </p>
+                        <p>
+                            .السلام عليكم و رحمة الله و بركاته
+                        </p>
+                        <p>
+                            <span>نفيدكم بأن الأستاذ /</span>
+                            <font face="Helvetica-Bold" size="14.0">
+                                <t t-if="data['employee'].arabic_name "><t t-esc="data['employee'].arabic_name " /> </t>
+                            </font>,
+                            <t t-if="data['emp_country']"><t t-esc="data['emp_country']" /> </t>
+                        </p>
+                        <p>
+                            <span>الجنسية بموجب اقامة رقم</span>
+                             <t t-if="data['doc_number']"><t t-esc="data['doc_number']" />, </t>
+                            <span>هو أحد موظفين شركة</span>
+
+
+                        </p>
+                        <p>
+                            ،<t style="font-weight: bold;">
+
+                                    <t t-if="o.employee_id.user_id and o.employee_id.user_id.company_id" >
+                                        <span t-field="o.employee_id.user_id.company_id.arabic_name">
+                                        </span>
+                                    </t>
+                                    <t t-if="o.employee_id.job_id" >
+                                        <span t-field="o.employee_id.job_id.arabic_name" />
+                                    </t>
+                            </t>
+                            <span>فرع </span>
+                            <t t-if="data['branch_id']">
+                                <t t-esc="data['branch_id']" />
+                            </t>
+                        </p>
+                        <p>
+                            <span>إلتحق بنا في تاريخ</span>
+                                <t t-if="data['join_date']">
+                                    <span t-esc="time.strftime('%d-%m-%Y', time.strptime(data['join_date'],'%Y-%m-%d'))"/>م،
+                                </t>
+                            <span>بوظيفة</span>
+                            <t t-if="data['job_id']">."<t t-esc="data['job_id']" />"</t>
+                            <span>ولا يزال</span>
+                        </p>
+                        <p>
+                            <span>على رأس العمل حتى هذا التاريخ. ويرغب في إستئجار مسكن ولا</span>
+                        </p>
+                        <p>
+                            <span>.مانع لدينا من ذلك</span>
+                        </p>
+                        <p>
+                            <span>وقد أعطي هذا التعريف بناء على طلبه دون أدنى مسؤولية تجاه</span>
+                        </p>
+                        <p>
+                            <span>.الشركة</span>
+                        </p>
+                        <p style="text-align: left;  ">
+                            <font face="Helvetica" size="16.0">__________________ </font>
+                        </p>
+                        <p style="P9; text-align: left;">
+                            <font face="Helvetica-Bold" size="16.0">
+                                <t t-if="data['manager']"><t t-esc="data['manager']" /> </t>
+                            </font>
+                        </p>
+                        <p style="P9;text-align: left;">
+                            <font face="Helvetica" size="16.0">
+                                   <t t-if="data['auth_job_id']"><t t-esc="data['auth_job_id']" /> </t>
+                            </font>
+                        </p>
+                   </t>
+                   </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <record id="paperformat_house_allowance_report" model="report.paperformat">
+        <field name="name">House</field>
+        <field name="default" eval="True"/>
+        <field name="format">A4</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">20</field>
+        <field name="margin_bottom">20</field>
+        <field name="margin_left">15</field>
+        <field name="margin_right">15</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+        <field name="dpi">80</field>
+    </record>
+
+</odoo>

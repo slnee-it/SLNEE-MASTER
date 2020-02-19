@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <!-- Multi Report Menu --> <!-- In Employee Menu -->
+    <menuitem id="menu_slnee_hr_letters_reports" name="Letters" parent="hr.menu_hr_main" groups="base.group_user" sequence="10" action="action_multi_reports_form"/>
+
+</odoo>

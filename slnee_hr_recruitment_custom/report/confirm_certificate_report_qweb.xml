@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="confirm_certificate_report_qweb">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.internal_layout">
+                    <div class="page">
+                        <style>
+                            div{
+                                text-align: left;
+                                face :Helvetica;
+                                font-size:20px;
+                            }
+                            p{
+                              text-align: left;
+                              face :Helvetica;
+                            }
+                        </style>
+
+                        <p style="font:Helvetica; ">To,</p>
+                        <p style="font:Helvetica; ">(Institute name)</p>
+                        <p style="font:Helvetica; ">(Institute address)</p>
+                        <br/>
+                        <p style="font:Helvetica; ">Dear Sir/Madam,</p>
+                        <p/><br/>
+                        <p style="font:Helvetica; "><span>I am in process of joining </span> <span t-field="o.company_id.name" /> <span>, Saudi Arabia and as part of a hiring process to join the company,</span><span t-field="o.company_id.name" /><span> needs to validate my certificate.</span></p>
+                        <br/>
+                        <p style="font:Helvetica; "><span>Myself, give consent to </span><span t-field="o.company_id.name" /><span> to validate my certificate from your institute. </span></p>
+                        <br/>
+                         <p style="font:Helvetica-Bold; font-weight: 900;   ">Below are my certificate information for validation purpose:</p>
+                        <br/>
+                        <p style="font:Helvetica; "><span t-esc="o.partner_name"></span></p>
+                            <t t-foreach="o.certification_ids" t-as="doc_id" >
+                                <p style="font:Helvetica; ">Registration No. <span t-esc="doc_id.reg_no" ></span></p>
+                                <p style="font:Helvetica; ">Certificate Name: <span t-esc="doc_id.name" ></span></p>
+                                <p style="font:Helvetica; ">Issued date:  <span t-esc="doc_id.issue_date" ></span></p>
+                            </t>
+                        <br/>
+                        <p style="font:Helvetica; ">Kindly validate the above information at your earliest in order to join <span t-field="o.company_id.name"/> .</p>
+                        <br/>
+                        <p style="font:Helvetica; ">Your help is highly appreciated.</p>
+                        <br/>
+                        <p style="font:Helvetica; ">Yours Sincerely, </p>
+                        <br/>
+                        <p style="font:Helvetica-Bold; font-weight: 900; "><span t-esc="o.partner_name"></span></p>
+                        <br/>
+                        <p style="font:Helvetica-Bold; font-weight: 900; ">Signature</p>
+                        <br/>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

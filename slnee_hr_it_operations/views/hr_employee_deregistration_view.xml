@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="hr_employee_deregistration_form_view" model="ir.ui.view">
+        <field name="name">hr.employee.deregistration.form</field>
+        <field name="model">hr.employee.deregistration</field>
+        <field name="arch" type="xml">
+            <form string="Employee De-Registration">
+                <header>
+                    <button name="deregister_confirm" string="Confirm" states="draft" type="object" class="oe_highlight" groups="base.group_user"/>
+                    <button name="deregister_receive" string="Receive" states="confirm" type="object" class="oe_highlight" groups="slnee_hr_it_operations.group_it_helpdesk_user"/>
+                    <button name="deregister_validate" string="Validate" states="receive" type="object" class="oe_highlight" groups="slnee_hr_it_operations.group_it_helpdesk_user"/>
+                    <button name="deregister_approve" string="Approve" states="validate" type="object" class="oe_highlight" groups="hr.group_hr_manager"/>
+                    <button name="deregister_done" string="Done" states="approve" type="object" class="oe_highlight" groups="hr.group_hr_manager"/>
+                    <button name="deregister_cancel" string="Cancel" states="confirm,inprogress,approve,validate,receive" type="object" groups="hr.group_hr_manager,slnee_hr_it_operations.group_it_helpdesk_user"/>
+                    <button name="set_to_draft" string="Set to Draft" states="done,refuse" type="object" />
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirm" statusbar_colors='{"new":"blue","validate":"red","refuse":"red"}' />
+                </header>
+                <sheet>
+                    <group string="Employee Information" col="4">
+                        <field name="register_employee_id" attrs="{'readonly':[('state','!=','draft')]}"/>
+
+                        <field name="deregistration_date" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        <field name="department_id"/>
+                        <field name="last_working_day" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        <field name="handled_by" attrs="{'readonly':[('state','!=','draft')]}"/>
+                    </group>
+                    <group string="Equipment Retrieved" col="4">
+                        <field name="laptop_desktop" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        <field name="laptop_desktop_serial" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        <field name="token_serial" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        <field name="access_card" attrs="{'readonly':[('state','!=','draft')]}"/>
+                    </group>
+                    <group col="4">
+                        <field name="is_charger" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        <field name="is_carrying_case" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        <field name="is_other" attrs="{'readonly':[('state','!=','draft')]}"/>
+                    </group>
+                    <group string="Data">
+                        <field name="is_format_data" attrs="{'readonly':[('state','!=','draft')]}"/>
+                    </group>
+                    <group string="Activities Performed By IT Department" col="4">
+                        <field name="is_iid" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        <field name="is_nt_account" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        <field name="is_exchange_mbox" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        <field name="is_remote_access" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        <field name="is_personal_folder" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        <field name="is_token_retrieved" attrs="{'readonly':[('state','!=','draft')]}"/>
+                    </group>
+                    <notebook>
+
+                        <page string="Extra Information" groups="base.group_no_one">
+                            <group name="extra_info" col="4">
+                                <field name="create_uid" readonly="1"/>
+                                <field name="create_date" readonly="1"/>
+                                <field name="write_uid" readonly="1"/>
+                                <field name="write_date" readonly="1"/>
+                                <field name="validated_by" attrs="{'invisible':[('validated_by','=',False)]}" />
+                                <field name="validated_date" attrs="{'invisible':[('validated_date','=',False)]}" />
+                                <field name="approved_by" attrs="{'invisible':[('approved_by','=',False)]}" />
+                                <field name="approved_date" attrs="{'invisible':[('approved_date','=',False)]}" />
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers" />
+                    <field name="message_ids" widget="mail_thread" />
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="hr_employee_deregistration_tree_view" model="ir.ui.view">
+        <field name="name">hr.employee.deregistration.tree</field>
+        <field name="model">hr.employee.deregistration</field>
+        <field name="arch" type="xml">
+            <tree string="Employee De-Registration">
+                <field name="register_employee_id"/>
+                <field name="department_id"/>
+                <field name="deregistration_date" invisible="1"/>
+                <field name="last_working_day"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="hr_employee_deregistration_filter" model="ir.ui.view">
+        <field name="name">hr.employee.deregistration.search</field>
+        <field name="model">hr.employee.deregistration</field>
+        <field name="arch" type="xml">
+            <search string="Filter">
+                <filter string="Draft" domain="[('state','=',('draft'))]"/>
+                <filter string="Waiting for Approval" domain="[('state','=',('confirm'))]" />
+                <filter string="Received" domain="[('state','=',('receive'))]" />
+                <filter string="Validate" domain="[('state','=',('validate'))]" />
+                <filter string="Approved" domain="[('state','=',('approve'))]" />
+                <filter string="Done" domain="[('state','=',('done'))]"/>
+                <filter string="Refused" domain="[('state','=',('refuse'))]" />
+                <group expand="0" string="Group By...">
+                    <filter string="Employee " context="{'group_by':'register_employee_id'}"/>
+                    <filter string="Department" context="{'group_by':'department_id'}"/>
+                    <filter string="Deregistration Date" name="month" context="{'group_by':'deregistration_date'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_hr_employee_deregistration" model="ir.actions.act_window">
+        <field name="name">Employee De-Registration</field>
+        <field name="res_model">hr.employee.deregistration</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <record id="menu_employee_deregistration_view" model="ir.actions.act_window">
+        <field name="name">Employee De-Registration</field>
+        <field name="res_model">hr.employee.deregistration</field>
+        <field name="view_type">form</field>
+        <field name="view_id" ref="hr_employee_deregistration_tree_view"/>
+        <field name="help" type="html">
+          <p class="oe_view_nocontent_create">
+            Click to De-Register Employee.
+           </p>
+        </field>
+    </record>
+
+</odoo>

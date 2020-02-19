@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_loan_employee,hr.loan.employee,model_hr_loan,base.group_user,1,1,1,0
+access_hr_loan_officer,hr.loan.officer,model_hr_loan,hr.group_hr_user,1,1,1,0
+access_hr_loan_manager,hr.loan.manager,model_hr_loan,hr.group_hr_manager,1,1,1,1
+access_installment_line_employee,installment.line.employee,model_installment_line,base.group_user,1,0,0,0
+access_installment_line_officer,installment.line.officer,model_installment_line,hr.group_hr_user,1,1,1,0
+access_installment_line_manager,installment.line.manager,model_installment_line,hr.group_hr_manager,1,1,1,1
+access_hr_contract_officer,hr.contractofficer,hr_contract.model_hr_contract,hr.group_hr_user,1,1,1,0
+access_hr_employee,hr.employee system user,hr.model_hr_employee,base.group_user,1,1,1,0
+access_hr_skip_installment_user,hr.skip.installment.employee,model_hr_skip_installment,base.group_user,1,1,1,0
+access_hr_skip_installment_hr_user,hr.skip.installment.hr_user,model_hr_skip_installment,hr.group_hr_user,1,1,1,0
+access_hr_skip_installment_manager,hr.skip.installment.manager,model_hr_skip_installment,hr.group_hr_manager,1,1,1,1

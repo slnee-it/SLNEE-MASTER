@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_multi_report_hr_assistant,access_multi_report_hr_assistant,model_multi_reports,hr.group_hr_manager,1,1,1,1
+access_multi_report_system_user,access_multi_report_system_user,model_multi_reports,base.group_user,1,1,1,0

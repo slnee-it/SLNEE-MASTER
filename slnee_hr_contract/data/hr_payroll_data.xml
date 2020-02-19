@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!--Mobile Allowance-->
+    <record id="hr_salary_rule_mobile_allowance" model="hr.salary.rule">
+        <field name="name">Mobile Allowance</field>
+        <field name="category_id" ref="hr_payroll.ALW"/>
+        <field name="code">MOBILE</field>
+        <field name="appears_on_payslip">False</field>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = contract.mobile</field>
+        <field name="sequence" eval="27"/>
+        <field name="amount_select">fix</field>
+    </record>
+
+    <record id="hr_salary_rule_mobile_allowance_child1" model="hr.salary.rule">
+        <field name="name">Mobile Allowance</field>
+        <field name="category_id" ref="hr_payroll.ALW"/>
+        <field name="code">MOBILE</field>
+        <field name="sequence" eval="28"/>
+        <field name="condition_select">range</field>
+        <field name="condition_range">employee.duration_in_months</field>
+        <field name="condition_range_max">1</field>
+        <!-- <field name="condition_select">python</field> -->
+        <!-- <field name="condition_python">result = employee.duration_in_months&lt;1</field> -->
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = (contract.mobile_allowance/30)*(payslip.first_month_days)</field>
+        <field name="note">Based on joining date in first month</field>
+        <field name="parent_rule_id" ref="slnee_hr_contract.hr_salary_rule_mobile_allowance"/>
+    </record>
+
+    <record id="hr_salary_rule_mobile_allowance_child2" model="hr.salary.rule">
+        <field name="name">Mobile Allowance</field>
+        <field name="category_id" ref="hr_payroll.ALW"/>
+        <field name="code">MOBILE</field>
+        <field name="sequence" eval="28"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = employee.duration_in_months > 1</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = contract.mobile_allowance</field>
+        <field name="note">Fixed from contract from second month</field>
+        <field name="parent_rule_id" ref="slnee_hr_contract.hr_salary_rule_mobile_allowance"/>
+    </record>
+
+    <record id="hr_salary_rule_mobile_allowance_child3" model="hr.salary.rule">
+        <field name="name">Mobile Allowance</field>
+        <field name="category_id" ref="hr_payroll.ALW"/>
+        <field name="code">MOBILE</field>
+        <field name="sequence" eval="28"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = contract.is_leaving or employee.date_of_leave</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = (contract.mobile_allowance/30)*(payslip.payment_days)</field>
+        <field name="note">If employee is leaving then it will calculate based on no of days of that month</field>
+        <field name="parent_rule_id" ref="slnee_hr_contract.hr_salary_rule_mobile_allowance"/>
+    </record>
+
+    <!-- Iron Allowance -->
+    <!--<record id="hr_salary_rule_iron_allowance" model="hr.salary.rule">
+        <field name="amount_select">code</field>
+        <field name="code">IRON</field>
+        <field name="category_id" ref="hr_payroll.ALW"/>
+        <field name="name">Iron Allowance</field>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = contract.iron_allowance > 0</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = contract.iron_allowance</field>
+        <field name="sequence" eval="66"/>
+    </record>-->
+
+    <!-- Signon Bonus -->
+    <record id="hr_salary_rule_employee_signon_bonus" model="hr.salary.rule">
+        <field name="name">Employee Signon Bonus</field>
+        <field name="category_id" ref="hr_payroll.ALW"/>
+        <field name="code">SIGNON</field>
+        <field name="sequence" eval="40"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = (contract.is_leaving==False) and (inputs.SIGNON_BONUS and inputs.SIGNON_BONUS.amount > 0)</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = inputs.SIGNON_BONUS and inputs.SIGNON_BONUS.amount</field>
+    </record>
+
+    <!-- Deduction -->
+    <!-- SingOn Deduction -->
+    <record id="hr_salary_rule_signon_deduction" model="hr.salary.rule">
+        <field name="name">SignOn Deduction</field>
+        <field name="category_id" ref="hr_payroll.DED"/>
+        <field name="code">SIGNON_DEDUCTION</field>
+        <field name="sequence" eval="105"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = (contract.is_leaving==True) and (inputs.SIGNON_DEDUCTION and inputs.SIGNON_DEDUCTION.amount > 0)</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = -(inputs.SIGNON_DEDUCTION and inputs.SIGNON_DEDUCTION.amount)</field>
+    </record>
+
+    <!-- Salary Structure -->
+    <record id="hr_payroll.structure_base" model="hr.payroll.structure">
+        <field name="name">Company Salary Structures</field>
+        <field name="rule_ids" eval="[(4,ref('hr_salary_rule_employee_signon_bonus')),(4,ref('hr_salary_rule_signon_deduction')),(4,ref('hr_salary_rule_mobile_allowance'))]" />
+        <field name="company_id" ref="base.main_company"/>
+    </record>
+
+</odoo>

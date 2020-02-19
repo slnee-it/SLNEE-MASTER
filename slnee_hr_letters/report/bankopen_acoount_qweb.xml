@@ -1,0 +1,103 @@
+<odoo>
+
+    <template id="bankopen_account_report" name="Bankopen Acoount">
+        <t t-call="web.html_container">
+            <t t-call="web.basic_layout">
+                <t t-foreach="docs" t-as="o">
+                    <div class="page" style="text-align: right; face :Helvetica; font-size:18px;">
+                        <t t-set="arg" t-value="{'employee_id' : [o.employee_id.id, o.employee_id.name],'date':o.date,'manager_id': [o.manager_id.id, o.manager_id.name]}"/>
+                        <t t-set="result" t-value="get_data" />
+                        <t t-foreach="result" t-as="data">
+                            <t t-set="islamic_date" t-value="get_islamic_date(o.date)"/>
+                            <p>‫ ‬‬ ‫التـاريخ :‬  <t t-esc="islamic_date" /> هـ‬‬ </p>
+                            <p> الموافق‬  <t t-if="data['date']" ><span t-esc="time.strftime('%d-%m-%Y', time.strptime(str(data['date']),'%Y-%m-%d'))"/> ‫</t> م‬</p>
+                            <p style="arebic; font-weight: bold; ">/ السادة</p>
+                            <p style="arebic;font-weight: bold;">  المحترمين </p>
+                            <p>.السلام عليكم و رحمة الله و بركاته</p>
+                            <p>
+                               <span> نفيدكم بأن الأستاذ /</span>
+                                <font face="Helvetica-Bold" size="14.0">
+                                <t t-if="data['employee'].arabic_name">
+                                    <t t-esc="data['employee'].arabic_name"/>
+                                </t>,
+                                <t t-if="data['emp_country']" >
+                                    <t t-esc="data['emp_country']"/>
+                                </t>
+                                </font>
+                            </p>
+                            <p>
+                                الجنسية بموجب إقامة/ بطاقة أحوال رقم
+                                <t t-if="data['doc_number']">
+                                    <t t-esc="data['doc_number']"/>,
+                                </t>
+                                هو
+                            </p>
+                            <p><span>أحد موظفين شركة</span>
+                                <t t-if="o.employee_id.job_id" >
+                                    <span t-field="o.employee_id.job_id.arabic_name" />
+                                </t>
+                                <t t-if="o.employee_id.user_id and o.employee_id.user_id.company_id" >
+                                <span t-field="o.employee_id.user_id.company_id.arabic_name">
+                                </span>
+                                </t>
+                            </p>
+                            <p>
+                                <font face="Helvetica-Bold ; " style="font-weight: bold;" size="14.0">فرع الرياض.</font>
+                                إلتحق بنا في تاريخ
+                                <t t-if="data['join_date']">
+                                    <span t-esc="time.strftime('%d-%m-%Y', time.strptime(data['join_date'],'%Y-%m-%d'))"/> ‫
+                                </t>
+                                يعمل بوظيفة
+                            </p>
+                            <p>
+                                <font face="Helvetica-Bold" size="14.0">
+                                <t t-if="data['department']"> ."<t t-esc="data['department']"/> ,</t>
+                                <t t-if="data['job_id']"><t t-esc="data['job_id']"/> "</t>
+                                </font>
+                            </p>
+                            <p>
+                                ويتقاضى المذكور راتبا إجماليا وقدر
+                                <t t-if="data['wage']"> <t t-esc="data['wage']"/></t>
+                                ريال، ولا يزال على رأس
+                            </p>
+                            <p>.العمل حتى هذا التاريخ</p>
+                            <p>وقد أعطي هذا التعريف بناء على طلبه دون أدنى مسؤولية مالية او</p>
+                            <p>.قانونية تجاه الشركة</p>
+                            <p>.وتقبلوا تحياتنا</p>
+                            <p  style="text-align: left;  ">
+                                <font face="Helvetica" size="16.0" >__________________ </font><br/>
+                                <font face="Helvetica-Bold" size="16.0">
+                                    <t t-if="data['manager']">
+                                        <t t-esc="data['manager']"/>
+                                    </t>
+                                </font>
+                            </p>
+                            <p style="text-align: left;  ">
+                                <font face="Helvetica" size="16.0">
+                                    <t t-if="data['auth_job_id']">
+                                        <t t-esc="data['auth_job_id']"/>
+                                    </t>
+                                </font>
+                            </p>
+                       </t>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <record id="paperformat_bankopen_account" model="report.paperformat">
+        <field name="name">Bank Open Account</field>
+        <field name="default" eval="True"/>
+        <field name="format">A4</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">20</field>
+        <field name="margin_bottom">20</field>
+        <field name="margin_left">15</field>
+        <field name="margin_right">15</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+        <field name="dpi">80</field>
+    </record>
+
+</odoo>

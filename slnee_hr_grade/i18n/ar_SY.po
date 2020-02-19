@@ -1,0 +1,119 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_grade
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-06 07:31+0000\n"
+"PO-Revision-Date: 2018-08-06 07:31+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_grade
+#: model:ir.actions.act_window,help:slnee_hr_grade.action_hr_grade
+msgid "Click to define a new Grade."
+msgstr "انقر لتحديد تقدير جديد."
+
+#. module: slnee_hr_grade
+#: model:ir.model.fields,field_description:slnee_hr_grade.field_hr_grade_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: slnee_hr_grade
+#: model:ir.model.fields,field_description:slnee_hr_grade.field_hr_grade_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: slnee_hr_grade
+#: model:ir.model.fields,field_description:slnee_hr_grade.field_hr_grade_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: slnee_hr_grade
+#: model:ir.model,name:slnee_hr_grade.model_hr_employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: slnee_hr_grade
+#: model:ir.actions.act_window,name:slnee_hr_grade.action_hr_grade
+#: model:ir.model.fields,field_description:slnee_hr_grade.field_hr_employee_grade_id
+#: model:ir.model.fields,field_description:slnee_hr_grade.field_hr_job_grade_id
+#: model:ir.ui.menu,name:slnee_hr_grade.menu_hr_grade
+#: model:ir.ui.view,arch_db:slnee_hr_grade.view_grade_form
+#: model:ir.ui.view,arch_db:slnee_hr_grade.view_grade_tree
+#: model:ir.ui.view,arch_db:slnee_hr_grade.view_hr_employee_grade_filter
+msgid "Grade"
+msgstr "درجة"
+
+#. module: slnee_hr_grade
+#: model:ir.model,name:slnee_hr_grade.model_hr_grade
+msgid "Grade Description"
+msgstr "وصف الصف"
+
+#. module: slnee_hr_grade
+#: model:ir.ui.view,arch_db:slnee_hr_grade.view_hr_grade_filter
+msgid "Group By..."
+msgstr "مجموعة من..."
+
+#. module: slnee_hr_grade
+#: model:ir.model,name:slnee_hr_grade.model_hr_job
+msgid "HR Job"
+msgstr "وظيفة الموارد البشرية"
+
+#. module: slnee_hr_grade
+#: model:ir.model.fields,field_description:slnee_hr_grade.field_hr_grade_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: slnee_hr_grade
+#: model:ir.model.fields,field_description:slnee_hr_grade.field_hr_grade_is_above_manager
+#: model:ir.ui.view,arch_db:slnee_hr_grade.view_hr_grade_filter
+msgid "Is Above Manager"
+msgstr "أعلاه هو مدير"
+
+#. module: slnee_hr_grade
+#: model:ir.ui.view,arch_db:slnee_hr_grade.view_grade_form
+msgid "JOB"
+msgstr "وظيفة"
+
+#. module: slnee_hr_grade
+#: model:ir.model.fields,field_description:slnee_hr_grade.field_hr_grade_hr_job_ids
+msgid "Job"
+msgstr "وظيفة"
+
+#. module: slnee_hr_grade
+#: model:ir.model.fields,field_description:slnee_hr_grade.field_hr_grade___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: slnee_hr_grade
+#: model:ir.model.fields,field_description:slnee_hr_grade.field_hr_grade_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: slnee_hr_grade
+#: model:ir.model.fields,field_description:slnee_hr_grade.field_hr_grade_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: slnee_hr_grade
+#: model:ir.model.fields,field_description:slnee_hr_grade.field_hr_grade_name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: slnee_hr_grade
+#: model:ir.ui.view,arch_db:slnee_hr_grade.view_hr_grade_filter
+msgid "Search Grade"
+msgstr "درجة البحث"
+
+#. module: slnee_hr_grade
+#: model:ir.model.fields,help:slnee_hr_grade.field_hr_grade_is_above_manager
+msgid "Tick this if grade is above manager level."
+msgstr ".القراد إذا تهت فوق مدير مستوى الصف"
+

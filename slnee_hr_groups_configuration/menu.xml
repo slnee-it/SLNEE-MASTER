@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <menuitem name="Employees" id="hr.menu_hr_root" groups="hr.group_hr_manager,hr.group_hr_user,base.group_user" icon="fa-user" web_icon="hr,static/description/icon.png" sequence="10"/>
+    <!-- <menuitem id="menu_hr_branch" action="action_hr_branch" parent="hr.menu_human_resources_configuration" sequence="20"/> -->
+    <menuitem id="menu_hr_groups_config_action" parent="hr.menu_human_resources_configuration" sequence="0" action="action_view_hr_groups_config" groups="base.group_no_one"/>
+</odoo>

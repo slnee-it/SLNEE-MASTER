@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="salary_with_nopramotion">
+        <t t-foreach="docs" t-as="o">
+        <t t-call="web.external_layout">
+        <div class="page" >
+          <style>
+                div{
+                    text-align: left;
+                    face :Helvetica;
+                    font-size:20px;
+                }
+                p{
+                  text-align: left;
+                  face :Helvetica;
+                }
+          </style>
+            <br/><br/>
+            <p style="font:Helvetica; font-weight: bold; "><span t-esc="time.strftime('%Y-%m-%d')"/></p>
+            <p style="font:Helvetica; font-weight: bold; "> <span t-esc="o.employee_id.name"></span> <span t-esc="o.employee_id.middle_name"></span> <span t-esc="o.employee_id.last_name"></span></p>
+            <p style="font:Helvetica; font-weight: bold;">Employee No: <span t-esc="o.employee_id.department_id.parent_id.name"/></p>
+            <p style="font:Helvetica; font-weight: bold;">Function: <span t-esc="o.employee_id.department_id.parent_id.name"/></p>
+            <p style="font:Helvetica; font-weight: bold;">Sub Function: <span t-esc="o.employee_id.department_id.name"/></p>
+            <p style="font:Helvetica; font-weight: bold;">Office: <span t-esc="o.employee_id.company_id.name"/> </p>
+            <p style="font:Helvetica; font-weight: bold;">Title: <span t-esc="o.employee_id.job_id.name"/> </p>
+
+            <p style="font:Helvetica; font-weight: 900; font-size:18px; ">Confirmation of Bonus Allocation  and Annual Salary Review </p>
+
+            <p style="font:Helvetica; ">Dear <span t-esc="o.employee_id.name"/></p>
+            <p style="font:Helvetica; ">During the Financial Year 2015 your performance has been graded as Unsatisfactory and the Firm’s policy is that Employees who are graded Unsatisfactory are not eligible for a salary increase or performance bonus.</p><br/>
+            <p style="font:Helvetica; ">We care greatly about our Employees and their performance and we will work with you to help you improve your performance and in turn help you to achieve your potential.</p> <br/>
+            <p style="font:Helvetica; ">We would recommend that you sit and talk to your Manager as soon as possible in order to set your goals for 2015 , and set out a clear development plan that will help you to achieve a higher rating in the coming year. </p> <br/>
+
+            <p style="font:Helvetica; ">We very much look forward to taking the Firm forward in what promises to be a very exciting year with a positive outlook. </p> <br/>
+
+            <p style="font:Helvetica; ">Best wishes</p>
+            <br/>
+            <p style="font:Helvetica; ">Administrator</p>
+            <p style="font:Helvetica-Bold; font-weight: 900; ">Chairman and Senior Partner</p>
+        </div>
+        </t>
+        </t>
+    </template>
+</odoo>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Contribution Registers -->
+        <record id="contrib_register_gosi_employee_sa" model="hr.contribution.register">
+            <field name="name">Gosi Saudi Employee Contribution</field>
+            <field name="partner_id" eval="False"/>
+        </record>
+
+        <record id="contrib_register_gosi_employee_bh" model="hr.contribution.register">
+            <field name="name">Gosi Baharini Employee Contribution</field>
+            <field name="partner_id" eval="False"/>
+        </record>
+
+        <record id="contrib_register_gosi_company" model="hr.contribution.register">
+            <field name="name">Gosi Company Contribution</field>
+            <field name="partner_id" eval="False"/>
+        </record>
+
+        <record id="contrib_register_gosi_company_non_sa" model="hr.contribution.register">
+            <field name="name">Gosi Company Contribution for Non-Saudi Employee</field>
+            <field name="partner_id" eval="False"/>
+        </record>
+
+        <record id="contrib_register_gosi_company_sa" model="hr.contribution.register">
+            <field name="name">Gosi Company Contribution for Saudi Employee</field>
+            <field name="partner_id" eval="False"/>
+        </record>
+
+        <record id="contrib_register_gosi_company_bh" model="hr.contribution.register">
+            <field name="name">Gosi Company Contribution for Baharini Employee</field>
+            <field name="partner_id" eval="False"/>
+        </record>
+
+        <record id="contrib_hr_houserent_register" model="hr.contribution.register">
+            <field name="name">House Rent Allowance Register</field>
+        </record>
+
+        <record id="HRA" model="hr.salary.rule.category">
+            <field name="name">Housing Rent Allowance</field>
+            <field name="parent_id" ref="hr_payroll.ALW"/>
+            <field name="code">HRA</field>
+        </record>
+
+        <!-- House Rent Allowance-->
+        <record id="hr_salary_rule_houserentallowance" model="hr.salary.rule">
+            <field name="amount_select">percentage</field>
+            <field eval="25.0" name="amount_percentage"/>
+            <field name="amount_percentage_base">contract.wage</field>
+            <field name="code">HRA</field>
+            <field name="category_id" ref="HRA"/>
+            <field name="register_id" ref="contrib_hr_houserent_register"/>
+            <field name="name">House Rent Allowance</field>
+            <field name="sequence" eval="5"/>
+        </record>
+
+        <!-- GOSI Deduction-->
+        <record id="hr_salary_rule_gosi_emp_deduction_sa" model="hr.salary.rule">
+            <field name="name">GOSI Contribution for Saudi Employee</field>
+            <field name="category_id" ref="hr_payroll.DED"/>
+            <field name="code">GOSI</field>
+            <field name="sequence" eval="105"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = payslip.include_gosi and employee.country_id and employee.country_id.code == 'SA'</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = -((categories.BASIC + categories.HRA) > 45000 and 45000 * 0.1 or (categories.BASIC + categories.HRA) * 0.1)</field>
+            <field name="register_id" ref="contrib_register_gosi_employee_sa"/>
+        </record>
+
+        <record id="hr_salary_rule_gosi_emp_deduction_bh" model="hr.salary.rule">
+            <field name="name">GOSI Contribution for Bahraini Employee</field>
+            <field name="category_id" ref="hr_payroll.DED"/>
+            <field name="code">GOSI</field>
+            <field name="sequence" eval="106"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = payslip.include_gosi and employee.country_id and employee.country_id.code == 'BH'</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = -((categories.BASIC + categories.HRA) > 40000 and 40000 * 0.06 or (categories.BASIC + categories.HRA) * 0.06)</field>
+            <field name="register_id" ref="contrib_register_gosi_employee_bh"/>
+        </record>
+
+        <record id="hr_salary_rule_gosi_company_deduction" model="hr.salary.rule">
+            <field name="name">GOSI Company Contribution</field>
+            <field name="category_id" ref="hr_payroll.COMP"/>
+            <field name="code">GOSI_COMP</field>
+            <field name="sequence" eval="107"/>
+            <field name="appears_on_payslip" eval="False"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = payslip.include_gosi</field>
+            <field name="amount_select">fix</field>
+            <field name="register_id" ref="contrib_register_gosi_company"/>
+        </record>
+
+        <record id="hr_salary_rule_gosi_company_deduction_non_sa" model="hr.salary.rule">
+            <field name="name">GOSI Company Contribution for Non Saudi Employee</field>
+            <field name="category_id" ref="hr_payroll.COMP"/>
+            <field name="code">GOSI_COMP</field>
+            <field name="sequence" eval="109"/>
+            <field name="appears_on_payslip" eval="False"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = employee.country_id and employee.country_id.code not in ['SA','BH']</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = -((categories.BASIC + categories.HRA) > 45000 and 45000 * 0.02 or (categories.BASIC + categories.HRA) * 0.02)</field>
+            <field name="parent_rule_id" ref="slnee_hr_gosi.hr_salary_rule_gosi_company_deduction"/>
+            <field name="note">It will calculate for Non Saudi employees</field>
+            <field name="register_id" ref="contrib_register_gosi_company_non_sa"/>
+        </record>
+
+        <record id="hr_salary_rule_gosi_company_sa_deduction" model="hr.salary.rule">
+            <field name="name">GOSI Company Contribution for Saudi Employee</field>
+            <field name="category_id" ref="hr_payroll.COMP"/>
+            <field name="code">GOSI_COMP</field>
+            <field name="sequence" eval="109"/>
+            <field name="appears_on_payslip" eval="False"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = employee.country_id and employee.country_id.code == 'SA'</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = -((categories.BASIC + categories.HRA) > 45000 and 45000 * 0.12 or (categories.BASIC + categories.HRA) * 0.12)</field>
+            <field name="parent_rule_id" ref="slnee_hr_gosi.hr_salary_rule_gosi_company_deduction"/>
+            <field name="note">It will calculate for Saudi employees</field>
+            <field name="register_id" ref="contrib_register_gosi_company_sa"/>
+        </record>
+
+        <record id="hr_salary_rule_gosi_company_bh_deduction" model="hr.salary.rule">
+            <field name="name">GOSI Company Contribution for Bahraini Employee</field>
+            <field name="category_id" ref="hr_payroll.COMP"/>
+            <field name="code">GOSI_COMP</field>
+            <field name="sequence" eval="109"/>
+            <field name="appears_on_payslip" eval="False"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = employee.country_id and employee.country_id.code == 'BH'</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = -((categories.BASIC + categories.HRA) > 40000 and 40000 * 0.11 or (categories.BASIC + categories.HRA) * 0.11)</field>
+            <field name="parent_rule_id" ref="slnee_hr_gosi.hr_salary_rule_gosi_company_deduction"/>
+            <field name="note">It will calculate for Bahraini employees</field>
+            <field name="register_id" ref="contrib_register_gosi_company_bh"/>
+        </record>
+
+        <record id="hr_salary_rule_hadaf_deduction" model="hr.salary.rule">
+            <field name="name">HADAF Contribution</field>
+            <field name="category_id" ref="hr_payroll.DED"/>
+            <field name="code">HADAF</field>
+            <field name="sequence" eval="105"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = payslip.gosi_id</field>
+            <field name="amount_select">fix</field>
+        </record>
+
+        <record id="hr_salary_rule_hadaf_deduction_child1" model="hr.salary.rule">
+            <field name="name">HADAF Contribution</field>
+            <field name="category_id" ref="hr_payroll.DED"/>
+            <field name="code">HADAF</field>
+            <field name="sequence" eval="105"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = employee.gender == 'male'</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = ((contract.wage * 15) / 100)</field>
+            <field name="parent_rule_id" ref="slnee_hr_gosi.hr_salary_rule_hadaf_deduction"/>
+        </record>
+
+        <record id="hr_salary_rule_hadaf_deduction_child2" model="hr.salary.rule">
+            <field name="name">HADAF Contribution</field>
+            <field name="category_id" ref="hr_payroll.DED"/>
+            <field name="code">HADAF</field>
+            <field name="sequence" eval="105"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = employee.gender == 'female'</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = ((contract.wage * 20) / 100)</field>
+            <field name="parent_rule_id" ref="slnee_hr_gosi.hr_salary_rule_hadaf_deduction"/>
+        </record>
+
+        <!-- Salary Structure -->
+        <record id="hr_payroll.structure_base" model="hr.payroll.structure">
+            <field name="rule_ids" eval="[(4,ref('hr_salary_rule_gosi_company_bh_deduction')),
+                    (4,ref('hr_salary_rule_gosi_company_sa_deduction')),
+                    (4,ref('hr_salary_rule_gosi_company_deduction_non_sa')),
+                    (4,ref('hr_salary_rule_gosi_company_deduction')),
+                    (4,ref('hr_salary_rule_gosi_emp_deduction_bh')),
+                    (4,ref('hr_salary_rule_gosi_emp_deduction_sa')),
+                    (4,ref('hr_salary_rule_houserentallowance'))]" />
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<odoo>
+    <report
+    string="Experience Letter for Male"
+    id="action_empexperience_letter_maleqweb"
+    model="hr.employee.eos"
+    report_type="qweb-pdf"
+    name="slnee_hr_eos.emp_experience_letter_maleqweb"
+    file="slnee_hr_eos.emp_experience_letter_maleqweb"
+    />
+
+    <report
+    string="Experience Letter for Female"
+    id="action_empexperience_letter_femaleqweb"
+    model="hr.employee.eos"
+    report_type="qweb-pdf"
+    name="slnee_hr_eos.emp_experience_letter_femaleqweb"
+    file="slnee_hr_eos.emp_experience_letter_femaleqweb"
+    />
+</odoo>

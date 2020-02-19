@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="walid_school_report">
+        <t t-call="web.html_container">
+            <t t-call="web.basic_layout">
+                <t t-foreach="docs" t-as="o">
+                    <div class="page" style="face :Helvetica; font-size:20px;">
+                        <t t-set="arg" t-value="{'employee_id' : [o.employee_id.id, o.employee_id.name],'date':o.date,'manager_id': [o.manager_id.id, o.manager_id.name]}"/>
+                        <t t-set="result" t-value="get_data" />
+                        <t t-foreach="result" t-as="data">
+                            <p style="text-align: center;font-weight: bold;">
+                                <t t-if="data['date']" > <t t-esc="data['date']" /></t>
+                            </p>
+                            <p style="font-weight: bold;">
+                                <u>To Whom It May Concern</u>
+                            </p>
+                             <p style="text-align:justify;">
+                                 <t>This is to certify that </t>
+                                 <t t-if="data['emp_title']" > <t t-esc="data['emp_title']" /></t>
+                                 <t t-if="data['employee'].name" > <t t-esc="data['employee'].name" /></t>
+                                 <t t-if="data['employee'].middle_name" > <t t-esc="data['employee'].middle_name" /></t>
+                                 <t t-if="data['employee'].last_name" > <t t-esc="data['employee'].last_name" /></t>
+                                 , a
+                                 <t t-if="data['emp_country']" > <t t-esc="data['emp_country']" /></t>
+                                 national, holding ID No
+                                 <t t-if="data['doc_number']" > <t t-esc="data['doc_number']" /></t>
+                                 has been working with us in the capacity of in the capacity of
+                                 <font color="white"> </font>
+                                 <t t-if="data['job_id']" > <t t-esc="data['job_id']" /></t>
+                                 in the
+                                 <t t-if="data['department']" > <t t-esc="data['department']" /></t>
+                                 Department since
+                                 <t t-if="data['join_date']" > <t t-esc="data['join_date']" /></t>
+                                 would like to enrol his child.
+                             </p>
+                            <p style="text-align:justify;">
+                                   <t> This certificate is being issued upon the requested of </t>
+                                   <t t-if="data['emp_title']" > <t t-esc="data['emp_title']" /></t>
+                                   <t t-if="data['employee'].name" > <t t-esc="data['employee'].name" /></t>
+                                   <t t-if="data['employee'].middle_name" > <t t-esc="data['employee'].middle_name" /></t>
+                                   <t t-if="data['employee'].last_name" > <t t-esc="data['employee'].last_name" /></t>
+                                   <t>without any obligation to our company. </t>
+                               </p>
+                               <p style="P8">Sincerely yours,</p>
+                            <p>_____________________________</p>
+                            <p style="font-weight: bold;">
+                                <t t-if="data['manager']" > <t t-esc="data['manager']" /></t>
+                            </p>
+                            <p>
+                                <t t-if="data['auth_job_id']" > <t t-esc="data['auth_job_id']" /></t>
+                            </p>
+                        </t>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+     <record id="paperformat_walid_school_report" model="report.paperformat">
+         <field name="name">valid School</field>
+         <field name="default" eval="True"/>
+         <field name="format">A4</field>
+         <field name="orientation">Portrait</field>
+         <field name="margin_top">20</field>
+         <field name="margin_bottom">20</field>
+         <field name="margin_left">15</field>
+         <field name="margin_right">15</field>
+         <field name="header_line" eval="False"/>
+         <field name="header_spacing">0</field>
+         <field name="dpi">80</field>
+     </record>
+
+</odoo>

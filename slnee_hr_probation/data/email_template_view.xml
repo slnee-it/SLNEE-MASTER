@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="email_template_probation_extend" model="mail.template">
+        <field name="name">Probation Period Extend</field>
+        <field name="model_id" ref="slnee_hr_probation.model_emp_probation_review"/>
+        <field name="email_from"><![CDATA[${object.company_id.name} <${(object.company_id.email or user.email)|safe}>]]></field>
+        <field name="email_to">${(object.employee_id.work_email)}</field>
+        <field name="subject">Probation Period Extend</field>
+        <field name="body_html"><![CDATA[
+            <div style="font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34);
+                background-color: #FFF; ">
+                <p>Hello <b>${object.employee_id.name}</b>,</p>
+                <p>Your probation period Extend for date <b>${object.extend_start_date}</b> to <b>${object.extend_end_date}</b>.</p>
+                </div>
+                <div style="font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px;
+                color: rgb(34, 34, 34); background-color: #FFF; margin-left: 0px; ">
+                <p>Regards,</p>
+                <p>${(object.company_id.name)}</p>
+            </div>]]>
+        </field>
+        <field name="auto_delete" eval="False"/>
+    </record>
+
+    <record id="email_template_probation_end" model="mail.template">
+        <field name="name">Probation Period End</field>
+        <field name="model_id" ref="slnee_hr_probation.model_emp_probation_review"/>
+        <field name="email_from"><![CDATA[${object.company_id.name} <${(object.company_id.email or user.email)|safe}>]]></field>
+        <field name="email_to">${(object.employee_id.work_email)}</field>
+        <field name="subject">Probation Period End</field>
+        <field name="body_html"><![CDATA[
+            <div style="font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34);
+                background-color: #FFF; ">
+                <p>Hello <b>${object.employee_id.name}</b>,</p>
+                <p>Your probation period End at date <b>${object.probation_complete_date}</b>.</p>
+                </div>
+                <div style="font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px;
+                color: rgb(34, 34, 34); background-color: #FFF; margin-left: 0px; ">
+                <p>Regards,</p>
+                <p>${(object.company_id.name)}</p>
+            </div>]]>
+        </field>
+        <field name="auto_delete" eval="False"/>
+    </record>
+
+    <record id="email_template_employee_relieving" model="mail.template">
+        <field name="name">Employee Relieve</field>
+        <field name="model_id" ref="slnee_hr_probation.model_emp_probation_review"/>
+        <field name="email_from"><![CDATA[${object.company_id.name} <${(object.company_id.email or user.email)|safe}>]]></field>
+        <field name="email_to">${(object.employee_id.work_email)}</field>
+        <field name="subject">Employee Relieve</field>
+        <field name="body_html"><![CDATA[
+            <div style="font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34);
+                background-color: #FFF; ">
+                <p>Hello <b>${object.employee_id.name}</b>,</p>
+                <p>You are Relive at date <b>${object.probation_complete_date}</b>.</p>
+                </div>
+                <div style="font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px;
+                color: rgb(34, 34, 34); background-color: #FFF; margin-left: 0px; ">
+                <p>Regards,</p>
+                <p>${(object.company_id.name)}</p>
+            </div>
+        ]]></field>
+        <field name="auto_delete" eval="False"/>
+    </record>
+</odoo>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--HR Employee EOS related subtypes for messaging / Chatter -->
+    <record id="mt_employee_eos_new" model="mail.message.subtype">
+        <field name="name">EOS Created</field>
+        <field name="res_model">hr.employee.eos</field>
+        <field name="default" eval="False"/>
+        <field name="description">EOS Created</field>
+    </record>
+    <record id="mt_employee_eos_confirm" model="mail.message.subtype">
+        <field name="name">EOS Confirmed</field>
+        <field name="res_model">hr.employee.eos</field>
+        <field name="description">EOS Confirmed</field>
+    </record>
+    <record id="mt_employee_eos_accept" model="mail.message.subtype">
+        <field name="name">EOS Approved</field>
+        <field name="res_model">hr.employee.eos</field>
+        <field name="description">EOS Approved</field>
+    </record>
+    <record id="mt_employee_eos_cancel" model="mail.message.subtype">
+        <field name="name">EOS Refused</field>
+        <field name="res_model">hr.employee.eos</field>
+        <field name="default" eval="False"/>
+        <field name="description">EOS Refused</field>
+    </record>
+    <record id="mt_employee_eos_done" model="mail.message.subtype">
+        <field name="name">EOS Done</field>
+        <field name="res_model">hr.employee.eos</field>
+        <field name="default" eval="False"/>
+        <field name="description">EOS Done</field>
+    </record>
+    <record id="mt_employee_eos_validate" model="mail.message.subtype">
+        <field name="name">Stage Changed</field>
+        <field name="res_model">hr.employee.eos</field>
+        <field name="default" eval="False"/>
+        <field name="description">EOS Validated</field>
+    </record>
+
+</odoo>

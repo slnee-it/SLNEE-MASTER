@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Employee Leaving Menu -->
+    <menuitem id="menu_hr_employee_leaving" parent="hr_eos.menu_eos_label" action="action_hr_employee_leaving_view" sequence="4" groups="base.group_user"/>
+</odoo>

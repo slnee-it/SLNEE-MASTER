@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--HR Accommodation related subtypes for messaging / Chatter -->
+    <record id="mt_accommodation_new" model="mail.message.subtype">
+        <field name="name">Accommodation Created</field>
+        <field name="res_model">accommodation</field>
+        <field name="default" eval="False"/>
+        <field name="description">Accommodation Created</field>
+    </record>
+    <record id="mt_accommodation_confirm" model="mail.message.subtype">
+        <field name="name">Accommodation Confirmed</field>
+        <field name="res_model">accommodation</field>
+        <field name="description">Accommodation Confirmed</field>
+    </record>
+    <record id="mt_accommodation_validate" model="mail.message.subtype">
+        <field name="name">Accommodation Approved</field>
+        <field name="res_model">accommodation</field>
+        <field name="default" eval="False"/>
+        <field name="description">Accommodation Approved</field>
+    </record>
+    <record id="mt_accommodation_book" model="mail.message.subtype">
+        <field name="name">Accommodation Booked</field>
+        <field name="res_model">accommodation</field>
+        <field name="description">Accommodation Booked</field>
+    </record>
+    <record id="mt_accommodation_stay_over" model="mail.message.subtype">
+        <field name="name">Accommodation Stay Over</field>
+        <field name="res_model">accommodation</field>
+        <field name="description">Accommodation Stay Over</field>
+    </record>
+    <record id="mt_accommodation_refuse" model="mail.message.subtype">
+        <field name="name">Accommodation Refused</field>
+        <field name="res_model">accommodation</field>
+        <field name="default" eval="False"/>
+        <field name="description">Accommodation Refused</field>
+    </record>
+
+    <!--Stay Purpose-->
+    <record id="stay_purpose_internal_meeting" model="stay.purpose">
+        <field name="name">Internal Meeting</field>
+    </record>
+    <record id="stay_purpose_client_related" model="stay.purpose">
+        <field name="name">Client Related</field>
+    </record>
+    <record id="stay_purpose_business_development" model="stay.purpose">
+        <field name="name">Business Development</field>
+    </record>
+    <record id="stay_purpose_personal" model="stay.purpose">
+        <field name="name">Personal</field>
+    </record>
+    <record id="stay_purpose_new_joiners" model="stay.purpose">
+        <field name="name">New Joiners</field>
+    </record>
+    <record id="stay_purpose_secondment" model="stay.purpose">
+        <field name="name">Secondment</field>
+    </record>
+
+</odoo>

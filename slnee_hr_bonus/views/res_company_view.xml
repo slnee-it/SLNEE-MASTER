@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_company_form1" model="ir.ui.view">
+        <field name="name">res.company.form</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page/group" position="inside">
+               <group string="Signature">
+                    <field name="signature_image" widget="image" class="oe_avatar" options='{"size": [90, 90]}'/>
+               </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

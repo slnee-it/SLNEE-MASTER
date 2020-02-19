@@ -1,0 +1,371 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_overtime_request
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-12 07:24+0000\n"
+"PO-Revision-Date: 2018-09-12 07:24+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.l10n_sa_analytic_overtime_view
+msgid "Accept"
+msgstr "قبول"
+
+#. module: slnee_hr_overtime_request
+#: selection:analytic.overtime.attendee,state:0
+msgid "Accepted"
+msgstr "قبلت"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model,name:slnee_hr_overtime_request.model_analytic_overtime
+#: model:ir.ui.menu,name:slnee_hr_overtime_request.menu_analytic_overtime
+msgid "Analytic Overtime"
+msgstr "العمل الإضافي التحليلي"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model,name:slnee_hr_overtime_request.model_analytic_overtime_attendee
+msgid "Analytic Overtime Attendee"
+msgstr "تحفيظ العمل الإضافي"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.actions.act_window,name:slnee_hr_overtime_request.action_view_analytic_overtime
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_attendee_analytic_overtime_id
+#: model:ir.ui.menu,name:slnee_hr_overtime_request.menu_analytic_overtime_action
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.l10n_sa_analytic_overtime_tree_view
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.l10n_sa_analytic_overtime_view
+msgid "Analytic Overtime Request"
+msgstr "طلب العمل الإضافي التحليلي"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.actions.act_window,name:slnee_hr_overtime_request.action_view_analytic_overtime_response
+#: model:ir.ui.menu,name:slnee_hr_overtime_request.menu_action_view_analytic_overtime_response
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.overtime_attendees_response_obj
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.overtime_attendees_response_obj_tree
+msgid "Analytic Overtime Response"
+msgstr "استجابة العمل الإضافي التحليلي"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_attendee_ids
+msgid "Attendees"
+msgstr "الحضور"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.l10n_sa_analytic_overtime_view
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: slnee_hr_overtime_request
+#: selection:analytic.overtime,state:0
+msgid "Cancelled"
+msgstr "ألغيت"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.actions.act_window,help:slnee_hr_overtime_request.action_view_analytic_overtime
+msgid "Click to define Analytic Overtime Request."
+msgstr "انقر لتحديد طلب العمل الإضافي التحليلي."
+
+#. module: slnee_hr_overtime_request
+#: model:ir.actions.act_window,help:slnee_hr_overtime_request.action_view_analytic_overtime_response
+msgid "Click to define Analytic Overtime Response."
+msgstr "انقر لتحديد استجابة العمل الإضافي التحليلي."
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_company_ids
+msgid "Companies"
+msgstr "الشركات"
+
+#. module: slnee_hr_overtime_request
+#: selection:analytic.overtime,target:0
+msgid "Company Wise"
+msgstr "شركة الحكيم"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.l10n_sa_analytic_overtime_view
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.overtime_attendees_response_obj
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: slnee_hr_overtime_request
+#: selection:analytic.overtime,state:0
+msgid "Confirmed"
+msgstr "تم تأكيد"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_country_ids
+msgid "Countries"
+msgstr "الدول"
+
+#. module: slnee_hr_overtime_request
+#: selection:analytic.overtime,target:0
+msgid "Country Wise"
+msgstr "بلد الحكمة"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_attendee_create_uid
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_attendee_create_date
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_duration
+msgid "Daily Duration"
+msgstr "المدة اليومية"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.l10n_sa_analytic_overtime_view
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.overtime_attendees_response_obj
+msgid "Decline"
+msgstr "رفض"
+
+#. module: slnee_hr_overtime_request
+#: selection:analytic.overtime.attendee,state:0
+msgid "Declined"
+msgstr "رفض"
+
+#. module: slnee_hr_overtime_request
+#: selection:analytic.overtime,target:0
+msgid "Department Wise"
+msgstr "قسم الحكمة"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_department_ids
+msgid "Departments"
+msgstr "الإدارات"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_description
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.l10n_sa_analytic_overtime_view
+msgid "Description"
+msgstr "الوصف"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_attendee_display_name
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: slnee_hr_overtime_request
+#: selection:analytic.overtime,state:0
+msgid "Done"
+msgstr "فعله"
+
+#. module: slnee_hr_overtime_request
+#: selection:analytic.overtime,state:0
+msgid "Draft"
+msgstr "مشروع"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_attendee_email
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,help:slnee_hr_overtime_request.field_analytic_overtime_attendee_email
+msgid "Email of Invited Person"
+msgstr "البريد الإلكتروني للمشارك"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_attendee_employee_id
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_end_date
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.l10n_sa_analytic_overtime_tree_view
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.l10n_sa_analytic_overtime_view
+msgid "End Date"
+msgstr "تاريخ الإنتهاء"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.l10n_sa_analytic_overtime_view
+msgid "Event"
+msgstr "الحدث"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.l10n_sa_analytic_overtime_view
+msgid "From"
+msgstr "مِن"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.view_hr_overtime_req_filter
+msgid "Group By..."
+msgstr "تجميع حسب.."
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_attendee_id
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: slnee_hr_overtime_request
+#: code:addons/slnee_hr_overtime_request/models/analytic_overtime_request.py:259
+#, python-format
+msgid "In order to delete a confirmed analytic overtime request, you must set to draft it before!"
+msgstr "In order to delete a confirmed analytic overtime request, you must set to draft it before!"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.l10n_sa_analytic_overtime_view
+msgid "Invitation Detail"
+msgstr "تفاصيل الدعوة"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.l10n_sa_analytic_overtime_view
+msgid "Invitation details"
+msgstr "تفاصيل الدعوة"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_job_ids
+msgid "JOB Profiles"
+msgstr "ملامح الوظائف"
+
+#. module: slnee_hr_overtime_request
+#: selection:analytic.overtime,target:0
+msgid "Job Profile Wise"
+msgstr "الملف الشخصي الوظيفة الحكيم"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime___last_update
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_attendee___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_attendee_write_uid
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_attendee_write_date
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_attendee_mail_sent
+msgid "Mail Sent"
+msgstr "البريد المرسلة"
+
+#. module: slnee_hr_overtime_request
+#: code:addons/slnee_hr_overtime_request/models/analytic_overtime_request.py:306
+#, python-format
+msgid "Please assign user to %s."
+msgstr "الرجاء تعيين المستخدم إلى٪ s."
+
+#. module: slnee_hr_overtime_request
+#: code:addons/slnee_hr_overtime_request/models/analytic_overtime_request.py:208
+#, python-format
+msgid "Please create some inventation details!"
+msgstr "الرجاء تعيين المستخدم إلى٪ s."
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_user_id
+msgid "Responsible"
+msgstr "مسئول"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.l10n_sa_analytic_overtime_view
+msgid "Responsible User"
+msgstr "المستخدم المسؤول"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.view_hr_overtime_req_filter
+msgid "Search Overtime Request"
+msgstr "البحث عن العمل الإضافي"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.l10n_sa_analytic_overtime_view
+msgid "Send mail"
+msgstr "إرسال بريد"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_date
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.l10n_sa_analytic_overtime_tree_view
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.l10n_sa_analytic_overtime_view
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+#. module: slnee_hr_overtime_request
+#: sql_constraint:analytic.overtime:0
+msgid "Start Date must be greater than End Date!"
+msgstr "يجب أن يكون تاريخ البدء أكبر من تاريخ الانتهاء!"
+
+#. module: slnee_hr_overtime_request
+#: selection:analytic.overtime,target:0
+msgid "State Wise"
+msgstr "الدولة الحكيم"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_state_ids
+msgid "States"
+msgstr "المحافظات"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_attendee_state
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_state
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.view_hr_overtime_req_filter
+msgid "Status"
+msgstr "الحالة "
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,help:slnee_hr_overtime_request.field_analytic_overtime_attendee_state
+msgid "Status of the attendee's participation"
+msgstr "حالة مشاركة الحضور"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_target
+msgid "Target Group"
+msgstr "المجموعة المستهدفة"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_name
+msgid "Task Name"
+msgstr "اسم المهمة"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.l10n_sa_analytic_overtime_tree_view
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.l10n_sa_analytic_overtime_view
+msgid "Task Summary"
+msgstr "ملخص المهمة"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.l10n_sa_analytic_overtime_view
+msgid "To"
+msgstr "إلى"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.model.fields,field_description:slnee_hr_overtime_request.field_analytic_overtime_attendee_user_id
+msgid "User"
+msgstr "المستخدم"
+
+#. module: slnee_hr_overtime_request
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.l10n_sa_analytic_overtime_view
+msgid "Validate"
+msgstr "اعتماد "
+
+#. module: slnee_hr_overtime_request
+#: model:ir.ui.view,arch_db:slnee_hr_overtime_request.l10n_sa_analytic_overtime_view
+msgid "Visibility"
+msgstr "الظهور"
+
+#. module: slnee_hr_overtime_request
+#: selection:analytic.overtime,state:0
+#: selection:analytic.overtime.attendee,state:0
+msgid "Waiting Answer"
+msgstr "انتظار الإجابة"
+

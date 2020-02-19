@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_expense_payment,access_hr_expense_payment,model_hr_expense_payment,base.group_user,1,0,0,0
+access_hr_expense_payment,access_hr_expense_payment,model_hr_expense_payment,hr_admin.group_admin_manager,1,1,1,1
+access_hr_expense_payment,access_hr_expense_payment,model_hr_expense_payment,hr.group_hr_user,1,1,1,1

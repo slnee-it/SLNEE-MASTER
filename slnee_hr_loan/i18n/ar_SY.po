@@ -1,0 +1,478 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_loan
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-12 06:50+0000\n"
+"PO-Revision-Date: 2018-09-12 06:50+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_amount_paid
+msgid "Amount Paid"
+msgstr "المبلغ المدفوع"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_amount_to_pay
+msgid "Amount to Pay"
+msgstr "المبلغ للدفع"
+
+#. module: slnee_hr_loan
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_form
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_skip_installment_form
+msgid "Approve"
+msgstr "موافقه"
+
+#. module: slnee_hr_loan
+#: selection:hr.loan,state:0
+#: selection:hr.skip.installment,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_filter
+msgid "Approved"
+msgstr "وافق"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_approved_by
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_skip_installment_approved_by
+msgid "Approved by"
+msgstr "التي وافقت عليها"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_approved_date
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_skip_installment_approved_date
+msgid "Approved on"
+msgstr "تمت الموافقة على"
+
+#. module: slnee_hr_loan
+#: selection:hr.loan,emi_based_on:0
+msgid "By Amount"
+msgstr "حسب المبلغ"
+
+#. module: slnee_hr_loan
+#: selection:hr.loan,emi_based_on:0
+msgid "By Duration"
+msgstr "حسب المدة"
+
+#. module: slnee_hr_loan
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_form
+msgid "Calculate"
+msgstr "حساب"
+
+#. module: slnee_hr_loan
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_form
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_skip_installment_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: slnee_hr_loan
+#: selection:hr.loan,state:0
+#: selection:hr.skip.installment,state:0
+msgid "Cancelled"
+msgstr "ألغيت"
+
+#. module: slnee_hr_loan
+#: model:ir.actions.act_window,help:slnee_hr_loan.action_employee_loan
+msgid "Click to define a new loan."
+msgstr "انقر لتحديد قرض جديد."
+
+#. module: slnee_hr_loan
+#: model:ir.actions.act_window,help:slnee_hr_loan.action_skip_installment
+msgid "Click to define a new request to skip installment."
+msgstr "انقر لتحديد طلب جديد لتخطي الدفعة."
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_company_id
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_skip_installment_company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: slnee_hr_loan
+#: selection:hr.loan,state:0
+#: selection:hr.skip.installment,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_form
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_skip_installment_form
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_create_uid
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_skip_installment_create_uid
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_installment_line_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_create_date
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_skip_installment_create_date
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_installment_line_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_skip_installment_date
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_installment_line_date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: slnee_hr_loan
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_form
+msgid "Dates"
+msgstr "التواريخ"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_deduction_amount
+msgid "Deduction Amount"
+msgstr "مبلغ الاستقطاع"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_department_id
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_filter
+msgid "Department"
+msgstr "القسم"
+
+#. module: slnee_hr_loan
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_filter
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_form
+msgid "Description"
+msgstr "الوصف"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_display_name
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_skip_installment_display_name
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_installment_line_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: slnee_hr_loan
+#: selection:hr.loan,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_form
+msgid "Done"
+msgstr "منتهي"
+
+#. module: slnee_hr_loan
+#: selection:hr.loan,state:0
+#: selection:hr.skip.installment,state:0
+msgid "Draft"
+msgstr "مشروع"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_emi_based_on
+msgid "EMI based on"
+msgstr "EMI على أساس"
+
+#. module: slnee_hr_loan
+#: model:ir.model,name:slnee_hr_loan.model_hr_employee
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_employee_id
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_skip_installment_employee_id
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_installment_line_employee_id
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_filter
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: slnee_hr_loan
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_form
+msgid "Employee Details"
+msgstr "تفاصيل موظف"
+
+#. module: slnee_hr_loan
+#: model:ir.model,name:slnee_hr_loan.model_hr_loan
+#: model:ir.ui.menu,name:slnee_hr_loan.menu_employee_loan
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_form
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_tree
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_skip_installment_form
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_skip_installment_tree
+msgid "Employee Loan"
+msgstr "قرض الموظف"
+
+#. module: slnee_hr_loan
+#: model:ir.model,name:slnee_hr_loan.model_hr_skip_installment
+msgid "Employee Loan Skip Installment"
+msgstr "قرض موظف تخطي التقسيط"
+
+#. module: slnee_hr_loan
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_form
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_skip_installment_form
+msgid "Extra Information"
+msgstr "معلومات اضافية"
+
+#. module: slnee_hr_loan
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_filter
+msgid "Group By..."
+msgstr "تجميع حسب.."
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_id
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_skip_installment_id
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_installment_line_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_installment_line_amount
+msgid "Installment Amount"
+msgstr "تقسيط المبلغ"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_installment_lines
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_form
+msgid "Installments"
+msgstr "الأقساط"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan___last_update
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_skip_installment___last_update
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_installment_line___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_write_uid
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_skip_installment_write_uid
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_installment_line_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_write_date
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_skip_installment_write_date
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_installment_line_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: slnee_hr_loan
+#: model:ir.actions.act_window,name:slnee_hr_loan.action_employee_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_skip_installment_loan_id
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_installment_line_loan_id
+msgid "Loan"
+msgstr "قرض"
+
+#. module: slnee_hr_loan
+#: selection:hr.loan,loan_type:0
+msgid "Loan Against Salary"
+msgstr "قرض مقابل الراتب"
+
+#. module: slnee_hr_loan
+#: selection:hr.loan,loan_type:0
+msgid "Loan Against Service"
+msgstr "قرض مقابل الخدمة"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_loan_amount
+msgid "Loan Amount"
+msgstr "مبلغ القرض"
+
+#. module: slnee_hr_loan
+#: model:hr.salary.rule,name:slnee_hr_loan.hr_salary_rule_loan
+msgid "Loan Deduction"
+msgstr "خصم القرض"
+
+#. module: slnee_hr_loan
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_form
+msgid "Loan Details"
+msgstr "تفاصيل القرض"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_due_date
+msgid "Loan Payment End Date"
+msgstr "تاريخ انتهاء تسديد القرض"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_start_date
+msgid "Loan Payment Start Date"
+msgstr "تاريخ بدء دفع القرض"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_request_date
+msgid "Loan Request Date"
+msgstr "طلب تاريخ القرض"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_loan_type
+msgid "Loan Type"
+msgstr "نوع القرض"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_employee_loan_ids
+#: model:ir.ui.menu,name:slnee_hr_loan.menu_hr_loan
+msgid "Loans"
+msgstr "القروض"
+
+#. module: slnee_hr_loan
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_filter
+msgid "My Department Loans"
+msgstr "بلدي وزارة القروض"
+
+#. module: slnee_hr_loan
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_filter
+msgid "My Loans"
+msgstr "قراري"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: slnee_hr_loan
+#: model:ir.model,name:slnee_hr_loan.model_hr_payslip
+msgid "Pay Slip"
+msgstr "ظرف المرتب"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_duration
+msgid "Payment Duration(Months)"
+msgstr "مدة السداد (شهور)"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_installment_line_payslip_id
+msgid "Payslip"
+msgstr "قسيمة الدفع"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_percentage_of_gross
+msgid "Percentage of Gross"
+msgstr "النسبة من الإجمالي"
+
+#. module: slnee_hr_loan
+#: code:addons/slnee_hr_loan/models/hr_payroll.py:49
+#, python-format
+msgid "Please enter Employee contract first."
+msgstr "يرجى إدخال عقد الموظف أولاً."
+
+#. module: slnee_hr_loan
+#: code:addons/slnee_hr_loan/models/hr_loan.py:116
+#, python-format
+msgid "Please enter proper value for Deduction Amount"
+msgstr "يرجى إدخال القيمة المناسبة لخصم المبلغ"
+
+#. module: slnee_hr_loan
+#: code:addons/slnee_hr_loan/models/hr_loan.py:109
+#, python-format
+msgid "Please enter proper value for Loan Amount & Loan Interest"
+msgstr "الرجاء إدخال القيمة المناسبة لمبلغ القرض ومبلغ القرض"
+
+#. module: slnee_hr_loan
+#: code:addons/slnee_hr_loan/models/hr_loan.py:112
+#, python-format
+msgid "Please enter proper value for Payment Duration"
+msgstr "يرجى إدخال القيمة الصحيحة لمدة الدفع"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_description
+msgid "Purpose For Loan"
+msgstr "الغرض للحصول على قرض"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_skip_installment_name
+msgid "Reason to Skip"
+msgstr "سبب التخطي"
+
+#. module: slnee_hr_loan
+#: code:addons/slnee_hr_loan/models/hr_skip_installment.py:39
+#, python-format
+msgid "Record already exist for this month!"
+msgstr "السجل موجود بالفعل لهذا الشهر!"
+
+#. module: slnee_hr_loan
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_form
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_skip_installment_form
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: slnee_hr_loan
+#: selection:hr.loan,state:0
+#: selection:hr.skip.installment,state:0
+msgid "Refused"
+msgstr "رفض"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_refused_by
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_skip_installment_refused_by
+msgid "Refused by"
+msgstr "رفضت من قبل"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_refused_date
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_skip_installment_refused_date
+msgid "Refused on"
+msgstr "رفض على"
+
+#. module: slnee_hr_loan
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_filter
+msgid "Request Date"
+msgstr "تاريخ الطلب"
+
+#. module: slnee_hr_loan
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_form
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_skip_installment_form
+msgid "Reset to Draft"
+msgstr "إعادة الى وضع المسودة"
+
+#. module: slnee_hr_loan
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_filter
+msgid "Search Loan"
+msgstr "البحث عن قرض"
+
+#. module: slnee_hr_loan
+#: model:ir.actions.act_window,name:slnee_hr_loan.action_skip_installment
+msgid "Skip Installment"
+msgstr "تخطي التقسيط"
+
+#. module: slnee_hr_loan
+#: model:ir.ui.menu,name:slnee_hr_loan.menu_skip_installment
+msgid "Skip Installment Request"
+msgstr "تخطي طلب التقسيط"
+
+#. module: slnee_hr_loan
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_loan_state
+#: model:ir.model.fields,field_description:slnee_hr_loan.field_hr_skip_installment_state
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_filter
+msgid "Status"
+msgstr "الحالة "
+
+#. module: slnee_hr_loan
+#: model:ir.ui.view,arch_db:slnee_hr_loan.view_hr_loan_filter
+msgid "To Approve"
+msgstr "للاعتماد"
+
+#. module: slnee_hr_loan
+#: selection:hr.loan,state:0
+#: selection:hr.skip.installment,state:0
+msgid "Waiting Approval"
+msgstr "في انتظار الموافقة"
+
+#. module: slnee_hr_loan
+#: code:addons/slnee_hr_loan/models/hr_loan.py:169
+#, python-format
+msgid "You can not refuse a loan having any installment!"
+msgstr "لا يمكنك رفض قرض لديه أي قسط!"
+
+#. module: slnee_hr_loan
+#: code:addons/slnee_hr_loan/models/hr_loan.py:201
+#, python-format
+msgid "You cannot delete a loan which is in %s state."
+msgstr "لا يمكنك حذف قرض في حالة٪ s."
+
+#. module: slnee_hr_loan
+#: code:addons/slnee_hr_loan/models/hr_skip_installment.py:149
+#, python-format
+msgid "You cannot delete a request to skip installment which is in %s state."
+msgstr "لا يمكنك حذف طلب لتخطي الدفعة الموجودة في حالة٪ s."
+
+#. module: slnee_hr_loan
+#: code:addons/slnee_hr_loan/models/hr_skip_installment.py:106
+#, python-format
+msgid "You should approve related loan first"
+msgstr "يجب عليك الموافقة على القرض ذات الصلة أولا"
+
+#. module: slnee_hr_loan
+#: model:ir.model,name:slnee_hr_loan.model_installment_line
+msgid "installment.line"
+msgstr "installment.line"
+

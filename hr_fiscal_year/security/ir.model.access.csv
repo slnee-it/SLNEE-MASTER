@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_year_year_user,access_year_year_user,model_year_year,base.group_user,1,0,0,0
+access_year_year_officer,access_year_year_officer,model_year_year,hr.group_hr_user,1,1,1,0
+access_year_year_manager,access_year_year_manager,model_year_year,hr.group_hr_manager,1,1,1,1
+access_year_period_user,access_year_period_user,model_year_period,base.group_user,1,0,0,0
+access_year_period_officer,access_year_period_officer,model_year_period,hr.group_hr_user,1,1,1,0
+access_year_period_manager,access_year_period_manager,model_year_period,hr.group_hr_manager,1,1,1,1

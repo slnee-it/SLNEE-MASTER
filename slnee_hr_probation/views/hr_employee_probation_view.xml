@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="emp_probation_review_form" model="ir.ui.view">
+        <field name="name">Probation Plan</field>
+        <field name="model">emp.probation.review</field>
+        <field name="arch" type="xml">
+            <form string="Probation Plan">
+                <header>
+                    <button name="send_probation_mail" string="Send Mail" type="object" groups="hr.group_hr_user"
+                            class="oe_highlight" states="approve"/>
+                    <button name="review_confirm" string="Set Probation Plan" states="draft" type="object" class="oe_highlight"
+                            groups="hr.group_hr_user"/>
+                    <button name="review_approve" string="Send Review" states="confirm" type="object" class="oe_highlight"
+                            groups="hr.group_hr_user"/>
+                    <button name="review_done" string="Done" states="approve" type="object" class="oe_highlight"
+                            groups="hr.group_hr_user"/>
+                    <button name="review_refuse" string="Refuse" states="confirm,inprogress,approve" type="object"
+                            groups="hr.group_hr_user"/>
+                    <button name="set_draft" string="Set to Draft" states="refuse" type="object"
+                            groups="hr.group_hr_user"/>
+                    <field name="state" widget="statusbar" statusbar_visible="confirm"/>
+                </header>
+                <sheet>
+                    <separator string="Employee Information"/>
+                    <group>
+                        <group>
+                            <field name="employee_id" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="line_manager_id" attrs="{'readonly':[('state','!=','draft')]}"
+                                   domain="[('is_line_manager','=',True)]"/>
+                            <field name="hof_id" attrs="{'readonly':[('state','!=','draft')]}" required="1"
+                                   domain="[('manager','=',True)]"/>
+                            <field name="employment_status" attrs="{'invisible':[('state','!=','approve'),('state','!=','done')],
+                                        'required':[('state','=','approve')], 'readonly':[('state','=','done')]}"/>
+                            <field name="contract_id" domain="[('employee_id','=',employee_id)]"
+                                   attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="company_id" attrs="{'readonly':[('state','!=','draft')]}" options="{'no_create': True}"
+                                   groups="base.group_multi_company"/>
+                            <field name="rating" widget="priority" groups="hr.group_hr_user"/>
+                        </group>
+                        <group>
+                            <field name="branch_id" domain="[('company_id', '=', company_id)]" groups="slnee_hr_branch.group_company_branch"/>
+                            <field name="department_id"/>
+                            <field name="job_id"/>
+                            <field name="join_date"/>
+                            <field name="extend_start_date" attrs="{'invisible':[('employment_status','!=','extend')],
+                                        'required':[('state','=','approve'),('employment_status','=','extend')],
+                                        'readonly':[('state','=','done')]}"/>
+                            <field name="extend_end_date" attrs="{'invisible':[('employment_status','!=','extend')],
+                                        'required':[('state','=','approve'),('employment_status','=','extend')],
+                                        'readonly':[('state','=','done')]}"/>
+                            <field name="probation_complete_date"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Plan">
+                            <field name="probation_plan" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        </page>
+                        <page string="Review">
+                            <field name="review" attrs="{'required':[('state','=','confirm')],
+                                        'readonly':[('state','not in',['draft','confirm'])]}"/>
+                        </page>
+                        <page string="Extra Information" groups="base.group_no_one">
+                            <group name="extra_info" col="4">
+                                <field name="create_uid" readonly="1"/>
+                                <field name="create_date" readonly="1"/>
+                                <field name="write_uid" readonly="1"/>
+                                <field name="write_date" readonly="1"/>
+                                <field name="approved_by" attrs="{'invisible':[('approved_by','=',False)]}"/>
+                                <field name="approved_date" attrs="{'invisible':[('approved_date','=',False)]}"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+    <record id="emp_probation_review_tree" model="ir.ui.view">
+        <field name="name">Probation Plan</field>
+        <field name="model">emp.probation.review</field>
+        <field name="arch" type="xml">
+            <tree string="Employee Probation Plan">
+                <field name="employee_id"/>
+                <field name="job_id"/>
+                <field name="department_id"/>
+                <field name="hof_id"/>
+                <field name="line_manager_id"/>
+                <field name="join_date"/>
+                <field name="probation_complete_date"/>
+            </tree>
+        </field>
+    </record>
+    <record id="emp_probation_review_filter" model="ir.ui.view">
+        <field name="name">emp.probation.review.list.select</field>
+        <field name="model">emp.probation.review</field>
+        <field name="arch" type="xml">
+            <search string="Filter">
+                <filter domain="[('state','=','draft')]" string="To Approve"/>
+                <filter domain="[('state','=','confirm')]" string="Confirmed"/>
+                <filter domain="[('state','=','approve')]" string="Approved"/>
+                <filter domain="[('state','=','refuse')]" string="Refused"/>
+                <group expand="0" string="Group By...">
+                    <filter string="Employee" context="{'group_by':'employee_id'}"/>
+                    <filter string="Job Position" context="{'group_by':'job_id'}"/>
+                    <filter string="Department" context="{'group_by':'department_id'}"/>
+                    <filter string="Manager" context="{'group_by':'line_manager_id'}"/>
+                    <filter string="Head of Function" context="{'group_by':'hof_id'}"/>
+                    <filter string="Employee Status" context="{'group_by':'employment_status'}"/>
+                    <filter string="Status" context="{'group_by':'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="action_emp_probation_review" model="ir.actions.act_window">
+        <field name="name">Probation Plan</field>
+        <field name="res_model">emp.probation.review</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

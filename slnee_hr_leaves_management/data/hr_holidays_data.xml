@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Meeting Type -->
+         <record model="calendar.event.type" id="categ_leaves">
+            <field name="name">Leaves</field>
+        </record>
+
+        <!-- Annual leave -->
+        <record model="hr.holidays.status" id="hr_holidays.holiday_status_cl">
+            <field name="name">Annual Leaves</field>
+            <field name="color_name">blue</field>
+            <field name="carry_forward">True</field>
+            <field name="hr_validation">True</field>
+            <field name="skip">True</field>
+            <field name="categ_id" ref="categ_leaves"/>
+        </record>
+
+        <!-- Sick leave -->
+        <record model="hr.holidays.status" id="hr_holidays.holiday_status_sl">
+            <field name="code">sick_leaves</field>
+            <field name="is_deduction" eval="True"/>
+            <field name="deduction_by">day</field>
+            <field name="limit" eval="False"/>
+            <field name="sick_leave">True</field>
+            <field name="color_name">magenta</field>
+            <field name="categ_id" ref="categ_leaves"/>
+        </record>
+
+        <!-- Study Leave -->
+        <record model="hr.holidays.status" id="hr_holidays.holiday_status_comp">
+            <field name="name">Study Leave</field>
+            <field name="skip">True</field>
+            <field name="limit" eval="False"/>
+            <field name="color_name">lightgreen</field>
+            <field name="categ_id" ref="categ_leaves"/>
+        </record>
+
+        <!--Unpaid Leave -->
+        <record model="hr.holidays.status" id="hr_holidays.holiday_status_unpaid">
+            <field name="code">unpaid_leave</field>
+            <field name="is_deduction" eval="True"/>
+            <field name="deduction_by">day</field>
+            <field name="double_validation">True</field>
+            <field name="limit">True</field>
+            <field name="hr_validation">True</field>
+            <field name="color_name">red</field>
+            <field name="categ_id" ref="categ_leaves"/>
+        </record>
+
+        <!-- Maternity Leave -->
+        <record model="hr.holidays.status" id="holiday_status_maternity">
+            <field name="name">Maternity Leave</field>
+            <field name="code">maternity_leave</field>
+            <field name="is_deduction" eval="True"/>
+            <field name="deduction_by">year</field>
+            <field name="maternity_leave">True</field>
+            <field name="color_name">lightpink</field>
+            <field name="categ_id" ref="categ_leaves"/>
+        </record>
+
+        <!-- Marriage Leave -->
+        <record model="hr.holidays.status" id="holiday_status_marriage">
+            <field name="name">Marriage Leave</field>
+            <field name="skip">True</field>
+            <field name="color_name">brown</field>
+            <field name="one_time_usable">True</field>
+            <field name="categ_id" ref="categ_leaves"/>
+        </record>
+
+        <!-- Compassionate Leave -->
+        <record model="hr.holidays.status" id="holiday_status_compassionate">
+            <field name="name">Compassionate Leave</field>
+            <field name="skip">True</field>
+            <field name="color_name">lightcoral</field>
+            <field name="categ_id" ref="categ_leaves"/>
+        </record>
+
+        <!-- Paternity Leave -->
+        <record model="hr.holidays.status" id="holiday_status_paternity">
+            <field name="name">Paternity Leave</field>
+            <field name="skip">True</field>
+            <field name="color_name">lightcyan</field>
+            <field name="categ_id" ref="categ_leaves"/>
+        </record>
+
+        <!-- Hajj Leave -->
+        <record model="hr.holidays.status" id="holiday_status_hajj">
+            <field name="name">Hajj Leave</field>
+            <field name="color_name">wheat</field>
+            <field name="one_time_usable">True</field>
+            <field name="categ_id" ref="categ_leaves"/>
+        </record>
+
+        <!-- Secondment Leave -->
+        <record model="hr.holidays.status" id="holiday_status_secondment">
+            <field name="name">Secondment Leave</field>
+            <field name="double_validation">True</field>
+            <field name="color_name">ivory</field>
+            <field name="categ_id" ref="categ_leaves"/>
+        </record>
+
+        <!-- Sick Rule Line data -->
+        <record model="hr.leave.rule.line" id="sick_leave_rule_1">
+            <field name="name">First 30 Days</field>
+            <field name="limit_from">0</field>
+            <field name="limit_to">30</field>
+            <field name="limit_per">100</field>
+            <field name="holiday_status_id" ref="hr_holidays.holiday_status_sl"/>
+        </record>
+        <record model="hr.leave.rule.line" id="sick_leave_rule_2">
+            <field name="name">Next 30 Days</field>
+            <field name="limit_from">31</field>
+            <field name="limit_to">60</field>
+            <field name="limit_per">75</field>
+            <field name="holiday_status_id" ref="hr_holidays.holiday_status_sl"/>
+        </record>
+        <record model="hr.leave.rule.line" id="sick_leave_rule_3">
+            <field name="name">Next 30 Days</field>
+            <field name="limit_from">61</field>
+            <field name="limit_to">90</field>
+            <field name="limit_per">50</field>
+            <field name="holiday_status_id" ref="hr_holidays.holiday_status_sl"/>
+        </record>
+        <record model="hr.leave.rule.line" id="sick_leave_rule_4">
+            <field name="name">Unpaid</field>
+            <field name="limit_from">91</field>
+            <field name="limit_to">365</field>
+            <field name="limit_per">0</field>
+            <field name="holiday_status_id" ref="hr_holidays.holiday_status_sl"/>
+        </record>
+
+        <!-- Maternity Rule Line data -->
+        <record model="hr.leave.rule.line" id="maternity_leave_rule_1">
+            <field name="name">First 3 Years</field>
+            <field name="limit_from">0</field>
+            <field name="limit_to">3</field>
+            <field name="limit_per">50</field>
+            <field name="holiday_status_id" ref="slnee_hr_leaves_management.holiday_status_maternity"/>
+        </record>
+        <record model="hr.leave.rule.line" id="maternity_leave_rule_2">
+            <field name="name">After 3 Years</field>
+            <field name="limit_from">4</field>
+            <field name="limit_to">99</field>
+            <field name="limit_per">100</field>
+            <field name="holiday_status_id" ref="slnee_hr_leaves_management.holiday_status_maternity"/>
+        </record>
+
+        <!-- Unpaid Rule Line data -->
+        <record model="hr.leave.rule.line" id="unpaid_leave_rule_1">
+            <field name="name">Unpaid</field>
+            <field name="limit_from">0</field>
+            <field name="limit_to">9999</field>
+            <field name="limit_per">0</field>
+            <field name="holiday_status_id" ref="hr_holidays.holiday_status_unpaid"/>
+        </record>
+
+    </data>
+</odoo>

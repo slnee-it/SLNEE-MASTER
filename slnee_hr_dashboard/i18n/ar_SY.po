@@ -1,0 +1,378 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_dashboard
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-26 11:22+0000\n"
+"PO-Revision-Date: 2019-02-26 11:22+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:36
+#, python-format
+msgid "Add job title"
+msgstr "إضافة المسمى الوظيفي"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:62
+#, python-format
+msgid "Age"
+msgstr "عمر"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:73
+#, python-format
+msgid "Ago"
+msgstr " "
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/js/hrms_dashboard.js:320
+#, python-format
+msgid "Applications"
+msgstr "نماذج"
+
+#. module: slnee_hr_dashboard
+#: model:ir.actions.report,name:slnee_hr_dashboard.action_report_broad_factor
+#: model:ir.model.fields,field_description:slnee_hr_dashboard.field_hr_employee_broad_factor_broad_factor
+#: model:ir.ui.view,arch_db:slnee_hr_dashboard.report_broadfactor
+msgid "Broad Factor"
+msgstr "Broad Factor"
+
+#. module: slnee_hr_dashboard
+#: model:ir.ui.view,arch_db:slnee_hr_dashboard.report_broadfactor
+msgid "Broad Factor Report"
+msgstr "Broad Factor Report"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:181
+#, python-format
+msgid "Check In"
+msgstr "تسجيل دخول"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:189
+#, python-format
+msgid "Check out"
+msgstr "تسجيل خروج"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/js/hrms_dashboard.js:192
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:138
+#, python-format
+msgid "Contracts"
+msgstr "عقود"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:65
+#, python-format
+msgid "DOB"
+msgstr "تاريخ الميلاد"
+
+#. module: slnee_hr_dashboard
+#: model:ir.actions.client,name:slnee_hr_dashboard.hr_action_dashboard
+#: model:ir.ui.menu,name:slnee_hr_dashboard.menu_hrms_dashboard
+msgid "Dashboard"
+msgstr "لوحات المعلومات"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:77
+#, python-format
+msgid "Date"
+msgstr "تاريخ"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:338
+#, python-format
+msgid "Date :"
+msgstr "تاريخ :"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:271
+#, python-format
+msgid "Department Employees"
+msgstr "موظفي الإدارات"
+
+#. module: slnee_hr_dashboard
+#: model:ir.model.fields,field_description:slnee_hr_dashboard.field_hr_employee_broad_factor_display_name
+#: model:ir.model.fields,field_description:slnee_hr_dashboard.field_report_hrms_dashboard_report_broadfactor_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: slnee_hr_dashboard
+#: model:ir.model,name:slnee_hr_dashboard.model_hr_employee
+#: model:ir.ui.view,arch_db:slnee_hr_dashboard.report_broadfactor
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: slnee_hr_dashboard
+#: model:ir.model,name:slnee_hr_dashboard.model_hr_employee_broad_factor
+msgid "Employee Broadfactor"
+msgstr "Employee Broadfactor"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/js/hrms_dashboard.js:133
+#, python-format
+msgid "Employee Payslips"
+msgstr "كشوف رواتب الموظفين"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:372
+#, python-format
+msgid "Error : Could not find employee linked to user"
+msgstr "خطء : لا يمكن العثور على الموظف المرتبط بالمستخدم"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/js/hrms_dashboard.js:171
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:164
+#, python-format
+msgid "Expenses"
+msgstr "مصروفات"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:47
+#, python-format
+msgid "Female"
+msgstr "أنثى"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:54
+#, python-format
+msgid "Gender"
+msgstr "جنس"
+
+#. module: slnee_hr_dashboard
+#: model:ir.model.fields,field_description:slnee_hr_dashboard.field_hr_employee_broad_factor_id
+#: model:ir.model.fields,field_description:slnee_hr_dashboard.field_report_hrms_dashboard_report_broadfactor_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:255
+#, python-format
+msgid "Job Applications"
+msgstr "نماذج الوظائف"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:71
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:76
+#, python-format
+msgid "Joined"
+msgstr "انضم منذ"
+
+#. module: slnee_hr_dashboard
+#: model:ir.model.fields,field_description:slnee_hr_dashboard.field_hr_employee_broad_factor___last_update
+#: model:ir.model.fields,field_description:slnee_hr_dashboard.field_report_hrms_dashboard_report_broadfactor___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/js/hrms_dashboard.js:279
+#, python-format
+msgid "Leave Allocation Request"
+msgstr "طلب توزيع رصيد"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:245
+#, python-format
+msgid "Leave Allocation Requests"
+msgstr "طلبات توزيع أرصدة"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/js/hrms_dashboard.js:260
+#, python-format
+msgid "Leave Request"
+msgstr "طلب إجازة"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:207
+#, python-format
+msgid "Leave Requests"
+msgstr "طلبات الإجازة"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/js/hrms_dashboard.js:241
+#, python-format
+msgid "Leaves Today"
+msgstr "إجازات اليوم"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/js/hrms_dashboard.js:152
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:151
+#, python-format
+msgid "Loans"
+msgstr "قروض"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:43
+#, python-format
+msgid "Male"
+msgstr "ذكر"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:94
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:97
+#, python-format
+msgid "Mobile"
+msgstr "جوال"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:286
+#, python-format
+msgid "Monthly Leave Analysis"
+msgstr "تحليل الإجازة الشهرية"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:360
+#, python-format
+msgid "My Leave Analysis"
+msgstr "تحليل إجازتي"
+
+#. module: slnee_hr_dashboard
+#: model:ir.model.fields,field_description:slnee_hr_dashboard.field_hr_employee_broad_factor_name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:84
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:87
+#, python-format
+msgid "Nationality"
+msgstr "جنسيتي"
+
+#. module: slnee_hr_dashboard
+#: model:ir.model.fields,field_description:slnee_hr_dashboard.field_hr_employee_broad_factor_no_of_days
+msgid "No Of Days"
+msgstr "No Of Days"
+
+#. module: slnee_hr_dashboard
+#: model:ir.model.fields,field_description:slnee_hr_dashboard.field_hr_employee_broad_factor_no_of_occurrence
+msgid "No Of Occurrence"
+msgstr "No Of Occurrence"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:343
+#, python-format
+msgid "Online"
+msgstr "Online"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:49
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:51
+#, python-format
+msgid "Other"
+msgstr "Other"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:112
+#, python-format
+msgid "Payslips"
+msgstr "كشوف الراتب"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:373
+#, python-format
+msgid "Please contact system admin for the setup"
+msgstr "Please contact system admin for the setup"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:230
+#, python-format
+msgid "This Month"
+msgstr "هذا الشهر"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/js/hrms_dashboard.js:221
+#, python-format
+msgid "This Month Leaves"
+msgstr "إجازات هذا الشهر"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/js/hrms_dashboard.js:298
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:125
+#, python-format
+msgid "Timesheets"
+msgstr "سجل الدوام"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:218
+#, python-format
+msgid "Today"
+msgstr "اليوم"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:300
+#, python-format
+msgid "Upcoming Birthdays"
+msgstr "أعياد الميلاد القادمة"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:326
+#, python-format
+msgid "Upcoming Events"
+msgstr "الفعاليات القادمة"
+
+#. module: slnee_hr_dashboard
+#. openerp-web
+#: code:addons/slnee_hr_dashboard/static/src/xml/hrms_dashboard.xml:340
+#, python-format
+msgid "Venue :"
+msgstr "مكان :"
+
+#. module: slnee_hr_dashboard
+#: model:ir.model,name:slnee_hr_dashboard.model_report_hrms_dashboard_report_broadfactor
+msgid "report.hrms_dashboard.report_broadfactor"
+msgstr "report.hrms_dashboard.report_broadfactor"
+
+#. module: slnee_hr_dashboard
+#: code:addons/slnee_hr_dashboard/models/hrms_dashboard.py:73
+#, python-format
+msgid "{} years {} months {} days"
+msgstr "{} أعوام {} شهور {} أيام"
+

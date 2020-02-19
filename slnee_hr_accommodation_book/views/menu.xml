@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Accomodation Menus -->
+    <menuitem id="menu_facilities" action="action_facility" parent="hr_admin.menu_hr_admin_config" sequence="10"
+              groups="hr_admin.group_admin_manager"/>
+    <menuitem id="menu_villa" action="action_villa" parent="hr_admin.menu_hr_admin_config" sequence="11"
+              groups="hr_admin.group_admin_manager"/>
+    <menuitem id="menu_hotel" action="action_hotel" parent="hr_admin.menu_hr_admin_config" sequence="12"
+              groups="hr_admin.group_admin_manager"/>
+    <menuitem id="menu_room" action="action_room" parent="hr_admin.menu_hr_admin_config" sequence="13"
+              groups="hr_admin.group_admin_manager"/>
+    <menuitem id="menu_accommodation" parent="hr_admin.menu_hr_admin" action="action_accommodation_view" sequence="4"
+              groups="base.group_user,hr_admin.group_admin_manager"/>
+    <menuitem id="menu_accommodation_line" parent="hr_admin.menu_hr_admin" action="action_accommodation_line" sequence="5"
+              groups="base.group_user"/>
+    <menuitem id="hr_admin.menu_admin_report_id" name="Admin Reports" parent="hr_admin.menu_hr_admin"
+              action="hr_admin.action_admin_reports_form"/>
+</odoo>

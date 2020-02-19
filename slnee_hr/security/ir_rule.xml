@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="slnee_advance_hr_hr_employee" model="ir.rule">
+        <field name="name">HR Employee</field>
+        <field name="model_id" ref="model_hr_employee"/>
+        <field name="domain_force">['|','|',('user_id', '=', user.id), ('parent_id.user_id', '=', user.id), ('coach_id.user_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4,ref('base.group_user')),(4,ref('slnee_hr.group_line_manager')),(4,ref('slnee_hr.group_hof'))]"/>
+    </record>
+
+    <record id="slnee_advance_hr_hr_employee_others" model="ir.rule">
+        <field name="name">HR Employee Others</field>
+        <field name="model_id" ref="model_hr_employee"/>
+        <field name="domain_force">[(1,'=',1)]</field>
+        <field name="groups" eval="[(4,ref('hr.group_hr_user')),(4,ref('slnee_hr.group_gr_assistant')),(4,ref('hr.group_hr_manager'))]"/>
+<!--     (4,ref('slnee_hr.group_helpdesk_assistant'))(4,ref('slnee_advance_hr.group_finance_officer')),(4,ref('slnee_advance_hr.group_payroll_assistant')),(4,ref('group_talent_acquisition_assistant')) -->
+    </record>
+
+    <!--             Iqama                -->
+    <!-- <record id="property_rule_hr_iqama_employee" model="ir.rule">
+        <field name="name">HR Iqama Employee</field>
+        <field name="model_id" ref="model_hr_iqama"/>
+        <field name="domain_force">[('employee_id.user_id','=',user.id)]</field>
+        <field name="groups" eval="[(4,ref('base.group_user'))]"/>
+    </record>
+    <record id="property_rule_hr_iqama_others" model="ir.rule">
+        <field name="name">HR Iqama Others</field>
+        <field name="model_id" ref="model_hr_iqama"/>
+        <field name="domain_force">[(1,'=',1)]</field>
+        <field name="groups" eval="[(4,ref('slnee_hr.group_gr_assistant')),(4, ref('hr.group_hr_manager')),(4, ref('hr.group_hr_user')),(4,ref('slnee_hr.group_admin_manager'))]"/>
+    </record> -->
+</odoo>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Form view of equipment request -->
+    <record id="view_maintenance_equipment_request_form" model="ir.ui.view">
+        <field name="name">Maintenance Equipment Request</field>
+        <field name="model">maintenance.equipment.request</field>
+        <field name="arch" type="xml">
+            <form string="Equipment Request">
+                <header>
+                    <button name="action_equipment_confirm" string="Confirm" states="draft" type="object" class="oe_highlight"/>
+                    <button name="action_equipment_validate" string="Validate" states="confirm" type="object" class="oe_highlight" groups="slnee_hr.group_line_manager,slnee_hr.group_hof"/>
+                    <button name="action_equipment_approve" string="Approve" states="validate" type="object" class="oe_highlight" groups="slnee_hr_it_operations.group_it_helpdesk_user"/>
+                    <button name="generate_expense" string="Generate Expense" type="object" class="oe_highlight" attrs="{'invisible':['|','|',('expense_ids','!=',[]),('state','not in',['approve','refuse']),('is_expense','=',False)]}" groups="slnee_hr_it_operations.group_it_helpdesk_user"/>
+                    <button name="action_equipment_return" string="Return" states="approve" type="object" class="oe_highlight" groups="base.group_user"/>
+                    <button name="action_equipment_refuse" string="Refuse" states="draft,validate" type="object" groups="slnee_hr.group_line_manager,slnee_hr.group_hof"/>
+                    <button name="set_to_draft" string="Set to Draft" states="approve,refuse" type="object" groups="slnee_hr.group_line_manager,slnee_hr.group_hof" />
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirm,validate" />
+                </header>
+                <sheet>
+                    <div class="oe_button_box">
+                        <button type="object" name="view_expense" string="Expense" class="oe_stat_button" icon="fa-book"
+                                attrs="{'invisible':[('expense_ids','=',[])]}" groups="slnee_hr.group_line_manager,slnee_hr.group_hof">
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only"/>
+                        <h1><field name="name" string="Name" placeholder="Subject" attrs="{'readonly': [('state','not in',['draft','refuse'])]}"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="category_id" options="{&quot;no_open&quot;: True}" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="assign_to" widget="radio" attrs="{'readonly':[('state','!=','draft')]}" groups="hr.group_hr_user"/>
+                            <field name="employee_id" attrs="{'invisible': ['|', ('assign_to', '=', 'department'), ('assign_to', '=', False)], 'required': [('assign_to', '=', 'employee')], 'readonly':[('state','!=','draft')]}"/>
+                            <field name="department_id" attrs="{'invisible': ['|', ('assign_to', '=', 'employee'), ('assign_to', '=', False)], 'required': [('assign_to', '=', 'department')], 'readonly':[('state','!=','draft')]}"/>
+                        </group>
+                        <group>
+                            <field name="request_date" readonly="True"/>
+                            <field name="return_date" readonly="True"/>
+                            <field name="equipment_id" context="{'category_id': category_id, 'assign_to': assign_to}" options="{'no_create_edit':1}" attrs="{'required': [('state','=', 'validate')], 'readonly': [('state','not in','validate')]}" groups="slnee_hr_it_operations.group_it_helpdesk_user"/>
+                            <field name="is_expense" groups="slnee_hr.group_line_manager,slnee_hr.group_hof" attrs="{'readonly':[('expense_ids','!=',[])], 'invisible': [('state','not in','approve')]}"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="desc" string="Description">
+                            <group>
+                                <field name="description" placeholder="Put the description of equipment here" nolabel="1" attrs="{'readonly': [('state','not in',['draft','refuse'])]}"/>
+                            </group>
+                        </page>
+                        <page name="expense" string="Expense Details" attrs="{'invisible': [('is_expense','=',False)]}" groups="slnee_hr.group_line_manager,slnee_hr.group_hof" >
+                            <group col="4">
+                                <field name="payment_mode" widget="radio" attrs="{'readonly':[('expense_ids','!=', [])]}" />
+                                <field name="expense_total" attrs="{'readonly':[('expense_ids','!=',[])]}"/>
+                                <field name="employee_contribution" attrs="{'required':[('payment_mode','!=','company_account')], 'invisible':[('payment_mode','=','company_account')], 'readonly':['|', ('expense_ids','!=', []), ('state','not in',['draft','confirm','approve'])]}"/>
+                                <field name="company_contribution" attrs="{'required':[('payment_mode','!=','own_account')], 'invisible':[('payment_mode','=','own_account')], 'readonly':['|', ('expense_ids','!=', []),('state','not in',['draft','confirm','approve'])]}" />
+                                <field name="expense_ids" invisible="1"/>
+                            </group>
+                            <group string="Note" colspan="4">
+                                <field name="expense_note" nolabel="1" attrs="{'readonly':[('expense_ids','!=',[])]}"/>
+                            </group>
+                        </page>
+                        <page string="Extra Information" groups="base.group_no_one">
+                            <group name="extra_info" col="4">
+                                <field name="create_uid" readonly="1"/>
+                                <field name="create_date" readonly="1"/>
+                                <field name="write_uid" readonly="1"/>
+                                <field name="write_date" readonly="1"/>
+                                <field name="validated_by" attrs="{'invisible':[('validated_by','=',False)]}"/>
+                                <field name="validated_date" attrs="{'invisible':[('validated_date','=',False)]}"/>
+                                <field name="approved_by" attrs="{'invisible':[('approved_by','=',False)]}"/>
+                                <field name="approved_date" attrs="{'invisible':[('approved_date','=',False)]}"/>
+                                <field name="refused_by" attrs="{'invisible':[('refused_by','=',False)]}"/>
+                                <field name="refused_date" attrs="{'invisible':[('refused_date','=',False)]}"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree view of equipment request -->
+    <record id="view_maintenance_equipment_request_tree" model="ir.ui.view">
+        <field name="name">Equipment Request</field>
+        <field name="model">maintenance.equipment.request</field>
+        <field name="arch" type="xml">
+            <tree string="Equipment Request">
+                <field name="name"/>
+                <field name="employee_id"/>
+                <field name="equipment_id"/>
+                <field name="request_date"/>
+                <field name="return_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Search view of equipment request -->
+    <record id="search_view_equipment_request" model="ir.ui.view">
+            <field name="name">Equipment Request</field>
+        <field name="model">maintenance.equipment.request</field>
+            <field name="arch" type="xml">
+                <search string="Filter">
+                    <filter string="Approve" domain="[('state','=',('approve'))]"/>
+                    <filter string="Return" domain="[('state','=',('return'))]" />
+                    <filter string="Validate" domain="[('state','=',('validate'))]" />
+                    <filter string="Refused" domain="[('state','=',('refuse'))]" />
+                    <group expand="0" string="Group By...">
+                        <filter string="Assign To" context="{'group_by':'assign_to'}"/>
+                        <filter string="Department" context="{'group_by':'department_id'}"/>
+                        <filter string="Employee" context="{'group_by':'employee_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+    <!-- Action of equipment request -->
+    <record id="action_maintenance_equipment_request" model="ir.actions.act_window">
+        <field name="name">Equipment Request</field>
+        <field name="res_model">maintenance.equipment.request</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_type">form</field>
+        <field name="help" type="html">
+          <p class="oe_view_nocontent_create">
+            Click to add an equipment request.
+          </p>
+        </field>
+    </record>
+
+</odoo>

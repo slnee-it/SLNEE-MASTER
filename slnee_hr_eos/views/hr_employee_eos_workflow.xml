@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Workflow definition -->
+
+    <record id="wkf_employee_eos" model="workflow">
+        <field name="name">hr.wkf.eos</field>
+        <field name="osv">hr.employee.eos</field>
+        <field name="on_create">True</field>
+    </record>
+
+    <record id="act_draft_eos" model="workflow.activity">
+        <field name="wkf_id" ref="wkf_employee_eos"/>
+        <field name="name">draft</field>
+        <field name="flow_start">True</field>
+        <field name="kind">function</field>
+        <field name="action">write({'state': 'draft'})</field>
+    </record>
+
+    <record id="act_confirm_eos" model="workflow.activity">
+        <field name="wkf_id" ref="wkf_employee_eos"/>
+        <field name="name">confirm</field>
+        <field name="kind">function</field>
+        <field name="action">eos_confirm()</field>
+    </record>
+    
+    <record id="act_validate_eos" model="workflow.activity">
+        <field name="wkf_id" ref="wkf_employee_eos"/>
+        <field name="name">validate</field>
+        <field name="kind">function</field>
+        <field name="action">eos_validate()</field>
+    </record>
+
+    <record id="act_accepted_eos" model="workflow.activity">
+        <field name="wkf_id" ref="wkf_employee_eos"/>
+        <field name="name">accepted</field>
+        <field name="kind">function</field>
+        <field name="action">eos_accept()</field>
+    </record>
+
+    <record id="act_refused_eos" model="workflow.activity">
+        <field name="wkf_id" ref="wkf_employee_eos"/>
+        <field name="name">refused</field>
+        <field name="kind">function</field>
+        <field name="action">eos_canceled()</field>
+    </record>
+
+    <record id="act_done_eos" model="workflow.activity">
+        <field name="wkf_id" ref="wkf_employee_eos"/>
+        <field name="name">done</field>
+        <field name="kind">function</field>
+        <!-- <field name="flow_stop">True</field> -->
+        <field name="action">action_receipt_create()</field>
+    </record>
+
+    <record id="t1_eos" model="workflow.transition">
+        <field name="act_from" ref="act_draft_eos"/>
+        <field name="act_to" ref="act_confirm_eos"/>
+        <field name="signal">confirm</field>
+    </record>
+
+    <record id="t2_eos" model="workflow.transition">
+        <field name="act_from" ref="act_confirm_eos"/>
+        <field name="act_to" ref="act_validate_eos"/>
+        <field name="signal">validate</field>
+    </record>
+
+    <record id="t3_eos" model="workflow.transition">
+        <field name="act_from" ref="act_validate_eos"/>
+        <field name="act_to" ref="act_accepted_eos"/>
+        <field name="signal">approve</field>
+    </record>
+
+    <record id="t4_eos" model="workflow.transition">
+        <field name="act_from" ref="act_confirm_eos"/>
+        <field name="act_to" ref="act_refused_eos"/>
+        <field name="signal">refuse</field>
+    </record>
+
+    <record id="t3_1_eos" model="workflow.transition">
+        <field name="act_from" ref="act_validate_eos"/>
+        <field name="act_to" ref="act_refused_eos"/>
+        <field name="signal">refuse</field>
+    </record>
+
+    <record id="t6_eos" model="workflow.transition">
+        <field name="act_from" ref="act_accepted_eos"/>
+        <field name="act_to" ref="act_refused_eos"/>
+        <field name="signal">refuse</field>
+    </record>
+
+    <record id="t7_eos" model="workflow.transition">
+        <field name="act_from" ref="act_confirm_eos"/>
+        <field name="act_to" ref="act_draft_eos"/>
+        <field name="signal">draft</field>
+    </record>
+
+    <record id="t8_eos" model="workflow.transition">
+        <field name="act_from" ref="act_accepted_eos"/>
+        <field name="act_to" ref="act_done_eos"/>
+        <field name="signal">done</field>
+        <field name="group_id" ref="hr.group_hr_user"/>
+    </record>
+
+    <record id="t10_eos" model="workflow.transition">
+        <field name="act_from" ref="act_refused_eos"/>
+        <field name="act_to" ref="act_draft_eos"/>
+        <field name="signal">draft</field>
+    </record>
+
+</odoo>

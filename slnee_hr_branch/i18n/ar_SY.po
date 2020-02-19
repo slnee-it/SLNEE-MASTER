@@ -1,0 +1,232 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_branch
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-12 09:24+0000\n"
+"PO-Revision-Date: 2018-09-12 09:24+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_branch
+#: model:ir.ui.view,arch_db:slnee_hr_branch.hr_branch_form_view
+msgid "Address"
+msgstr "العنوان"
+
+#. module: slnee_hr_branch
+#: model:ir.ui.view,arch_db:slnee_hr_branch.hr_branch_form_view
+msgid "Address Details"
+msgstr "تفاصيل العنوان"
+
+#. module: slnee_hr_branch
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch_arabic_name
+msgid "Arabic Name"
+msgstr "اسم عربي"
+
+#. module: slnee_hr_branch
+#: model:ir.ui.view,arch_db:slnee_hr_branch.hr_branch_form_view
+msgid "Arabic Name(Office)"
+msgstr "(الاسم العربي (مكتب"
+
+#. module: slnee_hr_branch
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch_arabic_city
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch_city
+#: model:ir.ui.view,arch_db:slnee_hr_branch.hr_branch_form_view
+msgid "City"
+msgstr "المدينة"
+
+#. module: slnee_hr_branch
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch_code
+msgid "Code"
+msgstr "الشفرة"
+
+#. module: slnee_hr_branch
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch_company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: slnee_hr_branch
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch_company_arabic_name
+msgid "Company Arabic Name"
+msgstr "اسم الشركة العربية"
+
+#. module: slnee_hr_branch
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch_company_name
+msgid "Company Name"
+msgstr "اسم الشركة"
+
+#. module: slnee_hr_branch
+#: model:ir.ui.view,arch_db:slnee_hr_branch.hr_branch_form_view
+msgid "Company name"
+msgstr "اسم الشركة"
+
+#. module: slnee_hr_branch
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch_arabic_country
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch_country
+#: model:ir.ui.view,arch_db:slnee_hr_branch.hr_branch_form_view
+msgid "Country"
+msgstr "دولة"
+
+#. module: slnee_hr_branch
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: slnee_hr_branch
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: slnee_hr_branch
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: slnee_hr_branch
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: slnee_hr_branch
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: slnee_hr_branch
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: slnee_hr_branch
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: slnee_hr_branch
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch_mobile
+msgid "Mobile"
+msgstr "الجوال"
+
+#. module: slnee_hr_branch
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_res_config_settings_group_group_company_branch
+#: model:ir.ui.view,arch_db:slnee_hr_branch.branch_res_config_settings_view_form
+#: model:res.groups,name:slnee_hr_branch.group_company_branch
+msgid "Multi Branch"
+msgstr "أنواع التحذير"
+
+#. module: slnee_hr_branch
+#: model:ir.actions.act_window,name:slnee_hr_branch.action_hr_branch
+#: model:ir.ui.menu,name:slnee_hr_branch.menu_hr_branch
+#: model:ir.ui.view,arch_db:slnee_hr_branch.hr_branch_form_view
+msgid "Office"
+msgstr "مكتب"
+
+#. module: slnee_hr_branch
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch_name
+msgid "Office Name"
+msgstr "اسم المكتب"
+
+#. module: slnee_hr_branch
+#: model:ir.ui.view,arch_db:slnee_hr_branch.hr_branch_tree_view
+msgid "Office tree"
+msgstr "شجرة مكتب"
+
+#. module: slnee_hr_branch
+#: model:ir.ui.view,arch_db:slnee_hr_branch.hr_branch_form_view
+msgid "P.O. Box"
+msgstr "ص ب: صندوق"
+
+#. module: slnee_hr_branch
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch_po_box_no
+msgid "P.O.Box"
+msgstr "صندوق البريد"
+
+#. module: slnee_hr_branch
+#: model:ir.ui.view,arch_db:slnee_hr_branch.branch_res_config_settings_view_form
+msgid "Show Company Branch in employee form."
+msgstr "عرض فرع الشركة في شكل موظف."
+
+#. module: slnee_hr_branch
+#: model:ir.ui.view,arch_db:slnee_hr_branch.branch_res_config_settings_view_form
+msgid "Show organizational chart on employee form"
+msgstr "عرض الهيكل التنظيمي على شكل الموظف"
+
+#. module: slnee_hr_branch
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch_arabic_street
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch_street
+msgid "Street"
+msgstr "الشارع"
+
+#. module: slnee_hr_branch
+#: model:ir.ui.view,arch_db:slnee_hr_branch.hr_branch_form_view
+msgid "Street..."
+msgstr "الشارع..."
+
+#. module: slnee_hr_branch
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch_arabic_street2
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch_street2
+msgid "Street2"
+msgstr "الشارع 2"
+
+#. module: slnee_hr_branch
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch_phone
+msgid "Tel"
+msgstr "الهاتف"
+
+#. module: slnee_hr_branch
+#: model:ir.ui.view,arch_db:slnee_hr_branch.hr_branch_form_view
+msgid "ZIP"
+msgstr "الرمز البريدي"
+
+#. module: slnee_hr_branch
+#: model:ir.model.fields,field_description:slnee_hr_branch.field_hr_branch_zip
+msgid "Zip"
+msgstr "الرمز البريدي"
+
+#. module: slnee_hr_branch
+#: model:ir.model,name:slnee_hr_branch.model_hr_branch
+msgid "hr.branch"
+msgstr "hr.branch"
+
+#. module: slnee_hr_branch
+#: model:ir.model,name:slnee_hr_branch.model_res_config_settings
+msgid "res.config.settings"
+msgstr "الدقة.التكوين.إعدادات"
+
+#. module: slnee_hr_branch
+#: model:ir.ui.view,arch_db:slnee_hr_branch.hr_branch_form_view
+msgid "اسم الشركة"
+msgstr "اسم الشركة"
+
+#. module: slnee_hr_branch
+#: model:ir.ui.view,arch_db:slnee_hr_branch.hr_branch_form_view
+msgid "الشارع ..."
+msgstr "الشارع ..."
+
+#. module: slnee_hr_branch
+#: model:ir.ui.view,arch_db:slnee_hr_branch.hr_branch_form_view
+msgid "بلد"
+msgstr "بلد"
+
+#. module: slnee_hr_branch
+#: model:ir.ui.view,arch_db:slnee_hr_branch.hr_branch_form_view
+msgid "تفاصيل عنوان"
+msgstr "تفاصيل عنوان"
+
+#. module: slnee_hr_branch
+#: model:ir.ui.view,arch_db:slnee_hr_branch.hr_branch_form_view
+msgid "عنوان"
+msgstr "عنوان"
+
+#. module: slnee_hr_branch
+#: model:ir.ui.view,arch_db:slnee_hr_branch.hr_branch_form_view
+msgid "مدينة"
+msgstr "مدينة"
+

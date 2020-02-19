@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="res.groups" id="group_portal_applications">
+        <field name="name">Portal Applications</field>
+    </record>
+
+    <record id="group_line_manager" model="res.groups">
+        <field name="name">Manager</field>
+    </record>
+    <record id="group_hof" model="res.groups">
+        <field name="name">Head of Function</field>
+    </record>
+    <record id="category_gr" model="ir.module.category">
+        <field name="name">GR</field>
+        <field name="sequence">19</field>
+    </record>
+
+    <!--group_gr-->
+    <record id="group_gr_assistant" model="res.groups">
+        <field name="name">Assistant</field>
+        <field name="category_id" ref="category_gr"/>
+    </record>
+    <record id="group_gr_officer" model="res.groups">
+        <field name="name">Officer</field>
+        <field name="category_id" ref="category_gr"/>
+        <field name="implied_ids" eval="[(4, ref('group_gr_assistant'))]"/>
+    </record>
+
+</odoo>

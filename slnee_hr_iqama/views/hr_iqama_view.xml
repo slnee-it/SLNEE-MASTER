@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+     <record id="hr_iqama_form_view" model="ir.ui.view">
+         <field name="name">hr.iqama.form.view</field>
+         <field name="model">hr.iqama</field>
+         <field name="arch" type="xml">
+             <form string="IQAMA">
+                  <header>
+                      <button name="iqama_confirm" string="Confirm" states="draft,need_renewal" type="object"
+                             class="oe_highlight" groups="base.group_user"/>
+                      <button name="iqama_validate" string="Approve" groups="hr.group_hr_user" states="confirm"
+                             type="object" class="oe_highlight" />
+                      <button name="iqama_inprogress" string="In Progress" groups="hr.group_hr_user" states="validate"
+                             type="object" class="oe_highlight" />
+                      <button name="iqama_received" string="Issued" groups="hr.group_hr_user" states="inprogress"
+                             type="object" class="oe_highlight" />
+                      <button name="iqama_refuse" string="Refuse" groups="hr.group_hr_user"
+                             states="inprogress,confirm,validate" type="object" />
+                      <button name="iqama_need_renewal" string="Renewal" groups="hr.group_hr_user" states="received"
+                             type="object" class="oe_highlight" />
+                      <button name="iqama_set_to_draft" string="Set to Draft" groups="hr.group_hr_user"
+                             states="received,refuse" type="object"/>
+                      <field name="state" widget="statusbar" statusbar_visible="draft,confirm"/>
+                 </header>
+                 <sheet>
+                     <group>
+                         <group string="IQAMA Type">
+                             <field name="request_type" attrs="{'readonly':[('state','!=','draft')]}"/>
+                         </group>
+                         <group>
+                         </group>
+                     </group>
+                     <group>
+                         <group string="Employee Details" attrs="{'invisible':[('request_type','!=','employee')]}">
+                         </group>
+                         <group string="Family Details" attrs="{'invisible':[('request_type','=','employee')]}">
+                         </group>
+                     </group>
+                     <group>
+                         <group groups="hr.group_hr_user">
+                             <field name="employee_id" required="1" placeholder="Select Employee"
+                                    attrs="{'readonly':[('state','!=','draft')]}"/>
+                             <field name="job_id" groups="hr.group_hr_user"/>
+                             <field name="department_id"/>
+                             <field name="branch_id" domain="[('company_id', '=', company_id)]" groups="slnee_hr_branch.group_company_branch"/>
+                             <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
+                         </group>
+                         <group string="">
+                             <field name="name" placeholder="Name" attrs="{'readonly':[('state','!=','draft')]}"/>
+                             <field name="arabic_name" attrs="{'readonly':[('state','!=','draft')]}"/>
+                             <field name="relation" attrs="{'readonly':[('state','!=','draft')],
+                             'invisible':[('request_type','=','employee')]}"/>
+                             <field name="nationality" placeholder="Select Nationality" required="1"
+                                    attrs="{'readonly':[('state','!=','draft')]}"/>
+                             <field name="religion" attrs="{'readonly':[('state','!=','draft')]}"/>
+                             <field name="birthdate" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+                             <field name="profession" attrs="{'invisible':[('request_type','!=','employee')],
+                             'readonly':[('state','!=','draft')]}"/>
+                             <field name="is_saudi" invisible="1"/>
+                         </group>
+                     </group>
+                     <separator string="IQAMA Details"/>
+                     <group>
+                         <group>
+                             <field name="iqama_no" attrs="{'readonly':[('state','in',('draft','confirm','need_renewal','refuse','received'))],'required':[('state','=','inprogress')]}"/>
+                             <field name="serial_number" attrs="{'readonly':[('state','in',('draft','confirm','need_renewal','refuse','received'))]}"/>
+                             <field name="iqama_position" attrs="{'readonly':[('state','in',('draft','confirm','need_renewal','refuse','received'))]}"/>
+                         </group>
+                         <group>
+                             <field name="place_of_issue" placeholder="Place of Issue"
+                                    attrs="{'readonly':[('state','in',['draft','confirm','need_renewal','refuse','received'])]}"/>
+                             <field name="issue_date" attrs="{'readonly':[('state','in',('draft','confirm','need_renewal','refuse','received'))],
+                             'required':[('state','=','inprogress')]}"/>
+                             <field name="expiry_date" attrs="{'readonly':[('state','in',('draft','confirm','need_renewal','refuse','received'))],
+                             'required':[('state','=','inprogress')]}"/>
+                             <field name="hijri_expiry_date" attrs="{'readonly':[('state','in',('draft','confirm','need_renewal','refuse','received'))],'required':[('state','=','inprogress')]}"/>
+                             <field name="arrival_date" attrs="{'invisible':[('is_saudi','=',True),('nationality','!=',False)],
+                             'readonly':[('state','in',('draft','confirm','need_renewal','refuse','received'))]}"/>
+                             <field name="current_status" attrs="{'invisible':[('is_saudi','=',True),('nationality','!=',False)],'readonly':[('state','in',('draft','confirm','need_renewal','refuse','received'))]}"/>
+                         </group>
+                     </group>
+                     <group>
+                         <group col="2" string="Other Details" attrs="{'invisible':[('state','in',['draft'])]}">
+                            <field name="handled_by_id" attrs="{'required':[('state', 'in', ['confirm','validate','inprogress','received'])],'invisible':[('state','in',['draft'])],'readonly':[('state','=','received')]}"/>
+                        </group>
+                     </group>
+                    <notebook>
+                        <page string="Description">
+                            <field name="description" placeholder="Put the description here" nolabel="1"/>
+                        </page>
+                        <page string="Required Documents">
+                            <separator string="For New IQAMA"/>
+                            <span class="oe_grey" style="font-size:12;margin-bottom:5px">
+                                1. Original Passport. <br/>
+                                2. Two Photos. <br/>
+                                3. Original Medical Report. <br/>
+                            </span>
+                            <separator string="Add Family in IQAMA"/>
+                            <span class="oe_grey" style="font-size:12;margin-bottom:5px">
+                                1. Original Medical Report.(if above 15 years). <br/>
+                                2. Birth Certificate translate into Arabic language. <br/>
+                                3. Two Photos for each. <br/>
+                                4. Original Passport. <br/>
+                                5. Medical Insurance. <br/>
+                            </span>
+                            <separator string="Add New Born Baby in IQAMA (Born outside KSA)"/>
+                            <span class="oe_grey" style="font-size:12;margin-bottom:5px">
+                                1. Child Medical Report(Vaccination). <br/>
+                                2. Birth Certificate translate into Arabic language. <br/>
+                                3. Two Photos. <br/>
+                                4. Original Passport. <br/>
+                                5. Medical Insurance. <br/>
+                                6. Original IQAMA of Father and Mother. <br/>
+                            </span>
+                            <separator string="Add New Born Baby in IQAMA (Born in KSA)"/>
+                            <span class="oe_grey" style="font-size:12;margin-bottom:5px">
+                                1. Birth Certificate and Vaccination Card.<br/>
+                                2. Two Photos.<br/>
+                                3. Original Passport.<br/>
+                                4. Medical Insurance. <br/>
+                                5. Original IQAMA of Father and Mother. <br/>
+                            </span>
+                        </page>
+                        <page string="Extra Information" groups="base.group_no_one">
+                            <group name="extra_info" col="4">
+                                <field name="create_uid" readonly="1" />
+                                <field name="create_date" readonly="1" />
+                                <field name="write_uid" readonly="1" />
+                                <field name="write_date" readonly="1" />
+                                <field name="approved_by" attrs="{'invisible':[('approved_by','=',False)]}"/>
+                                <field name="approved_date" attrs="{'invisible':[('approved_date','=',False)]}"/>
+                                <field name="refused_by" attrs="{'invisible':[('refused_by','=',False)]}"/>
+                                <field name="refused_date" attrs="{'invisible':[('refused_date','=',False)]}"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="hr_iqama_tree_view" model="ir.ui.view">
+        <field name="name">hr.iqama.tree.view</field>
+        <field name="model">hr.iqama</field>
+        <field name="arch" type="xml">
+            <tree string="IQAMA dependant" decoration-danger="expiry_date and (expiry_date &lt; current_date)">
+                <field name="name"/>
+                <field name="employee_id"/>
+                <field name="iqama_no"/>
+                <field name="issue_date"/>
+                <field name="expiry_date"/>
+                <field name="place_of_issue"/>
+                <field name="nationality"/>
+                <field name="request_type" />
+                <field name="state"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="hr_iqama_filter" model="ir.ui.view">
+        <field name="name">hr_iqama.select</field>
+        <field name="model">hr.iqama</field>
+        <field name="arch" type="xml">
+            <search string="Filter">
+                <field name="name" string="IQAMA Name" filter_domain="[('name','ilike',self)]"/>
+                <field name="iqama_no" string="IQAMA No." filter_domain="[('iqama_no','ilike',self)]"/>
+                <filter string="Approve" domain="[('state','=',('validate'))]" help="IQAMA
+                    that has been approved" />
+                <filter string="Confirm" domain="[('state','=',('confirm'))]" help="IQAMA that
+                    has been waiting for approval" />
+                <filter string="Refuse" domain="[('state','=',('refuse'))]" help="IQAMA that
+                    has been refused" />
+                <filter string="Issued" domain="[('state','=',('received'))]" help="IQAMA that
+                    has been issued" />
+                <group expand="0" string="Group By...">
+                    <filter string="Employee" context="{'group_by':'employee_id'}"/>
+                    <filter string="State" context="{'group_by':'state'}"/>
+                    <filter string="Type" context="{'group_by':'request_type'}"/>
+                    <filter string="Nationality" context="{'group_by':'nationality'}"/>
+                    <filter string="Company" context="{'group_by':'company_id'}" groups="base.group_multi_company"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_hr_iqama_view" model="ir.actions.act_window">
+        <field name="name">IQAMA</field>
+        <field name="res_model">hr.iqama</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="slnee_hr_iqama_view_employee_form" model="ir.ui.view">
+        <field name="name">saudi.hr.iqama.employee.form</field>
+        <field name="model">employee.dependent</field>
+        <field name="inherit_id" ref="slnee_hr_dependent.employee_dependent_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='personal_info']" position="after">
+                <group string="Iqama Details" attrs="{'invisible': [('is_saudi','=',True)]}">
+                    <field name="iqama_no"/>
+                    <field name="serial_number" />
+                    <field name="issue_date" />
+                    <field name="expiry_date" />
+                    <field name="place_of_issue"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <menuitem id="menu_gr_iqama" name="Employee IQAMA" parent="hr.menu_hr_main" sequence="7"
+              action="action_hr_iqama_view" groups="base.group_user"/>
+</odoo>

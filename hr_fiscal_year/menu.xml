@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem action="action_public_year" id="menu_public_year_view" parent="hr.menu_human_resources_configuration" sequence="20" groups="hr.group_hr_manager"/>
+</odoo>

@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="hr_career_development_form_view" model="ir.ui.view">
+        <field name="name">Career Development Paths</field>
+        <field name="model">hr.career.development</field>
+        <field name="arch" type="xml">
+            <form string="Career Development">
+                <group>
+                    <field name="department_id"/>
+                </group>
+                <group>
+                    <separator string="Function Levels"/>
+                    <field name="career_line_ids" nolabel="1" colspan="4">
+                        <form string="Career Development Lines">
+                            <group col="4">
+                                <field name="global_functional_level" required="1"/>
+                                <field name="avg_no_of_years" required="1"/>
+                            </group>
+                            <group>
+                                <field name="job_ids" widget="many2many_tags" required="1"/>
+                                <field name="milestones"/>
+                                <field name="technical"/>
+                                <field name="softskills"/>
+                                <field name="other_non_mendatory"/>
+                            </group>
+                        </form>
+                        <tree string="Career Development Lines">
+                            <field name="global_functional_level"/>
+                            <field name="avg_no_of_years"/>
+                            <field name="job_ids" widgaet="many2many"/>
+                            <field name="milestones"/>
+                            <field name="technical"/>
+                            <field name="softskills"/>
+                            <field name="other_non_mendatory"/>
+                        </tree>
+                    </field>
+                </group>
+            </form>
+        </field>
+    </record>
+    <record id="hr_career_development_tree_view" model="ir.ui.view">
+        <field name="name">Career Development Paths</field>
+        <field name="model">hr.career.development</field>
+        <field name="arch" type="xml">
+            <tree string="Career Development">
+                <field name="department_id"/>
+            </tree>
+        </field>
+    </record>
+    <record id="action_hr_career_development" model="ir.actions.act_window">
+        <field name="name">Career Development Paths</field>
+        <field name="res_model">hr.career.development</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_hr_career_development" name="Career Development" parent="hr.menu_hr_main"
+           sequence="11" action="action_hr_career_development" />
+</odoo>

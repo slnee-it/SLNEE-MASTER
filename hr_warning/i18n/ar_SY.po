@@ -1,0 +1,192 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* hr_warning
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-12 09:17+0000\n"
+"PO-Revision-Date: 2018-09-12 09:17+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_warning
+#: model:mail.template,body_html:hr_warning.email_template_warning_alert
+msgid "\n"
+"        <h3><p style=\"color:#FF0000;\">Warning Alert</p></h3>\n"
+"        <p>Hello sir</p>\n"
+"        <p>We need to inform that below list of employee have already some warning during last six months.</p>\n"
+"        <p>Employee: ${ctx.get('employee_ids')}</p>\n"
+"        <p></p>\n"
+"        <p>Thank you,</p>\n"
+"        <p style=\"color:#888888;\">\n"
+"        ${object.user_id.name}\n"
+"        </p>\n"
+"        "
+msgstr "\n"
+"        <h3><p style=\"color:#FF0000;\">تنبيه تحذير</p></h3>\n"
+"        <p>مرحبا يا سيدي</p>\n"
+"        <p>نحن بحاجة إلى إبلاغ أن القائمة أدناه الموظف لديها بالفعل بعض التحذير خلال الأشهر الستة الماضية.</p>\n"
+"        <p>موظف: ${ctx.get('employee_ids')}</p>\n"
+"        <p></p>\n"
+"        <p>شكرا لكم،</p>\n"
+"        <p style=\"color:#888888;\">\n"
+"        ${object.user_id.name}\n"
+"        </p>\n"
+"        "
+
+#. module: hr_warning
+#: model:mail.template,body_html:hr_warning.email_template_warning_confirm_partner
+msgid "\n"
+"        <h3><p style=\"color:#FF0000;\">Warning: ${ctx.get('warning')}</p></h3>\n"
+"        <p>It is a matter of serious concern that ${ctx.get('warning')} despite repeated verbal warnings. Please treat this letter as a warning for your unacceptable behavior.</p>\n"
+"        <p>${object.description}</p>\n"
+"        <p>We would be left with no choice but to suspend or relieve you from work if this unethical behavior continues.</p>\n"
+"        <p>We expect you to rectify your follies and observe good conduct from hereon.</p>\n"
+"        <p style=\"color:#FF0000;\">So,We decide to action ${object.warning_action}</p>\n"
+"        <p>Thank you,</p>\n"
+"        <p style=\"color:#888888;\">\n"
+"        ${object.user_id.name}\n"
+"        </p>\n"
+"        "
+msgstr "\n"
+"        <h3><p style=\"color:#FF0000;\">Warning: ${ctx.get('warning')}</p></h3>\n"
+"        <p>إنها مسألة مثيرة للقلق الشديد ${ctx.get('warning')}على الرغم من التحذيرات اللفظية المتكررة. يرجى التعامل مع هذه الرسالة كتحذير لسلوك غير مقبول.</p>\n"
+"        <p>${object.description}</p>\n"
+"        <p>لن يكون أمامنا أي خيار سوى تعليق عملك أو إعفائك منه إذا استمر هذا السلوك غير الأخلاقي.</p>\n"
+"        <p>نتوقع منك تصحيح الحماقات ومراقبة السلوك الجيد من هنا.</p>\n"
+"        <p style=\"color:#FF0000;\">لذا ، قررنا اتخاذ إجراء ${object.warning_action}</p>\n"
+"        <p>شكرا لكم،</p>\n"
+"        <p style=\"color:#888888;\">\n"
+"        ${object.user_id.name}\n"
+"        </p>\n"
+"        "
+
+#. module: hr_warning
+#: model:ir.model.fields,field_description:hr_warning.field_issue_warning_ded_amt
+msgid "Amount"
+msgstr "كمية"
+
+#. module: hr_warning
+#: model:ir.ui.view,arch_db:hr_warning.hr_warning_view_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: hr_warning
+#: model:ir.ui.view,arch_db:hr_warning.hr_warning_view_form
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: hr_warning
+#: model:ir.ui.view,arch_db:hr_warning.hr_warning_type_view_form
+#: model:ir.ui.view,arch_db:hr_warning.hr_warning_view_form
+msgid "Description"
+msgstr "الوصف"
+
+#. module: hr_warning
+#: model:ir.ui.view,arch_db:hr_warning.hr_warning_view_form
+msgid "Done"
+msgstr "منتهي"
+
+#. module: hr_warning
+#: model:ir.model,name:hr_warning.model_hr_employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: hr_warning
+#: model:ir.ui.view,arch_db:hr_warning.hr_warning_view_form
+msgid "Employee Details"
+msgstr "تفاصيل موظف"
+
+#. module: hr_warning
+#: model:ir.ui.view,arch_db:hr_warning.hr_warning_view_form
+msgid "Employees"
+msgstr "الموظفون"
+
+#. module: hr_warning
+#: model:ir.ui.view,arch_db:hr_warning.hr_warning_view_form
+msgid "Extra Information"
+msgstr "معلومات اضافية"
+
+#. module: hr_warning
+#: model:ir.model,name:hr_warning.model_hr_job
+msgid "HR Job"
+msgstr "وظيفة الموارد البشرية"
+
+#. module: hr_warning
+#: model:ir.model.fields,field_description:hr_warning.field_issue_warning_is_deduction_from_salary
+msgid "Is Deduct from Salary"
+msgstr "يتم خصم من الراتب"
+
+#. module: hr_warning
+#: model:mail.template,subject:hr_warning.email_template_warning_confirm_partner
+msgid "Issue Warning"
+msgstr "تحذير القضية"
+
+#. module: hr_warning
+#: model:ir.model.fields,field_description:hr_warning.field_issue_warning_no_of_days
+msgid "No of Days"
+msgstr "لا أيام"
+
+#. module: hr_warning
+#: model:ir.model.fields,field_description:hr_warning.field_issue_warning_no_of_hours
+msgid "No of Hours"
+msgstr "عدد الساعات"
+
+#. module: hr_warning
+#: model:ir.model.fields,field_description:hr_warning.field_issue_warning_percentage
+msgid "Percentage"
+msgstr "النسبة المئوية"
+
+#. module: hr_warning
+#: model:ir.actions.act_window,name:hr_warning.act_issue_warning
+#: model:ir.ui.menu,name:hr_warning.menu_issue_warning
+#: model:ir.ui.view,arch_db:hr_warning.hr_employee_warning_view_form
+msgid "Warning"
+msgstr "تحذير"
+
+#. module: hr_warning
+#: model:mail.template,subject:hr_warning.email_template_warning_alert
+msgid "Warning Alert"
+msgstr "تنبيه تحذير"
+
+#. module: hr_warning
+#: model:ir.model.fields,field_description:hr_warning.field_issue_warning_warning_date
+msgid "Warning Date"
+msgstr "تاريخ التحذير"
+
+#. module: hr_warning
+#: model:ir.ui.view,arch_db:hr_warning.hr_warning_view_form
+msgid "Warning Details"
+msgstr "تفاصيل التحذير"
+
+#. module: hr_warning
+#: model:ir.actions.act_window,name:hr_warning.act_issue_warning_type
+msgid "Warning Type"
+msgstr "نوع التحذير"
+
+#. module: hr_warning
+#: model:ir.ui.menu,name:hr_warning.menu_issue_warning_type
+msgid "Warning Types"
+msgstr "أنواع التحذير"
+
+#. module: hr_warning
+#: model:ir.model.fields,field_description:hr_warning.field_hr_employee_issue_warning_ids
+msgid "Warnings"
+msgstr "التحذيرات"
+
+#. module: hr_warning
+#: model:ir.model,name:hr_warning.model_issue_warning
+msgid "issue.warning"
+msgstr "issue.warning"
+
+#. module: hr_warning
+#: model:ir.model,name:hr_warning.model_warning_type
+msgid "warning.type"
+msgstr "warning.type"
+

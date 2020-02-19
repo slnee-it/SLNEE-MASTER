@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_employee_bonus_employee,access_employee_bonus_employee,model_employee_bonus,base.group_user,1,0,0,0
+access_employee_bonus_officer,access_employee_bonus_officer,model_employee_bonus,hr.group_hr_user,1,1,1,0
+access_employee_bonus_manager,access_employee_bonus_manager,model_employee_bonus,hr.group_hr_manager,1,1,1,1
+access_employee_bonus_lines_employee,access_employee_bonus_lines_employee,model_employee_bonus_lines,base.group_user,1,0,0,0
+access_employee_bonus_lines_officer,access_employee_bonus_lines_officer,model_employee_bonus_lines,hr.group_hr_user,1,1,1,0
+access_employee_bonus_lines_manager,access_employee_bonus_lines_manager,model_employee_bonus_lines,hr.group_hr_manager,1,1,1,1
+access_employee_bonus_lines_contract_officer,access_employee_bonus_lines_officer,hr_contract.model_hr_contract,hr.group_hr_user,1,1,1,0

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="view_public_holidays_tree" model="ir.ui.view">
+        <field name="name">hr.holidays.public.tree</field>
+        <field name="model">hr.holidays.public</field>
+        <field name="arch" type="xml">
+            <tree string="Public Holidays">
+                <field name="name"/>
+                <field name="year"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_hr_holidays_public_filter" model="ir.ui.view">
+        <field name="name">hr.holidays.public.filter</field>
+        <field name="model">hr.holidays.public</field>
+        <field name="arch" type="xml">
+            <search string="Search Leave">
+                <field name="name"/>
+                <group expand="0" string="Group By...">
+                    <filter name="group_name" string="Name" context="{'group_by':'name'}"/>
+                    <filter name="group_year" string="Year" icon="terp-personal" context="{'group_by':'year'}"/>
+                    <filter string="Status" icon="terp-stock_effects-object-colorize" context="{'group_by':'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="view_public_holidays_form" model="ir.ui.view">
+        <field name="name">hr.holidays.public.form</field>
+        <field name="model">hr.holidays.public</field>
+        <field name="arch" type="xml">
+            <form string="Public Holidays">
+                <header>
+                    <button name="set_to_close" string="Close" states="open" type="object" groups="base.group_user" class="oe_highlight"/>
+                    <button name="set_to_open" string="Reset to Open" states="close"  groups="base.group_user" type="object"/>
+                    <field name="state" widget="statusbar" statusbar_visible="open,close"/>
+                </header>
+                <group>
+                    <field name="name"/>
+                    <field name="year" required="1"/>
+                </group>
+                <group string="Public Holidays" colspan="4">
+                    <field name="line_ids" nolabel="1"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_public_holiday_line_tree" model="ir.ui.view">
+        <field name="name">hr.holidays.public.line.tree</field>
+        <field name="model">hr.holidays.public.line</field>
+        <field name="arch" type="xml">
+            <tree string="Public Holidays" editable="top">
+                <field name="name"/>
+                <field name="start_date"/>
+                <field name="end_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="open_public_holidays_view" model="ir.actions.act_window">
+        <field name="name">Public Holidays</field>
+        <field name="res_model">hr.holidays.public</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

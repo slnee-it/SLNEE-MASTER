@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<odoo>
+    <report
+     string="Salary With Pramotion"
+     id="action_salary_pramotion_qweb"
+     model="employee.bonus.lines"
+     report_type="qweb-pdf"
+     name="slnee_hr_bonus.salary_with_pramotion"
+     file="slnee_hr_bonus.salary_with_pramotion"
+    />
+
+    <report
+     string="Salary Without Pramotion"
+     id="action_salary_nopramotion_qweb"
+     model="employee.bonus.lines"
+     report_type="qweb-pdf"
+     name="slnee_hr_bonus.salary_with_nopramotion"
+     file="slnee_hr_bonus.salary_with_nopramotion"
+    />
+
+</odoo>

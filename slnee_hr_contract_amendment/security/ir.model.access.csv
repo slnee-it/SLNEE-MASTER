@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_transfer_employee_hof,access_transfer_employee_hof,model_transfer_employee,slnee_hr.group_hof,1,1,1,0

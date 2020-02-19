@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="hr_payslip_export_form" model="ir.ui.view">
+        <field name="name">hr.payslip.export.form</field>
+        <field name="model">hr.payslip.export</field>
+        <field name="arch" type="xml">
+            <form string="Payslip Export">
+                <group>
+                    <field name="name"/>
+                </group>
+                <notebook>
+                    <page string="Export Line">
+                        <field name="line_ids" nolabel="1" colspan="4">
+                            <tree string="Export Lines" editable="1" >
+                                <field name="sequence" invisible="1"/>
+                                <field name="rule_id" required="1" domain="[('parent_rule_id', '=', False)]"/>
+                                <field name="is_difference_field" string="Is Export Line Difference"/>
+                            </tree>
+                        </field>
+                    </page>
+                </notebook>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_hr_payslip_export">
+        <field name="name">Payslip Export</field>
+        <field name="res_model">hr.payslip.export</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_type">form</field>
+    </record>
+
+</odoo>

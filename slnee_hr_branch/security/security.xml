@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="res.groups" id="group_company_branch">
+        <field name="name">Multi Branch</field>
+        <field name="category_id" ref="base.module_category_usability"/>
+    </record>
+</odoo>

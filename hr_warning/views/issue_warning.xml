@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="hr_warning_view_form" model="ir.ui.view">
+        <field name="name">hr.issue.warning.form</field>
+        <field name="model">issue.warning</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_confirm" type="object" string="Confirm" states="draft" class="btn-primary" groups="hr.group_hr_user"/>
+                    <button name="action_done" type="object" string="Done" states="confirm" class="btn-primary" groups="hr.group_hr_manager"/>
+                    <button name="action_cancel" type="object" string="Cancel" states="draft,confirm" />
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirm,done"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" readonly="1" attrs="{'readonly': ['state', '=', 'done']}"/>
+                        </h1>
+                    </div>
+                    <group string="Employees">
+                        <group>
+                            <field name="target_group" widget="radio" attrs="{'readonly': [('state', '=', 'done')]}"/>
+                        </group>
+                        <group>
+                            <field name="department_ids" widget="many2many_tags" attrs="{'invisible': [('target_group', 'not in', ['department'])], 'required': [('target_group', 'in', ['department'])], 'readonly': [('state', '=', 'done')]}" options="{'color_field': 'color'}"/>
+                            <field name="job_ids" widget="many2many_tags" attrs="{'invisible': [('target_group', 'not in', ['job'])], 'required': [('target_group', 'in', ['job'])], 'readonly': [('state', '=', 'done')]}" options="{'color_field': 'color'}"/>
+                            <field name="employee_id" attrs="{'invisible': [('target_group', 'not in', ['employee'])], 'required': [('target_group', 'in', ['employee'])], 'readonly': [('state', '=', 'done')]}"/>
+                            <field name="group_mail" attrs="{'invisible': [('target_group', 'in', ['employee'])], 'readonly': [('state', '=', 'done')]}"/>
+                        </group>
+                    </group>
+                    <group string="Warning Details">
+                        <group>
+                            <field name="color" invisible="1"/>
+                            <field name="warning_date"/>
+                            <field name="warning_action" attrs="{'readonly': [('state', '=', 'done')]}"/>
+                            <field name="warning_types" widget="many2many_tags" options="{'color_field': 'color'}" attrs="{'readonly': [('state', '=', 'done')]}"/>
+                            <field name="user_id" attrs="{'readonly': [('state', '=', 'done')]}"/>
+                        </group>
+                        <group>
+                            <field name="start_date" attrs="{'invisible': [('warning_action', 'not in', ['expiry','prohibit'])], 'required': [('warning_action', 'in', ['expiry','prohibit'])], 'readonly': [('state', '=', 'done')]}"/>
+                            <field name="end_date" attrs="{'invisible': [('warning_action', 'not in', ['expiry','prohibit'])], 'required': [('warning_action', 'in', ['expiry','prohibit'])], 'readonly': [('state', '=', 'done')]}"/>
+                            <field name="is_deduction_from_salary" attrs="{'invisible': [('warning_action', 'not in', ['deduct'])], 'readonly': [('state', '=', 'done')]}"/>
+                            <field name="deduct_type" attrs="{'invisible': [('is_deduction_from_salary', '=', False)], 'required': [('is_deduction_from_salary', '=', True)], 'readonly': [('state', '=', 'done')]}"/>
+                            <field name='no_of_days' attrs="{'invisible': [('deduct_type', '!=', 'days')], 'required':[('deduct_type', '=', 'days')]}"/>
+                            <field name='no_of_hours' attrs="{'invisible': [('deduct_type', '!=', 'hours')], 'required':[('deduct_type', '=', 'hours')]}"/>
+                            <field name='percentage' attrs="{'invisible': [('deduct_type', '!=', 'percentage')], 'required':[('deduct_type', '=', 'percentage')]}"/>
+                            <field name='ded_amt' attrs="{'invisible': [('deduct_type', '!=', 'amount')], 'required':[('deduct_type', '=', 'amount')]}"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Employee Details" attrs="{'invisible': [('target_group', '=', 'employee')]}">
+                            <field name="employee_ids" attrs="{'readonly': [('state', '=', 'done')]}">
+                                <tree create="0">
+                                    <field name="name"/>
+                                    <field name="work_phone"/>
+                                    <field name="work_email"/>
+                                    <field name="department_id"/>
+                                    <field name="job_id"/>
+                                    <field name="parent_id"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Description">
+                            <field name="description" required="1" attrs="{'readonly': [('state', '=', 'done')]}"/>
+                        </page>
+                        <page string="Extra Information" groups="base.group_no_one">
+                            <group col="4">
+                                <field name="create_uid" readonly="1"/>
+                                <field name="create_date" readonly="1"/>
+                                <field name="write_uid" readonly="1"/>
+                                <field name="write_date" readonly="1"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="hr_warning_view_tree" model="ir.ui.view">
+        <field name="name">hr.issue.warning.tree</field>
+        <field name="model">issue.warning</field>
+        <field name="arch" type="xml">
+            <tree decoration-muted="state == 'cancel'" decoration-danger="state == 'done'">
+                <field name="name"/>
+                <field name="target_group"/>
+                <field name="warning_action"/>
+                <field name="user_id"/>
+                <field name="description"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="act_issue_warning" model="ir.actions.act_window">
+        <field name="name">Warning</field>
+        <field name="res_model">issue.warning</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+            id="menu_issue_warning"
+            name="Warning"
+            parent="hr.menu_hr_main"
+            action = "act_issue_warning"
+            groups="hr.group_hr_user"/>
+
+</odoo>

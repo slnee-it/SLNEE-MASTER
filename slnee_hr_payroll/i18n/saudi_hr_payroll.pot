@@ -1,0 +1,629 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_payroll
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-30 12:26+0000\n"
+"PO-Revision-Date: 2015-04-30 12:26+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_payroll
+#: field:hr.payslip.worked_days,absence_hours:0
+msgid "Absence Hour(s)"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: selection:other.hr.payslip,type:0
+msgid "Allowance"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:other.hr.payslip,amount:0
+msgid "Amount"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:other.hr.payslip,approved_date:0
+msgid "Approved Date"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:other.hr.payslip,approved_date_from:0
+msgid "Approved Date From"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:other.hr.payslip,approved_date_to:0
+msgid "Approved Date To"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:other.hr.payslip,approved_by:0
+msgid "Approved by"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: model:res.groups,name:slnee_hr_payroll.group_payroll_assistant
+msgid "Assistant"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:hr.payslip.run,bank_account_not_found:0
+msgid "Bank Account Not Found"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:hr.payslip,bank_account_id:0
+msgid "Bank Account Number"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: selection:other.hr.payslip,calc_type:0
+msgid "By Amount"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: selection:other.hr.payslip,calc_type:0
+msgid "By Days"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:other.hr.payslip,calc_type:0
+msgid "Calculation Type"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:hr.payslip:slnee_hr_payroll.view_hr_overtime_payslip_form
+msgid "Cancel Payslip"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:leaves.summary,code:0
+msgid "Code"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:hr.payslip:slnee_hr_payroll.view_hr_overtime_payslip_form
+msgid "Compute Sheet"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:hr.payslip:slnee_hr_payroll.view_hr_overtime_payslip_form
+#: view:other.hr.payslip:slnee_hr_payroll.view_other_hr_payslip_filter
+msgid "Confirm"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:hr.payslip.run:slnee_hr_payroll.hr_payslip_run_form_inherit
+msgid "Confirm Payslip(S)"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:hr.payslip.run,contract_not_found:0
+msgid "Contract Not Found"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:other.hr.payslip,country_id:0
+msgid "Country"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:leaves.summary,create_uid:0
+#: field:other.hr.payslip,create_uid:0
+msgid "Created by"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:leaves.summary,create_date:0
+#: field:other.hr.payslip,create_date:0
+msgid "Created on"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:other.hr.payslip,date:0
+msgid "Date"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: help:other.hr.payslip,message_last_post:0
+msgid "Date of the last message posted on the record."
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: selection:other.hr.payslip,type:0
+msgid "Deduction"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:other.hr.payslip:slnee_hr_payroll.view_other_hr_payslip_filter
+#: field:other.hr.payslip,department_id:0
+msgid "Department"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:leaves.summary,name:0
+#: view:other.hr.payslip:slnee_hr_payroll.other_hr_payslip_form1
+#: field:other.hr.payslip,description:0
+msgid "Description"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:other.hr.payslip:slnee_hr_payroll.other_hr_payslip_form1
+#: selection:other.hr.payslip,state:0
+msgid "Done"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: selection:other.hr.payslip,state:0
+msgid "Draft"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:other.hr.payslip:slnee_hr_payroll.view_other_hr_payslip_filter
+#: field:other.hr.payslip,employee_id:0
+msgid "Employee"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:other.hr.payslip,employee_code:0
+msgid "Employee Code"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:other.hr.payslip:slnee_hr_payroll.other_hr_payslip_form1
+msgid "Employee Information"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: help:hr.payslip,bank_account_id:0
+msgid "Employee bank salary account"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:other.hr.payslip:slnee_hr_payroll.other_hr_payslip_form1
+msgid "Extra Information"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:other.hr.payslip,message_follower_ids:0
+msgid "Followers"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:hr.salary.rule,is_gosi:0
+msgid "GOSI"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:hr.salary.rule,gosi_limit:0
+msgid "GOSI Limit"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:hr.payslip,gosi_id:0
+msgid "GOSI NO"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:hr.payslip.run,gosi_no_not_found:0
+msgid "GOSI NO Not Found"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:hr.salary.rule,gosi_percentage:0
+msgid "GOSI Percentage"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: model:ir.model,name:slnee_hr_payroll.model_hr_payslip_employees
+msgid "Generate payslips for all selected employees"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:employee.gosi:slnee_hr_payroll.hr_gosi_form_view_inherit
+msgid "Gosi Deduction Details"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:other.hr.payslip:slnee_hr_payroll.view_other_hr_payslip_filter
+msgid "Group By..."
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: help:other.hr.payslip,message_summary:0
+msgid "Holds the Chatter summary (number of messages, ...). This summary is directly in html format in order to be inserted in kanban views."
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:leaves.summary,id:0
+#: field:other.hr.payslip,id:0
+msgid "ID"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: help:other.hr.payslip,message_unread:0
+msgid "If checked new messages require your attention."
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:hr.payslip,include_gosi:0
+msgid "Include GOSI in Payslip"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:other.hr.payslip,message_is_follower:0
+msgid "Is a Follower"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:other.hr.payslip,job_id:0
+msgid "Job Position"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:other.hr.payslip,message_last_post:0
+msgid "Last Message Date"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:leaves.summary,write_uid:0
+msgid "Last Updated by"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:leaves.summary,write_date:0
+msgid "Last Updated on"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:hr.payslip.run,leaves_found:0
+msgid "Leave Found"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:hr.payslip:slnee_hr_payroll.view_hr_overtime_payslip_form
+msgid "Leaves Details"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:hr.payslip:slnee_hr_payroll.view_hr_overtime_payslip_form
+#: field:hr.payslip,leaves_summary:0
+msgid "Leaves Summary"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:other.hr.payslip,message_ids:0
+msgid "Messages"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: help:other.hr.payslip,message_ids:0
+msgid "Messages and communication history"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:other.hr.payslip,write_date:0
+msgid "Modification on"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:other.hr.payslip,write_uid:0
+msgid "Modified by"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:other.hr.payslip:slnee_hr_payroll.view_other_hr_payslip_filter
+msgid "My Operations"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:other.hr.payslip,no_of_days:0
+msgid "No of Days"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:hr.payslip,first_month_days:0
+msgid "No of day(s)"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: code:addons/slnee_hr_payroll/models/hr_payroll.py:614
+#, python-format
+msgid "Normal Working Days"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:hr.payslip.run,dedication_salary:0
+msgid "Not Full Salary"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:leaves.summary,number_of_days:0
+msgid "Number of Days"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: model:res.groups,name:slnee_hr_payroll.group_payroll_officer
+msgid "Officer"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:hr.payslip.run:slnee_hr_payroll.hr_payslip_run_form_inherit
+msgid "Open"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:other.hr.payslip:slnee_hr_payroll.view_other_hr_payslip_filter
+msgid "Operations"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: model:ir.ui.menu,name:slnee_hr_payroll.menu_hr_payroll
+msgid "Other Allowance/Deduction"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: model:ir.actions.act_window,name:slnee_hr_payroll.action_other_hr_payslip
+#: view:other.hr.payslip:slnee_hr_payroll.other_hr_payslip_tree
+msgid "Other Deduction/Allowance"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:other.hr.payslip:slnee_hr_payroll.other_hr_payslip_form1
+msgid "Other HR Payslip"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: model:ir.model,name:slnee_hr_payroll.model_other_hr_payslip
+msgid "Other Hr Payslip"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:hr.payslip.worked_days,overtime_hours:0
+msgid "Overtime Hour(s)"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: model:res.groups,name:slnee_hr_payroll.group_payroll_psc_supervisor
+msgid "PSC supervisor"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: model:ir.model,name:slnee_hr_payroll.model_hr_payslip
+msgid "Pay Slip"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:hr.payslip,payment_days:0
+msgid "Payment Day(s)"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: model:ir.module.category,name:slnee_hr_payroll.category_payroll
+msgid "Payroll"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: code:addons/slnee_hr_payroll/models/hr_payroll.py:177
+#: field:gosi.payslip.line,payslip_id:0
+#: field:leaves.summary,payslip_id:0
+#: field:other.hr.payslip,payslip_id:0
+#, python-format
+msgid "Payslip"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: model:ir.model,name:slnee_hr_payroll.model_hr_payslip_run
+msgid "Payslip Batches"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: model:ir.model,name:slnee_hr_payroll.model_hr_payslip_line
+msgid "Payslip Line"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: model:ir.model,name:slnee_hr_payroll.model_hr_payslip_worked_days
+msgid "Payslip Worked Days"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:hr.payslip.run:slnee_hr_payroll.hr_payslip_run_form_inherit
+msgid "Payslips"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: code:addons/slnee_hr_payroll/models/hr_payroll.py:103
+#: code:addons/slnee_hr_payroll/models/hr_payroll.py:117
+#: code:addons/slnee_hr_payroll/models/hr_payroll.py:128
+#: code:addons/slnee_hr_payroll/models/hr_payroll.py:141
+#, python-format
+msgid "Please Enter Bank Account in Payslip %s."
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: code:addons/slnee_hr_payroll/models/hr_payroll.py:92
+#: code:addons/slnee_hr_payroll/models/hr_payroll.py:120
+#: code:addons/slnee_hr_payroll/models/hr_payroll.py:131
+#: code:addons/slnee_hr_payroll/models/hr_payroll.py:144
+#, python-format
+msgid "Please Enter Contract in Payslip %s."
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: code:addons/slnee_hr_payroll/models/hr_payroll.py:220
+#, python-format
+msgid "Please enter 'Joining Date' of Employee first!"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: code:addons/slnee_hr_payroll/models/hr_payroll.py:696
+#, python-format
+msgid "Public Holiday Working Days paid at 250%"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:hr.payslip:slnee_hr_payroll.view_hr_overtime_payslip_form
+msgid "Refund"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:other.hr.payslip:slnee_hr_payroll.view_other_hr_payslip_filter
+msgid "Search Other Allowances/Deduction"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:other.hr.payslip:slnee_hr_payroll.other_hr_payslip_form1
+msgid "Select Department"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:other.hr.payslip:slnee_hr_payroll.other_hr_payslip_form1
+msgid "Select Employee"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: model:res.groups,name:slnee_hr_payroll.group_payroll_senior_officer
+msgid "Senior Officer"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:other.hr.payslip:slnee_hr_payroll.other_hr_payslip_form1
+msgid "Set as Draft"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:hr.payslip:slnee_hr_payroll.view_hr_overtime_payslip_form
+msgid "Set to Draft"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:hr.payslip.run,is_verify:0
+msgid "Skip Confirmation"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:other.hr.payslip,state:0
+msgid "State"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:other.hr.payslip:slnee_hr_payroll.view_other_hr_payslip_filter
+msgid "Status"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:hr.payslip.run:slnee_hr_payroll.hr_payslip_run_form_inherit
+#: field:other.hr.payslip,message_summary:0
+msgid "Summary"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: model:res.groups,name:slnee_hr_payroll.group_payroll_team_leader
+msgid "Team Leader"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:other.hr.payslip:slnee_hr_payroll.view_other_hr_payslip_filter
+msgid "To Approve"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:other.hr.payslip:slnee_hr_payroll.view_other_hr_payslip_filter
+#: field:other.hr.payslip,type:0
+msgid "Type"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:other.hr.payslip,message_unread:0
+msgid "Unread Messages"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: code:addons/slnee_hr_payroll/models/hr_payroll.py:220
+#, python-format
+msgid "Warning"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: code:addons/slnee_hr_payroll/models/hr_payroll.py:92
+#: code:addons/slnee_hr_payroll/models/hr_payroll.py:103
+#: code:addons/slnee_hr_payroll/models/hr_payroll.py:117
+#: code:addons/slnee_hr_payroll/models/hr_payroll.py:120
+#: code:addons/slnee_hr_payroll/models/hr_payroll.py:128
+#: code:addons/slnee_hr_payroll/models/hr_payroll.py:131
+#: code:addons/slnee_hr_payroll/models/hr_payroll.py:141
+#: code:addons/slnee_hr_payroll/models/hr_payroll.py:144
+#: code:addons/slnee_hr_payroll/models/other_hr_payslip.py:72
+#: code:addons/slnee_hr_payroll/wizard/hr_payroll_payslips_by_employees.py:47
+#, python-format
+msgid "Warning!"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:other.hr.payslip,website_message_ids:0
+msgid "Website Messages"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: help:other.hr.payslip,website_message_ids:0
+msgid "Website communication history"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: code:addons/slnee_hr_payroll/models/hr_payroll.py:686
+#, python-format
+msgid "Weekends Working Days paid at 200%"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: help:hr.payslip.run,is_verify:0
+msgid "While tick payslips will confirmed and paid."
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:hr.payslip.worked_days,working_hours:0
+msgid "Working Hour(s)"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: code:addons/slnee_hr_payroll/models/other_hr_payslip.py:72
+#, python-format
+msgid "You cannot remove the record which is in %s state!"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: code:addons/slnee_hr_payroll/wizard/hr_payroll_payslips_by_employees.py:47
+#, python-format
+msgid "You must select employee(s) to generate payslip(s)."
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:hr.payslip.employees:slnee_hr_payroll.view_hr_payslip_by_employees_inherit
+msgid "[('employee_status','=','active')]"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:hr.payslip:slnee_hr_payroll.view_hr_overtime_payslip_form
+msgid "onchange_contract_id(date_from, date_to, employee_id, contract_id, context)"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: view:hr.payslip:slnee_hr_payroll.view_hr_overtime_payslip_form
+msgid "onchange_employee_id(date_from, date_to, employee_id, contract_id, context)"
+msgstr ""
+
+#. module: slnee_hr_payroll
+#: field:other.hr.payslip,name:0
+msgid "unknown"
+msgstr ""
+

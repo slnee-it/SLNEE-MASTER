@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Employee insurance -->
+        <record id="fpi_employee_insurance1" model="insurance.details">
+            <field name="employee_id" ref="hr.employee_fpi"/>
+            <field name="id_number">5825694525</field>
+            <field name="member_name">Abdul Omar</field>
+            <field name="birth_date">1987-06-07</field>
+            <field name="relation">employee</field>
+            <field name="premium">5000</field>
+            <field name="gender">male</field>
+        </record>
+        <record id="fpi_employee_insurance2" model="insurance.details">
+            <field name="employee_id" ref="hr.employee_fpi"/>
+            <field name="id_number">5255694588</field>
+            <field name="member_name">Jasmin Omar</field>
+            <field name="birth_date">1989-10-11</field>
+            <field name="relation">spouse</field>
+            <field name="premium">3000</field>
+            <field name="gender">female</field>
+        </record>
+        <record id="fpi_employee_insurance3" model="insurance.details">
+            <field name="employee_id" ref="hr.employee_fpi"/>
+            <field name="id_number">5645694789</field>
+            <field name="member_name">Asqa Omar</field>
+            <field name="birth_date">1992-10-11</field>
+            <field name="relation">child</field>
+            <field name="premium">2000</field>
+            <field name="gender">female</field>
+        </record>
+        <record id="fp_employee_insurance1" model="insurance.details">
+            <field name="employee_id" ref="hr.employee_root"/>
+            <field name="id_number">5635694985</field>
+            <field name="member_name">Abdul Naseer</field>
+            <field name="birth_date">1985-11-01</field>
+            <field name="relation">employee</field>
+            <field name="premium">5500</field>
+            <field name="gender">male</field>
+        </record>
+        <record id="fp_employee_insurance2" model="insurance.details">
+            <field name="employee_id" ref="hr.employee_root"/>
+            <field name="id_number">5321694874</field>
+            <field name="member_name">Jasmin Naseer</field>
+            <field name="birth_date">1988-08-21</field>
+            <field name="relation">spouse</field>
+            <field name="premium">5500</field>
+            <field name="gender">female</field>
+        </record>
+        <record id="fp_employee_insurance3" model="insurance.details">
+            <field name="employee_id" ref="hr.employee_root"/>
+            <field name="id_number">5624694879</field>
+            <field name="member_name">Firdaus Naseer</field>
+            <field name="birth_date">2010-10-10</field>
+            <field name="relation">child</field>
+            <field name="premium">2500</field>
+            <field name="gender">male</field>
+        </record>
+
+        <record id="qdp_employee_insurance1" model="insurance.details">
+            <field name="employee_id" ref="hr.employee_qdp"/>
+            <field name="id_number">5225694421</field>
+            <field name="member_name">Bilal pathan</field>
+            <field name="birth_date">1990-10-02</field>
+            <field name="relation">employee</field>
+            <field name="premium">7500</field>
+            <field name="gender">male</field>
+        </record>
+        <record id="qdp_employee_insurance2" model="insurance.details">
+            <field name="employee_id" ref="hr.employee_qdp"/>
+            <field name="id_number">5521694632</field>
+            <field name="member_name">Asba pathan</field>
+            <field name="birth_date">1992-07-25</field>
+            <field name="relation">spouse</field>
+            <field name="premium">5000</field>
+            <field name="gender">female</field>
+        </record>
+        <record id="qdp_employee_insurance3" model="insurance.details">
+            <field name="employee_id" ref="hr.employee_qdp"/>
+            <field name="id_number">5231694963</field>
+            <field name="member_name">Humaira pathan</field>
+            <field name="birth_date">2014-01-16</field>
+            <field name="relation">child</field>
+            <field name="premium">3000</field>
+            <field name="gender">female</field>
+        </record>
+
+        <record id="jep_employee_insurance1" model="insurance.details">
+            <field name="employee_id" ref="hr.employee_jep"/>
+            <field name="id_number">5231694874</field>
+            <field name="member_name">Danail peter</field>
+            <field name="birth_date">1985-07-10</field>
+            <field name="relation">employee</field>
+            <field name="premium">10000</field>
+            <field name="gender">male</field>
+        </record>
+        <record id="jep_employee_insurance2" model="insurance.details">
+            <field name="employee_id" ref="hr.employee_jep"/>
+            <field name="id_number">5231235963</field>
+            <field name="member_name">Rozy peter</field>
+            <field name="birth_date">1990-11-22</field>
+            <field name="relation">spouse</field>
+            <field name="premium">85500</field>
+            <field name="gender">female</field>
+        </record>
+        <record id="jep_employee_insurance3" model="insurance.details">
+            <field name="employee_id" ref="hr.employee_jep"/>
+            <field name="id_number">5325494963</field>
+            <field name="member_name">Jack peter</field>
+            <field name="birth_date">2005-05-12</field>
+            <field name="relation">child</field>
+            <field name="premium">6600</field>
+            <field name="gender">male</field>
+        </record>
+
+        <record id="stw_employee_insurance1" model="insurance.details">
+            <field name="employee_id" ref="hr.employee_stw"/>
+            <field name="id_number">5232514963</field>
+            <field name="member_name">Fareeda khan</field>
+            <field name="birth_date">1990-10-08</field>
+            <field name="relation">child</field>
+            <field name="premium">5000</field>
+            <field name="gender">female</field>
+        </record>
+        <record id="stw_employee_insurance2" model="insurance.details">
+            <field name="employee_id" ref="hr.employee_stw"/>
+            <field name="id_number">5232514963</field>
+            <field name="member_name">Fusin khan</field>
+            <field name="birth_date">1887-10-16</field>
+            <field name="relation">spouse</field>
+            <field name="premium">2500</field>
+            <field name="gender">male</field>
+        </record>
+        <record id="stw_employee_insurance3" model="insurance.details">
+            <field name="employee_id" ref="hr.employee_stw"/>
+            <field name="id_number">5239845963</field>
+            <field name="member_name">Sofia khan</field>
+            <field name="birth_date">2001-11-08</field>
+            <field name="relation">child</field>
+            <field name="premium">1000</field>
+            <field name="gender">female</field>
+        </record>
+
+        <!-- Employee Experience -->
+        <record id="fp_employee_experience" model="hr.experience">
+            <field name="employee_id" ref="hr.employee_root"/>
+            <field name="company">Agrolait</field>
+            <field name="job_title">Experienced Developer</field>
+            <field name="contact_name">Michel Fletcher</field>
+            <field name="contact_email">michel.fletcher@agrolait.example.com</field>
+            <field name="time_period_from">2005-11-01</field>
+        </record>
+        <record id="qdp_employee_experience" model="hr.experience">
+            <field name="employee_id" ref="hr.employee_qdp"/>
+            <field name="company">ASUSTeK</field>
+            <field name="job_title">Chief Executive Officer</field>
+            <field name="contact_name">Joseph Walters</field>
+            <field name="contact_email">joseph.walters@asustek.com</field>
+            <field name="time_period_from">2008-06-30</field>
+        </record>
+        <record id="fpi_employee_experience" model="hr.experience">
+            <field name="employee_id" ref="hr.employee_fpi"/>
+            <field name="company">Axelor</field>
+            <field name="job_title">Consultant</field>
+            <field name="contact_name">Laith Jubair</field>
+            <field name="contact_email">laith.jubair@axelor.example.com</field>
+            <field name="time_period_from">2011-06-30</field>
+        </record>
+        <record id="jep_employee_experience" model="hr.experience">
+            <field name="employee_id" ref="hr.employee_jep"/>
+            <field name="company">Camptocamp</field>
+            <field name="job_title">Professional Services</field>
+            <field name="contact_name">Luc Maurer</field>
+            <field name="contact_email">luc.maurer@camptocamp.example.com</field>
+            <field name="time_period_from">2010-01-01</field>
+        </record>
+        <record id="stw_employee_experience" model="hr.experience">
+            <field name="employee_id" ref="hr.employee_stw"/>
+           <field name="company">Think Big Systems</field>
+            <field name="job_title">Experienced Developer</field>
+            <field name="contact_name">George Wilson</field>
+            <field name="contact_email">george.wilson@thinkbig.example.com</field>
+            <field name="time_period_from">2003-01-07</field>
+        </record>
+
+        <!--   Employee Documents -->
+        <record id="fp_employee_documents1" model="res.documents">
+            <field name="employee_id" ref="hr.employee_root"/>
+            <field name="type_id" ref="document_type3"/>
+            <field name="doc_number">2514568521</field>
+            <field name="issue_place">riyadh</field>
+            <field name="issue_date">2012-11-01</field>
+            <field name="expiry_date">2022-11-01</field>
+        </record>
+        <record id="fp_employee_documents2" model="res.documents">
+            <field name="employee_id" ref="hr.employee_root"/>
+            <field name="type_id" ref="document_type1"/>
+            <field name="doc_number">12345678</field>
+            <field name="issue_place">riyadh</field>
+            <field name="issue_date">2010-11-01</field>
+            <field name="expiry_date">2020-11-01</field>
+        </record>
+
+         <record id="qdp_employee_documents1" model="res.documents">
+            <field name="employee_id" ref="hr.employee_qdp"/>
+            <field name="type_id" ref="document_type3"/>
+            <field name="doc_number">2564521352</field>
+            <field name="issue_place">riyadh</field>
+            <field name="issue_date">2005-10-02</field>
+            <field name="expiry_date">2015-10-02</field>
+        </record>
+         <record id="qdp_employee_documents2" model="res.documents">
+            <field name="employee_id" ref="hr.employee_qdp"/>
+            <field name="type_id" ref="document_type1"/>
+            <field name="doc_number">98585278</field>
+            <field name="issue_place">riyadh</field>
+            <field name="issue_date">2010-11-01</field>
+            <field name="expiry_date">2020-11-01</field>
+        </record>
+
+        <record id="fpi_employee_documents1" model="res.documents">
+            <field name="employee_id" ref="hr.employee_fpi"/>
+            <field name="type_id" ref="document_type3"/>
+            <field name="doc_number">2456321548</field>
+            <field name="issue_place">riyadh</field>
+            <field name="issue_date">2010-07-06</field>
+            <field name="expiry_date">2020-07-06</field>
+        </record>
+        <record id="fpi_employee_documents2" model="res.documents">
+            <field name="employee_id" ref="hr.employee_fpi"/>
+            <field name="type_id" ref="document_type1"/>
+            <field name="doc_number">285245524</field>
+            <field name="issue_place">riyadh</field>
+            <field name="issue_date">2010-11-01</field>
+            <field name="expiry_date">2020-11-01</field>
+        </record>
+
+        <record id="jep_employee_documents" model="res.documents">
+            <field name="employee_id" ref="hr.employee_jep"/>
+            <field name="type_id" ref="document_type1"/>
+            <field name="doc_number">23645582</field>
+            <field name="issue_place">california</field>
+            <field name="issue_date">2010-11-01</field>
+            <field name="expiry_date">2020-11-01</field>
+        </record>
+
+        <record id="stw_employee_documents1" model="res.documents">
+            <field name="employee_id" ref="hr.employee_stw"/>
+            <field name="type_id" ref="document_type1"/>
+            <field name="doc_number">2145632158</field>
+            <field name="issue_place">riyadh</field>
+            <field name="issue_date">2005-08-10</field>
+            <field name="expiry_date">2015-08-10</field>
+        </record>
+        <record id="stw_employee_documents2" model="res.documents">
+            <field name="employee_id" ref="hr.employee_stw"/>
+            <field name="type_id" ref="document_type1"/>
+            <field name="doc_number">28545852</field>
+            <field name="issue_place">riyadh</field>
+            <field name="issue_date">2010-01-11</field>
+            <field name="expiry_date">2020-01-11</field>
+        </record>
+
+            <!--   Employee Qualification  -->
+        <record id="fp_employee_qualification" model="hr.qualification">
+            <field name="employee_id" ref="hr.employee_root"/>
+            <field name="university_id">Al Yamamah University</field>
+            <field name="attended_date_to" eval="(DateTime.today() - relativedelta(years=5,months=2, days=3)).strftime('%Y-%m-%d')"/>
+            <field name="contact_name">Ahmed said</field>
+            <field name="program_type">completed</field>
+            <field name="contact_email">said123@synconics.com</field>
+            <field name="contact_phone">3212657010</field>
+        </record>
+
+        <record id="qdp_employee_qualification" model="hr.qualification">
+            <field name="employee_id" ref="hr.employee_qdp"/>
+            <field name="university_id">King Saud University</field>
+            <field name="attended_date_to" eval="(DateTime.today() - relativedelta(years=5,months=2, days=3)).strftime('%Y-%m-%d')"/>
+            <field name="contact_name">Niaz wasem</field>
+            <field name="program_type">completed</field>
+            <field name="contact_email">niaz123@synconics.com</field>
+            <field name="contact_phone">3212459870</field>
+        </record>
+
+        <record id="fpi_employee_qualification" model="hr.qualification">
+            <field name="employee_id" ref="hr.employee_fpi"/>
+            <field name="university_id">Najran University</field>
+            <field name="attended_date_to" eval="(DateTime.today() - relativedelta(years=7,months=2, days=3)).strftime('%Y-%m-%d')"/>
+            <field name="program_type">completed</field>
+            <field name="contact_name">Laifq assaf</field>
+            <field name="contact_email">assaf89@synconics.com</field>
+            <field name="contact_phone">3782227011</field>
+        </record>
+
+        <record id="jep_employee_qualification" model="hr.qualification">
+            <field name="employee_id" ref="hr.employee_jep"/>
+            <field name="university_id">Stanford University</field>
+            <field name="attended_date_to" eval="(DateTime.today() - relativedelta(years=5,months=2, days=3)).strftime('%Y-%m-%d')"/>
+            <field name="program_type">completed</field>
+            <field name="contact_name">Albert Brooks</field>
+            <field name="contact_email">albert123@synconics.com</field>
+            <field name="contact_phone">3255888277</field>
+        </record>
+
+        <record id="stw_employee_qualification" model="hr.qualification">
+            <field name="employee_id" ref="hr.employee_stw"/>
+            <field name="university_id">Najran University</field>
+            <field name="attended_date_to" eval="(DateTime.today() - relativedelta(years=5,months=2, days=3)).strftime('%Y-%m-%d')"/>
+            <field name="program_type">completed</field>
+            <field name="contact_name">Atabuk Haq</field>
+            <field name="contact_email">atabuk56@synconics.com</field>
+            <field name="contact_phone">3219865258</field>
+        </record>
+
+         <!-- Employee Certification -->
+        <record id="fp_employee_certification" model="hr.certification">
+            <field name="employee_id" ref="hr.employee_root"/>
+            <field name="name">Sun Certified Java Developer</field>
+            <field name="organization_name">Oracle</field>
+            <field name="issue_date">2013-07-01</field>
+            <field name="expiry_date">2013-12-31</field>
+            <field name="reg_no">987456</field>
+        </record>
+        <record id="qdp_employee_certification" model="hr.certification">
+            <field name="employee_id" ref="hr.employee_qdp"/>
+            <field name="name">Certified Sales Executive</field>
+            <field name="organization_name">SMEI</field>
+            <field name="issue_date">2013-01-01</field>
+            <field name="expiry_date">2010-06-30</field>
+            <field name="reg_no">852741</field>
+        </record>
+        <record id="fpi_employee_certification" model="hr.certification">
+            <field name="employee_id" ref="hr.employee_fpi"/>
+            <field name="name">Sun Certified Web Component Developer</field>
+            <field name="organization_name">Oracle</field>
+            <field name="issue_date">2013-01-01</field>
+            <field name="expiry_date">2010-06-30</field>
+            <field name="reg_no">369852</field>
+        </record>
+        <record id="jep_employee_certification" model="hr.certification">
+            <field name="employee_id" ref="hr.employee_jep"/>
+            <field name="name">SQL Server certification</field>
+            <field name="organization_name">Microsoft</field>
+            <field name="issue_date">2012-01-01</field>
+            <field name="expiry_date">2010-12-31</field>
+            <field name="reg_no">369852</field>
+        </record>
+        <record id="stw_employee_certification" model="hr.certification">
+            <field name="employee_id" ref="hr.employee_stw"/>
+            <field name="name">Apple Certified Support Professional</field>
+            <field name="organization_name">Apple</field>
+            <field name="issue_date">2014-01-01</field>
+            <field name="expiry_date">2014-12-31</field>
+            <field name="reg_no">369852</field>
+        </record>
+
+        <!-- Employees -->
+
+        <record id="hr.employee_root" model="hr.employee">
+            <field name="name">Abdul</field>
+            <field name="department_id" ref="hr.dep_management"/>
+            <field name="job_id" ref="hr.job_ceo"/>
+            <field name="category_ids" eval="[(6, 0, [ref('hr.employee_category_2')])]"/>
+            <field name="last_name">Nasser</field>
+            <field name="birthday">1985-01-11</field>
+            <field name="date_of_join" eval="(DateTime.today() - relativedelta(years=3,months=2, days=3)).strftime('%Y-%m-%d')" />
+            <field name="code">emp01</field>
+            <field name="employee_status">active</field>
+            <field name="gender">male</field>
+            <field name="country_id" ref="base.sa"/>
+            <field name="branch_id" ref="Riyadh_office"/>
+            <field name="work_phone">+3281813700</field>
+            <field name="mobile_phone">+3281813700</field>
+            <field name="work_email">abdul@synconics.com</field>
+            <field name="user_id" ref=""/>
+            <field name="religion">muslim</field>
+            <field name="marital">married</field>
+            <field name="image" type="base64" file="slnee_hr/static/src/img/1443.jpg"/>
+        </record>
+
+        <record id="hr.employee_qdp" model="hr.employee">
+            <field name="name">Bilal</field>
+            <field name="user_id" ref="base.user_demo"/>
+            <field name="department_id" ref="hr.dep_rd"/>
+            <field name="job_id" ref="hr.job_developer"/>
+            <field name="category_ids" eval="[(6, 0, [ref('hr.employee_category_4')])]"/>
+            <field name="last_name">Pathan</field>
+            <field name="birthday">1985-02-10</field>
+            <field name="date_of_join" eval="(DateTime.today() - relativedelta(months=7, days=1)).strftime('%Y-%m-%d')" />
+            <field name="code">emp07</field>
+            <field name="country_id" ref="base.sa"/>
+            <field name="branch_id" ref="Riyadh_office"/>
+            <field name="employee_status">active</field>
+            <field name="gender">male</field>
+            <field name="work_phone">+3281813700</field>
+            <field name="work_email">bilalpth@synconics.com</field>
+            <field name="image" type="base64" file="slnee_hr/static/src/img/2327.jpg"/>
+            <field name="religion">muslim</field>
+            <field name="marital">married</field>
+        </record>
+
+        <record id="hr.employee_fpi" model="hr.employee">
+            <field name="name">Abdul</field>
+            <field name="department_id" ref="hr.dep_rd"/>
+            <field name="job_id" ref="hr.job_developer"/>
+            <field name="category_ids" eval="[(6, 0, [ref('hr.employee_category_4')])]"/>
+            <field name="last_name">Omar</field>
+            <field name="birthday">1987-07-06</field>
+            <field name="date_of_join" eval="(DateTime.today() - relativedelta(years=7,months=6, days=1)).strftime('%Y-%m-%d')" />
+            <field name="code">emp08</field>
+            <field name="employee_status">active</field>
+            <field name="gender">male</field>
+            <field name="country_id" ref="base.sa"/>
+            <field name="branch_id" ref="Riyadh_office"/>
+            <field name="work_phone">+3281816877</field>
+            <field name="work_email">abdulomar@synconics.com</field>
+            <field name="image" type="base64" file="slnee_hr/static/src/img/1818.jpg"/>
+            <field name="religion">muslim</field>
+            <field name="marital">married</field>
+        </record>
+
+        <record id="hr.employee_jep" model="hr.employee">
+            <field name="name">Danial</field>
+            <field name="department_id" ref="hr.dep_ps"/>
+            <field name="job_id" ref="hr.job_consultant"/>
+            <field name="work_phone">+3282823200</field>
+            <field name="last_name">peter</field>
+            <field name="birthday">1985-10-07</field>
+            <field name="date_of_join" eval="(DateTime.today() - relativedelta(years=4,months=4, days=3)).strftime('%Y-%m-%d')" />
+            <field name="code">emp14</field>
+            <field name="country_id" ref="base.us"/>
+            <field name="branch_id" ref="Riyadh_office"/>
+            <field name="employee_status">active</field>
+            <field name="gender">male</field>
+            <field name="work_email">danial321@synconics.com</field>
+            <field name="image" type="base64" file="slnee_hr/static/src/img/1760.jpg"/>
+            <field name="religion">non-muslim</field>
+            <field name="marital">married</field>
+        </record>
+
+        <record id="hr.employee_stw" model="hr.employee">
+            <field name="name">Fareeda</field>
+            <field name="department_id" ref="hr.dep_rd"/>
+            <field name="job_id" ref="hr.job_developer"/>
+            <field name="category_ids" eval="[(6, 0, [ref('hr.employee_category_4')])]"/>
+            <field name="last_name">Khan</field>
+            <field name="birthday">1990-08-10</field>
+            <field name="date_of_join" eval="(DateTime.today() - relativedelta(years=4,months=1, days=1)).strftime('%Y-%m-%d')" />
+            <field name="employee_status">active</field>
+            <field name="gender">female</field>
+            <field name="country_id" ref="base.sa"/>
+            <field name="branch_id" ref="Riyadh_office"/>
+            <field name="code">emp05</field>
+            <field name="work_phone">+3281813978</field>
+            <field name="work_email">fkhan@synconics.com</field>
+            <field name="image" type="base64" file="slnee_hr/static/src/img/1853.jpg"/>
+            <field name="religion">muslim</field>
+            <field name="marital">married</field>
+        </record>
+
+        <record id="hr.employee_al" model="hr.employee">
+            <field name="name">Rahul</field>
+            <field name="department_id" ref="hr.dep_rd"/>
+            <field name="job_id" ref="hr.job_cto"/>
+            <field name="category_ids" eval="[(6, 0, [ref('hr.employee_category_3')])]"/>
+            <field name="last_name">Khanna</field>
+            <field name="birthday">1987-11-10</field>
+            <field name="date_of_join" eval="(DateTime.today() - relativedelta(years=2,months=1, days=10)).strftime('%Y-%m-%d')" />
+            <field name="code">emp02</field>
+            <field name="employee_status">active</field>
+            <field name="gender">male</field>
+            <field name="country_id" ref="base.in"/>
+            <field name="branch_id" ref="Riyadh_office"/>
+            <field name="work_phone">3281813115</field>
+            <field name="work_email">rahul123@synconics.com</field>
+            <field name="image" type="base64" file="slnee_hr/static/src/img/1007.jpg"/>
+        </record>
+
+        <record id="hr.employee_mit" model="hr.employee">
+            <field name="name">Husaam</field>
+            <field name="department_id" ref="hr.dep_rd"/>
+            <field name="job_id" ref="hr.job_developer"/>
+            <field name="category_ids" eval="[(6, 0, [ref('hr.employee_category_4')])]"/>
+            <field name="last_name">Udeen</field>
+            <field name="birthday">1987-11-08</field>
+            <field name="date_of_join" eval="(DateTime.today() - relativedelta(years=4,months=7, days=7)).strftime('%Y-%m-%d')" />
+            <field name="code">emp03</field>
+            <field name="employee_status">active</field>
+            <field name="gender">male</field>
+            <field name="country_id" ref="base.pk"/>
+            <field name="branch_id" ref="Riyadh_office"/>
+            <field name="work_phone">3281811546</field>
+            <field name="mobile_phone">32486571630</field>
+            <field name="work_email">husaan98@ymail.com</field>
+            <field name="image" type="base64" file="slnee_hr/static/src/img/1238.jpg"/>
+        </record>
+
+        <record id="hr.employee_niv" model="hr.employee">
+            <field name="name">Shafeeq</field>
+            <field name="department_id" ref="hr.dep_rd"/>
+            <field name="job_id" ref="hr.job_developer"/>
+            <field name="category_ids" eval="[(6, 0, [ref('hr.employee_category_4')])]"/>
+            <field name="last_name">Khan</field>
+            <field name="birthday">1990-08-10</field>
+            <field name="date_of_join" eval="(DateTime.today() - relativedelta(years=1,months=8, days=2)).strftime('%Y-%m-%d')" />
+            <field name="code">emp04</field>
+            <field name="employee_status">active</field>
+            <field name="country_id" ref="base.sa"/>
+            <field name="branch_id" ref="Riyadh_office"/>
+            <field name="gender">male</field>
+            <field name="work_phone">3281813148</field>
+            <field name="work_email">skhan@ymail.com</field>
+            <field name="image" type="base64" file="slnee_hr/static/src/img/1773.jpg"/>
+        </record>
+
+        <record id="hr.employee_chs" model="hr.employee">
+            <field name="name">Mansoor</field>
+            <field name="department_id" ref="hr.dep_rd"/>
+            <field name="job_id" ref="hr.job_developer"/>
+            <field name="category_ids" eval="[(6, 0, [ref('hr.employee_category_4')])]"/>
+            <field name="last_name">Ali</field>
+            <field name="birthday">1991-11-11</field>
+            <field name="date_of_join" eval="(DateTime.today() - relativedelta(years=1,months=1, days=1)).strftime('%Y-%m-%d')" />
+            <field name="code">emp06</field>
+            <field name="employee_status">active</field>
+            <field name="country_id" ref="base.sa"/>
+            <field name="branch_id" ref="Riyadh_office"/>
+            <field name="gender">male</field>
+            <field name="work_phone">3281813977</field>
+            <field name="work_email">mansali@synconics.com</field>
+            <field name="image" type="base64" file="slnee_hr/static/src/img/2215.jpg"/>
+        </record>
+
+     <record id="hr.employee_fme" model="hr.employee">
+          <field name="name">Jalaal</field>
+          <field name="department_id" ref="hr.dep_rd"/>
+          <field name="job_id" ref="hr.job_developer"/>
+          <field name="category_ids" eval="[(6, 0, [ref('hr.employee_category_4')])]"/>
+          <field name="last_name">Aziz</field>
+          <field name="birthday">1991-07-06</field>
+          <field name="date_of_join" eval="(DateTime.today() - relativedelta(years=5,months=2, days=3)).strftime('%Y-%m-%d')" />
+          <field name="code">emp22</field>
+          <field name="employee_status">active</field>
+          <field name="gender">male</field>
+          <field name="country_id" ref="base.sa"/>
+          <field name="branch_id" ref="Riyadh_office"/>
+          <field name="work_phone">3281814678</field>
+          <field name="work_email">jalalaziz@synconics.com</field>
+          <field name="image" type="base64" file="slnee_hr/static/src/img/1813.jpg"/>
+      </record>
+
+      <record id="hr.employee_jth" model="hr.employee">
+            <field name="name">Zaheena</field>
+            <field name="department_id" ref="hr.dep_ps"/>
+            <field name="job_id" ref="hr.job_consultant"/>
+            <field name="category_ids" eval="[(6, 0, [ref('hr.employee_category_4')])]"/>
+            <field name="last_name">Sheikh</field>
+            <field name="birthday">1991-04-01</field>
+            <field name="date_of_join" eval="(DateTime.today() - relativedelta(years=1,months=2, days=0)).strftime('%Y-%m-%d')" />
+            <field name="code">emp09</field>
+            <field name="country_id" ref="base.in"/>
+            <field name="branch_id" ref="Riyadh_office"/>
+            <field name="employee_status">active</field>
+            <field name="gender">female</field>
+            <field name="work_phone">+3281813986</field>
+            <field name="work_email">zaakhtar@synconics.com</field>
+            <field name="image" type="base64" file="slnee_hr/static/src/img/1851.jpg"/>
+        </record>
+
+      <record id="hr.employee_ngh" model="hr.employee">
+          <field name="name">Shaadin</field>
+          <field name="department_id" ref="hr.dep_sales"/>
+          <field name="job_id" ref="hr.job_marketing"/>
+          <field name="category_ids" eval="[(6, 0, [ref('hr.employee_category_4')])]"/>
+          <field name="last_name">Habibi</field>
+          <field name="birthday">1985-07-01</field>
+          <field name="date_of_join" eval="(DateTime.today() - relativedelta(years=2,months=2, days=2)).strftime('%Y-%m-%d')" />
+          <field name="code">emp10</field>
+          <field name="employee_status">active</field>
+          <field name="gender">male</field>
+          <field name="country_id" ref="base.sa"/>
+          <field name="branch_id" ref="Riyadh_office"/>
+          <field name="work_phone">3281813962</field>
+          <field name="work_email">shaadhab@synconics.com</field>
+          <field name="image" type="base64" file="slnee_hr/static/src/img/1421.jpg"/>
+      </record>
+
+      <record id="hr.employee_vad" model="hr.employee">
+          <field name="name">Mukhtaar</field>
+          <field name="department_id" ref="hr.dep_administration"/>
+          <field name="job_id" ref="hr.job_hrm"/>
+          <field name="category_ids" eval="[(6, 0, [ref('hr.employee_category_4')])]"/>
+          <field name="last_name">abu</field>
+          <field name="birthday">1983-05-01</field>
+          <field name="date_of_join" eval="(DateTime.today() - relativedelta(years=2,months=3, days=1)).strftime('%Y-%m-%d')" />
+          <field name="code">emp11</field>
+          <field name="employee_status">active</field>
+          <field name="gender">male</field>
+          <field name="country_id" ref="base.sa"/>
+          <field name="work_phone">3281816976</field>
+          <field name="work_email">mukhtarabu@synconics.com</field>
+          <field name="image" type="base64" file="slnee_hr/static/src/img/1603.jpg"/>
+      </record>
+
+      <record id="hr.employee_han" model="hr.employee">
+          <field name="name">Sabeeh</field>
+          <field name="department_id" ref="hr.dep_rd"/>
+          <field name="job_id" ref="hr.job_developer"/>
+          <field name="work_phone">3282823613</field>
+          <field name="last_name">Akram</field>
+          <field name="employee_status">active</field>
+          <field name="gender">male</field>
+          <field name="country_id" ref="base.pk"/>
+          <field name="branch_id" ref="Riyadh_office"/>
+          <field name="birthday">1987-07-06</field>
+          <field name="date_of_join" eval="(DateTime.today() - relativedelta(years=1,months=1, days=1)).strftime('%Y-%m-%d')" />
+          <field name="code">emp12</field>
+          <field name="image" type="base64" file="slnee_hr/static/src/img/1644.jpg"/>
+      </record>
+
+      <record id="hr.employee_jve" model="hr.employee">
+          <field name="name">Usaamah</field>
+          <field name="department_id" ref="hr.dep_rd"/>
+          <field name="job_id" ref="hr.job_developer"/>
+          <field name="work_phone">3282825348</field>
+          <field name="last_name">Somani</field>
+          <field name="birthday">1985-07-03</field>
+          <field name="date_of_join" eval="(DateTime.today() - relativedelta(years=1,months=1, days=1)).strftime('%Y-%m-%d')" />
+          <field name="code">emp13</field>
+          <field name="country_id" ref="base.sa"/>
+          <field name="branch_id" ref="Riyadh_office"/>
+          <field name="employee_status">active</field>
+          <field name="gender">male</field>
+          <field name="work_email">usaamah@synconics.com</field>
+          <field name="image" type="base64" file="slnee_hr/static/src/img/1725.jpg"/>
+      </record>
+
+      <record id="hr.employee_jod" model="hr.employee">
+         <field name="name">Jacob</field>
+          <field name="department_id" ref="hr.dep_sales"/>
+          <field name="job_id" ref="hr.job_marketing"/>
+          <field name="work_phone">3282823500</field>
+          <field name="last_name">James</field>
+          <field name="birthday">1984-07-04</field>
+          <field name="date_of_join" eval="(DateTime.today() - relativedelta(years=5,months=6, days=2)).strftime('%Y-%m-%d')" />
+          <field name="code">emp15</field>
+          <field name="employee_status">active</field>
+          <field name="gender">male</field>
+          <field name="country_id" ref="base.uk"/>
+          <field name="branch_id" ref="Riyadh_office"/>
+          <field name="work_email">jacobjames@synconics.com</field>
+          <field name="image" type="base64" file="slnee_hr/static/src/img/1814.jpg"/>
+      </record>
+
+      <record id="hr.employee_jog" model="hr.employee">
+         <field name="name">Mokbul</field>
+          <field name="department_id" ref="hr.dep_rd"/>
+          <field name="job_id" ref="hr.job_developer"/>
+          <field name="work_phone">3282823500</field>
+          <field name="last_name">Khan</field>
+          <field name="birthday">1986-06-07</field>
+          <field name="date_of_join" eval="(DateTime.today() - relativedelta(years=4,months=1, days=8)).strftime('%Y-%m-%d')" />
+          <field name="code">emp16</field>
+          <field name="employee_status">active</field>
+          <field name="gender">male</field>
+          <field name="country_id" ref="base.sa"/>
+          <field name="branch_id" ref="Riyadh_office"/>
+          <field name="work_email">jog@synconics.com</field>
+          <field name="image" type="base64" file="slnee_hr/static/src/img/2307.jpg"/>
+      </record>
+
+      <record id="hr.employee_jgo" model="hr.employee">
+          <field name="name">Mahja</field>
+          <field name="department_id" ref="hr.dep_ps"/>
+          <field name="job_id" ref="hr.job_consultant"/>
+          <field name="work_location">Riyadh</field>
+          <field name="last_name">Gonzalez</field>
+          <field name="birthday">1988-05-06</field>
+          <field name="date_of_join" eval="(DateTime.today() - relativedelta(years=2,months=2, days=7)).strftime('%Y-%m-%d')" />
+          <field name="code">emp17</field>
+          <field name="country_id" ref="base.sa"/>
+          <field name="branch_id" ref="Riyadh_office"/>
+          <field name="employee_status">active</field>
+          <field name="gender">male</field>
+          <field name="work_phone">3282823500</field>
+          <field name="image" type="base64" file="slnee_hr/static/src/img/2306.jpg"/>
+      </record>
+
+     <record id="hr.employee_lur" model="hr.employee">
+         <field name="name">Mohammed</field>
+          <field name="department_id" ref="hr.dep_sales"/>
+          <field name="job_id" ref="hr.job_marketing"/>
+          <field name="work_phone">3282823500</field>
+          <field name="last_name">Madani</field>
+          <field name="birthday">1985-05-06</field>
+          <field name="date_of_join" eval="(DateTime.today() - relativedelta(years=1,months=6, days=8)).strftime('%Y-%m-%d')" />
+          <field name="code">emp18</field>
+          <field name="country_id" ref="base.sa"/>
+          <field name="branch_id" ref="Riyadh_office"/>
+          <field name="employee_status">active</field>
+          <field name="gender">male</field>
+          <field name="work_email">noWong@synconics.com</field>
+          <field name="image" type="base64" file="slnee_hr/static/src/img/1780.jpg"/>
+      </record>
+
+     <record id="hr.employee_hne" model="hr.employee">
+          <field name="name">Umar</field>
+          <field name="department_id" ref="hr.dep_ps"/>
+          <field name="job_id" ref="hr.job_consultant"/>
+          <field name="last_name">Gaddafi</field>
+          <field name="birthday">1987-05-07</field>
+          <field name="date_of_join" eval="(DateTime.today() - relativedelta(years=3,months=-2, days=1)).strftime('%Y-%m-%d')" />
+          <field name="code">emp19</field>
+          <field name="employee_status">active</field>
+          <field name="country_id" ref="base.sa"/>
+          <field name="branch_id" ref="Riyadh_office"/>
+          <field name="gender">male</field>
+          <field name="work_email">umargaddafi@synconics.com</field>
+          <field name="work_phone">3282823120</field>
+          <field name="image" type="base64" file="slnee_hr/static/src/img/3100.jpg"/>
+      </record>
+
+      <record id="hr.employee_djj" model="hr.employee">
+          <field name="name">Mobeen</field>
+          <field name="department_id" ref="hr.dep_ps"/>
+          <field name="job_id" ref="hr.job_consultant"/>
+          <field name="last_name">Madani</field>
+          <field name="birthday">1987-05-07</field>
+          <field name="date_of_join" eval="(DateTime.today() - relativedelta(years=2,months=6, days=8)).strftime('%Y-%m-%d')" />
+          <field name="code">emp20</field>
+          <field name="employee_status">active</field>
+          <field name="country_id" ref="base.sa"/>
+          <field name="branch_id" ref="Riyadh_office"/>
+          <field name="gender">male</field>
+          <field name="work_email">mmadani@synconics.com</field>
+          <field name="work_phone">3282823512</field>
+          <field name="image" type="base64" file="slnee_hr/static/src/img/3112.jpg"/>
+      </record>
+
+      <record id="hr.employee_dzc" model="hr.employee">
+          <field name="name">Moeez</field>
+          <field name="department_id" ref="hr.dep_sales"/>
+          <field name="job_id" ref="hr.job_marketing"/>
+          <field name="work_phone">3282823600</field>
+          <field name="last_name">Ali</field>
+          <field name="birthday">1985-05-06</field>
+          <field name="date_of_join" eval="(DateTime.today() - relativedelta(years=3,months=2, days=1)).strftime('%Y-%m-%d')" />
+          <field name="code">emp21</field>
+          <field name="country_id" ref="base.sa"/>
+          <field name="branch_id" ref="Riyadh_office"/>
+          <field name="employee_status">active</field>
+          <field name="gender">male</field>
+          <field name="work_email">moeezali@synconics.com</field>
+          <field name="image" type="base64" file="slnee_hr/static/src/img/1552.jpg"/>
+      </record>
+     </data>
+</odoo>

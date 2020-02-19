@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- HR Groups Configuration -->
+    <record model="ir.ui.view" id="hr_groups_config_form">
+        <field name="name">HR Groups Configuration</field>
+        <field name="model">hr.groups.configuration</field>
+        <field name="arch" type="xml">
+            <form string="HR Groups Configurations">
+                <sheet>
+                    <group>
+                        <group string="Branch Details" colspan="4">
+                            <field name="branch_id" placeholder='Select Office...' />
+                        </group>
+                        <group></group>
+                    </group>
+                    <group>
+                        <group string="Helpdesks">
+                            <field name="helpdesk_ids" nolabel="1" widget="many2many_tags" domain="[('branch_id','=', branch_id)]"/>
+                        </group>
+                        <group string="Talent Acquisitions">
+                            <field name="talent_acquisition_ids" nolabel="1" widget="many2many_tags" domain="[('branch_id','=', branch_id)]"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="GRs">
+                            <field name="gr_ids" nolabel="1" widget="many2many_tags" domain="[('branch_id','=', branch_id)]"/>
+                        </group>
+                        <group string="HRs">
+                            <field name="hr_ids" nolabel="1" widget="many2many_tags" domain="[('branch_id','=', branch_id)]"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Finances">
+                            <field name="finance_ids" nolabel="1" widget="many2many_tags" domain="[('branch_id','=', branch_id)]"/>
+                        </group>
+                        <group string="Admins">
+                            <field name="admin_ids" nolabel="1" widget="many2many_tags" domain="[('branch_id','=', branch_id)]"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Payrolls">
+                            <field name="payroll_ids" nolabel="1" widget="many2many_tags" domain="[('branch_id','=', branch_id)]"/>
+                        </group>
+                        <group string="Drivers">
+                            <field name="driver_ids" nolabel="1" widget="many2many_tags" domain="[('branch_id','=', branch_id)]"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="HoPs">
+                            <field name="hop_ids" nolabel="1" widget="many2many_tags" domain="[('branch_id','=', branch_id)]"/>
+                        </group>
+                        <group>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="hr_groups_config_tree" model="ir.ui.view">
+        <field name="name">Groups Configuration</field>
+        <field name="model">hr.groups.configuration</field>
+        <field name="arch" type="xml">
+            <tree string="Groups Configuration">
+                <field name="branch_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_view_hr_groups_config">
+        <field name="name">Groups Configuration</field>
+        <field name="res_model">hr.groups.configuration</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click to define Group Configuration.
+            </p>
+        </field>
+    </record>
+
+</odoo>

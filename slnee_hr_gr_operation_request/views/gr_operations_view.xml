@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="gr_operations_form" model="ir.ui.view">
+        <field name="name">GR Operations</field>
+        <field name="model">gr.operations</field>
+        <field name="arch" type="xml">
+            <form string="Gr Operations">
+                <header>
+                    <button name="submit_gr_operations" string="Submit" states="draft" type="object" groups="base.group_user"
+                            class="oe_highlight"/>
+                    <button name="inprogress_gr_operations" string="In progress" states="confirm" type="object"
+                            class="oe_highlight" groups="hr.group_hr_user"/>
+                    <button name="generate_expense" string="Generate Expense" type="object" class="oe_highlight"
+                            attrs="{'invisible':['|','|',('expense_ids','!=',[]),('state','!=','done'),('expense_needed','=',False)]}"
+                            groups="hr.group_hr_user"/>
+                    <button name="received_gr_operations" string="Received" states="inprogress" type="object" class="oe_highlight"
+                            groups="hr.group_hr_user"/>
+                    <button name="refuse_gr_operations" string="Refuse" states="confirm,inprogress,confirm" type="object"
+                            groups="hr.group_hr_user"/>
+                    <button name="set_to_draft" string="Set To Draft" states="refuse" type="object"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirm"/>
+                </header>
+                <sheet>
+                     <div class="oe_button_box">
+                        <button type="object" name="view_expense" string="Expense" class="oe_stat_button" icon="fa-book" attrs="{'invisible':[('expense_ids','=',[])]}"
+                                groups="base.group_user">
+                        </button>
+                    </div>
+                    <group>
+                        <group string="Employee Information" groups="hr.group_hr_user">
+                            <field name="employee_id" placeholder="Select Employee" attrs="{'readonly':[('state','!=', 'draft')]}"/>
+                            <field name="department_id"/>
+                            <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company" attrs="{'readonly':[('state','!=', 'draft')]}"/>
+                        </group>
+                        <group string="Type of Request">
+                            <field name="name" invisible="1"/>
+                            <field name="type_id" placeholder="Select the type of request" attrs="{'readonly':[('state','!=', 'draft')]}" />
+                            <field name="expense_needed" attrs="{'readonly':['|',('expense_ids','!=',[]),('state','=','done')]}"/>
+                            <field name="payment_mode" widget="radio" attrs="{'invisible': [('expense_needed','=',False)], 'required':[('expense_needed','=',True)], 'readonly':[('expense_ids','!=',[])]}"/>
+                            <field name="handled_by" attrs="{'readonly':[('state','not in', ['confirm','validate'])] ,
+                                                             'required':[('state','=','confirm')],
+                                                             'invisible':[('state','=','draft')]}"/>
+                        </group>
+                    </group>
+                    <separator string="Required Documents" colspan="4" attrs="{'invisible': [('type_id','=',False)]}"/>
+                    <field name="documents" nolabel="1" attrs="{'invisible': [('type_id','=',False)]}"/>
+                    <notebook>
+                        <page string="Description">
+                            <field name="description" nolabel="1" attrs="{'readonly':[('state','!=', 'draft')]}"
+                                   placeholder="Description for Operation Request..."/>
+                        </page>
+                        <page string="Expense" attrs="{'invisible':[('expense_needed','=',False)]}">
+                            <group>
+                                <group attrs="{'required':[('payment_mode','!=','company_account')], 'invisible':[('payment_mode','=','company_account')]}">
+                                    <field name="emp_contribution" attrs="{'readonly':[('expense_ids','!=', [])]}"/>
+                                </group>
+                                <group>
+                                    <field name="company_contribution" attrs="{'required':[('payment_mode','!=','own_account')], 'invisible':[('payment_mode','=','own_account')], 'readonly':[('expense_ids','!=', [])]}"
+                                           groups="hr.group_hr_user"/>
+                                    <field name="expense_ids" invisible="1"/>
+                                    <field name="expense_total" invisible="1"/>
+                                </group>
+                                <group string="Notes" colspan="4">
+                                    <field name="expense_note" nolabel="1" attrs="{'readonly':[('expense_ids','!=',[])]}"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Extra Information" groups="base.group_no_one">
+                            <group name="extra_info" col="4">
+                                <field name="create_uid" readonly="1" />
+                                <field name="create_date" readonly="1" />
+                                <field name="write_uid" readonly="1" />
+                                <field name="write_date" readonly="1" />
+                                <field name="approved_by" attrs="{'invisible':[('approved_by','=',False)]}"/>
+                                <field name="approved_date" attrs="{'invisible':[('approved_date','=',False)]}"/>
+                                <field name="refused_by" attrs="{'invisible':[('refused_by','=',False)]}"/>
+                                <field name="refused_date" attrs="{'invisible':[('refused_date','=',False)]}"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="gr_operations_tree" model="ir.ui.view">
+        <field name="name">GR operations</field>
+        <field name="model">gr.operations</field>
+        <field name="arch" type="xml">
+            <tree string="Gr Operations">
+                <field name="type_id"/>
+                <field name="employee_id" />
+                <field name="department_id"/>
+                <field name="handled_by"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+    <record id="gr_opration_filter" model="ir.ui.view">
+        <field name="name">gr_operation.select</field>
+        <field name="model">gr.operations</field>
+        <field name="arch" type="xml">
+            <search string="Filter">
+                <field name="employee_id"/>
+                <filter string="Confirm" domain="[('state','=',('confirm'))]" help="Visa that has been waiting for approval" />
+                <filter string="In Process" domain="[('state','=',('inprogress'))]" help="Visa that has been in progress" />
+                <filter string="Approve" domain="[('state','=',('approved'))]" help="Visa that has been approved" />
+                <filter string="Done" domain="[('state','=',('done'))]" help="Visa that has been done" />
+                <filter string="Refuse" domain="[('state','=',('refuse'))]" help="Visa that has been refused" />
+                <group expand="0" string="Group By...">
+                    <filter string="Employee" context="{'group_by':'employee_id'}"/>
+                    <filter string="Type" context="{'group_by':'type_id'}"/>
+                    <filter string="Department" context="{'group_by':'department_id'}"/>
+                    <filter string="State" context="{'group_by':'state'}"/>
+                    <filter string="Handled By" context="{'group_by':'handled_by'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="action_gr_operations" model="ir.actions.act_window">
+        <field name="name">Operations Request</field>
+        <field name="res_model">gr.operations</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="gr_operations_type_form" model="ir.ui.view">
+        <field name="name">Operations Request Types</field>
+        <field name="model">gr.request.type</field>
+        <field name="arch" type="xml">
+            <form string="Operations Type">
+                <group>
+                    <field name="name"/>
+                    <field name="documents"/>
+                    <field name="expense_needed"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="gr_operations_type_tree" model="ir.ui.view">
+        <field name="name">Operations Request Types</field>
+        <field name="model">gr.request.type</field>
+        <field name="arch" type="xml">
+            <tree string="Operations Type">
+                <field name="name"/>
+                <field name="documents"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_gr_operations_type" model="ir.actions.act_window">
+        <field name="name">Operations Request Type</field>
+        <field name="res_model">gr.request.type</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_gr_operations" name="Operation Request" parent="slnee_hr.menu_gr" sequence="4" action="action_gr_operations"
+              groups="base.group_user"/>
+    <menuitem id="menu_gr_operations_config" name="Operation Request Type" parent="hr.menu_human_resources_configuration"
+              sequence="115" action="action_gr_operations_type"
+              groups="hr.group_hr_manager"/>
+</odoo>

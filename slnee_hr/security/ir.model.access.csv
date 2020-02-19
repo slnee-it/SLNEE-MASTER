@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+hr.access_hr_employee_system_user,hr.employee system user,hr.model_hr_employee,base.group_user,1,0,0,0
+access_hr_employee_hof,access_hr_employee_hof,model_hr_employee,slnee_hr.group_hof,1,1,1,0
+access_hr_branch_portal_applications,access_hr_branch_portal_applications,slnee_hr_branch.model_hr_branch,group_portal_applications,1,0,0,0

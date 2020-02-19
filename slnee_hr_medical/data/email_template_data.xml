@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <data noupdate="1">
+        <!-- Email template expiration insurance -->
+        <record id="hr_medical_insurance_expiration_email" model="mail.template">
+            <field name="name">Expiration Insurance</field>
+            <field name="model_id" ref="slnee_hr_medical.model_insurance_details"/>
+            <field name="email_from"><![CDATA[${object.company_id.name} <${(object.company_id.email or user.email)|safe}>]]></field>
+            <field name="email_to">${(not object.responsible_id.partner_id and object.responsible_id.partner_id.email)|safe}</field>
+            <field name="subject"><![CDATA[${object.employee_id.name} Insurance Expiration Reminder]]></field>
+            <field name="body_html"><![CDATA[
+                    <p>Hello ${object.responsible_id.partner_id.name},</p>
+                    <p>We are inform you ${object.employee_id.name} insurance ${object.name} is expired on ${object.end_date}.</p>
+                    <p>Thank you,</p>]]>
+            </field>
+            <field name="user_signature" eval="False"/>
+            <field name="auto_delete" eval="False"/>
+        </record>
+     </data>
+</odoo>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_resource_calendar_attendance_form" model="ir.ui.view">
+        <field name="name">resource.calendar.attendance.form</field>
+        <field name="model">resource.calendar.attendance</field>
+        <field name="inherit_id" ref="resource.view_resource_calendar_attendance_form"></field>
+        <field name="arch" type="xml">
+            <field name="hour_from" position="after">
+                <field name="tolerance_to" widget="float_time"/>
+            </field>
+            <field name="hour_to" position="after">
+                <field name="tolerance_from" widget="float_time"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>

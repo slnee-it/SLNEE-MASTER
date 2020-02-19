@@ -1,0 +1,514 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_event
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-12 10:33+0000\n"
+"PO-Revision-Date: 2018-09-12 10:33+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.hr_employee_training_form
+msgid "Add to Employee"
+msgstr "إضافة إلى موظف"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_event_event_approve_hof
+msgid "Approval of Head of Function"
+msgstr "الموافقة على رئيس الوظيفة"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.hr_employee_training_form
+msgid "Approve"
+msgstr "موافقه"
+
+#. module: slnee_hr_event
+#: selection:hr.employee.training,state:0
+msgid "Approved"
+msgstr "وافق"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_hr_employee_training_approved_date
+msgid "Approved Date"
+msgstr "التسجيل المعتمدة"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_hr_employee_training_approved_by
+msgid "Approved by"
+msgstr "التي وافقت عليها"
+
+#. module: slnee_hr_event
+#: selection:hr.employee.training,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_event_registration_form_inherit
+msgid "Attended"
+msgstr "حضر"
+
+#. module: slnee_hr_event
+#: model:ir.model,name:slnee_hr_event.model_event_registration
+msgid "Attendee"
+msgstr "الحاضر"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_event_registration_form_inherit
+msgid "Cancel Registration"
+msgstr "إلغاء التسجيل"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_event_form_inherit
+msgid "Cancel Training"
+msgstr "إلغاء التدريب"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_event_registration_company_contribution
+msgid "Company Contribution"
+msgstr "مساهمة الشركة"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.hr_employee_training_form
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_employee_training_filter
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_event_registration_form_inherit
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_event_form_inherit
+msgid "Confirm Training"
+msgstr "تأكيد التدريب"
+
+#. module: slnee_hr_event
+#: selection:hr.employee.training,state:0
+msgid "Confirmed"
+msgstr "مؤكد"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_hr_employee_training_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_hr_employee_training_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_hr_employee_training_department_id
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_employee_training_filter
+msgid "Department"
+msgstr "القسم"
+
+#. module: slnee_hr_event
+#: selection:event.event,target:0
+msgid "Department Wise"
+msgstr "قسم الحكيم"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_event_event_department_ids
+msgid "Departments"
+msgstr "الإدارات"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_hr_employee_training_description
+#: model:ir.ui.view,arch_db:slnee_hr_event.hr_employee_training_form
+msgid "Description"
+msgstr "الوصف"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_hr_employee_training_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: slnee_hr_event
+#: selection:hr.employee.training,state:0
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: slnee_hr_event
+#: model:ir.model,name:slnee_hr_event.model_hr_employee
+#: model:ir.model.fields,field_description:slnee_hr_event.field_event_registration_employee_id
+#: model:ir.model.fields,field_description:slnee_hr_event.field_hr_employee_training_employee_id
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_employee_training_filter
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_event_registration_emp_contribution
+msgid "Employee Contribution"
+msgstr "مساهمة الموظف"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.hr_employee_training_form
+msgid "Employee Information"
+msgstr "معلومات الموظف"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_event_event_employee_ids
+msgid "Employees"
+msgstr "الموظفون"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_hr_employee_training_end_date
+msgid "End Date"
+msgstr "تاريخ الإنتهاء"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.hr_employee_training_form
+msgid "Enter the place of training"
+msgstr "أدخل مكان التدريب"
+
+#. module: slnee_hr_event
+#: code:addons/slnee_hr_event/models/hr_employee_training.py:36
+#, python-format
+msgid "Error! Start Date must be less than End Date."
+msgstr "خطأ! تاريخ بدء يجب أن يكون أقل من تاريخ الانتهاء"
+
+#. module: slnee_hr_event
+#: model:ir.model,name:slnee_hr_event.model_event_event
+msgid "Event"
+msgstr "الحدث"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_event_form_inherit
+msgid "Event Description..."
+msgstr "...وصف الحدث"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_hr_employee_event_count
+msgid "Events"
+msgstr "المناسبات"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_event_registration_expense_id
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_event_registration_form_inherit
+msgid "Expense"
+msgstr "المصروفات"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_event_registration_expense_note
+msgid "Expense Note"
+msgstr "ملاحظة حول النفقات"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_event_registration_expense_ids
+msgid "Expenses"
+msgstr "نفقات"
+
+#. module: slnee_hr_event
+#: selection:hr.employee.training,type:0
+msgid "External"
+msgstr "خارجي"
+
+#. module: slnee_hr_event
+#: model:ir.actions.act_window,name:slnee_hr_event.action_employee_training
+msgid "External Training"
+msgstr "التدريب الخارجي"
+
+#. module: slnee_hr_event
+#: model:ir.ui.menu,name:slnee_hr_event.menu_employee_training
+#: model:ir.ui.view,arch_db:slnee_hr_event.hr_employee_training_form
+#: model:ir.ui.view,arch_db:slnee_hr_event.hr_employee_traning_tree
+msgid "External Trainings"
+msgstr "الدورات التدريبية الخارجية"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.hr_employee_training_form
+msgid "Extra Information"
+msgstr "معلومات اضافية"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_event_form_inherit
+msgid "Finish Training"
+msgstr "الانتهاء من التدريب"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_event_registration_form_inherit
+msgid "Generate Expense"
+msgstr "توليد المصروفات"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_employee_training_filter
+msgid "Group By..."
+msgstr "تجميع حسب.."
+
+#. module: slnee_hr_event
+#: model:ir.model,name:slnee_hr_event.model_hr_employee_training
+msgid "HR Employee Training"
+msgstr "تدريب الموظفين على الموارد البشرية"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_hr_employee_training_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: slnee_hr_event
+#: selection:hr.employee.training,type:0
+msgid "Internal"
+msgstr "داخلي"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_event_form_inherit
+msgid "Invitation Details"
+msgstr "تفاصيل دعوة"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_hr_employee_training_job_id
+msgid "Job Position"
+msgstr "المناصب الوظيفية"
+
+#. module: slnee_hr_event
+#: selection:event.event,target:0
+msgid "Job Profile Wise"
+msgstr "وظيفة الملف الحكيم"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_event_event_job_ids
+msgid "Job Profiles"
+msgstr "الملامح الوظيفية"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_hr_employee_training___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_hr_employee_training_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_hr_employee_training_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_event_form_inherit
+msgid "Location of the Training"
+msgstr "موقع التدريب"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_employee_training_filter
+msgid "My Trainings"
+msgstr "بلدي التدريب"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,help:slnee_hr_event.field_hr_employee_training_name
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_event_form_inherit
+msgid "Name of the Training"
+msgstr "اسم التدريب"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_event_registration_form_inherit
+msgid "Note"
+msgstr "ملاحظة"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,help:slnee_hr_event.field_hr_employee_event_count
+msgid "Number of events the employee has participated."
+msgstr "عدد الأحداث التي شارك فيها الموظف."
+
+#. module: slnee_hr_event
+#: selection:event.event,target:0
+msgid "Office Wise"
+msgstr "مكتب الحكيم"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_event_event_branch_ids
+msgid "Offices"
+msgstr "مكاتب"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.hr_employee_training_form
+msgid "Put the description here"
+msgstr "وضع وصف هنا"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.hr_employee_training_form
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: slnee_hr_event
+#: selection:hr.employee.training,state:0
+msgid "Refused"
+msgstr "رفض"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.hr_employee_training_form
+msgid "Say something about training"
+msgstr "أقول شيئا عن التدريب"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_employee_training_filter
+msgid "Search Employee Training"
+msgstr "بحث تدريب الموظفين"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.hr_employee_training_form
+msgid "Select Employee"
+msgstr "حدد الموظف"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.hr_employee_training_form
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_event_form_inherit
+msgid "Set To Draft"
+msgstr "وضع كمسودة"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_event_registration_form_inherit
+msgid "Set To Unconfirmed"
+msgstr "تعيين لغير مؤكدة"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_hr_employee_training_start_date
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_hr_employee_training_state
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_employee_training_filter
+msgid "Status"
+msgstr "الحالة "
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_event_event_is_subscribed
+msgid "Subscribed"
+msgstr "المشترك"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_event_event_target
+msgid "Target Group"
+msgstr "المجموعة المستهدفة"
+
+#. module: slnee_hr_event
+#: code:addons/slnee_hr_event/models/event.py:87
+#, python-format
+msgid "The total of confirmed registration for the event `%s` does not meet the expected minimum/maximum. Please reconsider those limits before going further."
+msgstr "إجمالي التسجيل المؤكد للحدث `٪ s` لا يلبي الحد الأدنى / الحد الأقصى المتوقع. يرجى إعادة النظر في هذه الحدود قبل الذهاب إلى أبعد من ذلك."
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_employee_training_filter
+msgid "To Approve"
+msgstr "للاعتماد"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_event_registration_expense_total
+msgid "Total Expense"
+msgstr "المصاريف الكلية"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_event_event_total_hours
+#: model:ir.model.fields,field_description:slnee_hr_event.field_hr_employee_training_total_hours
+msgid "Total Hours"
+msgstr "عدد الساعات الكلية"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_event_registration_form_inherit
+msgid "Training"
+msgstr "تدريب"
+
+#. module: slnee_hr_event
+#: code:addons/slnee_hr_event/models/hr_employee_training.py:111
+#, python-format
+msgid "Training Approved."
+msgstr ".التدريب المعتمدة"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_hr_employee_training_category
+msgid "Training Category"
+msgstr "فئة التدريب"
+
+#. module: slnee_hr_event
+#: code:addons/slnee_hr_event/models/hr_employee_training.py:82
+#, python-format
+msgid "Training Confirmed."
+msgstr ".التدريب المؤكدة"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_event_event_cost
+msgid "Training Cost"
+msgstr "تكلفة التدريب"
+
+#. module: slnee_hr_event
+#: code:addons/slnee_hr_event/models/hr_employee_training.py:120
+#, python-format
+msgid "Training Created."
+msgstr ".مكون التدريب"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.view_event_form_inherit
+msgid "Training Details"
+msgstr "تفاصيل التدريب"
+
+#. module: slnee_hr_event
+#: model:product.product,name:slnee_hr_event.training_exp
+#: model:product.template,name:slnee_hr_event.training_exp_product_template
+msgid "Training Expense"
+msgstr "نفقات التدريب"
+
+#. module: slnee_hr_event
+#: model:ir.ui.view,arch_db:slnee_hr_event.hr_employee_training_form
+msgid "Training Information"
+msgstr "معلومات التدريب"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_hr_employee_training_place
+msgid "Training Place"
+msgstr "مكان التدريب"
+
+#. module: slnee_hr_event
+#: code:addons/slnee_hr_event/models/hr_employee_training.py:102
+#, python-format
+msgid "Training Refused"
+msgstr "تدريب رفض"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_hr_employee_training_name
+msgid "Training Summary"
+msgstr "ملخص التدريب"
+
+#. module: slnee_hr_event
+#: code:addons/slnee_hr_event/models/hr_employee_training.py:93
+#, python-format
+msgid "Training Waiting Approval."
+msgstr ".التدريب في انتظار الموافقة"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_hr_employee_training_ids
+#: model:ir.ui.view,arch_db:slnee_hr_event.slnee_hr_event_view_employee_form
+msgid "Trainings"
+msgstr "دورات تدريبية"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_hr_employee_training_type
+msgid "Type of Training"
+msgstr "نوع من التدريب"
+
+#. module: slnee_hr_event
+#: model:ir.model.fields,field_description:slnee_hr_event.field_event_registration_user_id
+msgid "User"
+msgstr "المستخدم"
+
+#. module: slnee_hr_event
+#: code:addons/slnee_hr_event/models/event.py:97
+#, python-format
+msgid "You can't finish training, because Starting Date of training is %s"
+msgstr "لا يمكنك إنهاء التدريب ، لأن تاريخ بدء التدريب هو٪ s"
+
+#. module: slnee_hr_event
+#: code:addons/slnee_hr_event/models/hr_employee_training.py:67
+#, python-format
+msgid "You cannot delete a external training which is not in draft or refuse!"
+msgstr "لا يمكنك حذف تدريب خارجي غير موجود في المسودة أو يرفض!"
+
+#. module: slnee_hr_event
+#: code:addons/slnee_hr_event/models/event.py:37
+#, python-format
+msgid "You cannot delete an events because already employee(s) registered."
+msgstr "لا يمكنك حذف أحداث لأن الموظف (الموظفين) المسجلون بالفعل مسجلون."
+

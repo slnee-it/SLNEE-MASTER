@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Application Base -->
+    <!-- Recruitment Root Menu -->
+    <menuitem name="Recruitment" id="hr_recruitment.menu_hr_recruitment_root" web_icon="hr_recruitment,static/description/icon.png" sequence="11" groups="hr.group_hr_user"/>
+    <!-- HR menu configuration-->
+    <menuitem name="Applications" parent="hr_recruitment.menu_hr_recruitment_root"
+    id="hr_recruitment.menu_crm_case_categ0_act_job" action="hr_recruitment.crm_case_categ0_act_job" sequence="2"  groups="hr.group_hr_user"/>
+</odoo>

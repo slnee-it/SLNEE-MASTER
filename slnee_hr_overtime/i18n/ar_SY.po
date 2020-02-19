@@ -1,0 +1,32 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_overtime
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-12 11:33+0000\n"
+"PO-Revision-Date: 2018-09-12 11:33+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_overtime
+#: model:ir.model.fields,field_description:slnee_hr_overtime.field_hr_contract_calculate_overtime
+msgid "Calculate Overtime"
+msgstr "حساب العمل الإضافي"
+
+#. module: slnee_hr_overtime
+#: model:ir.model,name:slnee_hr_overtime.model_hr_contract
+msgid "Employee Contract"
+msgstr "عقد الموظف"
+
+#. module: slnee_hr_overtime
+#: model:ir.model.fields,field_description:slnee_hr_overtime.field_hr_contract_overtime_limit
+msgid "Overtime Limit Hours"
+msgstr "ساعات العمل الإضافي"
+

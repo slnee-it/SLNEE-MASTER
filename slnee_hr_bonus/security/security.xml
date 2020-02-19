@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="bonus_rule_officer" model="ir.rule">
+        <field name="name">Officer Bonus Rule</field>
+        <field name="model_id" ref="model_employee_bonus"/>
+        <field name="domain_force">['|', ('company_id','=',False), ('company_id','child_of',[user.company_id.id])]</field>
+        <field name="groups" eval="[(4,ref('hr.group_hr_user'))]"/>
+    </record>
+
+    <record id="bonus_line_rule_officer" model="ir.rule">
+        <field name="name">Officer Bonus line Rule</field>
+        <field name="model_id" ref="model_employee_bonus_lines"/>
+        <field name="domain_force">['|', ('employee_bonus_id.company_id','=',False), ('employee_bonus_id.company_id','child_of',[user.company_id.id])]</field>
+        <field name="groups" eval="[(4,ref('hr.group_hr_user'))]"/>
+    </record>
+    
+</odoo>

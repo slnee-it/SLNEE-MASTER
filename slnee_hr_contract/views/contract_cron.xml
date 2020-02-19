@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<odoo>
+    <data noupdate="1">
+    
+        <!-- Scheduler for Contract -->
+        <record forcecreate="True" id="ir_cron_contract_scheduler_action" model="ir.cron">
+            <field name="name">Scheduled Contract Expiration</field>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field eval="False" name="doall"/>
+            <field eval="'hr.contract'" name="model"/>
+            <field eval="'run_scheduler'" name="function"/>
+            <field eval="'()'" name="args"/>
+        </record>
+        
+        <!-- Schedule Contract Notification template -->
+        <record id="hr_contract.email_template_hr_contract_notify" model="mail.template">
+            <field name="name">Contract Expiration Notification - Send by Email</field>
+            <field name="email_from">${object.create_uid.email.decode('utf-8') or ''}</field>
+            <field name="subject"> ${object.name} </field>
+            <field name="model_id" ref="hr_contract.model_hr_contract"/>
+            <field name="auto_delete" eval="True"/>
+            <field name="body_html"><![CDATA[
+                <div style="font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255); ">
+                    <p>Hello,</p>
+    
+                    <p>This is to inform you that our employee <strong>${object.employee_id.name}'s </strong> fixed employment per our contract will expire at the close of business hours on <strong>${object.date_end}</strong> by operation of law. You shall be notified in writing within the date or after this date should there be new manpower requirements in the event that we will need your services. </p> 
+                    <p>For more information see below details,</p>
+                    <p style="border-left: 1px solid #8e0000; margin-left: 30px;">
+                       &nbsp;&nbsp;<strong>REFERENCES</strong><br />
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subject: <strong>${object.name}</strong><br />
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contract Type: ${object.type_id.name}<br />
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Employee: ${object.employee_id.name}<br />
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Duration: <strong> ${object.date_start} - ${object.date_end} </strong><br />
+                    </p>
+                    <p> This Contract will be expired on <strong> ${object.date_end} </strong>.</p>
+                    <br/><br/>
+                    Thanks,<br/>
+                    Administrator.
+                </div>
+            ]]></field>
+        </record>
+    </data>
+</odoo>

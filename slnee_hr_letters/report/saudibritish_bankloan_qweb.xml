@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="saudibritish_bankloan_report">
+        <t t-call="web.html_container">
+            <t t-call="web.basic_layout">
+                <t t-foreach="docs" t-as="o">
+                   <div class="page" style="face :Helvetica; font-size:18px;">
+                       <t t-set="arg" t-value="{'employee_id' : [o.employee_id.id, o.employee_id.name],'date':o.date,'manager_id': [o.manager_id.id, o.manager_id.name]}"/>
+                       <t t-set="result" t-value="get_data" />
+                       <t t-foreach="result" t-as="data">
+                       <p>
+                           <span style="font-weight: bold">
+                               The Saudi British Bank
+                           </span>
+                       </p>
+                       <p>
+                           <span style="font-weight: bold">Riyadh</span>
+                       </p>
+                       <span style="font-weight: bold">
+                           Employee Name :
+                       </span>
+                       <font face="Helvetica">
+                           <t t-if="data['emp_title']"> <t t-esc="data['emp_title']"/> </t>
+                           <t t-if="data['employee'].name"> <t t-esc="data['employee'].name"/> </t>
+                           <t t-if="data['employee'].middle_name"> <t t-esc="data['employee'].middle_name"/> </t>
+                           <t t-if="data['employee'].last_name"> <t t-esc="data['employee'].last_name"/> </t>
+                       </font>
+                       <p>
+                          <span style="font-weight: bold">
+                               Nationality :
+                           </span>
+                           <font face="Helvetica" size="11.0">
+                               <t t-if="data['emp_country']"> <t t-esc="data['emp_country']"/> </t>
+                           </font>
+                       </p>
+                       <p>
+                           <span style="font-weight: bold">
+                               ID / Iqama Number :
+                           </span>
+                           <font face="Helvetica" size="11.0">
+                               <t t-if="data['doc_number']"> <t t-esc="data['doc_number']"/> </t>
+                           </font>
+                           <span style="font-weight: bold">
+                               Staff No. :
+                           </span>
+                           <font face="Helvetica" size="11.0">
+                               <t t-if="data['emp_staf']"> <t t-esc="data['emp_staf']"/> </t>
+                          </font>
+                       </p>
+                       <p>
+                           <span style="font-weight: bold">
+                               Position :
+                           </span>
+                           <font face="Helvetica" size="11.0">
+                               <t t-if="data['job_id']"> <t t-esc="data['job_id']"/> </t>
+                           </font>
+                       </p>
+                       <p>
+                            <span style="font-weight: bold">
+                                Personnel Department :
+                            </span>
+                            <font face="Helvetica" size="11.0">
+                               <t t-if="data['department']"> <t t-esc="data['department']"/> </t>
+                            </font>
+                       </p>
+                       <p>
+                           <!-- TODO YES NO -->
+                           <span style="font-weight: bold">
+                               CONFIRMED EMPLOYMENT :
+                           </span>
+                       </p>
+                       <p>
+                           <span style="font-weight: bold">
+                               Contract Status :
+                           </span>
+                           <t>RENEWABLE [ ]</t>
+                           <t>NON-RENEWABLE [ ]</t>
+                       </p>
+                       <p>
+                           <span style="font-weight: bold">
+                               If contract, non-renewable:
+                           </span>
+                       </p>
+                       <p>
+                              <span style="font-weight: bold">
+                               Date of Joining :
+                           </span>
+                           <font face="Helvetica">
+                               <t t-if="data['join_date']"> <t t-esc="data['join_date']"/> </t>
+                           </font>
+                           <span style="font-weight: bold">
+                               Expiry Date :
+                           </span>
+                           <font face="Helvetica">
+                               <!-- TODO solve error -->
+                               <t t-if="data.get('leave_date')"> <t t-esc="data['leave_date']"/> </t>
+                           </font>
+                       </p>
+                       <p>
+                           <span style="font-weight: bold">
+                               End of Service Benefits :
+                           </span>
+                       </p>
+                       <p style="display: inline;">
+                            <span style="font-weight: bold; display: inline;">
+                               Monthly basic salary :
+                            </span>
+                            <t t-if="data.get('wage')">
+                               <font face="Helvetica" style="display: inline">
+                                  <p style="display: inline;" t-esc="'{0:,.2f}'.format(data['wage'])"/> SR /-
+                               </font>
+                            </t>
+                       </p>
+                       <p style="display: inline;">
+                           <span style="font-weight: bold">
+                               Deductions :
+                           </span>
+                           <font face="Helvetica">
+                               None
+                           </font>
+                       </p>
+                       <br/>
+                       <p style="display: inline;">
+                            <span style="font-weight: bold">
+                               Allowances:
+                               Housing:
+                            </span>
+                            <t t-if="data.get('HRA')">
+                               <font face="Helvetica" style="display: inline;">
+                                   <span t-esc="'{0:,.2f}'.format(data['HRA'])"/> SR /-
+                               </font>
+                            </t>
+                       </p>
+                       <p style="Table Contents">
+                           <font color="white"> </font>
+                       </p>
+                       <p>
+                           <span style="font-weight: bold">
+                               Payment Date :
+                           </span>
+                           <u> End of each Georgian Month </u>
+                       </p>
+                       <p>
+                           <span style="font-weight: bold">
+                               Personnel Department authorized
+                               <br/>
+                               signatory
+                           </span>
+                       </p>
+                       <p>
+                           <font color="white"> </font>
+                       </p>
+                       <p>
+                           <span style="font-weight: bold">
+                               (if different from below)
+                           </span>
+                           <font face="Helvetica" size="11.0">________________</font>
+                       </p>
+                       <p>
+                           <font face="Helvetica" color="white">-------------</font>
+                           We hereby confirm that the above-mentioned employee is employed by us and has requested us to transfer his monthly salary to his Account No.
+                           <t t-if="data['account_no']"> <t t-esc="data['account_no']"/> </t>
+                           maintained with your
+                           <u>
+                               <t t-if="o.employee_id.branch_id" >
+                                   <span t-field="o.employee_id.branch_id.company_name">
+                                   </span>
+                               </t>
+                           </u>
+                            Office Riyadh.  Accordingly, we hereby irrevocably and unconditionally undertake to transfer the monthly salary to the said account at the<u> end of each Gregorian month.</u>
+                       </p>
+                       <p>
+                           <font face="Helvetica" color="white">-------------</font>
+                           In case of termination or expiration of the employee’s service with us for any reason, whatsoever, we will immediately inform you in writing prior to the employee leaving the Kingdom of Saudi Arabia.  In addition, we also undertake to pay his end of service benefits / indemnity to the said account.
+                       </p>
+                       <p>
+                           <font face="Helvetica" color="white">-------------</font> This undertaking as stated herein, shall remain valid and in full force until we receive a written notice from you releasing us from our obligations hereunder.
+                       </p>
+                       <p>
+                           <span style="font-weight: bold">
+                               Name of Authorized Person(s) / Title(s) :
+                           </span>
+                           <t t-if="data['manager']"> <t t-esc="data['manager']"/> </t>
+                       </p>
+                       <p style="Standard">
+                           <span style="font-weight: bold">
+                               Signature(s):_____________________</span>
+                       </p>
+                       <p>
+                           <span style="font-weight: bold">
+                               <table>
+                                   <tr>
+                                       <td>Office:</td>
+                                   </tr>
+                                   <tr>
+                                       <td>Telephone No(s). :
+                                            <t t-if="o.employee_id.branch_id" >
+                                               <span t-field="o.employee_id.branch_id.phone">
+                                               </span>
+                                           </t>
+                                           <!-- ["Company_Telephone_No"] -->
+                                       </td>
+                                   </tr>
+                               </table>
+                           </span>
+                       </p>
+                       <p>
+                           <font face="Helvetica" color="white">-------------</font>
+                           I
+                           <t t-if="data['emp_title']"> <t t-esc="data['emp_title']"/> </t>
+                           <t t-if="data['employee'].name"> <t t-esc="data['employee'].name"/> </t>
+                           <t t-if="data['employee'].middle_name"> <t t-esc="data['employee'].middle_name"/> </t>
+                           <t t-if="data['employee'].last_name"> <t t-esc="data['employee'].last_name"/> </t>
+                           with Iqama No
+                           <t t-if="data['doc_number']"> <t t-esc="data['doc_number']"/> </t>
+                           hereby irrevocably and unconditionally authorize The Saudi British Bank to deduct any amount due to the Bank from my Account No.
+                           <t t-if="data['account_no']"> <t t-esc="data['account_no']"/> </t>
+                           maintained at
+                           <u>
+                               <t t-if="o.employee_id.branch_id" >
+                                   <span t-field="o.employee_id.branch_id.company_name">
+                                   </span>
+                               </t>
+                           </u>
+                           Office.  I also irrevocably and unconditionally assign and authorize the payment of my monthly salary and any other benefits / entitlements from my employment with
+                           <u>
+                                 <t t-if="o.employee_id.user_id and o.employee_id.user_id.company_id" >
+                                   <span t-field="o.employee_id.user_id.company_id.name">
+                                   </span>
+                               </t>
+                               <t t-if="o.employee_id.job_id" >
+                                   <span t-field="o.employee_id.job_id.name" />
+                               </t>
+                           </u>
+                           to The Saudi British Bank.
+                       </p>
+                       <p>
+                           <span style="font-weight: bold">
+                               Signature:</span>
+                       </p>
+                       <p>
+                           <span style="font-weight: bold">
+                               Date / Place :
+                           </span>
+                       </p>
+                        </t>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <record id="paperformat_saudibritish_bankloan_report" model="report.paperformat">
+        <field name="name">Saudibritish Bankloan</field>
+        <field name="default" eval="True"/>
+        <field name="format">A4</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">20</field>
+        <field name="margin_bottom">20</field>
+        <field name="margin_left">20</field>
+        <field name="margin_right">15</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+        <field name="dpi">80</field>
+    </record>
+
+</odoo>

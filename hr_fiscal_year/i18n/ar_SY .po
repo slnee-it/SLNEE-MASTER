@@ -1,0 +1,219 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* hr_fiscal_year
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-11 08:36+0000\n"
+"PO-Revision-Date: 2018-09-11 08:36+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_fiscal_year
+#: model:ir.model,name:hr_fiscal_year.model_year_year
+msgid "Calendar Year For Public Holiday Duration"
+msgstr "سنة التقويم للعطلة العامة المدة"
+
+#. module: hr_fiscal_year
+#: model:ir.actions.act_window,help:hr_fiscal_year.action_public_year
+msgid "Click to start a new year."
+msgstr "انقر لبدء سنة جديدة."
+
+#. module: hr_fiscal_year
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_period_code
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_year_code
+msgid "Code"
+msgstr "الشفرة"
+
+#. module: hr_fiscal_year
+#: sql_constraint:year.year:0
+msgid "Code must be unique!"
+msgstr "يجب أن يكون الرمز فريدًا!"
+
+#. module: hr_fiscal_year
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_year_company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: hr_fiscal_year
+#: model:ir.ui.view,arch_db:hr_fiscal_year.view_public_year_form
+msgid "Create Monthly Periods"
+msgstr "إنشاء الفترات الشهرية"
+
+#. module: hr_fiscal_year
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_period_create_uid
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_year_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: hr_fiscal_year
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_period_create_date
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_year_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: hr_fiscal_year
+#: model:ir.actions.act_window,help:hr_fiscal_year.action_public_year
+msgid "Define your company's Public year according to your needs.For example,\n"
+"            if a Public year between January 1, 2015 and December 31, 2015\n"
+"            would be referred to as 2015."
+msgstr "حدد العام العام لشركتك وفقًا لاحتياجاتك. على سبيل المثال ، \ n "
+"في حالة بلوغ عام بين 1 يناير 2015 و 31 ديسمبر 2015 \ n"
+"سيشار إليها باسم عام 2015."
+
+#. module: hr_fiscal_year
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_period_display_name
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_year_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: hr_fiscal_year
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_year_date_stop
+msgid "End Date"
+msgstr "تاريخ الإنتهاء"
+
+#. module: hr_fiscal_year
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_period_date_stop
+msgid "End of Period"
+msgstr "نهاية الفترة"
+
+#. module: hr_fiscal_year
+#: code:addons/hr_fiscal_year/models/hr_fiscal_year.py:118
+#, python-format
+msgid "Error!\n"
+"The duration of the Period(s) is/are invalid"
+msgstr "خطأ! \ ن "
+"مدة الفترة (التواريخ) هي / غير صالحة"
+
+#. module: hr_fiscal_year
+#: code:addons/hr_fiscal_year/models/hr_fiscal_year.py:121
+#, python-format
+msgid "Error!\n"
+"The duration of the Period(s) is/are invalid."
+msgstr "خطأ! \ ن "
+"مدة الفترة (التواريخ) هي / غير صالحة."
+
+#. module: hr_fiscal_year
+#: code:addons/hr_fiscal_year/models/hr_fiscal_year.py:113
+#, python-format
+msgid "Error!\n"
+"The period is invalid. Either some periods are overlapping or the period's dates are not matching the scope of the fiscal year."
+msgstr "خطأ! \ ن "
+"الفترة غير صالحة. إما أن تكون بعض الفترات متداخلة أو لا تتطابق تواريخ الفترة مع نطاق السنة المالية."
+
+#. module: hr_fiscal_year
+#: code:addons/hr_fiscal_year/models/hr_fiscal_year.py:33
+#, python-format
+msgid "Error!\n"
+"The start date of a calendar year must precede its end date."
+msgstr "خطأ! \ ن "
+"يجب أن يسبق تاريخ بدء السنة التقويمية تاريخ انتهائها."
+
+#. module: hr_fiscal_year
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_period_fiscalyear_id
+msgid "Fiscal Year"
+msgstr "السنة المالية"
+
+#. module: hr_fiscal_year
+#: code:addons/hr_fiscal_year/models/hr_fiscal_year.py:62
+#, python-format
+msgid "Go to the configuration panel"
+msgstr "اذهب إلى لوحة التكوين"
+
+#. module: hr_fiscal_year
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_period_id
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_year_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: hr_fiscal_year
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_period___last_update
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_year___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: hr_fiscal_year
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_period_write_uid
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_year_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: hr_fiscal_year
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_period_write_date
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_year_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: hr_fiscal_year
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_year_name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: hr_fiscal_year
+#: model:ir.ui.view,arch_db:hr_fiscal_year.view_public_year_form
+msgid "Period"
+msgstr "فترة"
+
+#. module: hr_fiscal_year
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_period_name
+msgid "Period Name"
+msgstr "اسم الفترة"
+
+#. module: hr_fiscal_year
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_year_period_ids
+msgid "Periods"
+msgstr "فترات"
+
+#. module: hr_fiscal_year
+#: model:ir.actions.act_window,name:hr_fiscal_year.action_public_year
+#: model:ir.ui.menu,name:hr_fiscal_year.menu_public_year_view
+#: model:ir.ui.view,arch_db:hr_fiscal_year.view_public_year_form
+#: model:ir.ui.view,arch_db:hr_fiscal_year.view_public_year_tree
+msgid "Public Year"
+msgstr "السنة العامة"
+
+#. module: hr_fiscal_year
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_year_date_start
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+#. module: hr_fiscal_year
+#: model:ir.model.fields,field_description:hr_fiscal_year.field_year_period_date_start
+msgid "Start of Period"
+msgstr "بداية الفترة"
+
+#. module: hr_fiscal_year
+#: sql_constraint:year.period:0
+msgid "The name of the period must be unique!"
+msgstr "يجب أن يكون اسم الفترة فريدًا!"
+
+#. module: hr_fiscal_year
+#: code:addons/hr_fiscal_year/models/hr_fiscal_year.py:61
+#, python-format
+msgid "There is no period defined for this date: %s.\n"
+"Please go to Configuration/Periods and configure a Year."
+msgstr "لا توجد فترة محددة لهذا التاريخ:٪ s. \ n "
+"الرجاء الانتقال إلى التهيئة / الفترات وتكوين عام."
+
+#. module: hr_fiscal_year
+#: model:ir.ui.view,arch_db:hr_fiscal_year.view_year_period_tree
+msgid "Year Period"
+msgstr "فترة السنة"
+
+#. module: hr_fiscal_year
+#: model:ir.model,name:hr_fiscal_year.model_year_period
+msgid "Year period"
+msgstr "فترة السنة"
+
+#. module: hr_fiscal_year
+#: code:addons/hr_fiscal_year/models/hr_fiscal_year.py:36
+#, python-format
+msgid "You can not have calendar year that overlaps on same year!"
+msgstr "لا يمكن أن يكون لديك سنة تقويمية تتداخل في نفس السنة!"
+

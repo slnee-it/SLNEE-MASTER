@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Employee -->
+        <record id="hr_payroll.hr_employee_payroll" model="hr.employee">
+            <field eval="0" name="manager"/>
+            <field name="company_id" ref="base.main_company"/>
+            <field eval="1" name="active"/>
+            <field name="name">Roger</field>
+            <field name="work_location">Riyadh</field>
+            <field name="work_phone">+3282823500</field>
+            <field name="department_id" ref="hr.dep_rd"/>
+            <field name="job_id" ref="hr.job_developer"/>
+            <field name="last_name">Scott</field>
+            <field name="birthday">06/07/1986</field>
+            <field name="date_of_join" eval="(DateTime.today() - relativedelta(years=2,months=1, days=8)).strftime('%Y-%m-%d')" />
+            <field name="code">emp24</field>
+            <field name="employee_status">active</field>
+            <field name="gender">male</field>
+            <field name="country_id" ref="base.us"/>
+            <field name="work_email">roger@synconics.com</field>
+        </record>
+    </data>
+</odoo>

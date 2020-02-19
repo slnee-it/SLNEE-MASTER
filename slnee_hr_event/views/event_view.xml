@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Event Registration -->
+    <record model="ir.ui.view" id="view_event_registration_form_inherit">
+        <field name="name">event.registration.form</field>
+        <field name="model">event.registration</field>
+        <field name="inherit_id" ref="event.view_event_registration_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/group" position="before">
+                <div class="oe_button_box">
+                    <button type="object" name="view_expense" string="Expense" class="oe_stat_button" icon="fa-book" attrs="{'invisible':[('expense_ids','=',[])]}" groups="hr.group_hr_user">
+                    </button>
+                </div>
+            </xpath>
+            <xpath expr="//field[@name='event_id']" position="attributes">
+                <attribute name="string">Training</attribute>
+            </xpath>
+            <field name="phone" position="before">
+                <field name="employee_id"/>
+            </field>
+            <xpath expr="//button[@name='confirm_registration']" position="replace">
+                <button name="confirm_registration" string="Confirm" states="draft" type="object" class="oe_highlight" groups="base.group_user"/>
+            </xpath>
+            <xpath expr="//button[@name='button_reg_close']" position="replace">
+                <button name="button_reg_close" string="Attended" states="open" type="object" class="oe_highlight" groups="base.group_user,slnee_hr_event.group_line_manager"/>
+            </xpath>
+            <xpath expr="//button[@name='do_draft']" position="replace">
+                <button string="Set To Unconfirmed" name="do_draft" states="cancel,done" type="object" groups="hr.group_hr_user"/>
+            </xpath>
+            <xpath expr="//button[@name='button_reg_cancel']" position="replace">
+                <button name="button_reg_cancel" string="Cancel Registration" states="draft,open" type="object" groups="hr.group_hr_user"/>
+            </xpath>
+            <field name="partner_id" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+            <field name="name" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+            <!-- <field name="nb_register" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field> -->
+            <button name="button_reg_close" position="after">
+                <button name="generate_expense" string="Generate Expense" type="object" class="oe_highlight" attrs="{'invisible':['|',('expense_ids','!=',[]),('state','!=','done')]}" groups="hr.group_hr_manager"/>
+            </button>
+            <xpath expr="//group" position="after">
+                <notebook>
+                    <page string="Expense" name="expense" groups="hr.group_hr_user">
+                        <group col="4">
+                            <field name="payment_mode" widget="radio" attrs="{'readonly':[('state','not in',['draft', 'open'])]}"/>
+                            <field name="expense_total" required="1" attrs="{'readonly':[('expense_ids','!=',[])]}"/>
+                            <field name="emp_contribution" attrs="{'required':[('payment_mode','!=','company_account')], 'invisible':[('payment_mode','=','company_account')], 'readonly':['|', ('expense_ids','!=', []), ('state','not in',['draft','open','done'])]}"/>
+                            <field name="company_contribution" attrs="{'required':[('payment_mode','!=','own_account')], 'invisible':[('payment_mode','=','own_account')], 'readonly':['|', ('expense_ids','!=', []),('state','not in',['draft','open','done'])]}"/>
+                            <field name="expense_ids" invisible="1"/>
+                            <separator string="Note" colspan="4" />
+                            <field name="expense_note" nolabel="1" colspan="4" attrs="{'readonly':[('expense_ids','!=',[])]}" />
+                        </group>
+                    </page>
+                </notebook>
+            </xpath>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_event_registration_tree">
+        <field name="name">event.registration.tree</field>
+        <field name="model">event.registration</field>
+        <field name="inherit_id" ref="event.view_event_registration_tree" />
+        <field name="arch" type="xml">
+            <field name="create_date" position="after">
+                <field name="employee_id" />
+            </field>
+            <field name="partner_id" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+            <field name="name" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_event_form_inherit">
+        <field name="name">Event Event</field>
+        <field name="model">event.event</field>
+        <field name="inherit_id" ref="event.view_event_form" />
+        <field name="arch" type="xml">
+            <field name="event_type_id" position="before">
+                <field name="cost"/>
+            </field>
+            <xpath expr="//button[@name='button_confirm']" position="replace">
+                <button string="Confirm Training" name="button_confirm" states="draft" type="object" class="oe_highlight" groups="hr.group_hr_user"/>
+            </xpath>
+            <xpath expr="//field[@name='name']" position="attributes">
+                <attribute name="placeholder">Name of the Training</attribute>
+            </xpath>
+            <xpath expr="//field[@name='address_id']" position="attributes">
+                <attribute name="placeholder">Location of the Training</attribute>
+            </xpath>
+            <!-- <xpath expr="//field[@name='company_id']" position="after">
+                <field name="survey_id"/>
+            </xpath> -->
+            <!-- <xpath expr="//field[@name='registration_ids']" position="attributes">
+                <attribute name="show_checkbox">1</attribute>
+            </xpath> -->
+            <xpath expr="//button[@name='button_done']" position="replace">
+                <button string="Finish Training" name="button_done" states="confirm" type="object" class="oe_highlight" groups="hr.group_hr_manager"/>
+            </xpath>
+            <xpath expr="//button[@name='button_cancel']" position="replace">
+                <button string="Cancel Training" name="button_cancel" states="draft,confirm" type="object" groups="hr.group_hr_user"/>
+            </xpath>
+            <!-- <xpath expr="//page[@string='Description']" position="attributes">
+                <attribute name="string">Training Details </attribute>
+            </xpath> -->
+            <!--  <xpath expr="//field[@name='nb_register']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath> -->
+            <xpath expr="//button[@name='button_draft']" position="replace">
+                <button string="Set To Draft" name="button_draft" states="cancel" type="object" groups="hr.group_hr_user"/>
+            </xpath>
+            <!-- <xpath expr="//field[@name='email_confirmation_id']" position="attributes">
+                <attribute name="string">Training Confirmation Email</attribute>
+            </xpath> -->
+            <!-- <xpath expr="//button[@string='Confirm Registration']" position="replace">
+                <button name="new_registration" string="Confirm Registration" states="draft" type="object" icon="gtk-apply" />
+            </xpath>
+            <xpath expr="//button[@string='Confirm Registration']" position="before">
+                <button name="mail_send" string="Send Mail" states="draft" type="object" icon="terp-mail-message-new" />
+            </xpath> -->
+            <xpath expr="//field[@name='date_end']" position="after">
+                <field name="total_hours"/>
+            </xpath>
+            <xpath expr="//notebook" position="before">
+                <group>
+                    <group>
+                        <field name="target" groups="hr.group_hr_user" attrs="{'readonly':[('state','in',['confirm','done'])]}"/>
+                    </group>
+                    <group>
+                        <field name="branch_ids" widget="many2many_tags" attrs="{'invisible': [('target','!=','office')],'required': [('target','=','office')], 'readonly':[('state','in',['confirm','done'])]}" groups="hr.group_hr_user"/>
+                        <field name="department_ids" widget="many2many_tags" attrs="{'invisible': [('target','!=','department')],'required': [('target','=','department')], 'readonly':[('state','in',['confirm','done'])]}" groups="hr.group_hr_user"/>
+                        <field name="job_ids" widget="many2many_tags" attrs="{'invisible': [('target','!=','job')],'required': [('target','=','job')], 'readonly':[('state','in',['confirm','done'])]}" groups="hr.group_hr_user"/>
+                    </group>
+                </group>
+            </xpath>
+            <xpath expr="//page[@name='event_mail_schedule']" position="before">
+                <page name="invitation" string="Invitation Details" groups="hr.group_hr_user">
+                    <field name="employee_ids" nolabel="1" colspan="4" attrs="{'readonly':[('state','in',['confirm','done'])]}">
+                        <tree string="Invitation Details">
+                            <field name="name"/>
+                            <field name="department_id"/>
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+
+            <xpath expr="//page[@name='event_mail_schedule']" position="before">
+                <page string="Training Details">
+                    <field name="description" nolabel="1" placeholder="Event Description..."/>
+                </page>
+            </xpath>
+<!--                 <xpath expr="//page[@name='Email Schedule']" position="after">
+
+            </xpath> -->
+           <!--  <xpath expr="//field[@name='registration_ids']" position="attributes">
+                <attribute name="readonly">1</attribute>
+                <attribute name="groups">slnee_hr_event.group_talent_acquisition_assistant</attribute>
+            </xpath>
+            <xpath expr="//notebook/page[@string='Registrations']//field[@name='registration_ids']/tree/field[@name='name']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+
+            <xpath expr="//notebook/page[@string='Registrations']//field[@name='registration_ids']/form/field[@name='name']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath> -->
+            <!-- <xpath expr="//field[@name='email']" position="before">
+                <field name="employee_id" required="1" />
+            </xpath> -->
+            <!-- <xpath expr="//notebook/page[@string='Registrations']//group//group" position="before">
+                <group>
+                    <group>
+                        <field name="approve_hof"/>
+                    </group>
+                </group>
+            </xpath> -->
+            <!-- <xpath expr="//page[@string='Event Details']" position='replace' >
+                <page string="Email Configuration " groups="slnee_hr_event.group_talent_acquisition_assistant">
+                    <group>
+                        <group col="4">
+                            <field name="reply_to" />
+                            <field name="email_registration_id" />
+                            <field name="email_confirmation_id" />
+                        </group>
+                    </group>
+                </page>
+            </xpath> -->
+        </field>
+    </record>
+
+    <!-- <record model="ir.ui.view" id="view_event_search_inherit">
+        <field name="name">Events.inherit</field>
+        <field name="model">event.event</field>
+        <field name="inherit_id" ref="event.view_event_search" />
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@string='Event Type']" position="attributes">
+                <attribute name="string">Training Type</attribute>
+            </xpath>
+            <xpath expr="//filter[@string='My Events']" position="attributes">
+                <attribute name="string">My Trainings</attribute>
+            </xpath>
+        </field>
+    </record> -->
+
+    <!-- <record model="ir.ui.view" id="view_event_tree">
+        <field name="name">event.event.tree</field>
+        <field name="model">event.event</field>
+        <field name="inherit_id" ref="event.view_event_tree"></field>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='type']" position="attributes">
+                <attribute name="string">Training Category</attribute>
+            </xpath>
+        </field>
+    </record> -->
+
+<!--         <record id="view_event_form_portal_inherit" model="ir.ui.view"> -->
+<!--             <field name="name">portal.event.form</field> -->
+<!--             <field name="model">event.event</field> -->
+<!--             <field name="inherit_id" ref="portal_event.view_event_form_portal" /> -->
+<!--             <field name="arch" type="xml"> -->
+<!--                 <xpath expr="//page[@string='Portal Settings']" position="replace"> -->
+<!--                 </xpath> -->
+<!--             </field> -->
+<!--         </record> -->
+
+    <record model="ir.actions.act_window" id="event.action_event_view">
+        <field name="name">Trainings</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click to add a new Training.
+            </p>
+            <p>
+                OpenERP helps you schedule and efficiently organize your events:
+                track
+                subscriptions and paemailrticipations, automate the confirmation
+                emails,
+                sell tickets, etc."
+            </p>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="event.action_event_type">
+        <field name="name">Types of Trainings</field>
+    </record>
+
+<!--         <menuitem name="Types of Training" id="menu_event_type" action="event.action_event_type"
+     parent="menu_hr_lp_config" /> -->
+<!--         <menuitem name="Internal Trainings" id="event.menu_event_event"
+        action="event.action_event_view" parent="event.event_main_menu" sequence="1" />
+    <menuitem name="Registrations" id="event.menu_action_registration" parent="event.event_main_menu"
+        action="event.action_registration"/> -->
+
+    <!-- menu base event. -->
+    <!--  <menuitem name="Types of Training" id="event.menu_event_type" action="event.action_event_type"
+        parent="menu_hr_training_config" groups="base.group_no_one" /> -->
+<!--         <delete id="event.menu_event_event" model="ir.ui.menu" /> -->
+<!--         <delete id="base.menu_marketing_config_root" model="ir.ui.menu" /> -->
+
+<!--         Internal Training Survey Feed Notification Email template -->
+    <!-- <record id="email_template_event_survey_notify" model="email.template">
+        <field name="name">Event Survey Notification - Send by Email</field>
+        <field name="email_from">${object.company_id.email}</field>
+        <field name="subject">Feed Internal Training Survey : (Ref ${object.event_id.name or 'n/a' })</field>
+        <field name="partner_ids">${object.from_email or ''}</field>
+        <field name="partner_to"></field>
+        <field name="model_id" ref="slnee_hr_event.model_event_registration" />
+        <field name="auto_delete" eval="True" />
+        <field name="body_html"><![CDATA[
+        ]]></field>
+    </record> -->
+</odoo>

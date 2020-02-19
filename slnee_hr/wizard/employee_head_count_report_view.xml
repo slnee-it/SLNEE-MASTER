@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="employee_reports_print_view" model="ir.ui.view">
+        <field name="name">employee.head.count.form</field>
+        <field name="model">employee.head.count</field>
+        <field name="arch" type="xml">
+            <form string="Employee Reports">
+                <group>
+                    <group>
+                        <field name="based_on" required="1"/>
+                    </group>
+                    <group>
+                        <field name="department_ids" widget="many2many_tags" attrs="{'invisible':[('based_on', 'not in', 'Department')]}" options="{'color_field': 'color'}"/>
+                        <field name="job_ids" widget="many2many_tags" attrs="{'invisible':[('based_on', 'not in', 'Job')]}" options="{'color_field': 'color'}"/>
+                        <field name="manager_ids" widget="many2many_tags" attrs="{'invisible':[('based_on', 'not in', 'Manager')]}" domain="[('manager', '=', True)]" options="{'color_field': 'color'}"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="print_reports" string="Print" type="object" class="oe_highlight"/>
+                    or
+                    <button  class="oe_link" string="Cancel" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_employee_reports_form" model="ir.actions.act_window">
+        <field name="name">Employee Reports</field>
+        <field name="res_model">employee.head.count</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="view_id" ref="employee_reports_print_view"/>
+    </record>
+
+    <report
+            id="action_report_hr_employee"
+            string="Head Count"
+            model="employee.head.count"
+            report_type="qweb-pdf"
+            name="slnee_hr.report_employee_head_count"
+            file="slnee_hr.report_employee_head_count"
+        />
+ </odoo>

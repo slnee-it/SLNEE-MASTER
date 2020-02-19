@@ -1,0 +1,616 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_leaves_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-30 12:24+0000\n"
+"PO-Revision-Date: 2015-04-30 12:24+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays,active:0
+msgid "Active"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: selection:leaves.allocation,target:0
+msgid "All Employee"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:leaves.allocation,number_of_days_temp:0
+msgid "Allocation"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays.status,carry_forward:0
+msgid "Allow to Carry Forward"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays.status,skip:0
+msgid "Allow to Skip"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: help:hr.holidays.status,skip:0
+msgid "Allow to skip in Weekends"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays,hr_validation:0
+#: field:hr.holidays.status,hr_validation:0
+msgid "Apply HR Validation"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: view:hr.holidays:slnee_hr_leaves_management.edit_holiday_new
+msgid "Approve"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:res.weekdays,calendar_ids:0
+msgid "Calendars"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: view:leaves.allocation:slnee_hr_leaves_management.leaves_allocation_view
+msgid "Cancel"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays,carry_forward:0
+#: field:hr.holidays,carry_forward_limit:0
+#: field:hr.holidays,carry_forwarded:0
+#: field:leaves.allocation,carry_forward:0
+#: field:leaves.allocation,carry_forward_limit:0
+msgid "Carry Forward"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays,carry_forward_check:0
+msgid "Carry Forward Check"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: view:hr.holidays.public:slnee_hr_leaves_management.view_public_holidays_form
+#: selection:hr.holidays.public,state:0
+msgid "Close"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:res.weekdays,code:0
+msgid "Code"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays,company_id:0
+#: field:leaves.allocation,company_id:0
+msgid "Company"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: model:hr.holidays.status,name:slnee_hr_leaves_management.holiday_status_compassionate
+msgid "Compassionate Leave"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays.public,create_uid:0
+#: field:hr.holidays.public.line,create_uid:0
+#: field:leaves.allocation,create_uid:0
+#: field:leaves.allocation.employee,create_uid:0
+#: field:res.weekdays,create_uid:0
+msgid "Created by"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays.public,create_date:0
+#: field:hr.holidays.public.line,create_date:0
+#: field:leaves.allocation,create_date:0
+#: field:leaves.allocation.employee,create_date:0
+#: field:res.weekdays,create_date:0
+msgid "Created on"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:leaves.allocation,date:0
+msgid "Date"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:res.weekdays,name:0
+msgid "Day"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: model:ir.actions.act_window,name:slnee_hr_leaves_management.action_res_weekdays_tree
+msgid "Days of Week"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: view:res.weekdays:slnee_hr_leaves_management.res_weekdays_form
+#: view:res.weekdays:slnee_hr_leaves_management.res_weekdays_tree
+msgid "Days of week"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:leaves.allocation.employee,department_id:0
+msgid "Department"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: selection:leaves.allocation,target:0
+msgid "Department Wise"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:leaves.allocation,department_ids:0
+msgid "Departments"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: view:leaves.allocation:slnee_hr_leaves_management.leaves_allocation_view
+#: field:leaves.allocation,description:0
+msgid "Description"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:367
+#, python-format
+msgid "Effective date must be between %s and %s"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: view:leaves.allocation:slnee_hr_leaves_management.leaves_allocation_view
+#: field:leaves.allocation.employee,employee_id:0
+msgid "Employee"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays,employee_code:0
+#: field:leaves.allocation.employee,employee_code:0
+msgid "Employee Code"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:leaves.allocation,employee_ids:0
+msgid "Employees"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays.public.line,end_date:0
+msgid "End Date"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:409
+#, python-format
+msgid "End Date must be between %s and %s"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: view:hr.holidays:slnee_hr_leaves_management.edit_holiday_new
+msgid "Extra Information"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays,fiscalyear:0
+#: view:hr.holidays.public:slnee_hr_leaves_management.view_hr_holidays_public_filter
+#: field:hr.holidays.public,fiscalyear:0
+#: field:leaves.allocation,fiscalyear:0
+msgid "Fiscal Year"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: selection:res.weekdays,name:0
+msgid "Friday"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: view:hr.holidays.public:slnee_hr_leaves_management.view_hr_holidays_public_filter
+msgid "Group By..."
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays,hr_manager_id:0
+msgid "HR Approval"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: view:hr.holidays:slnee_hr_leaves_management.edit_holiday_new
+msgid "HR Validate"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: model:hr.holidays.status,name:slnee_hr_leaves_management.holiday_status_hajj
+msgid "Hajj Leave"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays.public.line,holidays_id:0
+msgid "Holiday Calendar Year"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays.public,line_ids:0
+msgid "Holiday Dates"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays.public,id:0
+#: field:hr.holidays.public.line,id:0
+#: field:leaves.allocation,id:0
+#: field:leaves.allocation.employee,id:0
+#: field:res.weekdays,id:0
+msgid "ID"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: view:leaves.allocation:slnee_hr_leaves_management.leaves_allocation_view
+msgid "Invitation details"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:leaves.allocation,job_ids:0
+msgid "JOB Profiles"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: selection:leaves.allocation,target:0
+msgid "Job Profile Wise"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays.public,write_uid:0
+#: field:hr.holidays.public.line,write_uid:0
+#: field:leaves.allocation,write_uid:0
+#: field:leaves.allocation.employee,write_uid:0
+#: field:res.weekdays,write_uid:0
+msgid "Last Updated by"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays.public,write_date:0
+#: field:hr.holidays.public.line,write_date:0
+#: field:leaves.allocation,write_date:0
+#: field:leaves.allocation.employee,write_date:0
+#: field:res.weekdays,write_date:0
+msgid "Last Updated on"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model,name:slnee_hr_leaves_management.model_hr_holidays
+msgid "Leave"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:563
+#, python-format
+msgid "Leave Request"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model,name:slnee_hr_leaves_management.model_hr_holidays_status
+#: field:leaves.allocation,holiday_status_id:0
+msgid "Leave Type"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: model:calendar.event.type,name:slnee_hr_leaves_management.categ_leaves
+msgid "Leaves"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: model:ir.actions.act_window,name:slnee_hr_leaves_management.action_view_leaves_allocation
+#: model:ir.model,name:slnee_hr_leaves_management.model_leaves_allocation
+#: model:ir.ui.menu,name:slnee_hr_leaves_management.menu_leaves_allocation_action
+#: view:leaves.allocation:slnee_hr_leaves_management.leaves_allocation_view
+#: field:leaves.allocation.employee,leaves_allocation_id:0
+msgid "Leaves Allocation"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model,name:slnee_hr_leaves_management.model_leaves_allocation_employee
+msgid "Leaves Allocation Employee"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays,limit:0
+msgid "Limit"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: model:hr.holidays.status,name:slnee_hr_leaves_management.holiday_status_marriage
+msgid "Marriage Leave"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays.status,maternity_leave:0
+#: model:hr.holidays.status,name:slnee_hr_leaves_management.holiday_status_maternity
+msgid "Maternity Leave"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: help:hr.holidays.status,carry_forward_leaves:0
+msgid "Maximum Leaves Allowed - Leaves Already Taken"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: selection:res.weekdays,name:0
+msgid "Monday"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: view:hr.holidays.public:slnee_hr_leaves_management.view_hr_holidays_public_filter
+#: field:hr.holidays.public,name:0
+#: field:hr.holidays.public.line,name:0
+msgid "Name"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:leaves.allocation,branch_ids:0
+msgid "Office"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: selection:leaves.allocation,target:0
+msgid "Office Wise"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays.status,one_time_usable:0
+msgid "One Time Used"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: selection:hr.holidays.public,state:0
+msgid "Open"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:leaves.allocation,override:0
+msgid "Override"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays,override_limit:0
+#: field:leaves.allocation,override_limit:0
+msgid "Override Limit"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: model:hr.holidays.status,name:slnee_hr_leaves_management.holiday_status_paternity
+msgid "Paternity Leave"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:403
+#, python-format
+msgid "Please Define the Fiscal Year for this leave"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:360
+#, python-format
+msgid "Please define the Fiscal Year for this leave"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:358
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:399
+#, python-format
+msgid "Please select leave type."
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: view:hr.holidays.public:slnee_hr_leaves_management.view_public_holidays_form
+#: view:hr.holidays.public:slnee_hr_leaves_management.view_public_holidays_tree
+#: view:hr.holidays.public.line:slnee_hr_leaves_management.view_public_holiday_line_tree
+#: model:ir.actions.act_window,name:slnee_hr_leaves_management.open_public_holidays_view
+#: model:ir.model,name:slnee_hr_leaves_management.model_hr_holidays_public
+#: model:ir.ui.menu,name:slnee_hr_leaves_management.menu_public_holidays_view
+msgid "Public Holidays"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model,name:slnee_hr_leaves_management.model_hr_holidays_public_line
+msgid "Public Holidays Lines"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: view:hr.holidays:slnee_hr_leaves_management.edit_holiday_new
+msgid "Refuse"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays.status,carry_forward_leaves:0
+msgid "Remaining Leaves"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:632
+#, python-format
+msgid "Request approved, waiting hr validation."
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: view:hr.holidays.public:slnee_hr_leaves_management.view_public_holidays_form
+msgid "Reset to Open"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model,name:slnee_hr_leaves_management.model_resource_calendar
+msgid "Resource Calendar"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:leaves.allocation,user_id:0
+msgid "Responsible"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: selection:res.weekdays,name:0
+msgid "Saturday"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: view:hr.holidays.public:slnee_hr_leaves_management.view_hr_holidays_public_filter
+msgid "Search Leave"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: model:hr.holidays.status,name:slnee_hr_leaves_management.holiday_status_secondment
+msgid "Secondment Leave"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays.status,sick_leave:0
+msgid "Sick Leave"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:hr.holidays.public.line,start_date:0
+msgid "Start Date"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: view:hr.holidays.public:slnee_hr_leaves_management.view_hr_holidays_public_filter
+#: field:hr.holidays.public,state:0
+msgid "Status"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: view:hr.holidays:slnee_hr_leaves_management.edit_holiday_new
+msgid "Submit to Manager"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: selection:res.weekdays,name:0
+msgid "Sunday"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:leaves.allocation,target:0
+msgid "Target Group"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:leaves.allocation,name:0
+msgid "Task Name"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: view:leaves.allocation:slnee_hr_leaves_management.leaves_allocation_view
+msgid "Task Summary"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:485
+#, python-format
+msgid "The number of remaining leaves is not sufficient for this leave type.\n"
+"Please verify also the leaves waiting for validation."
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:401
+#: sql_constraint:hr.holidays.public.line:0
+#, python-format
+msgid "The start date must be anterior to the end date."
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:513
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:516
+#, python-format
+msgid "There are not enough %s allocated for employee %s; please contact your HR People for this leave type."
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:522
+#, python-format
+msgid "There are not enough %s remaining leaves for employee %s; please contact your HR People for this leave type."
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: help:hr.holidays,hr_manager_id:0
+msgid "This area is automaticly filled by the user who validate the leave with HR level (If Leave type need HR validation)"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: selection:res.weekdays,name:0
+msgid "Thursday"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:100
+#, python-format
+msgid "Too many active contracts for employee %s"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: selection:res.weekdays,name:0
+msgid "Tuesday"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: view:hr.holidays:slnee_hr_leaves_management.edit_holiday_new
+msgid "Validate"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: selection:res.weekdays,name:0
+msgid "Wednesday"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: field:resource.calendar,weekend_ids:0
+msgid "Weekends"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: help:hr.holidays.status,hr_validation:0
+msgid "When selected, the Allocation/Leave Requests for this type require a hr validation to be approved."
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:318
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:347
+#, python-format
+msgid "You can not allocate this leave to this employee"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: constraint:hr.holidays.status:0
+msgid "You can not have 2 leaves which can be defined as carry forward!"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:296
+#, python-format
+msgid "You cannot delete a leave which is in %s state."
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_public_holidays.py:42
+#, python-format
+msgid "You cannot remove the record which is in %s state!"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: view:leaves.allocation:slnee_hr_leaves_management.leaves_allocation_view
+msgid "days"
+msgstr ""
+
+#. module: slnee_hr_leaves_management
+#: view:leaves.allocation:slnee_hr_leaves_management.leaves_allocation_view
+msgid "or"
+msgstr ""
+

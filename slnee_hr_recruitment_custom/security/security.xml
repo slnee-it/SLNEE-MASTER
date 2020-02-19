@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_survey_feedback_officer_rule" model="ir.rule">
+        <field name="name">Officer Hr Survey Feedback</field>
+        <field name="model_id" ref="model_hr_survey_feedback"/>
+        <field name="groups" eval="[(4, ref('hr.group_hr_user'))]"/>
+        <field name="domain_force">['|', ('employee_id.company_id','=',False), ('employee_id.company_id','child_of',[user.company_id.id])]</field>
+    </record>
+    <record id="hr_survey_feedback_manager_rule" model="ir.rule">
+        <field name="name">Manager Hr Survey Feedback</field>
+        <field name="model_id" ref="model_hr_survey_feedback"/>
+        <field name="groups" eval="[(4, ref('hr.group_hr_manager'))]"/>
+        <field name="domain_force">[(1,'=',1)]</field>
+    </record>
+</odoo>

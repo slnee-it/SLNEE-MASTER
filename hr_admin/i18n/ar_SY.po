@@ -1,0 +1,144 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* hr_admin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-11 10:56+0000\n"
+"PO-Revision-Date: 2018-09-11 10:56+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_admin
+#: model:res.groups,name:hr_admin.group_admin_manager
+msgid "Admin Manager"
+msgstr "مدير الادارة"
+
+#. module: hr_admin
+#: model:ir.ui.menu,name:hr_admin.menu_hr_admin
+msgid "Admin Operation"
+msgstr "عملية المسؤول"
+
+#. module: hr_admin
+#: model:ir.actions.act_window,name:hr_admin.action_admin_reports_form
+#: model:ir.ui.menu,name:hr_admin.menu_admin_report_id
+#: model:ir.ui.view,arch_db:hr_admin.admin_reports_print_view
+msgid "Admin Reports"
+msgstr "تقارير المسؤول"
+
+#. module: hr_admin
+#: model:ir.ui.view,arch_db:hr_admin.admin_reports_print_view
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: hr_admin
+#: model:ir.ui.menu,name:hr_admin.menu_hr_admin_config
+msgid "Configuration"
+msgstr "الإعدادات"
+
+#. module: hr_admin
+#: selection:admin.reports,report:0
+msgid "Copy Center"
+msgstr "مركز نسخ"
+
+#. module: hr_admin
+#: model:ir.model.fields,field_description:hr_admin.field_admin_reports_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: hr_admin
+#: model:ir.model.fields,field_description:hr_admin.field_admin_reports_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: hr_admin
+#: model:ir.model.fields,field_description:hr_admin.field_admin_reports_date_from
+msgid "Date From"
+msgstr "التاريخ من"
+
+#. module: hr_admin
+#: model:ir.model.fields,field_description:hr_admin.field_admin_reports_date_to
+msgid "Date To"
+msgstr "التاريخ للإنتهاء"
+
+#. module: hr_admin
+#: model:ir.model.fields,field_description:hr_admin.field_admin_reports_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: hr_admin
+#: model:ir.model.fields,field_description:hr_admin.field_admin_reports_excel_file
+msgid "Excel File"
+msgstr "ملف اكسل"
+
+#. module: hr_admin
+#: model:ir.model.fields,field_description:hr_admin.field_admin_reports_filename
+msgid "File Name"
+msgstr "اسم الملف"
+
+#. module: hr_admin
+#: model:ir.ui.view,arch_db:hr_admin.admin_reports_print_view
+msgid "Filters"
+msgstr "مرشحات الفرز"
+
+#. module: hr_admin
+#: selection:admin.reports,report:0
+msgid "Hotel"
+msgstr "الفندق"
+
+#. module: hr_admin
+#: model:ir.model.fields,field_description:hr_admin.field_admin_reports_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: hr_admin
+#: model:ir.model.fields,field_description:hr_admin.field_admin_reports___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: hr_admin
+#: model:ir.model.fields,field_description:hr_admin.field_admin_reports_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: hr_admin
+#: model:ir.model.fields,field_description:hr_admin.field_admin_reports_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: hr_admin
+#: model:ir.ui.view,arch_db:hr_admin.admin_reports_print_view
+msgid "Print"
+msgstr "طباعة"
+
+#. module: hr_admin
+#: model:ir.model.fields,field_description:hr_admin.field_admin_reports_report
+msgid "Report"
+msgstr "أبلغ عن"
+
+#. module: hr_admin
+#: model:ir.model.fields,field_description:hr_admin.field_admin_reports_supplier_id
+msgid "Supplier"
+msgstr "المورد"
+
+#. module: hr_admin
+#: selection:admin.reports,report:0
+msgid "Travel"
+msgstr "السفر"
+
+#. module: hr_admin
+#: model:ir.model,name:hr_admin.model_admin_reports
+msgid "admin.reports"
+msgstr "admin.reports"
+
+#. module: hr_admin
+#: model:ir.ui.view,arch_db:hr_admin.admin_reports_print_view
+msgid "or"
+msgstr "أو"
+

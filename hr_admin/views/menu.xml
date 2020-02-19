@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_hr_admin" name="Admin Operation" sequence="12" web_icon="hr_admin,static/description/admin-operation.png" groups="hr_admin.group_admin_manager,base.group_user"/>
+    <menuitem id="menu_hr_admin_config" parent="menu_hr_admin" name="Configuration" sequence="8" groups="hr_admin.group_admin_manager"/>
+    <menuitem id="menu_admin_report_id" name="Admin Reports" parent="menu_hr_admin" sequence="7" groups="hr_admin.group_admin_manager"/>
+</odoo>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="hr_contract_view_inherit_overtime_form_timesheet" model="ir.ui.view">
+        <field name="name">hr.contract.view.inherit.overtime.form1</field>
+        <field name="model">hr.contract</field>
+        <field name="inherit_id" ref="slnee_hr_contract.hr_contract_view_inherit_overtime_form1" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='resource_calendar_id']" position="after">
+                <field name="calculate_overtime" />
+                <field name="overtime_limit" attrs="{'invisible': [('calculate_overtime','!=',True)]}" widget="float_time"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

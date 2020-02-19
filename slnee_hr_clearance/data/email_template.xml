@@ -1,0 +1,57 @@
+<odoo>
+    <data noupdate="1">
+    	<record id="email_template_send_exit_questionnaire" model="mail.template">
+            <field name="name">Exit Qestionnaire Link</field>
+            <field name="model_id" ref="model_hr_employee_clearance"/>
+            <field name="email_from"><![CDATA[${'noreply@localhost'}]]></field>
+            <field name="email_to">${object.employee_id and object.employee_id.work_email or ''}</field>
+            <field name="subject">Exit Qestionnaire Link</field>
+            <field name="body_html">
+                <![CDATA[
+<p>Hello,</p>
+<p>We are conducting a survey, and your response would be appreciated.</p>
+<p><a style="margin-left: 85px; padding:5px 10px; border-radius: 3px; background-color:#875A7B; text-align:center; text-decoration:none; color:#F7FBFD;" href=${object.public_url_html}>Please, click here to start survey</a></p>
+<p>Thanks for your participation!</p>
+                ]]>
+            </field>
+        </record>
+        <!-- <act_window name="Partner Survey Mailing" res_model="survey.mail.compose.message" src_model="res.partner" view_mode="form" multi="True" target="new" key2="client_action_multi" id="survey.action_partner_survey_mail" context="{'default_use_template': True, 'default_template_id': ref('email_template_send_exit_questionnaire')}" />
+
+        <record model="ir.ui.view" id="survey_email_compose_message">
+            <field name="name">survey.mail.compose.message.form</field>
+            <field name="model">survey.mail.compose.message</field>
+            <field name="arch" type="xml">
+                <form string="Compose Email">
+                    <field name="composition_mode" invisible="1"/>
+                    <field name="model" invisible="1"/>
+                    <field name="res_id" invisible="1"/>
+                    <field name="parent_id" invisible="1"/>
+                    <group col="1">
+                        <group col="2">
+                            <field name="partner_ids"
+                                invisible="context.get('survey_resent_token')"
+                                widget="many2many_tags_email"
+                                placeholder="Add existing contacts..."
+                                context="{'force_email':True, 'show_email':True}" />
+                            <field name="multi_email"
+                                invisible="context.get('survey_resent_token')"
+                                placeholder="Add a list of email of recipients (will not be converted into contacts). Separated by commas, semicolons or newline..."/>
+                            <field name="subject" placeholder="Subject..."/>
+                        </group>
+                        <field name="body" options="{'style-inline': true}"/>
+                        <group col="2">
+                            <div>
+                                <label for="attachment_ids" />
+                                <field name="attachment_ids" widget="many2many_binary" />
+                            </div>
+                            <div class="oe_survey_date_deadline">
+                                <label for="date_deadline" />
+                                <field name="date_deadline" />
+                            </div>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record> -->
+    </data>
+</odoo>

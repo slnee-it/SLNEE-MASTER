@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="gosi_emp_rule" model="ir.rule">
+        <field name="name">Employee Gosi</field>
+        <field name="model_id" ref="model_employee_gosi"/>
+        <field name="groups" eval="[(4, ref('base.group_user'))]"/>
+        <field name="domain_force">[('employee_id.user_id', '=', user.id)]</field>
+    </record>
+    <record id="gosi_officer_rule" model="ir.rule">
+        <field name="name">Officer Gosi</field>
+        <field name="model_id" ref="model_employee_gosi"/>
+        <field name="groups" eval="[(4, ref('hr.group_hr_user'))]"/>
+        <field name="domain_force">['|', ('company_id','=',False),
+            ('company_id','child_of',[user.company_id.id])]</field>
+    </record>
+    <record id="gosi_line_emp_rule" model="ir.rule">
+        <field name="name">Employee GOSI Line</field>
+        <field name="model_id" ref="model_gosi_payslip_line"/>
+        <field name="groups" eval="[(4, ref('base.group_user'))]"/>
+        <field name="domain_force">[('employee_id.user_id','=',user.id)]</field>
+    </record>
+    <record id="gosi_line_officer_rule" model="ir.rule">
+        <field name="name">Officer GOSI Line</field>
+        <field name="model_id" ref="model_gosi_payslip_line"/>
+        <field name="groups" eval="[(4, ref('hr.group_hr_user'))]"/>
+        <field name="domain_force">['|', ('gosi_id.company_id','=',False),
+            ('gosi_id.company_id','child_of',[user.company_id.id])]</field>
+    </record>
+
+</odoo>

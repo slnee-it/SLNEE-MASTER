@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <template id="newjoin_empcontract_reportqweb">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.internal_layout">
+                    <div class="page" style="font-size:20px;">
+                        <div class="container">
+                            <div class="row" style="color:blue; font-weight: bold;">
+                                <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                                    <span>AGREEMENT REGARDING CONFIDENTIAL INFORMATION AND SECRECY</span>
+                                </div>
+                                <div class="col-xs-6  text-right font-weight: bold;">
+                                    <span>اتفاقية بشأن سرية وخصوصية</span>
+                                    <br />
+                                    <span>المعلومات</span>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                                    <span>In accordance with the</span>
+                                    <span t-esc="o.employee_id.user_id.company_id.name" />
+                                    <span>
+                                        ’s
+                                        <span t-esc="o.employee_id.job_id.name" />
+                                        ,
+                                    </span>
+                                    <span t-esc="o.employee_id.user_id.company_id.name" />
+                                    <span>(the Firm) is required to obtain confirmation from its professional personnel that they will not act in any way which might result in the impairment of independence, or which might lead outsiders to believe that independence or secrecy has been impaired.  Accordingly, in consideration of my employment with the Firm and the salary or other compensation that I shall receive during my employment, I agree to the following:</span>
+                                </div>
+                                <div class="col-xs-6  text-right ">
+                                    <span t-esc="o.employee_id.user_id.company_id.arabic_name" />
+                                    <span>وفقا لدليل</span>
+                                    <br />
+                                    <span t-esc="o.employee_id.job_id.arabic_name" />
+                                    <br />
+                                    <span>المخاطر، فإن كي بي إم جي الفوزان</span>
+                                    <br />
+                                    <span>والسدحان (المؤسسة) مطالبة بالحصول</span>
+                                    <br />
+                                    <span>على تأكيد من موظفيها المحترفين بأنهم</span>
+                                    <br />
+                                    <span>لن يتصرفوا بأي شكل من الأشكال التي</span>
+                                    <br />
+                                    <span>قد تؤدي إلى ضعف استقلالية المؤسسة،</span>
+                                    <br />
+                                    <span>أو أن تؤدي إلى اعتقاد الأشخاص من</span>
+                                    <br />
+                                    <span>خارج المؤسسة بأن الاستقلالية أو السرية</span>
+                                    <br />
+                                    <span>قد تعرضت للضعف. وتبعا لذلك، وأخذا</span>
+                                    <br />
+                                    <span>بعين الاعتبار عملي مع المؤسسة والراتب</span>
+                                    <br />
+                                    <span>أو التعويضات الأخرى التي أتلقاها خلال</span>
+                                    <br />
+                                    <span>:فترة عملي، فإنني أوافق على ما يلي</span>
+                                    <br />
+                                    <span />
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                                    <span>1. Both during and after my employment I will not, without the Firm’s prior written permission, disclose to anyone outside of the Firm or use in other than</span>
+                                    <span t-esc="o.employee_id.user_id.company_id.name" />
+                                    <span>’s business, or permit any person to examine or make copies of any documents that contain or are derived from any Confidential Information as defined below.</span>
+                                </div>
+                                <div class="col-xs-6  text-right ">
+                                    <p>
+                                        <span>١.سواء أثناء أو بعد فترة عملي، ومن</span>
+                                        <span />
+                                    </p>
+                                    <span>,دون حصولي على إذن كتابي من الشركة</span>
+                                    <br />
+                                    <span>سوف لن أكشف إلى أي شخص من خارج</span>
+                                    <br />
+                                    <span>الشركة أو استخدام في غير أغراض عمل</span>
+                                    <br />
+                                    <span>كي بي إم جي، أو أسمح لأي شخص</span>
+                                    <br />
+                                    <span>أو السماح لأي ,</span>
+                                    <span t-esc="o.employee_id.user_id.company_id.arabic_name" />
+                                    <span>عمل</span>
+                                    <br />
+                                    <span>تحتوي على أي معلومات سرية أو هي</span>
+                                    <br />
+                                    <span>مشتقه من أي معلومات سرية على النحو</span>
+                                    <br />
+                                    <span>.المحدد أدناه</span>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                                    <span>Confidential Information is any information or materials concerning the Firm’s affairs, whether business, technical or otherwise, which are not known to the public at large.  It includes, but is not limited to, information and materials developed, collected or used by the Firm personnel; information disclosed to</span>
+                                    <span t-esc="o.employee_id.user_id.company_id.name" />
+                                    <span>by its clients or potential clients in the course of engagements or proposed engagements; and information disclosed by third parties with which the Firm has or may have a business relationship.  Confidential Information may relate to the past, present or future and may concern, but is not limited to, business strategies, financial data, business plans, technology, contract provisions, client lists or records, computer printouts and disks, or other forms of documentation or media.  However, it need not necessarily be reduced to a tangible form.</span>
+                                </div>
+                                <div class="col-xs-6  text-right ">
+                                    <span>المعلومات السرية هي أية معلومات أو</span>
+                                    <br />
+                                    <span>مواد تتعلق بشئون الشركة، سواء كانت</span>
+                                    <br />
+                                    <span>تجارية أو فنية أو خلاف ذلك، وهي ليست</span>
+                                    <br />
+                                    <span>.معروفة على نطاق الجمهور العام بأكمله</span>
+                                    <br />
+                                    <span>وتشمل المعلومات السرية على سبيل</span>
+                                    <br />
+                                    <span>المثال لا الحصر، المعلومات والمواد التي</span>
+                                    <br />
+                                    <span>تم تطويرها أو جمعها والتي تستخدم من</span>
+                                    <br />
+                                    <span>قبل أفراد الشركة؛ والمعلومات التي قام</span>
+                                    <br />
+                                    <span>العملاء أو العملاء المحتملين بالكشف عنها</span>
+                                    <br />
+                                    <span>أثناء فترة</span>
+                                    <span t-esc="o.employee_id.user_id.company_id.arabic_name" />
+                                    <span>كي</span>
+                                    <br />
+                                    <span>:التعاقدات أو التعاقدات المقترحة</span>
+                                    <br />
+                                    <span>والمعلومات التي كشف عنها من قبل</span>
+                                    <br />
+                                    <span>أطراف ثالثة قد يكون للشركة علاقة</span>
+                                    <br />
+                                    <span>تجارية معها. قد تتصل المعلومات السرية</span>
+                                    <br />
+                                    <span>بالماضي أو الحاضر أو المستقبل، وقد</span>
+                                    <br />
+                                    <span>,تكون ذات علاقة باستراتيجيات الأعمال</span>
+                                    <br />
+                                    <span>,والبيانات المالية، وخطط العمل</span>
+                                    <br />
+                                    <span>والتكنولوجيا، وأحكام العقود، أو سجلات</span>
+                                    <br />
+                                    <span>وقوائم العملاء، والمطبوعات وأقراص</span>
+                                    <br />
+                                    <span>الكومبيوتر، أو أشكال أخرى من الوثائق</span>
+                                    <br />
+                                    <span>أو وسائل الإعلام. وليس من الضروري أن</span>
+                                    <br />
+                                    <span>بكون بالإمكان تحويلها إلى شكل ملموس</span>
+                                    <br />
+                                    <span>.أو مادي</span>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                                    <span>2. I will comply, and do all things necessary to permit the Firm to comply, with the laws and regulations of all governments under which the Firm does business, and with the provision of contracts between the Firm and any such government or its contractors, that relate to intellectual property or to the safeguarding of information, including the signing of any Confidentiality Agreements required in connection with the performance of my duties during my employment with the Firm.</span>
+                                    <br />
+                                    <br />
+                                </div>
+                                <div class="col-xs-6  text-right ">
+                                    <span>٢.سوف أمتثل، وأفعل كل ما هو ضروري</span>
+                                    <br />
+                                    <span>لتمكين الشركة من الامتثال لقوانين</span>
+                                    <br />
+                                    <span>وأنظمة جميع الحكومات التي تتعامل معها</span>
+                                    <br />
+                                    <span>الشركة، وفقا لأحكام العقود المبرمة ما</span>
+                                    <br />
+                                    <span>بين الشركة وأي من هذه الحكومة أو</span>
+                                    <br />
+                                    <span>المتعاقدين معها، والتي تتصل بالملكية</span>
+                                    <br />
+                                    <span>الفكرية أو حماية المعلومات، بما في ذلك</span>
+                                    <br />
+                                    <span>التوقيع على أية اتفاقيات سرية مطلوبة</span>
+                                    <br />
+                                    <span>.الشركة</span>
+                                    <br />
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                                    <span>3. I agree that I shall have no proprietary interest in any idea, invention, design technical or business innovation, computer program and related documentation, or any other work product developed, conceived, or used by me, in whole or in part that arises out of my employment with the Firm, or that are otherwise made through the use of the Firm’s time or materials (all of the foregoing hereinafter referred to collectively as “Developments”).  I acknowledge that all Developments are and shall be the sole property of the Firm and that the Firm is not required to designate me as the author thereof.  I shall promptly disclose all Developments to the Staff Partner of the office to which I am assigned and shall, at the Firm’s request, do all the things that may be necessary and appropriate to establish or document the Firm’s ownership of the Developments, including, but not limited to the execution of the appropriate copyright or patent applications or assignment.</span>
+                                    <br />
+                                    <br />
+                                </div>
+                                <div class="col-xs-6  text-right ">
+                                    <span>٣.إنني أوافق على أنه لن تكون لي أي</span>
+                                    <br />
+                                    <span>حقوق في ملكية أية فكرة أو اختراع ، أو</span>
+                                    <br />
+                                    <span>تصميم تقني أو ابتكار في مجال العمل، أو</span>
+                                    <br />
+                                    <span>برنامج الحاسوب والوثائق ذات الصلة، أو</span>
+                                    <br />
+                                    <span>أي منتجات العمل الأخرى التي تم</span>
+                                    <br />
+                                    <span>تطويرها وتصورها واستعمالها كليا أو جزئيا</span>
+                                    <br />
+                                    <span>من قبلي، أثناء فترة عملي مع الشركة، أو</span>
+                                    <br />
+                                    <span>التي تم على خلاف ذلك صنعها من خلال</span>
+                                    <br />
+                                    <span>استخدام وقت ومواد الشركة (يشار إلى</span>
+                                    <br />
+                                    <span>كل ما سبق بشكل مجتمع باسم</span>
+                                    <br />
+                                    <span>"التطويرات"). إنني أقر بأن جميع</span>
+                                    <br />
+                                    <span>التطويرات تعود ملكيتها بشكل كامل</span>
+                                    <br />
+                                    <span>للشركة وليس مطلوبا من الشركة أن</span>
+                                    <br />
+                                    <span>تقوم بتسميتي كمؤلف لها. وسأقوم</span>
+                                    <br />
+                                    <span>بالكشف فورا عن جميع التطويرات إلى</span>
+                                    <br />
+                                    <span>الشريك المسئول عن المكتب الذي أعمل</span>
+                                    <br />
+                                    <span>فيه، ويجب بناء على طلب المؤسسة، أن</span>
+                                    <br />
+                                    <span>أقوم بكل ما هو ضروري ومناسبة لتأكيد</span>
+                                    <br />
+                                    <span>أو توثيق ملكية الشركة للتطويرات، بما</span>
+                                    <br />
+                                    <span>في ذلك، على سبيل المثال لا الحصر</span>
+                                    <br />
+                                    <span>إعداد طلبات الحصول على براءات</span>
+                                    <br />
+                                    <span>.الاختراع أو حقوق النشر</span>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                                    <span>4. If I leave the employ of</span>
+                                    <span t-esc="o.employee_id.user_id.company_id.name" />
+                                    <span>, I will promptly return to the Firm all manuals, disks, documents, papers and other materials in my possession or under my control that may contain, or be derived from, Confidential Information, together with all documents, notes or other work products connected to, or derived from, my employment, regardless of the medium in which they are contained, as well as all Developments.  I shall retain no copies of any of the foregoing.</span>
+                                </div>
+                                <div class="col-xs-6  text-right ">
+                                    <span>عند تركي لوظيفتي مع</span>
+                                    <span t-esc="o.employee_id.user_id.company_id.arabic_name" />
+                                    <span>.٤</span>
+                                    <br />
+                                    <span>الفوزان والسدحان، سأقوم على الفور</span>
+                                    <br />
+                                    <span>بإعادة إلى الشركة جميع الكتيبات</span>
+                                    <br />
+                                    <span>والأقراص والوثائق والأوراق وغيرها من</span>
+                                    <br />
+                                    <span>المواد التي في حوزتي أو تحت تحكمي</span>
+                                    <br />
+                                    <span>والتي قد تحتوي على، أو تكون مشتقه</span>
+                                    <br />
+                                    <span>من المعلومات السرية، جنبا إلى جنب مع</span>
+                                    <br />
+                                    <span>جميع الوثائق والمذكرات أو أي منتجات</span>
+                                    <br />
+                                    <span>للعمل مرتبطة أو مستمدة من عملي</span>
+                                    <br />
+                                    <span>بغض النظر عن طبيعة الوسيلة التي</span>
+                                    <br />
+                                    <span>تحفظها، وكذلك جميع التطويرات. وسوف</span>
+                                    <br />
+                                    <span>لن أحتفظ بنسخ من أي من العناصر</span>
+                                    <br />
+                                    <span>.السالفة الذكر</span>
+                                    <br />
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                                    <span>5. This Agreement shall be in addition to any other Agreement entered into at any time between the Firm and me, except that it supersedes all prior and contemporaneous written and oral communications, representations, understandings, undertakings, or agreements by or with the Firm with respect to the subjects covered herein.  Nothing contained in this expressly or by implication, a contract of employment; and, insofar as this Agreement is concerned, my employment by the Firm continues to be terminable at will in accordance with the procedures laid down in the Staff Manual.  This Agreement may not be changed or modified except in a written document signed by me and the Managing Partner.</span>
+                                    <br />
+                                    <br />
+                                </div>
+                                <div class="col-xs-6  text-right ">
+                                    <span>٥.سوف يبطل هذا الاتفاق بالإضافة إلى</span>
+                                    <br />
+                                    <span>أي اتفاق آخر تم التعهد به في أي وقت</span>
+                                    <br />
+                                    <span>بين الشركة وبيني، جميع ما سبقه من</span>
+                                    <br />
+                                    <span>الاتصالات الشفوية والمكتوبة، والإقرارات</span>
+                                    <br />
+                                    <span>والتفاهمات والتعهدات، والاتفاقيات التي</span>
+                                    <br />
+                                    <span>عقدتها الشركة أو تم عقدها مع الشركة</span>
+                                    <br />
+                                    <span>.فيما يتعلق بالمواضيع التي تم تغطيتها هنا</span>
+                                    <br />
+                                    <span>وليس ما يشير في هذا الاتفاق أو في عقد</span>
+                                    <br />
+                                    <span>العمل صراحة أو ضمنا، أن عملي مع</span>
+                                    <br />
+                                    <span>المؤسسة لن يتم إنهاءه إلا وفقا</span>
+                                    <br />
+                                    <span>للإجراءات المنصوص عليها في دليل</span>
+                                    <br />
+                                    <span>الموظفين. لا يجوز تغيير أو تعديل هذا</span>
+                                    <br />
+                                    <span>الاتفاق إلا من خلال وثيقة خطية موقعه</span>
+                                    <br />
+                                    <span>.من قبل الشريك المسئول</span>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                                    <span>6.Because of the unique nature of the Confidential Information and the Developments, I understand and agree that the Firm will suffer irreparable harm if I fail to comply with any of my obligations in paragraphs 1 through 4 hereof and that monetary damages will be inadequate to compensate the Firm for the said breach.  Accordingly, I agree that the Firm will, in addition to any other remedies available to it at law or in equity, be entitled to injunctive relief to enforce the terms of the said paragraphs 1 through 4.</span>
+                                    <br />
+                                    <br />
+                                </div>
+                                <div class="col-xs-6  text-right ">
+                                    <span>٦.نظرا للطابع الفريد للمعلومات السرية</span>
+                                    <br />
+                                    <span>والتطويرات، فإنني أتفهم وأوافق على أن</span>
+                                    <br />
+                                    <span>الشركة سوف تعاني ضررا لا يمكن</span>
+                                    <br />
+                                    <span>إصلاحه إذا فشلت في الامتثال في أي من</span>
+                                    <br />
+                                    <span>التزاماتي الواردة في الفقرات من 1 إلى</span>
+                                    <br />
+                                    <span>4، وأن الأضرار النقدية لن تكون كافية</span>
+                                    <br />
+                                    <span>لتعويض الشركة مقابل هذا الخرق. وتبعا</span>
+                                    <br />
+                                    <span>,لذلك، فإنني أوافق على أن إرادة الشركة</span>
+                                    <br />
+                                    <span>بالإضافة إلى</span>
+                                    <br />
+                                    <span>أي من وسائل الإنصاف الأخرى المتاحة</span>
+                                    <br />
+                                    <span>لها في القانون أو على هيئة ممتلكات</span>
+                                    <br />
+                                    <span>وأموال، سيكون من حقها اللجوء إليها</span>
+                                    <br />
+                                    <span>لإنفاذ أحكام الفقرات من 1 إلى 4.</span>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                                    <span>7. If any term or provision of this Agreement is held to be invalid, void or unenforceable, the remaining terms and provisions of this Agreement shall not be affected, impaired or invalidated; and each such term and provision shall be valid and enforceable to the fullest extent permitted by law.</span>
+                                    <br />
+                                    <br />
+                                </div>
+                                <div class="col-xs-6  text-right ">
+                                    <span>٧.إذا اعتبر أي مصطلح أو أي حكم من</span>
+                                    <br />
+                                    <span>أحكام هذا الاتفاق باطلا أو لا يمكن</span>
+                                    <br />
+                                    <span>تطبيقه، فان ما تبقى من بنود وأحكام هذا</span>
+                                    <br />
+                                    <span>الاتفاق لا يجوز أن تتأثر ، وتضعف أو تبطل</span>
+                                    <br />
+                                    <span>؛ وستبقى جميع الأحكام الأخرى صالحة</span>
+                                    <br />
+                                    <span>وواجبة النفاذ إلى أقصى حدود ما يسمح</span>
+                                    <br />
+                                    <span>.به القانون</span>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                                    <span>8. I further undertake the following:</span>
+                                </div>
+                                <div class="col-xs-6  text-right ">
+                                    <span>٨. كما أنني التزم القيام بما يلي</span>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                                    <span>● I confirm I have read the Firm’s rules and procedures contained in the Staff Manual.  I undertake to comply with them and understand that the continuance of my employment with the Firm is dependent on my strict compliance therewith.</span>
+                                </div>
+                                <div class="col-xs-6  text-right ">
+                                    <span>أؤكد إنني قرأت قواعد وإجراءات ●</span>
+                                    <br />
+                                    <span>الشركة الواردة في دليل الموظفين. واني</span>
+                                    <br />
+                                    <span>أوافق على الامتثال لها وأتفهم أن</span>
+                                    <br />
+                                    <span>استمرار عملي مع الشركة يعتمد على</span>
+                                    <br />
+                                    <span>.التقيد الصارم بها</span>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                                    <span>● I agree at all times during my employment and afterwards to keep secret the affairs, data, methodologies and proprietary technologies of</span>
+                                    <span t-esc="o.employee_id.user_id.company_id.name" />
+                                    <span>and its clients.</span>
+                                </div>
+                                <div class="col-xs-6  text-right ">
+                                    <span>أوافق في جميع الأوقات أثناء قيامي ●</span>
+                                    <br />
+                                    <span>بعملي وما بعد ذلك بالحفاظ على سرية</span>
+                                    <br />
+                                    <span>الشؤون ، والبيانات والمنهجيات والتقنيات</span>
+                                    <br />
+                                    <span>ذات الملكية</span>
+                                    <span t-esc="o.employee_id.user_id.company_id.arabic_name" />
+                                    <span>جي وعملائها.</span>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                                    <span>● I have read the Global Risk Management Manual, reviewed the securities held by myself, my spouse and dependent children in conjunction with the current International Register of Prohibited Securities and confirm that neither I, my spouse nor any of my dependent children holds or is committed to acquire any security which is prohibited or restricted.</span>
+                                </div>
+                                <div class="col-xs-6  text-right ">
+                                    <span>لقد قرأت دليل كي بي إم جي لإدارة ●</span>
+                                    <br />
+                                    <span>المخاطر العالمي، واستعرضت الأوراق</span>
+                                    <br />
+                                    <span>المالية التي أحتفظ بها شخصياً، وزوجتي</span>
+                                    <br />
+                                    <span>وأولادي الذين أعيلهم بالتزامن مع الوضع</span>
+                                    <br />
+                                    <span>الحالي والسجل الدولي للأوراق المالية</span>
+                                    <br />
+                                    <span>المحظورة و أؤكد أنني وزوجتي ولا أي</span>
+                                    <br />
+                                    <span>من أطفالي الذين أعيلهم يمتلكون أو</span>
+                                    <br />
+                                    <span>ملتزمون للحصول على أي من الأوراق</span>
+                                    <br />
+                                    <span>.المالية المحظورة أو المقيدة</span>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                                    <span>● I will not buy or sell any investments on the basis of any insider information which comes to my knowledge directly or indirectly as a result of my employment with the Firm.</span>
+                                </div>
+                                <div class="col-xs-6  text-right ">
+                                    <span>سوف لن أقوم بشراء أو بيع أي ●</span>
+                                    <br />
+                                    <span>استثمارات على أساس أي من</span>
+                                    <br />
+                                    <span>المعلومات التي تأتي من داخل الشركة</span>
+                                    <br />
+                                    <span>وتصبح في نطاق معرفتي بشكل مباشر</span>
+                                    <br />
+                                    <span>.أو غير مباشر نتيجة لعملي مع الشركة</span>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                                    <span>● I may accept gifts from clients of a token or incidental nature, if it would be embarrassing to make a point of refusing the client’s offer.  However, I will not accept substantial gifts that could be perceived to impair my objectivity or independence.</span>
+                                </div>
+                                <div class="col-xs-6  text-right ">
+                                    <span>سوف أقبل الهدايا من العملاء التي ●</span>
+                                    <br />
+                                    <span>تكون على هيئة هدايا تذكارية أو بمحض</span>
+                                    <br />
+                                    <span>.الصدفة، إذ قد يكون من المحرج رفضها</span>
+                                    <br />
+                                    <span>ولكن، لن اقبل الهدايا الكبيرة التي يمكن</span>
+                                    <br />
+                                    <span>أن ينظر إليها على أنها  تؤثر وتنال من</span>
+                                    <br />
+                                    <span>.موضوعيتي أو استقلاليتي</span>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                                    <span>● I recognize that while codes and guidelines may be laid down, the most important standard by which to judge independence is my professional integrity; I therefore undertake to exercise the highest standard of personal judgment where the Firm code is unclear or silent.</span>
+                                </div>
+                                <div class="col-xs-6  text-right ">
+                                    <span>في حين إنني أدرك أنه يمكن وضع ●</span>
+                                    <br />
+                                    <span>قوانين ومبادئ توجيهية، يبقى أهم المعايير</span>
+                                    <br />
+                                    <span>التي تحكم استقلاليتي هي نزاهتي</span>
+                                    <br />
+                                    <span>المهنية؛ لذا فإنني أتعهد بممارسة أعلى</span>
+                                    <br />
+                                    <span>مستوى من الحكم الشخصي في حال إذا</span>
+                                    <br />
+                                    <span>كانت أنظمة الشركة غير واضحة أو غير</span>
+                                    <br />
+                                    <span>.موجودة</span>
+                                    <br />
+                                    <br />
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                                    <span>9. This agreement shall be governed and controlled by the laws of the Kingdom of Saudi Arabia.</span>
+                                </div>
+                                <div class="col-xs-6  text-right ">
+                                    <span>٩.هذا الاتفاق يخضع لقوانين المملكة</span>
+                                    <br />
+                                    <span>.العربية السعودية</span>
+                                    <br />
+                                    <span />
+                                    <br />
+                                    <span />
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row" style="color:blue; font-weight: bold;">
+                                <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                                    <span>Name:</span>
+                                    <span t-esc="o.employee_id.title.name" />
+                                    <span t-esc="o.employee_id.name" />
+                                    <span t-esc="o.employee_id.middle_name" />
+                                    <span t-esc="o.employee_id.last_name" />
+                                    <br />
+                                </div>
+                                <div class="col-xs-6  text-right font-weight: bold;">
+                                    <span>الاسم:</span>
+                                    <span t-esc="o.employee_id.arabic_name" />
+                                    <br />
+                                    <span />
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row" style="color:blue; font-weight: bold;">
+                                <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                                    <span>Position:</span>
+                                    <span t-esc="o.employee_id.job_id.name" />
+                                    <span />
+                                    <br />
+                                </div>
+                                <div class="col-xs-6  text-right font-weight: bold;">
+                                    <span>المنصب:</span>
+                                    <span t-esc="o.employee_id.job_id.arabic_name" />
+                                    <br />
+                                    <span />
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row" style="color:blue; font-weight: bold;">
+                                <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                                    <span>Signed as agreed:</span>
+                                    <span />
+                                    <br />
+                                    <span />
+                                    <br />
+                                    <span />
+                                    <br />
+                                    <span />
+                                    <br />
+                                </div>
+                                <div class="col-xs-6  text-right font-weight: bold;">
+                                    <span>:التوقيع على النحو المتفق عليه</span>
+                                    <br />
+                                    <span />
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row" style="color:blue; font-weight: bold;">
+                                <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                                    <span>Office:</span>
+                                    <span t-esc="o.employee_id.branch_id.name" />
+                                    <span />
+                                    <br />
+                                </div>
+                                <div class="col-xs-6  text-right font-weight: bold;">
+                                    <span>المكتب:</span>
+                                    <span t-esc="o.employee_id.arabic_name" />
+                                    <span />
+                                    <br />
+                                    <span />
+                                    <br />
+                                    <span />
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row" style="color:blue; font-weight: bold;">
+                                <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                                    <span>Date:</span>
+                                    <span />
+                                    <br />
+                                </div>
+                                <div class="col-xs-6  text-right font-weight: bold;">
+                                    <span>:التاريخ</span>
+                                    <br />
+                                    <span />
+                                    <br />
+                                    <span />
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>

@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_employee_eos_user,access_hr_employee_eos_user,model_hr_employee_eos,base.group_user,1,0,0,0
+access_hr_employee_eos_manager,access_hr_employee_eos_manager,model_hr_employee_eos,hr.group_hr_manager,1,1,1,1
+access_hr_employee_eos_officer,access_hr_employee_eos_officer,model_hr_employee_eos,hr.group_hr_user,1,1,1,1
+access_hr_contract_officer,hr.contractofficer,hr_contract.model_hr_contract,hr.group_hr_user,1,0,0,0
+access_hr_payslip_worked_days,hr.payslip.worked_days,hr_payroll.model_hr_payslip_worked_days,hr.group_hr_user,1,0,0,0

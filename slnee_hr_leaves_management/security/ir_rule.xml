@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <!-- Manager rules -->
+    <record id="leave_rule_line_manager" model="ir.rule">
+        <field name="name">Manager Rule</field>
+        <field name="model_id" ref="hr_holidays.model_hr_holidays"/>
+        <field name="domain_force">[('employee_id.parent_id.user_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4,ref('slnee_hr.group_line_manager'))]"/>
+    </record>
+
+    <!-- HOF rules -->
+    <record id="leave_rule_head_of_function" model="ir.rule">
+        <field name="name">HOF Rule</field>
+        <field name="model_id" ref="hr_holidays.model_hr_holidays"/>
+        <field name="domain_force">[('employee_id.coach_id.user_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4,ref('slnee_hr.group_hof'))]"/>
+    </record>
+
+    <!-- Manager rules -->
+    <!-- <record id="property_rule_holidays_line_manager" model="ir.rule">
+        <field name="name">Leaves Manager</field>
+        <field name="model_id" ref="hr_holidays.model_hr_holidays"/>
+        <field name="domain_force">[('employee_id.parent_id.user_id','=',user.id)]</field>
+        <field name="groups" eval="[(4,ref('slnee_hr.group_line_manager'))]"/>
+    </record> -->
+
+    <!-- HOF rules -->
+    <!-- <record id="property_rule_holidays_hof" model="ir.rule">
+        <field name="name">Leaves HOF</field>
+        <field name="model_id" ref="hr_holidays.model_hr_holidays"/>
+        <field name="domain_force">[('employee_id.coach.user_id','=',user.id)]</field>
+        <field name="groups" eval="[(4,ref('slnee_hr.group_hof'))]"/>
+    </record> -->
+
+    <!-- Follower rules -->
+    <record id="property_rule_holidays_follower" model="ir.rule">
+        <field name="name">Leaves Follower</field>
+        <field name="model_id" ref="hr_holidays.model_hr_holidays"/>
+        <field name="domain_force">['|', ('message_follower_ids.partner_id','=',user.partner_id.id), (1, '=', 1)]</field>
+        <field name="global" eval="True"/>
+    </record>
+
+    <!-- Officer rules -->
+    <record id="hr_holidays.property_rule_holidays_officer" model="ir.rule">
+        <field name="name">Leaves Officer</field>
+        <field name="model_id" ref="hr_holidays.model_hr_holidays"/>
+        <field name="domain_force">[(1,'=',1)]</field>
+        <field name="groups" eval="[(4,ref('hr_holidays.group_hr_holidays_user'))]"/>
+    </record>
+
+    <!-- Manager rules -->
+    <record id="property_rule_holidays_manager" model="ir.rule">
+        <field name="name">Leaves Manager</field>
+        <field name="model_id" ref="hr_holidays.model_hr_holidays"/>
+        <field name="domain_force">[(1,'=',1)]</field>
+        <field name="groups" eval="[(4,ref('hr_holidays.group_hr_holidays_manager'))]"/>
+    </record>
+
+    <record id="resource_leaves_manager" model="ir.rule">
+        <field name="name">Leaves Resources Manager</field>
+        <field name="model_id" ref="hr_holidays.model_resource_calendar_leaves"/>
+        <field name="domain_force">[(1,'=',1)]</field>
+        <field name="groups" eval="[(4,ref('hr_holidays.group_hr_holidays_manager'))]"/>
+    </record>
+
+    <!-- Payroll officer rules -->
+    <record id="property_rule_holidays_payroll_officer" model="ir.rule">
+        <field name="name">Leaves Payroll Officer</field>
+        <field name="model_id" ref="hr_holidays.model_hr_holidays"/>
+        <field name="domain_force">['|','|', ('employee_id.user_id', '=', user.id), ('employee_id.department_id', '=', False), ('employee_id.department_id.manager_id.user_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('hr_payroll.group_hr_payroll_user'))]"/>
+    </record>
+
+    <!-- Payroll officer rules -->
+    <record id="property_rule_holidays_payroll_manager" model="ir.rule">
+        <field name="name">Leaves Payroll Manager</field>
+        <field name="model_id" ref="hr_holidays.model_hr_holidays"/>
+        <field name="domain_force">[(1,'=',1)]</field>
+        <field name="groups" eval="[(4, ref('hr_payroll.group_hr_payroll_manager'))]"/>
+    </record>
+
+</odoo>

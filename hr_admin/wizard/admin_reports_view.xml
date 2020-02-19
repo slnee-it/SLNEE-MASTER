@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="admin_reports_print_view" model="ir.ui.view">
+        <field name="name">admin.reports.form</field>
+        <field name="model">admin.reports</field>
+        <field name="arch" type="xml">
+            <form string="Admin Reports">
+                <group>
+                    <field name="report" attrs="{'readonly': [('excel_file', '!=', False)]}"/>
+                </group>
+                <group string="Filters" col="4">
+                    <field name="date_from" attrs="{'readonly': [('excel_file', '!=', False)]}"/>
+                    <field name="date_to" attrs="{'readonly': [('excel_file', '!=', False)]}"/>
+                </group>
+                <group attrs="{'invisible': [('excel_file', '=', False)]}">
+                    <field name="excel_file" filename="filename" readonly="1"/>
+                    <field name="filename" invisible="1"/>
+                </group>
+                <footer>
+                    <button name="print_reports" string="Print" type="object" class="oe_highlight"/>
+                    or
+                    <button  class="oe_link" string="Cancel" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_admin_reports_form" model="ir.actions.act_window">
+        <field name="name">Admin Reports</field>
+        <field name="res_model">admin.reports</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="view_id" ref="admin_reports_print_view"/>
+    </record>
+ </odoo>

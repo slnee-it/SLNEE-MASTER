@@ -1,0 +1,1799 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_letters
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-11 11:29+0000\n"
+"PO-Revision-Date: 2018-09-11 11:29+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_letters
+#: selection:multi.reports,report_type:0
+msgid " To Whom Concern (English) "
+msgstr "(لمن القلق (انجليزي"
+
+#. module: slnee_hr_letters
+#: selection:multi.reports,report_type:0
+msgid " To Whom Concern (Male)"
+msgstr "(لمن القلق (ذكر"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.wifefrom_home_country_report
+msgid "- المملكة العربية السعودية"
+msgstr "- المملكة العربية السعودية"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+msgid ". <span>حســابه رقــم </span>"
+msgstr ". <span>حســابه رقــم </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.certificate_toapprove
+msgid ".التاريخ ويرجى من سعادتكم تصديق شهادات المذكور اعلاه"
+msgstr ".التاريخ ويرجى من سعادتكم تصديق شهادات المذكور اعلاه"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report_female
+#: model:ir.ui.view,arch_db:slnee_hr_letters.house_allowance_report
+msgid ".السلام عليكم و رحمة الله و بركاته"
+msgstr ".السلام عليكم و رحمة الله و بركاته"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.family_iqama_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.mroor_qreport
+#: model:ir.ui.view,arch_db:slnee_hr_letters.slnee_hr_letters_transport_report
+msgid ".السلام عليكم ورحمة الله وبركاته"
+msgstr ".السلام عليكم ورحمة الله وبركاته"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.certificate_toapprove
+msgid ".السلام عليكم ورحمة الله وبركاته وبعد"
+msgstr ".السلام عليكم ورحمة الله وبركاته وبعد"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report
+msgid ".العمل حتى هذا التاريخ"
+msgstr ".العمل حتى هذا التاريخ"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+msgid ".الغاء التحويل الا باخلاء طرف البنك من قبلكم"
+msgstr ".الغاء التحويل الا باخلاء طرف البنك من قبلكم"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+msgid ".او التزامات مالية اتجاه الشركة"
+msgstr ".او التزامات مالية اتجاه الشركة"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report_female
+msgid ".رأس العمل حتى هذا التاريخ."
+msgstr ".رأس العمل حتى هذا التاريخ."
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report_female
+#: model:ir.ui.view,arch_db:slnee_hr_letters.certificate_toapprove
+msgid ".قانونية تجاه الشركة"
+msgstr ".قانونية تجاه الشركة"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report_female
+#: model:ir.ui.view,arch_db:slnee_hr_letters.certificate_toapprove
+msgid ".وتقبلوا تحياتنا"
+msgstr ".وتقبلوا تحياتنا"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report_female
+msgid "/ السادة"
+msgstr "/ السادة"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+msgid ": بياناته كتالي"
+msgstr ": بياناته كتالي"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+msgid ": نحيطكم علما بتعهدنا بالقيام بما يلي"
+msgstr ": نحيطكم علما بتعهدنا بالقيام بما يلي"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.slnee_hr_letters_transport_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhom_concern_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhome_concern_arabic_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.wifefrom_home_country_report
+msgid ":‬‬ ‫التـاريخ‬"
+msgstr ":‬‬ ‫التـاريخ‬"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.family_iqama_report
+msgid ":‬‬‫التـاريخ‬"
+msgstr ":‬‬‫التـاريخ‬"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<font face=\"Helvetica\" color=\"white\">-------------</font>\n"
+"                           In case of termination or expiration of the employee’s service with us for any reason, whatsoever, we will immediately inform you in writing prior to the employee leaving the Kingdom of Saudi Arabia.  In addition, we also undertake to pay his end of service benefits / indemnity to the said account."
+msgstr "<font face=\"Helvetica\" color=\"white\">-------------</font>\n"
+"                           في حالة إنهاء أو انتهاء خدمة الموظف لدينا لأي سبب كان ، سنقوم بإبلاغك كتابيًا على الفور قبل مغادرة الموظف للمملكة العربية السعودية. بالإضافة إلى ذلك ، نتعهد أيضًا بدفع مكافأة نهاية الخدمة / التعويض إلى الحساب المذكور."
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<font face=\"Helvetica\" color=\"white\">-------------</font>\n"
+"                           We hereby confirm that the above-mentioned employee is employed by us and has requested us to transfer his monthly salary to his Account No."
+msgstr "<font face=\"Helvetica\" color=\"white\">-------------</font>\n"
+"                           نؤكد بموجب هذا أن الموظف المذكور أعلاه يعمل لدينا وطلب منا تحويل راتبه الشهري إلى رقم الحساب الخاص به."
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<font face=\"Helvetica\" color=\"white\">-------------</font> This undertaking as stated herein, shall remain valid and in full force until we receive a written notice from you releasing us from our obligations hereunder."
+msgstr "<font face=\"Helvetica\" color=\"white\">-------------</font> يظل هذا التعهد كما هو مذكور في هذه الوثيقة ساريًا وقائمًا إلى أن نتلقى إشعارًا كتابيًا منك لإخطارنا عن التزاماتنا بموجب هذه الاتفاقية."
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.mroor_qreport
+msgid "<font face=\"Helvetica\" size=\"16.0\" style=\"P1; text-align: left;\">__________________ </font>"
+msgstr "<font face=\"Helvetica\" size=\"16.0\" style=\"P1; text-align: left;\">__________________ </font>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.certificate_toapprove
+#: model:ir.ui.view,arch_db:slnee_hr_letters.house_allowance_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.slnee_hr_letters_transport_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhom_concern_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhome_concern_arabic_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.wifefrom_home_country_report
+msgid "<font face=\"Helvetica\" size=\"16.0\">__________________ </font>"
+msgstr "<font face=\"Helvetica\" size=\"16.0\">__________________ </font>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report_female
+msgid "<font face=\"Helvetica\" size=\"16.0\">__________________ </font><br/>"
+msgstr "<font face=\"Helvetica\" size=\"16.0\">__________________ </font><br/>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.family_iqama_report
+msgid "<font face=\"Helvetica\">_______________</font><br/>"
+msgstr "<font face=\"Helvetica\">_______________</font><br/>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report
+msgid "<font face=\"Helvetica-Bold ; \" style=\"font-weight: bold;\" size=\"14.0\">فرع الرياض.</font>\n"
+"                                إلتحق بنا في تاريخ"
+msgstr "<font face=\"Helvetica-Bold ; \" style=\"font-weight: bold;\" size=\"14.0\">فرع الرياض.</font>\n"
+"                                إلتحق بنا في تاريخ"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report_female
+msgid "<font face=\"Helvetica-Bold ;\" style=\"font-weight: bold; \" size=\"14.0\">فرع الرياض.</font><span>إلتحق بنا في تاريخ </span>"
+msgstr "<font face=\"Helvetica-Bold ;\" style=\"font-weight: bold; \" size=\"14.0\">فرع الرياض.</font><span>إلتحق بنا في تاريخ </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.slnee_hr_letters_transport_report
+msgid "<font face=\"Helvetica-Bold\" size=\"14.0\">\n"
+"                                    السـادة / إدارة مـرور\n"
+"                                </font>"
+msgstr "<font face=\"Helvetica-Bold\" size=\"14.0\">\n"
+"                                    السـادة / إدارة مـرور\n"
+"                                </font>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.slnee_hr_letters_transport_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.wifefrom_home_country_report
+msgid "<font face=\"Helvetica-Bold\" size=\"14.0\">\n"
+"                                    المحترمين\n"
+"                                </font>"
+msgstr "<font face=\"Helvetica-Bold\" size=\"14.0\">\n"
+"                                    المحترمين\n"
+"                                </font>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+msgid "<font style=\"text-align: left;\" face=\"Helvetica\" size=\"16.0\">__________________ </font>"
+msgstr "<font style=\"text-align: left;\" face=\"Helvetica\" size=\"16.0\">__________________ </font>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold\">\n"
+"                                Personnel Department :\n"
+"                            </span>"
+msgstr "<span style=\"font-weight: bold\">\n"
+"                                إدارة شؤون الموظفين :\n"
+"                            </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold\">\n"
+"                               (if different from below)\n"
+"                           </span>\n"
+"                           <font face=\"Helvetica\" size=\"11.0\">________________</font>"
+msgstr "<span style=\"font-weight: bold\">\n"
+"                               (إذا كان مختلفًا عن أدناه)\n"
+"                           </span>\n"
+"                           <font face=\"Helvetica\" size=\"11.0\">________________</font>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold\">\n"
+"                               Allowances:\n"
+"                               Housing:\n"
+"                            </span>"
+msgstr "<span style=\"font-weight: bold\">\n"
+"                               البدلات:\n"
+"                               السكن:\n"
+"                            </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold\">\n"
+"                               CONFIRMED EMPLOYMENT :\n"
+"                           </span>"
+msgstr "<span style=\"font-weight: bold\">\n"
+"                               تأكيد العمل :\n"
+"                           </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold\">\n"
+"                               Contract Status :\n"
+"                           </span>"
+msgstr "<span style=\"font-weight: bold\">\n"
+"                               حالة التعاقد :\n"
+"                           </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold\">\n"
+"                               Date / Place :\n"
+"                           </span>"
+msgstr "<span style=\"font-weight: bold\">\n"
+"                               تاريخ المكان :\n"
+"                           </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold\">\n"
+"                               Date of Joining :\n"
+"                           </span>"
+msgstr "<span style=\"font-weight: bold\">\n"
+"                               تاريخ الانضمام :\n"
+"                           </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold\">\n"
+"                               Deductions :\n"
+"                           </span>\n"
+"                           <font face=\"Helvetica\">\n"
+"                               None\n"
+"                           </font>"
+msgstr "<span style=\"font-weight: bold\">\n"
+"                               الخصومات :\n"
+"                           </span>\n"
+"                           <font face=\"Helvetica\">\n"
+"                               None\n"
+"                           </font>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold\">\n"
+"                               End of Service Benefits :\n"
+"                           </span>"
+msgstr "<span style=\"font-weight: bold\">\n"
+"                               مكافأة نهاية الخدمة :\n"
+"                           </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold\">\n"
+"                               Expiry Date :\n"
+"                           </span>"
+msgstr "<span style=\"font-weight: bold\">\n"
+"                               تاريخ الانتهاء :\n"
+"                           </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold\">\n"
+"                               ID / Iqama Number :\n"
+"                           </span>"
+msgstr "<span style=\"font-weight: bold\">\n"
+"                               رقم الهوية / الإقامة :\n"
+"                           </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold\">\n"
+"                               If contract, non-renewable:\n"
+"                           </span>"
+msgstr "<span style=\"font-weight: bold\">\n"
+"                               إذا كان العقد غير متجدد:\n"
+"                           </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold\">\n"
+"                               Name of Authorized Person(s) / Title(s) :\n"
+"                           </span>"
+msgstr "<span style=\"font-weight: bold\">\n"
+"                               اسم الشخص / الأشخاص المعتمدين / العنوان (العناوين) :\n"
+"                           </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold\">\n"
+"                               Nationality :\n"
+"                           </span>"
+msgstr "<span style=\"font-weight: bold\">\n"
+"                               جنسية :\n"
+"                           </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold\">\n"
+"                               Payment Date :\n"
+"                           </span>\n"
+"                           <u> End of each Georgian Month </u>"
+msgstr "<span style=\"font-weight: bold\">\n"
+"                               تاريخ الدفع :\n"
+"                           </span>\n"
+"                           <u> نهاية كل شهر جورجي </u>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold\">\n"
+"                               Personnel Department authorized\n"
+"                               <br/>\n"
+"                               signatory\n"
+"                           </span>"
+msgstr "<span style=\"font-weight: bold\">\n"
+"                               قسم شؤون الموظفين\n"
+"                               <br/>\n"
+"                               الموقعة\n"
+"                           </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold\">\n"
+"                               Position :\n"
+"                           </span>"
+msgstr "<span style=\"font-weight: bold\">\n"
+"                               موضع :\n"
+"                           </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold\">\n"
+"                               Signature(s):_____________________</span>"
+msgstr "<span style=\"font-weight: bold\">\n"
+"                               التوقيع (ق):_____________________</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold\">\n"
+"                               Signature:</span>"
+msgstr "<span style=\"font-weight: bold\">\n"
+"                               التوقيع:</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold\">\n"
+"                               Staff No. :\n"
+"                           </span>"
+msgstr "<span style=\"font-weight: bold\">\n"
+"                               رقم الموظف. :\n"
+"                           </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold\">\n"
+"                               The Saudi British Bank\n"
+"                           </span>"
+msgstr "<span style=\"font-weight: bold\">\n"
+"                               البنك السعودي البريطاني\n"
+"                           </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold\">\n"
+"                           Employee Name :\n"
+"                       </span>"
+msgstr "<span style=\"font-weight: bold\">\n"
+"                           اسم الموظف :\n"
+"                       </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold\">Riyadh</span>"
+msgstr "<span style=\"font-weight: bold\">مدينة الرياض</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "<span style=\"font-weight: bold; display: inline;\">\n"
+"                               Monthly basic salary :\n"
+"                            </span>"
+msgstr "<span style=\"font-weight: bold; display: inline;\">\n"
+"                               الراتب الأساسي الشهري :\n"
+"                            </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report_female
+msgid "<span>  هو   أحد موظفين شركة</span>"
+msgstr "<span>  هو   أحد موظفين شركة</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.family_iqama_report
+msgid "<span> إلتحق بنا في تاريخ</span>"
+msgstr "<span> إلتحق بنا في تاريخ</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.family_iqama_report
+msgid "<span> اجماليا وقدره</span>"
+msgstr "<span> اجماليا وقدره</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report_female
+msgid "<span> الجنسية بموجب إقامة/ بطاقة أحوال رقم </span>"
+msgstr "<span> الجنسية بموجب إقامة/ بطاقة أحوال رقم </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.family_iqama_report
+msgid "<span> الرياض بأن الأستاذ /</span>"
+msgstr "<span> الرياض بأن الأستاذ /</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.mroor_qreport
+msgid "<span> العمل حتى هذا التاريخ ويرغب في الحصول على رخصة قيادة/ شراء</span>"
+msgstr "<span> العمل حتى هذا التاريخ ويرغب في الحصول على رخصة قيادة/ شراء</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhom_concern_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhome_concern_arabic_report
+msgid "<span> بوظيفة</span>"
+msgstr "<span> بوظيفة</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.slnee_hr_letters_transport_report
+msgid "<span> حتى هذا التاريخ ويرغب في الحصول على رخصة قيادة/ شراء</span>"
+msgstr "<span> حتى هذا التاريخ ويرغب في الحصول على رخصة قيادة/ شراء</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhom_concern_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhome_concern_arabic_report
+msgid "<span> ريال، ولا يزال على رأس العمل</span>"
+msgstr "<span> ريال، ولا يزال على رأس العمل</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.slnee_hr_letters_transport_report
+msgid "<span> صادرة من الرياض، هو أحد الموظفين في شركة</span>"
+msgstr "<span> صادرة من الرياض، هو أحد الموظفين في شركة</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.family_iqama_report
+msgid "<span> فرع </span>"
+msgstr "<span> فرع </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhom_concern_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhome_concern_arabic_report
+msgid "<span> فرع</span>"
+msgstr "<span> فرع</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report
+msgid "<span> نفيدكم بأن الأستاذ /</span>"
+msgstr "<span> نفيدكم بأن الأستاذ /</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.mroor_qreport
+msgid "<span> و لا يزال على رأس</span>"
+msgstr "<span> و لا يزال على رأس</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+msgid "<span> ويعمل بوظيفة </span>"
+msgstr "<span> ويعمل بوظيفة </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhom_concern_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhome_concern_arabic_report
+msgid "<span> ويعمل</span>"
+msgstr "<span> ويعمل</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report_female
+msgid "<span> يعمل بوظيفة </span>"
+msgstr "<span> يعمل بوظيفة </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.certificate_toapprove
+msgid "<span>'هو أحد الموظفين في شركة  </span>"
+msgstr "<span>'هو أحد الموظفين في شركة  </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_report
+msgid "<span>.التاريخ ويرجى من سعادتكم تصديق شهادات المذكور اعلاه </span>"
+msgstr "<span>.التاريخ ويرجى من سعادتكم تصديق شهادات المذكور اعلاه </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.wifefrom_home_country_report
+msgid "<span>.التاريخ ويرجى من سعادتكم تصديق شهادات المذكور اعلاه</span>"
+msgstr "<span>.التاريخ ويرجى من سعادتكم تصديق شهادات المذكور اعلاه</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhom_concern_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhome_concern_arabic_report
+msgid "<span>.السلام عليكم و رحمة الله و بركاته</span>"
+msgstr "<span>.السلام عليكم و رحمة الله و بركاته</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_report
+msgid "<span>.السلام عليكم ورحمة الله وبركاته وبعد</span>"
+msgstr "<span>.السلام عليكم ورحمة الله وبركاته وبعد</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.wifefrom_home_country_report
+msgid "<span>.السلام عليكم ورحمة الله وبركاته</span>"
+msgstr "<span>.السلام عليكم ورحمة الله وبركاته</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.house_allowance_report
+msgid "<span>.الشركة</span>"
+msgstr "<span>.الشركة</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.family_iqama_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.wifefrom_home_country_report
+msgid "<span>.بالتوجيه إلى من يلزم لمنحه التأشيرة المطلوبة</span>"
+msgstr "<span>.بالتوجيه إلى من يلزم لمنحه التأشيرة المطلوبة</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhom_concern_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhome_concern_arabic_report
+msgid "<span>.حتى هذا التاريخ</span>"
+msgstr "<span>.حتى هذا التاريخ</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.wifefrom_home_country_report
+msgid "<span>.ريال بالإضافة إلى التأمين الطبي والسكن له ولعائلته</span>"
+msgstr "<span>.ريال بالإضافة إلى التأمين الطبي والسكن له ولعائلته</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.mroor_qreport
+#: model:ir.ui.view,arch_db:slnee_hr_letters.slnee_hr_letters_transport_report
+msgid "<span>.سيارة ولا مانع لدينا من ذلك</span>"
+msgstr "<span>.سيارة ولا مانع لدينا من ذلك</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhom_concern_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhome_concern_arabic_report
+msgid "<span>.قانونية تجاه الشركة</span>"
+msgstr "<span>.قانونية تجاه الشركة</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.house_allowance_report
+msgid "<span>.مانع لدينا من ذلك</span>"
+msgstr "<span>.مانع لدينا من ذلك</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.family_iqama_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.mroor_qreport
+#: model:ir.ui.view,arch_db:slnee_hr_letters.slnee_hr_letters_transport_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhom_concern_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhome_concern_arabic_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.wifefrom_home_country_report
+msgid "<span>.وتقبلوا تحياتنا</span>"
+msgstr "<span>.وتقبلوا تحياتنا</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.family_iqama_report
+msgid "<span>.ولعائلته</span>"
+msgstr "<span>.ولعائلته</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report
+msgid "<span>أحد موظفين شركة</span>"
+msgstr "<span>أحد موظفين شركة</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.house_allowance_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.wifefrom_home_country_report
+msgid "<span>إلتحق بنا في تاريخ</span>"
+msgstr "<span>إلتحق بنا في تاريخ</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhom_concern_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhome_concern_arabic_report
+msgid "<span>التحق بنا في تاريخ</span>"
+msgstr "<span>التحق بنا في تاريخ</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.mroor_qreport
+msgid "<span>الجنسية  بموجب إقامة/ بطاقة أحوال رقم</span>"
+msgstr "<span>الجنسية  بموجب إقامة/ بطاقة أحوال رقم</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.certificate_toapprove
+msgid "<span>الجنسية بموجب إقامة/ بطاقة أحوال رقـم </span>"
+msgstr "<span>الجنسية بموجب إقامة/ بطاقة أحوال رقـم </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.slnee_hr_letters_transport_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhom_concern_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhome_concern_arabic_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.wifefrom_home_country_report
+msgid "<span>الجنسية بموجب إقامة/ بطاقة أحوال رقم</span>"
+msgstr "<span>الجنسية بموجب إقامة/ بطاقة أحوال رقم</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.family_iqama_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.house_allowance_report
+msgid "<span>الجنسية بموجب اقامة رقم</span>"
+msgstr "<span>الجنسية بموجب اقامة رقم</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.mroor_qreport
+msgid "<span>الرياض، هو أحد الموظفين في شركة</span>"
+msgstr "<span>الرياض، هو أحد الموظفين في شركة</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.family_iqama_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.wifefrom_home_country_report
+msgid "<span>السعودية، لذا ليس لدينا مانع من ذلك، ونأمل من سعادتكم التكرم</span>"
+msgstr "<span>السعودية، لذا ليس لدينا مانع من ذلك، ونأمل من سعادتكم التكرم</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhom_concern_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhome_concern_arabic_report
+msgid "<span>المذكور راتبا اجماليا وقدره</span>"
+msgstr "<span>المذكور راتبا اجماليا وقدره</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.wifefrom_home_country_report
+msgid "<span>بأن الأستاذ /</span>"
+msgstr "<span>بأن الأستاذ /</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.house_allowance_report
+msgid "<span>بوظيفة</span>"
+msgstr "<span>بوظيفة</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.family_iqama_report
+msgid "<span>ريال بالإضافة إلى التأمين الطبي والسكن له</span>"
+msgstr "<span>ريال بالإضافة إلى التأمين الطبي والسكن له</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+msgid "<span>ريال</span>"
+msgstr "<span>ريال</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.mroor_qreport
+msgid "<span>صادرة من</span>"
+msgstr "<span>صادرة من</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.house_allowance_report
+msgid "<span>على رأس العمل حتى هذا التاريخ. ويرغب في إستئجار مسكن ولا</span>"
+msgstr "<span>على رأس العمل حتى هذا التاريخ. ويرغب في إستئجار مسكن ولا</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.house_allowance_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.wifefrom_home_country_report
+msgid "<span>فرع </span>"
+msgstr "<span>فرع </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.certificate_toapprove
+msgid "<span>فرع الرياض ويعمل بوظيفة</span>"
+msgstr "<span>فرع الرياض ويعمل بوظيفة</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.mroor_qreport
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_report
+msgid "<span>فرع</span>"
+msgstr "<span>فرع</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.certificate_toapprove
+msgid "<span>م. ولا يزال على رأس العمل حتى هذا</span>"
+msgstr "<span>م. ولا يزال على رأس العمل حتى هذا</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.wifefrom_home_country_report
+msgid "<span>م، ويعمل بوظيفة</span>"
+msgstr "<span>م، ويعمل بوظيفة</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_report
+msgid "<span>منذ تاريخ</span>"
+msgstr "<span>منذ تاريخ</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.family_iqama_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.wifefrom_home_country_report
+msgid "<span>نفيد سعادتكم نحن شركة </span>"
+msgstr "<span>نفيد سعادتكم نحن شركة </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report_female
+#: model:ir.ui.view,arch_db:slnee_hr_letters.house_allowance_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.mroor_qreport
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhom_concern_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhome_concern_arabic_report
+msgid "<span>نفيدكم بأن الأستاذ /</span>"
+msgstr "<span>نفيدكم بأن الأستاذ /</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.certificate_toapprove
+#: model:ir.ui.view,arch_db:slnee_hr_letters.slnee_hr_letters_transport_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_report
+msgid "<span>نفيدكم بأن الأستاذ/</span>"
+msgstr "<span>نفيدكم بأن الأستاذ/</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_report
+msgid "<span>هو أحد الموظفين في شركة </span>"
+msgstr "<span>هو أحد الموظفين في شركة </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhom_concern_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhome_concern_arabic_report
+msgid "<span>هو أحد الموظفين في شركة</span>"
+msgstr "<span>هو أحد الموظفين في شركة</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.house_allowance_report
+msgid "<span>هو أحد موظفين شركة</span>"
+msgstr "<span>هو أحد موظفين شركة</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.slnee_hr_letters_transport_report
+msgid "<span>و لا يزال على رأس العمل </span>"
+msgstr "<span>و لا يزال على رأس العمل </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.family_iqama_report
+msgid "<span>وحيث أنه يود استقدام زوجته للإقامة برفقته في المملكة العربية\n"
+"                        </span>"
+msgstr "<span>وحيث أنه يود استقدام زوجته للإقامة برفقته في المملكة العربية\n"
+"                        </span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.wifefrom_home_country_report
+msgid "<span>وحيث أنه يود استقدام زوجته للإقامة برفقته في المملكة العربية</span>"
+msgstr "<span>وحيث أنه يود استقدام زوجته للإقامة برفقته في المملكة العربية</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.house_allowance_report
+msgid "<span>وقد أعطي هذا التعريف بناء على طلبه دون أدنى مسؤولية تجاه</span>"
+msgstr "<span>وقد أعطي هذا التعريف بناء على طلبه دون أدنى مسؤولية تجاه</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhom_concern_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhome_concern_arabic_report
+msgid "<span>وقد أعطي هذا التعريف بناء على طلبه دون أدنى مسؤولية مالية او</span>"
+msgstr "<span>وقد أعطي هذا التعريف بناء على طلبه دون أدنى مسؤولية مالية او</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_report
+msgid "<span>ولا يزال على رأس العمل حتى هذا</span>"
+msgstr "<span>ولا يزال على رأس العمل حتى هذا</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.house_allowance_report
+msgid "<span>ولا يزال</span>"
+msgstr "<span>ولا يزال</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.wifefrom_home_country_report
+msgid "<span>ويتقاضى المذكور راتبا اجماليا وقدر</span>"
+msgstr "<span>ويتقاضى المذكور راتبا اجماليا وقدر</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.family_iqama_report
+msgid "<span>ويتقاضى المذكور راتبا</span>"
+msgstr "<span>ويتقاضى المذكور راتبا</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhom_concern_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhome_concern_arabic_report
+msgid "<span>ويتقاضى</span>"
+msgstr "<span>ويتقاضى</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.family_iqama_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.mroor_qreport
+#: model:ir.ui.view,arch_db:slnee_hr_letters.slnee_hr_letters_transport_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_report
+msgid "<span>ويعمل بوظيفة</span>"
+msgstr "<span>ويعمل بوظيفة</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.slnee_hr_letters_transport_report
+msgid "<span>‫فرع‬</span>"
+msgstr "<span>‫فرع‬</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+msgid "<span>ﺻﺎﺩﺭﺓ ﻣﻦ</span>"
+msgstr "<span>ﺻﺎﺩﺭﺓ ﻣﻦ</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+msgid "<span>ﻫﻮ ﺃﺣﺪ اﻟﻤﻮﻇﻔﻴﻦ ﻓﻲ ﺷﺮﻛﺔ</span>"
+msgstr "<span>ﻫﻮ ﺃﺣﺪ اﻟﻤﻮﻇﻔﻴﻦ ﻓﻲ ﺷﺮﻛﺔ</span>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhom_concern_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhome_concern_arabic_report
+msgid "<u>\n"
+"                                    <span>الى من يهمه الأمر</span>\n"
+"                                </u>"
+msgstr "<u>\n"
+"                                    <span>الى من يهمه الأمر</span>\n"
+"                                </u>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.house_allowance_report
+msgid "<u>\n"
+"                             الى من يهمه الأمر</u>"
+msgstr "<u>\n"
+"                             الى من يهمه الأمر</u>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.walid_school_report
+msgid "<u>To Whom It May Concern</u>"
+msgstr "<u>إلي من يهمه الامر</u>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.view_multi_reports_form
+msgid "Approve"
+msgstr "موافقه"
+
+#. module: slnee_hr_letters
+#: selection:multi.reports,state:0
+msgid "Approved"
+msgstr "وافق"
+
+#. module: slnee_hr_letters
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_multi_reports_approved_date
+msgid "Approved Date"
+msgstr "التسجيل المعتمدة"
+
+#. module: slnee_hr_letters
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_multi_reports_approved_by
+msgid "Approved by"
+msgstr "التي وافقت عليها"
+
+#. module: slnee_hr_letters
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_res_country_arabic_country_name
+msgid "Arabic Name"
+msgstr "اسم عربي"
+
+#. module: slnee_hr_letters
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_multi_reports_manager_id
+msgid "Authorised by"
+msgstr "مرخص بها من"
+
+#. module: slnee_hr_letters
+#: model:ir.actions.report,name:slnee_hr_letters.bankloan_transfer
+msgid "Bank Loan Transfer"
+msgstr "تحويل قرض مصرفي"
+
+#. module: slnee_hr_letters
+#: selection:multi.reports,report_type:0
+msgid "Bank Loan Transfer (Female) "
+msgstr "(نقل قرض من البنك (أنثى"
+
+#. module: slnee_hr_letters
+#: selection:multi.reports,report_type:0
+msgid "Bank Loan Transfer (Male) "
+msgstr "(نقل قرض من البنك (ذكر"
+
+#. module: slnee_hr_letters
+#: model:ir.actions.report,name:slnee_hr_letters.bankloan_transfer_female
+msgid "Bank Loan Transfer Female"
+msgstr "تحويل قرض مصرفي"
+
+#. module: slnee_hr_letters
+#: model:ir.actions.report,name:slnee_hr_letters.bankopen_account
+msgid "Bank Open Account"
+msgstr "حساب البنك المفتوح"
+
+#. module: slnee_hr_letters
+#: selection:multi.reports,report_type:0
+msgid "Bank Open Account (Female)"
+msgstr "(البنك فتح حساب (أنثى"
+
+#. module: slnee_hr_letters
+#: selection:multi.reports,report_type:0
+msgid "Bank Open Account (Male)"
+msgstr "(البنك فتح حساب (ذكر"
+
+#. module: slnee_hr_letters
+#: model:ir.actions.report,name:slnee_hr_letters.bankopen_account_female
+msgid "Bank Open Account female"
+msgstr "فتح حساب بنك انثى"
+
+#. module: slnee_hr_letters
+#: model:ir.model,name:slnee_hr_letters.model_res_country
+msgid "Country"
+msgstr "دولة"
+
+#. module: slnee_hr_letters
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_multi_reports_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: slnee_hr_letters
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_multi_reports_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: slnee_hr_letters
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_multi_reports_date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.walid_school_report
+msgid "Department since"
+msgstr "قسم منذ"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.whomeconcern_report
+msgid "Department."
+msgstr " قسم، أقسام."
+
+#. module: slnee_hr_letters
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_multi_reports_description
+#: model:ir.ui.view,arch_db:slnee_hr_letters.view_multi_reports_form
+msgid "Description"
+msgstr "الوصف"
+
+#. module: slnee_hr_letters
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_multi_reports_display_name
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_bankloan_transfer_female_qweb_display_name
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_bankloan_transfer_qweb_display_name
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_bankopen_account_report_display_name
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_bankopen_account_report_female_display_name
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_certificate_toapprove_display_name
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_family_iqama_report_display_name
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_house_allowance_report_display_name
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_mroor_qreport_display_name
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_slnee_hr_letters_transport_report_display_name
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_saudibritish_bankloan_report_display_name
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_stamping_certificate_female_report_display_name
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_stamping_certificate_report_display_name
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_towhom_concern_female_report_display_name
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_towhome_concern_arabic_report_display_name
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_walid_school_report_display_name
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_whomeconcern_report_display_name
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_wifefrom_home_country_report_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: slnee_hr_letters
+#: selection:multi.reports,state:0
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: slnee_hr_letters
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_multi_reports_employee_id
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.view_multi_reports_form
+msgid "Extra Information"
+msgstr "معلومات اضافية"
+
+#. module: slnee_hr_letters
+#: model:ir.actions.report,name:slnee_hr_letters.family_iqama
+#: selection:multi.reports,report_type:0
+msgid "Family Iqama"
+msgstr "الإقامة الأسرة"
+
+#. module: slnee_hr_letters
+#: code:addons/slnee_hr_letters/report/reports_slnee_hr_letters.py:71
+#: code:addons/slnee_hr_letters/report/reports_slnee_hr_letters.py:134
+#: code:addons/slnee_hr_letters/report/reports_slnee_hr_letters.py:206
+#: code:addons/slnee_hr_letters/report/reports_slnee_hr_letters.py:263
+#: code:addons/slnee_hr_letters/report/reports_slnee_hr_letters.py:318
+#: code:addons/slnee_hr_letters/report/reports_slnee_hr_letters.py:373
+#: code:addons/slnee_hr_letters/report/reports_slnee_hr_letters.py:430
+#: code:addons/slnee_hr_letters/report/reports_slnee_hr_letters.py:485
+#: code:addons/slnee_hr_letters/report/reports_slnee_hr_letters.py:542
+#: code:addons/slnee_hr_letters/report/reports_slnee_hr_letters.py:602
+#: code:addons/slnee_hr_letters/report/reports_slnee_hr_letters.py:659
+#: code:addons/slnee_hr_letters/report/reports_slnee_hr_letters.py:714
+#: code:addons/slnee_hr_letters/report/reports_slnee_hr_letters.py:770
+#: code:addons/slnee_hr_letters/report/reports_slnee_hr_letters.py:826
+#: code:addons/slnee_hr_letters/report/reports_slnee_hr_letters.py:883
+#: code:addons/slnee_hr_letters/report/reports_slnee_hr_letters.py:949
+#: code:addons/slnee_hr_letters/report/reports_slnee_hr_letters.py:1003
+#, python-format
+msgid "Form content is missing, this report cannot be printed."
+msgstr "محتوى النموذج مفقود ، ولا يمكن طباعة هذا التقرير."
+
+#. module: slnee_hr_letters
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_multi_reports_handled_by_id
+msgid "Handled by"
+msgstr "أنجز من قبل"
+
+#. module: slnee_hr_letters
+#: model:ir.actions.report,name:slnee_hr_letters.house_allowence
+msgid "House Allowance"
+msgstr "بدل سكن"
+
+#. module: slnee_hr_letters
+#: selection:multi.reports,report_type:0
+msgid "Housing Allowance"
+msgstr "بدل سكن"
+
+#. module: slnee_hr_letters
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_multi_reports_id
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_bankloan_transfer_female_qweb_id
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_bankloan_transfer_qweb_id
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_bankopen_account_report_female_id
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_bankopen_account_report_id
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_certificate_toapprove_id
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_family_iqama_report_id
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_house_allowance_report_id
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_mroor_qreport_id
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_slnee_hr_letters_transport_report_id
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_saudibritish_bankloan_report_id
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_stamping_certificate_female_report_id
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_stamping_certificate_report_id
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_towhom_concern_female_report_id
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_towhome_concern_arabic_report_id
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_walid_school_report_id
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_whomeconcern_report_id
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_wifefrom_home_country_report_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.view_multi_reports_form
+#: selection:multi.reports,state:0
+msgid "In Progress"
+msgstr "في تَقَدم "
+
+#. module: slnee_hr_letters
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_res_users_is_authorized
+msgid "Is Authorized"
+msgstr "أذن"
+
+#. module: slnee_hr_letters
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_multi_reports___last_update
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_bankloan_transfer_female_qweb___last_update
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_bankloan_transfer_qweb___last_update
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_bankopen_account_report___last_update
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_bankopen_account_report_female___last_update
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_certificate_toapprove___last_update
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_family_iqama_report___last_update
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_house_allowance_report___last_update
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_mroor_qreport___last_update
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_slnee_hr_letters_transport_report___last_update
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_saudibritish_bankloan_report___last_update
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_stamping_certificate_female_report___last_update
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_stamping_certificate_report___last_update
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_towhom_concern_female_report___last_update
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_towhome_concern_arabic_report___last_update
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_walid_school_report___last_update
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_whomeconcern_report___last_update
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_report_slnee_hr_letters_wifefrom_home_country_report___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: slnee_hr_letters
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_multi_reports_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: slnee_hr_letters
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_multi_reports_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: slnee_hr_letters
+#: code:addons/slnee_hr_letters/models/multi_reports.py:95
+#, python-format
+msgid "Letter request is approved."
+msgstr "تمت الموافقة على طلب الرسالة."
+
+#. module: slnee_hr_letters
+#: code:addons/slnee_hr_letters/models/multi_reports.py:89
+#, python-format
+msgid "Letter request is in progress."
+msgstr "طلب الرسالة قيد التقدم."
+
+#. module: slnee_hr_letters
+#: code:addons/slnee_hr_letters/models/multi_reports.py:101
+#, python-format
+msgid "Letter request is refused."
+msgstr "تم رفض طلب الرسالة."
+
+#. module: slnee_hr_letters
+#: model:ir.actions.act_window,name:slnee_hr_letters.action_multi_reports_form
+#: model:ir.ui.menu,name:slnee_hr_letters.menu_slnee_hr_letters_reports
+#: model:ir.ui.view,arch_db:slnee_hr_letters.view_multi_reports_form
+#: model:ir.ui.view,arch_db:slnee_hr_letters.view_multi_reports_tree
+msgid "Letters"
+msgstr "خطابات"
+
+#. module: slnee_hr_letters
+#: model:ir.actions.report,name:slnee_hr_letters.mroor_report
+#: selection:multi.reports,report_type:0
+msgid "Mroor Report"
+msgstr "Mroor تقرير"
+
+#. module: slnee_hr_letters
+#: model:ir.model,name:slnee_hr_letters.model_multi_reports
+msgid "Multi Reports"
+msgstr "تقارير متعددة"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "NON-RENEWABLE [ ]"
+msgstr "غير متجدد [ ]"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "Office Riyadh.  Accordingly, we hereby irrevocably and unconditionally undertake to transfer the monthly salary to the said account at the<u> end of each Gregorian month.</u>"
+msgstr "مكتب الرياض. وبناءً على ذلك ، فإننا نتعهد بموجبه بلا رجعة ودون قيد أو شرط بتحويل الراتب الشهري إلى الحساب المذكور في<u> نهاية كل شهر ميلادي.</u>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "Office.  I also irrevocably and unconditionally assign and authorize the payment of my monthly salary and any other benefits / entitlements from my employment with"
+msgstr "مكتب. مقر. مركز. أنا أيضا بشكل لا رجعة فيه ودون قيد أو شرط ، وتخصيص وتصرح سداد راتب شهري وأي فوائد / استحقاقات أخرى من عملي مع"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "Office:"
+msgstr "مكتب. مقر. مركز:"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.view_multi_reports_form
+msgid "Print"
+msgstr "طباعة"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.view_multi_reports_form
+msgid "Put the description here..."
+msgstr "ضع الوصف هنا ..."
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "RENEWABLE [ ]"
+msgstr "قابل للتجديد [ ]"
+
+#. module: slnee_hr_letters
+#: model:ir.actions.report,name:slnee_hr_letters.certificate_ofapprove
+#: selection:multi.reports,report_type:0
+msgid "Ratification Certificate"
+msgstr "تصديق الشهادة"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.view_multi_reports_form
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: slnee_hr_letters
+#: selection:multi.reports,state:0
+msgid "Refused"
+msgstr "رفض"
+
+#. module: slnee_hr_letters
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_multi_reports_refused_date
+msgid "Refused Date"
+msgstr "تاريخ رفض"
+
+#. module: slnee_hr_letters
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_multi_reports_refused_by
+msgid "Refused by"
+msgstr "رفضت من قبل"
+
+#. module: slnee_hr_letters
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_multi_reports_report_type
+msgid "Report Type"
+msgstr "نوع التقرير"
+
+#. module: slnee_hr_letters
+#: code:addons/slnee_hr_letters/models/multi_reports.py:83
+#, python-format
+msgid "Request Submitted."
+msgstr "طلب مقدم."
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "SR /-"
+msgstr "ريال سعودى /-"
+
+#. module: slnee_hr_letters
+#: model:ir.actions.report,name:slnee_hr_letters.saudibritish_bankloan
+msgid "Saudi British Bank Loan Form"
+msgstr "نموذج قرض البنك السعودي البريطاني"
+
+#. module: slnee_hr_letters
+#: selection:multi.reports,report_type:0
+msgid "Saudi British Bankloan Transfer"
+msgstr "البريطاني نقل قرض البنك السعودي"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.view_multi_reports_form
+msgid "Set to Draft"
+msgstr "تعيين كمسودة"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.walid_school_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.whomeconcern_report
+msgid "Sincerely yours,"
+msgstr "صديقك المخلص،"
+
+#. module: slnee_hr_letters
+#: model:ir.actions.report,name:slnee_hr_letters.stamping_certificate
+msgid "Stamping Certificate"
+msgstr "ختم الشهادة"
+
+#. module: slnee_hr_letters
+#: selection:multi.reports,report_type:0
+msgid "Stamping Certificate  (Male)"
+msgstr "(ختم شهادة (ذكر"
+
+#. module: slnee_hr_letters
+#: selection:multi.reports,report_type:0
+msgid "Stamping Certificate (Female)"
+msgstr "(ختم شهادة (أنثى"
+
+#. module: slnee_hr_letters
+#: model:ir.actions.report,name:slnee_hr_letters.stamping_certificate_female
+msgid "Stamping Certificate Female"
+msgstr "ختم الشهادة أنثى"
+
+#. module: slnee_hr_letters
+#: model:ir.model.fields,field_description:slnee_hr_letters.field_multi_reports_state
+msgid "State"
+msgstr "المحافظة"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.view_multi_reports_form
+msgid "Submit"
+msgstr "عرض"
+
+#. module: slnee_hr_letters
+#: selection:multi.reports,state:0
+msgid "Submitted"
+msgstr "المقدمة"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "Telephone No(s). :"
+msgstr "رقم الهاتف (ق). :"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.walid_school_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.whomeconcern_report
+msgid "This certificate is being issued upon the requested of"
+msgstr "يتم إصدار هذه الشهادة بناء على طلب من"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.walid_school_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.whomeconcern_report
+msgid "This is to certify that"
+msgstr "هذا لتاكيد ان"
+
+#. module: slnee_hr_letters
+#: selection:multi.reports,report_type:0
+msgid "To Whom Concern (Female)"
+msgstr "(لمن القلق (أنثى"
+
+#. module: slnee_hr_letters
+#: model:ir.actions.report,name:slnee_hr_letters.towhom_concern_female
+msgid "To Whom Concern Female"
+msgstr "إلى من يهمه الأمر أنثى"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.whomeconcern_report
+msgid "To Whom It May Concern"
+msgstr "إلي من يهمه الامر"
+
+#. module: slnee_hr_letters
+#: model:ir.actions.report,name:slnee_hr_letters.slnee_hr_letters_whomeconcern
+#: model:ir.actions.report,name:slnee_hr_letters.towhome_concern
+msgid "To Whome Concern"
+msgstr "لمن يهمه الأمر"
+
+#. module: slnee_hr_letters
+#: model:ir.actions.report,name:slnee_hr_letters.slnee_hr_letters_transport
+#: selection:multi.reports,report_type:0
+msgid "Transport Report"
+msgstr "تقرير النقل"
+
+#. module: slnee_hr_letters
+#: code:addons/slnee_hr_letters/models/ir_actions_report.py:156
+#, python-format
+msgid "Unable to find Wkhtmltopdf on this system. The PDF can not be created."
+msgstr "غير قادر على العثور على Wkhtmltopdf على هذا النظام. لا يمكن إنشاء ملف PDF."
+
+#. module: slnee_hr_letters
+#: model:ir.model,name:slnee_hr_letters.model_res_users
+msgid "Users"
+msgstr "المستخدمون"
+
+#. module: slnee_hr_letters
+#: model:ir.actions.report,name:slnee_hr_letters.walid_school
+#: selection:multi.reports,report_type:0
+msgid "Valid School"
+msgstr "مدرسة صالحة"
+
+#. module: slnee_hr_letters
+#: selection:multi.reports,report_type:0
+msgid "Wife From  Home Country"
+msgstr "زوجة من المنزل البلد"
+
+#. module: slnee_hr_letters
+#: model:ir.actions.report,name:slnee_hr_letters.wifefrom_home_country
+msgid "Wife Home Country"
+msgstr "زوجة منزل البلد"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.certificate_toapprove
+msgid "__ السادة / الملحقية السعودية في"
+msgstr "__ السادة / الملحقية السعودية في"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.whomeconcern_report
+msgid "___________________________"
+msgstr "___________________________"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.walid_school_report
+msgid "_____________________________"
+msgstr "_____________________________"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.whomeconcern_report
+msgid "as a full time employee since"
+msgstr "كموظف بدوام كامل منذ ذلك الحين"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.whomeconcern_report
+msgid "gross salary is SR"
+msgstr "الراتب الإجمالي هو ريال"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.walid_school_report
+msgid "has been working with us in the capacity of in the capacity of\n"
+"                                 <font color=\"white\"> </font>"
+msgstr "وقد تم العمل معنا في القدرة في\n"
+"                                 <font color=\"white\"> </font>"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "hereby irrevocably and unconditionally authorize The Saudi British Bank to deduct any amount due to the Bank from my Account No."
+msgstr "بموجب هذا ، وبموجب القرار غير المشروط وغير المشروط ، يقوم المصرف السعودي البريطاني بإقتطاع أي مبلغ مستحق للبنك من رقم حسابي."
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.whomeconcern_report
+msgid "in"
+msgstr "في"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.walid_school_report
+msgid "in the"
+msgstr "في ال"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.whomeconcern_report
+msgid "in the capacity of\n"
+"                            <font color=\"white\"> </font>"
+msgstr "في قدرة\n"
+"                            <font color=\"white\"> </font>"
+
+#. module: slnee_hr_letters
+#: model:ir.model,name:slnee_hr_letters.model_ir_actions_report
+msgid "ir.actions.report"
+msgstr "ir.actions.report"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.whomeconcern_report
+msgid "is employed with"
+msgstr "يعمل مع"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "maintained at"
+msgstr "حافظت على"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "maintained with your"
+msgstr "حافظت مع الخاص بك"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.whomeconcern_report
+msgid "national, holder of ID No"
+msgstr "وطني ، حامل هوية شخصية"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.walid_school_report
+msgid "national, holding ID No"
+msgstr "وطنية ، عقد معرف"
+
+#. module: slnee_hr_letters
+#: model:ir.model,name:slnee_hr_letters.model_report_slnee_hr_letters_bankloan_transfer_female_qweb
+msgid "report.slnee_hr_letters.bankloan_transfer_female_qweb"
+msgstr "report.slnee_hr_letters.bankloan_transfer_female_qweb"
+
+#. module: slnee_hr_letters
+#: model:ir.model,name:slnee_hr_letters.model_report_slnee_hr_letters_bankloan_transfer_qweb
+msgid "report.slnee_hr_letters.bankloan_transfer_qweb"
+msgstr "report.slnee_hr_letters.bankloan_transfer_qweb"
+
+#. module: slnee_hr_letters
+#: model:ir.model,name:slnee_hr_letters.model_report_slnee_hr_letters_bankopen_account_report
+msgid "report.slnee_hr_letters.bankopen_account_report"
+msgstr "report.slnee_hr_letters.bankopen_account_report"
+
+#. module: slnee_hr_letters
+#: model:ir.model,name:slnee_hr_letters.model_report_slnee_hr_letters_bankopen_account_report_female
+msgid "report.slnee_hr_letters.bankopen_account_report_female"
+msgstr "report.slnee_hr_letters.bankopen_account_report_female"
+
+#. module: slnee_hr_letters
+#: model:ir.model,name:slnee_hr_letters.model_report_slnee_hr_letters_certificate_toapprove
+msgid "report.slnee_hr_letters.certificate_toapprove"
+msgstr "report.slnee_hr_letters.certificate_toapprove"
+
+#. module: slnee_hr_letters
+#: model:ir.model,name:slnee_hr_letters.model_report_slnee_hr_letters_family_iqama_report
+msgid "report.slnee_hr_letters.family_iqama_report"
+msgstr "report.slnee_hr_letters.family_iqama_report"
+
+#. module: slnee_hr_letters
+#: model:ir.model,name:slnee_hr_letters.model_report_slnee_hr_letters_house_allowance_report
+msgid "report.slnee_hr_letters.house_allowance_report"
+msgstr "report.slnee_hr_letters.house_allowance_report"
+
+#. module: slnee_hr_letters
+#: model:ir.model,name:slnee_hr_letters.model_report_slnee_hr_letters_mroor_qreport
+msgid "report.slnee_hr_letters.mroor_qreport"
+msgstr "report.slnee_hr_letters.mroor_qreport"
+
+#. module: slnee_hr_letters
+#: model:ir.model,name:slnee_hr_letters.model_report_slnee_hr_letters_slnee_hr_letters_transport_report
+msgid "report.slnee_hr_letters.slnee_hr_letters_transport_report"
+msgstr "report.slnee_hr_letters.slnee_hr_letters_transport_report"
+
+#. module: slnee_hr_letters
+#: model:ir.model,name:slnee_hr_letters.model_report_slnee_hr_letters_saudibritish_bankloan_report
+msgid "report.slnee_hr_letters.saudibritish_bankloan_report"
+msgstr "report.slnee_hr_letters.saudibritish_bankloan_report"
+
+#. module: slnee_hr_letters
+#: model:ir.model,name:slnee_hr_letters.model_report_slnee_hr_letters_stamping_certificate_female_report
+msgid "report.slnee_hr_letters.stamping_certificate_female_report"
+msgstr "report.slnee_hr_letters.stamping_certificate_female_report"
+
+#. module: slnee_hr_letters
+#: model:ir.model,name:slnee_hr_letters.model_report_slnee_hr_letters_stamping_certificate_report
+msgid "report.slnee_hr_letters.stamping_certificate_report"
+msgstr "report.slnee_hr_letters.stamping_certificate_report"
+
+#. module: slnee_hr_letters
+#: model:ir.model,name:slnee_hr_letters.model_report_slnee_hr_letters_towhom_concern_female_report
+msgid "report.slnee_hr_letters.towhom_concern_female_report"
+msgstr "report.slnee_hr_letters.towhom_concern_female_report"
+
+#. module: slnee_hr_letters
+#: model:ir.model,name:slnee_hr_letters.model_report_slnee_hr_letters_towhome_concern_arabic_report
+msgid "report.slnee_hr_letters.towhome_concern_arabic_report"
+msgstr "report.slnee_hr_letters.towhome_concern_arabic_report"
+
+#. module: slnee_hr_letters
+#: model:ir.model,name:slnee_hr_letters.model_report_slnee_hr_letters_walid_school_report
+msgid "report.slnee_hr_letters.walid_school_report"
+msgstr "report.slnee_hr_letters.walid_school_report"
+
+#. module: slnee_hr_letters
+#: model:ir.model,name:slnee_hr_letters.model_report_slnee_hr_letters_whomeconcern_report
+msgid "report.slnee_hr_letters.whomeconcern_report"
+msgstr "report.slnee_hr_letters.whomeconcern_report"
+
+#. module: slnee_hr_letters
+#: model:ir.model,name:slnee_hr_letters.model_report_slnee_hr_letters_wifefrom_home_country_report
+msgid "report.slnee_hr_letters.wifefrom_home_country_report"
+msgstr "report.slnee_hr_letters.wifefrom_home_country_report"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "to The Saudi British Bank."
+msgstr "إلى البنك السعودي البريطاني."
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.saudibritish_bankloan_report
+msgid "with Iqama No"
+msgstr "مع الإقامة لا"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.walid_school_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.whomeconcern_report
+msgid "without any obligation to our company."
+msgstr "دون أي التزام لشركتنا."
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.walid_school_report
+msgid "would like to enrol his child."
+msgstr "يود تسجيل طفله."
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+msgid "استمــرار تحـويل الرواتـب الشـهرية للمــذكور أعــلاه لايـداعها في"
+msgstr "استمــرار تحـويل الرواتـب الشـهرية للمــذكور أعــلاه لايـداعها في"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report_female
+msgid "التـاريخ :"
+msgstr "التـاريخ :"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.house_allowance_report
+msgid "التـاريخ‬  :‬‬"
+msgstr "التـاريخ‬  :‬‬"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.mroor_qreport
+msgid "التـاريخ‬ :‫"
+msgstr "التـاريخ‬ :‫"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report
+msgid "الجنسية بموجب إقامة/ بطاقة أحوال رقم"
+msgstr "الجنسية بموجب إقامة/ بطاقة أحوال رقم"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.family_iqama_report
+msgid "الرياض - المملكة العربية السعودية"
+msgstr "الرياض - المملكة العربية السعودية"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.wifefrom_home_country_report
+msgid "السادة / مدير مكتب الإستقدام"
+msgstr "السادة / مدير مكتب الإستقدام"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.family_iqama_report
+msgid "السادة / مدير مكتب الإستقدام بالرياض"
+msgstr "السادة / مدير مكتب الإستقدام بالرياض"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.mroor_qreport
+msgid "السـادة / إدارة مـرور الرياض"
+msgstr "السـادة / إدارة مـرور الرياض"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report_female
+#: model:ir.ui.view,arch_db:slnee_hr_letters.certificate_toapprove
+#: model:ir.ui.view,arch_db:slnee_hr_letters.family_iqama_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.mroor_qreport
+msgid "المحترمين"
+msgstr "المحترمين"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+msgid "المملكة العربية السعودية"
+msgstr "المملكة العربية السعودية"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+msgid "الموافق"
+msgstr "الموافق"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report_female
+#: model:ir.ui.view,arch_db:slnee_hr_letters.family_iqama_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.house_allowance_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.mroor_qreport
+#: model:ir.ui.view,arch_db:slnee_hr_letters.slnee_hr_letters_transport_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhom_concern_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhome_concern_arabic_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.wifefrom_home_country_report
+msgid "الموافق‬"
+msgstr "الموافق‬"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+msgid "تاريخ منذ"
+msgstr "تاريخ منذ"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report_female
+msgid "ريال، ولا تزال على"
+msgstr "ريال، ولا تزال على"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report
+msgid "ريال، ولا يزال على رأس"
+msgstr "ريال، ولا يزال على رأس"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.certificate_toapprove
+msgid "منذ تاريخ"
+msgstr "منذ تاريخ"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_report
+msgid "نفيدكم بأن الأستاذ/"
+msgstr "نفيدكم بأن الأستاذ/"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report_female
+msgid "هـ"
+msgstr "هـ"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.certificate_toapprove
+#: model:ir.ui.view,arch_db:slnee_hr_letters.house_allowance_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.mroor_qreport
+msgid "هـ‬‬"
+msgstr "هـ‬‬"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report
+msgid "هو"
+msgstr "هو"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report_female
+msgid "وتتقاضى المذكورة راتبا إجماليا وقدره"
+msgstr "وتتقاضى المذكورة راتبا إجماليا وقدره"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+msgid "وتحويل مستحقات نهاية الخدمة عند استقالته او تقاعده على أن لا يتم"
+msgstr "وتحويل مستحقات نهاية الخدمة عند استقالته او تقاعده على أن لا يتم"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report_female
+#: model:ir.ui.view,arch_db:slnee_hr_letters.certificate_toapprove
+msgid "وقد أعطي هذا التعريف بناء على طلبه دون أدنى مسؤولية مالية او"
+msgstr "وقد أعطي هذا التعريف بناء على طلبه دون أدنى مسؤولية مالية او"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+msgid "وقد منح له هذا الخطاب بناء على طلبه دون أدنى مسؤولية"
+msgstr "وقد منح له هذا الخطاب بناء على طلبه دون أدنى مسؤولية"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report
+msgid "ويتقاضى المذكور راتبا إجماليا وقدر"
+msgstr "ويتقاضى المذكور راتبا إجماليا وقدر"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report
+msgid "يعمل بوظيفة"
+msgstr "يعمل بوظيفة"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+msgid "١.الراتب الأساسي :"
+msgstr "١.الراتب الأساسي :"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+msgid "٢. بدل سكن :"
+msgstr "٢. بدل سكن :"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_female_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankloan_transfer_qweb
+msgid "٣. بدل نقل :"
+msgstr "٣. بدل نقل :"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.family_iqama_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.stamping_certificate_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhom_concern_female_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.towhome_concern_arabic_report
+#: model:ir.ui.view,arch_db:slnee_hr_letters.wifefrom_home_country_report
+msgid "‪هـ‬‬"
+msgstr "‪هـ‬‬"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.certificate_toapprove
+msgid "‫\n"
+"                                الموافق‬"
+msgstr "‫\n"
+"                                الموافق‬"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.certificate_toapprove
+msgid "‫\n"
+"                            ‫التـاريخ‬ :‬‬"
+msgstr "‫\n"
+"                            ‫التـاريخ‬ :‬‬"
+
+#. module: slnee_hr_letters
+#: model:ir.ui.view,arch_db:slnee_hr_letters.bankopen_account_report
+msgid "‫ ‬‬ ‫التـاريخ :‬"
+msgstr "‫ ‬‬ ‫التـاريخ :‬"
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="branch_res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.hr</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="hr.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('settings')]/div[@data-key='hr']" position="inside">
+                <h2>Multi Branch</h2>
+                <div class="row mt16 o_settings_container">
+                    <div class="col-xs-12 col-md-6 o_setting_box">
+                        <div class="col-xs-12 col-md-6 o_setting_box" title="Show organizational chart on employee form">
+                            <div class="o_setting_left_pane">
+                                <field name="group_group_company_branch"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="group_group_company_branch"/>
+                                <div class="text-muted">
+                                    Show Company Branch in employee form.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

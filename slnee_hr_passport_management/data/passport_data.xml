@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Massage subtype passport registration-->
+    <record id="mt_passport_registration_confirm" model="mail.message.subtype">
+        <field name="name">Passport Registration Confirmed</field>
+        <field name="res_model">emp.passport.register</field>
+        <field name="description">Passport Registration Confirmed</field>
+    </record>
+    <record id="mt_passport_receive" model="mail.message.subtype">
+        <field name="name">Passport Received</field>
+        <field name="res_model">emp.passport.register</field>
+        <field name="description">Passport Received</field>
+    </record>
+    <record id="mt_passport_registration_cancel" model="mail.message.subtype">
+        <field name="name">Passport Registration Cancel</field>
+        <field name="res_model">emp.passport.register</field>
+        <field name="description">Passport Registration Cancel</field>
+    </record>
+    <record id="mt_passport_registration_stage" model="mail.message.subtype">
+        <field name="name">Stage Changed</field>
+        <field name="res_model">emp.passport.register</field>
+        <field name="default" eval="False"/>
+        <field name="description">Stage changed</field>
+    </record>
+
+    <!-- Massage subtype employee passport request-->
+    <record id="mt_passport_request_confirm" model="mail.message.subtype">
+        <field name="name">Passport Request Confirmed</field>
+        <field name="res_model">emp.passport.request</field>
+        <field name="description">Passport Request Confirmed</field>
+    </record>
+    <record id="mt_passport_request_approve_gr" model="mail.message.subtype">
+        <field name="name">GR User Has Approved Passport Request</field>
+        <field name="res_model">emp.passport.request</field>
+        <field name="description">GR User Has Approved Passport Request</field>
+    </record>
+    <record id="mt_passport_request_approve_gr_manager" model="mail.message.subtype">
+        <field name="name">GR Manager Approve Passport Request And Ready For Allocation TO Employee</field>
+        <field name="res_model">emp.passport.request</field>
+        <field name="description">GR Manager Approve Passport Request</field>
+    </record>
+    <record id="mt_passport_request_employee_submit" model="mail.message.subtype">
+        <field name="name">Employee Has Submitted Passport To GR</field>
+        <field name="res_model">emp.passport.request</field>
+        <field name="description">Employee Has Submitted Passport To GR</field>
+    </record>
+    <record id="mt_passport_request_receive" model="mail.message.subtype">
+        <field name="name">GR Has Received Passport From Employee</field>
+        <field name="res_model">emp.passport.request</field>
+        <field name="description">GR Has Received Passport From Employee</field>
+    </record>
+    <record id="mt_passport_request_cancel" model="mail.message.subtype">
+        <field name="name">Passport Request Cancel</field>
+        <field name="res_model">emp.passport.request</field>
+        <field name="description">Passport Request Cancel</field>
+    </record>
+    <record id="mt_passport_request_stage" model="mail.message.subtype">
+        <field name="name">Stage Changed</field>
+        <field name="res_model">emp.passport.request</field>
+        <field name="default" eval="False"/>
+        <field name="description">Stage changed</field>
+    </record>
+
+    <!-- Massage subtype Internal Passport Process-->
+    <record id="mt_internal_passport_process_confirm" model="mail.message.subtype">
+        <field name="name">Internal Passport Process Request Confirmed</field>
+        <field name="res_model">int.passport.process</field>
+        <field name="description">Internal Passport Process Request Confirmed</field>
+    </record>
+    <record id="mt_internal_passport_process_approve" model="mail.message.subtype">
+        <field name="name">Internal Passport Process Request Has Been Approved By GR Manager And Passport Is Now Ready For Allocation To GR user</field>
+        <field name="res_model">int.passport.process</field>
+        <field name="description">Internal Passport Process Request Has Been Approved By GR Manager And Passport Is Now Ready For Allocation To GR User</field>
+    </record>
+    <record id="mt_passport_submit" model="mail.message.subtype">
+        <field name="name">Passport Is Submitted By GR User</field>
+        <field name="res_model">int.passport.process</field>
+        <field name="description">Passport Is Submitted By GR User</field>
+    </record>
+    <record id="mt_internal_passport_process_cancel" model="mail.message.subtype">
+        <field name="name">Internal Passport Process Request Cancel</field>
+        <field name="res_model">int.passport.process</field>
+        <field name="description">Internal Passport Process Request Cancel</field>
+    </record>
+    <record id="mt_internal_passport_process_stage" model="mail.message.subtype">
+        <field name="name">Stage Changed</field>
+        <field name="res_model">emp.passport.request</field>
+        <field name="default" eval="False"/>
+        <field name="description">Stage changed</field>
+    </record>
+</odoo>

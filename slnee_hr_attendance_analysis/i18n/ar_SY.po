@@ -1,0 +1,521 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_attendance_analysis
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-12 08:46+0000\n"
+"PO-Revision-Date: 2018-09-12 08:46+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/wizard/print_calendar_report.py:131
+#, python-format
+msgid "%s: 'Work to' is < 'Work from'"
+msgstr "'العمل على' هو <'العمل من':%s"
+
+#. module: slnee_hr_attendance_analysis
+#: selection:resource.calendar,attendance_rounding:0
+#: selection:resource.calendar,leave_rounding:0
+#: selection:resource.calendar,overtime_rounding:0
+msgid "10"
+msgstr "10"
+
+#. module: slnee_hr_attendance_analysis
+#: selection:resource.calendar,attendance_rounding:0
+#: selection:resource.calendar,leave_rounding:0
+#: selection:resource.calendar,overtime_rounding:0
+msgid "12"
+msgstr "12"
+
+#. module: slnee_hr_attendance_analysis
+#: selection:resource.calendar,attendance_rounding:0
+#: selection:resource.calendar,leave_rounding:0
+#: selection:resource.calendar,overtime_rounding:0
+msgid "15"
+msgstr "15"
+
+#. module: slnee_hr_attendance_analysis
+#: selection:resource.calendar,attendance_rounding:0
+#: selection:resource.calendar,leave_rounding:0
+#: selection:resource.calendar,overtime_rounding:0
+msgid "20"
+msgstr "20"
+
+#. module: slnee_hr_attendance_analysis
+#: selection:resource.calendar,attendance_rounding:0
+#: selection:resource.calendar,leave_rounding:0
+#: selection:resource.calendar,overtime_rounding:0
+msgid "30"
+msgstr "30"
+
+#. module: slnee_hr_attendance_analysis
+#: selection:resource.calendar,attendance_rounding:0
+#: selection:resource.calendar,leave_rounding:0
+#: selection:resource.calendar,overtime_rounding:0
+msgid "60"
+msgstr "60"
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:40
+#, python-format
+msgid "April"
+msgstr "أبريلv"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model,name:slnee_hr_attendance_analysis.model_hr_attendance
+msgid "Attendance"
+msgstr "حضور"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.actions.act_window,name:slnee_hr_attendance_analysis.open_view_attendance
+#: model:ir.ui.menu,name:slnee_hr_attendance_analysis.menu_open_view_attendance
+msgid "Attendance Analysis"
+msgstr "تحليل الحضور"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,field_description:slnee_hr_attendance_analysis.field_hr_attendance_duration
+msgid "Attendance duration"
+msgstr "مدة الحضور"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,field_description:slnee_hr_attendance_analysis.field_resource_calendar_attendance_rounding
+msgid "Attendance rounding"
+msgstr "الحضور التقريب"
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:48
+#, python-format
+msgid "August"
+msgstr "أغسطس"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,field_description:slnee_hr_attendance_analysis.field_resource_calendar_overtime_type_calendar_id
+msgid "Calendar"
+msgstr "التقويم"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.ui.view,arch_db:slnee_hr_attendance_analysis.view_hr_attendance_calendar
+msgid "Calendar View"
+msgstr "عرض النتيجة"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.ui.view,arch_db:slnee_hr_attendance_analysis.view_hr_attendance_filter
+msgid "Check IN"
+msgstr "تحقق في"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model,name:slnee_hr_attendance_analysis.model_res_company
+msgid "Companies"
+msgstr "الشركات"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,field_description:slnee_hr_attendance_analysis.field_resource_calendar_overtime_type_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,field_description:slnee_hr_attendance_analysis.field_resource_calendar_overtime_type_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:15
+msgid "Date"
+msgstr "تاريخ"
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:16
+msgid "Day of week"
+msgstr "يوم من الأسبوع"
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:56
+#, python-format
+msgid "December"
+msgstr "ديسمبر"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,field_description:slnee_hr_attendance_analysis.field_resource_calendar_overtime_type_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:33
+msgid "Due"
+msgstr "بسبب"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,field_description:slnee_hr_attendance_analysis.field_hr_attendance_inside_calendar_duration
+msgid "Duration within working schedule"
+msgstr "مدة ضمن جدول العمل"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.ui.view,arch_db:slnee_hr_attendance_analysis.view_hr_attendance_filter
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.ui.view,arch_db:slnee_hr_attendance_analysis.view_attendance_analysis
+msgid "Employee attendances analysis"
+msgstr "تحليل الحضور موظف"
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:11
+msgid "Employee: "
+msgstr ":عامل"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,field_description:slnee_hr_attendance_analysis.field_hr_attendance_end_datetime
+msgid "End date time"
+msgstr "الوقت تاريخ انتهاء"
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:36
+#, python-format
+msgid "February"
+msgstr "فبراير"
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:18
+msgid "First Sign In"
+msgstr "أول دخول"
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:19
+msgid "First Sign Out"
+msgstr "أول تسجيل الخروج"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,help:slnee_hr_attendance_analysis.field_resource_calendar_attendance_rounding
+msgid "For instance, using rounding = 15 minutes, every sign in will be rounded to the following quarter hour and every sign out to the previous quarter hour"
+msgstr "على سبيل المثال، وذلك باستخدام التقريب = 15 دقيقة، كل تسجيل الدخول سيتم تقريب إلى ربع ساعة التالية وكل الخروج إلى ربع ساعة الماضية"
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:30
+msgid "Fourth Sign In"
+msgstr "تسجيل رابع في"
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:31
+msgid "Fourth Sign Out"
+msgstr "رابع تسجيل الخروج"
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:23
+#, python-format
+msgid "Friday"
+msgstr "الجمعة"
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/wizard/print_calendar_report.py:54
+#, python-format
+msgid "From date must be < to date"
+msgstr "من يجب أن يكون تاريخ <حتى الآنمن يجب أن يكون تاريخ <حتى الآن"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.ui.view,arch_db:slnee_hr_attendance_analysis.view_hr_attendance_filter
+msgid "Group By..."
+msgstr "تجميع حسب.."
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.ui.view,arch_db:slnee_hr_attendance_analysis.view_hr_attendance_filter
+msgid "Hr Attendance Search"
+msgstr "بحث حضور  الموارد البشرية"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,field_description:slnee_hr_attendance_analysis.field_resource_calendar_overtime_type_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/models/hr_attendance.py:95
+#, python-format
+msgid "Incongruent data: sign-in %s is followed by another sign-in"
+msgstr "ويتبع٪ ق تسجيل الدخول قبل في تسجيل الدخول آخر: بيانات تتعارض"
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:34
+#, python-format
+msgid "January"
+msgstr "يناير"
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:46
+#, python-format
+msgid "July"
+msgstr "يوليو"
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:44
+#, python-format
+msgid "June"
+msgstr "يونيو"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,field_description:slnee_hr_attendance_analysis.field_resource_calendar_overtime_type___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,field_description:slnee_hr_attendance_analysis.field_resource_calendar_overtime_type_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,field_description:slnee_hr_attendance_analysis.field_resource_calendar_overtime_type_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:37
+msgid "Leave"
+msgstr "ترك"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,field_description:slnee_hr_attendance_analysis.field_resource_calendar_leave_rounding
+msgid "Leave rounding"
+msgstr "ترك التقريب"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,field_description:slnee_hr_attendance_analysis.field_resource_calendar_overtime_type_limit
+msgid "Limit"
+msgstr "حد"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,help:slnee_hr_attendance_analysis.field_resource_calendar_overtime_type_limit
+msgid "Limit, in hours, of overtime that can be imputed to this type of overtime in a day. The surplus is imputed to the subsequent type"
+msgstr "الحد، بالساعات والعمل الإضافي وهذا يمكن أن تنسب لهذا النوع من العمل الإضافي في يوم واحد. وتنسب الفائض إلى نوع احقا"
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:38
+#, python-format
+msgid "March"
+msgstr "مسيرة"
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:42
+#, python-format
+msgid "May"
+msgstr "قد"
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:15
+#, python-format
+msgid "Monday"
+msgstr "الإثنين"
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:36
+msgid "Negative"
+msgstr "سلبي"
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:54
+#, python-format
+msgid "November"
+msgstr "تشرين الثاني"
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:52
+#, python-format
+msgid "October"
+msgstr "أكتوبر"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,help:slnee_hr_attendance_analysis.field_resource_calendar_leave_rounding
+msgid "On the contrary of overtime rounding, using rounding = 15 minutes, a leave of 1 minute will be considered as 15 minutes, 16 minutes as 30 minutes and so on"
+msgstr "على العكس من التقريب العمل الإضافي، وذلك باستخدام التقريب = 15 دقيقة، لترك من 1 دقيقة سيعتبر 15 دقيقة، 16 دقيقة إلى 30 دقيقة، وهلم جرا"
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:35
+#: model:ir.model.fields,field_description:slnee_hr_attendance_analysis.field_hr_attendance_outside_calendar_duration
+#: model:ir.ui.view,arch_db:slnee_hr_attendance_analysis.view_attendance_analysis
+msgid "Overtime"
+msgstr "متأخر، بعد فوات الوقت"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,help:slnee_hr_attendance_analysis.field_resource_calendar_overtime_rounding_tolerance
+msgid "Overtime can be rounded using a tolerance. Using tolerance = 3 minutes and rounding = 15 minutes, if employee does overtime of 12 minutes, it will be considered as 15 minutes."
+msgstr "ويمكن تقريب الإضافي باستخدام التسامح. باستخدام التسامح = 3 دقائق والتقريب = 15 دقيقة، وإذا الموظف يفعل العمل الإضافي من 12 دقيقة، سيتم النظر فيه من 15 دقيقة"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,field_description:slnee_hr_attendance_analysis.field_resource_calendar_overtime_rounding
+msgid "Overtime rounding"
+msgstr "العمل الإضافي التقريب"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,field_description:slnee_hr_attendance_analysis.field_resource_calendar_overtime_rounding_tolerance
+msgid "Overtime rounding tolerance"
+msgstr "التسامح التقريب العمل الإضافي"
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:120
+#: model:ir.model,name:slnee_hr_attendance_analysis.model_resource_calendar_overtime_type
+msgid "Overtime type"
+msgstr "نوع العمل الإضافي"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,field_description:slnee_hr_attendance_analysis.field_resource_calendar_overtime_type_ids
+msgid "Overtime types"
+msgstr "Oأنواع العمل الإضافي"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model,name:slnee_hr_attendance_analysis.model_resource_calendar
+msgid "Resource Calendar"
+msgstr "تقويم المورد"
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:25
+#, python-format
+msgid "Saturday"
+msgstr "السبت"
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:22
+msgid "Second Sign In"
+msgstr "العلامة الثانية في"
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:23
+msgid "Second Sign Out"
+msgstr "ثانيا تسجيل الخروج"
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:50
+#, python-format
+msgid "September"
+msgstr "سبتمبر"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,field_description:slnee_hr_attendance_analysis.field_resource_calendar_overtime_type_sequence
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,help:slnee_hr_attendance_analysis.field_resource_calendar_overtime_rounding
+msgid "Setting rounding = 30 minutes, an overtime of 29 minutes will be considered as 0 minutes, 31 minutes as 30 minutes, 61 minutes as 1 hour and so on"
+msgstr "وضع التقريب = 30 دقيقة، وسيتم النظر في الوقت بدل الضائع من 29 دقيقة كما 0 دقيقة، 31 دقيقة إلى 30 دقيقة، 61 دقيقة الى 1 ساعة وهلم جرا"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,help:slnee_hr_attendance_analysis.field_resource_calendar_attendance_tolerance_to
+msgid "Sign in done in the interval \"Work from + Tolerance to\" will be considered done at \"Work from\""
+msgstr "تسجيل الدخول به في الفترة الفاصلة العمل من التسامح + ل وسيتم ذلك في نظرت العمل من""
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,help:slnee_hr_attendance_analysis.field_resource_calendar_attendance_tolerance_from
+msgid "Sign out done in the interval \"Work to - Tolerance from\" will be considered done at \"Work to\""
+msgstr "تسجيل الخروج به في الفترة الفاصلة العمل ل- التسامح من  وسيتم ذلك في نظرت العمل على"
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:27
+#, python-format
+msgid "Sunday"
+msgstr "الأحد"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,help:slnee_hr_attendance_analysis.field_res_company_working_time_precision
+msgid "The precision used to analysis working times over working schedule"
+msgstr "تحليل دقة تستخدم لأوقات العمل على جدول العمل"
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:26
+msgid "Third Sign In"
+msgstr "العلامة الثالثة في"
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:27
+msgid "Third Sign Out"
+msgstr "ثالث تسجيل الخروج"
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:21
+#, python-format
+msgid "Thursday"
+msgstr "الخميس"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.ui.view,arch_db:slnee_hr_attendance_analysis.view_hr_attendance_filter
+msgid "Today"
+msgstr "اليوم"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,field_description:slnee_hr_attendance_analysis.field_resource_calendar_attendance_tolerance_from
+msgid "Tolerance from"
+msgstr "التسامح من"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,field_description:slnee_hr_attendance_analysis.field_resource_calendar_attendance_tolerance_to
+msgid "Tolerance to"
+msgstr "التسامح ل"
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:121
+msgid "Total"
+msgstr "مجموع"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.ui.view,arch_db:slnee_hr_attendance_analysis.view_attendance_analysis
+msgid "Total hours"
+msgstr "مجموع ساعات"
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:90
+msgid "Totals"
+msgstr "المجاميع"
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:17
+#, python-format
+msgid "Tuesday"
+msgstr "الثلاثاء"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,field_description:slnee_hr_attendance_analysis.field_resource_calendar_overtime_type_name
+msgid "Type Description"
+msgstr "نوع الوصف"
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:19
+#, python-format
+msgid "Wednesday"
+msgstr "الأربعاء"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.ui.view,arch_db:slnee_hr_attendance_analysis.view_attendance_analysis
+msgid "Within working schedule"
+msgstr "ضمن جدول العمل"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model,name:slnee_hr_attendance_analysis.model_resource_calendar_attendance
+msgid "Work Detail"
+msgstr "تفاصيل العمل"
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:34
+msgid "Working Hours"
+msgstr "ساعات العمل"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.ui.menu,name:slnee_hr_attendance_analysis.menu_view_resource_calendar
+msgid "Working Time"
+msgstr "ساعات العمل"
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model.fields,field_description:slnee_hr_attendance_analysis.field_res_company_working_time_precision
+msgid "Working Time Precision"
+msgstr "دقة مواعيد العمل"
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/models/hr_attendance.py:166
+#, python-format
+msgid "Wrongly configured working schedule with id %s"
+msgstr "%s مع معرف جدول العمل تكوين خطأ"
+

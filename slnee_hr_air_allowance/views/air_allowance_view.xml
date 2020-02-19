@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_city_airfare_tree" model="ir.ui.view">
+        <field name="name">city.airfare.tree</field>
+        <field name="model">city.airfare</field>
+        <field name="arch" type="xml">
+            <tree string="City AirFare">
+                <field name="country_id" />
+                <field name="city_id" />
+                <field name="adult_fare"/>
+                <field name="child_fare"/>
+                <field name="infant_fare"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_city_airfare_form" model="ir.ui.view">
+        <field name="name">city.airfare.form</field>
+        <field name="model">city.airfare</field>
+        <field name="arch" type="xml">
+            <form string="Grade">
+                <group col="4">
+                    <field name="country_id"/>
+                    <field name="city_id" attrs="{'invisible': [('country_id','=',False)]}"
+                           context="{'default_country_id':country_id}"/>
+                    <field name="adult_fare"/>
+                    <field name="child_fare"/>
+                    <field name="infant_fare"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="city_airfare_filter" model="ir.ui.view">
+        <field name="name">city.airfare.list.select</field>
+        <field name="model">city.airfare</field>
+        <field name="arch" type="xml">
+            <search>
+                <group expand="0" string="Group By...">
+                    <filter string="Country" context="{'group_by':'country_id'}"/>
+                    <filter string="City" context="{'group_by':'city_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_city_airfare">
+        <field name="name">Air Fares</field>
+        <field name="res_model">city.airfare</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Click to define a new Air Fare.</p>
+        </field>
+    </record>
+
+    <record id="hr_contract_view_inherit_overtime_form1" model="ir.ui.view">
+        <field name="name">hr.contract.view.inherit.overtime.form1</field>
+        <field name="model">hr.contract</field>
+        <field name="inherit_id" ref="slnee_hr_contract.hr_contract_view_inherit_overtime_form1" />
+        <field name="arch" type="xml">
+            <group name="other_allowance" position="after">
+                <group name="Air Allowance">
+                    <field name="air_allowance"/>
+                    <field name="adults" attrs="{'invisible': [('air_allowance','!=',True)],'required': [('air_allowance','=',True)]}"/>
+                    <field name="children" attrs="{'invisible': [('air_allowance','!=',True)],'required': [('air_allowance','=',True)]}"/>
+                    <field name="infant" attrs="{'invisible': [('air_allowance','!=',True)],'required': [('air_allowance','=',True)]}"/>
+                    <field name="air_destination" attrs="{'invisible': [('air_allowance','!=',True)],'required': [('air_allowance','=',True)]}"/>
+                </group>
+            </group>
+        </field>
+    </record>
+
+    <!--<record id="hr_employee_view_inherit_air_allowance_form" model="ir.ui.view">
+        <field name="name">hr.employee.view.inherit.air.allowance.form</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='user_id']" position="after">
+                <field name="duration_in_months"/>
+            </xpath>
+        </field>
+    </record>-->
+
+    <record id="action_air_fare" model="ir.actions.act_window">
+        <field name="name">Air Fare</field>
+        <field name="res_model">city.airfare</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Air allowance fare Menu-->
+    <menuitem id="menu_config_air_fare" parent="hr.menu_human_resources_configuration" string="Air Fare"
+              action="action_air_fare" sequence="7" groups="hr.group_hr_user"/>
+</odoo>

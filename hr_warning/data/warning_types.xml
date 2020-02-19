@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="attendance_warning_type" model="warning.type">
+            <field name="name">Attendance Warning</field>
+            <field name="warning_action">deduct</field>
+            <field name="description">An employee is usually given an attendance warning due to chronic tardiness and absenteeism. As we all know, both tardiness and absenteeism do not only affect the overall productivity of the business, but they also impact on the morale of the other members of the organization.</field>
+        </record>
+
+        <record id="poor_performance_warning_type" model="warning.type">
+            <field name="name">Poor Performance Warning</field>
+            <field name="warning_action">expiry</field>
+            <field name="description">This type of employee warning is commonly written for an employee who has been underperforming in achieving his or her quota or when the employee is not functioning well to fulfill his or her duties and responsibilities.</field>
+        </record>
+
+        <record id="behavior_warning_type" model="warning.type">
+            <field name="name">Behavior Warning</field>
+            <field name="warning_action">expiry</field>
+            <field name="description">An employee who has shown unacceptable behavior in the workplace is given a behavior warning, especially if such behavior has caused disruption in the production.</field>
+        </record>
+
+        <record id="tenant_warning_type" model="warning.type">
+            <field name="name">Tenant Warning</field>
+            <field name="warning_action">deduct</field>
+            <field name="description">A tenant warning letter is usually issued by the landlord to the tenant who has broken the terms and conditions stated in the rental agreement. Some of the common violations that are as follows:
+
+            When the tenant has caused damage to the property
+            When the tenant is unable to pay his or her monthly rental obligation
+            When the tenant engages in illegal and criminal activities, such as drug use
+            When the tenant allows a visitor to stay in his or her rented dwelling place for a period of time without asking permission from the landlord
+            When the tenant intentionally shows disrespect to the landlord and the people around</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,104 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data noupdate="1">
+        <!-- Operation Request-->
+        <record id="gr_operation1" model="gr.request.type">
+            <field name="name">Family Visa Request</field>
+            <field name="documents">1. Original bachelor or master degree attested by Embassy and Ministry of Foreign Affairs and to be translated in Arabic language.
+    2. Original marriage certificate attested by Embassy and Ministry of Foreign Affairs and to be translated in Arabic language.
+    3. Wife’s and kid's passport first page copy.
+    4. kid's original birth certificate attested by Embassy and Ministry of Foreign Affairs.
+    5. Letter from SOCPA if the position in Iqama is ‘’account’’.
+    6. Pay 2000 fee from MOI system from any bank.
+    7. Child's Medical Report(Vaccination).</field>
+        </record>
+
+        <record id="gr_operation2" model="gr.request.type">
+            <field name="name">Changing Profession</field>
+            <field name="documents">1. The original certificate Authenticated by the Ministry of Foreign Affairs in his country. Then Cultural Attache of the Embassy then the Embassy.
+    2. Original Iqama.
+    3. One Photo.
+    4. Original Passport.
+    5. Joining Certification to Council of Accountants (If he is accountant).
+    6. Joining Certification to Council of Engineers (If he is engineer).</field>
+        </record>
+
+        <record id="gr_operations_0" model="gr.operations">
+            <field name="type_id" ref="slnee_hr_gr_operation_request.gr_operation1"/>
+            <field name="employee_id" ref="hr.employee_qdp"/>
+            <field name="state">confirm</field>
+        </record>
+
+        <record id="gr_operations_1" model="gr.operations">
+            <field name="type_id" ref="slnee_hr_gr_operation_request.gr_operation2"/>
+            <field name="employee_id" ref="hr.employee_lur"/>
+        </record>
+
+        <record id="gr_operations_3" model="gr.operations">
+            <field name="type_id" ref="slnee_hr_gr_operation_request.gr_operation2"/>
+            <field name="employee_id" ref="hr.employee_jgo"/>
+        </record>
+
+        <record id="gr_operations_4" model="gr.operations">
+            <field name="type_id" ref="slnee_hr_gr_operation_request.gr_operation2"/>
+            <field name="state">confirm</field>
+            <field name="employee_id" ref="hr.employee_stw"/>
+        </record>
+
+        <record id="gr_operations_5" model="gr.operations">
+            <field name="type_id" ref="slnee_hr_gr_operation_request.gr_operation2"/>
+            <field name="state">confirm</field>
+            <field name="employee_id" ref="hr.employee_chs"/>
+        </record>
+
+        <record id="gr_operations_6" model="gr.operations">
+            <field name="type_id" ref="slnee_hr_gr_operation_request.gr_operation1"/>
+            <field name="state">inprogress</field>
+            <field name="employee_id" ref="hr.employee_al"/>
+        </record>
+
+        <record id="gr_operations_7" model="gr.operations">
+            <field name="type_id" ref="slnee_hr_gr_operation_request.gr_operation1"/>
+            <field name="state">inprogress</field>
+            <field name="employee_id" ref="hr.employee_stw"/>
+        </record>
+
+        <record id="gr_operations_8" model="gr.operations">
+            <field name="type_id" ref="slnee_hr_gr_operation_request.gr_operation1"/>
+            <field name="state">inprogress</field>
+            <field name="employee_id" ref="hr.employee_jod"/>
+        </record>
+
+        <record id="gr_operations_9" model="gr.operations">
+            <field name="type_id" ref="slnee_hr_gr_operation_request.gr_operation1"/>
+            <field name="state">inprogress</field>
+            <field name="employee_id" ref="hr.employee_jep"/>
+        </record>
+
+        <record id="gr_operations_12" model="gr.operations">
+            <field name="type_id" ref="slnee_hr_gr_operation_request.gr_operation1"/>
+            <field name="state">done</field>
+            <field name="employee_id" ref="hr.employee_al"/>
+        </record>
+
+        <record id="gr_operations_14" model="gr.operations">
+            <field name="type_id" ref="slnee_hr_gr_operation_request.gr_operation2"/>
+            <field name="employee_id" ref="hr.employee_chs"/>
+        </record>
+
+        <record id="gr_operations_15" model="gr.operations">
+            <field name="type_id" ref="slnee_hr_gr_operation_request.gr_operation2"/>
+            <field name="employee_id" ref="hr.employee_han"/>
+        </record>
+
+        <record id="gr_operations_17" model="gr.operations">
+            <field name="type_id" ref="slnee_hr_gr_operation_request.gr_operation1"/>
+            <field name="employee_id" ref="hr.employee_niv"/>
+        </record>
+
+        <record id="gr_operations_18" model="gr.operations">
+            <field name="type_id" ref="slnee_hr_gr_operation_request.gr_operation2"/>
+            <field name="employee_id" ref="hr.employee_fpi"/>
+        </record>
+    </data>
+</odoo>

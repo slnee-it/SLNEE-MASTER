@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_analytic_overtime_manager,analytic.overtime.manager,model_analytic_overtime,hr.group_hr_manager,1,1,1,1
+access_analytic_overtime_attendee_manager,analytic.overtime.attendee.manager,model_analytic_overtime_attendee,hr.group_hr_manager,1,1,1,1
+access_analytic_overtime_hr_user,analytic.overtime.hr.user,model_analytic_overtime,hr.group_hr_user,1,1,1,0
+access_analytic_overtime_attendee_hr_user,analytic.overtime.attendee.hr.user,model_analytic_overtime_attendee,hr.group_hr_user,1,1,1,0
+access_analytic_overtime_user,analytic.overtime.user,model_analytic_overtime,base.group_user,1,0,0,0
+access_analytic_overtime_attendee_user,analytic.overtime.attendee.user,model_analytic_overtime_attendee,base.group_user,1,1,0,0

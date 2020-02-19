@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_qualification_manager,hr.qualification.manager,model_hr_qualification,hr.group_hr_manager,1,1,1,1
+access_hr_qualification_employee,hr.qualification.employee,model_hr_qualification,hr.group_hr_user,1,1,1,0
+access_hr_qualification_user,hr.qualification.user,model_hr_qualification,base.group_user,1,0,0,0
+access_hr_certification_user,access_hr_certification_user,model_hr_certification,base.group_user,1,0,0,0
+access_hr_certification_manager,access_hr_certification_manager,model_hr_certification,hr.group_hr_manager,1,1,1,1
+access_hr_certification_officer,access_hr_certification_officer,model_hr_certification,hr.group_hr_user,1,1,1,0
+access_hr_experience_manager,hr.experience.manager,model_hr_experience,hr.group_hr_manager,1,1,1,1
+access_hr_experience_employee,hr.experience.employee,model_hr_experience,hr.group_hr_user,1,1,1,0
+access_hr_experience_user,hr.experience.user,model_hr_experience,base.group_user,1,0,0,0

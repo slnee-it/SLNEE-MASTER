@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="hr_employee_clearance_form_view1" model="ir.ui.view">
+        <field name="name">hr.employee.clearance.forms</field>
+        <field name="model">hr.employee.clearance</field>
+        <field name="arch" type="xml">
+            <form string="Employee Clearance" >
+                <header>
+                    <button name="clearance_confirm" string="Confirm" states="draft" type="object" class="oe_highlight" groups="base.group_user" />
+                    <button name="clearance_approve" string="Done"
+                    attrs="{'invisible':[('state','!=','confirm'),('is_survey','=',False)]}"
+                    type="object" class="oe_highlight" groups="hr.group_hr_user" />
+                    <button name="clearance_cancel" string="Cancel" states="done" type="object" groups="hr.group_hr_user"/>
+                    <!-- <button name="action_send_exit_questionnaire" type="object" class="oe_highlight"
+                        string="Send by Mail"/> -->
+                    <button name="set_to_draft" string="Set to Draft" states="refuse" type="object" groups="base.group_user"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,done" statusbar_colors='{"draft":"blue","cancel":"red"}' />
+                </header>
+                <sheet>
+                    <!-- <div class="oe_button_box oe_right">
+                        <button name="call_print_survey"  string="Print Answer" type="object" groups="hr.group_hr_user" attrs="{'invisible': [('is_survey','=',False)]}"/>
+                    </div> -->
+                    <group string="Employee Information">
+                        <group>
+                            <field name="employee_id"  placeholder='Select Employee...'/>
+                            <field name="department_id" readonly="1"/>
+                            <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
+                            <field name="email"/>
+                            <field name="contact_phone"/>
+                            <field name="survey_id"/>
+                            <field name="response_id"/>
+                        </group>
+                        <group>
+                            <field name="seniority_date"/>
+                            <!-- <field name="resign_term_date"/> -->
+                            <!-- <field name="last_day_in_country"/> -->
+                            <field name="last_working_day"/>
+                            <!-- <field name="letter_to_cilent"/> -->
+                            <!-- <field name="survey" invisible="1"/> -->
+                            <field name="is_survey" invisible="1"/>
+                            <!-- <field name="survey_response_id" invisible="1"/> -->
+                        </group>
+                    </group>
+                    <group string="Completion Information">
+                        <group>
+                            <field name="it_dept" groups="hr.group_hr_user"/>
+                            <field name="hr_dept" groups="hr.group_hr_user"/>
+                            <field name="finance_dept" group="account.group_account_manager"/>
+                        </group>
+                    </group>
+
+                    <group string="IT Department" col="4">
+                        <field name="it_dept_ids" nolabel="1" attrs="{'readonly':[('state','in',('done'))]}">
+                            <tree editable="bottom">
+                                <field name="item"/>
+                                <field name="item_state"/>
+                                <field name="handled_by"/>
+                                <field name="remarks"/>
+                            </tree>
+                        </field>
+                    </group>
+                    <group string="HR Department" col="4">
+                        <field name="admin_dept_ids" nolabel="1" attrs="{'readonly':[('state','in',('done'))]}">
+                            <tree editable="bottom">
+                                <field name="item"/>
+                                <field name="item_state"/>
+                                <field name="handled_by"/>
+                                <field name="remarks"/>
+                            </tree>
+                        </field>
+                    </group>
+                    <group string="Finance Department" col="4">
+                        <field name="finance_dept_ids" nolabel="1" attrs="{'readonly':[('state','in',('done'))]}">
+                            <tree editable="bottom">
+                                <field name="item"/>
+                                <field name="item_state"/>
+                                <field name="handled_by"/>
+                                <field name="remarks"/>
+                            </tree>
+                        </field>
+                    </group>
+                    <notebook>
+                        <page string="Extra Information" groups="base.group_no_one">
+                            <group name="extra_info" col="4">
+                                <field name="create_uid" readonly="1"/>
+                                <field name="create_date" readonly="1" />
+                                <field name="write_uid" readonly="1" />
+                                <field name="write_date" readonly="1" />
+                                <field name="approved_by" attrs="{'invisible':[('approved_by','=',False)]}" />
+                                <field name="approved_date" attrs="{'invisible':[('approved_date','=',False)]}" />
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers" />
+                    <field name="message_ids" widget="mail_thread" />
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="hr_employee_clearance_tree_view" model="ir.ui.view">
+        <field name="name">hr.employee.clearance.tree</field>
+        <field name="model">hr.employee.clearance</field>
+        <field name="arch" type="xml">
+            <tree string="Employee Clearance">
+                <field name="employee_id"/>
+                <field name="department_id"/>
+                <field name="company_id"/>
+                <field name="last_working_day"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_employee_clearance_filter" model="ir.ui.view">
+        <field name="name">hr.employee.clearance.filter.select</field>
+        <field name="model">hr.employee.clearance</field>
+        <field name="arch" type="xml">
+            <search string="Search Employee Clearance">
+                <field name="employee_id" string="Employee"/>
+                <field name="company_id" string="company"/>
+                <field name="department_id" string="Department"/>
+                <separator/>
+                <group expand="0" string="Group By...">
+                    <filter string="Company" context="{'group_by':'company_id'}"/>
+                    <filter string="Department" context="{'group_by':'department_id'}"/>
+                </group>
+           </search>
+        </field>
+    </record>
+
+    <record id="action_hr_employee_clearance" model="ir.actions.act_window">
+        <field name="name">Employee Clearance</field>
+        <field name="res_model">hr.employee.clearance</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="menu_hr_employee_clearance_view" model="ir.actions.act_window">
+        <field name="name">Employee Clearance</field>
+        <field name="res_model">hr.employee.clearance</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_employee_clearance_filter"/>
+        <field name="view_id" ref="hr_employee_clearance_tree_view"/>
+        <field name="help" type="html">
+          <p class="oe_view_nocontent_create">
+              Click to Add Employee Clearance Details.
+          </p>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Employee Bonus Menu -->
+    <menuitem id="menu_employee_bonus" name="Employee Bonus" parent="hr_payroll.menu_hr_payroll_root" sequence="11"
+              groups="hr.group_hr_user"/>
+    <menuitem id="menu_employee_bonus_action" parent="menu_employee_bonus" action="action_view_employee_bonus"
+              sequence="1" groups="hr.group_hr_user"/>
+    <menuitem id="menu_employee_bonus_lines_action" parent="menu_employee_bonus" action="action_view_employee_bonus_lines"
+              sequence="2" groups="hr.group_hr_user"/>
+</odoo>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="hr_requisition_form" model="ir.ui.view">
+        <field name="name">HR Requisition</field>
+        <field name="model">hr.job.requisition</field>
+        <field name="arch" type="xml">
+            <form string="HR Requisition Form">
+                <header>
+                    <button string="Confirm" name="requisition_confirm" states="draft" type="object" class="oe_highlight" groups="slnee_hr.group_line_manager,hr_recruitment.group_hr_recruitment_user"/>
+                    <button string="Approve" name="requisition_first_approval" states="confirm" type="object" class="oe_highlight" groups="slnee_hr.group_line_manager"/>
+                    <button string="Approve" name="requisition_second_approval" states="approved1" type="object" class="oe_highlight" groups="slnee_hr.group_hof"/>
+                    <button string="Launch" name="requisition_launch" states="approved2,hold" type="object" class="oe_highlight" groups="hr_recruitment.group_hr_recruitment_user"/>
+                    <button string="Hold" name="requisition_hold" states="launch" type="object" groups="hr_recruitment.group_hr_recruitment_user,slnee_hr.group_hof"/>
+                    <button string="Reject" name="requisition_rejected" states="confirm,approved1,approved2,hold" type="object" groups="slnee_hr.group_line_manager,slnee_hr.group_hof,hr_recruitment.group_hr_recruitment_user"/>
+                    <button string="Set To Draft" name="set_to_draft" states="rejected" type="object" class="oe_highlight" groups="slnee_hr.group_line_manager,slnee_hr.group_hof,hr_recruitment.group_hr_recruitment_user"/>
+                    <button string="Cancel" name="requisition_cancel" type="object" states="draft,confirm,approved1,approved2,hold" groups="slnee_hr.group_line_manager,slnee_hr.group_hof,hr_recruitment.group_hr_recruitment_user"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirm,approved1" statusbar_colors='{"confirm":"blue","approved1":"blue","approved2":"blue","reject":"red","cancel":"red"}' />
+                </header>
+                <sheet string="Job Requisition">
+                    <group>
+                        <group string="Details">
+                            <field name="name" placeholder="Enter Name of Job Requisition" attrs="{'readonly':[('state','not in',['draft'])]}"/>
+
+                            <field name="no_of_recruitment" attrs="{'readonly':[('state','not in',['draft'])]}"/>
+                            <field name="department_id" placeholder="Select Department"  attrs="{'readonly':[('state','not in',['draft'])]}"/>
+                            <field name="job_id" placeholder="Select Job " attrs="{'readonly':[('state','not in',['draft'])]}"/>
+                        </group>
+                        <group string="Status">
+                            <field name="no_of_employee"/>
+                            <field name="no_of_current_recruitment" readonly="1"/>
+                            <field name="expected_employees"/>
+                        </group>
+                    </group>
+                    <separator string="Job Description" colspan="4"/>
+                    <field name="description" required="1" placeholder="Put the description here..." attrs="{'readonly':[('state','not in',['draft'])]}"/>
+                    <separator string="Requirements" colspan="4"/>
+                    <field name="requirements" required="1" placeholder="Mention the list of requirements here..." attrs="{'readonly':[('state','not in',['draft'])]}"/>
+                    <notebook>
+                        <page string="Extra Information" groups="base.group_no_one">
+                            <group name="extra_info" col="4">
+                                <field name="create_uid" />
+                                <field name="create_date" />
+                                <field name="write_uid" />
+                                <field name="write_date" />
+                                <field name="approved_by_recruiter" attrs="{'invisible':[('approved_by_recruiter','=',False)]}"/>
+                                <field name="approved_recruiter_date" attrs="{'invisible':[('approved_recruiter_date','=',False)]}"/>
+                                <field name="approved_by_hof" attrs="{'invisible':[('approved_by_hof','=',False)]}"/>
+                                <field name="approved_hof_date" attrs="{'invisible':[('approved_hof_date','=',False)]}"/>
+                                <field name="approved_by_hop" attrs="{'invisible':[('approved_by_hop','=',False)]}"/>
+                                <field name="approved_hop_date" attrs="{'invisible':[('approved_hop_date','=',False)]}"/>
+                                <field name="rejected_by" attrs="{'invisible':[('rejected_by','=',False)]}"/>
+                                <field name="rejected_date" attrs="{'invisible':[('rejected_date','=',False)]}"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers" />
+                    <field name="message_ids" widget="mail_thread" />
+                </div>
+            </form>
+        </field>
+    </record>
+    <record id="hr_requisition_tree" model="ir.ui.view">
+        <field name="name">Job Requisition</field>
+        <field name="model">hr.job.requisition</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="job_id" />
+                <field name="department_id" />
+                <field name="company_id" groups="base.group_multi_company" />
+                <field name="requirements" />
+                <field name="no_of_current_recruitment" readonly="1"/>
+                <field name="expected_employees" />
+                <field name="description" />
+                <field name="create_uid" />
+                <field name="write_uid" />
+                <field name="approved_by_recruiter"/>
+                <field name="approved_by_hof"/>
+                <field name="approved_by_hop" />
+                <field name="rejected_by"/>
+            </tree>
+        </field>
+    </record>
+    <record id="hr_job_requisition_filter" model="ir.ui.view">
+        <field name="name">hr_job_requisition_filter</field>
+        <field name="model">hr.job.requisition</field>
+        <field name="arch" type="xml">
+            <search string="Filter">
+                <field name="name" filter_domain="['|','|',('name','ilike',self),('description','ilike',self),('requirements','ilike',self)]" string="Job Requisition"/>
+                <filter string="Draft" domain="[('state','=',('draft'))]" help="Job requisition that has been approved" />
+                <filter string="Waiting Approval" domain="[('state','=',('confirm'))]" help="Job requisition that has been waiting for approval" />
+                <filter string="First Approved" domain="[('state','=',('approved1'))]" help="Job requisition that has been refused" />
+                <filter string="Second Approved" domain="[('state','=',('approved2'))]" help="Job requisition that has been refused" />
+                <filter string="Rejected" domain="[('state','=',('rejected'))]" help="Job requisition that has been refused" />
+                <filter string="Launch" domain="[('state','=',('launch'))]" help="Job requisition that has been refused" />
+                <filter string="Cancel" domain="[('state','=',('cancel'))]" help="Job requisition that has been refused" />
+                <group expand="0" string="Group By...">
+                    <filter string="Job Position" context="{'group_by':'job_id'}"/>
+                    <filter string="Department" context="{'group_by':'department_id'}"/>
+                    <filter string="State" context="{'group_by':'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_hr_requisition" model="ir.actions.act_window">
+        <field name="name">Job Requisition</field>
+        <field name="res_model">hr.job.requisition</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="hr_requisition_tree"/>
+    </record>
+</odoo>

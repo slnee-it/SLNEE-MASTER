@@ -1,0 +1,418 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_gr_operation_request
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-11 13:07+0000\n"
+"PO-Revision-Date: 2018-09-11 13:07+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_opration_filter
+msgid "Approve"
+msgstr "موافقه"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_approved_date
+msgid "Approved Date"
+msgstr "التسجيل المعتمدة"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_approved_by
+msgid "Approved by"
+msgstr "التي وافقت عليها"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_client_name
+msgid "Client Name"
+msgstr "اسم العميل"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_opration_filter
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_create_uid
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_request_type_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_create_date
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_request_type_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_is_damage
+msgid "Damage"
+msgstr "ضرر"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_department_id
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_opration_filter
+msgid "Department"
+msgstr "القسم"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_description
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_operations_form
+msgid "Description"
+msgstr "الوصف"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_operations_form
+msgid "Description for Operation Request..."
+msgstr "Description for Operation Request..."
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_display_name
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_request_type_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_request_type_documents
+msgid "Documents"
+msgstr "الوثائق"
+
+#. module: slnee_hr_gr_operation_request
+#: selection:gr.operations,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_opration_filter
+msgid "Done"
+msgstr "منتهي"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_employee_id
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_opration_filter
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_operations_form
+msgid "Employee Information"
+msgstr "معلومات الموظف"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_operations_form
+msgid "Expense"
+msgstr "المصروفات"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_expense_needed
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_request_type_expense_needed
+msgid "Expense Needed"
+msgstr "النفقات اللازمة"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_expense_ids
+msgid "Expenses"
+msgstr "نفقات"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_operations_form
+msgid "Extra Information"
+msgstr "معلومات اضافية"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_opration_filter
+msgid "Filter"
+msgstr "فلتر"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model,name:slnee_hr_gr_operation_request.model_gr_operations
+msgid "GR Operations"
+msgstr "عمليات الموارد الوراثية"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model,name:slnee_hr_gr_operation_request.model_gr_request_type
+msgid "GR Request type"
+msgstr "نوع طلب GR"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_operations_form
+msgid "Generate Expense"
+msgstr "توليد المصروفات"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_operations_form
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_operations_tree
+msgid "Gr Operations"
+msgstr "عمليات جرا"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_opration_filter
+msgid "Group By..."
+msgstr "تجميع حسب.."
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_opration_filter
+msgid "Handled By"
+msgstr "أنجز من قبل"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_handled_by
+msgid "Handled by"
+msgstr "أنجز من قبل"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_id
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_request_type_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_opration_filter
+msgid "In Process"
+msgstr "أنجز من قبل"
+
+#. module: slnee_hr_gr_operation_request
+#: selection:gr.operations,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_operations_form
+msgid "In progress"
+msgstr "في تَقَدم"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations___last_update
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_request_type___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_write_uid
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_request_type_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_write_date
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_request_type_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_documents
+msgid "List of Documents Required"
+msgstr "قائمة الوثائق المطلوبة"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_name
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_request_type_name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: slnee_hr_gr_operation_request
+#: selection:gr.operations,state:0
+msgid "New"
+msgstr "الجديد"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_operations_form
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_type_id
+msgid "Operation"
+msgstr "عملية"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.menu,name:slnee_hr_gr_operation_request.menu_gr_operations
+#: model:product.product,name:slnee_hr_gr_operation_request.operation_request
+#: model:product.template,name:slnee_hr_gr_operation_request.operation_request_product_template
+msgid "Operation Request"
+msgstr "طلب العملية"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.menu,name:slnee_hr_gr_operation_request.menu_gr_operations_config
+msgid "Operation Request Type"
+msgstr "نوع طلب العملية"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.actions.act_window,name:slnee_hr_gr_operation_request.action_gr_operations
+msgid "Operations Request"
+msgstr "طلب العمليات"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.actions.act_window,name:slnee_hr_gr_operation_request.action_gr_operations_type
+msgid "Operations Request Type"
+msgstr "نوع طلب العمليات"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_operations_type_form
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_operations_type_tree
+msgid "Operations Type"
+msgstr "نوع العمليات"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_project_name
+msgid "Project Name"
+msgstr "اسم المشروع"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_operations_form
+msgid "Received"
+msgstr "استلمت"
+
+#. module: slnee_hr_gr_operation_request
+#: selection:gr.operations,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_operations_form
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_opration_filter
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_refused_by
+msgid "Refused by"
+msgstr "رفضت من قبل"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_refused_date
+msgid "Refused on"
+msgstr "رفض على"
+
+#. module: slnee_hr_gr_operation_request
+#: model:mail.message.subtype,description:slnee_hr_gr_operation_request.mt_gr_operations_confirm
+#: model:mail.message.subtype,name:slnee_hr_gr_operation_request.mt_gr_operations_confirm
+msgid "Request Confirmed"
+msgstr "الطلب مؤكد"
+
+#. module: slnee_hr_gr_operation_request
+#: model:mail.message.subtype,description:slnee_hr_gr_operation_request.mt_gr_operations_new
+#: model:mail.message.subtype,name:slnee_hr_gr_operation_request.mt_gr_operations_new
+msgid "Request Created"
+msgstr "طلب انشاء"
+
+#. module: slnee_hr_gr_operation_request
+#: model:mail.message.subtype,description:slnee_hr_gr_operation_request.mt_gr_operations_done
+#: model:mail.message.subtype,name:slnee_hr_gr_operation_request.mt_gr_operations_done
+msgid "Request Done"
+msgstr "طلب تم"
+
+#. module: slnee_hr_gr_operation_request
+#: model:mail.message.subtype,description:slnee_hr_gr_operation_request.mt_gr_operations_refuse
+#: model:mail.message.subtype,name:slnee_hr_gr_operation_request.mt_gr_operations_refuse
+msgid "Request Refused"
+msgstr "طلب رفض"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_operations_form
+msgid "Required Documents"
+msgstr "المستندات المطلوبة"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_operations_form
+msgid "Select Employee"
+msgstr "حدد الموظف"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_operations_form
+msgid "Select the type of request"
+msgstr "حدد نوع الطلب"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_operations_form
+msgid "Set To Draft"
+msgstr "وضع كمسودة"
+
+#. module: slnee_hr_gr_operation_request
+#: model:mail.message.subtype,name:slnee_hr_gr_operation_request.mt_gr_operations_stage
+msgid "Stage Changed"
+msgstr "تغيرت المرحلة"
+
+#. module: slnee_hr_gr_operation_request
+#: model:mail.message.subtype,description:slnee_hr_gr_operation_request.mt_gr_operations_stage
+msgid "Stage changed"
+msgstr "تغيرت المرحلة"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_opration_filter
+msgid "State"
+msgstr "المحافظة"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_state
+msgid "Status"
+msgstr "الحالة "
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_operations_form
+msgid "Submit"
+msgstr "عرض"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_total
+msgid "Total"
+msgstr "الإجمالي "
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.model.fields,field_description:slnee_hr_gr_operation_request.field_gr_operations_expense_total
+msgid "Total Expense"
+msgstr "المصاريف الكلية"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_opration_filter
+msgid "Type"
+msgstr "النوع"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_operations_form
+msgid "Type of Request"
+msgstr "نوع الطلب"
+
+#. module: slnee_hr_gr_operation_request
+#: model:product.product,name:slnee_hr_gr_operation_request.hr_visa_request
+#: model:product.template,name:slnee_hr_gr_operation_request.hr_visa_request_product_template
+msgid "Visa"
+msgstr "تأشيرة"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_opration_filter
+msgid "Visa that has been approved"
+msgstr "التأشيرة التي تمت الموافقة عليها"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_opration_filter
+msgid "Visa that has been done"
+msgstr "التأشيرة التي تم القيام بها"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_opration_filter
+msgid "Visa that has been in progress"
+msgstr "التأشيرة التي كانت قيد التنفيذ"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_opration_filter
+msgid "Visa that has been refused"
+msgstr "التأشيرة التي تم رفضها"
+
+#. module: slnee_hr_gr_operation_request
+#: model:ir.ui.view,arch_db:slnee_hr_gr_operation_request.gr_opration_filter
+msgid "Visa that has been waiting for approval"
+msgstr "التأشيرة التي تنتظر الموافقة"
+
+#. module: slnee_hr_gr_operation_request
+#: selection:gr.operations,state:0
+msgid "Waiting for Approval"
+msgstr "بانتظار الموافقة"
+
+#. module: slnee_hr_gr_operation_request
+#: code:addons/slnee_hr_gr_operation_request/models/gr_operations.py:79
+#, python-format
+msgid "You cannot remove the record which is in %s state!"
+msgstr "لا يمكنك إزالة السجل الموجود في حالة٪ s!"
+

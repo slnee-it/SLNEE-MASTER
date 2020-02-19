@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="whomeconcern_report" name="Whome Concern Report">
+        <t t-call="web.html_container">
+            <t t-call="web.basic_layout">
+                <t t-foreach="docs" t-as="o">
+                    <div class="page" style=" face :Helvetica; font-size:20px;">
+                    <t t-set="arg" t-value="{'employee_id' : [o.employee_id.id, o.employee_id.name],'date':o.date,'manager_id': [o.manager_id.id, o.manager_id.name]}"/>
+                    <t t-set="result" t-value="get_data" />
+                    <t t-foreach="result" t-as="data">
+                        <!-- <t t-set="islamic_date" t-value="get_islamic_date(data['date'])"/>  -->
+                           <p style="text-align:center; font-size:20px; font-weight: bold;">
+                               <t t-if="data['date']"><t t-esc="data['date']"/></t>
+                        </p>
+                        <p style="text-align:center; font-size:20px; font-weight: bold;">To Whom It May Concern</p>
+
+                        <p style="  text-align:justify;">
+                            <span style="font-color:white; color:white">
+                                <font  color="white"> .........</font>
+                            </span>
+                            <t >This is to certify that </t>
+                            <t t-if="data['emp_title']"><t t-esc="data['emp_title']"/></t>
+                            <t t-if="data['employee'].name"><t t-esc="data['employee'].name"/></t>
+                            <t t-if="data['employee'].middle_name"><t t-esc="data['employee'].middle_name"/></t>
+                            <t t-if="data['employee'].last_name"><t t-esc="data['employee'].last_name"/></t>
+                             , a
+                            <t t-if="data['emp_country']"><t t-esc="data['emp_country']"/></t>
+                             national, holder of ID No
+                            <t t-if="data['doc_number']"><t t-esc="data['doc_number']"/></t>
+                             is employed with
+                             <t style="font-weight: bold;">
+                               <!--  <t t-if="o.employee_id.job_id" >
+                                    <span t-field="o.employee_id.job_id.name" />
+                                </t> -->
+                                <t t-if="o.employee_id.user_id and o.employee_id.user_id.company_id" >
+                                    <span t-field="o.employee_id.user_id.company_id.name">
+                                    </span>
+                                </t>
+                            </t>
+                             as a full time employee since
+                            <t t-if="data['join_date']"><t t-esc="data['join_date']"/></t>
+                             in the capacity of
+                            <font color="white"> </font>
+                            <t t-if="data['job_id']"><t t-esc="data['job_id']"/></t>
+                             in
+                            <t t-if="data['department']"><t t-esc="data['department']"/></t>
+                             Department.
+                            <t t-if="data['gender']"><t t-esc="data['gender']"/></t>
+                             gross salary is SR
+                            <t t-if="data['wage']"><t t-esc="data['wage']"/></t>.
+                        </p>
+                         <p style="  text-align:justify;">
+                             <span style="color: white;">
+                                <font color="white"> .........</font>
+                            </span>
+                             <t style="pedding-right: 50px;">This certificate is being issued upon the requested of </t>
+                             <t t-if="data['emp_title']"><t t-esc="data['emp_title']"/></t>
+                             <t t-if="data['employee'].name"><t t-esc="data['employee'].name"/></t>
+
+                             <t t-if="data['employee'].middle_name"><t t-esc="data['employee'].middle_name"/></t>
+
+                             <t t-if="data['employee'].last_name"><t t-esc="data['employee'].last_name"/></t>
+                              without any obligation to our company.
+                         </p>
+                           <p>Sincerely yours,</p>
+                          <p style="font-weight: bold;">___________________________</p>
+                        <p style="font-size:20px; font-weight: bold;">
+                            <t t-if="data['manager']"><t t-esc="data['manager']"/></t>
+                        </p>
+                        <p style="font-size:20px; font-weight: bold;">
+                            <t t-if="data['auth_job_id']"><t t-esc="data['auth_job_id']"/></t>
+                        </p>
+                        </t>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+
+    <record id="paperformat_whomeconcern_report" model="report.paperformat">
+        <field name="name">whomeconcern report</field>
+        <field name="default" eval="True"/>
+        <field name="format">A4</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">20</field>
+        <field name="margin_bottom">20</field>
+        <field name="margin_left">15</field>
+        <field name="margin_right">15</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+        <field name="dpi">80</field>
+    </record>
+
+</odoo>

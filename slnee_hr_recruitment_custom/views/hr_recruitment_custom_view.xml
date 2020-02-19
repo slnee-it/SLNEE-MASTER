@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="hr_recruitment_stage_form">
+        <field name="name">hr.recruitment.stage.form</field>
+        <field name="model">hr.recruitment.stage</field>
+        <field name="inherit_id" ref="hr_recruitment.hr_recruitment_stage_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='fold']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="interview_required" string="Is interview required?"/>
+                <field name="survey_id"
+                    attrs="{'invisible':[('interview_required','=',False)],'required':[('interview_required','=',True)]}" />
+                <field name="state"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="hr_recruitment_feedback_form" model="ir.ui.view">
+        <field name="name">Survey.feedback.form</field>
+        <field name="model">hr.survey.feedback</field>
+        <field name="arch" type="xml">
+            <form string="Feedback form">
+                <group col="4">
+                    <field name="stage_id" invisible="1" />
+                    <field name="feedback_by" invisible="1" />
+                    <field name="given_rate"  required="1" />
+                    <field name="next_round_required"/>
+                    <field name="employee_id" attrs="{'invisible':[('next_round_required','=',False)] ,'required':[('next_round_required','=',True)]}" />
+                </group>
+                <separator string="Response Information" colspan="4" />
+                <field name="comment" required="1" />
+                <footer>
+                    <button name="feedback_save" string="move_to_next_stage" type="object" class="oe_highlight" attrs="{'invisible':[('next_round_required','=',True)]}"/>
+                    <button name="feedback_save" string="Ok" type="object" class="oe_highlight" attrs="{'invisible':[('next_round_required','=',False)]}"/>
+                    or
+                    <button name="cancel" string="Cancel" class="oe_link" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_recruitment_feedback">
+        <field name="name">Feedback Information</field>
+        <field name="res_model">hr.survey.feedback</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="context">{'is_view':'feedback'}</field>
+        <field name="target">new</field>
+    </record>
+    <record model="ir.actions.act_window" id="action_recruitment_refuse">
+        <field name="name">Refuse Information</field>
+        <field name="res_model">hr.survey.feedback</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="context">{'is_view':'refuse'}</field>
+        <field name="target">new</field>
+    </record>
+
+	<record model="ir.ui.view" id="hr_recruitment.crm_case_form_view_job">
+        <field name="name">Jobs - Recruitment Form</field>
+        <field name="model">hr.applicant</field>
+        <field name="arch" type="xml">
+            <form string="Jobs - Recruitment Form">
+                <header>
+                    <button string="Reset Application" name="reset_applicant" type="object" attrs="{'invisible': [('active', '=', True)]}"/>
+                    <button string="Send Offer Letter" name="send_offer_latter" type="object" attrs="{'invisible':['|','|', ('emp_id','!=',False),('feedback_done','=',False),
+                            ('state','!=','verification')]}" class="oe_highlight" />
+                    <button name="case_close_with_emp" string="Hire &amp; Create Employee"
+                            type="object" class="oe_highlight"
+                            attrs="{'invisible':['|','|', ('emp_id','!=',False),('feedback_done','=',False),('state','!=','verification')]}" />
+                    <button name='%(action_recruitment_feedback)d' string="Feedback"
+                            type="action" class="oe_highlight"
+                            attrs="{'invisible':['|',('state','in',['verification','done','cancel']),'&amp;',('interview_required','=',True),('is_survey','=',False)] }" />
+                    <button name='%(action_recruitment_feedback)d' string="Feedback"
+                        type="action" class="oe_highlight" context="{'move_to_next_stage': True}"
+                        attrs="{'invisible':['|','|',('state','!=','verification'),('feedback_done','=',True),'&amp;',('interview_required','=',True),('is_survey','=',False)] }" />
+                    <button name='%(action_recruitment_refuse)d' string="Refuse"
+                        type="action"
+                        attrs="{'invisible':['|',('state','in',['done','cancel']),'&amp;',('interview_required','=',True),('is_survey','=',False)] }" />
+                    <button name="action_test_survey"
+                        type="object" string="Start Interview" help="Answer related job question" context="{'active_ids' :active_ids,'survey_id': survey,'object' : 'hr.applicant','applicant':'applicant'}"
+                        attrs="{'invisible':['|',('state','in',['done','cancel']),'|',('interview_required','=',False),'&amp;',('interview_required','=',True),('is_survey','=',True)]}"
+                        class="oe_highlight" />
+                    <field name="stage_id" clickable="True" widget="statusbar" domain= "[('fold', '=', False)]"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_makeMeeting" class="oe_stat_button" icon="fa-calendar" type="object"
+                             help="Schedule interview with this applicant">
+                            <div class="o_form_field o_stat_info">
+                                <span class="o_stat_text">Meetings</span>
+                             </div>
+                        </button>
+                    <button name="action_get_attachment_tree_view"
+                        class="oe_stat_button"
+                        icon="fa-book"
+                        type="object">
+                        <field name="attachment_number" widget="statinfo" string="Documents"/>
+                    </button>
+                    <button name="action_get_created_employee"
+                        class="oe_stat_button"
+                        icon="fa-user"
+                        type="object"
+                        attrs="{'invisible': [('emp_id', '=', False)]}">
+                        <field name="employee_name" widget="statinfo" string="Employee"/>
+                    </button>
+                    <button name="toggle_active" type="object"
+                            class="oe_stat_button" icon="fa-archive">
+                        <field name="active" widget="boolean_button"
+                            options='{"terminology": "archive"}'/>
+                    </button>
+                </div>
+                <label for="partner_name" class="oe_edit_only"/>
+                <field name="name" placeholder="Application name" style="width: 50%%"/>
+                <div class="oe_title">
+                    <h2>
+                        <table>
+                            <tr>
+                                <td><field name="partner_name" placeholder="First Name"/></td>
+                                <!-- <td><field name="middle_name" placeholder="Middle Name"/></td> -->
+                                <!-- <td><field name="last_name" placeholder="Last Name" required='1'/></td> -->
+                            </tr>
+                        </table>
+                    </h2>
+                </div>
+                <group colspan="4">
+                    <field name="arabic_name" placeholder="Arabic Name" nolabel="1" colspan="4"/>
+                    <field name="categ_ids" widget="many2many_tags" placeholder="e.g. Part Time" nolabel="1" colspan="4"/>
+                </group>
+                <group>
+                    <group>
+                        <field name="partner_id" invisible="1"/>
+                        <label for="street" string="Address"/>
+                        <div>
+                            <field name="street" placeholder="Street..." required="1"/>
+                            <field name="street2"/>
+                            <div class="address_format">
+                            <field name="city" placeholder="City" style="width: 40%%"
+                                required="1"/>
+                            <field name="state_id" class="oe_no_button" placeholder="State"
+                                style="width: 37%%" options='{"no_open": True}'/>
+                            <field name="zip" placeholder="ZIP" style="width: 20%%"/>
+                        </div>
+                        <field name="country_id" placeholder="Country"/>
+                    </div>
+                        <field name="email_from" widget="email"/>
+                        <field name="partner_phone"/>
+                        <field name="partner_mobile"/>
+                    </group>
+                    <group>
+                        <field name="user_id"/>
+                            <field name="medium_id" groups="base.group_no_one"/>
+                            <field name="source_type"/>
+                            <field name="source_id"
+                                attrs="{'invisible': [('source_type','!=','external')]}" />
+                            <field name="state" invisible="0"/>
+                            <field name="internal_reference"
+                                attrs="{'invisible': [('source_type','!=','internal')]}" />
+                            <field name="is_survey" invisible="0"/>
+                            <field name="interview_required" invisible="1"/>
+                            <field name="feedback_done" invisible="1"/>
+                    </group>
+                    <group string="Job">
+                        <field name="survey" invisible="1"/>
+                        <field name="department_id" string="Department" required="1"/>
+                        <field name="job_id" required="1" context="{'job_id': 'job_launch'}"/>
+                        <field name="company_id" groups="base.group_multi_company" options='{"no_open":True}'/>
+                    </group>
+                    <group string="Salary">
+                        <label for="salary_expected"/>
+                        <div>
+                            <field name="salary_expected" class="oe_inline"/>
+                            <span class="oe_inline" attrs="{'invisible':[('salary_expected_extra','=',False)]}"> + </span>
+                            <field name="salary_expected_extra" class="oe_inline" placeholder="Extra advantages..."/>
+                        </div>
+                        <label for="salary_proposed"/>
+                        <div>
+                            <field name="salary_proposed"/>
+                            <field name="salary_proposed_extra"/>
+                        </div>
+                        <field name="availability"/>
+                        <field name="emp_id" invisible="1"/>
+                    </group>
+                    <notebook colspan="4">
+                        <page string="Personal">
+                            <group>
+                                <group>
+                                    <field name="date_of_birth"/>
+                                    <field name="gender" required="1"/>
+                                    <field name="marital_status"/>
+                                </group>
+                                <group>
+                                    <!-- <field name="is_legal_guardianship" class="oe_inline" />
+                                    <field name="no_of_dependents"/>
+                                     --><field name="join_immedietly" class="oe_inline"/>
+                                    <field name="joining_date"/>
+                                </group>
+                                <group colspan="4">
+                                    <field name="not_joining_reason" attrs="{'invisible':[('join_immedietly','!=','no')]}"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Education and Experience">
+                            <separator string="Qualification" colspan="4"/>
+                            <field name="qualification_ids" nolabel="1" colspan="4">
+                                <form string="Qualification">
+                                    <group col="4">
+                                        <group string="Qualification">
+                                            <field name="university_id" context="{'default_institute': 1}" domain="[('institute','=',1)]" />
+                                            <field name="degree_id" />
+                                            <field name="program_type" />
+                                            <field name="completion_month"/>
+                                            <field name="completion_year"/>
+                                        </group>
+                                        <group string="Reference">
+                                            <field name="contact_name"/>
+                                            <field name="contact_email"/>
+                                            <field name="contact_phone"/>
+                                        </group>
+                                    </group>
+                                    <separator string="Activities and Societies" colspan="4" />
+                                    <field name="activities" colspan="4" nolabel="1"/>
+                                    <separator string="Description" colspan="4"/>
+                                    <field name="description" colspan="4" nolabel="1"/>
+                                </form>
+                                <tree string="Qualification">
+                                    <field name="university_id"/>
+                                    <field name="program_type"/>
+                                    <field name="degree_id"/>
+                                    <field name="completion_month"
+                                    attrs="{'invisible':[('program_type','!=','running')]}" />
+                                    <field name="completion_year" attrs="{'invisible':[('program_type','!=','running')]}"/>
+                                    <field name="contact_name"/>
+                                    <field name="contact_phone"/>
+                                    <field name="contact_email"/>
+                                </tree>
+                            </field>
+                            <separator colspan="4"/>
+                            <separator string="Certification" colspan="4"/>
+                            <field name="certification_ids" nolabel="1" colspan="4">
+                                <tree string="Certificates" editable="bottom">
+                                    <field name="name" required="1"/>
+                                    <field name="organization_name"/>
+                                    <field name="issue_date"/>
+                                    <field name="expiry_date"/>
+                                    <field name="reg_no"/>
+                                    <field name="contact_name"/>
+                                    <field name="contact_phone"/>
+                                    <field name="contact_email"/>
+                                </tree>
+                            </field>
+                            <separator colspan="4"/>
+                            <separator string="Experience" colspan="4"/>
+                            <field name="experience_ids" nolabel="1">
+                                <form string="Experience">
+                                    <header>
+                                        <button string="Send Email" name="action_send_mail"
+                                            type="object" states="draft" class="oe_highlight"/>
+                                        <button string="Approve" name="experience_approve"
+                                            type="object" states="draft,refuse" class="oe_highlight"/>
+                                        <button string="Refuse" name="experience_refuse" type="object"
+                                            states="draft,approve" class="oe_left"/>
+                                        <field name="state" widget="statusbar"
+                                            statusbar_visible="waiting_answer,done"/>
+                                    </header>
+                                    <group col="4">
+                                        <group string="Experience">
+                                            <field name="is_current_job"/>
+                                            <field name="company"/>
+                                            <field name="job_title"/>
+                                            <field name="location"/>
+                                            <field name="time_period_from"/>
+                                            <field name="time_period_to"/>
+                                        </group>
+                                        <group string="Reference">
+                                            <field name="contact_name"/>
+                                            <field name="contact_phone"/>
+                                            <field name="contact_email"/>
+                                            <field name="contact_title"/>
+                                        </group>
+                                    </group>
+                                    <separator string="Description" colspan="4"/>
+                                    <field name="description" colspan="4" nolabel="1"/>
+                                </form>
+                                <tree string="Experience">
+                                    <field name="is_current_job"/>
+                                    <field name="company"/>
+                                    <field name="job_title"/>
+                                    <field name="location"/>
+                                    <field name="time_period_from"/>
+                                    <field name="time_period_to"/>
+                                    <field name="contact_name"/>
+                                    <field name="contact_phone"/>
+                                    <field name="contact_email"/>
+                                    <field name="contact_title"/>
+                                    <field name="state"/>
+                                    <button name="action_send_mail" string="Send Email"
+                                        icon="terp-mail-message-new" type="object" states="draft"/>
+                                    <button string="Approve" name="experience_approve"
+                                        states="draft,refuse" type="object" icon="gtk-jump-to"/>
+                                    <button string="Refuse" name="experience_refuse" states="draft,approve"
+                                        type="object" icon="gtk-cancel"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Attachments">
+                                <group>
+                                    <field name="attachment_ids" widget="many2many_binary" nolabel="1"/>
+                                </group>
+                            </page>
+                            <page string="Feedback">
+                                <field name="feedback_ids" nolabel="1" colspan="4"
+                                    readonly="1">
+                                    <tree string="Feedback info.">
+                                        <field name="stage_id"/>
+                                        <field name="survey_id"/>
+                                        <field name="comment"/>
+                                        <field name="given_rate"/>
+                                        <field name="feedback_by"/>
+                                        <button string="Print Survey" icon="STOCK_PRINT" name="call_print_survey"  type="object" attrs="{'invisible':[('survey_id','=',False)]}"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Extra Information" groups="base.group_no_one">
+                                <group name="extra_info" col="4">
+                                    <field name="create_uid" readonly="1"/>
+                                    <field name="create_date" readonly="1"/>
+                                    <field name="write_uid" readonly="1"/>
+                                    <field name="write_date" readonly="1"/>
+                                    <field name="hired_by"
+                                        attrs="{'invisible':[('hired_by','=',False)]}"/>
+                                    <field name="hired_date"
+                                        attrs="{'invisible':[('hired_date','=',False)]}" />
+                                    <field name="refused_by"
+                                        attrs="{'invisible':[('refused_by','=',False)]}" />
+                                    <field name="refuse_date"
+                                        attrs="{'invisible':[('refuse_date','=',False)]}" />
+                                </group>
+                            </page>
+                        </notebook>
+                    </group>
+                    <separator string="Application Summary"/>
+                    <field name="description" placeholder="Feedback of interviews..."/>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_crm_case_jobs_filter" model="ir.ui.view">
+        <field name="name">Jobs - Recruitment Search</field>
+        <field name="model">hr.applicant</field>
+        <field name="inherit_id" ref="hr_recruitment.view_crm_case_jobs_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group" position="before">
+                <filter string="Saudi" domain="[('is_saudi','=','True')]" />
+                <filter string="Non-Saudi" domain="[('is_saudi','!=','True')]" />
+            </xpath>
+            <field name="partner_name" position="attributes">
+                <attribute name="filter_domain">['|','|','|','|','|','|','|','|','|',('name','ilike',self),('partner_name','ilike',self),('email_from','ilike',self),('title_action','ilike',self),
+                    ('iqama_number','ilike',self),('national_id','ilike',self),('passport_number','ilike',self),('place_of_issue','ilike',self)]
+                </attribute>
+            </field>
+        </field>
+    </record>
+    <record id="portal_user_new_applicant_action" model="ir.actions.act_window">
+        <field name="name">Applications</field>
+        <field name="res_model">hr.applicant</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form,calendar</field>
+        <!-- <field name="view_id" ref="crm_case_form_view_job_portal"/> -->
+        <field name="view_id" ref="hr_recruitment.crm_case_form_view_job"/>
+        <field name="context">{"portal":'True'}</field>
+        <field name="search_view_id" ref="hr_recruitment.view_crm_case_jobs_filter"/>
+        <field name="target">current</field>
+        <field name="help"  type="html">
+          <p class="oe_view_nocontent_create">
+            Click to register a new Applications.
+          </p>
+        </field>
+    </record>
+</odoo>

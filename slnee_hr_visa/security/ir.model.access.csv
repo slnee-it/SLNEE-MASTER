@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_visa_user,access_hr_visa_user,model_hr_visa,base.group_user,1,1,1,0
+access_hr_visa_officer,access_hr_visa_officer,model_hr_visa,hr.group_hr_user,1,1,1,0
+access_hr_visa_manager,access_hr_visa_manager,model_hr_visa,hr.group_hr_manager,1,1,1,1
+access_employee_family_visa_user,access_employee_family_visa user,model_employee_family_visa,base.group_user,1,1,1,0
+access_employee_family_visa_officer,access_employee_family_visa officer,model_employee_family_visa,hr.group_hr_user,1,1,1,0
+access_employee_family_visa_manager,access_employee_family_visa manager,model_employee_family_visa,hr.group_hr_manager,1,1,1,1

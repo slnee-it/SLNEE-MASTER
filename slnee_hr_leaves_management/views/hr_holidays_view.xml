@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Days of week -->
+    <record id="res_weekdays_form" model="ir.ui.view">
+        <field name="name">res.weekdays.form</field>
+        <field name="model">res.weekdays</field>
+        <field name="arch" type="xml">
+            <form string="Days of week">
+                <field name="name"/>
+            </form>
+        </field>
+    </record>
+
+    <record id="res_weekdays_tree" model="ir.ui.view">
+        <field name="name">res.weekdays.tree</field>
+        <field name="model">res.weekdays</field>
+        <field name="arch" type="xml">
+            <tree string="Days of week">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_res_weekdays_tree" model="ir.actions.act_window">
+        <field name="name">Days of Week</field>
+        <field name="res_model">res.weekdays</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Resource Calendar -->
+    <record id="resource_calendar_form_inherit" model="ir.ui.view">
+        <field name="name">resource.calendar.inherit</field>
+        <field name="model">resource.calendar</field>
+        <field name="inherit_id" ref="resource.resource_calendar_form"/>
+        <field name="arch" type="xml">
+            <field name="company_id" position="after">
+                <field name="weekend_ids" widget="many2many_tags"/>
+            </field>
+        </field>
+    </record>
+
+    <!-- HR holiday status -->
+    <record model="ir.ui.view" id="edit_holiday_status_form">
+        <field name="name">hr.holidays.status.form</field>
+        <field name="model">hr.holidays.status</field>
+        <field name="inherit_id" ref="hr_holidays.edit_holiday_status_form"/>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="code" attrs="{'required': [('is_deduction', '=', True)]}"/>
+            </field>
+            <field name="limit" position="after">
+                <field name="hr_validation"/>
+                <field name="carry_forward"/>
+                <field name="sick_leave"/>
+                <field name="skip"/>
+                <field name="one_time_usable"/>
+                <field name="maternity_leave"/>
+                <field name="is_deduction"/>
+            </field>
+            <field name="color_name" position="after">
+                <field name="deduction_by" attrs="{'invisible': [('is_deduction', '=', False)], 'required': [('is_deduction', '=', True)]}"/>
+            </field>
+            <xpath expr="//sheet" position="inside">
+                <notebook attrs="{'invisible': [('is_deduction', '=', False)]}">
+                    <page string="Rules" name="rules">
+                        <field name="rule_ids">
+                            <tree editable="bottom">
+                                <field name="name"/>
+                                <field name="limit_from"/>
+                                <field name="limit_to"/>
+                                <field name="limit_per"/>
+                                <field name="holiday_status_id" invisible="1"/>
+                            </tree>
+                        </field>
+                    </page>
+                </notebook>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="hr_leave_rule_line_form" model="ir.ui.view">
+        <field name="name">hr.leave.rule.line.form</field>
+        <field name="model">hr.leave.rule.line</field>
+        <field name="arch" type="xml">
+            <form string="Leave Rules">
+                <sheet>
+                    <group col="4">
+                        <field name="name"/>
+                        <field name="limit_per"/>
+                        <field name="limit_from"/>
+                        <field name="limit_to"/>
+                        <field name="holiday_status_id" invisible="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- hr_holidays Allocation request -->
+    <record model="ir.ui.view" id="edit_holiday_new">
+        <field name="name">Leave Request</field>
+        <field name="model">hr.holidays</field>
+        <field name="inherit_id" ref="hr_holidays.edit_holiday_new"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='action_approve']" position="replace">
+                <button string="Approve" name="action_approve" states="confirm" type="object" groups="hr.group_hr_user,slnee_hr.group_line_manager" class="oe_highlight"/>
+            </xpath>
+
+            <xpath expr="//button[@name='action_validate']" position="replace">
+                <button string="Validate" name="action_validate" states="validate1" type="object" groups="hr_holidays.group_hr_holidays_manager" class="oe_highlight"/>
+            </xpath>
+
+            <xpath expr="//button[@name='action_refuse']" position="before">
+                <button string="HR Validate" name="action_validate" states="hr_validate" type="object" groups="hr_holidays.group_hr_holidays_user" class="oe_highlight"/>
+            </xpath>
+            <xpath expr="//button[@name='action_refuse']" position="replace">
+                <button string="Refuse" name="action_refuse" states="confirm,validate,validate1,hr_validate" type="object" groups="slnee_hr.group_line_manager,slnee_hr.group_hof,hr.group_hr_user"/>
+            </xpath>
+
+            <xpath expr="//button[@name='action_confirm']" position="replace">
+                <button string="Submit to Manager" name="action_confirm" states="draft" type="object" class="oe_highlight"/>
+            </xpath>
+            <xpath expr="//field[@name='holiday_status_id']" position="attributes">
+                <attribute name="context">{'employee_id':employee_id, 'fiscalyear':fiscalyear}</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='employee_id']" position="replace">
+                 <field name="employee_id" attrs="{'required':[('holiday_type','=','employee')],'invisible':[('holiday_type','=','category')]}" groups="hr.group_hr_user"/>
+            </xpath>
+            <xpath expr="//field[@name='date_from']" position="replace">
+                <field name="date_from" nolabel="1" attrs="{'required':[('type', '=', 'remove')]}" class="oe_inline"/>
+            </xpath>
+            <xpath expr="//field[@name='date_to']" position="replace">
+                <field name="date_to" nolabel="1" attrs="{'required':[('type', '=', 'remove')]}" class="oe_inline"/>
+            </xpath>
+            <xpath expr="//field[@name='department_id']" position="replace">
+                <field name="department_id" attrs="{'readonly':['|', '|', ('type','=','add'), ('holiday_type','=','category'), ('state','not in',['draft', 'confirm'])],'invisible':[('holiday_type','=','category')]}" groups="hr.group_hr_user"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+                <field name="fiscalyear" required="1"/>
+                <field name="carry_forward_limit" attrs="{'invisible': ['|',('type', '=', 'remove'),('carry_forward', '!=', True)]}"/>
+                <field name="override_limit" attrs="{'invisible': ['|',('type', '=', 'remove'),('limit', '!=', True)]}"/>
+                <field name="carry_forwarded" attrs="{'invisible': ['|',('type', '=', 'remove'),('carry_forward', '!=', True)]}"/>
+                <field name="limit" invisible="1"/>
+                <field name="carry_forward" invisible="1"/>
+                <!-- <field name="double_validation" invisible="1"/> -->
+                <field name="hr_validation" invisible="1"/>
+            </xpath>
+            <xpath expr="//field[@name='holiday_type']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//group" position="after">
+                <notebook>
+                    <page name="leave_details" string="Details" attrs="{'invisible': [('type', '!=', 'remove')]}" groups="hr.group_hr_manager,hr_payroll.group_hr_payroll_manager">
+                        <group>
+                            <field name="leave_details" nolabel="1">
+                                <tree create="0" edit="0" delete="0">
+                                    <field name="name"/>
+                                    <field name="already_taken"/>
+                                    <field name="already_taken_month"/>
+                                    <field name="paid_leave"/>
+                                    <field name="unpaid_leave"/>
+                                    <field name="leave_hours"/>
+                                    <field name="unpaid_leave_hours"/>
+                                    <field name="total_leave" invisible="1"/>
+                                    <field name="holiday_id" invisible="1"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </page>
+                    <page string="Extra Information" groups="base.group_no_one">
+                        <group>
+                            <group>
+                                <field name="create_uid" readonly="1"/>
+                                <field name="first_approver_id" attrs="{'invisible':[('first_approver_id','=',False)]}"/>
+                                <field name="second_approver_id" attrs="{'invisible':[('second_approver_id','=',False)]}"/>
+                                <field name="hr_manager_id" attrs="{'invisible':[('hr_manager_id','=',False)]}"/>
+                                <field name="refuse_uid" attrs="{'invisible':[('refuse_uid','=',False)]}"/>
+                                <field name="refuse_date" attrs="{'invisible':[('refuse_date','=',False)]}"/>
+                            </group>
+                            <group>
+                                <field name="create_date" readonly="1"/>
+                                <field name="write_date" readonly="1"/>
+                            </group>
+                        </group>
+                    </page>
+                </notebook>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="report_employee_idcard">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="s">
+            <t t-call="web.basic_layout">
+            <style type="text/css">
+        .front_side{
+            border: 1px solid black;
+            width:225px;
+            height:300px;
+            border-radius: 2px;
+            background-color:#F4F4F4;
+            <!-- margin-top : 50px; -->
+        }
+        .back_side{
+            border:1px solid black;
+            width:225px;
+            height:305px;
+            <!-- vertical-align:middle; -->
+            background-color:#F4F4F4;
+            border-radius:2px;
+
+        }
+            </style>
+            <div class="page">
+                <div class="row">
+                <!-- Front Side-->
+                <center>
+                    <div class="front_side">
+                        <div class="row" style="background-color:#8c8e91;border-bottom:1px solid black;width:224px;">
+                            <div class="row">
+                                <img t-att-src="'data:image/jpg;base64,%s' % to_text(s.company_id.logo_web)" style="align:center;height:30px;width:50px;"/>
+                            </div>
+                            <div>
+                                <div class="row" style="margin-top:1px;color:white;align:center;">
+                                    <span t-field="s.company_id"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img t-att-src="'data:image/jpg;base64,%s' % to_text(s.employee_id.image)" style="align:center;height:70px;width:70px;margin-top:5px;margin-bottum:5px"/>
+                        </div>
+                        <table style="font-size:11px; margin-left:10;margin-top:3px;width:224px;">
+                            <tr>
+                                <td colspan="3"><center><h3><strong>
+                                <span t-field="s.employee_id.name"/><br/>
+                                </strong></h3>
+                                <h5>
+                                <span t-field="s.job_id.name"/>
+                                </h5></center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Department</strong></td>
+                                <td>: </td>
+                                <td><span style="margin-left:3px" t-field="s.department_id.name"/></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Gender</strong></td>
+                                <td>: </td>
+                                <td><span style="margin-left:3px" t-field="s.employee_id.gender"/></td>
+                            </tr>
+                            <tr>
+                                <td width="43%"><strong>Birth Date</strong></td>
+                                <td>: </td>
+                                <td><span style="margin-left:3px" t-field="s.employee_id.birthday"/></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br/>
+                </center>
+
+                <!-- Back Side-->
+                <center>
+                    <div class="front_side">
+                        <div class="row" style="background-color:#8c8e91;border-bottum:1px solid black;width:224px;">
+                            <div class="row">
+                                <img t-att-src="'data:image/jpg;base64,%s' % to_text(s.company_id.logo_web)" style="height:60px;width:150px;margin-top:5px;margin-bottum:10px"/>
+                            </div>
+                        </div>
+
+                        <div class="row" style="font-size:11px;margin-top:20px;width:224px;">
+                            <t t-if="s.employee_id.address_home_id">
+                                <table style="width:224px;">
+                                    <tr>
+                                        <td><strong>Address</strong></td>
+                                        <td><span style="margin-left:3px">:</span></td>
+                                        <td>
+                                        <span style="float:left;margin-left:3px;" t-field="s.employee_id.address_home_id.street"/>
+                                        <span t-if="s.employee_id.address_home_id.street">,<br/></span>
+                                        <span style="float:left;margin-left:3px;" t-field="s.employee_id.address_home_id.street2"/>
+                                        <span t-if="s.employee_id.address_home_id.street2">,<br/></span>
+                                        <span style="float:left;margin-left:3px;" t-field="s.employee_id.address_home_id.city"/>-<span t-field="s.employee_id.address_home_id.zip"/>
+                                        <span t-if="s.employee_id.address_home_id.city">,<br/></span>
+                                        <span style="float:left;margin-left:3px;" t-field="s.employee_id.address_home_id.state_id"/>
+                                        <span t-if="s.employee_id.address_home_id.state_id">,<br/></span>
+                                        <span style="float:left;margin-left:3px;" t-field="s.employee_id.address_home_id.country_id"/>
+                                        <span t-if="s.employee_id.address_home_id.country_id">.<br/></span>
+                                        </td>
+                                    </tr>
+                                    </table>
+                                    <br/>
+                                    <table>
+                                    <tr>
+                                        <td><strong>Mobile</strong></td>
+                                        <td><span style="margin-left:3px">:</span></td>
+                                        <td><span style="float:left;margin-left:3px;" t-field="s.employee_id.address_home_id.mobile"/><br/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span><strong>Mail</strong></span></td>
+                                        <td><span style="margin-left:3px">:</span></td>
+                                        <td><span t-field="s.employee_id.address_home_id.email" style="margin-top:5px;font-size:11px;width:90%;display:block;"/></td>
+                                    </tr>
+                                </table>
+                            </t>
+                        </div>
+                        <br/>
+                    </div>
+                </center>
+                </div>
+            </div>
+            </t>
+        </t>
+    </t>
+</template>
+
+<report
+    string="Print ID card"
+    id="action_report_employee_idcard"
+    model="hr.employee.card"
+    report_type="qweb-pdf"
+    name="slnee_hr_card.report_employee_idcard"
+    file="slnee_hr_card.report_employee_idcard"
+    groups="hr.group_hr_user"
+    menu="False"
+/>
+</odoo>

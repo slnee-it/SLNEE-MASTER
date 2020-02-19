@@ -1,0 +1,222 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="hr_employee_rec_visa_0" model="hr.employee.rec.visa">
+            <field name="reason_of_visa">business_visit_visa</field>
+            <field name="employee_id" ref="hr.employee_qdp"/>
+            <field name="request_by_id" ref="hr.employee_stw"/>
+            <field name="country_id" ref="base.us"/>
+            <field name="email">bilalpth@synconics.com</field>
+            <field name="type">single</field>
+            <field name="nationality" ref="base.sa"/>
+            <field name="visa_for">individual</field>
+            <field name="requested_date_from" eval="(DateTime.today() + relativedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="approved_date_from" eval="datetime.now().strftime('%Y-%m-%d')"/>
+            <field name="approved_date_to" eval="(DateTime.today() + relativedelta(months=3)).strftime('%Y-%m-%d')"/>
+            <field name="requested_date_to" eval="((DateTime.today() + relativedelta(months=3)) - relativedelta(days=1)).strftime('%Y-%m-%d')"/>
+        </record>
+
+        <record id="hr_employee_rec_visa_1" model="hr.employee.rec.visa">
+            <field name="reason_of_visa">commercial_visit_visa</field>
+            <field name="employee_id" ref="hr.employee_stw"/>
+            <field name="request_by_id" ref="hr.employee_qdp"/>
+            <field name="country_id" ref="base.sa"/>
+            <field name="state">confirm</field>
+            <field name="type">single</field>
+            <field name="nationality" ref="base.sa"/>
+            <field name="requested_date_from" eval="(DateTime.today() + relativedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="approved_date_from" eval="datetime.now().strftime('%Y-%m-%d')"/>
+            <field name="approved_date_to" eval="(DateTime.today() + relativedelta(months=3)).strftime('%Y-%m-%d')"/>
+            <field name="requested_date_to" eval="((DateTime.today() + relativedelta(months=3)) - relativedelta(days=1)).strftime('%Y-%m-%d')"/>
+            <field name="visa_for">individual</field>
+        </record>
+
+        <record id="hr_employee_rec_visa_2" model="hr.employee.rec.visa">
+            <field name="reason_of_visa">new_join_employee</field>
+            <field name="employee_id" ref="hr.employee_al"/>
+            <field name="request_by_id" ref="hr.employee_fme"/>
+            <field name="country_id" ref="base.sa"/>
+            <field name="type">single</field>
+            <field name="nationality" ref="base.sa"/>
+            <field name="visa_for">family</field>
+            <field name="requested_date_from" eval="(DateTime.today() + relativedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="approved_date_from" eval="datetime.now().strftime('%Y-%m-%d')"/>
+            <field name="approved_date_to" eval="(DateTime.today() + relativedelta(months=3)).strftime('%Y-%m-%d')"/>
+            <field name="requested_date_to" eval="((DateTime.today() + relativedelta(months=3)) - relativedelta(days=1)).strftime('%Y-%m-%d')"/>
+        </record>
+
+        <record id="hr_employee_rec_visa_3" model="hr.employee.rec.visa">
+            <field name="reason_of_visa">business_visit_visa</field>
+            <field name="employee_id" ref="hr.employee_fme"/>
+            <field name="request_by_id" ref="hr.employee_al"/>
+            <field name="country_id" ref="base.sa"/>
+            <field name="type">multi</field>
+            <field name="nationality" ref="base.sa"/>
+            <field name="visa_for">individual</field>
+            <field name="requested_date_from" eval="(DateTime.today() + relativedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="approved_date_from" eval="datetime.now().strftime('%Y-%m-%d')"/>
+            <field name="approved_date_to" eval="(DateTime.today() + relativedelta(months=3)).strftime('%Y-%m-%d')"/>
+            <field name="requested_date_to" eval="((DateTime.today() + relativedelta(months=3)) - relativedelta(days=1)).strftime('%Y-%m-%d')"/>
+        </record>
+
+        <record id="hr_employee_rec_visa_4" model="hr.employee.rec.visa">
+            <field name="reason_of_visa">business_visit_visa</field>
+            <field name="employee_id" ref="hr.employee_lur"/>
+            <field name="request_by_id" ref="hr.employee_vad"/>
+            <field name="country_id" ref="base.sa"/>
+            <field name="type">single</field>
+            <field name="nationality" ref="base.sa"/>
+            <field name="visa_for">individual</field>
+            <field name="requested_date_from" eval="(DateTime.today() + relativedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="approved_date_from" eval="datetime.now().strftime('%Y-%m-%d')"/>
+            <field name="approved_date_to" eval="(DateTime.today() + relativedelta(months=3)).strftime('%Y-%m-%d')"/>
+            <field name="requested_date_to" eval="((DateTime.today() + relativedelta(months=3)) - relativedelta(days=1)).strftime('%Y-%m-%d')"/>
+        </record>
+
+        <record id="hr_employee_rec_visa_5" model="hr.employee.rec.visa">
+            <field name="reason_of_visa">business_visit_visa</field>
+            <field name="employee_id" ref="hr.employee_vad"/>
+            <field name="request_by_id" ref="hr.employee_lur"/>
+            <field name="country_id" ref="base.sa"/>
+            <field name="state">confirm</field>
+            <field name="type">single</field>
+            <field name="nationality" ref="base.sa"/>
+            <field name="visa_for">individual</field>
+            <field name="requested_date_from" eval="(DateTime.today() + relativedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="approved_date_from" eval="datetime.now().strftime('%Y-%m-%d')"/>
+            <field name="approved_date_to" eval="(DateTime.today() + relativedelta(months=3)).strftime('%Y-%m-%d')"/>
+            <field name="requested_date_to" eval="((DateTime.today() + relativedelta(months=3)) - relativedelta(days=1)).strftime('%Y-%m-%d')"/>
+        </record>
+
+        <record id="hr_employee_rec_visa_6" model="hr.employee.rec.visa">
+            <field name="reason_of_visa">business_visit_visa</field>
+            <field name="employee_id" ref="hr.employee_jep"/>
+            <field name="request_by_id" ref="hr.employee_niv"/>
+            <field name="country_id" ref="base.sa"/>
+            <field name="state">confirm</field>
+            <field name="type">multi</field>
+            <field name="nationality" ref="base.sa"/>
+            <field name="visa_for">individual</field>
+            <field name="requested_date_from" eval="(DateTime.today() + relativedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="approved_date_from" eval="datetime.now().strftime('%Y-%m-%d')"/>
+            <field name="approved_date_to" eval="(DateTime.today() + relativedelta(months=3)).strftime('%Y-%m-%d')"/>
+            <field name="requested_date_to" eval="((DateTime.today() + relativedelta(months=3)) - relativedelta(days=1)).strftime('%Y-%m-%d')"/>
+        </record>
+
+        <record id="hr_employee_rec_visa_7" model="hr.employee.rec.visa">
+            <field name="reason_of_visa">new_join_employee</field>
+            <field name="employee_id" ref="hr.employee_niv"/>
+            <field name="request_by_id" ref="hr.employee_jep"/>
+            <field name="country_id" ref="base.sa"/>
+            <field name="state">inprogress</field>
+            <field name="type">single</field>
+            <field name="nationality" ref="base.sa"/>
+            <field name="visa_for">individual</field>
+            <field name="requested_date_from" eval="(DateTime.today() + relativedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="approved_date_from" eval="datetime.now().strftime('%Y-%m-%d')"/>
+            <field name="approved_date_to" eval="(DateTime.today() + relativedelta(months=3)).strftime('%Y-%m-%d')"/>
+            <field name="requested_date_to" eval="((DateTime.today() + relativedelta(months=3)) - relativedelta(days=1)).strftime('%Y-%m-%d')"/>
+            <field name="handled_by_id" ref="hr.employee_fpi"/>
+        </record>
+
+        <record id="hr_employee_rec_visa_8" model="hr.employee.rec.visa">
+            <field name="reason_of_visa">commercial_visit_visa</field>
+            <field name="employee_id" ref="hr.employee_jve"/>
+            <field name="request_by_id" ref="hr.employee_hne"/>
+            <field name="country_id" ref="base.sa"/>
+            <field name="state">inprogress</field>
+            <field name="type">single</field>
+            <field name="nationality" ref="base.sa"/>
+            <field name="visa_for">individual</field>
+            <field name="requested_date_from" eval="(DateTime.today() + relativedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="approved_date_from" eval="datetime.now().strftime('%Y-%m-%d')"/>
+            <field name="approved_date_to" eval="(DateTime.today() + relativedelta(months=3)).strftime('%Y-%m-%d')"/>
+            <field name="requested_date_to" eval="((DateTime.today() + relativedelta(months=3)) - relativedelta(days=1)).strftime('%Y-%m-%d')"/>
+            <field name="handled_by_id" ref="hr.employee_fpi"/>
+        </record>
+
+        <record id="hr_employee_rec_visa_9" model="hr.employee.rec.visa">
+            <field name="reason_of_visa">business_visit_visa</field>
+            <field name="employee_id" ref="hr.employee_hne"/>
+            <field name="request_by_id" ref="hr.employee_jve"/>
+            <field name="country_id" ref="base.sa"/>
+            <field name="state">inprogress</field>
+            <field name="type">single</field>
+            <field name="nationality" ref="base.cn"/>
+            <field name="visa_for">individual</field>
+            <field name="requested_date_from" eval="(DateTime.today() + relativedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="approved_date_from" eval="datetime.now().strftime('%Y-%m-%d')"/>
+            <field name="approved_date_to" eval="(DateTime.today() + relativedelta(months=3)).strftime('%Y-%m-%d')"/>
+            <field name="requested_date_to" eval="((DateTime.today() + relativedelta(months=3)) - relativedelta(days=1)).strftime('%Y-%m-%d')"/>
+            <field name="handled_by_id" ref="hr.employee_fpi"/>
+        </record>
+
+        <record id="hr_employee_rec_visa_10" model="hr.employee.rec.visa">
+            <field name="reason_of_visa">business_visit_visa</field>
+            <field name="employee_id" ref="hr.employee_fpi"/>
+            <field name="request_by_id" ref="hr.employee_fme"/>
+            <field name="country_id" ref="base.sa"/>
+            <field name="state">inprogress</field>
+            <field name="type">single</field>
+            <field name="nationality" ref="base.sa"/>
+            <field name="visa_for">individual</field>
+            <field name="requested_date_from" eval="(DateTime.today() + relativedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="approved_date_from" eval="datetime.now().strftime('%Y-%m-%d')"/>
+            <field name="approved_date_to" eval="(DateTime.today() + relativedelta(months=3)).strftime('%Y-%m-%d')"/>
+            <field name="requested_date_to" eval="((DateTime.today() + relativedelta(months=3)) - relativedelta(days=1)).strftime('%Y-%m-%d')"/>
+            <field name="handled_by_id" ref="hr.employee_fpi"/>
+        </record>
+
+        <record id="hr_employee_rec_visa_11" model="hr.employee.rec.visa">
+            <field name="reason_of_visa">business_visit_visa</field>
+            <field name="employee_id" ref="hr.employee_fme"/>
+            <field name="request_by_id" ref="hr.employee_fpi"/>
+            <field name="country_id" ref="base.sa"/>
+            <field name="state">received</field>
+            <field name="type">single</field>
+            <field name="nationality" ref="base.sa"/>
+            <field name="visa_for">individual</field>
+            <field name="requested_date_from" eval="(DateTime.today() + relativedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="approved_date_from" eval="datetime.now().strftime('%Y-%m-%d')"/>
+            <field name="approved_date_to" eval="(DateTime.today() + relativedelta(months=3)).strftime('%Y-%m-%d')"/>
+            <field name="requested_date_to" eval="((DateTime.today() + relativedelta(months=3)) - relativedelta(days=1)).strftime('%Y-%m-%d')"/>
+            <field name="handled_by_id" ref="hr.employee_fpi"/>
+            <field name="visa_ref">4111 1010 1010 1010</field>
+        </record>
+
+        <record id="hr_employee_rec_visa_12" model="hr.employee.rec.visa">
+            <field name="reason_of_visa">business_visit_visa</field>
+            <field name="employee_id" ref="hr.employee_mit"/>
+            <field name="request_by_id" ref="hr.employee_han"/>
+            <field name="country_id" ref="base.sa"/>
+            <field name="state">received</field>
+            <field name="type">single</field>
+            <field name="nationality" ref="base.sa"/>
+            <field name="visa_for">individual</field>
+            <field name="requested_date_from" eval="(DateTime.today() + relativedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="approved_date_from" eval="datetime.now().strftime('%Y-%m-%d')"/>
+            <field name="approved_date_to" eval="(DateTime.today() + relativedelta(months=3)).strftime('%Y-%m-%d')"/>
+            <field name="requested_date_to" eval="((DateTime.today() + relativedelta(months=3)) - relativedelta(days=1)).strftime('%Y-%m-%d')"/>
+            <field name="handled_by_id" ref="hr.employee_fpi"/>
+            <field name="visa_ref">4111 1111 1010 1010</field>
+        </record>
+
+        <record id="hr_employee_rec_visa_13" model="hr.employee.rec.visa">
+            <field name="reason_of_visa">business_visit_visa</field>
+            <field name="employee_id" ref="hr.employee_han"/>
+            <field name="request_by_id" ref="hr.employee_mit"/>
+            <field name="country_id" ref="base.sa"/>
+            <field name="state">received</field>
+            <field name="type">single</field>
+            <field name="nationality" ref="base.sa"/>
+            <field name="visa_for">individual</field>
+            <field name="requested_date_from" eval="(DateTime.today() + relativedelta(days=2)).strftime('%Y-%m-%d')"/>
+            <field name="approved_date_from" eval="datetime.now().strftime('%Y-%m-%d')"/>
+            <field name="approved_date_to" eval="(DateTime.today() + relativedelta(months=3)).strftime('%Y-%m-%d')"/>
+            <field name="requested_date_to" eval="((DateTime.today() + relativedelta(months=3)) - relativedelta(days=1)).strftime('%Y-%m-%d')"/>
+            <field name="handled_by_id" ref="hr.employee_fpi"/>
+            <field name="visa_ref">4122 1212 1313 1414</field>
+        </record>
+    </data>
+</odoo>
+

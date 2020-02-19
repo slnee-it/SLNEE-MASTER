@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!--Air Fare Allowance-->
+        <record id="hr_salary_rule_airfare_allowance" model="hr.salary.rule">
+            <field name="name">Air Fare Allowance</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="code">AIR</field>
+            <field name="appears_on_payslip">False</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = contract.air_allowance</field>
+            <field name="sequence" eval="29"/>
+            <field name="amount_select">fix</field>
+        </record>
+        <record id="hr_salary_rule_airfare_allowance_child1" model="hr.salary.rule">
+            <field name="name">Air Fare Allowance</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="code">AIR</field>
+            <field name="sequence" eval="30"/>
+            <field name="condition_select">range</field>
+            <field name="condition_range">employee.duration_in_months</field>
+            <field name="condition_range_max">3</field>
+            <field name="amount_select">fix</field>
+            <field name="note">Will not add to salary slip for 3 months</field>
+            <field name="parent_rule_id" ref="slnee_hr_air_allowance.hr_salary_rule_airfare_allowance"/>
+        </record>
+        <record id="hr_salary_rule_airfare_allowance_child2" model="hr.salary.rule">
+            <field name="name">Air Fare Allowance</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="code">AIR</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = employee.duration_in_months==4</field>
+            <field name="sequence" eval="30"/>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = (((contract.adults*contract.air_destination.adult_fare)+(contract.children*contract.air_destination.child_fare)+(contract.infant*contract.air_destination.infant_fare)) / 12) * 4</field>
+            <field name="note">Will add 4 months allowance</field>
+            <field name="parent_rule_id" ref="slnee_hr_air_allowance.hr_salary_rule_airfare_allowance"/>
+        </record>
+        <record id="hr_salary_rule_airfare_allowance_child3" model="hr.salary.rule">
+            <field name="name">Air Fare Allowance</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="code">AIR</field>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = employee.duration_in_months > 4</field>
+            <field name="sequence" eval="30"/>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = ((contract.adults*contract.air_destination.adult_fare)+(contract.children*contract.air_destination.child_fare)+(contract.infant*contract.air_destination.infant_fare)) / 12</field>
+            <field name="note">From 5th month it will be regular</field>
+            <field name="parent_rule_id" ref="slnee_hr_air_allowance.hr_salary_rule_airfare_allowance"/>
+        </record>
+        <!-- Salary Structure -->
+        <record id="hr_payroll.structure_base" model="hr.payroll.structure">
+            <field name="name">Company Salary Structures</field>
+            <field name="rule_ids" eval="[(4,ref('hr_salary_rule_airfare_allowance'))]" />
+            <field name="company_id" ref="base.main_company"/>
+        </record>
+
+    </data>
+</odoo>

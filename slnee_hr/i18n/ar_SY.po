@@ -1,0 +1,647 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-12 12:55+0000\n"
+"PO-Revision-Date: 2018-09-12 12:55+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr
+#: model:mail.template,body_html:slnee_hr.notification_employee_retirement
+msgid "\n"
+"                    % set emp = ctx.get('employees')\n"
+"                    <div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"                        <p>Hello ${object.name}</p>\n"
+"                        <p>This Employees ${emp} have only '6' month are remaining for Retirement.</p>\n"
+"                        <p>Regards,</p>\n"
+"                        <p>${object.company_id.name}</p>\n"
+"                    </div>\n"
+"                    \n"
+"            "
+msgstr "\n"
+"                    % set emp = ctx.get('employees')\n"
+"                    <div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"                        <p>مرحبا ${object.name}</p>\n"
+"                        <p>هذا الموظف ${emp} لدينا فقط '6' الشهر المتبقي للتقاعد.</p>\n"
+"                        <p>مع تحياتي،</p>\n"
+"                        <p>${object.company_id.name}</p>\n"
+"                    </div>\n"
+"                    \n"
+"            "
+
+#. module: slnee_hr
+#: model:ir.ui.view,arch_db:slnee_hr.report_new_joining_employee
+msgid "<b>End Date : </b>"
+msgstr "<b>تاريخ الانتهاء : </b>"
+
+#. module: slnee_hr
+#: model:ir.ui.view,arch_db:slnee_hr.report_new_joining_employee
+msgid "<b>Start Date : </b>"
+msgstr "<b>تاريخ البدء : </b>"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_employee_ksa_address_id
+msgid "Address in KSA"
+msgstr "العنوان في المملكة العربية السعودية"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_employee_age
+msgid "Age"
+msgstr "عمر"
+
+#. module: slnee_hr
+#: model:ir.ui.view,arch_db:slnee_hr.form_view_res_company_inherit
+msgid "Arabic Address:"
+msgstr "العنوان العربي:"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_res_company_arabic_city
+#: model:ir.ui.view,arch_db:slnee_hr.form_view_res_company_inherit
+msgid "Arabic City"
+msgstr "المدينة العربية"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_department_arabic_name
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_employee_arabic_name
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_job_arabic_name
+#: model:ir.model.fields,field_description:slnee_hr.field_res_company_arabic_name
+#: model:ir.model.fields,field_description:slnee_hr.field_res_partner_arabic_name
+#: model:ir.model.fields,field_description:slnee_hr.field_res_users_arabic_name
+#: model:ir.ui.view,arch_db:slnee_hr.form_view_res_company_inherit
+#: model:ir.ui.view,arch_db:slnee_hr.hr_form_view
+msgid "Arabic Name"
+msgstr "اسم عربي"
+
+#. module: slnee_hr
+#: model:ir.ui.view,arch_db:slnee_hr.view_hr_job_form2
+msgid "Arabic Name..."
+msgstr "... اسم عربي"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_res_company_arabic_street
+msgid "Arabic Street"
+msgstr "شارع عربي"
+
+#. module: slnee_hr
+#: model:ir.ui.view,arch_db:slnee_hr.form_view_res_company_inherit
+msgid "Arabic Street..."
+msgstr "شارع عربي ..."
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_res_company_arabic_street2
+msgid "Arabic Street2"
+msgstr "شارع عربي 2"
+
+#. module: slnee_hr
+#: model:res.groups,name:slnee_hr.group_gr_assistant
+msgid "Assistant"
+msgstr "المساعد"
+
+#. module: slnee_hr
+#: model:ir.ui.menu,name:slnee_hr.menu_action_res_partner_bank_form_inherit
+msgid "Bank Accounts"
+msgstr "الحسابات المصرفية"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_employee_head_count_based_on
+msgid "Based on"
+msgstr "بالاستناد الى"
+
+#. module: slnee_hr
+#: model:ir.ui.view,arch_db:slnee_hr.employee_reports_print_view
+#: model:ir.ui.view,arch_db:slnee_hr.new_joining_employee_reports_view
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: slnee_hr
+#: model:ir.model.fields,help:slnee_hr.field_res_partner_institute
+#: model:ir.model.fields,help:slnee_hr.field_res_users_institute
+msgid "Check this box if this contact is a institute."
+msgstr "حدد هذا المربع إذا كانت جهة الاتصال هذه مؤسسة."
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_employee_code
+#: model:ir.ui.view,arch_db:slnee_hr.report_employee_head_count
+#: model:ir.ui.view,arch_db:slnee_hr.report_new_joining_employee
+msgid "Code"
+msgstr "الشفرة"
+
+#. module: slnee_hr
+#: model:ir.model,name:slnee_hr.model_res_company
+msgid "Companies"
+msgstr "الشركات"
+
+#. module: slnee_hr
+#: selection:hr.employee,sponsored_by:0
+msgid "Company"
+msgstr "شركة"
+
+#. module: slnee_hr
+#: model:ir.model,name:slnee_hr.model_res_partner
+msgid "Contact"
+msgstr "جهة الاتصال"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_employee_head_count_create_uid
+#: model:ir.model.fields,field_description:slnee_hr.field_joining_employee_reports_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_employee_head_count_create_date
+#: model:ir.model.fields,field_description:slnee_hr.field_joining_employee_reports_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: slnee_hr
+#: selection:employee.head.count,based_on:0
+#: model:ir.model.fields,field_description:slnee_hr.field_employee_head_count_department_ids
+#: model:ir.ui.view,arch_db:slnee_hr.report_new_joining_employee
+msgid "Department"
+msgstr "القسم"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_employee_head_count_display_name
+#: model:ir.model.fields,field_description:slnee_hr.field_joining_employee_reports_display_name
+#: model:ir.model.fields,field_description:slnee_hr.field_report_slnee_hr_report_new_joining_employee_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_employee_emergency_contact
+msgid "Emergency Contact No"
+msgstr "جهة اتصال الطوارئ"
+
+#. module: slnee_hr
+#: model:ir.model,name:slnee_hr.model_hr_employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: slnee_hr
+#: model:ir.ui.view,arch_db:slnee_hr.hr_form_view
+msgid "Employee Code"
+msgstr "رمز الموظف"
+
+#. module: slnee_hr
+#: sql_constraint:hr.employee:0
+msgid "Employee Code must be unique!"
+msgstr "يجب أن يكون رمز الموظف فريدًا!"
+
+#. module: slnee_hr
+#: model:ir.actions.act_window,name:slnee_hr.action_employee_reports_form
+#: model:ir.ui.view,arch_db:slnee_hr.employee_reports_print_view
+msgid "Employee Reports"
+msgstr "تقارير الموظفين"
+
+#. module: slnee_hr
+#: model:ir.actions.server,name:slnee_hr.employee_retirement_notification_cron_ir_actions_server
+#: model:ir.cron,cron_name:slnee_hr.employee_retirement_notification_cron
+#: model:ir.cron,name:slnee_hr.employee_retirement_notification_cron
+msgid "Employee Retirement Notification"
+msgstr "إشعار التقاعد للموظفين"
+
+#. module: slnee_hr
+#: model:ir.ui.view,arch_db:slnee_hr.hr_form_view
+msgid "Employee's Name"
+msgstr "اسم الموظف"
+
+#. module: slnee_hr
+#: model:ir.ui.view,arch_db:slnee_hr.hr_form_view
+msgid "Employment"
+msgstr "توظيف"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_employee_employee_status
+msgid "Employment Status"
+msgstr "نظام العمل"
+
+#. module: slnee_hr
+#: selection:hr.employee,employee_status:0
+msgid "Employment/Active"
+msgstr "العمل / نشط"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_joining_employee_reports_end_date
+msgid "End Date"
+msgstr "تاريخ الإنتهاء"
+
+#. module: slnee_hr
+#: model:ir.ui.view,arch_db:slnee_hr.hr_form_view
+msgid "Extra Information"
+msgstr "معلومات اضافية"
+
+#. module: slnee_hr
+#: code:addons/slnee_hr/models/hr.py:48
+#, python-format
+msgid "Female Employee's age must be greater than 21."
+msgstr "يجب أن يكون عمر الموظف أكبر من 21 سنة."
+
+#. module: slnee_hr
+#: code:addons/slnee_hr/reports/report_new_joining_employee.py:13
+#, python-format
+msgid "Form content is missing, this report cannot be printed."
+msgstr "محتوى النموذج مفقود ، ولا يمكن طباعة هذا التقرير."
+
+#. module: slnee_hr
+#: model:ir.module.category,name:slnee_hr.category_gr
+msgid "GR"
+msgstr "GR"
+
+#. module: slnee_hr
+#: model:ir.ui.menu,name:slnee_hr.menu_gr
+msgid "GR Operations"
+msgstr "عمليات الموارد الوراثية"
+
+#. module: slnee_hr
+#: model:ir.ui.view,arch_db:slnee_hr.view_slnee_hr_employee_filter
+msgid "Gender"
+msgstr "جنس"
+
+#. module: slnee_hr
+#: model:ir.model,name:slnee_hr.model_hr_department
+msgid "HR Department"
+msgstr "قسم الموارد البشرية"
+
+#. module: slnee_hr
+#: model:ir.model,name:slnee_hr.model_hr_job
+msgid "HR Job"
+msgstr "وظيفة الموارد البشرية"
+
+#. module: slnee_hr
+#: model:ir.actions.report,name:slnee_hr.action_report_hr_employee
+msgid "Head Count"
+msgstr "رئيس العد"
+
+#. module: slnee_hr
+#: model:ir.ui.menu,name:slnee_hr.menu_employee_reports
+msgid "Head Counts"
+msgstr "عدد التهم"
+
+#. module: slnee_hr
+#: model:ir.ui.view,arch_db:slnee_hr.hr_form_view
+#: model:res.groups,name:slnee_hr.group_hof
+msgid "Head of Function"
+msgstr "رئيس وظيفة"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_employee_head_count_id
+#: model:ir.model.fields,field_description:slnee_hr.field_joining_employee_reports_id
+#: model:ir.model.fields,field_description:slnee_hr.field_report_slnee_hr_report_new_joining_employee_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: slnee_hr
+#: selection:hr.employee,employee_status:0
+msgid "Inactive"
+msgstr "غير فعال"
+
+#. module: slnee_hr
+#: code:addons/slnee_hr/models/hr.py:120
+#, python-format
+msgid "Information"
+msgstr "معلومات"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_res_partner_institute
+#: model:ir.model.fields,field_description:slnee_hr.field_res_users_institute
+msgid "Institute"
+msgstr "معهد"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_employee_is_line_manager
+msgid "Is Manager"
+msgstr "هو مدير"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_employee_is_saudi
+msgid "Is Saudi"
+msgstr "هو مدير الخط"
+
+#. module: slnee_hr
+#: selection:employee.head.count,based_on:0
+#: model:ir.model.fields,field_description:slnee_hr.field_employee_head_count_job_ids
+msgid "Job"
+msgstr "وظيفة"
+
+#. module: slnee_hr
+#: model:ir.ui.view,arch_db:slnee_hr.report_new_joining_employee
+msgid "Job Position"
+msgstr "المناصب الوظيفية"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_employee_date_of_join
+#: model:ir.ui.view,arch_db:slnee_hr.report_employee_head_count
+#: model:ir.ui.view,arch_db:slnee_hr.report_new_joining_employee
+#: model:ir.ui.view,arch_db:slnee_hr.view_slnee_hr_employee_filter
+msgid "Joining Date"
+msgstr "تاريخ الالتحاق بالعمل"
+
+#. module: slnee_hr
+#: model:ir.actions.act_window,name:slnee_hr.action_joining_employee_reports_form
+#: model:ir.ui.view,arch_db:slnee_hr.new_joining_employee_reports_view
+msgid "Joining Employee Reports"
+msgstr "الانضمام إلى تقارير الموظفين"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_employee_laptop_desktop
+msgid "Laptop/Desktop"
+msgstr "أجهزة الكمبيوتر المحمول / سطح المكتب"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_employee_head_count___last_update
+#: model:ir.model.fields,field_description:slnee_hr.field_joining_employee_reports___last_update
+#: model:ir.model.fields,field_description:slnee_hr.field_report_slnee_hr_report_new_joining_employee___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_employee_last_name
+#: model:ir.ui.view,arch_db:slnee_hr.hr_form_view
+msgid "Last Name"
+msgstr "اسم العائلة"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_employee_head_count_write_uid
+#: model:ir.model.fields,field_description:slnee_hr.field_joining_employee_reports_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_employee_head_count_write_date
+#: model:ir.model.fields,field_description:slnee_hr.field_joining_employee_reports_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_employee_date_of_leave
+msgid "Leaving Date"
+msgstr "ترك التسجيل"
+
+#. module: slnee_hr
+#: code:addons/slnee_hr/models/hr.py:121
+#, python-format
+msgid "Leaving Date Must Be Greater Than Joining Date."
+msgstr "تاريخ المغادرة يجب أن يكون أكبر من تاريخ الانضمام."
+
+#. module: slnee_hr
+#: selection:hr.employee,employee_status:0
+msgid "Long Term Secondment"
+msgstr "المدى الطويل الإعارة"
+
+#. module: slnee_hr
+#: code:addons/slnee_hr/models/hr.py:46
+#, python-format
+msgid "Male employee's age must be greater than 18"
+msgstr "يجب أن يكون عمر الموظف الذكور أكبر من 18 عامًا"
+
+#. module: slnee_hr
+#: selection:employee.head.count,based_on:0
+#: model:ir.model.fields,field_description:slnee_hr.field_employee_head_count_manager_ids
+#: model:res.groups,name:slnee_hr.group_line_manager
+msgid "Manager"
+msgstr "المدير"
+
+#. module: slnee_hr
+#: model:mail.channel,name:slnee_hr.manager_channel
+msgid "Manager Notification"
+msgstr "إعلام المدير"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_employee_middle_name
+#: model:ir.ui.view,arch_db:slnee_hr.hr_form_view
+msgid "Middle Name"
+msgstr "الاسم الأوسط"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_employee_duration_in_months
+msgid "Month(s) in Organization"
+msgstr "الشهر (أشهر) في المنظمة"
+
+#. module: slnee_hr
+#: selection:hr.employee,religion:0
+msgid "Muslim"
+msgstr "مسلم"
+
+#. module: slnee_hr
+#: model:ir.ui.view,arch_db:slnee_hr.report_employee_head_count
+#: model:ir.ui.view,arch_db:slnee_hr.report_new_joining_employee
+msgid "Name"
+msgstr "الاسم"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_employee_nominee_id
+msgid "Name of Nominee"
+msgstr "اسم المرشح"
+
+#. module: slnee_hr
+#: model:ir.ui.view,arch_db:slnee_hr.view_slnee_hr_employee_filter
+msgid "Nationality"
+msgstr "جنسية"
+
+#. module: slnee_hr
+#: model:ir.actions.report,name:slnee_hr.action_report_joining_employee
+msgid "New Joining Employee"
+msgstr "انضمام جديد الموظف"
+
+#. module: slnee_hr
+#: model:ir.ui.menu,name:slnee_hr.menu_joining_employee_reports
+#: model:ir.ui.view,arch_db:slnee_hr.report_new_joining_employee
+msgid "New Joining Employees"
+msgstr "انضمام جديد للموظفين"
+
+#. module: slnee_hr
+#: selection:hr.employee,religion:0
+msgid "Non Muslim"
+msgstr "غير مسلم"
+
+#. module: slnee_hr
+#: model:ir.ui.view,arch_db:slnee_hr.view_slnee_hr_employee_filter
+msgid "Non-Saudi"
+msgstr "غير السعودية"
+
+#. module: slnee_hr
+#: selection:hr.employee,employee_status:0
+msgid "Notice Period"
+msgstr "فترة إشعار"
+
+#. module: slnee_hr
+#: model:mail.template,report_name:slnee_hr.notification_employee_retirement
+#: model:mail.template,subject:slnee_hr.notification_employee_retirement
+msgid "Notification For Employee Retirement"
+msgstr "الإخطار لتقاعد الموظف"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_employee_children
+msgid "Number of Children"
+msgstr "عدد الاطفال"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_employee_infants
+msgid "Number of Infants"
+msgstr "عدد الرضع"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_employee_branch_id
+#: model:ir.ui.view,arch_db:slnee_hr.view_slnee_hr_employee_filter
+msgid "Office"
+msgstr "مكتب"
+
+#. module: slnee_hr
+#: model:res.groups,name:slnee_hr.group_gr_officer
+msgid "Officer"
+msgstr "ضابط"
+
+#. module: slnee_hr
+#: selection:hr.employee,sponsored_by:0
+msgid "Other"
+msgstr "آخر"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_res_company_po_box
+#: model:ir.ui.view,arch_db:slnee_hr.form_view_res_company_inherit
+msgid "PO Box"
+msgstr "صندوق بريد"
+
+#. module: slnee_hr
+#: sql_constraint:joining.employee.reports:0
+msgid "Please enter valid date"
+msgstr "يرجى إدخال تاريخ صالح"
+
+#. module: slnee_hr
+#: model:res.groups,name:slnee_hr.group_portal_applications
+msgid "Portal Applications"
+msgstr "تطبيقات البوابة"
+
+#. module: slnee_hr
+#: model:ir.ui.view,arch_db:slnee_hr.employee_reports_print_view
+#: model:ir.ui.view,arch_db:slnee_hr.new_joining_employee_reports_view
+msgid "Print"
+msgstr "طباعة"
+
+#. module: slnee_hr
+#: selection:hr.employee,employee_status:0
+msgid "Probation"
+msgstr "فترة التجربة"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_employee_reference_by
+msgid "Reference By"
+msgstr "مرجع بواسطة"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_res_users_employee_id
+msgid "Related Employee"
+msgstr "الموظف ذو الصلة"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_employee_religion
+#: model:ir.ui.view,arch_db:slnee_hr.view_slnee_hr_employee_filter
+msgid "Religion"
+msgstr "دين"
+
+#. module: slnee_hr
+#: model:ir.ui.menu,name:slnee_hr.menu_reports
+msgid "Reports"
+msgstr "التقارير"
+
+#. module: slnee_hr
+#: model:ir.ui.view,arch_db:slnee_hr.view_slnee_hr_employee_filter
+msgid "Saudi"
+msgstr "سعودي"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_employee_laptop_desktop_serial
+msgid "Serial No."
+msgstr "الرقم التسلسلي."
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_employee_sponsored_by
+msgid "Sponsored By"
+msgstr "برعاية"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_employee_spouse_number
+msgid "Spouse Phone Number"
+msgstr "رقم هاتف الزوج"
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_joining_employee_reports_start_date
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+#. module: slnee_hr
+#: model:ir.ui.view,arch_db:slnee_hr.report_employee_head_count
+#: model:ir.ui.view,arch_db:slnee_hr.report_new_joining_employee
+msgid "Status"
+msgstr "الحالة "
+
+#. module: slnee_hr
+#: selection:hr.employee,employee_status:0
+msgid "Terminated/Inactive"
+msgstr "إنهاء / غير فعال"
+
+#. module: slnee_hr
+#: sql_constraint:hr.job:0
+msgid "The name of the job position must be unique per department, grade and company!"
+msgstr "!يجب أن يكون الاسم من موقف وظيفة فريدة من نوعها لكل قسم، والرتبة، وشركة"
+
+#. module: slnee_hr
+#: model:ir.model.fields,help:slnee_hr.field_hr_employee_children
+msgid "Total Number of children(Age more than 2.5 years)."
+msgstr "العدد الإجمالي للأطفال (العمر أكثر من 2.5 سنة)."
+
+#. module: slnee_hr
+#: model:ir.model.fields,help:slnee_hr.field_hr_employee_infants
+msgid "Total Number of infants(Age between 0 to 2.5 years)."
+msgstr "العدد الإجمالي للرضع (العمر بين 0 إلى 2.5 سنة)."
+
+#. module: slnee_hr
+#: model:ir.model.fields,field_description:slnee_hr.field_hr_employee_total_service_year
+msgid "Total Service Year"
+msgstr "مجموع سنة الخدمة"
+
+#. module: slnee_hr
+#: model:ir.model,name:slnee_hr.model_res_users
+msgid "Users"
+msgstr "المستخدمون"
+
+#. module: slnee_hr
+#: model:ir.ui.view,arch_db:slnee_hr.hr_form_view
+msgid "e.g. Part Time"
+msgstr "على سبيل المثال دوام جزئي"
+
+#. module: slnee_hr
+#: model:ir.model,name:slnee_hr.model_employee_head_count
+msgid "employee.head.count"
+msgstr "employee.head.count"
+
+#. module: slnee_hr
+#: model:ir.model,name:slnee_hr.model_joining_employee_reports
+msgid "joining.employee.reports"
+msgstr "joining.employee.reports"
+
+#. module: slnee_hr
+#: model:ir.ui.view,arch_db:slnee_hr.employee_reports_print_view
+#: model:ir.ui.view,arch_db:slnee_hr.new_joining_employee_reports_view
+msgid "or"
+msgstr "أو"
+
+#. module: slnee_hr
+#: model:ir.model,name:slnee_hr.model_report_slnee_hr_report_new_joining_employee
+msgid "report.slnee_hr.report_new_joining_employee"
+msgstr "report.slnee_hr.report_new_joining_employee"
+
+#. module: slnee_hr
+#: model:ir.ui.view,arch_db:slnee_hr.report_employee_head_count
+msgid "wise Employees"
+msgstr "الحكيم الموظفين"
+

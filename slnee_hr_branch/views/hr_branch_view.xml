@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="hr_branch_form_view" model="ir.ui.view">
+        <field name="name">hr.branch.form</field>
+        <field name="model">hr.branch</field>
+        <field name="arch" type="xml">
+            <form string="Office">
+                <sheet>
+                    <group col='4'>
+                        <field name="name" />
+                        <field name="arabic_name" placeholder="Arabic Name(Office)"/>
+                        <field name="code" />
+                        <field name="company_id"/>
+                    </group>
+                    <group>
+                        <group string="Address Details">
+                            <label for="street" string="Address" />
+                            <div>
+                                <field name="company_name" placeholder="Company name"/>
+                                <field name="street" placeholder="Street..."/>
+                                <field name="street2"/>
+                                <div class="address_format">
+                                    <field name="po_box_no" placeholder="P.O. Box" style="width: 37%%"/>
+                                    <field name="city" placeholder="City" style="width: 40%%"/>
+                                    <field name="zip" placeholder="ZIP" style="width: 20%%"/>
+                                </div>
+                                <field name="country" placeholder="Country"/>
+                            </div>
+                        </group>
+                        <group string="تفاصيل عنوان">
+                            <label for="arabic_street" string="عنوان" />
+                            <div>
+                                <field name="company_arabic_name" placeholder="اسم الشركة"/>
+                                <field name="arabic_street" placeholder="الشارع ..."/>
+                                <field name="arabic_street2"/>
+                                <div class="address_format">
+                                    <field name="arabic_city" placeholder="مدينة" style="width: 40%%"/>
+                                </div>
+                                <field name="arabic_country" placeholder="بلد"/>
+                            </div>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="phone" class="oe_inline"/>
+                        <field name="mobile" class="oe_inline"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="hr_branch_tree_view" model="ir.ui.view">
+        <field name="name">hr.branch.tree</field>
+        <field name="model">hr.branch</field>
+        <field name="arch" type="xml">
+            <tree string="Office tree">
+                <field name="name"/>
+                <field name="code"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_hr_branch">
+        <field name="name">Office</field>
+        <field name="res_model">hr.branch</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

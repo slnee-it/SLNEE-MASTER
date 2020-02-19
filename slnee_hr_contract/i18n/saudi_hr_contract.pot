@@ -1,0 +1,371 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_contract
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-30 12:14+0000\n"
+"PO-Revision-Date: 2015-04-30 12:14+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_contract
+#: model:ir.actions.act_window,help:slnee_hr_contract.action_city_airfare
+msgid "<p class=\"oe_view_nocontent_create\">Click to define a new Air Fare.</p>\n"
+"            "
+msgstr ""
+
+#. module: slnee_hr_contract
+#: sql_constraint:city:0
+msgid "A city with this name is already in system!"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: sql_constraint:city.airfare:0
+msgid "A fare for this city already in system!"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:city.airfare,adult_fare:0
+msgid "Adult Fare"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,air_allowance:0
+msgid "Air Allowance"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: model:ir.actions.act_window,name:slnee_hr_contract.action_city_airfare
+#: model:ir.ui.menu,name:slnee_hr_contract.menu_city_airfare
+msgid "Air Fares"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,is_iron_allowance:0
+msgid "Allow Iron Allowance"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,mobile:0
+msgid "Allow Mobile Allowance"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: view:hr.contract:slnee_hr_contract.hr_contract_view_inherit_overtime_form1
+msgid "Allowances"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,signon_bonus_amount:0
+msgid "Bonus Amount"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:city,name:0
+#: view:city.airfare:slnee_hr_contract.city_airfare_filter
+#: field:city.airfare,city_id:0
+msgid "City"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: view:city.airfare:slnee_hr_contract.view_city_airfare_tree
+msgid "City AirFare"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: model:ir.model,name:slnee_hr_contract.model_hr_contract
+msgid "Contract"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:city,country_id:0
+#: view:city.airfare:slnee_hr_contract.city_airfare_filter
+#: field:city.airfare,country_id:0
+msgid "Country"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:city,create_uid:0
+#: field:city.airfare,create_uid:0
+msgid "Created by"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:city,create_date:0
+#: field:city.airfare,create_date:0
+msgid "Created on"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: help:hr.contract,message_last_post:0
+msgid "Date of the last message posted on the record."
+msgstr ""
+
+#. module: slnee_hr_contract
+#: view:hr.contract:slnee_hr_contract.hr_contract_view_inherit_overtime_form1
+msgid "Duration"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: view:hr.contract:slnee_hr_contract.hr_contract_view_search
+msgid "Employee"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,employee_code:0
+msgid "Employee Code"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: view:hr.contract:slnee_hr_contract.hr_contract_view_inherit_overtime_form1
+msgid "Extra Information"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,message_follower_ids:0
+msgid "Followers"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: view:city.airfare:slnee_hr_contract.view_city_airfare_form
+msgid "Grade"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: model:ir.model,name:slnee_hr_contract.model_hr_grade
+msgid "Grade Description"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: view:hr.contract:slnee_hr_contract.hr_contract_view_inherit_overtime_form1
+msgid "Gross"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: view:city.airfare:slnee_hr_contract.city_airfare_filter
+msgid "Group By..."
+msgstr ""
+
+#. module: slnee_hr_contract
+#: help:hr.contract,message_summary:0
+msgid "Holds the Chatter summary (number of messages, ...). This summary is directly in html format in order to be inserted in kanban views."
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:city,id:0
+#: field:city.airfare,id:0
+msgid "ID"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: help:hr.contract,message_unread:0
+msgid "If checked new messages require your attention."
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,iron_allowance:0
+msgid "Iron Allowance"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: view:hr.employee:slnee_hr_contract.hr_hr_employee_view_form2_inherit
+msgid "Is Head of Function"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,message_is_follower:0
+msgid "Is a Follower"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,type_is_subcontractor:0
+msgid "Is type subcontractor?"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,type_is_trainee:0
+msgid "Is type trainee?"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,message_last_post:0
+msgid "Last Message Date"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:city,write_uid:0
+#: field:city.airfare,write_uid:0
+msgid "Last Updated by"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:city,write_date:0
+#: field:city.airfare,write_date:0
+msgid "Last Updated on"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,is_leaving:0
+msgid "Leaving Notice"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: view:hr.contract:slnee_hr_contract.hr_contract_view_inherit_overtime_form1
+msgid "Leaving Notice Period"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: help:hr.contract,signon_bonus_amount:0
+msgid "Mention the Sign on Bonus amount."
+msgstr ""
+
+#. module: slnee_hr_contract
+#: help:hr.contract,iron_allowance:0
+msgid "Mention the iron allowance."
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,message_ids:0
+msgid "Messages"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: help:hr.contract,message_ids:0
+msgid "Messages and communication history"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,mobile_allowance:0
+#: help:hr.contract,mobile_allowance:0
+#: field:hr.grade,mobile_allowance:0
+#: help:hr.grade,mobile_allowance:0
+msgid "Mobile Allowance"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,period_ids:0
+msgid "Month(s)"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: view:hr.contract:slnee_hr_contract.hr_contract_view_search
+msgid "Non-Saudi"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,notice_end_date:0
+msgid "Notice End Date"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,notice_start_date:0
+msgid "Notice Start Date"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: view:hr.employee:slnee_hr_contract.hr_hr_employee_view_form2_inherit
+msgid "Place Of Birth"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,ramadan_working_hours:0
+msgid "Ramadan Working Hours"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,relocation_allowance:0
+msgid "Relocation Allowance"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: view:hr.contract:slnee_hr_contract.hr_contract_view_inherit_overtime_form1
+msgid "Reporting"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: help:hr.contract,air_destination:0
+msgid "Return ticket fare from employees home town"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: view:hr.contract:slnee_hr_contract.hr_contract_view_inherit_overtime_form1
+msgid "Salary and Advantages"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: view:hr.contract:slnee_hr_contract.hr_contract_view_search
+msgid "Saudi"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,school_allowance:0
+msgid "School Allowance"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: view:hr.contract:slnee_hr_contract.hr_contract_view_search
+msgid "Search Contract"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,signon_bonus:0
+msgid "Sign on Bonus"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: help:hr.contract,period_ids:0
+msgid "Specify month(s) in which the sign on bonus will be distributed. Bonus will be distributed in Bonus Amount/Number of Month(s)."
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,message_summary:0
+msgid "Summary"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: help:city.airfare,adult_fare:0
+msgid "This amount shows return fare from the selected city."
+msgstr ""
+
+#. module: slnee_hr_contract
+#: view:hr.contract:slnee_hr_contract.hr_contract_view_search
+msgid "To be Renew"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,message_unread:0
+msgid "Unread Messages"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,air_destination:0
+msgid "Vacation Destination"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,website_message_ids:0
+msgid "Website Messages"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: help:hr.contract,website_message_ids:0
+msgid "Website communication history"
+msgstr ""
+
+#. module: slnee_hr_contract
+#: field:hr.contract,is_notify:0
+msgid "is notify ? "
+msgstr ""
+
+#. module: slnee_hr_contract
+#: view:hr.contract:slnee_hr_contract.hr_contract_view_tree
+msgid "red:(notify_date<=current_date) and (current_date<=date_end);gray:date_end and date_end<current_date;black:date_end>current_date;"
+msgstr ""
+

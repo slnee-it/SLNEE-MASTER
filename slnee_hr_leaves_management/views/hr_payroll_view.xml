@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_hr_payslip_gosi_form" model="ir.ui.view">
+        <field name="name">hr.payslip.leave.form</field>
+        <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
+        <field name="model">hr.payslip</field>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='credit_note']" position="after">
+                <field name="payment_days" />
+                <field name="bank_account_id" attrs="{'readonly':[('state','not in','draft')]}"/>
+                <field name="first_month_days" invisible="1"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

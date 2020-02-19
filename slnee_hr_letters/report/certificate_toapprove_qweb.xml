@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="certificate_toapprove">
+        <t t-call="web.html_container">
+            <t t-call="web.basic_layout">
+                <t t-foreach="docs" t-as="o">
+                    <div class="page" style="text-align: right;  face :Helvetica; font-size:20px;">
+                        <t t-set="arg" t-value="{'employee_id' : [o.employee_id.id, o.employee_id.name],'date':o.date,'manager_id': [o.manager_id.id, o.manager_id.name]}"/>
+                        <t t-set="result" t-value="get_data" />
+                        <t t-foreach="result" t-as="data">
+                            <t t-set="islamic_date" t-value="get_islamic_date(data['date'])"/>
+                            <p>‫
+                            ‫التـاريخ‬ :‬‬ <t t-esc="islamic_date"/>هـ‬‬
+                            </p>
+                            <p>‫
+                                الموافق‬
+                                <t t-if="data['date']" >
+                                    <span t-esc="time.strftime('%Y-%m-%d', time.strptime(data['date'],'%Y-%m-%d'))"/>
+                                </t>
+                                م‬
+                            </p>
+                            <p style="P10; font-weight: bold;"> __ السادة / الملحقية السعودية في </p>
+                            <p style="P10; font-weight: bold;">المحترمين </p>
+                            <p>.السلام عليكم ورحمة الله وبركاته وبعد</p>
+                            <p >
+                                <span>نفيدكم بأن الأستاذ/</span>
+                                <font face="Helvetica-Bold" size="14.0">
+                                    <t t-if="data['employee'].arabic_name" ><t t-esc="data['employee'].arabic_name"/></t>
+                                </font> ,
+                                <t t-if="data['emp_country']" ><t t-esc="data['emp_country']"/></t>
+                            </p>
+                            <p>
+                                ,<t t-if="data['doc_number']" >
+                                    <t t-esc="data['doc_number']"/>
+                                </t>
+                                <span>الجنسية بموجب إقامة/ بطاقة أحوال رقـم </span>
+                            </p>
+                            <p>
+                                <t style="font-weight: bold;">
+                                    <t t-if="o.employee_id.job_id" >
+                                        <span t-field="o.employee_id.job_id.arabic_name" />
+                                    </t>
+                                    <t t-if="o.employee_id.user_id and o.employee_id.user_id.company_id" >
+                                        <span t-field="o.employee_id.user_id.company_id.arabic_name">
+                                        </span>
+                                        <span>'هو أحد الموظفين في شركة  </span>
+                                    </t>
+                                </t>
+                            </p>
+                            <p>
+                                <font face="Helvetica-Bold" size="14.0">
+                                    <t t-if="data['job_id']" >."
+                                        <t t-esc="data['job_id']"/> "
+                                    </t>
+                                </font>
+                                <span>فرع الرياض ويعمل بوظيفة</span>
+                            </p>
+                            <p>
+                                منذ تاريخ
+                                    <t t-if="data['join_date']" >
+                                        <span t-esc="time.strftime('%d-%m-%Y', time.strptime(data['join_date'],'%Y-%m-%d'))"/>
+                                    </t>
+                                <span>م. ولا يزال على رأس العمل حتى هذا</span>
+                            </p>
+                            <p>.التاريخ ويرجى من سعادتكم تصديق شهادات المذكور اعلاه</p>
+                            <p>وقد أعطي هذا التعريف بناء على طلبه دون أدنى مسؤولية مالية او</p>
+                            <p>.قانونية تجاه الشركة</p>
+                            <p>.وتقبلوا تحياتنا</p>
+                            <p style="text-align: left;"><font face="Helvetica" size="16.0" >__________________ </font></p>
+                            <p style="text-align: left;">
+                                <font face="Helvetica-Bold" size="16.0">
+                                    <t t-if="data['manager']" >
+                                        <t t-esc="data['manager']"/>
+                                    </t>
+                                </font>
+                            </p>
+                            <p style="text-align: left;">
+                                <font face="Helvetica" size="16.0">
+                                    <t t-if="data['auth_job_id']" >
+                                        <t t-esc="data['auth_job_id']"/>
+                                    </t>
+                                </font>
+                            </p>
+                        </t>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+
+    <record id="paperformat_certificate_toapprove" model="report.paperformat">
+        <field name="name">Ratification Certificate</field>
+        <field name="default" eval="True"/>
+        <field name="format">A4</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">20</field>
+        <field name="margin_bottom">20</field>
+        <field name="margin_left">15</field>
+        <field name="margin_right">15</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+        <field name="dpi">80</field>
+    </record>
+
+</odoo>

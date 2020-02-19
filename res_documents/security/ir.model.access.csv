@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_res_documents_employee,res.documents.employee,model_res_documents,base.group_user,1,1,1,0
+access_res_document_officer,res.document.officer,model_res_documents,hr.group_hr_user,1,1,1,0
+access_res_document_manager,res.document.manager,model_res_documents,hr.group_hr_manager,1,1,1,1
+access_res_document_type_employee,res.document.type.employee,model_res_document_type,base.group_user,1,1,1,0
+access_res_document_type_officer,res.document.type.officer,model_res_document_type,hr.group_hr_user,1,1,1,0
+access_res_document_type_manager,res.document.type.manager,model_res_document_type,hr.group_hr_manager,1,1,1,1

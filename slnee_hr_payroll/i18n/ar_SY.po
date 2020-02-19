@@ -1,0 +1,409 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_payroll
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-12 08:59+0000\n"
+"PO-Revision-Date: 2018-09-12 08:59+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_payroll
+#: selection:other.hr.payslip,operation_type:0
+msgid "Allowance"
+msgstr "بدل"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_other_hr_payslip_amount
+msgid "Amount"
+msgstr "كمية"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_other_hr_payslip_approved_date_to
+msgid "Approved Date To"
+msgstr "تاريخ الموافقة على"
+
+#. module: slnee_hr_payroll
+#: selection:other.hr.payslip,calc_type:0
+msgid "By Amount"
+msgstr "حسب الكمية"
+
+#. module: slnee_hr_payroll
+#: selection:other.hr.payslip,calc_type:0
+msgid "By Days"
+msgstr "قبل أيام"
+
+#. module: slnee_hr_payroll
+#: selection:other.hr.payslip,calc_type:0
+msgid "By Hours"
+msgstr "عن طريق ساعات"
+
+#. module: slnee_hr_payroll
+#: selection:other.hr.payslip,calc_type:0
+msgid "By Percentage"
+msgstr "حسب النسبة المئوية"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_other_hr_payslip_calc_type
+msgid "Calculation Type"
+msgstr "نوع الحساب"
+
+#. module: slnee_hr_payroll
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.payslip_report_view
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_other_hr_payslip_company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: slnee_hr_payroll
+#: model:ir.model,name:slnee_hr_payroll.model_company_payslip_report
+msgid "Company Payslip Report"
+msgstr "شركة Payslip التقرير"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_other_hr_payslip_country_id
+msgid "Country"
+msgstr "دولة"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_company_payslip_report_create_uid
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_hr_payslip_export_create_uid
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_hr_payslip_export_line_create_uid
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_other_hr_payslip_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_company_payslip_report_create_date
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_hr_payslip_export_create_date
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_hr_payslip_export_line_create_date
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_other_hr_payslip_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_other_hr_payslip_date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: slnee_hr_payroll
+#: selection:other.hr.payslip,operation_type:0
+msgid "Deduction"
+msgstr "المستقطع"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_other_hr_payslip_department_id
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.view_other_hr_payslip_filter
+msgid "Department"
+msgstr "القسم"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_other_hr_payslip_description
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.other_hr_payslip_form1
+msgid "Description"
+msgstr "الوصف"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_company_payslip_report_display_name
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_hr_payslip_export_display_name
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_hr_payslip_export_line_display_name
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_other_hr_payslip_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: slnee_hr_payroll
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.other_hr_payslip_form1
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.view_other_hr_payslip_filter
+#: selection:other.hr.payslip,state:0
+msgid "Done"
+msgstr "منتهي"
+
+#. module: slnee_hr_payroll
+#: selection:other.hr.payslip,state:0
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_other_hr_payslip_employee_id
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.view_other_hr_payslip_filter
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: slnee_hr_payroll
+#: model:hr.salary.rule,name:slnee_hr_payroll.hr_salary_rule_employee_eos_resignation
+msgid "Employee Expense Deduction"
+msgstr "حساب خصم الموظف"
+
+#. module: slnee_hr_payroll
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.other_hr_payslip_form1
+msgid "Employee Information"
+msgstr "معلومات الموظف"
+
+#. module: slnee_hr_payroll
+#: model:hr.salary.rule,name:slnee_hr_payroll.hr_salary_rule_employee_reimbursement_allowance
+msgid "Employee Reimbursement"
+msgstr "تعويض الموظف"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_company_payslip_report_excel_file
+msgid "Excel File"
+msgstr "ملف اكسل"
+
+#. module: slnee_hr_payroll
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.hr_payslip_export_form
+msgid "Export Line"
+msgstr "خط التصدير"
+
+#. module: slnee_hr_payroll
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.hr_payslip_export_form
+msgid "Export Lines"
+msgstr "خطوط التصدير"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_company_payslip_report_payslip_export_id
+msgid "Export Structure"
+msgstr "هيكل التصدير"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_hr_payslip_export_line_ids
+msgid "Export line"
+msgstr "خط التصدير"
+
+#. module: slnee_hr_payroll
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.other_hr_payslip_form1
+msgid "Extra Information"
+msgstr "معلومات اضافية"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_company_payslip_report_filename
+msgid "File Name"
+msgstr "اسم الملف"
+
+#. module: slnee_hr_payroll
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.view_other_hr_payslip_filter
+msgid "Group By..."
+msgstr "تجميع حسب.."
+
+#. module: slnee_hr_payroll
+#: model:hr.salary.rule.category,name:slnee_hr_payroll.HRA
+msgid "Housing Rent Allowance"
+msgstr "بدل إيجار السكن"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_company_payslip_report_id
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_hr_payslip_export_id
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_hr_payslip_export_line_id
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_other_hr_payslip_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_hr_payslip_export_line_is_difference_field
+msgid "Is Difference Field"
+msgstr "هو حقل الفرق"
+
+#. module: slnee_hr_payroll
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.hr_payslip_export_form
+msgid "Is Export Line Difference"
+msgstr "هو اختلاف خط التصدير"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_company_payslip_report___last_update
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_hr_payslip_export___last_update
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_hr_payslip_export_line___last_update
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_other_hr_payslip___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_company_payslip_report_write_uid
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_hr_payslip_export_line_write_uid
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_hr_payslip_export_write_uid
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_other_hr_payslip_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_company_payslip_report_write_date
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_hr_payslip_export_line_write_date
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_hr_payslip_export_write_date
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_other_hr_payslip_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: slnee_hr_payroll
+#: model:hr.salary.rule,name:slnee_hr_payroll.hr_salary_rule_trainees_net
+msgid "NET for trainees and contractors"
+msgstr "صافي للمتدربين والمقاولين"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_hr_payslip_export_name
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_other_hr_payslip_name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_other_hr_payslip_no_of_days
+msgid "No of Days"
+msgstr "لا أيام"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_other_hr_payslip_no_of_hours
+msgid "No of Hours"
+msgstr "عدد الساعات"
+
+#. module: slnee_hr_payroll
+#: model:hr.salary.rule,name:slnee_hr_payroll.hr_salary_rule_other_allowance
+#: model:hr.salary.rule.category,name:slnee_hr_payroll.other
+msgid "Other Allowance"
+msgstr "بدلات أخرى"
+
+#. module: slnee_hr_payroll
+#: model:ir.ui.menu,name:slnee_hr_payroll.menu_hr_payroll
+msgid "Other Allowance/Deduction"
+msgstr "بدل أخرى / خصم"
+
+#. module: slnee_hr_payroll
+#: model:ir.actions.act_window,name:slnee_hr_payroll.action_other_hr_payslip
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.other_hr_payslip_tree
+msgid "Other Allowances/Deduction"
+msgstr "بدلات أخرى / خصم"
+
+#. module: slnee_hr_payroll
+#: model:hr.salary.rule,name:slnee_hr_payroll.hr_salary_rule_other_deduction
+msgid "Other Deduction"
+msgstr "خصم آخر"
+
+#. module: slnee_hr_payroll
+#: model:ir.model,name:slnee_hr_payroll.model_other_hr_payslip
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.other_hr_payslip_form1
+msgid "Other HR Payslip"
+msgstr "الآخرين HR قسيمة الدفع"
+
+#. module: slnee_hr_payroll
+#: model:ir.model,name:slnee_hr_payroll.model_hr_payslip
+msgid "Pay Slip"
+msgstr "ظرف المرتب"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_other_hr_payslip_payslip_id
+msgid "Payslip"
+msgstr "قسيمة الدفع"
+
+#. module: slnee_hr_payroll
+#: model:ir.actions.act_window,name:slnee_hr_payroll.action_hr_payslip_export
+#: model:ir.model,name:slnee_hr_payroll.model_hr_payslip_export
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_hr_payslip_export_line_payslip_export_id
+#: model:ir.ui.menu,name:slnee_hr_payroll.menu_payslip_export
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.hr_payslip_export_form
+msgid "Payslip Export"
+msgstr "تصدير قسيمة الدفع"
+
+#. module: slnee_hr_payroll
+#: model:ir.model,name:slnee_hr_payroll.model_hr_payslip_export_line
+msgid "Payslip Export Line"
+msgstr "خط تصدير قسيمة الدفع"
+
+#. module: slnee_hr_payroll
+#: model:ir.actions.act_window,name:slnee_hr_payroll.action_payslip_report_view
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.payslip_report_view
+msgid "Payslip Report"
+msgstr "تقرير قسيمة الدفع"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_other_hr_payslip_percentage
+msgid "Percentage"
+msgstr "النسبة المئوية"
+
+#. module: slnee_hr_payroll
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.payslip_report_view
+msgid "Print"
+msgstr "طباعة"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_company_payslip_report_report_name
+msgid "Report Head"
+msgstr "رئيس التقرير"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_hr_payslip_export_line_rule_id
+msgid "Rule"
+msgstr "حكم"
+
+#. module: slnee_hr_payroll
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.view_other_hr_payslip_filter
+msgid "Search Other Allowances/Deduction"
+msgstr "البحث الأخرى البدلات / خصم"
+
+#. module: slnee_hr_payroll
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.other_hr_payslip_form1
+msgid "Select Department"
+msgstr "وزارة حدد"
+
+#. module: slnee_hr_payroll
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.other_hr_payslip_form1
+msgid "Select Employee"
+msgstr "حدد الموظف"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_hr_payslip_export_line_sequence
+msgid "Sequence"
+msgstr "التسلسل"
+
+#. module: slnee_hr_payroll
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.other_hr_payslip_form1
+msgid "Set as Draft"
+msgstr "تعيين كمسودة"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_other_hr_payslip_state
+msgid "State"
+msgstr "المحافظة"
+
+#. module: slnee_hr_payroll
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.view_other_hr_payslip_filter
+msgid "Status"
+msgstr "الحالة "
+
+#. module: slnee_hr_payroll
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.view_other_hr_payslip_filter
+msgid "To Approve"
+msgstr "للاعتماد"
+
+#. module: slnee_hr_payroll
+#: model:hr.salary.rule.category,name:slnee_hr_payroll.TA
+msgid "Transportation"
+msgstr "وسائل النقل"
+
+#. module: slnee_hr_payroll
+#: model:hr.salary.rule,name:slnee_hr_payroll.hr_salary_rule_transportationallowance
+msgid "Transportation Allowance"
+msgstr "بدل النقل"
+
+#. module: slnee_hr_payroll
+#: model:ir.model.fields,field_description:slnee_hr_payroll.field_other_hr_payslip_operation_type
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.view_other_hr_payslip_filter
+msgid "Type"
+msgstr "النوع"
+
+#. module: slnee_hr_payroll
+#: code:addons/slnee_hr_payroll/models/other_hr_payslip.py:41
+#, python-format
+msgid "You cannot remove the record which is in %s state!"
+msgstr "!لا يمكنك إزالة السجل الذي هو في٪ ق الدولة"
+
+#. module: slnee_hr_payroll
+#: model:ir.ui.view,arch_db:slnee_hr_payroll.payslip_report_view
+msgid "or"
+msgstr "أو"
+

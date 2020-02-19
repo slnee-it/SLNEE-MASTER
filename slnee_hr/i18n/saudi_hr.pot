@@ -1,0 +1,1999 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-30 12:15+0000\n"
+"PO-Revision-Date: 2015-04-30 12:15+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr
+#: model:email.template,body_html:slnee_hr.email_template_employment_reference
+msgid "\n"
+"		<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"		\n"
+"		    <p>Hello ${object.contact_name},</p>\n"
+"		    \n"
+"		    </div>\n"
+"		            "
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "(Areas for further improvement)"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "1. Birth Certificate and Vaccination Card."
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "1. Child Medical Report(Vaccination)."
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "1. Original Medical Report.(if above 15 years)."
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "1. Original Passport."
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "2. Birth Certificate translate into Arabic language."
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "2. Two Photos."
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "3. Original Medical Report."
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "3. Original Passport."
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "3. Two Photos for each."
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "3. Two Photos."
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "4. Medical Insurance."
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "4. Original Passport."
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "5. Medical Insurance."
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "5. Original Iqama of Father and Mother."
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "6. Original Iqama of Father and Mother."
+msgstr ""
+
+#. module: slnee_hr
+#: model:ir.actions.act_window,help:slnee_hr.action_res_document_type
+msgid "<p class=\"oe_view_nocontent_create\">Click to define a new Document Type.</p>\n"
+"            "
+msgstr ""
+
+#. module: slnee_hr
+#: model:ir.actions.act_window,help:slnee_hr.action_hr_grade
+msgid "<p class=\"oe_view_nocontent_create\">Click to define a new Grade.</p>\n"
+"			"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee.title,shortcut:0
+msgid "Abbreviation"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.employee.card,card_type:0
+msgid "Access Card"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee.card,access_type:0
+msgid "Access Type"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.employee,employee_status:0
+msgid "Active"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+#: field:hr.qualification,activities:0
+msgid "Activities and Societies"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "Add Family in Iqama"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "Add New Born Baby in Iqama (Born in KSA)"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "Add New Born Baby in Iqama (Born outside KSA)"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.branch:slnee_hr.hr_branch_form_view
+msgid "Address"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.branch:slnee_hr.hr_branch_form_view
+msgid "Address Details"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee,ksa_address_id:0
+msgid "Address in KSA"
+msgstr ""
+
+#. module: slnee_hr
+#: model:ir.module.category,name:slnee_hr.category_admin
+msgid "Admin"
+msgstr ""
+
+#. module: slnee_hr
+#: model:res.groups,name:slnee_hr.group_admin_manager
+msgid "Admin Manager"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee,age:0
+msgid "Age"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Any Other Information:"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+#: view:hr.employee.card:slnee_hr.hr_employee_card_form_view
+#: view:hr.iqama:slnee_hr.hr_iqama_filter
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "Approve"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee.card:slnee_hr.view_hr_employee_card_filter
+#: selection:hr.employee.card,state:0
+#: selection:hr.experience,state:0
+#: selection:hr.iqama,state:0
+msgid "Approved"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee.card,approved_date:0
+#: field:hr.iqama,approved_date:0
+msgid "Approved Date"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee.card,approved_by:0
+#: field:hr.iqama,approved_by:0
+msgid "Approved by"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.branch,arabic_name:0
+#: field:hr.department,arabic_name:0
+#: view:hr.employee:slnee_hr.hr_form_view
+#: field:hr.employee,arabic_name:0
+#: field:hr.iqama,arabic_name:0
+#: field:hr.job,arabic_name:0
+msgid "Arabic Name"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.branch:slnee_hr.hr_branch_form_view
+msgid "Arabic Name(Office)"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.job:slnee_hr.view_hr_job_form2
+msgid "Arabic Name..."
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.iqama,arrival_date:0
+msgid "Arrival Date(In Saudi)"
+msgstr ""
+
+#. module: slnee_hr
+#: model:res.groups,name:slnee_hr.group_gr_assistant
+#: model:res.groups,name:slnee_hr.group_hr_assistant
+msgid "Assistant"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Attention:"
+msgstr ""
+
+#. module: slnee_hr
+#: model:ir.ui.menu,name:slnee_hr.menu_action_res_partner_bank_form_inherit
+msgid "Bank Accounts"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.employee.card,card_type:0
+msgid "Business Card"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.medical,id_number:0
+msgid "Card Code"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee.card:slnee_hr.hr_employee_card_form_view
+msgid "Card Information"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee.card:slnee_hr.hr_employee_card_form_view
+#: field:hr.employee.card,card_no:0
+msgid "Card No"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee.card:slnee_hr.view_hr_employee_card_filter
+#: field:hr.employee.card,card_type:0
+msgid "Card Type"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+msgid "Certificates"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+msgid "Certification"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.certification,name:0
+msgid "Certification Name"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee,certification_ids:0
+msgid "Certifications"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:employee.medical,relation:0
+#: selection:hr.iqama,relation:0
+msgid "Child"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.branch:slnee_hr.hr_branch_form_view
+#: field:hr.branch,arabic_city:0
+#: field:hr.branch,city:0
+msgid "City"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.medical,class_type:0
+msgid "Class"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.branch,code:0
+#: field:hr.employee,code:0
+#: field:res.document.type,code:0
+msgid "Code"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.experience,company:0
+#: field:res.documents,company_id:0
+msgid "Company"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.branch,company_arabic_name:0
+msgid "Company Arabic Name"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.branch,company_name:0
+msgid "Company Name"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Company Stamp (where applicable)"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.branch:slnee_hr.hr_branch_form_view
+msgid "Company name"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.qualification,program_type:0
+msgid "Completed"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.qualification,completion_date:0
+msgid "Completion Date"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee.card:slnee_hr.hr_employee_card_form_view
+#: view:hr.iqama:slnee_hr.hr_iqama_filter
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "Confirm"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee.card:slnee_hr.view_hr_employee_card_filter
+msgid "Confirmed"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.employee.card,status:0
+msgid "Consultant"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.certification,contact_email:0
+#: field:hr.experience,contact_email:0
+#: field:hr.qualification,contact_email:0
+msgid "Contact Email"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.experience,contact_name:0
+#: field:hr.qualification,contact_name:0
+msgid "Contact Name"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.certification,contact_phone:0
+#: field:hr.experience,contact_phone:0
+#: field:hr.qualification,contact_phone:0
+msgid "Contact Phone No"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.experience,contact_title:0
+msgid "Contact Title"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Contact details (no & email address)"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.certification,contact_name:0
+msgid "Contact name"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.employee.card,status:0
+msgid "Contractor"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.branch:slnee_hr.hr_branch_form_view
+#: field:hr.branch,arabic_country:0
+#: field:hr.branch,country:0
+msgid "Country"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+msgid "Country of Person"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee.card,create_date:0
+msgid "Created Date"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.gosi,create_uid:0
+#: field:employee.medical,create_uid:0
+#: field:gosi.payslip.line,create_uid:0
+#: field:hr.branch,create_uid:0
+#: field:hr.certification,create_uid:0
+#: field:hr.employee.card,create_uid:0
+#: field:hr.employee.title,create_uid:0
+#: field:hr.experience,create_uid:0
+#: field:hr.grade,create_uid:0
+#: field:hr.iqama,create_uid:0
+#: field:hr.qualification,create_uid:0
+#: field:res.document.type,create_uid:0
+#: field:res.documents,create_uid:0
+msgid "Created by"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.gosi,create_date:0
+#: field:employee.medical,create_date:0
+#: field:gosi.payslip.line,create_date:0
+#: field:hr.branch,create_date:0
+#: field:hr.certification,create_date:0
+#: field:hr.employee.title,create_date:0
+#: field:hr.experience,create_date:0
+#: field:hr.grade,create_date:0
+#: field:hr.iqama,create_date:0
+#: field:hr.qualification,create_date:0
+#: field:res.document.type,create_date:0
+#: field:res.documents,create_date:0
+msgid "Created on"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.experience,is_current_job:0
+msgid "Current Job"
+msgstr ""
+
+#. module: slnee_hr
+#: field:gosi.payslip.line,date:0
+msgid "Date"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.gosi,birth_date:0
+#: field:employee.medical,birth_date:0
+#: field:hr.iqama,birthdate:0
+msgid "Date of Birth"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.gosi,hijri_birth_date:0
+msgid "Date of Birth(Hijri)"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Date of Birth:"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.iqama,expiry_date:0
+#: field:res.documents,expiry_date:0
+msgid "Date of Expiry"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.iqama,hijri_expiry_date:0
+#: field:res.documents,hijri_expiry_date:0
+msgid "Date of Expiry(Hijri)"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.certification,issue_date:0
+#: field:hr.iqama,issue_date:0
+#: field:res.documents,issue_date:0
+msgid "Date of Issue"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.certification,expiry_date:0
+msgid "Date of expiry"
+msgstr ""
+
+#. module: slnee_hr
+#: help:hr.employee.card,message_last_post:0
+#: help:hr.experience,message_last_post:0
+#: help:hr.iqama,message_last_post:0
+msgid "Date of the last message posted on the record."
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.qualification,attended_date_from:0
+msgid "Dates Attended(from)"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.qualification,attended_date_to:0
+msgid "Dates Attended(to)"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Days"
+msgstr ""
+
+#. module: slnee_hr
+#: view:employee.gosi:slnee_hr.hr_gosi_filter
+#: field:employee.gosi,department_id:0
+#: view:hr.employee.card:slnee_hr.view_hr_employee_card_filter
+#: field:hr.employee.card,department_id:0
+#: field:hr.iqama,department_id:0
+msgid "Department"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+msgid "Dependent"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee,dependent_ids:0
+msgid "Dependents"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+#: view:hr.employee.card:slnee_hr.hr_employee_card_form_view
+#: field:hr.employee.card,description:0
+#: field:hr.experience,description:0
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+#: field:hr.iqama,description:0
+#: field:hr.qualification,description:0
+msgid "Description"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee,document_ids:0
+msgid "Document"
+msgstr ""
+
+#. module: slnee_hr
+#: model:ir.actions.act_window,name:slnee_hr.action_res_document_type
+#: model:ir.ui.menu,name:slnee_hr.menu_hr_document_type
+#: view:res.document.type:slnee_hr.view_res_document_type_form
+#: view:res.document.type:slnee_hr.view_res_document_type_tree
+msgid "Document Type"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+msgid "Documents"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee.card:slnee_hr.hr_employee_card_form_view
+#: selection:hr.employee.card,state:0
+msgid "Done"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.employee.card,state:0
+#: selection:hr.experience,state:0
+#: selection:hr.iqama,state:0
+msgid "Draft"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+msgid "Education and Experience"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Email:"
+msgstr ""
+
+#. module: slnee_hr
+#: view:employee.gosi:slnee_hr.hr_gosi_filter
+#: field:employee.gosi,employee_id:0
+#: field:employee.medical,employee_id:0
+#: selection:employee.medical,relation:0
+#: field:gosi.payslip.line,employee_id:0
+#: field:hr.certification,employee_id:0
+#: view:hr.employee.card:slnee_hr.view_hr_employee_card_filter
+#: field:hr.employee.card,employee_id:0
+#: field:hr.experience,employee_id:0
+#: view:hr.iqama:slnee_hr.hr_iqama_filter
+#: field:hr.iqama,employee_id:0
+#: selection:hr.iqama,relation:0
+#: selection:hr.iqama,type:0
+#: field:hr.qualification,employee_id:0
+#: model:ir.model,name:slnee_hr.model_hr_employee
+#: field:res.documents,employee_id:0
+msgid "Employee"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.gosi,emp_arabic_name:0
+msgid "Employee Arabic Name"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee.card:slnee_hr.hr_employee_card_form_view
+#: view:hr.employee.card:slnee_hr.hr_employee_card_tree_view
+#: model:ir.actions.act_window,name:slnee_hr.action_hr_employee_card_view
+#: model:ir.ui.menu,name:slnee_hr.menu_hr_employee_card
+msgid "Employee Card"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.gosi,employee_code:0
+#: field:hr.employee.card,employee_code:0
+#: field:hr.iqama,employee_code:0
+msgid "Employee Code"
+msgstr ""
+
+#. module: slnee_hr
+#: view:employee.gosi:slnee_hr.hr_gosi_form_view
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "Employee Details"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee.card,employee_ems_code:0
+msgid "Employee EMS Code"
+msgstr ""
+
+#. module: slnee_hr
+#: view:employee.gosi:slnee_hr.hr_gosi_form_view
+#: view:employee.gosi:slnee_hr.hr_gosi_tree_view
+#: model:ir.actions.act_window,name:slnee_hr.action_hr_gosi_view
+#: model:ir.ui.menu,name:slnee_hr.menu_hr_gosi
+msgid "Employee Gosi"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee.card:slnee_hr.hr_employee_card_form_view
+msgid "Employee Information"
+msgstr ""
+
+#. module: slnee_hr
+#: model:ir.model,name:slnee_hr.model_employee_medical
+msgid "Employee Medical Insurance"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+msgid "Employee Payroll Code"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee.title:slnee_hr.title_form_view
+#: view:hr.employee.title:slnee_hr.title_tree_view
+#: model:ir.actions.act_window,name:slnee_hr.action_hr_title_view
+#: model:ir.ui.menu,name:slnee_hr.menu_hr_title
+msgid "Employee Title"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Employer Address"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Employer Name"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+msgid "Employment"
+msgstr ""
+
+#. module: slnee_hr
+#: model:email.template,report_name:slnee_hr.email_template_employment_reference
+#: model:email.template,subject:slnee_hr.email_template_employment_reference
+#: model:ir.actions.report.xml,name:slnee_hr.report_employment_reference
+msgid "Employment Reference Check"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee,employee_status:0
+msgid "Employment Status"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+msgid "Experience"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+msgid "Experience Detail"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+#: view:hr.employee.card:slnee_hr.hr_employee_card_form_view
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "Extra Information"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.iqama,type:0
+msgid "Family"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.gosi,family_card_id:0
+msgid "Family Card Id"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "Family Details"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Fax:"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:employee.medical,gender:0
+msgid "Female"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.qualification,field_of_study:0
+msgid "Field of study"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_filter
+msgid "Filter"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+msgid "First Name"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee.card,message_follower_ids:0
+#: field:hr.experience,message_follower_ids:0
+#: field:hr.iqama,message_follower_ids:0
+msgid "Followers"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "For New Iqama"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "From : -"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.employee.card,access_type:0
+msgid "Full"
+msgstr ""
+
+#. module: slnee_hr
+#: field:gosi.payslip.line,gosi_id:0
+msgid "GOSI"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee,gosi_ids:0
+msgid "GOSI NO"
+msgstr ""
+
+#. module: slnee_hr
+#: model:ir.module.category,name:slnee_hr.category_gr
+msgid "GR"
+msgstr ""
+
+#. module: slnee_hr
+#: model:ir.ui.menu,name:slnee_hr.menu_gr_visa
+msgid "GR Operation"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.medical,gender:0
+msgid "Gender"
+msgstr ""
+
+#. module: slnee_hr
+#: field:gosi.payslip.line,amount:0
+msgid "Gosi Amount"
+msgstr ""
+
+#. module: slnee_hr
+#: view:employee.gosi:slnee_hr.hr_gosi_form_view
+msgid "Gosi Details"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.gosi,gosi_no:0
+msgid "Gosi No"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee,grade_id:0
+#: view:hr.grade:slnee_hr.view_grade_form
+#: view:hr.grade:slnee_hr.view_grade_tree
+#: field:hr.job,grade_id:0
+#: model:ir.actions.act_window,name:slnee_hr.action_hr_grade
+#: model:ir.ui.menu,name:slnee_hr.menu_hr_grade
+msgid "Grade"
+msgstr ""
+
+#. module: slnee_hr
+#: model:ir.model,name:slnee_hr.model_hr_grade
+msgid "Grade Description"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.qualification,grade:0
+msgid "Grade(GPA)"
+msgstr ""
+
+#. module: slnee_hr
+#: view:employee.gosi:slnee_hr.hr_gosi_filter
+#: view:hr.employee.card:slnee_hr.view_hr_employee_card_filter
+#: view:hr.iqama:slnee_hr.hr_iqama_filter
+msgid "Group By..."
+msgstr ""
+
+#. module: slnee_hr
+#: model:ir.module.category,name:slnee_hr.category_hr
+#: model:ir.ui.menu,name:slnee_hr.menu_hr_hr_config
+msgid "HR"
+msgstr ""
+
+#. module: slnee_hr
+#: model:ir.model,name:slnee_hr.model_hr_employee_card
+msgid "HR Employee Card"
+msgstr ""
+
+#. module: slnee_hr
+#: model:ir.model,name:slnee_hr.model_hr_experience
+msgid "HR Experience"
+msgstr ""
+
+#. module: slnee_hr
+#: model:ir.model,name:slnee_hr.model_hr_iqama
+msgid "HR Iqama"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.iqama,handled_by_id:0
+msgid "Handled By"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Has the applicant given satisfactory in the following?"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+#: model:res.groups,name:slnee_hr.group_hof
+msgid "Head of Function"
+msgstr ""
+
+#. module: slnee_hr
+#: view:employee.gosi:slnee_hr.hr_gosi_form_view
+msgid "Hijri Birth Date"
+msgstr ""
+
+#. module: slnee_hr
+#: help:hr.employee.card,message_summary:0
+#: help:hr.experience,message_summary:0
+#: help:hr.iqama,message_summary:0
+msgid "Holds the Chatter summary (number of messages, ...). This summary is directly in html format in order to be inserted in kanban views."
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Honesty / Conduct"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.gosi,id:0
+#: field:employee.medical,id:0
+#: field:gosi.payslip.line,id:0
+#: field:hr.branch,id:0
+#: field:hr.certification,id:0
+#: field:hr.employee.card,id:0
+#: field:hr.employee.title,id:0
+#: field:hr.experience,id:0
+#: field:hr.grade,id:0
+#: field:hr.iqama,id:0
+#: field:hr.qualification,id:0
+#: field:res.document.type,id:0
+#: field:res.documents,id:0
+msgid "ID"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.employee.card,card_type:0
+msgid "ID Card"
+msgstr ""
+
+#. module: slnee_hr
+#: help:hr.employee.card,message_unread:0
+#: help:hr.experience,message_unread:0
+#: help:hr.iqama,message_unread:0
+msgid "If checked new messages require your attention."
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Immediate Superior/HR Department/Other (please mention):"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee.card:slnee_hr.hr_employee_card_form_view
+#: selection:hr.employee.card,state:0
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+#: selection:hr.iqama,state:0
+msgid "In Progress"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.iqama,current_status:0
+msgid "In Saudi?"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.employee,employee_status:0
+msgid "Inactive"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.medical,inception_date:0
+msgid "Inception Date"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee.card:slnee_hr.view_hr_employee_card_filter
+msgid "Inprogress"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+msgid "Insurance"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+#: model:ir.actions.act_window,name:slnee_hr.action_hr_iqama_view
+#: model:ir.ui.menu,name:slnee_hr.menu_hr_iqama
+msgid "Iqama"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_filter
+msgid "Iqama                         that has been approved"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "Iqama Details"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.gosi,iqama_no:0
+msgid "Iqama No"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.iqama,iqama_no:0
+msgid "Iqama Number"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.iqama,iqama_position:0
+msgid "Iqama Position"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "Iqama Type"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_tree_view
+msgid "Iqama dependant"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_filter
+msgid "Iqama name"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_filter
+msgid "Iqama that                         has been Issued"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_filter
+msgid "Iqama that                         has been refused"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_filter
+msgid "Iqama that                         has been waiting for approval"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.grade,is_above_manager:0
+msgid "Is Above Manager"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee,is_line_manager:0
+msgid "Is Manager"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee,is_saudi:0
+#: field:hr.iqama,is_saudi:0
+msgid "Is Saudi"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee.card,message_is_follower:0
+#: field:hr.experience,message_is_follower:0
+#: field:hr.iqama,message_is_follower:0
+msgid "Is a Follower"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.gosi,issue_date:0
+msgid "Issue Date"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_filter
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+#: selection:hr.iqama,state:0
+msgid "Issued"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.certification,organization_name:0
+msgid "Issuing Organization"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.grade:slnee_hr.view_grade_form
+msgid "JOB"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.medical,job_id:0
+#: field:hr.grade,hr_job_ids:0
+msgid "Job"
+msgstr ""
+
+#. module: slnee_hr
+#: view:employee.gosi:slnee_hr.hr_gosi_filter
+#: field:employee.gosi,job_id:0
+#: field:hr.iqama,job_id:0
+#: model:ir.model,name:slnee_hr.model_hr_job
+msgid "Job Position"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee.card,job_id:0
+#: field:hr.experience,job_title:0
+msgid "Job Title"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee,date_of_join:0
+msgid "Joining Date"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee,laptop_desktop:0
+msgid "Laptop/Desktop"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee.card,message_last_post:0
+#: field:hr.experience,message_last_post:0
+#: field:hr.iqama,message_last_post:0
+msgid "Last Message Date"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+#: field:hr.employee,last_name:0
+msgid "Last Name"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.gosi,write_uid:0
+#: field:employee.medical,write_uid:0
+#: field:gosi.payslip.line,write_uid:0
+#: field:hr.branch,write_uid:0
+#: field:hr.certification,write_uid:0
+#: field:hr.employee.title,write_uid:0
+#: field:hr.experience,write_uid:0
+#: field:hr.grade,write_uid:0
+#: field:hr.qualification,write_uid:0
+#: field:res.document.type,write_uid:0
+#: field:res.documents,write_uid:0
+msgid "Last Updated by"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.gosi,write_date:0
+#: field:employee.medical,write_date:0
+#: field:gosi.payslip.line,write_date:0
+#: field:hr.branch,write_date:0
+#: field:hr.certification,write_date:0
+#: field:hr.employee.title,write_date:0
+#: field:hr.experience,write_date:0
+#: field:hr.grade,write_date:0
+#: field:hr.qualification,write_date:0
+#: field:res.document.type,write_date:0
+#: field:res.documents,write_date:0
+msgid "Last Updated on"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Leadership Skills"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee,date_of_leave:0
+msgid "Leaving Date"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.employee.card,access_type:0
+msgid "Limited"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+#: model:res.groups,name:slnee_hr.group_line_manager
+msgid "Manager"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.experience,location:0
+msgid "Location"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.employee,employee_status:0
+msgid "Long Term Secondment"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.employee.card,reason:0
+msgid "Lost Card"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Loyalty and Cooperation"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:employee.medical,gender:0
+msgid "Male"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+#: field:hr.employee,medical_ids:0
+msgid "Medical Insurance"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.medical,member_name:0
+msgid "Member Name"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee.card,message_ids:0
+#: field:hr.experience,message_ids:0
+#: field:hr.iqama,message_ids:0
+msgid "Messages"
+msgstr ""
+
+#. module: slnee_hr
+#: help:hr.employee.card,message_ids:0
+#: help:hr.experience,message_ids:0
+#: help:hr.iqama,message_ids:0
+msgid "Messages and communication history"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+#: field:hr.employee,middle_name:0
+msgid "Middle Name"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.branch,mobile:0
+msgid "Mobile"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee.card,write_date:0
+msgid "Modification Date"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.iqama,write_date:0
+msgid "Modification on"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee.card,write_uid:0
+#: field:hr.iqama,write_uid:0
+msgid "Modified by"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+#: view:hr.employee.card:slnee_hr.view_hr_employee_card_filter
+msgid "Month"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.employee,religion:0
+#: selection:hr.iqama,religion:0
+msgid "Muslim"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.grade,name:0
+#: field:res.document.type,name:0
+msgid "Name"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Name of Applicant:"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "Name of Iqama"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee,nominee_id:0
+msgid "Name of Nominee"
+msgstr ""
+
+#. module: slnee_hr
+#: help:hr.iqama,name:0
+msgid "Name of the dependent"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.iqama,name:0
+msgid "Name(As in Passport)"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Name:"
+msgstr ""
+
+#. module: slnee_hr
+#: view:employee.gosi:slnee_hr.hr_gosi_filter
+#: field:employee.gosi,country_id:0
+#: view:hr.employee:slnee_hr.hr_form_view
+#: view:hr.iqama:slnee_hr.hr_iqama_filter
+#: field:hr.iqama,nationality:0
+msgid "Nationality"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.iqama,type:0
+msgid "New Born Baby"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.employee.card,reason:0
+msgid "New Card"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.experience,is_current_job:0
+msgid "No"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.employee,religion:0
+#: selection:hr.iqama,religion:0
+msgid "Non Muslim"
+msgstr ""
+
+#. module: slnee_hr
+#: view:employee.gosi:slnee_hr.hr_gosi_filter
+#: selection:employee.gosi,type:0
+msgid "Non-Saudi"
+msgstr ""
+
+#. module: slnee_hr
+#: field:res.documents,notes:0
+msgid "Notes"
+msgstr ""
+
+#. module: slnee_hr
+#: field:res.documents,doc_number:0
+msgid "Number"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee,infants:0
+msgid "Number of Infants"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.branch:slnee_hr.hr_branch_form_view
+#: field:hr.employee,branch_id:0
+#: field:hr.employee.card,branch_id:0
+#: field:hr.iqama,branch_id:0
+#: model:ir.actions.act_window,name:slnee_hr.action_hr_branch
+#: model:ir.ui.menu,name:slnee_hr.menu_hr_branch
+msgid "Office"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.branch,name:0
+msgid "Office Name"
+msgstr ""
+
+#. module: slnee_hr
+#: model:res.groups,name:slnee_hr.group_admin_office_in_Charge
+msgid "Office in Charge"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.branch:slnee_hr.hr_branch_tree_view
+msgid "Office tree"
+msgstr ""
+
+#. module: slnee_hr
+#: model:res.groups,name:slnee_hr.group_gr_officer
+#: model:res.groups,name:slnee_hr.group_hr_officer
+msgid "Officer"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.qualification,program_type:0
+msgid "Ongoing"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "Other Details"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.branch:slnee_hr.hr_branch_form_view
+msgid "P.O. Box"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.branch,po_box_no:0
+msgid "P.O.Box"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.gosi,passport_no:0
+msgid "Passport No"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.gosi,payslip_line_ids:0
+msgid "Payslip Lines"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "People Management"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee.card,period_of_stay:0
+msgid "Period of Stay"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Period of employment:"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.employee.card,status:0
+msgid "Permanent"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+msgid "Personal Information"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+#: field:hr.iqama,place_of_issue:0
+#: field:res.documents,issue_place:0
+msgid "Place of Issue"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Please complete this back to ["Company_Name"] Companies on ____________ or scan it and email to us"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Please verify employment by answering the following questions:"
+msgstr ""
+
+#. module: slnee_hr
+#: field:res.documents,position:0
+msgid "Position"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.medical,premium:0
+msgid "Premium"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee,experience_ids:0
+msgid "Previous Experience"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.iqama,profession:0
+#: field:res.documents,profession:0
+msgid "Profession"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.qualification,program_type:0
+msgid "Program Status"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "Put the description here"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee.card:slnee_hr.hr_employee_card_form_view
+msgid "Put the description here..."
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+msgid "Qualification"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee,qualification_ids:0
+msgid "Qualifications"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee.card,reason:0
+msgid "Reason"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Reason for leaving your company?"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+msgid "Reference"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+#: view:hr.employee.card:slnee_hr.hr_employee_card_form_view
+#: view:hr.iqama:slnee_hr.hr_iqama_filter
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "Refuse"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee.card:slnee_hr.view_hr_employee_card_filter
+#: selection:hr.employee.card,state:0
+#: selection:hr.experience,state:0
+#: selection:hr.iqama,state:0
+msgid "Refused"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee.card,refused_date:0
+msgid "Refused Date"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee.card,refused_by:0
+#: field:hr.iqama,refused_by:0
+msgid "Refused by"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.iqama,refused_date:0
+msgid "Refused on"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.certification,reg_no:0
+msgid "Registration No."
+msgstr ""
+
+#. module: slnee_hr
+#: field:res.users,employee_id:0
+msgid "Related Employee"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.medical,relation:0
+#: field:hr.iqama,relation:0
+msgid "Relation"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Reliability/Professionalism"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee,religion:0
+#: field:hr.iqama,religion:0
+msgid "Religion"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.employee.card,reason:0
+msgid "Replace for Damaged"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee.card,requested_date:0
+msgid "Requested Date"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "Required Documents"
+msgstr ""
+
+#. module: slnee_hr
+#: view:employee.gosi:slnee_hr.hr_gosi_filter
+#: selection:employee.gosi,type:0
+msgid "Saudi"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee.card:slnee_hr.view_hr_employee_card_filter
+msgid "Search Employee Card"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.employee.card,status:0
+msgid "Secondee"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee.card:slnee_hr.hr_employee_card_form_view
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "Select Employee"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "Select Nationality"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+msgid "Send Email"
+msgstr ""
+
+#. module: slnee_hr
+#: model:res.groups,name:slnee_hr.group_gr_senior_officer
+#: model:res.groups,name:slnee_hr.group_hr_senior_officer
+msgid "Senior Officer"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee,laptop_desktop_serial:0
+msgid "Serial No."
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.iqama,serial_number:0
+msgid "Serial Number"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee.card:slnee_hr.hr_employee_card_form_view
+#: view:hr.iqama:slnee_hr.hr_iqama_form_view
+msgid "Set to Draft"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Signature &"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.medical,sponsor_id:0
+msgid "Sponsor ID"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:employee.medical,relation:0
+#: selection:hr.iqama,relation:0
+msgid "Spouse"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee,spouse_number:0
+msgid "Spouse Phone Number"
+msgstr ""
+
+#. module: slnee_hr
+#: field:employee.medical,staff_no:0
+msgid "Staff No"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.iqama:slnee_hr.hr_iqama_filter
+msgid "State"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee.card:slnee_hr.view_hr_employee_card_filter
+#: field:hr.employee.card,state:0
+#: field:hr.employee.card,status:0
+#: field:hr.experience,state:0
+#: field:hr.iqama,state:0
+msgid "Status"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.branch,arabic_street:0
+#: field:hr.branch,street:0
+msgid "Street"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.branch:slnee_hr.hr_branch_form_view
+msgid "Street..."
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.branch,arabic_street2:0
+#: field:hr.branch,street2:0
+msgid "Street2"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Strength:"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Strengths & Weaknesses of Mr."
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Strictly Private & Confidential"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee.card,message_summary:0
+#: field:hr.experience,message_summary:0
+#: field:hr.iqama,message_summary:0
+msgid "Summary"
+msgstr ""
+
+#. module: slnee_hr
+#: model:res.groups,name:slnee_hr.group_gr_team_leader
+#: model:res.groups,name:slnee_hr.group_hr_team_leader
+msgid "Team Leader"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.branch,phone:0
+msgid "Tel"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Thank you for your cooperation and prompt response."
+msgstr ""
+
+#. module: slnee_hr
+#: sql_constraint:hr.job:0
+msgid "The name of the job position must be unique per department, grade and company!"
+msgstr ""
+
+#. module: slnee_hr
+#: help:hr.grade,is_above_manager:0
+msgid "Tick this if grade is above manager level."
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.experience,time_period_from:0
+msgid "Time Period(from)"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.experience,time_period_to:0
+msgid "Time Period(to)"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+#: field:hr.employee,title:0
+#: field:hr.employee.title,name:0
+msgid "Title"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Title & Organization:"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "To :-"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee.card:slnee_hr.view_hr_employee_card_filter
+msgid "To Approve"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.iqama,state:0
+msgid "To be Renewed"
+msgstr ""
+
+#. module: slnee_hr
+#: help:hr.employee,infants:0
+msgid "Total Number of infants(Age between 0 to 2.5 years)."
+msgstr ""
+
+#. module: slnee_hr
+#: model:res.groups,name:slnee_hr.group_admin_travel_coordinator
+msgid "Travel coordinator"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Trustworthiness"
+msgstr ""
+
+#. module: slnee_hr
+#: view:employee.gosi:slnee_hr.hr_gosi_filter
+#: field:employee.gosi,type:0
+#: view:hr.iqama:slnee_hr.hr_iqama_filter
+#: field:hr.iqama,type:0
+#: field:res.documents,type_id:0
+msgid "Type"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.qualification,university_id:0
+msgid "University Name"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee.card,message_unread:0
+#: field:hr.experience,message_unread:0
+#: field:hr.iqama,message_unread:0
+msgid "Unread Messages"
+msgstr ""
+
+#. module: slnee_hr
+#: model:ir.model,name:slnee_hr.model_res_users
+msgid "Users"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:employee.medical,class_type:0
+msgid "VIP"
+msgstr ""
+
+#. module: slnee_hr
+#: field:res.documents,is_visible_on_report:0
+msgid "Visible on Report"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.employee.card,status:0
+msgid "Visitor"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Voluntary / End of Contract / Dismissed / Redundancy"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.employee.card,state:0
+#: selection:hr.iqama,state:0
+msgid "Waiting Approval"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Weaknesses"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee.card,website_message_ids:0
+#: field:hr.experience,website_message_ids:0
+#: field:hr.iqama,website_message_ids:0
+msgid "Website Messages"
+msgstr ""
+
+#. module: slnee_hr
+#: help:hr.employee.card,website_message_ids:0
+#: help:hr.experience,website_message_ids:0
+#: help:hr.iqama,website_message_ids:0
+msgid "Website communication history"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "What position(s) were held by Mr."
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee.card,work_email:0
+msgid "Work Email"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee.card,work_mobile:0
+msgid "Work Mobile"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.employee.card,work_phone:0
+msgid "Work Telephone"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Would you re-employ and if not, why?"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Year"
+msgstr ""
+
+#. module: slnee_hr
+#: selection:hr.experience,is_current_job:0
+msgid "Yes"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Yes / No/ other reason please specify below"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Yes/No"
+msgstr ""
+
+#. module: slnee_hr
+#: code:addons/slnee_hr/models/hr_employee_card.py:44
+#, python-format
+msgid "You cannot remove the record which is in %s state!"
+msgstr ""
+
+#. module: slnee_hr
+#: report:experience:0
+msgid "Your relation to the applicant"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.branch:slnee_hr.hr_branch_form_view
+msgid "ZIP"
+msgstr ""
+
+#. module: slnee_hr
+#: field:hr.branch,zip:0
+msgid "Zip"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+msgid "[('manager','=',True)]"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.employee:slnee_hr.hr_form_view
+msgid "base.group_user"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.branch:slnee_hr.hr_branch_form_view
+msgid "اسم الشركة"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.branch:slnee_hr.hr_branch_form_view
+msgid "الشارع ..."
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.branch:slnee_hr.hr_branch_form_view
+msgid "تفاصيل عنوان"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.branch:slnee_hr.hr_branch_form_view
+msgid "عنوان"
+msgstr ""
+
+#. module: slnee_hr
+#: view:hr.branch:slnee_hr.hr_branch_form_view
+msgid "مدينة"
+msgstr ""
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <menuitem id="menu_hr_branch" action="slnee_hr_branch.action_hr_branch" parent="hr.menu_human_resources_configuration" groups="group_company_branch" sequence="20"/>
+</odoo>

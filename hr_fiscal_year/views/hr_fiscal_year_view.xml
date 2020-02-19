@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Public Year Tree View -->
+    <record id="view_public_year_tree" model="ir.ui.view">
+        <field name="name">Public Year</field>
+        <field name="model">year.year</field>
+        <field name="arch" type="xml">
+            <tree string="Public Year">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="date_start"/>
+                <field name="date_stop"/>
+                <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Public Year Form View -->
+    <record id="view_public_year_form" model="ir.ui.view">
+        <field name="name">Public Year</field>
+        <field name="model">year.year</field>
+        <field name="arch" type="xml">
+            <form string="Public Year">
+                <header>
+                    <button name="create_period" string="Create Monthly Periods" type="object" class="oe_highlight"/>
+                </header>
+                <group col="4">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="date_start"/>
+                    <field name="date_stop"/>
+                    <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
+                </group>
+                <field colspan="4" name="period_ids" nolabel="1" widget="one2many_list">
+                    <tree string="Period" editable="top">
+                        <field name="name"/>
+                        <field name="code"/>
+                        <field name="date_start"/>
+                        <field name="date_stop"/>
+                    </tree>
+                    <form string="Period">
+                        <group col="4">
+                            <field name="name"/>
+                            <field name="code"/>
+                            <field name="date_start"/>
+                            <field name="date_stop"/>
+                        </group>
+                    </form>
+                </field>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action Public Year -->
+    <record id="action_public_year" model="ir.actions.act_window">
+        <field name="name">Public Year</field>
+        <field name="res_model">year.year</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+            Click to start a new year.
+          </p><p>
+            Define your company's Public year according to your needs.For example,
+            if a Public year between January 1, 2015 and December 31, 2015
+            would be referred to as 2015.
+          </p>
+        </field>
+    </record>
+
+    <!-- Year Period Tree View -->
+    <record id="view_year_period_tree" model="ir.ui.view">
+        <field name="name">Year Period</field>
+        <field name="model">year.period</field>
+        <field name="arch" type="xml">
+            <tree string="Year Period">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="date_start"/>
+                <field name="date_stop"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="hr_employee_leaving_form_view" model="ir.ui.view">
+        <field name="name">hr.employee.leaving.form.view</field>
+        <field name="model">hr.employee.leaving</field>
+        <field name="arch" type="xml">
+            <form string="Employee Leaving">
+                <header>
+                    <button name="leaving_confirm" string="Confirm" states="draft" type="object" class="oe_highlight"/>
+                    <button name="leaving_validate" string="Validate" states="confirm" type="object" class="oe_highlight" groups="hr.group_hr_user"/>
+                    <button name="leaving_approve" string="Approve" states="validate" type="object" class="oe_highlight" groups="hr.group_hr_manager"/>
+                    <button name="leaving_refuse" string="Refuse" states="confirm,validate" type="object" groups="hr.group_hr_user"/>
+                    <button name="set_draft" string="Set to Draft" states="refuse,approve" type="object" groups="hr.group_hr_user"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirm"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group string="Employee Information" groups="hr.group_hr_user">
+                            <field name="employee_id" attrs="{'readonly':[('state','!=','draft')]}" placeholder="Select Employee"/>
+                            <field name="department_id" />
+                            <field name="branch_id" domain="[('company_id', '=', company_id)]" groups="slnee_hr_branch.group_company_branch"/>
+                            <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
+                        </group>
+                        <group string="Leaving Information">
+                            <field name="reason" attrs="{'readonly':[('state','!=','draft')]}" placeholder="Please enter reason for leaving"/>
+                            <field name="requested_date" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="notice_start_date"
+                                attrs="{'readonly':[('state','=', 'approve')],'required':[('state','=','validate')]}" groups="hr.group_hr_user"/>
+                            <field name="notice_end_date"
+                                attrs="{'readonly':[('state','=', 'approve')],'required':[('state','=','validate')]}" groups="hr.group_hr_user"/>
+                            <field name="exit_date" attrs="{'readonly':[('state','=', 'approve')],'required':[('state','=','validate')], 'invisible': [('state','in', ['confirm','draft'])] }" groups="hr.group_hr_user"/>
+                            <field name="contact_person" options="{'no_create': True, 'no_edit': True}" attrs="{'readonly':[('state','=','approve')],'required':[('state','=','validate')], 'invisible': [('state','in', ['confirm','draft'])]}" groups="hr.group_hr_user"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Description">
+                            <group  colspan="4">
+                                <field name="description" placeholder="Put the description here..." nolabel="1" attrs="{'readonly': [('state','!=','draft')]}"/>
+                            </group>
+                        </page>
+                        <page string="Extra Information" groups="base.group_no_one">
+                            <group col="4">
+                                <field name="create_uid" string="Create By" readonly="1"/>
+                                <field name="create_date" readonly="1"/>
+                                <field name="write_uid" string="Last Updated By" readonly="1"/>
+                                <field name="write_date" readonly="1"/>
+                                <field name="approved_by" attrs="{'invisible':[('approved_by','=',False)]}"/>
+                                <field name="approved_date" attrs="{'invisible':[('approved_date','=',False)]}"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+    <record id="view_hr_employee_leaving_filter" model="ir.ui.view">
+        <field name="name">hr.employee.leaving.filter</field>
+        <field name="model">hr.employee.leaving</field>
+        <field name="arch" type="xml">
+            <search string="Search Employee Leaving">
+                <field name="employee_id"/>
+                <filter icon="terp-check" domain="[('state','=','draft')]" string="To Approve"/>
+                <filter icon="terp-check" domain="[('state','=','confirm')]" string="Confirmed"/>
+                <filter icon="terp-check" domain="[('state','=','approve')]" string="Approved"/>
+                <filter icon="terp-check" domain="[('state','=','validate')]" string="Validated"/>
+                <filter icon="terp-check" domain="[('state','=','refuse')]" string="Refused"/>
+                <group expand="0" string="Group By...">
+                    <filter name="group_name" string="Employee" context="{'group_by':'employee_id'}"/>
+                    <filter string="Department" icon="terp-personal+" context="{'group_by':'department_id'}"/>
+                    <filter string="Status" icon="terp-stock_effects-object-colorize" context="{'group_by':'state'}"/>
+                    <filter string="Month" icon="terp-stock_effects-object-colorize" context="{'group_by':'notice_start_date'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="hr_employee_leaving_tree_view" model="ir.ui.view">
+        <field name="name">hr.employee.leaving.tree.view</field>
+        <field name="model">hr.employee.leaving</field>
+        <field name="arch" type="xml">
+            <tree string="Employee Leaving">
+                <field name="employee_id"/>
+                <field name="department_id"/>
+                <field name="branch_id" groups="slnee_hr_branch.group_company_branch"/>
+                <field name="company_id"/>
+                <field name="requested_date"/>
+                <field name="notice_start_date"/>
+                <field name="notice_end_date"/>
+                <field name="state"></field>
+            </tree>
+        </field>
+    </record>
+    <record id="action_hr_employee_leaving_view" model="ir.actions.act_window">
+        <field name="name">Employee Leaving</field>
+        <field name="res_model">hr.employee.leaving</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <record id="action_tree_hr_employee_leaving" model="ir.actions.act_window.view">
+        <field eval="1" name="sequence" />
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="hr_employee_leaving_tree_view" />
+        <field name="act_window_id" ref="action_hr_employee_leaving_view" />
+    </record>
+    <record id="action_form_hr_employee_leaving" model="ir.actions.act_window.view">
+        <field eval="2" name="sequence" />
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="hr_employee_leaving_form_view" />
+        <field name="act_window_id" ref="action_hr_employee_leaving_view" />
+    </record>
+
+    <menuitem id="menu_hr_leaving" parent="hr.menu_hr_root" name="Leaving" sequence="4" groups="base.group_user"/>
+
+    <menuitem id="menu_hr_employee_leaving" parent="menu_hr_leaving" action="action_hr_employee_leaving_view" sequence="5" groups="base.group_user"/>
+</odoo>

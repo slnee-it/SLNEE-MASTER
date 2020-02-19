@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_exp_info_view_employee_form" model="ir.ui.view">
+        <field name="name">hr.exp.info.view.employee.form</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='public']" position="after">
+                <page string="Education and Experience" groups="hr.group_hr_user">
+                    <separator string="Qualification"/>
+                    <field name="qualification_ids" nolabel="1">
+                        <form string="Qualification">
+                            <group>
+                                <group string="Qualification">
+                                    <field name="university_id" context="{'default_institute': 1}" domain="[('institute','=',1)]"/>
+                                    <field name="degree_id"/>
+                                    <field name="program_type"/>
+                                    <field name="completion_month"/>
+                                    <field name="completion_year"/>
+                                </group>
+                                <group string="Reference">
+                                    <field name="contact_name" />
+                                    <field name="contact_email" />
+                                    <field name="contact_phone" />
+                                </group>
+                            </group>
+                            <separator string="Activities and Societies"/>
+                            <field name="activities" nolabel="1"/>
+                            <separator string="Description"/>
+                            <field name="description" nolabel="1"/>
+                        </form>
+                        <tree string="Qualification">
+                            <field name="university_id"/>
+                            <field name="program_type"/>
+                            <field name="degree_id"/>
+                            <field name="completion_month"/>
+                            <field name="completion_year"/>
+                            <field name="contact_name"/>
+                            <field name="contact_phone"/>
+                            <field name="contact_email"/>
+                        </tree>
+                    </field>
+                    <separator/>
+                    <separator string="Certification"/>
+                    <field name="certification_ids" nolabel="1">
+                        <tree string="Certificates" editable="bottom">
+                            <field name="name" required="1"/>
+                            <field name="organization_name"/>
+                            <field name="issue_date"/>
+                            <field name="expiry_date"/>
+                            <field name="reg_no"/>
+                            <field name="contact_name"/>
+                            <field name="contact_phone"/>
+                            <field name="contact_email"/>
+                        </tree>
+                    </field>
+                    <separator/>
+                    <separator string="Experience"/>
+                    <field name="experience_ids" nolabel="1">
+                        <form string="Experience">
+                            <header>
+                                <button string="Send Email" name="action_send_mail"
+                                    type="object" groups="hr.group_hr_user" states="draft" class="oe_highlight" />
+                                <button string="Approve" name="experience_approve"
+                                    type="object" states="draft,refuse" class="oe_highlight" groups="hr.group_hr_user"/>
+                                <button string="Refuse" name="experience_refuse" type="object"
+                                    states="draft,approve" class="oe_left" groups="hr.group_hr_user"/>
+                                <field name="state" widget="statusbar"
+                                    statusbar_visible="waiting_answer,done" />
+                            </header>
+                            <group>
+                                <group string="Experience">
+                                    <field name="is_current_job" />
+                                    <field name="company" />
+                                    <field name="job_title" />
+                                    <field name="location" />
+                                    <field name="time_period_from" />
+                                    <field name="time_period_to" />
+                                </group>
+                                <group string="Reference">
+                                    <field name="contact_name" />
+                                    <field name="contact_phone" />
+                                    <field name="contact_email" />
+                                    <field name="contact_title" />
+                                </group>
+                            </group>
+                            <separator string="Description"/>
+                            <field name="description" nolabel="1" />
+                        </form>
+                        <tree string="Experience">
+                            <field name="is_current_job" />
+                            <field name="company" />
+                            <field name="job_title" />
+                            <field name="location" />
+                            <field name="time_period_from" />
+                            <field name="time_period_to" />
+                            <field name="contact_name" />
+                            <field name="contact_phone" />
+                            <field name="contact_email" />
+                            <field name="contact_title" />
+                            <field name="state" />
+                            <button name="action_send_mail" string="Send Email"
+                                icon="fa fa-envelope" type="object" states="draft" groups="hr.group_hr_user"/>
+                            <button string="Approve" name="experience_approve"
+                                states="draft,refuse" type="object" icon="fa fa-check" groups="hr.group_hr_user"/>
+                            <button string="Refuse" name="experience_refuse" states="draft,approve"
+                                type="object" icon="gtk-cancel" groups="hr.group_hr_user"/>
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

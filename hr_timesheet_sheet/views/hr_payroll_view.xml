@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- hr_overtime -->
+    <record id="view_payslip_hr_overtime_form" model="ir.ui.view">
+        <field name="name">hr.overtime.payslip.form</field>
+        <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
+        <field name="model">hr.payslip</field>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='worked_days_line_ids']/tree/field[@name='number_of_hours']" position="after">
+                <field name="overtime_hours"/>
+            </xpath>
+            <xpath expr="//field[@name='worked_days_line_ids']/form/group/field[@name='number_of_hours']" position="after">
+                <field name="overtime_hours"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

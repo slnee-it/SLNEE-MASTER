@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Resource: product.uom.categ -->
+        <record id="product_category_stationary" model="product.category">
+            <field name="name">Stationary</field>
+        </record>
+
+        <!-- Product -->
+        <record id="product_product_stationary" model="product.product">
+            <field name="list_price">75.0</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="name">Collated</field>
+            <field name="categ_id" ref="product_category_stationary"/>
+            <field name="type">consu</field>
+            <field name="stationary">True</field>
+            <field name="description_sale">Collated</field>
+        </record>
+        <record id="product_product_stationary1" model="product.product">
+            <field name="list_price">80.0</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="name">Grouped</field>
+            <field name="categ_id" ref="product_category_stationary"/>
+            <field name="type">consu</field>
+            <field name="stationary">True</field>
+            <field name="description_sale">Grouped</field>
+        </record>
+        <record id="product_product_stationary2" model="product.product">
+            <field name="list_price">1.15</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="name">Transparent Cover Page with blue back</field>
+            <field name="categ_id" ref="product_category_stationary"/>
+            <field name="type">consu</field>
+            <field name="stationary">True</field>
+            <field name="description_sale">Transparent Cover Page with blue back</field>
+        </record>
+        <record id="product_product_stationary3" model="product.product">
+            <field name="list_price">2.00</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="name">Blue window cover with blue back</field>
+            <field name="categ_id" ref="product_category_stationary"/>
+            <field name="type">consu</field>
+            <field name="stationary">True</field>
+            <field name="description_sale">Blue window cover with blue back</field>
+        </record>
+        <record id="product_product_stationary4" model="product.product">
+            <field name="list_price">0.50</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="name">Black and White</field>
+            <field name="categ_id" ref="product_category_stationary"/>
+            <field name="type">consu</field>
+            <field name="stationary">True</field>
+            <field name="description_sale">Black and White</field>
+        </record>
+        <record id="product_product_stationary5" model="product.product">
+            <field name="list_price">1.25</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="name">Colour</field>
+            <field name="categ_id" ref="product_category_stationary"/>
+            <field name="type">consu</field>
+            <field name="stationary">True</field>
+            <field name="description_sale">Colour</field>
+        </record>
+        <record id="product_product_stationary6" model="product.product">
+            <field name="list_price">0.25</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="name">Spiral binding</field>
+            <field name="categ_id" ref="product_category_stationary"/>
+            <field name="type">consu</field>
+            <field name="stationary">True</field>
+            <field name="description_sale">Spiral binding</field>
+        </record>
+        <record id="product_product_stationary7" model="product.product">
+            <field name="list_price">1.00</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="name">Plastic spiral binding</field>
+            <field name="categ_id" ref="product_category_stationary"/>
+            <field name="type">consu</field>
+            <field name="stationary">True</field>
+            <field name="description_sale">Plastic spiral binding</field>
+        </record>
+        <record id="product_product_stationary8" model="product.product">
+            <field name="list_price">3.00</field>
+            <field name="uom_id" ref="product.product_uom_unit"/>
+            <field name="uom_po_id" ref="product.product_uom_unit"/>
+            <field name="name">CD Burning</field>
+            <field name="categ_id" ref="product_category_stationary"/>
+            <field name="type">consu</field>
+            <field name="stationary">True</field>
+            <field name="description_sale">CD Burning</field>
+        </record>
+
+        <!-- Hr Expense Product -->
+        <record id="copy_center" model="product.product">
+            <field name="list_price">400.0</field>
+            <field name="standard_price">400.0</field>
+            <field name="type">service</field>
+            <field name="name">Copy Center</field>
+            <!--<field name="default_code">ACO</field>-->
+            <field name="uom_id" ref="product.product_uom_day"/>
+            <field name="uom_po_id" ref="product.product_uom_day"/>
+            <field name="categ_id" ref="hr_expense.cat_expense"/>
+            <field name="can_be_expensed" eval="True" />
+        </record>
+
+    </data>
+</odoo>

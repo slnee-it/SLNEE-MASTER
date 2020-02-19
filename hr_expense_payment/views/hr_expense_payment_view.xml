@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_expense_payment_hr_expense_sheet_form" model="ir.ui.view">
+        <field name="name">hr.expense.sheet.form</field>
+        <field name="model">hr.expense.sheet</field>
+        <field name="inherit_id" ref="hr_expense.view_hr_expense_sheet_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='journal_id']" position="after">
+                <field name="include_salary" invisible="1"/>
+                <field name="not_inc_sal_amt" invisible="1"/>
+            </xpath>
+            <xpath expr="//button[@name='%(hr_expense.hr_expense_sheet_register_payment_wizard_action)d']" position="attributes">=
+                <attribute name="attrs">{'invisible': ['|',('state', '!=', 'post'), ('include_salary', '!=', False)]}</attribute>
+                <attribute name="context">{'default_amount': not_inc_sal_amt, 'partner_id': address_id}</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="hr_expense_payment_hr_expense_form_view" model="ir.ui.view">
+        <field name="name">hr.expense.form</field>
+        <field name="model">hr.expense</field>
+        <field name="inherit_id" ref="hr_expense.hr_expense_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='employee_id']" position="after">
+                <field name="include_salary" attrs="{'invisible': [('payment_mode', '=','company_account')], 'readonly': [('state', '!=','draft')]}"/>
+                <field name="company_contribution" invisible="1"/>
+                <field name="emp_contribution" invisible="1"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

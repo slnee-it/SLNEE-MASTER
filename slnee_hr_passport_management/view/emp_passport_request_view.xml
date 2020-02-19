@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="emp_passport_request_form_view" model="ir.ui.view">
+        <field name="name">emp.passport.request.form.view</field>
+        <field name="model">emp.passport.request</field>
+        <field name="arch" type="xml">
+            <form string="Employee Passport Request">
+                <header>
+                    <button name="act_confirm" string="Confirm" states="draft" type="object" groups="base.group_user" class="oe_highlight"/>
+                    <button name="act_first_approve" string="First Approve" states="confirm" type="object" groups="slnee_hr.group_gr_assistant" class="oe_highlight"/>
+                    <button name="act_second_approve" string="Second Approve" states="first_approve" type="object" groups="slnee_hr.group_gr_officer" class="oe_highlight"/>
+                    <button name="act_employee_submit" string="Submit To GR" states="second_approve" type="object" groups="base.group_user" class="oe_highlight"/>
+                    <button name="act_receive" string="Receive" states="employee_submit" type="object" groups="slnee_hr.group_gr_assistant" class="oe_highlight"/>
+                    <button name="act_cancel" string="Cancel" states="confirm,employee_submit" type="object" groups="slnee_hr.group_gr_assistant" class="oe_highlight"/>
+                    <button name="act_cancel" string="Cancel" states="first_approve" type="object" groups="slnee_hr.group_gr_officer" class="oe_highlight"/>
+                    <button name="act_set_to_draft" string="Set To Draft" states="cancel" type="object" groups="slnee_hr.group_gr_assistant" class="oe_highlight"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirm"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group string="Employee Information">
+                            <field name="employee_id" placeholder="Select Employee" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="department_id" />
+                            <field name="job_id" />
+                            <field name="branch_id" groups="slnee_hr_branch.group_company_branch"/>
+                            <field name="passport_no" readonly="1"/>
+                        </group>
+                        <group string="Other Information">
+                            <field name="date_from" attrs="{'readonly':[('state','!=','draft')]}" required="1"/>
+                            <field name="date_to" attrs="{'readonly':[('state','!=','draft')]}" required="1"/>
+                            <field name="reason" attrs="{'readonly':[('state','!=','draft')]}" required="1"/>
+                            <field name="other_reason" attrs="{'readonly':[('state','!=','draft')],'invisible':[('reason','!=','others')],'required':[('reason','=','others')]}"/>
+                            <field name="submit_date"/>
+                            <field name="receive_by"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Storage Information" attrs="{'invisible':[('state','not in',['employee_submit','receive'])]}" groups="slnee_hr.group_gr_assistant">
+                            <field name="store_branch_id" attrs="{'required':[('state','in',['employee_submit','receive'])],'readonly':[('state','not in',['employee_submit'])]}"/>
+                            <field name="loker" attrs="{'required':[('state','in',['employee_submit','receive'])],'readonly':[('state','not in',['employee_submit'])]}"/>
+                        </group>
+                        <group>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Description">
+                            <group  colspan="4">
+                                <field name="note" placeholder="Put the description here..." nolabel="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            </group>
+                        </page>
+                        <page string="Extra Information" groups="base.group_no_one">
+                            <group col="4">
+                                <field name="create_uid" readonly="1"/>
+                                <field name="create_date" readonly="1"/>
+                                <field name="write_uid" readonly="1"/>
+                                <field name="write_date" readonly="1"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="emp_passport_request_tree_view" model="ir.ui.view">
+        <field name="name">emp.passport.request.tree.view</field>
+        <field name="model">emp.passport.request</field>
+        <field name="arch" type="xml">
+            <tree string="Employee Passport Register">
+                <field name="employee_id"/>
+                <field name="department_id"/>
+                <field name="job_id"/>
+                <field name="branch_id" groups="slnee_hr_branch.group_company_branch"/>
+                <field name="passport_no"/>
+                <field name="date_from"/>
+                <field name="date_to"/>
+                <field name="reason"/>
+                <field name="submit_date"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="emp_passport_request_filter" model="ir.ui.view">
+        <field name="name">emp.passport.request.filter</field>
+        <field name="model">emp.passport.request</field>
+        <field name="arch" type="xml">
+            <search string="Search Employee Card">
+                <field name="employee_id"/>
+                <field name="passport_no"/>
+                <group expand="0" string="Group By...">
+                    <filter name="group_name" string="Employee" context="{'group_by':'employee_id'}"/>
+                    <filter string="Office" icon="terp-personal+" context="{'group_by':'branch_id'}"/>
+                    <filter string="Department" icon="terp-personal+" context="{'group_by':'department_id'}"/>
+                    <filter string="From Date" icon="terp-stock_effects-object-colorize" context="{'group_by':'date_from'}"/>
+                    <filter string="To Date" icon="terp-stock_effects-object-colorize" context="{'group_by':'date_to'}"/>
+                    <filter string="Submit Date" icon="terp-stock_effects-object-colorize" context="{'group_by':'submit_date'}"/>
+                    <filter string="Reason" icon="terp-personal+" context="{'group_by':'reason'}"/>
+                    <filter string="Status" icon="terp-stock_effects-object-colorize" context="{'group_by':'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_emp_passport_request_view" model="ir.actions.act_window">
+        <field name="name">Passport Request</field>
+        <field name="res_model">emp.passport.request</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <record id="action_tree_emp_passport_request" model="ir.actions.act_window.view">
+        <field eval="1" name="sequence" />
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="emp_passport_request_tree_view" />
+        <field name="act_window_id" ref="action_emp_passport_request_view" />
+    </record>
+    <record id="action_form_emp_passport_request" model="ir.actions.act_window.view">
+        <field eval="2" name="sequence"/>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="emp_passport_request_form_view" />
+        <field name="act_window_id" ref="action_emp_passport_request_view" />
+    </record>
+
+</odoo>

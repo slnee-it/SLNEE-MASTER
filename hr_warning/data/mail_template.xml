@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--Email template -->
+    <record id="email_template_warning_confirm_partner" model="mail.template">
+        <field name="name">Warning - Send by Email</field>
+        <field name="email_from">${object.user_id.email}</field>
+        <field name="partner_to">${ctx.get('email_to') or object.mail_to()}</field>
+        <field name="subject">Issue Warning</field>
+        <field name="model_id" ref="hr_warning.model_issue_warning"/>
+        <field name="auto_delete" eval="False"/>
+        <field name="lang">${object.user_id.partner_id.lang}</field>
+        <field name="body_html"><![CDATA[
+        <h3><p style="color:#FF0000;">Warning: ${ctx.get('warning')}</p></h3>
+        <p>It is a matter of serious concern that ${ctx.get('warning')} despite repeated verbal warnings. Please treat this letter as a warning for your unacceptable behavior.</p>
+        <p>${object.description}</p>
+        <p>We would be left with no choice but to suspend or relieve you from work if this unethical behavior continues.</p>
+        <p>We expect you to rectify your follies and observe good conduct from hereon.</p>
+        <p style="color:#FF0000;">So,We decide to action ${object.warning_action}</p>
+        <p>Thank you,</p>
+        <p style="color:#888888;">
+        ${object.user_id.name}
+        </p>
+        ]]></field>
+    </record>
+    <!-- Repeted Warning Mail Template -->
+    <!--Email template -->
+    <record id="email_template_warning_alert" model="mail.template">
+        <field name="name">Repeted Warning Alert</field>
+        <field name="email_from">${object.user_id.email}</field>
+        <field name="partner_to">${ctx.get('hop_id')}</field>
+        <field name="subject">Warning Alert</field>
+        <field name="model_id" ref="hr_warning.model_issue_warning"/>
+        <field name="auto_delete" eval="False"/>
+        <field name="lang">${object.user_id.partner_id.lang}</field>
+        <field name="body_html"><![CDATA[
+        <h3><p style="color:#FF0000;">Warning Alert</p></h3>
+        <p>Hello sir</p>
+        <p>We need to inform that below list of employee have already some warning during last six months.</p>
+        <p>Employee: ${ctx.get('employee_ids')}</p>
+        <p></p>
+        <p>Thank you,</p>
+        <p style="color:#888888;">
+        ${object.user_id.name}
+        </p>
+        ]]></field>
+    </record>
+</odoo>

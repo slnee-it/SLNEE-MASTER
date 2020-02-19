@@ -1,0 +1,824 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_leaves_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-12 07:00+0000\n"
+"PO-Revision-Date: 2018-09-12 07:00+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_payslip_worked_days_absence_hours
+msgid "Absence Hour(s)"
+msgstr "غياب ساعة (ساعات)"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_active
+msgid "Active"
+msgstr "نشط"
+
+#. module: slnee_hr_leaves_management
+#: selection:leaves.allocation,target:0
+msgid "All Employee"
+msgstr "كل موظف"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_number_of_days_temp
+msgid "Allocation"
+msgstr "التخصيص"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_status_carry_forward
+msgid "Allow to Carry Forward"
+msgstr "السماح للحمل قدما"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_status_skip
+msgid "Allow to Skip"
+msgstr "السماح للتخطي"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,help:slnee_hr_leaves_management.field_hr_holidays_status_skip
+msgid "Allow to skip in Weekends"
+msgstr "السماح للتخطي في عطلة نهاية الأسبوع"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_hr_validation
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_status_hr_validation
+msgid "Apply HR Validation"
+msgstr "تطبيق التحقق من صحة الموارد البشرية"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.edit_holiday_new
+msgid "Approve"
+msgstr "موافقه"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_is_double_validation
+msgid "Auto Double Validate"
+msgstr "التحقق التلقائي المزدوج"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_is_auto_validate
+msgid "Auto Validate"
+msgstr "التحقق من صحة السيارات"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.leaves_allocation_view
+msgid "Auto Validation"
+msgstr "التحقق من السيارات"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_payslip_bank_account_id
+msgid "Bank Account Number"
+msgstr "رقم الحساب المصرفي"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_res_weekdays_calendar_ids
+msgid "Calendars"
+msgstr "التقويمات"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.leaves_allocation_view
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_carry_forward
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_carry_forward
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_carry_forward_limit
+msgid "Carry Forward"
+msgstr "المضي قدما"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_carry_forward_check
+msgid "Carry Forward Check"
+msgstr "قم بالتحقق من الأمام"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_carry_forward_limit
+msgid "Carry Forward Limit"
+msgstr "حمل الحد الأمامي"
+
+#. module: slnee_hr_leaves_management
+#: selection:hr.holidays.public,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.view_public_holidays_form
+msgid "Close"
+msgstr "قريب"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_summary_code
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_res_weekdays_code
+msgid "Code"
+msgstr "الشفرة"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_company_id
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: slnee_hr_leaves_management
+#: model:hr.holidays.status,name:slnee_hr_leaves_management.holiday_status_compassionate
+msgid "Compassionate Leave"
+msgstr "إجازة خاصة"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_public_create_uid
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_public_line_create_uid
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_create_uid
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_employee_create_uid
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_summary_create_uid
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_res_weekdays_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_public_create_date
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_public_line_create_date
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_create_date
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_employee_create_date
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_summary_create_date
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_res_weekdays_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_res_weekdays_name
+msgid "Day"
+msgstr "يوم"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.actions.act_window,name:slnee_hr_leaves_management.action_res_weekdays_tree
+msgid "Days of Week"
+msgstr "أيام الأسبوع"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.res_weekdays_form
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.res_weekdays_tree
+msgid "Days of week"
+msgstr "أيام الأسبوع"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_employee_department_id
+msgid "Department"
+msgstr "القسم"
+
+#. module: slnee_hr_leaves_management
+#: selection:leaves.allocation,target:0
+msgid "Department Wise"
+msgstr "قسم الحكيم"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_department_ids
+msgid "Departments"
+msgstr "الإدارات"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_description
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_summary_name
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.leaves_allocation_view
+msgid "Description"
+msgstr "الوصف"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_public_display_name
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_public_line_display_name
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_display_name
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_employee_display_name
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_summary_display_name
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_res_weekdays_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_double_validation
+msgid "Double Validation"
+msgstr "التحقق المزدوج"
+
+#. module: slnee_hr_leaves_management
+#: model:hr.holidays.status,name:slnee_hr_leaves_management.hr_holiday_status_data
+msgid "Early Logout"
+msgstr "تسجيل الخروج المبكر"
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:271
+#, python-format
+msgid "Effective date must be between %s and %s"
+msgstr "يجب أن يكون التاريخ الفعلي بين٪ s و٪ الصورة"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model,name:slnee_hr_leaves_management.model_hr_employee
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_employee_employee_id
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.leaves_allocation_view
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,help:slnee_hr_leaves_management.field_hr_payslip_bank_account_id
+msgid "Employee bank salary account"
+msgstr "الحساب البنكي لراتب الموظف"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_employee_ids
+msgid "Employees"
+msgstr "الموظفون"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_public_line_end_date
+msgid "End Date"
+msgstr "تاريخ الإنتهاء"
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:302
+#, python-format
+msgid "End Date must be between %s and %s"
+msgstr "يجب أن يكون تاريخ نهاية بين٪ s و٪ الصورة"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.edit_holiday_new
+msgid "Extra Information"
+msgstr "معلومات اضافية"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_fiscalyear
+msgid "Fiscal Year"
+msgstr "السنة المالية"
+
+#. module: slnee_hr_leaves_management
+#: selection:res.weekdays,name:0
+msgid "Friday"
+msgstr "الجمعة"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model,name:slnee_hr_leaves_management.model_hr_payslip_employees
+msgid "Generate payslips for all selected employees"
+msgstr "توليد كشوف لجميع العاملين مختارة"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.view_hr_holidays_public_filter
+msgid "Group By..."
+msgstr "تجميع حسب.."
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_hr_manager_id
+msgid "HR Approval"
+msgstr "موافقة الموارد البشرية"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.edit_holiday_new
+msgid "HR Validate"
+msgstr "HR التحقق من صحة"
+
+#. module: slnee_hr_leaves_management
+#: model:hr.holidays.status,name:slnee_hr_leaves_management.holiday_status_hajj
+msgid "Hajj Leave"
+msgstr "إجازة الحج"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_public_line_holidays_id
+msgid "Holiday Calendar Year"
+msgstr "عطلة التقويم السنة"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_public_line_ids
+msgid "Holiday Dates"
+msgstr "تواريخ العطلات"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_public_id
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_public_line_id
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_employee_id
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_id
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_summary_id
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_res_weekdays_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.leaves_allocation_view
+msgid "Invitation details"
+msgstr "تفاصيل الدعوة"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_job_ids
+msgid "JOB Profiles"
+msgstr "ملامح الوظائف"
+
+#. module: slnee_hr_leaves_management
+#: selection:leaves.allocation,target:0
+msgid "Job Profile Wise"
+msgstr "وظيفة الملف الحكيم"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_public___last_update
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_public_line___last_update
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation___last_update
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_employee___last_update
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_summary___last_update
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_res_weekdays___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_public_line_write_uid
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_public_write_uid
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_employee_write_uid
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_write_uid
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_summary_write_uid
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_res_weekdays_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_public_line_write_date
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_public_write_date
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_employee_write_date
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_write_date
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_summary_write_date
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_res_weekdays_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model,name:slnee_hr_leaves_management.model_hr_holidays
+msgid "Leave"
+msgstr "مغادرة"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model,name:slnee_hr_leaves_management.model_hr_holidays_status
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_holiday_status_id
+msgid "Leave Type"
+msgstr "نوع الاجازة"
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:424
+#, python-format
+msgid "Leave request must be confirmed in order to approve it."
+msgstr "يجب تأكيد طلب الإجازة للموافقة عليه."
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:197
+#, python-format
+msgid "Leave request must be confirmed or validated in order to refuse it."
+msgstr "يجب تأكيد طلب الإجازة أو مصادقته من أجل رفضه."
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model,name:slnee_hr_leaves_management.model_leaves_allocation
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_employee_leaves_allocation_id
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.leaves_allocation_view
+msgid "Leaves Allocation"
+msgstr "يترك تخصيص"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model,name:slnee_hr_leaves_management.model_leaves_allocation_employee
+msgid "Leaves Allocation Employee"
+msgstr "يترك تخصيص موظف"
+
+#. module: slnee_hr_leaves_management
+#: model:hr.salary.rule,name:slnee_hr_leaves_management.hr_salary_rule_leave_deduction
+msgid "Leaves Deduction"
+msgstr "يترك الخصم"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.view_hr_payslip_gosi_form
+msgid "Leaves Details"
+msgstr "يترك التفاصيل"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_payslip_leaves_summary
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.view_hr_payslip_gosi_form
+msgid "Leaves Summary"
+msgstr "ملخص الاجازات"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_limit
+msgid "Limit"
+msgstr "حد"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_status_sick_limit_from
+msgid "Limit From"
+msgstr "الحد من"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_status_sick_limit_per
+msgid "Limit Percentage"
+msgstr "الحد من النسبة المئوية"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_status_sick_limit_to
+msgid "Limit To"
+msgstr "الحد الى"
+
+#. module: slnee_hr_leaves_management
+#: model:hr.holidays.status,name:slnee_hr_leaves_management.holiday_status_marriage
+msgid "Marriage Leave"
+msgstr "الزواج الإجازة"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.actions.act_window,name:slnee_hr_leaves_management.action_view_leaves_allocation
+#: model:ir.ui.menu,name:slnee_hr_leaves_management.menu_leaves_allocation_action
+msgid "Mass Leaves Allocation"
+msgstr "توزيع أوراق الكتلة"
+
+#. module: slnee_hr_leaves_management
+#: model:hr.holidays.status,name:slnee_hr_leaves_management.holiday_status_maternity
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_status_maternity_leave
+msgid "Maternity Leave"
+msgstr "إجازة الأمومة"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,help:slnee_hr_leaves_management.field_hr_holidays_status_carry_forward_leaves
+msgid "Maximum Leaves Allowed - Leaves Already Taken"
+msgstr "الحد الاقصى للترك المسموح - اتخذ بالفعل الترك"
+
+#. module: slnee_hr_leaves_management
+#: selection:res.weekdays,name:0
+msgid "Monday"
+msgstr "الإثنين"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_public_line_name
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_public_name
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.view_hr_holidays_public_filter
+msgid "Name"
+msgstr "الاسم"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_payslip_first_month_days
+msgid "No of day(s)"
+msgstr "لا أيام)"
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_payroll.py:211
+#, python-format
+msgid "Normal Working Days"
+msgstr "ايام العمل العادية"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_summary_number_of_days
+msgid "Number of Days"
+msgstr "عدد الأيام"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.leaves_allocation_view
+msgid "OK"
+msgstr "موافق"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_branch_ids
+msgid "Office"
+msgstr "مكتب"
+
+#. module: slnee_hr_leaves_management
+#: selection:leaves.allocation,target:0
+msgid "Office Wise"
+msgstr "مكتب الحكيم"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_status_one_time_usable
+msgid "One Time Used"
+msgstr "مرة واحدة مستعملة"
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:426
+#, python-format
+msgid "Only an HR Manager can apply the second approval on leave requests."
+msgstr "يمكن لمدير الموارد البشرية فقط تطبيق الموافقة الثانية على طلبات الإجازة."
+
+#. module: slnee_hr_leaves_management
+#: selection:hr.holidays.public,state:0
+msgid "Open"
+msgstr "فتح"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_override
+msgid "Override"
+msgstr "تجاوز"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_override_limit
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_override_limit
+msgid "Override Limit"
+msgstr "تجاوز الحد"
+
+#. module: slnee_hr_leaves_management
+#: model:hr.holidays.status,name:slnee_hr_leaves_management.holiday_status_paternity
+msgid "Paternity Leave"
+msgstr "إجازة الأبوة"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model,name:slnee_hr_leaves_management.model_hr_payslip
+msgid "Pay Slip"
+msgstr "ظرف المرتب"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_payslip_payment_days
+msgid "Payment Day(s)"
+msgstr "يوم (أيام) الدفع"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_summary_payslip_id
+msgid "Payslip"
+msgstr "قسيمة الدفع"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model,name:slnee_hr_leaves_management.model_hr_payslip_run
+msgid "Payslip Batches"
+msgstr "دفعات ظرف المرتب"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model,name:slnee_hr_leaves_management.model_hr_payslip_worked_days
+msgid "Payslip Worked Days"
+msgstr "قسيمة الدفع يوم عمل"
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:300
+#, python-format
+msgid "Please Define the Public Holiday Year for this leave"
+msgstr "يرجى تحديد السنة العطلة العامة لهذه الإجازة"
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:268
+#, python-format
+msgid "Please define the Public Holiday Year for this leave"
+msgstr "يرجى تحديد يوم العطلة العامة لهذه الإجازة"
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_payroll.py:49
+#, python-format
+msgid "Please enter 'Joining Date' of Employee first!"
+msgstr "الرجاء إدخال "تاريخ التسجيل" للموظف أولاً!"
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/wizard/leaves_allocation.py:161
+#, python-format
+msgid "Please select employee!"
+msgstr "يرجى اختيار موظف!"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_carry_forwarded
+msgid "Previous Carry Forward"
+msgstr "السابق حمل إلى الأمام"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.actions.act_window,name:slnee_hr_leaves_management.open_public_holidays_view
+#: model:ir.model,name:slnee_hr_leaves_management.model_hr_holidays_public
+#: model:ir.ui.menu,name:slnee_hr_leaves_management.menu_public_holidays_view
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.view_public_holiday_line_tree
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.view_public_holidays_form
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.view_public_holidays_tree
+msgid "Public Holidays"
+msgstr "العطل"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model,name:slnee_hr_leaves_management.model_hr_holidays_public_line
+msgid "Public Holidays Lines"
+msgstr "خطوط العطل"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.edit_holiday_new
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_refuse_date
+msgid "Refuse Date"
+msgstr "تاريخ رفض"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_refuse_uid
+msgid "Refuse by"
+msgstr "رفض من قبل"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_status_carry_forward_leaves
+msgid "Remaining Leaves"
+msgstr "الاجازات المتبقية"
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:451
+#, python-format
+msgid "Request approved, waiting hr validation."
+msgstr "طلب الموافقة، في انتظار المصادقة ساعة."
+
+#. module: slnee_hr_leaves_management
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.view_public_holidays_form
+msgid "Reset to Open"
+msgstr "إعادة فتح"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model,name:slnee_hr_leaves_management.model_resource_calendar
+msgid "Resource Calendar"
+msgstr "تقويم المورد"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_user_id
+msgid "Responsible"
+msgstr "مسئول"
+
+#. module: slnee_hr_leaves_management
+#: selection:res.weekdays,name:0
+msgid "Saturday"
+msgstr "السبت"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.view_hr_holidays_public_filter
+msgid "Search Leave"
+msgstr "بحث الاجازة"
+
+#. module: slnee_hr_leaves_management
+#: model:hr.holidays.status,name:slnee_hr_leaves_management.holiday_status_secondment
+msgid "Secondment Leave"
+msgstr "إعارة الإجازة"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_status_sick_leave
+msgid "Sick Leave"
+msgstr "أجازة مرضية"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_payslip_run_is_verify
+msgid "Skip Confirmation"
+msgstr "تخطي التأكيد"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_public_line_start_date
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_public_state
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.view_hr_holidays_public_filter
+msgid "Status"
+msgstr "الحالة "
+
+#. module: slnee_hr_leaves_management
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.edit_holiday_new
+msgid "Submit to Manager"
+msgstr "تقدم إلى مدير"
+
+#. module: slnee_hr_leaves_management
+#: selection:res.weekdays,name:0
+msgid "Sunday"
+msgstr "الأحد"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_target
+msgid "Target Group"
+msgstr "Target Group"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_leaves_allocation_name
+msgid "Task Name"
+msgstr "اسم المهمة"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.leaves_allocation_view
+msgid "Task Summary"
+msgstr "ملخص المهمة"
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:298
+#: sql_constraint:hr.holidays.public.line:0
+#: sql_constraint:hr.payslip.run:0
+#, python-format
+msgid "The start date must be anterior to the end date."
+msgstr "يجب أن يكون تاريخ بدء سابقة لتاريخ نهاية."
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:390
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:392
+#, python-format
+msgid "There are not enough %s allocated for employee %s; please contact your HR People for this leave type."
+msgstr "ليس هناك ما يكفي٪ S المخصصة للموظف٪ S؛ الرجاء الاتصال HR الناس لهذا النوع الإجازة."
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:395
+#, python-format
+msgid "There are not enough %s remaining leaves for employee %s; please contact your HR People for this leave type."
+msgstr "ليس هناك ما يكفي٪ الصورة الأوراق المتبقية للموظف٪ الصورة. الرجاء الاتصال HR الناس لهذا النوع الإجازة."
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,help:slnee_hr_leaves_management.field_hr_holidays_hr_manager_id
+msgid "This area is automaticly filled by the user who validate the leave with HR level (If Leave type need HR validation)"
+msgstr "يتم ملء هذه المنطقة تلقائيًا بواسطة المستخدم الذي يثبت الإجازة بمستوى الموارد البشرية (إذا كان نوع الإجازة بحاجة إلى التحقق من صحة الموارد البشرية)"
+
+#. module: slnee_hr_leaves_management
+#: selection:res.weekdays,name:0
+msgid "Thursday"
+msgstr "الخميس"
+
+#. module: slnee_hr_leaves_management
+#: selection:res.weekdays,name:0
+msgid "Tuesday"
+msgstr "الثلاثاء"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.edit_holiday_new
+msgid "Validate"
+msgstr "اعتماد "
+
+#. module: slnee_hr_leaves_management
+#: selection:res.weekdays,name:0
+msgid "Wednesday"
+msgstr "الأربعاء"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_resource_calendar_weekend_ids
+msgid "Weekends"
+msgstr "عطلة نهاية الأسبوع"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,help:slnee_hr_leaves_management.field_hr_holidays_status_hr_validation
+msgid "When selected, the Allocation/Leave Requests for this type require a hr validation to be approved."
+msgstr "عند التحديد ، تتطلب طلبات التخصيص / الإجازة لهذا النوع الموافقة على التحقق من hr."
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,help:slnee_hr_leaves_management.field_leaves_allocation_double_validation
+msgid "When selected, the Allocation/Leave Requests for this type require a second validation to be approved."
+msgstr "عند تحديد هذا الخيار، تخصيص / طلب أجازه لهذا النوع يتطلب التحقق من صحة الثاني لتتم الموافقة عليها . "
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,help:slnee_hr_leaves_management.field_hr_payslip_run_is_verify
+msgid "While tick payslips will confirmed and paid."
+msgstr "في حين سيتم تأكيد القسط دفع القراد ودفعها."
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_payslip_worked_days_working_hours
+msgid "Working Hour(s)"
+msgstr "ساعات العمل)"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_fiscalyear
+#: model:ir.model.fields,field_description:slnee_hr_leaves_management.field_hr_holidays_public_year
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.view_hr_holidays_public_filter
+msgid "Year"
+msgstr "عام"
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:233
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:253
+#, python-format
+msgid "You can not allocate this leave to this employee"
+msgstr "لا يمكنك تخصيص هذه الإجازة لهذا الموظف"
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_public_holidays.py:114
+#, python-format
+msgid "You can not have holiday that overlaps on same days!"
+msgstr "لا يمكنك الحصول على عطلة تتداخل في نفس الأيام!"
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_holidays.py:215
+#, python-format
+msgid "You cannot delete a leave which is in %s state."
+msgstr "لا يمكنك حذف إجازة وهو في٪ ق دولة."
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_public_holidays.py:36
+#, python-format
+msgid "You cannot remove the record which is in %s state!"
+msgstr "!لا يمكنك إزالة السجل الذي هو في٪ ق الدولة"
+
+#. module: slnee_hr_leaves_management
+#: code:addons/slnee_hr_leaves_management/models/hr_public_holidays.py:50
+#: code:addons/slnee_hr_leaves_management/models/hr_public_holidays.py:73
+#, python-format
+msgid "Your Public Holiday must be between this %s to %s Duration."
+msgstr "يجب أن تكون "أيام العطل الرسمية" الخاصة بك بين هذه المدة من٪ s إلى٪ s."
+
+#. module: slnee_hr_leaves_management
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.leaves_allocation_view
+msgid "days"
+msgstr "أيام"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model,name:slnee_hr_leaves_management.model_leaves_summary
+msgid "leaves.summary"
+msgstr "leaves.summary"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.ui.view,arch_db:slnee_hr_leaves_management.leaves_allocation_view
+msgid "or"
+msgstr "أو"
+
+#. module: slnee_hr_leaves_management
+#: model:ir.model,name:slnee_hr_leaves_management.model_res_weekdays
+msgid "res.weekdays"
+msgstr "res.weekdays"
+

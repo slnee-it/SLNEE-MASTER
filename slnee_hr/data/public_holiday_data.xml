@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="year_data" model="year.year">
+            <field name="name" eval="time.strftime('%Y')"/>
+            <field name="code" eval="time.strftime('%Y')"/>
+            <field name="date_start" eval="time.strftime('%Y')+'-01-01'"/>
+            <field name="date_stop" eval="time.strftime('%Y')+'-12-31'"/>
+        </record>
+    </data>
+</odoo>

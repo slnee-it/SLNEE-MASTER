@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="hr_employee_registration_0" model="hr.employee.registration">
+            <field name="employee_id" ref="hr.employee_qdp"/>
+        </record>
+
+        <record id="hr_employee_registration_1" model="hr.employee.registration">
+            <field name="employee_id" ref="hr.employee_jgo"/>
+        </record>
+
+        <record id="hr_employee_registration_2" model="hr.employee.registration">
+            <field name="employee_id" ref="hr.employee_stw"/>
+        </record>
+
+        <record id="hr_employee_registration_3" model="hr.employee.registration">
+            <field name="employee_id" ref="hr.employee_fpi"/>
+            <field name="state">receive</field>
+        </record>
+
+        <record id="hr_employee_registration_4" model="hr.employee.registration">
+            <field name="employee_id" ref="hr.employee_jve"/>
+            <field name="state">validate</field>
+        </record>
+
+        <record id="hr_employee_registration_5" model="hr.employee.registration">
+            <field name="employee_id" ref="hr.employee_ngh"/>
+            <field name="state">done</field>
+        </record>
+
+    </data>
+</odoo>

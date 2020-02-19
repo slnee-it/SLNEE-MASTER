@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="family_iqama_report">
+        <t t-call="web.html_container">
+            <t t-call="web.basic_layout">
+                <t t-foreach="docs" t-as="o">
+                    <div class="page" style="text-align: right;  face :Helvetica; font-size:20px;">
+                        <t t-set="arg" t-value="{'employee_id' : [o.employee_id.id, o.employee_id.name],'date':o.date,'manager_id': [o.manager_id.id, o.manager_id.name]}"/>
+                        <t t-set="result" t-value="get_data" />
+                        <t t-foreach="result" t-as="data">
+                            <t t-set="result" t-value="get_islamic_date(data['date'])"/>
+                            <p>
+                        ‪هـ‬‬ <t t-esc="result" /> :‬‬‫التـاريخ‬
+                            </p>
+                            <p>
+                        الموافق‬
+                        <t t-if="data['date']" >
+                            <span t-esc="time.strftime('%d-%m-%Y', time.strptime(data['date'],'%Y-%m-%d'))"/>
+                        </t>
+                        م‬
+                            </p>
+                            <p style="font-weight: bold;">
+                        السادة / مدير مكتب الإستقدام بالرياض
+                            </p>
+                            <p style="font-weight: bold;">
+                        المحترمين
+                            </p>
+                            <p style="font-weight: bold;">
+                        الرياض - المملكة العربية السعودية
+                            </p>
+                            <p>
+                        .السلام عليكم ورحمة الله وبركاته
+                            </p>
+                            <p>
+                        <span>نفيد سعادتكم نحن شركة </span>
+                        <t style="font-weight: bold;">
+                             <t t-if="o.employee_id.user_id and o.employee_id.user_id.company_id" >
+                        <span t-field="o.employee_id.user_id.company_id.arabic_name">
+                        </span>
+                            </t>,
+                            <t t-if="o.employee_id.job_id" >
+                        <span t-field="o.employee_id.job_id.arabic_name" />
+                            </t>
+                        </t>
+                        <span> فرع </span>
+                            </p>
+                            <p>
+                               <span> الرياض بأن الأستاذ /</span>
+                               <font face="Helvetica-Bold" size="14.0">
+                            <t t-if="data['employee'].arabic_name" >
+                        <t t-esc="data['employee'].arabic_name"/>
+                            </t>,
+                        </font>
+                        <t t-if="data['emp_country']" >
+                            <t t-esc="data['emp_country']"/>
+                        </t>
+                            </p>
+                            <p>
+                        <span>الجنسية بموجب اقامة رقم</span>
+                        <font face="Helvetica-Bold" size="14.0">
+                            <t t-if="data['iqama_no']" >
+                        <t t-esc="data['iqama_no']"/>
+                            </t>
+                        </font>
+                        <span> إلتحق بنا في تاريخ</span>
+                        <span>
+                            <t t-if="data['join_date']" >
+                        <span t-esc="data['join_date']"/> م
+                            </t>
+                        </span>
+                            </p>
+                             <p>
+                        <span>ويعمل بوظيفة</span>
+                        <span>
+                            <t t-if="data['job_id']" >
+                        ."<span t-esc="data['job_id']"/>"
+                            </t>
+                        </span>
+                        <span>ويتقاضى المذكور راتبا</span>
+                            </p>
+                            <p>
+                               <span> اجماليا وقدره</span>
+                               <span> <t t-if="data['wage']" >
+                            <t t-esc="data['wage']"/>
+                        </t></span>
+                        <span>ريال بالإضافة إلى التأمين الطبي والسكن له</span>
+                            </p>
+                            <p>
+                               <span>.ولعائلته</span>
+                            </p>
+                            <p>
+                        <span>وحيث أنه يود استقدام زوجته للإقامة برفقته في المملكة العربية
+                        </span>
+                            </p>
+                            <p>
+                               <span>السعودية، لذا ليس لدينا مانع من ذلك، ونأمل من سعادتكم التكرم</span>
+                            </p>
+                            <p>
+                              <span>.بالتوجيه إلى من يلزم لمنحه التأشيرة المطلوبة</span>
+                            </p>
+                             <p>
+                               <span>.وتقبلوا تحياتنا</span>
+                            </p>
+                            <p  style="text-align: left;">
+                        <font face="Helvetica" >_______________</font><br/>
+                        <font face="Helvetica-Bold" size="16.0">
+                            <t t-if="data['manager']" >
+                        <t t-esc="data['manager']"/>
+                            </t>
+                        </font>
+                           </p>
+                            <p  style="text-align: left;">
+                        <font face="Helvetica-Bold" size="16.0">
+                            <t t-if="data['auth_job_id']" >
+                        <t t-esc="data['auth_job_id']"/>
+                            </t>
+                        </font>
+                        </p>
+                        </t>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <record id="paperformat_family_iqama_report" model="report.paperformat">
+        <field name="name">Family Iqama</field>
+        <field name="default" eval="True"/>
+        <field name="format">A4</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">20</field>
+        <field name="margin_bottom">20</field>
+        <field name="margin_left">15</field>
+        <field name="margin_right">15</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+        <field name="dpi">80</field>
+    </record>
+
+</odoo>

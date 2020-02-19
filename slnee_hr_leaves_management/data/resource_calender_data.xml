@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Days of Week -->
+        <record id="monday" model="res.weekdays">
+            <field name="name">Monday</field>
+            <field name="code">1</field>
+        </record>
+        
+        <record id="tuesday" model="res.weekdays">
+            <field name="name">Tuesday</field>
+            <field name="code">2</field>
+        </record>
+        
+        <record id="wednesday" model="res.weekdays">
+            <field name="name">Wednesday</field>
+            <field name="code">3</field>
+        </record>
+        
+        <record id="thursday" model="res.weekdays">
+            <field name="name">Thursday</field>
+            <field name="code">4</field>
+        </record>
+        
+        <record id="friday" model="res.weekdays">
+            <field name="name">Friday</field>
+            <field name="code">5</field>
+        </record>
+        
+        <record id="saturday" model="res.weekdays">
+            <field name="name">Saturday</field>
+            <field name="code">6</field>
+        </record>
+        
+        <record id="sunday" model="res.weekdays">
+            <field name="name">Sunday</field>
+            <field name="code">7</field>
+        </record>
+
+        <!--Resource Calendar-->
+        <record id="resource_calendar_all" model="resource.calendar">
+            <field name="name">45 Hours/Week(Saudi)</field>
+            <field name="weekend_ids" eval="[(6,0,[friday,saturday])]"/>
+        </record>
+
+        <record id="res_calendar_ramadan" model="resource.calendar">
+            <field name="name">30 Hours/Week (Ramadan)</field>
+            <field name="weekend_ids" eval="[(6,0,[friday,saturday])]"/>
+        </record>
+
+        <!--Resource Calendar attendance-->
+        <record model="resource.calendar.attendance" id="all_calendar_attendance_sun1">
+            <field name="name">Sunday Morning</field>
+            <field name="dayofweek">6</field>
+            <field name="hour_from">08.50</field>
+            <field name="hour_to">13</field>
+            <field name="calendar_id" ref="resource_calendar_all"/>
+        </record>
+        <record model="resource.calendar.attendance" id="all_calendar_attendance_sun2">
+            <field name="name">Sunday Evening</field>
+            <field name="dayofweek">6</field>
+            <field name="hour_from">13.50</field>
+            <field name="hour_to">18</field>
+            <field name="calendar_id" ref="resource_calendar_all"/>
+        </record>
+        <record model="resource.calendar.attendance" id="resource.calendar_attendance_mon1">
+            <field name="name">Monday Morning</field>
+            <field name="dayofweek">0</field>
+            <field name="hour_from">08.50</field>
+            <field name="hour_to">13</field>
+            <field name="calendar_id" ref="resource_calendar_all"/>
+        </record>
+        <record model="resource.calendar.attendance" id="resource.calendar_attendance_mon2">
+            <field name="name">Monday Evening</field>
+            <field name="dayofweek">0</field>
+            <field name="hour_from">13.50</field>
+            <field name="hour_to">18</field>
+            <field name="calendar_id" ref="resource_calendar_all"/>
+        </record>
+        <record model="resource.calendar.attendance" id="resource.calendar_attendance_tue1">
+            <field name="name">Tuesday Morning</field>
+            <field name="dayofweek">1</field>
+            <field name="hour_from">08.50</field>
+            <field name="hour_to">13</field>
+            <field name="calendar_id" ref="resource_calendar_all"/>
+        </record>
+        <record model="resource.calendar.attendance" id="resource.calendar_attendance_tue2">
+            <field name="name">Tuesday Evening</field>
+            <field name="dayofweek">1</field>
+            <field name="hour_from">13.50</field>
+            <field name="hour_to">18</field>
+            <field name="calendar_id" ref="resource_calendar_all"/>
+        </record>
+        <record model="resource.calendar.attendance" id="resource.calendar_attendance_wed1">
+            <field name="name">Wednesday Morning</field>
+            <field name="dayofweek">2</field>
+            <field name="hour_from">08.50</field>
+            <field name="hour_to">13</field>
+            <field name="calendar_id" ref="resource_calendar_all"/>
+        </record>
+        <record model="resource.calendar.attendance" id="resource.calendar_attendance_wed2">
+            <field name="name">Wednesday Evening</field>
+            <field name="dayofweek">2</field>
+            <field name="hour_from">13.50</field>
+            <field name="hour_to">18</field>
+            <field name="calendar_id" ref="resource_calendar_all"/>
+        </record>
+        <record model="resource.calendar.attendance" id="resource.calendar_attendance_thu1">
+            <field name="name">Thursday Morning</field>
+            <field name="dayofweek">3</field>
+            <field name="hour_from">08.50</field>
+            <field name="hour_to">13</field>
+            <field name="calendar_id" ref="resource_calendar_all"/>
+        </record>
+        <record model="resource.calendar.attendance" id="resource.calendar_attendance_thu2">
+            <field name="name">Thursday Evening</field>
+            <field name="dayofweek">3</field>
+            <field name="hour_from">13.50</field>
+            <field name="hour_to">18</field>
+            <field name="calendar_id" ref="resource_calendar_all"/>
+        </record>
+
+        <record model="resource.calendar.attendance" id="ramadan_calendar_attendance_sun1">
+            <field name="name">Sunday Morning</field>
+            <field name="dayofweek">6</field>
+            <field name="hour_from">9.50</field>
+            <field name="hour_to">13.50</field>
+            <field name="calendar_id" ref="res_calendar_ramadan"/>
+        </record>
+        <!-- <record model="resource.calendar.attendance" id="ramadan_calendar_attendance_sun2">
+            <field name="name">Sunday Evening</field>
+            <field name="dayofweek">6</field>
+            <field name="hour_from">13.50</field>
+            <field name="hour_to">16.50</field>
+            <field name="calendar_id" ref="res_calendar_ramadan"/>
+        </record> -->
+        <record model="resource.calendar.attendance" id="ramadan_calendar_attendance_mon1">
+            <field name="name">Monday Morning</field>
+            <field name="dayofweek">0</field>
+            <field name="hour_from">9.50</field>
+            <field name="hour_to">13.50</field>
+            <field name="calendar_id" ref="res_calendar_ramadan"/>
+        </record>
+        <!-- <record model="resource.calendar.attendance" id="ramadan_calendar_attendance_mon2">
+            <field name="name">Monday Evening</field>
+            <field name="dayofweek">0</field>
+            <field name="hour_from">13.50</field>
+            <field name="hour_to">16.50</field>
+            <field name="calendar_id" ref="res_calendar_ramadan"/>
+        </record> -->
+        <record model="resource.calendar.attendance" id="ramadan_calendar_attendance_tue1">
+            <field name="name">Tuesday Morning</field>
+            <field name="dayofweek">1</field>
+            <field name="hour_from">9.50</field>
+            <field name="hour_to">13.50</field>
+            <field name="calendar_id" ref="res_calendar_ramadan"/>
+        </record>
+        <!-- <record model="resource.calendar.attendance" id="ramadan_calendar_attendance_tue2">
+            <field name="name">Tuesday Evening</field>
+            <field name="dayofweek">1</field>
+            <field name="hour_from">13.50</field>
+            <field name="hour_to">16.50</field>
+            <field name="calendar_id" ref="res_calendar_ramadan"/>
+        </record> -->
+        <record model="resource.calendar.attendance" id="ramadan_calendar_attendance_wed1">
+            <field name="name">Wednesday Morning</field>
+            <field name="dayofweek">2</field>
+            <field name="hour_from">9.50</field>
+            <field name="hour_to">13.50</field>
+            <field name="calendar_id" ref="res_calendar_ramadan"/>
+        </record>
+        <!-- <record model="resource.calendar.attendance" id="ramadan_calendar_attendance_wed2">
+            <field name="name">Wednesday Evening</field>
+            <field name="dayofweek">2</field>
+            <field name="hour_from">13.50</field>
+            <field name="hour_to">16.50</field>
+            <field name="calendar_id" ref="res_calendar_ramadan"/>
+        </record> -->
+        <record model="resource.calendar.attendance" id="ramadan_calendar_attendance_thu1">
+            <field name="name">Thursday Morning</field>
+            <field name="dayofweek">3</field>
+            <field name="hour_from">9.50</field>
+            <field name="hour_to">13.50</field>
+            <field name="calendar_id" ref="res_calendar_ramadan"/>
+        </record>
+        <!-- <record model="resource.calendar.attendance" id="ramadan_calendar_attendance_thu2">
+            <field name="name">Thursday Evening</field>
+            <field name="dayofweek">3</field>
+            <field name="hour_from">13.50</field>
+            <field name="hour_to">16.50</field>
+            <field name="calendar_id" ref="res_calendar_ramadan"/>
+        </record> -->
+        
+    </data>
+</odoo>

@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="multi_reports_0" model="multi.reports">
+            <field name="report_type">bank_loan</field>
+            <field name="employee_id" ref="hr.employee_han"/>
+            <field name="description">Bank Loan Transfer.</field>
+        </record>
+
+        <record id="multi_reports_1" model="multi.reports">
+            <field name="report_type">bankopen_account</field>
+            <field name="employee_id" ref="hr.employee_jgo"/>
+            <field name="description">Open New Account</field>
+        </record>
+
+        <record id="multi_reports_2" model="multi.reports">
+            <field name="report_type">bank_loan_female</field>
+            <field name="employee_id" ref="hr.employee_stw"/>
+            <field name="description">Bank Loan Transfer For Female</field>
+        </record>
+
+        <record id="multi_reports_3" model="multi.reports">
+            <field name="report_type">family_iqama</field>
+            <field name="employee_id" ref="hr.employee_jve"/>
+            <field name="description">Family Iqama</field>
+        </record>
+
+        <record id="multi_reports_4" model="multi.reports">
+            <field name="report_type">walid_school</field>
+            <field name="employee_id" ref="hr.employee_jog"/>
+            <field name="state">confirm</field>
+            <field name="description">Valid School</field>
+        </record>
+
+        <record id="multi_reports_5" model="multi.reports">
+            <field name="report_type">house_allowance</field>
+            <field name="employee_id" ref="hr.employee_vad"/>
+            <field name="description">House Allowance</field>
+        </record>
+
+        <record id="multi_reports_6" model="multi.reports">
+            <field name="report_type">stamping_certificate</field>
+            <field name="employee_id" ref="hr.employee_lur"/>
+            <field name="description">Stamping Certificate</field>
+        </record>
+
+    </data>
+</odoo>

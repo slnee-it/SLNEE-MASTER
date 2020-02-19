@@ -1,0 +1,3005 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_contract
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-11 09:34+0000\n"
+"PO-Revision-Date: 2018-09-11 09:34+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid ":التاريخ م،"
+msgstr ":التاريخ م،"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<br/>\n"
+"                                    <span>، المملكة العربية السعودية</span>\n"
+"                                    <br/>\n"
+"                                    <span>يشار إليها فيما بعد بـ \"صاحب العمل\"؛</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<br/>\n"
+"                                    <span>، المملكة العربية السعودية</span>\n"
+"                                    <br/>\n"
+"                                    <span>يشار إليها فيما بعد بـ \"صاحب العمل\"؛</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<br/>\n"
+"                                    <span>المخاطر، فإن كي بي إم جي الفوزان</span>\n"
+"                                    <br/>\n"
+"                                    <span>والسدحان (المؤسسة) مطالبة بالحصول</span>\n"
+"                                    <br/>\n"
+"                                    <span>على تأكيد من موظفيها المحترفين بأنهم</span>\n"
+"                                    <br/>\n"
+"                                    <span>لن يتصرفوا بأي شكل من الأشكال التي</span>\n"
+"                                    <br/>\n"
+"                                    <span>قد تؤدي إلى ضعف استقلالية المؤسسة،</span>\n"
+"                                    <br/>\n"
+"                                    <span>أو أن تؤدي إلى اعتقاد الأشخاص من</span>\n"
+"                                    <br/>\n"
+"                                    <span>خارج المؤسسة بأن الاستقلالية أو السرية</span>\n"
+"                                    <br/>\n"
+"                                    <span>قد تعرضت للضعف. وتبعا لذلك، وأخذا</span>\n"
+"                                    <br/>\n"
+"                                    <span>بعين الاعتبار عملي مع المؤسسة والراتب</span>\n"
+"                                    <br/>\n"
+"                                    <span>أو التعويضات الأخرى التي أتلقاها خلال</span>\n"
+"                                    <br/>\n"
+"                                    <span>:فترة عملي، فإنني أوافق على ما يلي</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<br/>\n"
+"                                    <span>المخاطر، فإن كي بي إم جي الفوزان</span>\n"
+"                                    <br/>\n"
+"                                    <span>والسدحان (المؤسسة) مطالبة بالحصول</span>\n"
+"                                    <br/>\n"
+"                                    <span>على تأكيد من موظفيها المحترفين بأنهم</span>\n"
+"                                    <br/>\n"
+"                                    <span>لن يتصرفوا بأي شكل من الأشكال التي</span>\n"
+"                                    <br/>\n"
+"                                    <span>قد تؤدي إلى ضعف استقلالية المؤسسة،</span>\n"
+"                                    <br/>\n"
+"                                    <span>أو أن تؤدي إلى اعتقاد الأشخاص من</span>\n"
+"                                    <br/>\n"
+"                                    <span>خارج المؤسسة بأن الاستقلالية أو السرية</span>\n"
+"                                    <br/>\n"
+"                                    <span>قد تعرضت للضعف. وتبعا لذلك، وأخذا</span>\n"
+"                                    <br/>\n"
+"                                    <span>بعين الاعتبار عملي مع المؤسسة والراتب</span>\n"
+"                                    <br/>\n"
+"                                    <span>أو التعويضات الأخرى التي أتلقاها خلال</span>\n"
+"                                    <br/>\n"
+"                                    <span>:فترة عملي، فإنني أوافق على ما يلي</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span> (يشار إليه فيما بعد باسم</span>\n"
+"                                    <br/>\n"
+"                                    <span>.(\"الموظف\"</span>\n"
+"                                    <br/>"
+msgstr "<span> (يشار إليه فيما بعد باسم</span>\n"
+"                                    <br/>\n"
+"                                    <span>.(\"الموظف\"</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>(hereinafter referred to as the “Employee”).</span>"
+msgstr "<span>(يشار إليها فيما يلي باسم "الموظف").</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>(i)Monthly basic salary: SR</span>"
+msgstr "<span>(ط) المرتب الأساسي الشهري: ريال</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>(ii)Monthly accommodation allowance: SR</span>"
+msgstr "<span>(2) بدل سكن شهري: ريال</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>(iii)Monthly transport allowance: SR</span>"
+msgstr "<span>(3) بدل النقل الشهري: ريال</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>(the Firm) is required to obtain confirmation from its professional personnel that they will not act in any way which might result in the impairment of independence, or which might lead outsiders to believe that independence or secrecy has been impaired.  Accordingly, in consideration of my employment with the Firm and the salary or other compensation that I shall receive during my employment, I agree to the following:</span>"
+msgstr "<span>(الشركة) مطالبة بالحصول على تأكيد من موظفيها المهنيين بأنهم لن يتصرفوا بأية طريقة قد تؤدي إلى إضعاف الاستقلال ، أو ما قد يدفع الأجانب إلى الاعتقاد بأن الاستقلالية أو السرية قد انخفضت. وبناءً على ذلك ، في مقابل عملي مع الشركة والراتب أو التعويضات الأخرى التي سأتلقاها أثناء عملي ، أوافق على ما يلي:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>, I will promptly return to the Firm all manuals, disks, documents, papers and other materials in my possession or under my control that may contain, or be derived from, Confidential Information, together with all documents, notes or other work products connected to, or derived from, my employment, regardless of the medium in which they are contained, as well as all Developments.  I shall retain no copies of any of the foregoing.</span>"
+msgstr "<span>، سوف أعود على الفور إلى جميع الأدلة والأقراص والمستندات والأوراق وغيرها من المواد التي بحوزتي أو تحت سيطرتي التي قد تحتوي على ، أو أن تكون مشتقة من ، المعلومات السرية ، مع جميع المستندات والملاحظات أو غيرها من منتجات العمل المتصلة ، أو مشتقة من ، وظيفتي ، بغض النظر عن الوسيلة التي يتم فيها احتوائها ، وكذلك جميع التطورات. لن احتفظ بنسخ من أي مما سبق.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>, Kingdom of Saudi Arabia (hereinafter referred to as the “Employer”); and</span>\n"
+"                                    <br/>\n"
+"                                    <br/>"
+msgstr "<span>المملكة العربية السعودية (يشار إليها فيما يلي باسم "صاحب العمل") ؛ و</span>\n"
+"                                    <br/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>, P O Box</span>"
+msgstr "<span>، ف يا مربع</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>, a Saudi Company with Commercial Registration No.</span>"
+msgstr "<span>، شركة سعودية لها رقم السجل التجاري.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>,دون حصولي على إذن كتابي من الشركة</span>\n"
+"                                    <br/>\n"
+"                                    <span>سوف لن أكشف إلى أي شخص من خارج</span>\n"
+"                                    <br/>\n"
+"                                    <span>الشركة أو استخدام في غير أغراض عمل</span>\n"
+"                                    <br/>\n"
+"                                    <span>كي بي إم جي، أو أسمح لأي شخص</span>\n"
+"                                    <br/>\n"
+"                                    <span>أو السماح لأي ,</span>"
+msgstr "<span>,دون حصولي على إذن كتابي من الشركة</span>\n"
+"                                    <br/>\n"
+"                                    <span>سوف لن أكشف إلى أي شخص من خارج</span>\n"
+"                                    <br/>\n"
+"                                    <span>الشركة أو استخدام في غير أغراض عمل</span>\n"
+"                                    <br/>\n"
+"                                    <span>كي بي إم جي، أو أسمح لأي شخص</span>\n"
+"                                    <br/>\n"
+"                                    <span>أو السماح لأي ,</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>,سوف يكرس الموظف كل جهوده</span>\n"
+"                                    <br/>\n"
+"                                    <span>والمهارات والتدريب لصالح صاحب</span>\n"
+"                                    <br/>\n"
+"                                    <span>العمل، ولن يعمل لحسابه الخاص أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>لحساب أي أشخاص آخرين، بأجر أو بدون</span>\n"
+"                                    <br/>\n"
+"                                    <span>.أجر سواءً أثناء أو خارج ساعات العمل</span>\n"
+"                                    <br/>"
+msgstr "<span>,سوف يكرس الموظف كل جهوده</span>\n"
+"                                    <br/>\n"
+"                                    <span>والمهارات والتدريب لصالح صاحب</span>\n"
+"                                    <br/>\n"
+"                                    <span>العمل، ولن يعمل لحسابه الخاص أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>لحساب أي أشخاص آخرين، بأجر أو بدون</span>\n"
+"                                    <br/>\n"
+"                                    <span>.أجر سواءً أثناء أو خارج ساعات العمل</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>-:يتقاضى الموظف راتب إجمالياً على النحو التالي</span>\n"
+"                                    <br/>\n"
+"                                    <span>يتقاضى راتب الموظف الشهري جميع</span>\n"
+"                                    <br/>\n"
+"                                    <span>أيام السنة (بما فيها الإجازة السنوية</span>\n"
+"                                    <br/>\n"
+"                                    <span>وعطلات نهاية الإسبوع). ويستحق الراتب</span>\n"
+"                                    <br/>\n"
+"                                    <span>بدفعات شهرية متساوية في بداية أول</span>\n"
+"                                    <br/>\n"
+"                                    <span>يوم من الشهر اللاحق، إذا عمل الموظف</span>\n"
+"                                    <br/>\n"
+"                                    <span>عدة أيام أقل من شهر كامل يستحق راتباً</span>\n"
+"                                    <br/>\n"
+"                                    <span>عن عدد الايام التي عملها بناءً على</span>\n"
+"                                    <br/>\n"
+"                                    <span>(الراتب السنوي مقسوم على 12 شهر</span>\n"
+"                                    <br/>\n"
+"                                    <span>.(على 30 يوم</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>-:يتقاضى الموظف راتب إجمالياً على النحو التالي</span>\n"
+"                                    <br/>\n"
+"                                    <span>يتقاضى راتب الموظف الشهري جميع</span>\n"
+"                                    <br/>\n"
+"                                    <span>أيام السنة (بما فيها الإجازة السنوية</span>\n"
+"                                    <br/>\n"
+"                                    <span>وعطلات نهاية الإسبوع). ويستحق الراتب</span>\n"
+"                                    <br/>\n"
+"                                    <span>بدفعات شهرية متساوية في بداية أول</span>\n"
+"                                    <br/>\n"
+"                                    <span>يوم من الشهر اللاحق، إذا عمل الموظف</span>\n"
+"                                    <br/>\n"
+"                                    <span>عدة أيام أقل من شهر كامل يستحق راتباً</span>\n"
+"                                    <br/>\n"
+"                                    <span>عن عدد الايام التي عملها بناءً على</span>\n"
+"                                    <br/>\n"
+"                                    <span>(الراتب السنوي مقسوم على 12 شهر</span>\n"
+"                                    <br/>\n"
+"                                    <span>.(على 30 يوم</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>.الشبكة الدولية لـ</span>\n"
+"                                    <br/>"
+msgstr "<span>.الشبكة الدولية لـ</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>.٤</span>\n"
+"                                    <br/>\n"
+"                                    <span>الفوزان والسدحان، سأقوم على الفور</span>\n"
+"                                    <br/>\n"
+"                                    <span>بإعادة إلى الشركة جميع الكتيبات</span>\n"
+"                                    <br/>\n"
+"                                    <span>والأقراص والوثائق والأوراق وغيرها من</span>\n"
+"                                    <br/>\n"
+"                                    <span>المواد التي في حوزتي أو تحت تحكمي</span>\n"
+"                                    <br/>\n"
+"                                    <span>والتي قد تحتوي على، أو تكون مشتقه</span>\n"
+"                                    <br/>\n"
+"                                    <span>من المعلومات السرية، جنبا إلى جنب مع</span>\n"
+"                                    <br/>\n"
+"                                    <span>جميع الوثائق والمذكرات أو أي منتجات</span>\n"
+"                                    <br/>\n"
+"                                    <span>للعمل مرتبطة أو مستمدة من عملي</span>\n"
+"                                    <br/>\n"
+"                                    <span>بغض النظر عن طبيعة الوسيلة التي</span>\n"
+"                                    <br/>\n"
+"                                    <span>تحفظها، وكذلك جميع التطويرات. وسوف</span>\n"
+"                                    <br/>\n"
+"                                    <span>لن أحتفظ بنسخ من أي من العناصر</span>\n"
+"                                    <br/>\n"
+"                                    <span>.السالفة الذكر</span>\n"
+"                                    <br/>\n"
+"                                    <br/>"
+msgstr "<span>.٤</span>\n"
+"                                    <br/>\n"
+"                                    <span>الفوزان والسدحان، سأقوم على الفور</span>\n"
+"                                    <br/>\n"
+"                                    <span>بإعادة إلى الشركة جميع الكتيبات</span>\n"
+"                                    <br/>\n"
+"                                    <span>والأقراص والوثائق والأوراق وغيرها من</span>\n"
+"                                    <br/>\n"
+"                                    <span>المواد التي في حوزتي أو تحت تحكمي</span>\n"
+"                                    <br/>\n"
+"                                    <span>والتي قد تحتوي على، أو تكون مشتقه</span>\n"
+"                                    <br/>\n"
+"                                    <span>من المعلومات السرية، جنبا إلى جنب مع</span>\n"
+"                                    <br/>\n"
+"                                    <span>جميع الوثائق والمذكرات أو أي منتجات</span>\n"
+"                                    <br/>\n"
+"                                    <span>للعمل مرتبطة أو مستمدة من عملي</span>\n"
+"                                    <br/>\n"
+"                                    <span>بغض النظر عن طبيعة الوسيلة التي</span>\n"
+"                                    <br/>\n"
+"                                    <span>تحفظها، وكذلك جميع التطويرات. وسوف</span>\n"
+"                                    <br/>\n"
+"                                    <span>لن أحتفظ بنسخ من أي من العناصر</span>\n"
+"                                    <br/>\n"
+"                                    <span>.السالفة الذكر</span>\n"
+"                                    <br/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>1. Both during and after my employment I will not, without the Firm’s prior written permission, disclose to anyone outside of the Firm or use in other than</span>"
+msgstr "<span>1. خلال فترة عملي وبعدها ، لن أفشي ، دون إذن خطي مسبق من الشركة ، لأي شخص خارج الشركة أو استخدمه في غير</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>2. I will comply, and do all things necessary to permit the Firm to comply, with the laws and regulations of all governments under which the Firm does business, and with the provision of contracts between the Firm and any such government or its contractors, that relate to intellectual property or to the safeguarding of information, including the signing of any Confidentiality Agreements required in connection with the performance of my duties during my employment with the Firm.</span>\n"
+"                                    <br/>\n"
+"                                    <br/>"
+msgstr "<span>2. سألتزم ، وأقوم بكل ما يلزم للسماح للشركة بالامتثال ، مع القوانين والأنظمة المعمول بها في جميع الحكومات التي تعمل الشركة بموجبها ، وبتوفير العقود بين الشركة وأي حكومة أو مقاوليها ، التي تتعلق بالملكية الفكرية أو بحماية المعلومات ، بما في ذلك التوقيع على أي اتفاقات السرية المطلوبة فيما يتعلق بأداء واجباتي أثناء عملي مع الشركة.</span>\n"
+"                                    <br/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>25 يستحق الموظف إجازة سنوية تبلغ</span>\n"
+"                                    <br/>\n"
+"                                    <span>. يوم عمل في السنة</span>\n"
+"                                    <br/>"
+msgstr "<span>25 يستحق الموظف إجازة سنوية تبلغ</span>\n"
+"                                    <br/>\n"
+"                                    <span>. يوم عمل في السنة</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>3. I agree that I shall have no proprietary interest in any idea, invention, design technical or business innovation, computer program and related documentation, or any other work product developed, conceived, or used by me, in whole or in part that arises out of my employment with the Firm, or that are otherwise made through the use of the Firm’s time or materials (all of the foregoing hereinafter referred to collectively as “Developments”).  I acknowledge that all Developments are and shall be the sole property of the Firm and that the Firm is not required to designate me as the author thereof.  I shall promptly disclose all Developments to the Staff Partner of the office to which I am assigned and shall, at the Firm’s request, do all the things that may be necessary and appropriate to establish or document the Firm’s ownership of the Developments, including, but not limited to the execution of the appropriate copyright or patent applications or assignment.</span>\n"
+"                                    <br/>\n"
+"                                    <br/>"
+msgstr "<span>3. أوافق على أنه لن يكون لدي أي مصلحة خاصة في أي فكرة ، أو ابتكار ، أو تصميم الابتكار التقني أو التجاري ، أو برنامج الكمبيوتر والوثائق ذات الصلة ، أو أي منتج عمل آخر تم تطويره أو تصميمه أو استخدامه من قبل ، كليًا أو جزئيًا من وظيفتي مع الشركة ، أو التي تتم بخلاف ذلك من خلال استخدام وقت أو مواد الشركة (كل ما سبق يشار إليه فيما بعد باسم "التطورات"). أقر بأن جميع التطورات هي ملك للشركة وحدها ، وأن الشركة غير مطالبة بتحديدها كمؤلفة لها. سأقوم على الفور بالإفصاح عن جميع التطورات لشريك الموظفين في المكتب الذي أسند إليه ، وسوف نقوم ، بناء على طلب الشركة ، بكل الأشياء التي قد تكون ضرورية ومناسبة لتأسيس أو توثيق ملكية الشركة للتطورات ، بما في ذلك ، ولكن لا يقتصر على تنفيذ طلبات أو حق المؤلف أو براءات الاختراع المناسبة.</span>\n"
+"                                    <br/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>4. If I leave the employ of</span>"
+msgstr "<span>4. إذا تركت توظيف</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>5. This Agreement shall be in addition to any other Agreement entered into at any time between the Firm and me, except that it supersedes all prior and contemporaneous written and oral communications, representations, understandings, undertakings, or agreements by or with the Firm with respect to the subjects covered herein.  Nothing contained in this expressly or by implication, a contract of employment; and, insofar as this Agreement is concerned, my employment by the Firm continues to be terminable at will in accordance with the procedures laid down in the Staff Manual.  This Agreement may not be changed or modified except in a written document signed by me and the Managing Partner.</span>\n"
+"                                    <br/>\n"
+"                                    <br/>"
+msgstr "<span>5. يجب أن تكون هذه الاتفاقية بالإضافة إلى أي اتفاقية أخرى يتم إبرامها في أي وقت بين الشركة ولي ، إلا أنها تحل محل جميع الاتصالات الخطية والشفهية السابقة ، والبيانات التمثيلية ، والتفاهمات ، والتعهدات ، أو الاتفاقات مع الشركة أو مع الشركة. احترام المواضيع المشمولة هنا. لا يوجد في هذا صراحة أو ضمنا ، عقد العمل ؛ وبقدر ما يتعلق الأمر بهذه الاتفاقية ، فإن وظيفتي من قبل الشركة لا تزال قابلة للتنفيذ حسب الإرادة وفقا للإجراءات المنصوص عليها في دليل الموظفين. لا يجوز تغيير هذه الاتفاقية أو تعديلها إلا في مستند مكتوب موقّع بواسطتي والشريك الإداري.</span>\n"
+"                                    <br/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>6.Because of the unique nature of the Confidential Information and the Developments, I understand and agree that the Firm will suffer irreparable harm if I fail to comply with any of my obligations in paragraphs 1 through 4 hereof and that monetary damages will be inadequate to compensate the Firm for the said breach.  Accordingly, I agree that the Firm will, in addition to any other remedies available to it at law or in equity, be entitled to injunctive relief to enforce the terms of the said paragraphs 1 through 4.</span>\n"
+"                                    <br/>\n"
+"                                    <br/>"
+msgstr "<span>6. بسبب الطبيعة الفريدة للمعلومات السرية والتطورات ، أفهم وأوافق على أن الشركة ستعاني من ضرر لا يمكن إصلاحه إذا لم ألتزم بأي من التزاماتي الواردة في الفقرات من 1 إلى 4 من هذه الاتفاقية وأن التعويضات النقدية لن تكون كافية تعويض الشركة عن الخرق المذكور. وبناءً على ذلك ، أوافق على أن الشركة ، بالإضافة إلى أي تعويضات أخرى متاحة لها بموجب القانون أو في الإنصاف ، يحق لها الحصول على تعويض قضائي لتنفيذ أحكام الفقرات المذكورة من 1 إلى 4.</span>\n"
+"                                    <br/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>7. If any term or provision of this Agreement is held to be invalid, void or unenforceable, the remaining terms and provisions of this Agreement shall not be affected, impaired or invalidated; and each such term and provision shall be valid and enforceable to the fullest extent permitted by law.</span>\n"
+"                                    <br/>\n"
+"                                    <br/>"
+msgstr "<span>7. إذا ثبت أن أي بند أو بند من هذه الاتفاقية غير صالح أو باطل أو غير قابل للتنفيذ ، فإن الشروط والأحكام المتبقية في هذه الاتفاقية لن تتأثر أو يتم إعاقتها أو إبطالها ؛ ويجب أن يكون كل من هذا المصطلح والحكم صالحًا وقابل للتنفيذ إلى أقصى حد يسمح به القانون.</span>\n"
+"                                    <br/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>8. I further undertake the following:</span>"
+msgstr "<span>8- أقوم كذلك بما يلي:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>9. This agreement shall be governed and controlled by the laws of the Kingdom of Saudi Arabia.</span>"
+msgstr "<span>9. تخضع هذه الاتفاقية وتحكمها قوانين المملكة العربية السعودية.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>: شروط الخدمة</span>\n"
+"                                    <br/>"
+msgstr "<span>: شروط الخدمة</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>:أمور أخرى</span>\n"
+"                                    <br/>"
+msgstr "<span>:أمور أخرى</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>:الإجازة</span>\n"
+"                                    <br/>"
+msgstr "<span>:الإجازة</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>:التأمين الطبي</span>\n"
+"                                    <br/>"
+msgstr "<span>:التأمين الطبي</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>:التاريخ</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>:التاريخ</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>:التقويم الميلادي</span>\n"
+"                                    <br/>"
+msgstr "<span>:التقويم الميلادي</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>:التوقيع على النحو المتفق عليه</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>:التوقيع على النحو المتفق عليه</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>:التوقيع</span>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>:التوقيع</span>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>:التوقيع</span>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>:التوقيع</span>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>:الراتب الشهري المقطوع</span>\n"
+"                                    <br/>"
+msgstr "<span>:الراتب الشهري المقطوع</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>:الراتب</span>\n"
+"                                    <br/>"
+msgstr "<span>:الراتب</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>:القانون والتعليمات</span>\n"
+"                                    <br/>"
+msgstr "<span>:القانون والتعليمات</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>:المدينة</span>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>:المدينة</span>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>:المسمى الوظيفي</span>\n"
+"                                    <br/>"
+msgstr "<span>:المسمى الوظيفي</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>:المكافآت</span>\n"
+"                                    <br/>"
+msgstr "<span>:المكافآت</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>:الموظف</span>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>:الموظف</span>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>:بتاريخ</span>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>:بتاريخ</span>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>:ساعات العمل</span>\n"
+"                                    <br/>"
+msgstr "<span>:ساعات العمل</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>:ستطبق شروط الخدمة التالية</span>\n"
+"                                    <br/>"
+msgstr "<span>:ستطبق شروط الخدمة التالية</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>:صاحب العمل</span>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>:صاحب العمل</span>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>:مدة العقد</span>\n"
+"                                    <br/>"
+msgstr "<span>:مدة العقد</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>:مكافأة عند المباشرة</span>\n"
+"                                    <br/>"
+msgstr "<span>:مكافأة عند المباشرة</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>:مكافأة نهاية الخدمة</span>\n"
+"                                    <br/>"
+msgstr "<span>:مكافأة نهاية الخدمة</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>:ملاحظه</span>\n"
+"                                    <br/>"
+msgstr "<span>:ملاحظه</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>:نقطة المنشأ</span>\n"
+"                                    <br/>"
+msgstr "<span>:نقطة المنشأ</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>AGREEMENT REGARDING CONFIDENTIAL INFORMATION AND SECRECY</span>"
+msgstr "<span>اتفاقية بشأن المعلومات السرية والسرية</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>All dates and time periods herein shall be calculated in accordance with the Gregorian calendar.</span>"
+msgstr "<span>تحسب جميع التواريخ والفترات الزمنية الواردة هنا وفقا للتقويم الغريغوري.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>All information and material acquired in the course of performing his duties under this contract, the Employee holds in confidence.</span>"
+msgstr "<span>جميع المعلومات والمواد التي تم الحصول عليها في سياق أداء واجباته بموجب هذا العقد ، يحمل الموظف في سرية.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Annual vacation entitlement is 25 working days per annum.</span>"
+msgstr "<span>الإجازة السنوية المستحقة 25 يوم عمل في السنة.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>At the end of the Employee’s Employment period, the Employee shall be entitled to service award in accordance with the Saudi Labour Law.</span>"
+msgstr "<span>في نهاية فترة توظيف الموظف ، يحق للموظف الحصول على مكافأة الخدمة وفقاً لقانون العمل السعودي.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Bonus:</span>"
+msgstr "<span>علاوة:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>Confidential Information is any information or materials concerning the Firm’s affairs, whether business, technical or otherwise, which are not known to the public at large.  It includes, but is not limited to, information and materials developed, collected or used by the Firm personnel; information disclosed to</span>"
+msgstr "<span>المعلومات السرية هي أي معلومات أو مواد تتعلق بشركات الشركة ، سواء كانت تجارية أو تقنية أو غير ذلك ، والتي لا يعرفها عامة الناس. ويشمل ، على سبيل المثال لا الحصر ، المعلومات والمواد التي تم تطويرها أو جمعها أو استخدامها من قبل موظفي الشركة ؛ المعلومات التي تم الكشف عنها ل</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Confidentiality:</span>"
+msgstr "<span>سرية:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>Date:</span>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>تاريخ:</span>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Designation:</span>"
+msgstr "<span>تعيين:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>EMPLOYMENT CONTRACT Strictly Private  Confidential</span>"
+msgstr "<span>عقد العمل سري للغاية بشكل خاص</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Employee</span>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>موظف</span>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Employer:</span>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>صاحب العمل:</span>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Entire Agreement:</span>"
+msgstr "<span>اتفاق كامل:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>For the purposes of this contract the Employee’s point of origin shall be</span>"
+msgstr "<span>لأغراض هذا العقد يجب أن تكون نقطة أصل الموظف</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Governing Laws / Disputes:</span>"
+msgstr "<span>القوانين الناظمة / النزاعات:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Gregorian Calendar:</span>"
+msgstr "<span>التقويم الميلادي:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Hours of work:</span>"
+msgstr "<span>ساعات العمل:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>If employee resigns before completing one year of employment with the firm, the employer may charge all the visa costs, related to the employees hiring to the employee.</span>"
+msgstr "<span>إذا استقال الموظف قبل إتمام سنة واحدة من العمل لدى الشركة ، فيجوز لصاحب العمل تقاضي جميع تكاليف التأشيرات المتعلقة بتوظيف الموظفين للموظف.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>In accepting employment hereunder, the Employee undertakes that he will not engage in any other employment during the term of this Agreement, except with the prior written consent of the Employer.  The Employee further undertakes that for a period of twelve months after the expiration of the term or the termination of this Agreement, Employee will not engage in any employment with direct competing organization or any clients of the Employer or with any employer offering services to any clients of the Employer without the Employer’s prior written approval, which approval shall not unreasonably be withheld.</span>"
+msgstr "<span>عند قبول العمل بموجبه ، يتعهد الموظف بأنه لن يشارك في أي عمل آخر خلال مدة هذه الاتفاقية ، إلا بموافقة خطية مسبقة من صاحب العمل. يتعهد الموظف كذلك أنه لمدة اثني عشر شهرًا بعد انتهاء المدة أو إنهاء هذه الاتفاقية ، لن يعمل الموظف في أي عمل مع منظمة منافسة مباشرة أو أي عميل من أصحاب العمل أو مع أي صاحب عمل يقدم خدمات لأي عميل من صاحب العمل دون موافقة كتابية مسبقة من صاحب العمل ، والتي لا يجوز حجب الموافقة بشكل غير معقول.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>In accordance with the</span>"
+msgstr "<span>وفقا ل</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>In addition, the Employee will be entitled to statutory holidays declared by the Government of Saudi for private sector companies.</span>"
+msgstr "<span>بالإضافة إلى ذلك ، يحق للعامل الحصول على إجازات قانونية تعلنها الحكومة السعودية لشركات القطاع الخاص.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>In the event of your leaving prior to the completion of the first contract, the firm reserves the right to enforce the relevant provisions of the Saudi labour law which include restrictions on your taking up other employment in the Saudi.  However, these restrictions will not apply should you decide to leave after the end of the first contract.</span>"
+msgstr "<span>في حالة مغادرتك قبل إتمام العقد الأول ، تحتفظ الشركة بالحق في إنفاذ الأحكام ذات الصلة من قانون العمل السعودي والتي تتضمن قيودًا على توليك وظيفة أخرى في السعودية. ومع ذلك ، لن تنطبق هذه القيود إذا قررت المغادرة بعد انتهاء العقد الأول.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Joining Date:</span>"
+msgstr "<span>تاريخ الانضمام:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Law and Instructions:</span>"
+msgstr "<span>القانون والتعليمات:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Medical Insurance:</span>"
+msgstr "<span>التأمين الطبي:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Monthly lump-sum salary:</span>\n"
+"                                    <span>SR</span>"
+msgstr "<span>الراتب الشهري الإجمالي:</span>\n"
+"                                    <span>SR</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>Name:</span>"
+msgstr "<span>اسم:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Notice:</span>"
+msgstr "<span>تنويه:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Office timings are from 8:30 am to 6:00 pm with half an hour break; five days a week (Saturday to Wednesday).</span>"
+msgstr "<span>مواعيد المكتب من الساعة 8:30 صباحاً حتى الساعة 6:00 مساءً مع استراحة لمدة نصف ساعة. خمسة أيام في الأسبوع (من السبت إلى الأربعاء).</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>Office:</span>"
+msgstr "<span>مكتب. مقر. مركز:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Other Employment / Business:</span>"
+msgstr "<span>أعمال / أعمال أخرى:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Other:</span>"
+msgstr "<span>آخر:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Period of contract:</span>"
+msgstr "<span>مدة العقد:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Point of Origin:</span>"
+msgstr "<span>نقطة الاصل:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>Position:</span>"
+msgstr "<span>موضع:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Remuneration:</span>"
+msgstr "<span>الأجر:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Service Award:</span>"
+msgstr "<span>جائزة الخدمة:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Service Conditions:</span>"
+msgstr "<span>شروط الخدمة:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Sign-on bonus:</span>"
+msgstr "<span>مكافأة تسجيل الدخول:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Signature:</span>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>التوقيع:</span>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Signature:</span>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>التوقيع:</span>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>Signed as agreed:</span>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>وقعت على النحو المتفق عليه:</span>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Signed in</span>\n"
+"                                    <span>(City)</span>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>تم الدخول</span>\n"
+"                                    <span>(مدينة)</span>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>The Employee agrees to comply in all respects with the confidentiality provisions set forth in Attachment A hereto. The Employee’s obligation to comply with Attachment A shall survive the expiration or termination of this Agreement for a period of twelve months.</span>"
+msgstr "<span>يوافق الموظف على الالتزام من جميع النواحي بأحكام السرية المنصوص عليها في الملحق أ بهذه الرسالة. يلتزم التزام الموظف بالامتثال للمرفق أ بالبقاء على انتهاء أو إنهاء هذه الاتفاقية لمدة اثني عشر شهرًا.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>The Employee and his direct family will be provided with Medical Insurance, in accordance with Firm’s HR policy.</span>"
+msgstr "<span>سيتم تزويد الموظف وعائلته المباشرة بالتأمين الطبي ، وفقًا لسياسة الموارد البشرية للشركة.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>The Employee will be eligible for an annual bonus.  The amount and payment is subject to the partners’ discretion, your performance and the performance of the business as a whole.  Performance criteria reflect personal objectives set annually and include: business development; initiative and innovation; effort; effectiveness and commitment; leading by example; hands on engagement management; productivity; and technical and administrative skills.</span>"
+msgstr "<span>سيكون الموظف مؤهلا للحصول على مكافأة سنوية. يخضع المبلغ والدفع لتقدير الشركاء وأدائهم وأداء النشاط التجاري ككل. تعكس معايير الأداء الأهداف الشخصية التي يتم تحديدها سنويًا وتشمل: تطوير الأعمال ؛ المبادرة والابتكار. مجهود؛ الفعالية والالتزام يقود على سبيل المثال ؛ يدا على إدارة المشاركة. إنتاجية؛ والمهارات الفنية والإدارية.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>The Employee will devote all his efforts, skills and training for the benefit of the Employer, and will not work on his own account or any other persons account, paid or unpaid, either inside or outside working hours.</span>"
+msgstr "<span>سيقوم الموظف بتكريس كل جهوده ومهاراته وتدريبه لصالح صاحب العمل ، ولن يعمل على حسابه الخاص أو أي حساب آخر ، مدفوع أو غير مدفوع ، سواء داخل أو خارج ساعات العمل.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>The Employee’s monthly lump sum salary, which includes pay for each and every day of the year (including rest days and holidays), shall be payable in equal monthly installments in arrears on the 1st day of the subsequent month and if worked less than a full month, then employee’s compensation will be prorated based on the monthly salary (annual salary divided by 12 months) divided by thirty (30) calendar days.</span>"
+msgstr "<span>يجب أن يكون راتب الموظف الشهري الإجمالي ، والذي يتضمن الأجر عن كل يوم من أيام السنة (بما في ذلك أيام الراحة والعطلات) ، مستحق الدفع على أقساط شهرية متساوية في المتأخرات في اليوم الأول من الشهر التالي ، وفي حالة عمل أقل من كامل شهرًا ، سيتم تقسيط تعويض الموظف استنادًا إلى الراتب الشهري (الراتب السنوي مقسومًا على 12 شهرًا) مقسومًا على ثلاثين (30) يومًا تقويميًا.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>The Employer hereby engages the Employee and the Employee agrees to work as a</span>"
+msgstr "<span>صاحب العمل بموجب هذا يشرك الموظف والموظف يوافق على العمل باعتباره</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>The Employer reserves the right to withhold partly or in total the service award if the Employee is in material breach of this contract.</span>"
+msgstr "<span>يحتفظ صاحب العمل بالحق في الامتناع جزئيا أو جزئيا عن مكافأة الخدمة إذا كان الموظف في خرق مادي لهذا العقد.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>The Employer undertakes to determine whether or not it approves any such employment within one week from the disclosure by the Employee of the names of potential employers and the position and responsibilities the Employee will have with those employers. The Employee further undertakes not to solicit or endeavour to entice away from the Employer any person employed by the Employer.</span>"
+msgstr "<span>يتعهد صاحب العمل بتحديد ما إذا كان يوافق على أي عمل من هذا القبيل في غضون أسبوع واحد من كشف الموظف عن أسماء أرباب العمل المحتملين والوظيفة والمسؤوليات التي سيتحملها الموظف مع أصحاب العمل هؤلاء. يتعهد الموظف كذلك بعدم التماس أو السعي لإبعاد صاحب العمل عن أي شخص يعمل لدى صاحب العمل.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>The contract will exist from the start date of the Employee for three years and is renewable thereafter by mutual consent.</span>"
+msgstr "<span>سوف يكون العقد موجودًا من تاريخ بدء الموظف لمدة ثلاث سنوات وقابل للتجديد بعد ذلك بالتراضي.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>The employee undertakes to comply with all policies, directives and instructions issued by the Employer and with the laws and regulations of the Kingdom of Saudi Arabia. When acting on behalf of the Employer, the Employee shall in no event exceed the authority expressly granted to him.  The Employee shall be solely responsible for the consequences of any failure to comply with the foregoing and shall indemnify and hold harmless the Employer for and against any attendant claim or liability.</span>"
+msgstr "<span>يتعهد الموظف بالامتثال لجميع السياسات والتوجيهات والتعليمات الصادرة من صاحب العمل والقوانين واللوائح المعمول بها في المملكة العربية السعودية. عند التصرف نيابة عن صاحب العمل ، لا يتجاوز الموظف في أي حال من الأحوال السلطة الممنوحة له صراحة. يكون الموظف وحده مسؤولاً عن عواقب أي إخفاق في الامتثال لما تقدم ، ويجب عليه تعويض صاحب العمل عن الضرر ضد أي مطالبة أو مسؤولية مصاحبة.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>The failure of either party to enforce at any time any of the provisions of this Agreement or to require at any time performance by the other party of any of the provisions hereof, shall in no way be construed to be a waiver of the provisions or to affect the validity of this Agreement or the right of either party thereafter to enforce each and every provision in accordance with the terms of this Agreement.  Invalidation of any provision of this Agreement, or portion thereof, shall not invalidate any other provision or the remaining provisions of the relevant provision and the rest of this Agreement shall in all such cases remain in full force and effect.</span>"
+msgstr "<span>لا يجوز بأي حال تفسير فشل أي طرف في تطبيق أي من أحكام هذه الاتفاقية أو في أي وقت من الأوقات على قيام الطرف الآخر بتنفيذ أي من أحكام هذا القانون ، على أنه تنازل عن الأحكام أو تؤثر على صحة هذه الاتفاقية أو على حق أي من الطرفين بعد ذلك في تنفيذ كل وكل شرط وفقًا لبنود هذه الاتفاقية. لا يؤدي بطلان أي شرط من هذه الاتفاقية ، أو جزء منها ، إلى إبطال أي حكم آخر أو أي أحكام أخرى من الحكم ذي الصلة وبقية هذه الاتفاقية في جميع هذه الحالات تظل سارية المفعول والتأثير.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>The following service conditions shall be applicable:</span>"
+msgstr "<span>تسري شروط الخدمة التالية:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>The minimum notice period required from the Employer or Employee to terminate this employment contract will be one month.</span>"
+msgstr "<span>الحد الأدنى لفترة الإشعار المطلوبة من صاحب العمل أو الموظف لإنهاء عقد العمل هذا سيكون شهر واحد.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>The monthly lump-sum salary consists of the following:</span>"
+msgstr "<span>يتكون الراتب الشهري الإجمالي من التالي:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>The parties hereto agree to the terms and conditions stipulated herein as follows:</span>"
+msgstr "<span>يتفق الطرفان على الشروط والأحكام المنصوص عليها هنا على النحو التالي:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>This Agreement constitutes the entire agreement between the parties with respect to the Employee’s employment by the Employer in the Kingdom of Saudi Arabia and supersedes and renders null and void all prior or contemporaneous agreements or understandings, whether oral or written in between the Employee and the Employer. It is considered a cause of immediate termination without benefits if the employee does not keep this contract secret.</span>\n"
+"                                    <span>This agreement may only be amended, or supplemented, by the written agreement of the Employee and the treat this agreement in a highly confidential manner whereby this agreement can be discussed by employee and Company management only.</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>تشكل هذه الاتفاقية الاتفاقية الكاملة بين الطرفين فيما يتعلق بتوظيف صاحب العمل من قبل صاحب العمل في المملكة العربية السعودية وتحل محل كل الاتفاقات أو التفاهمات السابقة أو القائمة ، سواء كانت شفوية أو مكتوبة بين الموظف وصاحب العمل. . يعتبر سبب الإنهاء الفوري دون فوائد إذا كان الموظف لا يبقي هذا العقد سرا.</span>\n"
+"                                    <span>لا يجوز تعديل هذه الاتفاقية أو استكمالها إلا باتفاق خطي من الموظف ومعالجة هذه الاتفاقية بطريقة سرية للغاية حيث يمكن مناقشة هذه الاتفاقية من قبل الموظف وإدارة الشركة فقط.</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>This Agreement shall be governed by, and construed in accordance with the laws and regulations of the Kingdom of Saudi Arabia, including without limitation the Labour and Workmen Regulations issued under Royal Decree No. M/51 dated 23/8/1426H.  The parties will make every effort to settle disputes amicably, but if the parties are unable to reach an amicable settlement, the dispute will be referred to and decided by the relevant local labour committee or other appropriate Saudi Arabian Administrative or Judicial body.</span>"
+msgstr "<span>تخضع هذه الاتفاقية وتفسر وفقا للقوانين والأنظمة المعمول بها في المملكة العربية السعودية ، بما في ذلك على سبيل المثال لا الحصر لوائح العمل والعمال الصادرة بموجب المرسوم الملكي رقم م / 51 بتاريخ 23/8/1426 هـ. يبذل الطرفان قصارى جهدهما لتسوية النزاعات بالطرق الودية ، ولكن إذا لم يتمكن الطرفان من التوصل إلى تسوية ودية ، فسيتم إحالة النزاع إلى لجنة العمل المحلية المختصة أو أي هيئة قضائية أو هيئة قضائية أخرى مناسبة في المملكة العربية السعودية.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Under Saudi labour law, the Employer may terminate this Contract during the probationary period of 3 months by giving one week notice. Similarly the Employee can also terminate the contract during the probationary period by giving one week notice.</span>"
+msgstr "<span>بموجب قانون العمل السعودي ، يجوز لصاحب العمل إنهاء هذا العقد خلال فترة الاختبار لمدة 3 أشهر من خلال تقديم إشعار لمدة أسبوع واحد. وبالمثل ، يمكن للموظف أيضًا إنهاء العقد خلال فترة الاختبار من خلال تقديم إشعار لمدة أسبوع واحد.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Under Saudi law the contract may be terminated by the Employer at any time without notice on the grounds of professional misconduct, breach of confidentiality, incompetence, negligence, breach of contractual terms or for any other reason set out in Article 80 of the Saudi labour law.  Service Award as described in clause IV will not be payable under these circumstances.</span>"
+msgstr "<span>وبموجب القانون السعودي ، يجوز لصاحب العمل إنهاء العقد في أي وقت دون إخطار على أساس سوء السلوك المهني أو الإخلال بالسرية أو عدم الكفاءة أو الإهمال أو الإخلال بشروط التعاقد أو لأي سبب آخر منصوص عليه في المادة 80 من قانون العمل السعودي. . جائزة الخدمة كما هو موضح في البند الرابع لن تكون مستحقة الدفع في هذه الظروف.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Vacation:</span>"
+msgstr "<span>عطلة:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Waiver and Survivability:</span>"
+msgstr "<span>التنازل وقابلية البقاء:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>Whilst the Employee will be based in Al Khobar initially, they will be required to work across all offices of Saudi Arabia or be required to work outside the Kingdom for client work or on occasional secondment to other offices within the</span>"
+msgstr "<span>في حين أن الموظف سيكون مقره في مدينة الخبر في البداية ، سيُطلب منه العمل في جميع المكاتب في المملكة العربية السعودية أو أن يُطلب منه العمل خارج المملكة لعمل العميل أو الإعارة من حين لآخر إلى مكاتب أخرى داخل المملكة العربية السعودية.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>You are entitled for one time sign on bonus of SAR</span>"
+msgstr "<span>يحق لك مرة واحدة التوقيع على مكافأة ريال سعودي</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>and having as its address</span>"
+msgstr "<span>ويكون لها عنوانها</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>and its clients.</span>"
+msgstr "<span>وعملائها.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>by its clients or potential clients in the course of engagements or proposed engagements; and information disclosed by third parties with which the Firm has or may have a business relationship.  Confidential Information may relate to the past, present or future and may concern, but is not limited to, business strategies, financial data, business plans, technology, contract provisions, client lists or records, computer printouts and disks, or other forms of documentation or media.  However, it need not necessarily be reduced to a tangible form.</span>"
+msgstr "<span>من خلال عملائها أو العملاء المحتملين في سياق المشاركات أو المشاركات المقترحة ؛ والمعلومات التي يتم الإفصاح عنها من قبل أطراف ثالثة لديها أو لديها علاقة عمل مع الشركة. قد تتعلق المعلومات السرية بالماضي أو الحاضر أو ​​المستقبل وقد تهم ، على سبيل المثال لا الحصر ، إستراتيجيات الأعمال أو البيانات المالية أو خطط الأعمال أو التكنولوجيا أو أحكام العقد أو قوائم أو سجلات العميل أو مطبوعات الكمبيوتر والأقراص أو أشكال أخرى من الوثائق أو وسائل الإعلام. ومع ذلك ، لا يلزم بالضرورة تقليصها إلى شكل ملموس.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>department for the Employer. It is understood that the Employee may from time to time be called upon to carry out duties outside the scope of responsibilities for the position mentioned above.  The Employee shall devote his full working time to the performance of his duties, shall perform such duties professionally and to the best of his ability and shall comply with all jobs and directions given by the Employer.  Without limiting the generality of the foregoing, the Employee shall undertake his duties in accordance with all applicable rules, policies, procedures and other directions of the Employer.</span>"
+msgstr "<span>قسم لصاحب العمل. من المفهوم أنه يجوز استدعاء الموظف من وقت لآخر للقيام بواجبات خارج نطاق مسؤوليات المنصب المذكور أعلاه. على الموظف أن يكرس وقته الكامل لأداء واجباته ، ويؤدي هذه الواجبات بمهنية وبأفضل قدرته وأن يمتثل لجميع الوظائف والتوجيهات التي يقدمها صاحب العمل. دون الحد من عمومية ما تقدم ، يتعين على الموظف القيام بواجباته وفقا لجميع القواعد والسياسات والإجراءات المعمول بها والتوجيهات الأخرى لصاحب العمل.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>holding</span>"
+msgstr "<span>تحتجز</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>in</span>"
+msgstr "<span>في</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>international network.</span>"
+msgstr "<span>شبكة دولية.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>on</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>على</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>which will be paid-out after completion of six months with the firm.If employee fails to complete one year with the firm then, employee has to pay back the sign-on-bonus to the employer.</span>"
+msgstr "<span>التي سيتم دفعها بعد الانتهاء من ستة أشهر مع الشركة. إذا فشل الموظف لإكمال سنة واحدة مع الشركة ، ثم يتعين على الموظف تسديد تسجيل الدخول على المكافأة إلى صاحب العمل.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>، شركة مهنيه سعودية برقم</span>"
+msgstr "<span>، شركة مهنيه سعودية برقم</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>، صندوق بريد</span>\n"
+"                                    <br/>"
+msgstr "<span>، صندوق بريد</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>أؤكد إنني قرأت قواعد وإجراءات ●</span>\n"
+"                                    <br/>\n"
+"                                    <span>الشركة الواردة في دليل الموظفين. واني</span>\n"
+"                                    <br/>\n"
+"                                    <span>أوافق على الامتثال لها وأتفهم أن</span>\n"
+"                                    <br/>\n"
+"                                    <span>استمرار عملي مع الشركة يعتمد على</span>\n"
+"                                    <br/>\n"
+"                                    <span>.التقيد الصارم بها</span>\n"
+"                                    <br/>"
+msgstr "<span>أؤكد إنني قرأت قواعد وإجراءات ●</span>\n"
+"                                    <br/>\n"
+"                                    <span>الشركة الواردة في دليل الموظفين. واني</span>\n"
+"                                    <br/>\n"
+"                                    <span>أوافق على الامتثال لها وأتفهم أن</span>\n"
+"                                    <br/>\n"
+"                                    <span>استمرار عملي مع الشركة يعتمد على</span>\n"
+"                                    <br/>\n"
+"                                    <span>.التقيد الصارم بها</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>أوافق في جميع الأوقات أثناء قيامي ●</span>\n"
+"                                    <br/>\n"
+"                                    <span>بعملي وما بعد ذلك بالحفاظ على سرية</span>\n"
+"                                    <br/>\n"
+"                                    <span>الشؤون ، والبيانات والمنهجيات والتقنيات</span>\n"
+"                                    <br/>\n"
+"                                    <span>ذات الملكية</span>"
+msgstr "<span>أوافق في جميع الأوقات أثناء قيامي ●</span>\n"
+"                                    <br/>\n"
+"                                    <span>بعملي وما بعد ذلك بالحفاظ على سرية</span>\n"
+"                                    <br/>\n"
+"                                    <span>الشؤون ، والبيانات والمنهجيات والتقنيات</span>\n"
+"                                    <br/>\n"
+"                                    <span>ذات الملكية</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>إذا استقال الموظف قبل إتمام سنة واحدة من</span>\n"
+"                                    <br/>\n"
+"                                    <span>العمل مع الشركة، يجوز لصاحب العمل أن</span>\n"
+"                                    <br/>\n"
+"                                    <span>يحمل كل تكاليف التأشيرة المتعلقة بتوظيف</span>\n"
+"                                    <br/>\n"
+"                                    <span>.الموظف للموظف</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>إذا استقال الموظف قبل إتمام سنة واحدة من</span>\n"
+"                                    <br/>\n"
+"                                    <span>العمل مع الشركة، يجوز لصاحب العمل أن</span>\n"
+"                                    <br/>\n"
+"                                    <span>يحمل كل تكاليف التأشيرة المتعلقة بتوظيف</span>\n"
+"                                    <br/>\n"
+"                                    <span>.الموظف للموظف</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>إذا فشل احد من الطرفين في أي وقت</span>\n"
+"                                    <br/>\n"
+"                                    <span>من إنفاذ أي حكم من أحكام هذا الاتفاق</span>\n"
+"                                    <br/>\n"
+"                                    <span>أو أن يطلب في أي وقت أداء من جانب</span>\n"
+"                                    <br/>\n"
+"                                    <span>,الطرف الآخر بأي من أحكام هذا الاتفاق</span>\n"
+"                                    <br/>\n"
+"                                    <span>سوف لا يجوز بحال من الأحوال أن يفسر</span>\n"
+"                                    <br/>\n"
+"                                    <span>على أنه إعفاء من تطبيق الأحكام أو أن</span>\n"
+"                                    <br/>\n"
+"                                    <span>يؤثر على صحة هذا الاتفاق أو حق أي من</span>\n"
+"                                    <br/>\n"
+"                                    <span>الطرفين بعد ذلك لإنفاذ جميع الأحكام</span>\n"
+"                                    <br/>\n"
+"                                    <span>وفق هذا الاتفاق. إن إبطال أي حكم من</span>\n"
+"                                    <br/>\n"
+"                                    <span>أحكام هذا الاتفاق، أو جزء منه، سوف لن</span>\n"
+"                                    <br/>\n"
+"                                    <span>يبطل أي حكم آخر أو أي جزء من الحكم</span>\n"
+"                                    <br/>\n"
+"                                    <span>ذو الصلة وستبقى بقية هذا الاتفاق في</span>\n"
+"                                    <br/>\n"
+"                                    <span>.جميع هذه الحالات في حيز التنفيذ</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>إذا فشل احد من الطرفين في أي وقت</span>\n"
+"                                    <br/>\n"
+"                                    <span>من إنفاذ أي حكم من أحكام هذا الاتفاق</span>\n"
+"                                    <br/>\n"
+"                                    <span>أو أن يطلب في أي وقت أداء من جانب</span>\n"
+"                                    <br/>\n"
+"                                    <span>,الطرف الآخر بأي من أحكام هذا الاتفاق</span>\n"
+"                                    <br/>\n"
+"                                    <span>سوف لا يجوز بحال من الأحوال أن يفسر</span>\n"
+"                                    <br/>\n"
+"                                    <span>على أنه إعفاء من تطبيق الأحكام أو أن</span>\n"
+"                                    <br/>\n"
+"                                    <span>يؤثر على صحة هذا الاتفاق أو حق أي من</span>\n"
+"                                    <br/>\n"
+"                                    <span>الطرفين بعد ذلك لإنفاذ جميع الأحكام</span>\n"
+"                                    <br/>\n"
+"                                    <span>وفق هذا الاتفاق. إن إبطال أي حكم من</span>\n"
+"                                    <br/>\n"
+"                                    <span>أحكام هذا الاتفاق، أو جزء منه، سوف لن</span>\n"
+"                                    <br/>\n"
+"                                    <span>يبطل أي حكم آخر أو أي جزء من الحكم</span>\n"
+"                                    <br/>\n"
+"                                    <span>ذو الصلة وستبقى بقية هذا الاتفاق في</span>\n"
+"                                    <br/>\n"
+"                                    <span>.جميع هذه الحالات في حيز التنفيذ</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>اتفاقية بشأن سرية وخصوصية</span>\n"
+"                                    <br/>\n"
+"                                    <span>المعلومات</span>\n"
+"                                    <br/>"
+msgstr "<span>اتفاقية بشأن سرية وخصوصية</span>\n"
+"                                    <br/>\n"
+"                                    <span>المعلومات</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>الإبطال والإبقاء</span>\n"
+"                                    <br/>"
+msgstr "<span>الإبطال والإبقاء</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>الاسم:</span>"
+msgstr "<span>الاسم:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>الحد الأدنى لفترة الإشعار المطلوبة من</span>\n"
+"                                    <br/>\n"
+"                                    <span>الموظف أو صاحب العمل لإنهاء عقد</span>\n"
+"                                    <br/>\n"
+"                                    <span>.العمل هذا هي شهر واحد</span>\n"
+"                                    <br/>"
+msgstr "<span>الحد الأدنى لفترة الإشعار المطلوبة من</span>\n"
+"                                    <br/>\n"
+"                                    <span>الموظف أو صاحب العمل لإنهاء عقد</span>\n"
+"                                    <br/>\n"
+"                                    <span>.العمل هذا هي شهر واحد</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>السرية</span>\n"
+"                                    <br/>"
+msgstr "<span>السرية</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>السيد</span>\n"
+"                                    <span>/</span>"
+msgstr "<span>السيد</span>\n"
+"                                    <span>/</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>القانون النافذ / النزاعات</span>\n"
+"                                    <br/>"
+msgstr "<span>القانون النافذ / النزاعات</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>المعلومات السرية هي أية معلومات أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>مواد تتعلق بشئون الشركة، سواء كانت</span>\n"
+"                                    <br/>\n"
+"                                    <span>تجارية أو فنية أو خلاف ذلك، وهي ليست</span>\n"
+"                                    <br/>\n"
+"                                    <span>.معروفة على نطاق الجمهور العام بأكمله</span>\n"
+"                                    <br/>\n"
+"                                    <span>وتشمل المعلومات السرية على سبيل</span>\n"
+"                                    <br/>\n"
+"                                    <span>المثال لا الحصر، المعلومات والمواد التي</span>\n"
+"                                    <br/>\n"
+"                                    <span>تم تطويرها أو جمعها والتي تستخدم من</span>\n"
+"                                    <br/>\n"
+"                                    <span>قبل أفراد الشركة؛ والمعلومات التي قام</span>\n"
+"                                    <br/>\n"
+"                                    <span>العملاء أو العملاء المحتملين بالكشف عنها</span>\n"
+"                                    <br/>\n"
+"                                    <span>أثناء فترة</span>"
+msgstr "<span>المعلومات السرية هي أية معلومات أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>مواد تتعلق بشئون الشركة، سواء كانت</span>\n"
+"                                    <br/>\n"
+"                                    <span>تجارية أو فنية أو خلاف ذلك، وهي ليست</span>\n"
+"                                    <br/>\n"
+"                                    <span>.معروفة على نطاق الجمهور العام بأكمله</span>\n"
+"                                    <br/>\n"
+"                                    <span>وتشمل المعلومات السرية على سبيل</span>\n"
+"                                    <br/>\n"
+"                                    <span>المثال لا الحصر، المعلومات والمواد التي</span>\n"
+"                                    <br/>\n"
+"                                    <span>تم تطويرها أو جمعها والتي تستخدم من</span>\n"
+"                                    <br/>\n"
+"                                    <span>قبل أفراد الشركة؛ والمعلومات التي قام</span>\n"
+"                                    <br/>\n"
+"                                    <span>العملاء أو العملاء المحتملين بالكشف عنها</span>\n"
+"                                    <br/>\n"
+"                                    <span>أثناء فترة</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>المكتب:</span>"
+msgstr "<span>المكتب:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>المنصب :</span>"
+msgstr "<span>المنصب :</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>المنصب:</span>"
+msgstr "<span>المنصب:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>الوظائف الأخرى/ الأعمال</span>\n"
+"                                    <br/>\n"
+"                                    <span>:التجارية</span>\n"
+"                                    <br/>"
+msgstr "<span>الوظائف الأخرى/ الأعمال</span>\n"
+"                                    <br/>\n"
+"                                    <span>:التجارية</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>بعد قبول شروط العمل ضمن هذا</span>\n"
+"                                    <span>الإتفاق، يتعهد الموظف انه لن يقوم بأي</span>\n"
+"                                    <span>عمل آخر خلال فترة هذا الإتفاق، إلا بعد</span>\n"
+"                                    <span>حصوله على موافقة خطية مسبقة من</span>\n"
+"                                    <span>صاحب العمل. كما يتعهد الموظف كذلك</span>\n"
+"                                    <span>ولفترة اثني عشر شهرا بعد إنتهاء مدة أو</span>\n"
+"                                    <span>إنهاء هذا الإتفاق، أنه لن يشارك في أي</span>\n"
+"                                    <span>عمل مع أي من عملاء صاحب العمل أو</span>\n"
+"                                    <span>مع أي صاحب عمل يقوم بتقديم خدمات</span>\n"
+"                                    <span>إلى عملاء صاحب العمل من دون موافقة</span>\n"
+"                                    <span>خطية مسبقة من صاحب العمل، الذي لن</span>\n"
+"                                    <span>يقوم بحجب الموافقة لأسباب غير</span>\n"
+"                                    <span>معقولة.</span>"
+msgstr "<span>بعد قبول شروط العمل ضمن هذا</span>\n"
+"                                    <span>الإتفاق، يتعهد الموظف انه لن يقوم بأي</span>\n"
+"                                    <span>عمل آخر خلال فترة هذا الإتفاق، إلا بعد</span>\n"
+"                                    <span>حصوله على موافقة خطية مسبقة من</span>\n"
+"                                    <span>صاحب العمل. كما يتعهد الموظف كذلك</span>\n"
+"                                    <span>ولفترة اثني عشر شهرا بعد إنتهاء مدة أو</span>\n"
+"                                    <span>إنهاء هذا الإتفاق، أنه لن يشارك في أي</span>\n"
+"                                    <span>عمل مع أي من عملاء صاحب العمل أو</span>\n"
+"                                    <span>مع أي صاحب عمل يقوم بتقديم خدمات</span>\n"
+"                                    <span>إلى عملاء صاحب العمل من دون موافقة</span>\n"
+"                                    <span>خطية مسبقة من صاحب العمل، الذي لن</span>\n"
+"                                    <span>يقوم بحجب الموافقة لأسباب غير</span>\n"
+"                                    <span>معقولة.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>بموجب النظام السعودي يجوز إنهاء العقد</span>\n"
+"                                    <br/>\n"
+"                                    <span>من جانب صاحب العمل في أي وقت دون</span>\n"
+"                                    <br/>\n"
+"                                    <span>إخطار مسبق على أساس سوء السلوك</span>\n"
+"                                    <br/>\n"
+"                                    <span>,المهني ، وانتهاك السرية ، وعدم الكفاءة</span>\n"
+"                                    <br/>\n"
+"                                    <span>والتقصير ، وخرق الشروط التعاقدية أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>لأي سبب آخر منصوص عليه في المادة</span>\n"
+"                                    <br/>\n"
+"                                    <span>80 من قانون العمل السعودي. وفي ظل</span>\n"
+"                                    <br/>\n"
+"                                    <span>هذه الظروف لن تدفع مكافأة نهاية</span>\n"
+"                                    <br/>\n"
+"                                    <span>الخدمة على النحو المبين في البند الرابع</span>\n"
+"                                    <br/>\n"
+"                                    <span>.من هذا الإتفاق</span>\n"
+"                                    <br/>"
+msgstr "<span>بموجب النظام السعودي يجوز إنهاء العقد</span>\n"
+"                                    <br/>\n"
+"                                    <span>من جانب صاحب العمل في أي وقت دون</span>\n"
+"                                    <br/>\n"
+"                                    <span>إخطار مسبق على أساس سوء السلوك</span>\n"
+"                                    <br/>\n"
+"                                    <span>,المهني ، وانتهاك السرية ، وعدم الكفاءة</span>\n"
+"                                    <br/>\n"
+"                                    <span>والتقصير ، وخرق الشروط التعاقدية أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>لأي سبب آخر منصوص عليه في المادة</span>\n"
+"                                    <br/>\n"
+"                                    <span>80 من قانون العمل السعودي. وفي ظل</span>\n"
+"                                    <br/>\n"
+"                                    <span>هذه الظروف لن تدفع مكافأة نهاية</span>\n"
+"                                    <br/>\n"
+"                                    <span>الخدمة على النحو المبين في البند الرابع</span>\n"
+"                                    <br/>\n"
+"                                    <span>.من هذا الإتفاق</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>بموجب هذا الإتفاق يقوم صاحب العمل</span>\n"
+"                                    <br/>\n"
+"                                    <span>باستخدام الموظف، ويوافق الموظف</span>\n"
+"                                    <br/>"
+msgstr "<span>بموجب هذا الإتفاق يقوم صاحب العمل</span>\n"
+"                                    <br/>\n"
+"                                    <span>باستخدام الموظف، ويوافق الموظف</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>تاريخ التعيين:</span>"
+msgstr "<span>تاريخ التعيين:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>تخضع أحكام هذا الاتفاق وتفسر وفقا</span>\n"
+"                                    <br/>\n"
+"                                    <span>لقوانين وأنظمة المملكة العربية</span>\n"
+"                                    <br/>\n"
+"                                    <span>السعودية، شاملة ومن دون أن تكون</span>\n"
+"                                    <br/>\n"
+"                                    <span>مقتصرة على أنظمة العمل والعمال</span>\n"
+"                                    <br/>\n"
+"                                    <span>الصادرة بموجب المرسوم الملكي رقم</span>\n"
+"                                    <br/>\n"
+"                                    <span>.m/51 مؤرخة 23/8/1426 هجرية</span>\n"
+"                                    <br/>\n"
+"                                    <span>وستبذل جميع الأطراف كل جهد ممكن</span>\n"
+"                                    <br/>\n"
+"                                    <span>لتسوية النزاعات ودياً، ولكن إذا لم تتمكن</span>\n"
+"                                    <br/>\n"
+"                                    <span>,الأطراف من التوصل إلى تسوية ودية</span>\n"
+"                                    <br/>\n"
+"                                    <span>فان الخلاف سيتم إحالته إلى لجنة العمل</span>\n"
+"                                    <br/>\n"
+"                                    <span>المحلية ذات الصلة حيث ستقوم بالحكم</span>\n"
+"                                    <br/>\n"
+"                                    <span>في هذا الشأن، أو إحالته هيئة إدارية أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>قضائية مناسبة أخرى في المملكة العربية</span>\n"
+"                                    <br/>\n"
+"                                    <span>.السعودية</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>تخضع أحكام هذا الاتفاق وتفسر وفقا</span>\n"
+"                                    <br/>\n"
+"                                    <span>لقوانين وأنظمة المملكة العربية</span>\n"
+"                                    <br/>\n"
+"                                    <span>السعودية، شاملة ومن دون أن تكون</span>\n"
+"                                    <br/>\n"
+"                                    <span>مقتصرة على أنظمة العمل والعمال</span>\n"
+"                                    <br/>\n"
+"                                    <span>الصادرة بموجب المرسوم الملكي رقم</span>\n"
+"                                    <br/>\n"
+"                                    <span>.m/51 مؤرخة 23/8/1426 هجرية</span>\n"
+"                                    <br/>\n"
+"                                    <span>وستبذل جميع الأطراف كل جهد ممكن</span>\n"
+"                                    <br/>\n"
+"                                    <span>لتسوية النزاعات ودياً، ولكن إذا لم تتمكن</span>\n"
+"                                    <br/>\n"
+"                                    <span>,الأطراف من التوصل إلى تسوية ودية</span>\n"
+"                                    <br/>\n"
+"                                    <span>فان الخلاف سيتم إحالته إلى لجنة العمل</span>\n"
+"                                    <br/>\n"
+"                                    <span>المحلية ذات الصلة حيث ستقوم بالحكم</span>\n"
+"                                    <br/>\n"
+"                                    <span>في هذا الشأن، أو إحالته هيئة إدارية أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>قضائية مناسبة أخرى في المملكة العربية</span>\n"
+"                                    <br/>\n"
+"                                    <span>.السعودية</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>جميع التواريخ والفترات الزمنية هنا</span>\n"
+"                                    <br/>\n"
+"                                    <span>.تحسب وفقا للتقويم الميلادي</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>جميع التواريخ والفترات الزمنية هنا</span>\n"
+"                                    <br/>\n"
+"                                    <span>.تحسب وفقا للتقويم الميلادي</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>جي وعملائها.</span>\n"
+"                                    <br/>"
+msgstr "<span>جي وعملائها.</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>حق لك مكافأة انضمام لمرة واحدة بقيمة</span>\n"
+"                                    <br/>"
+msgstr "<span>حق لك مكافأة انضمام لمرة واحدة بقيمة</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>خدمات إستشارات تقنية المعلومات صالح</span>\n"
+"                                    <br/>\n"
+"                                    <span>صاحب العمل. ومن المفهوم انه قد</span>\n"
+"                                    <br/>\n"
+"                                    <span>يطلب من الموظف من وقت لآخر، القيام</span>\n"
+"                                    <br/>\n"
+"                                    <span>بواجبات خارج نطاق مسؤوليات الوظيفة</span>\n"
+"                                    <br/>\n"
+"                                    <span>المذكورة أعلاه. سيكرس الموظف كامل</span>\n"
+"                                    <br/>\n"
+"                                    <span>وقت العمل لأداء واجباته، وسيؤدي</span>\n"
+"                                    <br/>\n"
+"                                    <span>واجباته بمهنية ووفق أفضل قدراته</span>\n"
+"                                    <br/>\n"
+"                                    <span>واستطاعته، ويجب عليه الإمتثال لجميع</span>\n"
+"                                    <br/>\n"
+"                                    <span>الأعمال والتوجيهات الصادرة عن صاحب</span>\n"
+"                                    <br/>\n"
+"                                    <span>العمل. ومن دون الحد من عمومية ما</span>\n"
+"                                    <br/>\n"
+"                                    <span>سبق، يتعهد الموظف بأداء واجباته وفقا</span>\n"
+"                                    <br/>\n"
+"                                    <span>لجميع القواعد والسياسات والإجراءات</span>\n"
+"                                    <br/>\n"
+"                                    <span>والتوجيهات الأخرى الصادرة من صاحب</span>\n"
+"                                    <br/>\n"
+"                                    <span>.العمل</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>خدمات إستشارات تقنية المعلومات صالح</span>\n"
+"                                    <br/>\n"
+"                                    <span>صاحب العمل. ومن المفهوم انه قد</span>\n"
+"                                    <br/>\n"
+"                                    <span>يطلب من الموظف من وقت لآخر، القيام</span>\n"
+"                                    <br/>\n"
+"                                    <span>بواجبات خارج نطاق مسؤوليات الوظيفة</span>\n"
+"                                    <br/>\n"
+"                                    <span>المذكورة أعلاه. سيكرس الموظف كامل</span>\n"
+"                                    <br/>\n"
+"                                    <span>وقت العمل لأداء واجباته، وسيؤدي</span>\n"
+"                                    <br/>\n"
+"                                    <span>واجباته بمهنية ووفق أفضل قدراته</span>\n"
+"                                    <br/>\n"
+"                                    <span>واستطاعته، ويجب عليه الإمتثال لجميع</span>\n"
+"                                    <br/>\n"
+"                                    <span>الأعمال والتوجيهات الصادرة عن صاحب</span>\n"
+"                                    <br/>\n"
+"                                    <span>العمل. ومن دون الحد من عمومية ما</span>\n"
+"                                    <br/>\n"
+"                                    <span>سبق، يتعهد الموظف بأداء واجباته وفقا</span>\n"
+"                                    <br/>\n"
+"                                    <span>لجميع القواعد والسياسات والإجراءات</span>\n"
+"                                    <br/>\n"
+"                                    <span>والتوجيهات الأخرى الصادرة من صاحب</span>\n"
+"                                    <br/>\n"
+"                                    <span>.العمل</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>رس</span>\n"
+"                                    <br/>"
+msgstr "<span>رس</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>ريال سعودي</span>\n"
+"                                    <br/>\n"
+"                                    <span>تدفع بعد انقضاء (6) شهور من عملك</span>\n"
+"                                    <br/>\n"
+"                                    <span>. الشركة</span>\n"
+"                                    <br/>\n"
+"                                    <span>في حالة عدم إكمال مدة سنة من</span>\n"
+"                                    <br/>\n"
+"                                    <span>الخدمة يلزم على الموظف ارجاع هذه</span>\n"
+"                                    <br/>\n"
+"                                    <span>.المكافأة لصاحب العمل</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>ريال سعودي</span>\n"
+"                                    <br/>\n"
+"                                    <span>تدفع بعد انقضاء (6) شهور من عملك</span>\n"
+"                                    <br/>\n"
+"                                    <span>. الشركة</span>\n"
+"                                    <br/>\n"
+"                                    <span>في حالة عدم إكمال مدة سنة من</span>\n"
+"                                    <br/>\n"
+"                                    <span>الخدمة يلزم على الموظف ارجاع هذه</span>\n"
+"                                    <br/>\n"
+"                                    <span>.المكافأة لصاحب العمل</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>ساعات عمل المكتب هو من الساعة 8:30</span>\n"
+"                                    <br/>\n"
+"                                    <span>صباحا إلى 6:00 بعد الظهر مع استراحة لمدة</span>\n"
+"                                    <br/>\n"
+"                                    <span>نصف ساعة، خمسة أيام في الأسبوع (من</span>\n"
+"                                    <br/>\n"
+"                                    <span>.السبت إلى الأربعاء)</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>ساعات عمل المكتب هو من الساعة 8:30</span>\n"
+"                                    <br/>\n"
+"                                    <span>صباحا إلى 6:00 بعد الظهر مع استراحة لمدة</span>\n"
+"                                    <br/>\n"
+"                                    <span>نصف ساعة، خمسة أيام في الأسبوع (من</span>\n"
+"                                    <br/>\n"
+"                                    <span>.السبت إلى الأربعاء)</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>سوف أقبل الهدايا من العملاء التي ●</span>\n"
+"                                    <br/>\n"
+"                                    <span>تكون على هيئة هدايا تذكارية أو بمحض</span>\n"
+"                                    <br/>\n"
+"                                    <span>.الصدفة، إذ قد يكون من المحرج رفضها</span>\n"
+"                                    <br/>\n"
+"                                    <span>ولكن، لن اقبل الهدايا الكبيرة التي يمكن</span>\n"
+"                                    <br/>\n"
+"                                    <span>أن ينظر إليها على أنها  تؤثر وتنال من</span>\n"
+"                                    <br/>\n"
+"                                    <span>.موضوعيتي أو استقلاليتي</span>\n"
+"                                    <br/>"
+msgstr "<span>سوف أقبل الهدايا من العملاء التي ●</span>\n"
+"                                    <br/>\n"
+"                                    <span>تكون على هيئة هدايا تذكارية أو بمحض</span>\n"
+"                                    <br/>\n"
+"                                    <span>.الصدفة، إذ قد يكون من المحرج رفضها</span>\n"
+"                                    <br/>\n"
+"                                    <span>ولكن، لن اقبل الهدايا الكبيرة التي يمكن</span>\n"
+"                                    <br/>\n"
+"                                    <span>أن ينظر إليها على أنها  تؤثر وتنال من</span>\n"
+"                                    <br/>\n"
+"                                    <span>.موضوعيتي أو استقلاليتي</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>سوف لن أقوم بشراء أو بيع أي ●</span>\n"
+"                                    <br/>\n"
+"                                    <span>استثمارات على أساس أي من</span>\n"
+"                                    <br/>\n"
+"                                    <span>المعلومات التي تأتي من داخل الشركة</span>\n"
+"                                    <br/>\n"
+"                                    <span>وتصبح في نطاق معرفتي بشكل مباشر</span>\n"
+"                                    <br/>\n"
+"                                    <span>.أو غير مباشر نتيجة لعملي مع الشركة</span>\n"
+"                                    <br/>"
+msgstr "<span>سوف لن أقوم بشراء أو بيع أي ●</span>\n"
+"                                    <br/>\n"
+"                                    <span>استثمارات على أساس أي من</span>\n"
+"                                    <br/>\n"
+"                                    <span>المعلومات التي تأتي من داخل الشركة</span>\n"
+"                                    <br/>\n"
+"                                    <span>وتصبح في نطاق معرفتي بشكل مباشر</span>\n"
+"                                    <br/>\n"
+"                                    <span>.أو غير مباشر نتيجة لعملي مع الشركة</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>سيحافظ الموظف على جميع المواد</span>\n"
+"                                    <br/>\n"
+"                                    <span>والمعلومات التي اكتسبها أثناء أداء</span>\n"
+"                                    <br/>\n"
+"                                    <span>واجباته بموجب هذا العقد، بناءا على الثقة</span>\n"
+"                                    <br/>\n"
+"                                    <span>.الممنوحة له</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>سيحافظ الموظف على جميع المواد</span>\n"
+"                                    <br/>\n"
+"                                    <span>والمعلومات التي اكتسبها أثناء أداء</span>\n"
+"                                    <br/>\n"
+"                                    <span>واجباته بموجب هذا العقد، بناءا على الثقة</span>\n"
+"                                    <br/>\n"
+"                                    <span>.الممنوحة له</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>سيقدم للموظف وعائلته المباشرة تأمين</span>\n"
+"                                    <br/>\n"
+"                                    <span>.طبي، وذلك وفقا لسياسة الشركة</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>سيقدم للموظف وعائلته المباشرة تأمين</span>\n"
+"                                    <br/>\n"
+"                                    <span>.طبي، وذلك وفقا لسياسة الشركة</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>سيكون الموظف مؤهل للحصول على</span>\n"
+"                                    <br/>\n"
+"                                    <span>مكافأة سنوية ومكافأة تخضع لتقدير</span>\n"
+"                                    <br/>\n"
+"                                    <span>الشركاء، وأداء الموظف وأداء الشركه</span>\n"
+"                                    <br/>\n"
+"                                    <span>ككل. وتعكس معايير الأداء الأهداف</span>\n"
+"                                    <br/>\n"
+"                                    <span>الشخصية المحددة سنوياً وتشمل: تطوير</span>\n"
+"                                    <br/>\n"
+"                                    <span>الأعمال؛ المبادرة والإبتكار؛ الجهد</span>\n"
+"                                    <br/>\n"
+"                                    <span>المبذول؛ الفعالية والإلتزام؛ القيادة من</span>\n"
+"                                    <br/>\n"
+"                                    <span>خلال إعطاء القدوة؛ المشاركة العملية</span>\n"
+"                                    <br/>\n"
+"                                    <span>في الإدارة؛ الإنتاجية؛ المهارات التقنية</span>\n"
+"                                    <br/>\n"
+"                                    <span>.والإدارية</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>سيكون الموظف مؤهل للحصول على</span>\n"
+"                                    <br/>\n"
+"                                    <span>مكافأة سنوية ومكافأة تخضع لتقدير</span>\n"
+"                                    <br/>\n"
+"                                    <span>الشركاء، وأداء الموظف وأداء الشركه</span>\n"
+"                                    <br/>\n"
+"                                    <span>ككل. وتعكس معايير الأداء الأهداف</span>\n"
+"                                    <br/>\n"
+"                                    <span>الشخصية المحددة سنوياً وتشمل: تطوير</span>\n"
+"                                    <br/>\n"
+"                                    <span>الأعمال؛ المبادرة والإبتكار؛ الجهد</span>\n"
+"                                    <br/>\n"
+"                                    <span>المبذول؛ الفعالية والإلتزام؛ القيادة من</span>\n"
+"                                    <br/>\n"
+"                                    <span>خلال إعطاء القدوة؛ المشاركة العملية</span>\n"
+"                                    <br/>\n"
+"                                    <span>في الإدارة؛ الإنتاجية؛ المهارات التقنية</span>\n"
+"                                    <br/>\n"
+"                                    <span>.والإدارية</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>شركة مهنيه سعودية برقم</span>\n"
+"                                    <br/>"
+msgstr "<span>شركة مهنيه سعودية برقم</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>عقد توظيف</span>\n"
+"                                    <br/>\n"
+"                                    <span>خاص وسري جدا</span>\n"
+"                                    <br/>"
+msgstr "<span>عقد توظيف</span>\n"
+"                                    <br/>\n"
+"                                    <span>خاص وسري جدا</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>على العمل بوظيفة</span>\n"
+"                                    <br/>"
+msgstr "<span>على العمل بوظيفة</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>عمل</span>\n"
+"                                    <br/>\n"
+"                                    <span>تحتوي على أي معلومات سرية أو هي</span>\n"
+"                                    <br/>\n"
+"                                    <span>مشتقه من أي معلومات سرية على النحو</span>\n"
+"                                    <br/>\n"
+"                                    <span>.المحدد أدناه</span>\n"
+"                                    <br/>"
+msgstr "<span>عمل</span>\n"
+"                                    <br/>\n"
+"                                    <span>تحتوي على أي معلومات سرية أو هي</span>\n"
+"                                    <br/>\n"
+"                                    <span>مشتقه من أي معلومات سرية على النحو</span>\n"
+"                                    <br/>\n"
+"                                    <span>.المحدد أدناه</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>عند انتهاء فترة عمل الموظف، يحق</span>\n"
+"                                    <br/>\n"
+"                                    <span>للموظف الحصول على مكافأة نهاية</span>\n"
+"                                    <br/>\n"
+"                                    <span>الخدمة وفقا لأحكام نظام العمل</span>\n"
+"                                    <br/>\n"
+"                                    <span>السعودي.</span>\n"
+"                                    <br/>"
+msgstr "<span>عند انتهاء فترة عمل الموظف، يحق</span>\n"
+"                                    <br/>\n"
+"                                    <span>للموظف الحصول على مكافأة نهاية</span>\n"
+"                                    <br/>\n"
+"                                    <span>الخدمة وفقا لأحكام نظام العمل</span>\n"
+"                                    <br/>\n"
+"                                    <span>السعودي.</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>عند تركي لوظيفتي مع</span>"
+msgstr "<span>عند تركي لوظيفتي مع</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>في حال ترك الموظف للعمل قبل انتهاء</span>\n"
+"                                    <br/>\n"
+"                                    <span>العقد الأول، تحتفظ الشركة لنفسها</span>\n"
+"                                    <br/>\n"
+"                                    <span>بالحق في تنفيذ الأحكام ذات الصلة من</span>\n"
+"                                    <br/>\n"
+"                                    <span>نظام العمل السعودي التي تشمل فرض</span>\n"
+"                                    <br/>\n"
+"                                    <span>قيود على حصول الموظف على عمل آخر</span>\n"
+"                                    <br/>\n"
+"                                    <span>في السعودية. بيد أن هذه القيود لن</span>\n"
+"                                    <br/>\n"
+"                                    <span>تطبق إذا قرر الموظف المغادرة بعد نهاية</span>\n"
+"                                    <br/>\n"
+"                                    <span>.العقد الأول</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>في حال ترك الموظف للعمل قبل انتهاء</span>\n"
+"                                    <br/>\n"
+"                                    <span>العقد الأول، تحتفظ الشركة لنفسها</span>\n"
+"                                    <br/>\n"
+"                                    <span>بالحق في تنفيذ الأحكام ذات الصلة من</span>\n"
+"                                    <br/>\n"
+"                                    <span>نظام العمل السعودي التي تشمل فرض</span>\n"
+"                                    <br/>\n"
+"                                    <span>قيود على حصول الموظف على عمل آخر</span>\n"
+"                                    <br/>\n"
+"                                    <span>في السعودية. بيد أن هذه القيود لن</span>\n"
+"                                    <br/>\n"
+"                                    <span>تطبق إذا قرر الموظف المغادرة بعد نهاية</span>\n"
+"                                    <br/>\n"
+"                                    <span>.العقد الأول</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>في حين أن مقر عمل الموظف سيكون</span>\n"
+"                                    <br/>\n"
+"                                    <span>بشكل أولي في الخبر ، قد يشترط عليه</span>\n"
+"                                    <br/>\n"
+"                                    <span>العمل في جميع مكاتب المملكة العربية</span>\n"
+"                                    <br/>\n"
+"                                    <span>السعودية أو أن يعمل في خارج المملكة</span>\n"
+"                                    <br/>\n"
+"                                    <span>لتنفيذ عمل للعملاء أو تتم إعارته في</span>\n"
+"                                    <br/>\n"
+"                                    <span>أوقات متفرقة إلى مكاتب أخرى في إطار</span>\n"
+"                                    <br/>"
+msgstr "<span>في حين أن مقر عمل الموظف سيكون</span>\n"
+"                                    <br/>\n"
+"                                    <span>بشكل أولي في الخبر ، قد يشترط عليه</span>\n"
+"                                    <br/>\n"
+"                                    <span>العمل في جميع مكاتب المملكة العربية</span>\n"
+"                                    <br/>\n"
+"                                    <span>السعودية أو أن يعمل في خارج المملكة</span>\n"
+"                                    <br/>\n"
+"                                    <span>لتنفيذ عمل للعملاء أو تتم إعارته في</span>\n"
+"                                    <br/>\n"
+"                                    <span>أوقات متفرقة إلى مكاتب أخرى في إطار</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>في حين إنني أدرك أنه يمكن وضع ●</span>\n"
+"                                    <br/>\n"
+"                                    <span>قوانين ومبادئ توجيهية، يبقى أهم المعايير</span>\n"
+"                                    <br/>\n"
+"                                    <span>التي تحكم استقلاليتي هي نزاهتي</span>\n"
+"                                    <br/>\n"
+"                                    <span>المهنية؛ لذا فإنني أتعهد بممارسة أعلى</span>\n"
+"                                    <br/>\n"
+"                                    <span>مستوى من الحكم الشخصي في حال إذا</span>\n"
+"                                    <br/>\n"
+"                                    <span>كانت أنظمة الشركة غير واضحة أو غير</span>\n"
+"                                    <br/>\n"
+"                                    <span>.موجودة</span>\n"
+"                                    <br/>\n"
+"                                    <br/>\n"
+"                                    <br/>"
+msgstr "<span>في حين إنني أدرك أنه يمكن وضع ●</span>\n"
+"                                    <br/>\n"
+"                                    <span>قوانين ومبادئ توجيهية، يبقى أهم المعايير</span>\n"
+"                                    <br/>\n"
+"                                    <span>التي تحكم استقلاليتي هي نزاهتي</span>\n"
+"                                    <br/>\n"
+"                                    <span>المهنية؛ لذا فإنني أتعهد بممارسة أعلى</span>\n"
+"                                    <br/>\n"
+"                                    <span>مستوى من الحكم الشخصي في حال إذا</span>\n"
+"                                    <br/>\n"
+"                                    <span>كانت أنظمة الشركة غير واضحة أو غير</span>\n"
+"                                    <br/>\n"
+"                                    <span>.موجودة</span>\n"
+"                                    <br/>\n"
+"                                    <br/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>كي</span>\n"
+"                                    <br/>\n"
+"                                    <span>:التعاقدات أو التعاقدات المقترحة</span>\n"
+"                                    <br/>\n"
+"                                    <span>والمعلومات التي كشف عنها من قبل</span>\n"
+"                                    <br/>\n"
+"                                    <span>أطراف ثالثة قد يكون للشركة علاقة</span>\n"
+"                                    <br/>\n"
+"                                    <span>تجارية معها. قد تتصل المعلومات السرية</span>\n"
+"                                    <br/>\n"
+"                                    <span>بالماضي أو الحاضر أو المستقبل، وقد</span>\n"
+"                                    <br/>\n"
+"                                    <span>,تكون ذات علاقة باستراتيجيات الأعمال</span>\n"
+"                                    <br/>\n"
+"                                    <span>,والبيانات المالية، وخطط العمل</span>\n"
+"                                    <br/>\n"
+"                                    <span>والتكنولوجيا، وأحكام العقود، أو سجلات</span>\n"
+"                                    <br/>\n"
+"                                    <span>وقوائم العملاء، والمطبوعات وأقراص</span>\n"
+"                                    <br/>\n"
+"                                    <span>الكومبيوتر، أو أشكال أخرى من الوثائق</span>\n"
+"                                    <br/>\n"
+"                                    <span>أو وسائل الإعلام. وليس من الضروري أن</span>\n"
+"                                    <br/>\n"
+"                                    <span>بكون بالإمكان تحويلها إلى شكل ملموس</span>\n"
+"                                    <br/>\n"
+"                                    <span>.أو مادي</span>\n"
+"                                    <br/>"
+msgstr "<span>كي</span>\n"
+"                                    <br/>\n"
+"                                    <span>:التعاقدات أو التعاقدات المقترحة</span>\n"
+"                                    <br/>\n"
+"                                    <span>والمعلومات التي كشف عنها من قبل</span>\n"
+"                                    <br/>\n"
+"                                    <span>أطراف ثالثة قد يكون للشركة علاقة</span>\n"
+"                                    <br/>\n"
+"                                    <span>تجارية معها. قد تتصل المعلومات السرية</span>\n"
+"                                    <br/>\n"
+"                                    <span>بالماضي أو الحاضر أو المستقبل، وقد</span>\n"
+"                                    <br/>\n"
+"                                    <span>,تكون ذات علاقة باستراتيجيات الأعمال</span>\n"
+"                                    <br/>\n"
+"                                    <span>,والبيانات المالية، وخطط العمل</span>\n"
+"                                    <br/>\n"
+"                                    <span>والتكنولوجيا، وأحكام العقود، أو سجلات</span>\n"
+"                                    <br/>\n"
+"                                    <span>وقوائم العملاء، والمطبوعات وأقراص</span>\n"
+"                                    <br/>\n"
+"                                    <span>الكومبيوتر، أو أشكال أخرى من الوثائق</span>\n"
+"                                    <br/>\n"
+"                                    <span>أو وسائل الإعلام. وليس من الضروري أن</span>\n"
+"                                    <br/>\n"
+"                                    <span>بكون بالإمكان تحويلها إلى شكل ملموس</span>\n"
+"                                    <br/>\n"
+"                                    <span>.أو مادي</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>لأغراض هذا العقد تكون نقطة المنش</span>\n"
+"                                    <br/>"
+msgstr "<span>لأغراض هذا العقد تكون نقطة المنش</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>لقد قرأت دليل كي بي إم جي لإدارة ●</span>\n"
+"                                    <br/>\n"
+"                                    <span>المخاطر العالمي، واستعرضت الأوراق</span>\n"
+"                                    <br/>\n"
+"                                    <span>المالية التي أحتفظ بها شخصياً، وزوجتي</span>\n"
+"                                    <br/>\n"
+"                                    <span>وأولادي الذين أعيلهم بالتزامن مع الوضع</span>\n"
+"                                    <br/>\n"
+"                                    <span>الحالي والسجل الدولي للأوراق المالية</span>\n"
+"                                    <br/>\n"
+"                                    <span>المحظورة و أؤكد أنني وزوجتي ولا أي</span>\n"
+"                                    <br/>\n"
+"                                    <span>من أطفالي الذين أعيلهم يمتلكون أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>ملتزمون للحصول على أي من الأوراق</span>\n"
+"                                    <br/>\n"
+"                                    <span>.المالية المحظورة أو المقيدة</span>\n"
+"                                    <br/>"
+msgstr "<span>لقد قرأت دليل كي بي إم جي لإدارة ●</span>\n"
+"                                    <br/>\n"
+"                                    <span>المخاطر العالمي، واستعرضت الأوراق</span>\n"
+"                                    <br/>\n"
+"                                    <span>المالية التي أحتفظ بها شخصياً، وزوجتي</span>\n"
+"                                    <br/>\n"
+"                                    <span>وأولادي الذين أعيلهم بالتزامن مع الوضع</span>\n"
+"                                    <br/>\n"
+"                                    <span>الحالي والسجل الدولي للأوراق المالية</span>\n"
+"                                    <br/>\n"
+"                                    <span>المحظورة و أؤكد أنني وزوجتي ولا أي</span>\n"
+"                                    <br/>\n"
+"                                    <span>من أطفالي الذين أعيلهم يمتلكون أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>ملتزمون للحصول على أي من الأوراق</span>\n"
+"                                    <br/>\n"
+"                                    <span>.المالية المحظورة أو المقيدة</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>للموظف مدينة</span>\n"
+"                                    <br/>\n"
+"                                    <span>.لندن</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>للموظف مدينة</span>\n"
+"                                    <br/>\n"
+"                                    <span>.لندن</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>مبلغ الراتب الشهري المقطوع</span>\n"
+"                                    <br/>\n"
+"                                    <span>:يتألف من العناصر التالية</span>\n"
+"                                    <br/>"
+msgstr "<span>مبلغ الراتب الشهري المقطوع</span>\n"
+"                                    <br/>\n"
+"                                    <span>:يتألف من العناصر التالية</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>مجمل الاتفاق</span>\n"
+"                                    <br/>"
+msgstr "<span>مجمل الاتفاق</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>هذا الإتفاق يسري ويدخل حيز التنفيذ في</span>\n"
+"                                    <br/>"
+msgstr "<span>هذا الإتفاق يسري ويدخل حيز التنفيذ في</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>وافق الطرفان على الشروط والإحكام</span>\n"
+"                                    <br/>\n"
+"                                    <span>المنصوص عليها في هذا الإتفاق وعلى</span>\n"
+"                                    <br/>\n"
+"                                    <span>:النحو التالي</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>وافق الطرفان على الشروط والإحكام</span>\n"
+"                                    <br/>\n"
+"                                    <span>المنصوص عليها في هذا الإتفاق وعلى</span>\n"
+"                                    <br/>\n"
+"                                    <span>:النحو التالي</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>وبالإضافة إلى ذلك، سيكون للموظف</span>\n"
+"                                    <br/>\n"
+"                                    <span>الحق في الحصول على الإجازات</span>\n"
+"                                    <br/>\n"
+"                                    <span>الرسمية التي تعلنها الحكومة السعودية</span>\n"
+"                                    <br/>\n"
+"                                    <span>.لشركات القطاع الخاص</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>وبالإضافة إلى ذلك، سيكون للموظف</span>\n"
+"                                    <br/>\n"
+"                                    <span>الحق في الحصول على الإجازات</span>\n"
+"                                    <br/>\n"
+"                                    <span>الرسمية التي تعلنها الحكومة السعودية</span>\n"
+"                                    <br/>\n"
+"                                    <span>.لشركات القطاع الخاص</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>وفقا لدليل</span>\n"
+"                                    <br/>"
+msgstr "<span>وفقا لدليل</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>وفقا لنظام العمل السعودي، يجوز</span>\n"
+"                                    <br/>\n"
+"                                    <span>لصاحب العمل أن ينهي هذا العقد خلال</span>\n"
+"                                    <br/>\n"
+"                                    <span>فترة الإختبار التي تبلغ مدتها 3 أشهر</span>\n"
+"                                    <br/>\n"
+"                                    <span>بإعطاء إشعار لمدة أسبوع واحد. وبالمثل</span>\n"
+"                                    <br/>\n"
+"                                    <span>يمكن للموظف أيضا إنهاء العقد خلال</span>\n"
+"                                    <br/>\n"
+"                                    <span>.فترة الاختبار بإعطاء مهلة أسبوع واحد</span>\n"
+"                                    <br/>"
+msgstr "<span>وفقا لنظام العمل السعودي، يجوز</span>\n"
+"                                    <br/>\n"
+"                                    <span>لصاحب العمل أن ينهي هذا العقد خلال</span>\n"
+"                                    <br/>\n"
+"                                    <span>فترة الإختبار التي تبلغ مدتها 3 أشهر</span>\n"
+"                                    <br/>\n"
+"                                    <span>بإعطاء إشعار لمدة أسبوع واحد. وبالمثل</span>\n"
+"                                    <br/>\n"
+"                                    <span>يمكن للموظف أيضا إنهاء العقد خلال</span>\n"
+"                                    <br/>\n"
+"                                    <span>.فترة الاختبار بإعطاء مهلة أسبوع واحد</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>ويتعهد صاحب العمل بتحديد ما إذا كان</span>\n"
+"                                    <span>موافق أو لم يوافق على أي من هذه</span>\n"
+"                                    <span>الأعمال في غضون أسبوع واحد من قيام</span>\n"
+"                                    <span>الموظف بالكشف عن أسماء أصحاب</span>\n"
+"                                    <span>العمل المحتملين ومنصب ومسؤوليات</span>\n"
+"                                    <span>الموظف مع أصحاب العمل. يتعهد</span>\n"
+"                                    <span>الموظف كذلك بعدم التماس أو بمحاوله</span>\n"
+"                                    <span>إغراء أي موظف أو أي شخص يعمل لدى</span>\n"
+"                                    <span>صاحب العمل، للعمل لدى غيره أو بعيداً</span>\n"
+"                                    <span>.عنه</span>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>ويتعهد صاحب العمل بتحديد ما إذا كان</span>\n"
+"                                    <span>موافق أو لم يوافق على أي من هذه</span>\n"
+"                                    <span>الأعمال في غضون أسبوع واحد من قيام</span>\n"
+"                                    <span>الموظف بالكشف عن أسماء أصحاب</span>\n"
+"                                    <span>العمل المحتملين ومنصب ومسؤوليات</span>\n"
+"                                    <span>الموظف مع أصحاب العمل. يتعهد</span>\n"
+"                                    <span>الموظف كذلك بعدم التماس أو بمحاوله</span>\n"
+"                                    <span>إغراء أي موظف أو أي شخص يعمل لدى</span>\n"
+"                                    <span>صاحب العمل، للعمل لدى غيره أو بعيداً</span>\n"
+"                                    <span>.عنه</span>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>ويحتفظ صاحب العمل بالحق في حجز</span>\n"
+"                                    <br/>\n"
+"                                    <span>مكافأة نهاية الخدمة كليا أو جزئيا إذا كان</span>\n"
+"                                    <br/>\n"
+"                                    <span>الموظف في حالة انتهاك مادي لهذا</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>ويحتفظ صاحب العمل بالحق في حجز</span>\n"
+"                                    <br/>\n"
+"                                    <span>مكافأة نهاية الخدمة كليا أو جزئيا إذا كان</span>\n"
+"                                    <br/>\n"
+"                                    <span>الموظف في حالة انتهاك مادي لهذا</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>يتعهد الموظف بأن يمتثل لجميع</span>\n"
+"                                    <br/>\n"
+"                                    <span>السياسات والتوجيهات والتعليمات التي</span>\n"
+"                                    <br/>\n"
+"                                    <span>يصدرها صاحب العمل وفقا لقوانين</span>\n"
+"                                    <br/>\n"
+"                                    <span>وأنظمة المملكة العربية السعودية. كما</span>\n"
+"                                    <br/>\n"
+"                                    <span>سيمتثل الموظف لمدونة قواعد السلوك</span>\n"
+"                                    <br/>\n"
+"                                    <span>في كي بي إم جي، وجميع السياسات</span>\n"
+"                                    <br/>\n"
+"                                    <span>والإجراءات المذكورة في دليل</span>\n"
+"                                    <br/>\n"
+"                                    <span>الموظفين، ودليل كي بي إم جي العالمية</span>\n"
+"                                    <br/>\n"
+"                                    <span>لإدارة المخاطر. وعندما يقوم الموظف</span>\n"
+"                                    <br/>\n"
+"                                    <span>بتمثيل صاحب العمل، فلا يسمح له في</span>\n"
+"                                    <br/>\n"
+"                                    <span>أي حال أن يتجاوز صراحة السلطة</span>\n"
+"                                    <br/>\n"
+"                                    <span>الممنوحة له. سيكون الموظف مسئولاً</span>\n"
+"                                    <br/>\n"
+"                                    <span>بشكل فردي عن أية عواقب تنجم عن</span>\n"
+"                                    <br/>\n"
+"                                    <span>عدم الإمتثال عما تقدم وسيقوم بتعويض</span>\n"
+"                                    <br/>\n"
+"                                    <span>الأضرار ولن يحمل صاحب العمل أي</span>\n"
+"                                    <br/>\n"
+"                                    <span>.مطالبة أو مسؤولية</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>يتعهد الموظف بأن يمتثل لجميع</span>\n"
+"                                    <br/>\n"
+"                                    <span>السياسات والتوجيهات والتعليمات التي</span>\n"
+"                                    <br/>\n"
+"                                    <span>يصدرها صاحب العمل وفقا لقوانين</span>\n"
+"                                    <br/>\n"
+"                                    <span>وأنظمة المملكة العربية السعودية. كما</span>\n"
+"                                    <br/>\n"
+"                                    <span>سيمتثل الموظف لمدونة قواعد السلوك</span>\n"
+"                                    <br/>\n"
+"                                    <span>في كي بي إم جي، وجميع السياسات</span>\n"
+"                                    <br/>\n"
+"                                    <span>والإجراءات المذكورة في دليل</span>\n"
+"                                    <br/>\n"
+"                                    <span>الموظفين، ودليل كي بي إم جي العالمية</span>\n"
+"                                    <br/>\n"
+"                                    <span>لإدارة المخاطر. وعندما يقوم الموظف</span>\n"
+"                                    <br/>\n"
+"                                    <span>بتمثيل صاحب العمل، فلا يسمح له في</span>\n"
+"                                    <br/>\n"
+"                                    <span>أي حال أن يتجاوز صراحة السلطة</span>\n"
+"                                    <br/>\n"
+"                                    <span>الممنوحة له. سيكون الموظف مسئولاً</span>\n"
+"                                    <br/>\n"
+"                                    <span>بشكل فردي عن أية عواقب تنجم عن</span>\n"
+"                                    <br/>\n"
+"                                    <span>عدم الإمتثال عما تقدم وسيقوم بتعويض</span>\n"
+"                                    <br/>\n"
+"                                    <span>الأضرار ولن يحمل صاحب العمل أي</span>\n"
+"                                    <br/>\n"
+"                                    <span>.مطالبة أو مسؤولية</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>يسري العقد من تاريخ بدء عمل الموظف</span>\n"
+"                                    <br/>\n"
+"                                    <span>ولمدة ثلاث سنوات قابلة للتجديد وذلك</span>\n"
+"                                    <br/>\n"
+"                                    <span>.عن طريق التراضي</span>\n"
+"                                    <br/>"
+msgstr "<span>يسري العقد من تاريخ بدء عمل الموظف</span>\n"
+"                                    <br/>\n"
+"                                    <span>ولمدة ثلاث سنوات قابلة للتجديد وذلك</span>\n"
+"                                    <br/>\n"
+"                                    <span>.عن طريق التراضي</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>يشكل هذا الاتفاق مجمل الاتفاق بين</span>\n"
+"                                    <br/>\n"
+"                                    <span>مختلف الأطراف بالنسبة إلى عمل</span>\n"
+"                                    <br/>\n"
+"                                    <span>الموظف لدى صاحب العمل في المملكة</span>\n"
+"                                    <br/>\n"
+"                                    <span>العربية السعودية، وينسخ هذا الاتفاق</span>\n"
+"                                    <br/>\n"
+"                                    <span>ويلغي ويبطل جميع الإتفاقات أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>التفاهمات السابقة، سواء كانت شفيهة أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>خطية. ولا يجوز تعديل هذا الاتفاق أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>تكميله إلا بموجب اتفاق خطي ما بين</span>\n"
+"                                    <br/>\n"
+"                                    <span>الموظف وصاحب العمل. إن عدم تعامل</span>\n"
+"                                    <br/>\n"
+"                                    <span>الموظف مع هذا الاتفاق بسرية تامة،</span>\n"
+"                                    <br/>\n"
+"                                    <span>يعتبر سببا للإنهاء الفوري للاتفاق بدون</span>\n"
+"                                    <br/>\n"
+"                                    <span>تعويض، ولا تتم مناقشة هذا الاتفاق إلا من</span>\n"
+"                                    <br/>\n"
+"                                    <span>تعويض، ولا تتم مناقشة هذا الاتفاق إلا من</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>يشكل هذا الاتفاق مجمل الاتفاق بين</span>\n"
+"                                    <br/>\n"
+"                                    <span>مختلف الأطراف بالنسبة إلى عمل</span>\n"
+"                                    <br/>\n"
+"                                    <span>الموظف لدى صاحب العمل في المملكة</span>\n"
+"                                    <br/>\n"
+"                                    <span>العربية السعودية، وينسخ هذا الاتفاق</span>\n"
+"                                    <br/>\n"
+"                                    <span>ويلغي ويبطل جميع الإتفاقات أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>التفاهمات السابقة، سواء كانت شفيهة أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>خطية. ولا يجوز تعديل هذا الاتفاق أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>تكميله إلا بموجب اتفاق خطي ما بين</span>\n"
+"                                    <br/>\n"
+"                                    <span>الموظف وصاحب العمل. إن عدم تعامل</span>\n"
+"                                    <br/>\n"
+"                                    <span>الموظف مع هذا الاتفاق بسرية تامة،</span>\n"
+"                                    <br/>\n"
+"                                    <span>يعتبر سببا للإنهاء الفوري للاتفاق بدون</span>\n"
+"                                    <br/>\n"
+"                                    <span>تعويض، ولا تتم مناقشة هذا الاتفاق إلا من</span>\n"
+"                                    <br/>\n"
+"                                    <span>تعويض، ولا تتم مناقشة هذا الاتفاق إلا من</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>يوافق الموظف على التقيد في جميع</span>\n"
+"                                    <span>النواحي مع أحكام السرية المنصوص</span>\n"
+"                                    <span>.عليها في الملحق المرفق بهذا الإتفاق</span>\n"
+"                                    <span>وسيستمر التزام الموظف بالإمتثال</span>\n"
+"                                    <span>بالملحق حتى انتهاء أو إنهاء هذا الإتفاق</span>\n"
+"                                    <span>.لمدة اثني عشر شهرا</span>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>يوافق الموظف على التقيد في جميع</span>\n"
+"                                    <span>النواحي مع أحكام السرية المنصوص</span>\n"
+"                                    <span>.عليها في الملحق المرفق بهذا الإتفاق</span>\n"
+"                                    <span>وسيستمر التزام الموظف بالإمتثال</span>\n"
+"                                    <span>بالملحق حتى انتهاء أو إنهاء هذا الإتفاق</span>\n"
+"                                    <span>.لمدة اثني عشر شهرا</span>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>١.الراتب الشهري الأساسي:</span>"
+msgstr "<span>١.الراتب الشهري الأساسي:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>١.سواء أثناء أو بعد فترة عملي، ومن</span>\n"
+"                                        <span/>"
+msgstr "<span>١.سواء أثناء أو بعد فترة عملي، ومن</span>\n"
+"                                        <span/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>٢. بدل السكن الشهري:</span>"
+msgstr "<span>٢. بدل السكن الشهري:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>٢.سوف أمتثل، وأفعل كل ما هو ضروري</span>\n"
+"                                    <br/>\n"
+"                                    <span>لتمكين الشركة من الامتثال لقوانين</span>\n"
+"                                    <br/>\n"
+"                                    <span>وأنظمة جميع الحكومات التي تتعامل معها</span>\n"
+"                                    <br/>\n"
+"                                    <span>الشركة، وفقا لأحكام العقود المبرمة ما</span>\n"
+"                                    <br/>\n"
+"                                    <span>بين الشركة وأي من هذه الحكومة أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>المتعاقدين معها، والتي تتصل بالملكية</span>\n"
+"                                    <br/>\n"
+"                                    <span>الفكرية أو حماية المعلومات، بما في ذلك</span>\n"
+"                                    <br/>\n"
+"                                    <span>التوقيع على أية اتفاقيات سرية مطلوبة</span>\n"
+"                                    <br/>\n"
+"                                    <span>.الشركة</span>\n"
+"                                    <br/>\n"
+"                                    <br/>"
+msgstr "<span>٢.سوف أمتثل، وأفعل كل ما هو ضروري</span>\n"
+"                                    <br/>\n"
+"                                    <span>لتمكين الشركة من الامتثال لقوانين</span>\n"
+"                                    <br/>\n"
+"                                    <span>وأنظمة جميع الحكومات التي تتعامل معها</span>\n"
+"                                    <br/>\n"
+"                                    <span>الشركة، وفقا لأحكام العقود المبرمة ما</span>\n"
+"                                    <br/>\n"
+"                                    <span>بين الشركة وأي من هذه الحكومة أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>المتعاقدين معها، والتي تتصل بالملكية</span>\n"
+"                                    <br/>\n"
+"                                    <span>الفكرية أو حماية المعلومات، بما في ذلك</span>\n"
+"                                    <br/>\n"
+"                                    <span>التوقيع على أية اتفاقيات سرية مطلوبة</span>\n"
+"                                    <br/>\n"
+"                                    <span>.الشركة</span>\n"
+"                                    <br/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>٣.إنني أوافق على أنه لن تكون لي أي</span>\n"
+"                                    <br/>\n"
+"                                    <span>حقوق في ملكية أية فكرة أو اختراع ، أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>تصميم تقني أو ابتكار في مجال العمل، أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>برنامج الحاسوب والوثائق ذات الصلة، أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>أي منتجات العمل الأخرى التي تم</span>\n"
+"                                    <br/>\n"
+"                                    <span>تطويرها وتصورها واستعمالها كليا أو جزئيا</span>\n"
+"                                    <br/>\n"
+"                                    <span>من قبلي، أثناء فترة عملي مع الشركة، أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>التي تم على خلاف ذلك صنعها من خلال</span>\n"
+"                                    <br/>\n"
+"                                    <span>استخدام وقت ومواد الشركة (يشار إلى</span>\n"
+"                                    <br/>\n"
+"                                    <span>كل ما سبق بشكل مجتمع باسم</span>\n"
+"                                    <br/>\n"
+"                                    <span>\"التطويرات\"). إنني أقر بأن جميع</span>\n"
+"                                    <br/>\n"
+"                                    <span>التطويرات تعود ملكيتها بشكل كامل</span>\n"
+"                                    <br/>\n"
+"                                    <span>للشركة وليس مطلوبا من الشركة أن</span>\n"
+"                                    <br/>\n"
+"                                    <span>تقوم بتسميتي كمؤلف لها. وسأقوم</span>\n"
+"                                    <br/>\n"
+"                                    <span>بالكشف فورا عن جميع التطويرات إلى</span>\n"
+"                                    <br/>\n"
+"                                    <span>الشريك المسئول عن المكتب الذي أعمل</span>\n"
+"                                    <br/>\n"
+"                                    <span>فيه، ويجب بناء على طلب المؤسسة، أن</span>\n"
+"                                    <br/>\n"
+"                                    <span>أقوم بكل ما هو ضروري ومناسبة لتأكيد</span>\n"
+"                                    <br/>\n"
+"                                    <span>أو توثيق ملكية الشركة للتطويرات، بما</span>\n"
+"                                    <br/>\n"
+"                                    <span>في ذلك، على سبيل المثال لا الحصر</span>\n"
+"                                    <br/>\n"
+"                                    <span>إعداد طلبات الحصول على براءات</span>\n"
+"                                    <br/>\n"
+"                                    <span>.الاختراع أو حقوق النشر</span>\n"
+"                                    <br/>"
+msgstr "<span>٣.إنني أوافق على أنه لن تكون لي أي</span>\n"
+"                                    <br/>\n"
+"                                    <span>حقوق في ملكية أية فكرة أو اختراع ، أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>تصميم تقني أو ابتكار في مجال العمل، أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>برنامج الحاسوب والوثائق ذات الصلة، أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>أي منتجات العمل الأخرى التي تم</span>\n"
+"                                    <br/>\n"
+"                                    <span>تطويرها وتصورها واستعمالها كليا أو جزئيا</span>\n"
+"                                    <br/>\n"
+"                                    <span>من قبلي، أثناء فترة عملي مع الشركة، أو</span>\n"
+"                                    <br/>\n"
+"                                    <span>التي تم على خلاف ذلك صنعها من خلال</span>\n"
+"                                    <br/>\n"
+"                                    <span>استخدام وقت ومواد الشركة (يشار إلى</span>\n"
+"                                    <br/>\n"
+"                                    <span>كل ما سبق بشكل مجتمع باسم</span>\n"
+"                                    <br/>\n"
+"                                    <span>\"التطويرات\"). إنني أقر بأن جميع</span>\n"
+"                                    <br/>\n"
+"                                    <span>التطويرات تعود ملكيتها بشكل كامل</span>\n"
+"                                    <br/>\n"
+"                                    <span>للشركة وليس مطلوبا من الشركة أن</span>\n"
+"                                    <br/>\n"
+"                                    <span>تقوم بتسميتي كمؤلف لها. وسأقوم</span>\n"
+"                                    <br/>\n"
+"                                    <span>بالكشف فورا عن جميع التطويرات إلى</span>\n"
+"                                    <br/>\n"
+"                                    <span>الشريك المسئول عن المكتب الذي أعمل</span>\n"
+"                                    <br/>\n"
+"                                    <span>فيه، ويجب بناء على طلب المؤسسة، أن</span>\n"
+"                                    <br/>\n"
+"                                    <span>أقوم بكل ما هو ضروري ومناسبة لتأكيد</span>\n"
+"                                    <br/>\n"
+"                                    <span>أو توثيق ملكية الشركة للتطويرات، بما</span>\n"
+"                                    <br/>\n"
+"                                    <span>في ذلك، على سبيل المثال لا الحصر</span>\n"
+"                                    <br/>\n"
+"                                    <span>إعداد طلبات الحصول على براءات</span>\n"
+"                                    <br/>\n"
+"                                    <span>.الاختراع أو حقوق النشر</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "<span>٣.بدل المواصلات الشهري:</span>"
+msgstr "<span>٣.بدل المواصلات الشهري:</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>٥.سوف يبطل هذا الاتفاق بالإضافة إلى</span>\n"
+"                                    <br/>\n"
+"                                    <span>أي اتفاق آخر تم التعهد به في أي وقت</span>\n"
+"                                    <br/>\n"
+"                                    <span>بين الشركة وبيني، جميع ما سبقه من</span>\n"
+"                                    <br/>\n"
+"                                    <span>الاتصالات الشفوية والمكتوبة، والإقرارات</span>\n"
+"                                    <br/>\n"
+"                                    <span>والتفاهمات والتعهدات، والاتفاقيات التي</span>\n"
+"                                    <br/>\n"
+"                                    <span>عقدتها الشركة أو تم عقدها مع الشركة</span>\n"
+"                                    <br/>\n"
+"                                    <span>.فيما يتعلق بالمواضيع التي تم تغطيتها هنا</span>\n"
+"                                    <br/>\n"
+"                                    <span>وليس ما يشير في هذا الاتفاق أو في عقد</span>\n"
+"                                    <br/>\n"
+"                                    <span>العمل صراحة أو ضمنا، أن عملي مع</span>\n"
+"                                    <br/>\n"
+"                                    <span>المؤسسة لن يتم إنهاءه إلا وفقا</span>\n"
+"                                    <br/>\n"
+"                                    <span>للإجراءات المنصوص عليها في دليل</span>\n"
+"                                    <br/>\n"
+"                                    <span>الموظفين. لا يجوز تغيير أو تعديل هذا</span>\n"
+"                                    <br/>\n"
+"                                    <span>الاتفاق إلا من خلال وثيقة خطية موقعه</span>\n"
+"                                    <br/>\n"
+"                                    <span>.من قبل الشريك المسئول</span>\n"
+"                                    <br/>"
+msgstr "<span>٥.سوف يبطل هذا الاتفاق بالإضافة إلى</span>\n"
+"                                    <br/>\n"
+"                                    <span>أي اتفاق آخر تم التعهد به في أي وقت</span>\n"
+"                                    <br/>\n"
+"                                    <span>بين الشركة وبيني، جميع ما سبقه من</span>\n"
+"                                    <br/>\n"
+"                                    <span>الاتصالات الشفوية والمكتوبة، والإقرارات</span>\n"
+"                                    <br/>\n"
+"                                    <span>والتفاهمات والتعهدات، والاتفاقيات التي</span>\n"
+"                                    <br/>\n"
+"                                    <span>عقدتها الشركة أو تم عقدها مع الشركة</span>\n"
+"                                    <br/>\n"
+"                                    <span>.فيما يتعلق بالمواضيع التي تم تغطيتها هنا</span>\n"
+"                                    <br/>\n"
+"                                    <span>وليس ما يشير في هذا الاتفاق أو في عقد</span>\n"
+"                                    <br/>\n"
+"                                    <span>العمل صراحة أو ضمنا، أن عملي مع</span>\n"
+"                                    <br/>\n"
+"                                    <span>المؤسسة لن يتم إنهاءه إلا وفقا</span>\n"
+"                                    <br/>\n"
+"                                    <span>للإجراءات المنصوص عليها في دليل</span>\n"
+"                                    <br/>\n"
+"                                    <span>الموظفين. لا يجوز تغيير أو تعديل هذا</span>\n"
+"                                    <br/>\n"
+"                                    <span>الاتفاق إلا من خلال وثيقة خطية موقعه</span>\n"
+"                                    <br/>\n"
+"                                    <span>.من قبل الشريك المسئول</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>٦.نظرا للطابع الفريد للمعلومات السرية</span>\n"
+"                                    <br/>\n"
+"                                    <span>والتطويرات، فإنني أتفهم وأوافق على أن</span>\n"
+"                                    <br/>\n"
+"                                    <span>الشركة سوف تعاني ضررا لا يمكن</span>\n"
+"                                    <br/>\n"
+"                                    <span>إصلاحه إذا فشلت في الامتثال في أي من</span>\n"
+"                                    <br/>\n"
+"                                    <span>التزاماتي الواردة في الفقرات من 1 إلى</span>\n"
+"                                    <br/>\n"
+"                                    <span>4، وأن الأضرار النقدية لن تكون كافية</span>\n"
+"                                    <br/>\n"
+"                                    <span>لتعويض الشركة مقابل هذا الخرق. وتبعا</span>\n"
+"                                    <br/>\n"
+"                                    <span>,لذلك، فإنني أوافق على أن إرادة الشركة</span>\n"
+"                                    <br/>\n"
+"                                    <span>بالإضافة إلى</span>\n"
+"                                    <br/>\n"
+"                                    <span>أي من وسائل الإنصاف الأخرى المتاحة</span>\n"
+"                                    <br/>\n"
+"                                    <span>لها في القانون أو على هيئة ممتلكات</span>\n"
+"                                    <br/>\n"
+"                                    <span>وأموال، سيكون من حقها اللجوء إليها</span>\n"
+"                                    <br/>\n"
+"                                    <span>لإنفاذ أحكام الفقرات من 1 إلى 4.</span>\n"
+"                                    <br/>"
+msgstr "<span>٦.نظرا للطابع الفريد للمعلومات السرية</span>\n"
+"                                    <br/>\n"
+"                                    <span>والتطويرات، فإنني أتفهم وأوافق على أن</span>\n"
+"                                    <br/>\n"
+"                                    <span>الشركة سوف تعاني ضررا لا يمكن</span>\n"
+"                                    <br/>\n"
+"                                    <span>إصلاحه إذا فشلت في الامتثال في أي من</span>\n"
+"                                    <br/>\n"
+"                                    <span>التزاماتي الواردة في الفقرات من 1 إلى</span>\n"
+"                                    <br/>\n"
+"                                    <span>4، وأن الأضرار النقدية لن تكون كافية</span>\n"
+"                                    <br/>\n"
+"                                    <span>لتعويض الشركة مقابل هذا الخرق. وتبعا</span>\n"
+"                                    <br/>\n"
+"                                    <span>,لذلك، فإنني أوافق على أن إرادة الشركة</span>\n"
+"                                    <br/>\n"
+"                                    <span>بالإضافة إلى</span>\n"
+"                                    <br/>\n"
+"                                    <span>أي من وسائل الإنصاف الأخرى المتاحة</span>\n"
+"                                    <br/>\n"
+"                                    <span>لها في القانون أو على هيئة ممتلكات</span>\n"
+"                                    <br/>\n"
+"                                    <span>وأموال، سيكون من حقها اللجوء إليها</span>\n"
+"                                    <br/>\n"
+"                                    <span>لإنفاذ أحكام الفقرات من 1 إلى 4.</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>٧.إذا اعتبر أي مصطلح أو أي حكم من</span>\n"
+"                                    <br/>\n"
+"                                    <span>أحكام هذا الاتفاق باطلا أو لا يمكن</span>\n"
+"                                    <br/>\n"
+"                                    <span>تطبيقه، فان ما تبقى من بنود وأحكام هذا</span>\n"
+"                                    <br/>\n"
+"                                    <span>الاتفاق لا يجوز أن تتأثر ، وتضعف أو تبطل</span>\n"
+"                                    <br/>\n"
+"                                    <span>؛ وستبقى جميع الأحكام الأخرى صالحة</span>\n"
+"                                    <br/>\n"
+"                                    <span>وواجبة النفاذ إلى أقصى حدود ما يسمح</span>\n"
+"                                    <br/>\n"
+"                                    <span>.به القانون</span>\n"
+"                                    <br/>"
+msgstr "<span>٧.إذا اعتبر أي مصطلح أو أي حكم من</span>\n"
+"                                    <br/>\n"
+"                                    <span>أحكام هذا الاتفاق باطلا أو لا يمكن</span>\n"
+"                                    <br/>\n"
+"                                    <span>تطبيقه، فان ما تبقى من بنود وأحكام هذا</span>\n"
+"                                    <br/>\n"
+"                                    <span>الاتفاق لا يجوز أن تتأثر ، وتضعف أو تبطل</span>\n"
+"                                    <br/>\n"
+"                                    <span>؛ وستبقى جميع الأحكام الأخرى صالحة</span>\n"
+"                                    <br/>\n"
+"                                    <span>وواجبة النفاذ إلى أقصى حدود ما يسمح</span>\n"
+"                                    <br/>\n"
+"                                    <span>.به القانون</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>٨. كما أنني التزم القيام بما يلي</span>\n"
+"                                    <br/>"
+msgstr "<span>٨. كما أنني التزم القيام بما يلي</span>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>٩.هذا الاتفاق يخضع لقوانين المملكة</span>\n"
+"                                    <br/>\n"
+"                                    <span>.العربية السعودية</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+msgstr "<span>٩.هذا الاتفاق يخضع لقوانين المملكة</span>\n"
+"                                    <br/>\n"
+"                                    <span>.العربية السعودية</span>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>\n"
+"                                    <span/>\n"
+"                                    <br/>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>’s business, or permit any person to examine or make copies of any documents that contain or are derived from any Confidential Information as defined below.</span>"
+msgstr "<span>أو السماح لأي شخص بفحص أو عمل نسخ من أي مستندات تحتوي أو مشتقة من أي معلومات سرية كما هو موضح أدناه.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>● I agree at all times during my employment and afterwards to keep secret the affairs, data, methodologies and proprietary technologies of</span>"
+msgstr "<span>● وأنا أتفق في جميع الأوقات خلال عملي وبعد ذلك للحفاظ على سرية الشؤون والبيانات والمنهجيات والتقنيات الخاصة من</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>● I confirm I have read the Firm’s rules and procedures contained in the Staff Manual.  I undertake to comply with them and understand that the continuance of my employment with the Firm is dependent on my strict compliance therewith.</span>"
+msgstr "<span>● أؤكد أنني قرأت قواعد وإجراءات الشركة الواردة في دليل الموظفين. أتعهد بالامتثال لهم وفهم أن استمراري في العمل مع الشركة يعتمد على امتثالي الصارم لذلك.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>● I have read the Global Risk Management Manual, reviewed the securities held by myself, my spouse and dependent children in conjunction with the current International Register of Prohibited Securities and confirm that neither I, my spouse nor any of my dependent children holds or is committed to acquire any security which is prohibited or restricted.</span>"
+msgstr "<span>● لقد قرأت دليل إدارة المخاطر العالمي ، واستعرضت الأوراق المالية التي احتفظت بها أنا وزوجتي وأولادي المعالين بالاقتران مع السجل الدولي الحالي للأوراق المالية المحظورة وأؤكد أنه لا أنا ولا زوجي ولا أي من أولادي المعتمدين يحملون أو لا يلتزمون الحصول على أي ضمانات محظورة أو مقيدة.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>● I may accept gifts from clients of a token or incidental nature, if it would be embarrassing to make a point of refusing the client’s offer.  However, I will not accept substantial gifts that could be perceived to impair my objectivity or independence.</span>"
+msgstr "<span>● قد أقبل هدايا من عملاء ذوي طبيعة رمزية أو عرضية ، إذا كان من المحرج أن نجعل نقطة رفض عرض العميل. ومع ذلك ، لن أقبل هدايا كبيرة يمكن النظر إليها لإعاقة موضوعي أو استقلالي.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>● I recognize that while codes and guidelines may be laid down, the most important standard by which to judge independence is my professional integrity; I therefore undertake to exercise the highest standard of personal judgment where the Firm code is unclear or silent.</span>"
+msgstr "<span>● أدرك أنه في حين قد يتم وضع القوانين والمبادئ التوجيهية ، فإن أهم معيار يمكن من خلاله الحكم على الاستقلال هو نزامي المهني. لذلك أتعهد بممارسة أعلى مستوى من الحكم الشخصي حيث يكون رمز الشركة غير واضح أو صامت.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+#: model:ir.ui.view,arch_db:slnee_hr_contract.newjoin_empcontract_reportqweb
+msgid "<span>● I will not buy or sell any investments on the basis of any insider information which comes to my knowledge directly or indirectly as a result of my employment with the Firm.</span>"
+msgstr "<span>● لن أشتري أو أبيع أي استثمارات على أساس أي معلومات داخلية تأتي على حد علمي أو غير مباشر نتيجة لعملي مع الشركة.</span>"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.hr_contract_view_inherit_overtime_form1
+msgid "Advantages..."
+msgstr "مزايا ..."
+
+#. module: slnee_hr_contract
+#: model:ir.model.fields,field_description:slnee_hr_contract.field_hr_contract_mobile
+msgid "Allow Mobile Allowance"
+msgstr "السماح بدل المحمول"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.hr_contract_view_inherit_overtime_form1
+msgid "Allowances"
+msgstr "البدلات"
+
+#. module: slnee_hr_contract
+#: model:ir.model.fields,field_description:slnee_hr_contract.field_hr_contract_basic
+msgid "Basic"
+msgstr "الأساسية"
+
+#. module: slnee_hr_contract
+#: model:ir.model.fields,help:slnee_hr_contract.field_hr_contract_basic
+msgid "Basic Salary of Employee(value after gross/1.35)"
+msgstr "الراتب الأساسي للموظف (القيمة بعد الإجمالي / 1.35)"
+
+#. module: slnee_hr_contract
+#: model:ir.model.fields,field_description:slnee_hr_contract.field_hr_contract_signon_bonus_amount
+msgid "Bonus Amount"
+msgstr "مبلغ البونص"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.hr_contract_view_inherit_overtime_form1
+msgid "Duration"
+msgstr "المدة"
+
+#. module: slnee_hr_contract
+#: model:ir.model,name:slnee_hr_contract.model_hr_employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: slnee_hr_contract
+#: model:ir.model,name:slnee_hr_contract.model_hr_contract
+msgid "Employee Contract"
+msgstr "عقد الموظف"
+
+#. module: slnee_hr_contract
+#: model:ir.actions.report,name:slnee_hr_contract.action_empcontract_report_qweb
+msgid "Employee Contract Report"
+msgstr "تقرير عقد الموظف"
+
+#. module: slnee_hr_contract
+#: model:hr.salary.rule,name:slnee_hr_contract.hr_salary_rule_employee_signon_bonus
+msgid "Employee Signon Bonus"
+msgstr "مكافأة تسجيل الموظف"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.hr_contract_view_inherit_overtime_form1
+msgid "Extra Information"
+msgstr "معلومات اضافية"
+
+#. module: slnee_hr_contract
+#: model:ir.model,name:slnee_hr_contract.model_hr_grade
+msgid "Grade Description"
+msgstr "وصف الصف"
+
+#. module: slnee_hr_contract
+#: model:ir.model.fields,help:slnee_hr_contract.field_hr_contract_HRA
+msgid "HRA of employee (25% of basic)"
+msgstr "HRA للموظف (25 ٪ من الأساسي)"
+
+#. module: slnee_hr_contract
+#: model:ir.model.fields,field_description:slnee_hr_contract.field_hr_contract_HRA
+msgid "House Rent Allowance"
+msgstr "بدل إيجار المنزل"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.hr_contract_view_inherit_overtime_form1
+msgid "Information"
+msgstr "المعلومات"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.hr_hr_employee_view_form2_inherit
+msgid "Is Head of Function"
+msgstr "هو رئيس وظيفة"
+
+#. module: slnee_hr_contract
+#: model:ir.model.fields,field_description:slnee_hr_contract.field_hr_contract_is_leaving
+msgid "Leaving Notice"
+msgstr "ترك إشعار"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.hr_contract_view_inherit_overtime_form1
+msgid "Leaving Notice Period"
+msgstr "ترك فترة الإشعار"
+
+#. module: slnee_hr_contract
+#: model:ir.model.fields,help:slnee_hr_contract.field_hr_contract_signon_bonus_amount
+msgid "Mention the Sign on Bonus amount."
+msgstr "اذكر مبلغ التسجيل على البونص."
+
+#. module: slnee_hr_contract
+#: model:hr.salary.rule,name:slnee_hr_contract.hr_salary_rule_mobile_allowance
+#: model:hr.salary.rule,name:slnee_hr_contract.hr_salary_rule_mobile_allowance_child1
+#: model:hr.salary.rule,name:slnee_hr_contract.hr_salary_rule_mobile_allowance_child2
+#: model:hr.salary.rule,name:slnee_hr_contract.hr_salary_rule_mobile_allowance_child3
+#: model:ir.model.fields,field_description:slnee_hr_contract.field_hr_contract_mobile_allowance
+#: model:ir.model.fields,field_description:slnee_hr_contract.field_hr_grade_mobile_allowance
+#: model:ir.model.fields,help:slnee_hr_contract.field_hr_contract_mobile_allowance
+#: model:ir.model.fields,help:slnee_hr_contract.field_hr_grade_mobile_allowance
+msgid "Mobile Allowance"
+msgstr "بدل المحمول"
+
+#. module: slnee_hr_contract
+#: model:ir.model.fields,field_description:slnee_hr_contract.field_hr_contract_period_ids
+msgid "Month(s)"
+msgstr "الشهور)"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "National Id"
+msgstr "الهوية الوطنية"
+
+#. module: slnee_hr_contract
+#: model:ir.actions.report,name:slnee_hr_contract.action_newjoin_empcontract_reportqweb
+msgid "Newjoiner Employee Contract Report"
+msgstr "نجار جديد تقرير عقد الموظف"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.hr_contract_view_search
+msgid "Non-Saudi"
+msgstr "غير السعودية"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.hr_contract_view_inherit_overtime_form1
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: slnee_hr_contract
+#: model:ir.model.fields,field_description:slnee_hr_contract.field_hr_contract_notice_end_date
+msgid "Notice End Date"
+msgstr "تاريخ انتهاء الإشعار"
+
+#. module: slnee_hr_contract
+#: model:ir.model.fields,field_description:slnee_hr_contract.field_hr_contract_notice_start_date
+msgid "Notice Start Date"
+msgstr "إشعار تاريخ البدء"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "Passport No."
+msgstr "رقم جواز السفر."
+
+#. module: slnee_hr_contract
+#: model:ir.model,name:slnee_hr_contract.model_hr_payslip
+msgid "Pay Slip"
+msgstr "ظرف المرتب"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.hr_hr_employee_view_form2_inherit
+msgid "Place Of Birth"
+msgstr "مكان الميلاد"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.hr_contract_view_inherit_overtime_form1
+msgid "Salary and Advantages"
+msgstr "الرواتب والمزايا"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.hr_contract_view_search
+msgid "Saudi"
+msgstr "سعودي"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.hr_contract_view_search
+msgid "Search Contract"
+msgstr "عقد البحث"
+
+#. module: slnee_hr_contract
+#: model:ir.model.fields,field_description:slnee_hr_contract.field_hr_contract_signon_bonus
+msgid "Sign on Bonus"
+msgstr "تسجيل على المكافأة"
+
+#. module: slnee_hr_contract
+#: model:hr.salary.rule,name:slnee_hr_contract.hr_salary_rule_signon_deduction
+msgid "SignOn Deduction"
+msgstr "سجل دخولك خصم"
+
+#. module: slnee_hr_contract
+#: model:ir.model.fields,help:slnee_hr_contract.field_hr_contract_period_ids
+msgid "Specify month(s) in which the sign on bonus will be distributed. Bonus will be distributed in Bonus Amount/Number of Month(s)."
+msgstr "حدد الشهر (الأشهر) الذي سيتم فيه توزيع علامة على المكافأة. سيتم توزيع المكافآت على شكل مكافأة / عدد الشهور (أشهر)."
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "This Agreement is made and entered into this Date,"
+msgstr "تم إبرام هذه الاتفاقية وإدخالها في هذا التاريخ ،"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.hr_contract_view_search
+msgid "To be Renew"
+msgstr "أن يكون تجديد"
+
+#. module: slnee_hr_contract
+#: code:addons/slnee_hr_contract/models/hr.py:28
+#, python-format
+msgid "Too many active contracts for employee %s"
+msgstr "هناك عدد كبير جدًا من العقود النشطة للموظفين٪ s"
+
+#. module: slnee_hr_contract
+#: model:ir.model.fields,field_description:slnee_hr_contract.field_hr_contract_TA
+msgid "Transport Allowance"
+msgstr "بدل النقل"
+
+#. module: slnee_hr_contract
+#: model:ir.model.fields,help:slnee_hr_contract.field_hr_contract_TA
+msgid "Transport Allowance of employee (10% of Basic)"
+msgstr "بدل النقل للموظف (10٪ من الأساسيات)"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "by and between:"
+msgstr "بين و بين:"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "رس"
+msgstr "رس"
+
+#. module: slnee_hr_contract
+#: model:ir.ui.view,arch_db:slnee_hr_contract.empcontract_report_qweb
+msgid "ما بين"
+msgstr "ما بين"
+

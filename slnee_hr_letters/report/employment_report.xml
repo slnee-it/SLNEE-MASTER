@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <report auto="False" id="report_employment_reference" model="hr.experience"
+        name="experience" rml="slnee_hr_letters/report/employment_reference_report.rml" string="Employment Reference Check"
+        usage="default" />
+</odoo>

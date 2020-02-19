@@ -1,0 +1,211 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* hr_expense_payment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-11 11:00+0000\n"
+"PO-Revision-Date: 2018-09-11 11:00+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_company_contribution
+msgid "- Company Contribution"
+msgstr "- مساهمة الشركة"
+
+#. module: hr_expense_payment
+#: selection:accommodation,payment_mode:0
+#: selection:copy.center,payment_mode:0
+#: selection:event.registration,payment_mode:0
+#: selection:flight.booking,payment_mode:0
+#: selection:hr.expense.payment,payment_mode:0
+#: selection:hr.visa,payment_mode:0
+#: selection:maintenance.equipment.request,payment_mode:0
+msgid "Both"
+msgstr "على حد سواء"
+
+#. module: hr_expense_payment
+#: selection:accommodation,payment_mode:0
+#: selection:copy.center,payment_mode:0
+#: selection:event.registration,payment_mode:0
+#: selection:flight.booking,payment_mode:0
+#: selection:hr.expense.payment,payment_mode:0
+#: selection:hr.visa,payment_mode:0
+#: selection:maintenance.equipment.request,payment_mode:0
+msgid "Company"
+msgstr "شركة"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_accommodation_company_contribution
+#: model:ir.model.fields,field_description:hr_expense_payment.field_copy_center_company_contribution
+#: model:ir.model.fields,field_description:hr_expense_payment.field_flight_booking_company_contribution
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment_company_contribution
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_visa_company_contribution
+msgid "Company Contribution"
+msgstr "مساهمة الشركة"
+
+#. module: hr_expense_payment
+#: code:addons/hr_expense_payment/models/hr_expense.py:92
+#, python-format
+msgid "Company Contribution should be either greater then 0 or should not be more that total expense"
+msgstr "يجب أن تكون مساهمة الشركة أكبر من صفر أو لا ينبغي أن تكون أكثر من إجمالي المصروفات"
+
+#. module: hr_expense_payment
+#: code:addons/hr_expense_payment/models/hr_expense.py:81
+#, python-format
+msgid "Contribution should be either greater then 0 or should not be more that total expense"
+msgstr "يجب أن تكون المساهمة أكبر من 0 أو لا ينبغي أن تكون أكثر من إجمالي المصروفات"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: hr_expense_payment
+#: selection:accommodation,payment_mode:0
+#: selection:copy.center,payment_mode:0
+#: selection:event.registration,payment_mode:0
+#: selection:flight.booking,payment_mode:0
+#: selection:hr.expense.payment,payment_mode:0
+#: selection:hr.visa,payment_mode:0
+#: selection:maintenance.equipment.request,payment_mode:0
+msgid "Employee (to reimburse)"
+msgstr "الموظف (للتعويض)"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_accommodation_emp_contribution
+#: model:ir.model.fields,field_description:hr_expense_payment.field_copy_center_emp_contribution
+#: model:ir.model.fields,field_description:hr_expense_payment.field_flight_booking_emp_contribution
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_emp_contribution
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment_emp_contribution
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_visa_emp_contribution
+#: model:ir.model.fields,field_description:hr_expense_payment.field_maintenance_equipment_request_emp_contribution
+msgid "Employee Contribution"
+msgstr "مساهمة الموظف"
+
+#. module: hr_expense_payment
+#: code:addons/hr_expense_payment/models/hr_expense.py:88
+#, python-format
+msgid "Employee Contribution should be either greater then 0 or should not be more that total expense"
+msgstr "يجب أن تكون مساهمة الموظف أكبر من صفر أو لا يجب أن تكون أكثر من إجمالي المصروفات"
+
+#. module: hr_expense_payment
+#: model:hr.salary.rule,name:hr_expense_payment.hr_salary_rule_employee_expense_deduction
+msgid "Employee Expense Deduction"
+msgstr "حساب خصم الموظف"
+
+#. module: hr_expense_payment
+#: model:hr.salary.rule,name:hr_expense_payment.hr_salary_rule_employee_expense_reimburse
+msgid "Employee Expense Reimburse"
+msgstr "نفقات الموظف"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_accommodation_expense_note
+#: model:ir.model.fields,field_description:hr_expense_payment.field_copy_center_expense_note
+#: model:ir.model.fields,field_description:hr_expense_payment.field_flight_booking_expense_note
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment_expense_note
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_visa_expense_note
+msgid "Expense Note"
+msgstr "ملاحظة حول النفقات"
+
+#. module: hr_expense_payment
+#: model:ir.model,name:hr_expense_payment.model_hr_expense_sheet
+msgid "Expense Report"
+msgstr "تقرير المصاريف"
+
+#. module: hr_expense_payment
+#: code:addons/hr_expense_payment/models/hr_expense.py:122
+#, python-format
+msgid "Expenses"
+msgstr "نفقات"
+
+#. module: hr_expense_payment
+#: model:ir.model,name:hr_expense_payment.model_hr_expense
+msgid "Hr Expense"
+msgstr "المصروفات ساعة"
+
+#. module: hr_expense_payment
+#: model:ir.model,name:hr_expense_payment.model_hr_expense_payment
+msgid "Hr Expense Payment"
+msgstr "دفع المصروفات"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_include_salary
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_sheet_include_salary
+msgid "Include in Salary"
+msgstr "تضمين في الراتب"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_sheet_not_inc_sal_amt
+msgid "Not Include Salary Amount Total"
+msgstr "لا تشمل مبلغ الراتب الإجمالي"
+
+#. module: hr_expense_payment
+#: model:ir.model,name:hr_expense_payment.model_hr_payslip
+msgid "Pay Slip"
+msgstr "ظرف المرتب"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_accommodation_payment_mode
+#: model:ir.model.fields,field_description:hr_expense_payment.field_copy_center_payment_mode
+#: model:ir.model.fields,field_description:hr_expense_payment.field_event_registration_payment_mode
+#: model:ir.model.fields,field_description:hr_expense_payment.field_flight_booking_payment_mode
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_payment_payment_mode
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_visa_payment_mode
+#: model:ir.model.fields,field_description:hr_expense_payment.field_maintenance_equipment_request_payment_mode
+msgid "Payment By"
+msgstr "دفعة بواسطة"
+
+#. module: hr_expense_payment
+#: model:ir.model.fields,field_description:hr_expense_payment.field_hr_expense_slip_id
+msgid "Payslip"
+msgstr "قسيمة الدفع"
+
+#. module: hr_expense_payment
+#: code:addons/hr_expense_payment/models/hr_expense.py:84
+#, python-format
+msgid "Please define expense products"
+msgstr "يرجى تحديد المنتجات النفقة"
+
+#. module: hr_expense_payment
+#: model:hr.salary.rule.category,name:hr_expense_payment.REIMBURSE
+msgid "Reimburse"
+msgstr "يوفي"
+

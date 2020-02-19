@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+<odoo>
+    <report
+        id="bankloan_transfer"
+        string="Bank Loan Transfer"
+        model="multi.reports"
+        name="slnee_hr_letters.bankloan_transfer_qweb"
+        report_type="qweb-pdf"
+        file="slnee_hr_letters.bankloan_transfer_qweb"
+        attachment_use="True"
+        menu="False"
+        attachment="(object.employee_id.name + '.pdf')"
+        />
+    <record id="bankloan_transfer" model="ir.actions.report">
+        <field name="paperformat_id" ref="paperformat_bankloan_transfer_qweb"/>
+    </record>
+
+     <report
+        id="bankloan_transfer_female"
+        string="Bank Loan Transfer Female"
+        model="multi.reports"
+        name="slnee_hr_letters.bankloan_transfer_female_qweb"
+        report_type="qweb-pdf"
+        file="slnee_hr_letters.bankloan_transfer_female_qweb"
+        attachment_use="True"
+        menu="False"
+        attachment="(object.employee_id.name + '.pdf')"
+        />
+    <record id="bankloan_transfer_female" model="ir.actions.report">
+        <field name="paperformat_id" ref="paperformat_bankloan_transfer_female_qweb"/>
+    </record>
+
+    <report
+        id="bankopen_account"
+        string="Bank Open Account"
+        model="multi.reports"
+        name="slnee_hr_letters.bankopen_account_report"
+        report_type="qweb-pdf"
+        file="slnee_hr_letters.bankopen_account_report"
+        attachment_use="True"
+        menu="False"
+        attachment="(object.employee_id.name + '.pdf')"
+        />
+    <record id="bankopen_account" model="ir.actions.report">
+        <field name="paperformat_id" ref="paperformat_bankopen_account"/>
+    </record>
+
+    <report
+        id="bankopen_account_female"
+        string="Bank Open Account female"
+        model="multi.reports"
+        name="slnee_hr_letters.bankopen_account_report_female"
+        report_type="qweb-pdf"
+        file="slnee_hr_letters.bankopen_account_report_female"
+        attachment_use="True"
+        menu="False"
+        attachment="(object.employee_id.name + '.pdf')"
+        />
+    <record id="bankopen_account_female" model="ir.actions.report">
+        <field name="paperformat_id" ref="paperformat_bankopen_account_female"/>
+    </record>
+
+    <report
+        id="certificate_ofapprove"
+        string="Ratification Certificate"
+        model="multi.reports"
+        name="slnee_hr_letters.certificate_toapprove"
+        report_type="qweb-pdf"
+        file="slnee_hr_letters.certificate_toapprove"
+        attachment_use="True"
+        menu="False"
+        attachment="(object.employee_id.name + '.pdf')"
+        />
+    <record id="certificate_ofapprove" model="ir.actions.report">
+        <field name="paperformat_id" ref="paperformat_certificate_toapprove"/>
+    </record>
+
+    <report
+        id="family_iqama"
+        string="Family Iqama"
+        model="multi.reports"
+        name="slnee_hr_letters.family_iqama_report"
+        report_type="qweb-pdf"
+        file="slnee_hr_letters.family_iqama_report"
+        attachment_use="True"
+        menu="False"
+        attachment="(object.employee_id.name + '.pdf')"
+        />
+    <record id="family_iqama" model="ir.actions.report">
+        <field name="paperformat_id" ref="paperformat_family_iqama_report"/>
+    </record>
+
+     <report
+        id="mroor_report"
+        string="Mroor Report"
+        model="multi.reports"
+        name="slnee_hr_letters.mroor_qreport"
+        report_type="qweb-pdf"
+        file="slnee_hr_letters.mroor_qreport"
+        attachment_use="True"
+        menu="False"
+        attachment="(object.employee_id.name + '.pdf')"
+        />
+    <record id="mroor_report" model="ir.actions.report">
+        <field name="paperformat_id" ref="paperformat_mroor_qreport"/>
+    </record>
+
+     <report
+        id="house_allowence"
+        string="House Allowance"
+        model="multi.reports"
+        name="slnee_hr_letters.house_allowance_report"
+        report_type="qweb-pdf"
+        file="slnee_hr_letters.house_allowance_report"
+        attachment_use="True"
+        menu="False"
+        attachment="(object.employee_id.name + '.pdf')"
+        />
+    <record id="house_allowence" model="ir.actions.report">
+        <field name="paperformat_id" ref="paperformat_house_allowance_report"/>
+    </record>
+
+     <report
+        id="slnee_hr_letters_whomeconcern"
+        string="To Whome Concern"
+        model="multi.reports"
+        name="slnee_hr_letters.whomeconcern_report"
+        report_type="qweb-pdf"
+        file="slnee_hr_letters.whomeconcern_report"
+        attachment_use="True"
+        menu="False"
+        attachment="(object.employee_id.name + '.pdf')"
+        />
+    <record id="slnee_hr_letters_whomeconcern" model="ir.actions.report">
+        <field name="paperformat_id" ref="paperformat_whomeconcern_report"/>
+    </record>
+
+     <report
+        id="towhome_concern"
+        string="To Whome Concern"
+        model="multi.reports"
+        name="slnee_hr_letters.towhome_concern_arabic_report"
+        report_type="qweb-pdf"
+        file="slnee_hr_letters.towhome_concern_arabic_report"
+        attachment_use="True"
+        menu="False"
+        attachment="(object.employee_id.name + '.pdf')"
+        />
+    <record id="towhome_concern" model="ir.actions.report">
+        <field name="paperformat_id" ref="paperformat_towhome_concern_arabic_report"/>
+    </record>
+
+     <report
+        id="towhom_concern_female"
+        string="To Whom Concern Female"
+        model="multi.reports"
+        name="slnee_hr_letters.towhom_concern_female_report"
+        report_type="qweb-pdf"
+        file="slnee_hr_letters.towhom_concern_female_report"
+        attachment_use="True"
+        menu="False"
+        attachment="(object.employee_id.name + '.pdf')"
+        />
+    <record id="towhom_concern_female" model="ir.actions.report">
+        <field name="paperformat_id" ref="paperformat_towhom_concern_female_report"/>
+    </record>
+
+     <report
+        id="stamping_certificate"
+        string="Stamping Certificate"
+        model="multi.reports"
+        name="slnee_hr_letters.stamping_certificate_report"
+        report_type="qweb-pdf"
+        file="slnee_hr_letters.stamping_certificate_report"
+        attachment_use="True"
+        menu="False"
+        attachment="(object.employee_id.name + '.pdf')"
+        />
+    <record id="stamping_certificate" model="ir.actions.report">
+        <field name="paperformat_id" ref="paperformat_stamping_certificate_report"/>
+    </record>
+
+    <report
+        id="stamping_certificate_female"
+        string="Stamping Certificate Female"
+        model="multi.reports"
+        name="slnee_hr_letters.stamping_certificate_female_report"
+        report_type="qweb-pdf"
+        file="slnee_hr_letters.stamping_certificate_female_report"
+        attachment_use="True"
+        menu="False"
+        attachment="(object.employee_id.name + '.pdf')"
+        />
+    <record id="stamping_certificate_female" model="ir.actions.report">
+        <field name="paperformat_id" ref="paperformat_stamping_certificate_female_report"/>
+    </record>
+
+     <report
+        id="wifefrom_home_country"
+        string="Wife Home Country"
+        model="multi.reports"
+        name="slnee_hr_letters.wifefrom_home_country_report"
+        report_type="qweb-pdf"
+        file="slnee_hr_letters.wifefrom_home_country_report"
+        attachment_use="True"
+        menu="False"
+        attachment="(object.employee_id.name + '.pdf')"
+        />
+    <record id="wifefrom_home_country" model="ir.actions.report">
+        <field name="paperformat_id" ref="paperformat_wifefrom_home_country_report"/>
+    </record>
+
+    <report
+        id="walid_school"
+        string="Valid School"
+        model="multi.reports"
+        name="slnee_hr_letters.walid_school_report"
+        report_type="qweb-pdf"
+        file="slnee_hr_letters.walid_school_report"
+        attachment_use="True"
+        menu="False"
+        attachment="(object.employee_id.name + '.pdf')"
+        />
+    <record id="walid_school" model="ir.actions.report">
+        <field name="paperformat_id" ref="paperformat_walid_school_report"/>
+    </record>
+
+    <report
+        id="saudibritish_bankloan"
+        string="Saudi British Bank Loan Form"
+        model="multi.reports"
+        name="slnee_hr_letters.saudibritish_bankloan_report"
+        report_type="qweb-pdf"
+        file="slnee_hr_letters.saudibritish_bankloan_report"
+        attachment_use="True"
+        menu="False"
+        attachment="(object.employee_id.name + '.pdf')"
+        />
+    <record id="saudibritish_bankloan" model="ir.actions.report">
+        <field name="paperformat_id" ref="paperformat_saudibritish_bankloan_report"/>
+    </record>
+
+    <report
+        id="slnee_hr_letters_transport"
+        string="Transport Report"
+        model="multi.reports"
+        name="slnee_hr_letters.slnee_hr_letters_transport_report"
+        report_type="qweb-pdf"
+        file="slnee_hr_letters.slnee_hr_letters_transport_report"
+        attachment_use="True"
+        menu="False"
+        attachment="(object.employee_id.name + '.pdf')"
+        />
+    <record id="slnee_hr_letters_transport" model="ir.actions.report">
+        <field name="paperformat_id" ref="paperformat_slnee_hr_letters_transport_report"/>
+    </record>
+
+</odoo>

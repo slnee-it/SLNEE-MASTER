@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Bouns Allowance -->
+        <record id="hr_salary_rule_employee_bonus_allowance" model="hr.salary.rule">
+            <field name="name">Employee Bonus</field>
+            <field name="category_id" ref="hr_payroll.ALW"/>
+            <field name="code">BONUS</field>
+            <field name="sequence" eval="40"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = (inputs.BONUS and inputs.BONUS.amount > 0)</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = inputs.BONUS and inputs.BONUS.amount</field>
+        </record>
+
+        <!-- Salary Structure -->
+         <record id="hr_payroll.structure_base" model="hr.payroll.structure">
+            <field name="name">Company Salary Structures</field>
+            <field name="rule_ids" eval="[(4,ref('hr_salary_rule_employee_bonus_allowance'))]" />
+            <field name="company_id" ref="base.main_company"/>
+        </record>
+    </data>
+</odoo>

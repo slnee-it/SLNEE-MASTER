@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_department_form_inherit" model="ir.ui.view">
+        <field name="name">hr.department.form.inherit</field>
+        <field name="model">hr.department</field>
+        <field name="inherit_id" ref="hr.view_department_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='manager_id']" position="after">
+                <field name="arabic_name" />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="hr_kanban_view_employees_inherit" model="ir.ui.view">
+        <field name="name">HR - Employee Kanban</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.hr_kanban_view_employees"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="replace">
+                <field name="name"/>
+                <field name="last_name"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="hr_form_view" model="ir.ui.view">
+        <field name="name">hr.employee.form</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="priority">30</field>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@class='oe_title']" position="replace"/>
+            <xpath expr="//field[@name='category_ids']" position="replace"/>
+
+            <xpath expr="//notebook" position="before">
+                <group colspan="4">
+                    <div>
+                        <label for="name" class="oe_edit_only"/>
+                        <h1 class="o_row">
+                            <field name="name" placeholder="Employee's Name" required="True"/>
+                            <field name="middle_name" placeholder="Middle Name"/>
+                            <field name="last_name" placeholder="Last Name" required='1'/>
+                        </h1>
+                        <br/>
+                        <label for="arabic_name" class="oe_edit_only"/>
+                        <h2 class="o_row">
+                            <field name="arabic_name" placeholder="Arabic Name" nolabel="1" colspan="4"/>
+                        </h2>
+                        <label for="category_ids" class="oe_edit_only"/>
+                        <field name="category_ids" widget="many2many_tags" placeholder="e.g. Part Time" nolabel="1" colspan="4"/>
+                        <br/>
+                        <label for="code" class="oe_edit_only"/>
+                        <field name="code" placeholder="Employee Code" required="1" nolabel="1"/>
+                    </div>
+                </group>
+            </xpath>
+            <xpath expr="//field[@name='birthday']" position="after">
+                <field name="age"/>
+            </xpath>
+            <xpath expr="//field[@name='coach_id']" position="replace">
+                <field name="coach_id" string="Head of Function" domain="[('is_line_manager', '=', True)]"/>
+                <field name="is_line_manager"/>
+            </xpath>
+            <xpath expr="//field[@name='country_id']" position="after">
+                <field name="religion"/>
+                <field name="is_saudi" invisible="1"/>
+            </xpath>
+            <xpath expr="//group[@name='active_group']" position="before">
+                <group string="Employment">
+                    <field name="date_of_join" required="1" />
+                    <field name="date_of_leave"/>
+                    <field name="total_service_year"/>
+                    <field name='employee_status' required="1"/>
+                    <field name="sponsored_by"/>
+                    <field name="reference_by" attrs="{'invisible':[('sponsored_by', 'not in', ['other'])], 'required': [('sponsored_by', 'in', ['other'])]}"/>
+                </group>
+            </xpath>
+            <!--<xpath expr="//field[@name='company_id']" position="after">
+                <field name="branch_id" domain="[('company_id', '=', company_id)]" groups="slnee_hr_branch.group_company_branch"/>
+            </xpath>-->
+            <xpath expr="//field[@name='work_phone']" position="after">
+                <field name="branch_id" domain="[('company_id', '=', company_id)]" groups="slnee_hr_branch.group_company_branch"/>
+                <field name="laptop_desktop"/>
+                <field name="laptop_desktop_serial"/>
+            </xpath>
+            <xpath expr="//field[@name='address_home_id']" position="after">
+                <field name="emergency_contact" />
+                <field name="spouse_number" />
+                <field name="ksa_address_id" attrs="{'invisible': [('is_saudi','=',True),('country_id','!=',False)]}" groups="hr.group_hr_user"/>
+            </xpath>
+            <xpath expr="//field[@name='marital']" position="after">
+                <field name="infants"/>
+                <field name="nominee_id"/>
+            </xpath>
+            <xpath expr="//field[@name='gender']" position="attributes">
+                <attribute name="required">1</attribute>
+            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page name="extra" string="Extra Information" groups="base.group_no_one">
+                    <group name="extra_info" col="4">
+                        <field name="create_uid" readonly="1"/>
+                        <field name="create_date" readonly="1"/>
+                        <field name="write_uid" readonly="1"/>
+                        <field name="write_date" readonly="1"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Search View For HR Employee -->
+    <record id="view_slnee_hr_employee_filter" model="ir.ui.view">
+        <field name="name">Employees</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='newly_hired_employee']" position="attributes">
+                <attribute name="groups">hr_recruitment.group_hr_recruitment_user</attribute>
+            </xpath>
+            <xpath expr="//filter[@name='inactive']" position="after">
+                <filter name="Saudi" string="Saudi" domain="[('is_saudi','=',True)]"/>
+                <filter name="Non-Saudi" string="Non-Saudi" domain="[('is_saudi','=',False)]"/>
+            </xpath>
+            <xpath expr="//group" position="inside">
+                <filter string="Office" context="{'group_by':'branch_id'}"/>
+                <filter string="Joining Date" context="{'group_by':'date_of_join'}"/>
+                <filter string="Gender" context="{'group_by':'gender'}" groups="hr.group_hr_user"/>
+                <filter string="Religion" context="{'group_by':'religion'}"/>
+                <filter string="Nationality" context="{'group_by':'country_id'}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

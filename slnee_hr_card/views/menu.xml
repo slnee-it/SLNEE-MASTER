@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_hr_employee_card" name="Employee Card" parent="hr.menu_hr_main"
+              action="action_hr_employee_card_view" sequence="3" groups="base.group_user"/>
+</odoo>

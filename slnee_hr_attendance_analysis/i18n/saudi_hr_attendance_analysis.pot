@@ -1,0 +1,538 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_attendance_analysis
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-30 12:18+0000\n"
+"PO-Revision-Date: 2015-04-30 12:18+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/wizard/print_calendar_report.py:175
+#, python-format
+msgid "%s: 'Work to' is < 'Work from'"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: selection:resource.calendar,attendance_rounding:0
+#: selection:resource.calendar,leave_rounding:0
+#: selection:resource.calendar,overtime_rounding:0
+msgid "10"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: selection:resource.calendar,attendance_rounding:0
+#: selection:resource.calendar,leave_rounding:0
+#: selection:resource.calendar,overtime_rounding:0
+msgid "12"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: selection:resource.calendar,attendance_rounding:0
+#: selection:resource.calendar,leave_rounding:0
+#: selection:resource.calendar,overtime_rounding:0
+msgid "15"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: selection:resource.calendar,attendance_rounding:0
+#: selection:resource.calendar,leave_rounding:0
+#: selection:resource.calendar,overtime_rounding:0
+msgid "20"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: selection:resource.calendar,attendance_rounding:0
+#: selection:resource.calendar,leave_rounding:0
+#: selection:resource.calendar,overtime_rounding:0
+msgid "30"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: selection:resource.calendar,attendance_rounding:0
+#: selection:resource.calendar,leave_rounding:0
+#: selection:resource.calendar,overtime_rounding:0
+msgid "60"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:59
+#, python-format
+msgid "April"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model,name:slnee_hr_attendance_analysis.model_hr_attendance
+msgid "Attendance"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: field:hr.attendance,duration:0
+msgid "Attendance duration"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: field:resource.calendar,attendance_rounding:0
+msgid "Attendance rounding"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.actions.act_window,name:slnee_hr_attendance_analysis.open_view_attendance
+#: model:ir.ui.menu,name:slnee_hr_attendance_analysis.menu_open_view_attendance
+msgid "Attendances analysis"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:67
+#, python-format
+msgid "August"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: field:resource.calendar.overtime.type,calendar_id:0
+msgid "Calendar"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: view:hr.attendance:slnee_hr_attendance_analysis.view_hr_attendance_calendar
+msgid "Calendar View"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model,name:slnee_hr_attendance_analysis.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: view:res.company:slnee_hr_attendance_analysis.view_company_form
+msgid "Configuration"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: field:resource.calendar.overtime.type,create_uid:0
+msgid "Created by"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: field:resource.calendar.overtime.type,create_date:0
+msgid "Created on"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:15
+msgid "Date"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: view:hr.attendance:slnee_hr_attendance_analysis.view_hr_attendance_filter
+msgid "Day"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:16
+msgid "Day of week"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:75
+#, python-format
+msgid "December"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:33
+msgid "Due"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: field:hr.attendance,inside_calendar_duration:0
+msgid "Duration within working schedule"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: view:hr.attendance:slnee_hr_attendance_analysis.view_hr_attendance_filter
+msgid "Employee"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: view:hr.attendance:slnee_hr_attendance_analysis.view_attendance_analysis
+msgid "Employee attendances analysis"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:11
+msgid "Employee: "
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: field:hr.attendance,end_datetime:0
+msgid "End date time"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/hr_attendance.py:146
+#: code:addons/slnee_hr_attendance_analysis/hr_attendance.py:186
+#: code:addons/slnee_hr_attendance_analysis/hr_attendance.py:256
+#: code:addons/slnee_hr_attendance_analysis/wizard/print_calendar_report.py:95
+#: code:addons/slnee_hr_attendance_analysis/wizard/print_calendar_report.py:174
+#, python-format
+msgid "Error"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:55
+#, python-format
+msgid "February"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:18
+msgid "First Sign In"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:19
+msgid "First Sign Out"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: help:resource.calendar,attendance_rounding:0
+msgid "For instance, using rounding = 15 minutes, every sign in will be rounded to the following quarter hour and every sign out to the previous quarter hour"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:30
+msgid "Fourth Sign In"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:31
+msgid "Fourth Sign Out"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:42
+#, python-format
+msgid "Friday"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/wizard/print_calendar_report.py:95
+#, python-format
+msgid "From date must be < to date"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: view:hr.attendance:slnee_hr_attendance_analysis.view_hr_attendance_filter
+msgid "Group By..."
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: view:hr.attendance:slnee_hr_attendance_analysis.view_hr_attendance_filter
+msgid "Hr Attendance Search"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: field:resource.calendar.overtime.type,id:0
+msgid "ID"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/hr_attendance.py:186
+#, python-format
+msgid "Incongruent data: sign-in %s is followed by another sign-in"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:53
+#, python-format
+msgid "January"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:65
+#, python-format
+msgid "July"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:63
+#, python-format
+msgid "June"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: field:resource.calendar.overtime.type,write_uid:0
+msgid "Last Updated by"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: field:resource.calendar.overtime.type,write_date:0
+msgid "Last Updated on"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:37
+msgid "Leave"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: field:resource.calendar,leave_rounding:0
+msgid "Leave rounding"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: field:resource.calendar.overtime.type,limit:0
+msgid "Limit"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: help:resource.calendar.overtime.type,limit:0
+msgid "Limit, in hours, of overtime that can be imputed to this type of overtime in a day. The surplus is imputed to the subsequent type"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:57
+#, python-format
+msgid "March"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:61
+#, python-format
+msgid "May"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:34
+#, python-format
+msgid "Monday"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:36
+msgid "Negative"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:73
+#, python-format
+msgid "November"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:71
+#, python-format
+msgid "October"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: help:resource.calendar,leave_rounding:0
+msgid "On the contrary of overtime rounding, using rounding = 15 minutes, a leave of 1 minute will be considered as 15 minutes, 16 minutes as 30 minutes and so on"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:35
+#: view:hr.attendance:slnee_hr_attendance_analysis.view_attendance_analysis
+#: field:hr.attendance,outside_calendar_duration:0
+msgid "Overtime"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: help:resource.calendar,overtime_rounding_tolerance:0
+msgid "Overtime can be rounded using a tolerance. Using tolerance = 3 minutes and rounding = 15 minutes, if employee does overtime of 12 minutes, it will be considered as 15 minutes."
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: field:resource.calendar,overtime_rounding:0
+msgid "Overtime rounding"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: field:resource.calendar,overtime_rounding_tolerance:0
+msgid "Overtime rounding tolerance"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:120
+#: model:ir.model,name:slnee_hr_attendance_analysis.model_resource_calendar_overtime_type
+msgid "Overtime type"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: field:resource.calendar,overtime_type_ids:0
+msgid "Overtime types"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model,name:slnee_hr_attendance_analysis.model_resource_calendar
+msgid "Resource Calendar"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:44
+#, python-format
+msgid "Saturday"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:22
+msgid "Second Sign In"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:23
+msgid "Second Sign Out"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:69
+#, python-format
+msgid "September"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: field:resource.calendar.overtime.type,sequence:0
+msgid "Sequence"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: help:resource.calendar,overtime_rounding:0
+msgid "Setting rounding = 30 minutes, an overtime of 29 minutes will be considered as 0 minutes, 31 minutes as 30 minutes, 61 minutes as 1 hour and so on"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: help:resource.calendar.attendance,tolerance_to:0
+msgid "Sign in done in the interval \"Work from + Tolerance to\" will be considered done at \"Work from\""
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: help:resource.calendar.attendance,tolerance_from:0
+msgid "Sign out done in the interval \"Work to - Tolerance from\" will be considered done at \"Work to\""
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: view:hr.attendance:slnee_hr_attendance_analysis.view_attendance_analysis
+#: view:hr.attendance:slnee_hr_attendance_analysis.view_hr_attendance_filter
+msgid "Start date time"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:46
+#, python-format
+msgid "Sunday"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: help:res.company,working_time_precision:0
+msgid "The precision used to analysis working times over working schedule"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:26
+msgid "Third Sign In"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:27
+msgid "Third Sign Out"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:40
+#, python-format
+msgid "Thursday"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: view:hr.attendance:slnee_hr_attendance_analysis.view_hr_attendance_filter
+msgid "Today"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: field:resource.calendar.attendance,tolerance_from:0
+msgid "Tolerance from"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: field:resource.calendar.attendance,tolerance_to:0
+msgid "Tolerance to"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/hr_attendance.py:146
+#, python-format
+msgid "Too many active contracts for employee %s"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:121
+msgid "Total"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: view:hr.attendance:slnee_hr_attendance_analysis.view_attendance_analysis
+msgid "Total hours"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:90
+msgid "Totals"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:36
+#, python-format
+msgid "Tuesday"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: field:resource.calendar.overtime.type,name:0
+msgid "Type Description"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/report/calendar_report.py:38
+#, python-format
+msgid "Wednesday"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: view:hr.attendance:slnee_hr_attendance_analysis.view_attendance_analysis
+msgid "Within working schedule"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.model,name:slnee_hr_attendance_analysis.model_resource_calendar_attendance
+msgid "Work Detail"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: report:addons/slnee_hr_attendance_analysis/report/calendar_report.mako:34
+msgid "Working Hours"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: model:ir.ui.menu,name:slnee_hr_attendance_analysis.menu_view_resource_calendar
+msgid "Working Time"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: field:res.company,working_time_precision:0
+msgid "Working Time Precision"
+msgstr ""
+
+#. module: slnee_hr_attendance_analysis
+#: code:addons/slnee_hr_attendance_analysis/hr_attendance.py:257
+#, python-format
+msgid "Wrongly configured working schedule with id %s"
+msgstr ""
+

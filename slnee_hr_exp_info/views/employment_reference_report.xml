@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_employmentreference">
+        <t t-call="web.external_layout">
+            <t t-foreach="docs" t-as="o">
+            <div class="page">
+                <div class="oe_structure"/>
+                <div class="text-right">
+                    <span>Attention: </span><span t-field="o.contact_name"/><br/>
+                    <span>Email: </span><span t-field="o.contact_email"/><br/>
+                </div>
+                <strong>Strictly Private and Confidential</strong><br/>
+                <span>Please verify employment by answering the following questions:</span><br/>
+                <![CDATA[&nbsp;]]>
+                <table class="table table-condensed" style="border:2px solid black">
+                        <tr>
+                            <th><strong>Name of Applicant:</strong></th>
+                            <td>
+                                <span t-field="o.applicant_id.name"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><strong>Date of Birth:</strong></th>
+                            <td>
+                                <span t-field="o.applicant_id.date_of_birth"/>
+                            </td>
+                        </tr>
+                </table>
+                <table class="table table-condensed" style="border:2px solid black">
+                        <tr>
+                            <th><strong>Employer Name</strong></th>
+                            <td>
+                                <span t-field="o.contact_name"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><strong>Employer Address</strong></th>
+                            <td>
+                                <span></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><strong>Your relation to the applicant</strong></th>
+                            <td>
+                                <span>Immediate Superior/HR Department/Other (please mention)</span>
+                            </td>
+                        </tr>
+                </table><br/>
+                <span><strong>Period of employment</strong></span><br/>
+                <t t-foreach="o.get_duration(o.id)" t-as="data">
+                    <table class="table table-condensed" style="border:0px; padding-right:70px">
+                            <tr>
+                                <th style="padding-right:70px"><strong>From : -</strong></th>
+                                <td>
+                                    <span style="padding-right:70px" t-esc="data['days_from']"/>
+                                    <span style="padding-right:70px">Days</span>
+                                    <span style="padding-right:70px" t-esc="data['months_from']"/>
+                                    <span style="padding-right:70px">Month</span>
+                                    <![CDATA[&nbsp;]]>
+                                    <span style="padding-right:70px" t-esc="data['years_from']"/>
+                                    <span style="padding-right:70px">Year</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th style="padding-right:70px"><strong>To : -</strong></th>
+                                <td>
+                                    <span style="padding-right:70px" t-esc="data['days_to']"/>
+                                    <span style="padding-right:70px">Days</span>
+                                    <span style="padding-right:70px" t-esc="data['months_to']"/>
+                                    <span style="padding-right:70px">Month</span>
+                                    <![CDATA[&nbsp;]]>
+                                    <span style="padding-right:70px" t-esc="data['years_to']"/>
+                                    <span style="padding-right:70px">Year</span>
+                                </td>
+                            </tr>
+                    </table>
+                </t>
+                <span style="margin-right: 30px;"><strong>What position(s) were held by Mr.dd</strong></span>
+                <span t-field="o.job_title"/>
+                <div class="solid black">
+                    <hr/>
+                </div>
+                <span style="margin-right: 30px;"><strong>Reason for leaving your company?</strong></span>
+                <span>Voluntary / End of Contract / Dismissed / Redundancy</span>
+                <hr/>
+                <hr/>
+                <span style="margin-right: 30px;"><strong>Would you re-employ and if not, why?</strong></span>
+                <span>Yes / No/ other reason please specify below</span>
+                <hr/>
+                <hr/>
+                <strong><span>Strengths &amp; Weaknesses of Mr.</span><span t-field=" o.applicant_id.name"/></strong><br/>
+                <span><strong>Strength:</strong></span>
+                <hr/>
+                <hr/>
+                <hr/>
+                <strong><span>Weaknesses</span><br/>
+                <span>(Areas for further improvement)</span>
+                <hr/>
+                <hr/>
+                <hr/></strong>
+                <br/>
+                <span>Has the applicant given satisfactory in the following?</span><br/>
+                <br/>
+                <table class="table table-condensed">
+                    <tr>
+                        <td>Reliability/Professionalism</td>
+                        <td style="text-right">Yes/No</td>
+                    </tr>
+                    <tr>
+                        <td>Leadership Skills</td>
+                        <td style="text-right">Yes/No</td>
+                    </tr>
+                    <tr>
+                        <td>People Management</td>
+                        <td style="text-right">Yes/No</td>
+                    </tr>
+                    <tr>
+                        <td>Honesty / Conduct</td>
+                        <td style="text-right">Yes/No</td>
+                    </tr>
+                    <tr>
+                        <td>Loyalty and Cooperation </td>
+                        <td style="text-right">Yes/No</td>
+                    </tr>
+                    <tr>
+                        <td>Trustworthiness</td>
+                        <td style="text-right">Yes/No</td>
+                    </tr>
+
+                </table>
+                <span>Any Other Information:</span><br/>
+                <hr style="solid:black"/>
+                <span>Has the applicant given satisfactory in the following?</span><br/>
+                <span>Name:</span><br/>
+                <span>Title and Organization:</span><br/>
+                <span>Contact details (no and email address)</span><br/>
+                <span>Signature and</span><br/>
+                <span>Company Stamp (where applicable)</span><br/>
+                <hr/>
+                <span>Thank you for your cooperation and prompt response.</span><br/>
+                <span>Please complete and fax this back to ["Company_Name"] Companies on ____________ or scan it and email to us</span>
+            </div>
+        </t>
+        </t>
+    </template>
+</odoo>

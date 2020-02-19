@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <menuitem id="hr_expense.menu_hr_expense_root" name="Expenses" sequence="15" web_icon="hr_expense,static/description/icon.png"/>
+    <menuitem id="hr_expense.menu_hr_product" name="Expense Categories" parent="hr_admin.menu_hr_admin_config" action="hr_expense.hr_expense_product" groups="sales_team.group_sale_manager,hr.group_hr_user"/>
+</odoo>

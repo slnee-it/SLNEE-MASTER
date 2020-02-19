@@ -1,0 +1,647 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_eos
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-12 10:09+0000\n"
+"PO-Revision-Date: 2018-09-12 10:09+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.emp_experience_letter_femaleqweb
+#: model:ir.ui.view,arch_db:slnee_hr_eos.emp_experience_letter_maleqweb
+msgid "<span>, till</span>"
+msgstr "<span>حتى</span>"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.emp_experience_letter_femaleqweb
+#: model:ir.ui.view,arch_db:slnee_hr_eos.emp_experience_letter_maleqweb
+msgid "<span>, was an employee for us as</span>"
+msgstr "<span>، كان موظف لنا</span>"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.emp_experience_letter_femaleqweb
+#: model:ir.ui.view,arch_db:slnee_hr_eos.emp_experience_letter_maleqweb
+msgid "<span>Department from</span>"
+msgstr "<span>قسم من</span>"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.emp_experience_letter_femaleqweb
+#: model:ir.ui.view,arch_db:slnee_hr_eos.emp_experience_letter_maleqweb
+msgid "<span>His employment with us was ended by his resignation and we confirm that he has been released without any obligations towards us.</span>"
+msgstr "<span>انتهت وظيفته مع استقالته ونحن نؤكد أنه تم إطلاق سراحه دون أي التزامات تجاهنا.</span>"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.emp_experience_letter_femaleqweb
+#: model:ir.ui.view,arch_db:slnee_hr_eos.emp_experience_letter_maleqweb
+msgid "<span>Subject: Service Certificate</span><br/><br/>"
+msgstr "<span>الموضوع: شهادة الخدمة</span><br/><br/>"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.emp_experience_letter_femaleqweb
+#: model:ir.ui.view,arch_db:slnee_hr_eos.emp_experience_letter_maleqweb
+msgid "<span>This certificate has been issued upon his request without any responsibility against us.</span><br/><br/>"
+msgstr "<span>تم إصدار هذه الشهادة بناء على طلبه دون تحمل أية مسؤولية تجاهنا.</span><br/><br/>"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.emp_experience_letter_femaleqweb
+#: model:ir.ui.view,arch_db:slnee_hr_eos.emp_experience_letter_maleqweb
+msgid "<span>This is to certify that</span>"
+msgstr "<span>هذا لتاكيد ان</span>"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.emp_experience_letter_femaleqweb
+#: model:ir.ui.view,arch_db:slnee_hr_eos.emp_experience_letter_maleqweb
+msgid "<span>To Whom It May Concern</span><br/><br/>"
+msgstr "<span>إلي من يهمه الامر</span><br/><br/>"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.emp_experience_letter_femaleqweb
+#: model:ir.ui.view,arch_db:slnee_hr_eos.emp_experience_letter_maleqweb
+msgid "<span>Yours sincerely,</span>"
+msgstr "<span>تفضلوا بقبول فائق الاحترام،</span>"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.emp_experience_letter_femaleqweb
+#: model:ir.ui.view,arch_db:slnee_hr_eos.emp_experience_letter_maleqweb
+msgid "<span>_______________________</span><br/>\n"
+"                        <span>Administration Manager</span><br/>"
+msgstr "<span>_______________________</span><br/>\n"
+"                        <span>مدير الإدارة</span><br/>"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.emp_experience_letter_femaleqweb
+#: model:ir.ui.view,arch_db:slnee_hr_eos.emp_experience_letter_maleqweb
+msgid "<span>in</span>"
+msgstr "<span>في</span>"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_employee_eos_form
+msgid "Accounting"
+msgstr "المحاسبة"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_res_company_annual_leave_rate
+msgid "Annual Leave Rate"
+msgstr "معدل الإجازة السنوية"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_user_approve
+msgid "Approval by"
+msgstr "موافقة"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_employee_eos_form
+msgid "Approve"
+msgstr "موافقه"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_date_approve
+msgid "Approve Date"
+msgstr "الموافقة على التاريخ"
+
+#. module: slnee_hr_eos
+#: selection:hr.employee.eos,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_hr_employee_eos_filter
+msgid "Approved"
+msgstr "وافق"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_employee_eos_form
+msgid "Calculate EOS"
+msgstr "حساب "
+
+#. module: slnee_hr_eos
+#: model:ir.actions.act_window,help:slnee_hr_eos.eos_all
+msgid "Click to register new EOS."
+msgstr "انقر لتسجيل جديد EOS."
+
+#. module: slnee_hr_eos
+#: model:ir.model,name:slnee_hr_eos.model_res_company
+msgid "Companies"
+msgstr "الشركات"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_date_confirm
+msgid "Confirmation Date"
+msgstr "تاريخ تأكيدا"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_hr_employee_eos_filter
+msgid "Confirmed EOS"
+msgstr "أكدت EOS"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_contract_id
+msgid "Contract"
+msgstr "العقد "
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.emp_experience_letter_femaleqweb
+#: model:ir.ui.view,arch_db:slnee_hr_eos.emp_experience_letter_maleqweb
+msgid "Corresponding to:"
+msgstr "المقابلة:"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_eos_date
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,help:slnee_hr_eos.field_hr_employee_eos_date_approve
+msgid "Date of the Approval of the sheet eos. It's filled when the button Approve is pressed."
+msgstr "تاريخ الموافقة على ورقة eos. يتم ملؤها عند الضغط على زر الموافقة."
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,help:slnee_hr_eos.field_hr_employee_eos_date_valid
+msgid "Date of the acceptation of the sheet eos. It's filled when the button Validate is pressed."
+msgstr "تاريخ قبول ورقة eos. يتم ملؤها عند الضغط على الزر التحقق من صحة."
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,help:slnee_hr_eos.field_hr_employee_eos_date_confirm
+msgid "Date of the confirmation of the sheet expense. It's filled when the button Confirm is pressed."
+msgstr "تاريخ تأكيد مصاريف الورقة. يتم ملؤها عند الضغط على الزر "تأكيد"."
+
+#. module: slnee_hr_eos
+#: selection:hr.employee.eos,type:0
+msgid "Death"
+msgstr "الموت"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_department_id
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_hr_employee_eos_filter
+msgid "Department"
+msgstr "القسم"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_name
+msgid "Description"
+msgstr "الوصف"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: slnee_hr_eos
+#: selection:hr.employee.eos,state:0
+msgid "Done"
+msgstr "فعله"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.menu,name:slnee_hr_eos.menu_eos_all
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_employee_eos_tree
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_hr_employee_eos_filter
+msgid "EOS"
+msgstr "EOS"
+
+#. module: slnee_hr_eos
+#: code:addons/slnee_hr_eos/models/hr_employee_eos.py:464
+#, python-format
+msgid "EOS Account Move"
+msgstr "نقل حساب EOS"
+
+#. module: slnee_hr_eos
+#: model:mail.message.subtype,description:slnee_hr_eos.mt_employee_eos_accept
+#: model:mail.message.subtype,name:slnee_hr_eos.mt_employee_eos_accept
+msgid "EOS Approved"
+msgstr "وافق EOS"
+
+#. module: slnee_hr_eos
+#: code:addons/slnee_hr_eos/models/hr_employee_eos.py:321
+#, python-format
+msgid "EOS Approved."
+msgstr "وافق EOS."
+
+#. module: slnee_hr_eos
+#: code:addons/slnee_hr_eos/models/hr_employee_eos.py:330
+#, python-format
+msgid "EOS Cancelled."
+msgstr "EOS ملغى."
+
+#. module: slnee_hr_eos
+#: model:mail.message.subtype,description:slnee_hr_eos.mt_employee_eos_confirm
+#: model:mail.message.subtype,name:slnee_hr_eos.mt_employee_eos_confirm
+msgid "EOS Confirmed"
+msgstr "أكدت EOS"
+
+#. module: slnee_hr_eos
+#: code:addons/slnee_hr_eos/models/hr_employee_eos.py:292
+#, python-format
+msgid "EOS Confirmed."
+msgstr "أكدت EOS."
+
+#. module: slnee_hr_eos
+#: model:mail.message.subtype,description:slnee_hr_eos.mt_employee_eos_new
+#: model:mail.message.subtype,name:slnee_hr_eos.mt_employee_eos_new
+msgid "EOS Created"
+msgstr "EOS Created"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_employee_eos_form
+msgid "EOS Details"
+msgstr "تفاصيل EOS"
+
+#. module: slnee_hr_eos
+#: model:mail.message.subtype,description:slnee_hr_eos.mt_employee_eos_done
+#: model:mail.message.subtype,name:slnee_hr_eos.mt_employee_eos_done
+msgid "EOS Done"
+msgstr "EOS Done"
+
+#. module: slnee_hr_eos
+#: code:addons/slnee_hr_eos/models/hr_employee_eos.py:339
+#, python-format
+msgid "EOS Draft."
+msgstr "EOS مسودة."
+
+#. module: slnee_hr_eos
+#: model:mail.message.subtype,description:slnee_hr_eos.mt_employee_eos_cancel
+#: model:mail.message.subtype,name:slnee_hr_eos.mt_employee_eos_cancel
+msgid "EOS Refused"
+msgstr "EOS رفض"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_employee_eos_form
+msgid "EOS Sheet"
+msgstr "ورقة EOS"
+
+#. module: slnee_hr_eos
+#: model:mail.message.subtype,description:slnee_hr_eos.mt_employee_eos_validate
+msgid "EOS Validated"
+msgstr "EOS Validated"
+
+#. module: slnee_hr_eos
+#: code:addons/slnee_hr_eos/models/hr_employee_eos.py:312
+#, python-format
+msgid "EOS Validated."
+msgstr "EOS Validated."
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_employee_id
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_hr_employee_eos_filter
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_employee_eos_form
+msgid "Employee Details"
+msgstr "تفاصيل موظف"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_voucher_id
+msgid "Employee's Receipt"
+msgstr "استلام الموظف"
+
+#. module: slnee_hr_eos
+#: model:ir.actions.act_window,name:slnee_hr_eos.eos_all
+#: model:ir.model,name:slnee_hr_eos.model_hr_employee_eos
+#: model:ir.ui.menu,name:slnee_hr_eos.menu_eos_label
+msgid "End of Service Indemnity (EOS)"
+msgstr "مكافأة نهاية الخدمة (EOS)"
+
+#. module: slnee_hr_eos
+#: model:ir.actions.report,name:slnee_hr_eos.action_empexperience_letter_femaleqweb
+msgid "Experience Letter for Female"
+msgstr "رسالة الخبرة للإناث"
+
+#. module: slnee_hr_eos
+#: model:ir.actions.report,name:slnee_hr_eos.action_empexperience_letter_maleqweb
+msgid "Experience Letter for Male"
+msgstr "رسالة الخبرة لذكر"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_employee_eos_form
+msgid "Extra Information"
+msgstr "معلومات اضافية"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_journal_id
+msgid "Force Journal"
+msgstr "قوة المجلة"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_employee_eos_form
+msgid "Free Notes"
+msgstr "ملاحظات مجانية"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_employee_eos_form
+msgid "Generate Accounting Entries"
+msgstr "توليد القيود المحاسبية"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_hr_employee_eos_filter
+msgid "Group By..."
+msgstr "تجميع حسب.."
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_job_id
+msgid "Job"
+msgstr "وظيفة"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_date_of_join
+msgid "Joining Date"
+msgstr "تاريخ الالتحاق بالعمل"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_annual_leave_amount
+msgid "Leave Balance"
+msgstr "رصيد الاجازات"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_date_of_leave
+msgid "Leaving Date"
+msgstr "ترك التسجيل"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_account_move_id
+msgid "Ledger Posting"
+msgstr "سجل الأستاذ"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_hr_employee_eos_filter
+msgid "Month"
+msgstr "الشهر"
+
+#. module: slnee_hr_eos
+#: selection:hr.employee.eos,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_hr_employee_eos_filter
+msgid "New"
+msgstr "جديد"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_hr_employee_eos_filter
+msgid "New EOS"
+msgstr "جديد EOS"
+
+#. module: slnee_hr_eos
+#: code:addons/slnee_hr_eos/models/hr_employee_eos.py:361
+#, python-format
+msgid "No EOS journal found. Please make sure you have a journal with type 'purchase' configured."
+msgstr "لم يتم العثور على مجلة EOS. يرجى التأكد من أن لديك مجلة تحتوي على النوع "شراء" تم تكوينه."
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_duration_days
+msgid "No of Days"
+msgstr "لا أيام"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_duration_months
+msgid "No of Months"
+msgstr "عدد الشهور"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_duration_years
+msgid "No. of Years"
+msgstr "عدد السنوات"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_note
+msgid "Note"
+msgstr "ملاحظة"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_employee_eos_form
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_employee_eos_form
+msgid "Open Accounting Entries"
+msgstr "مقالات المحاسبة مفتوحة"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_others
+msgid "Others"
+msgstr "الآخرين"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_payslip_id
+msgid "Payslip"
+msgstr "قسيمة الدفع"
+
+#. module: slnee_hr_eos
+#: code:addons/slnee_hr_eos/models/hr_employee_eos.py:417
+#, python-format
+msgid "Please configure Default Expense account for Product purchase: `property_account_expense_categ`."
+msgstr "يرجى تكوين حساب المصاريف الافتراضية لشراء المنتج: `property_account_expense_categ`."
+
+#. module: slnee_hr_eos
+#: code:addons/slnee_hr_eos/models/hr_employee_eos.py:191
+#: code:addons/slnee_hr_eos/models/hr_employee_eos.py:405
+#, python-format
+msgid "Please configure employee contract for journal."
+msgstr "يرجى تكوين عقد الموظف للمجلة."
+
+#. module: slnee_hr_eos
+#: code:addons/slnee_hr_eos/models/hr_employee_eos.py:179
+#: code:addons/slnee_hr_eos/models/hr_employee_eos.py:269
+#, python-format
+msgid "Please define contract for selected Employee!"
+msgstr "يرجى تحديد العقد للموظف المختار!"
+
+#. module: slnee_hr_eos
+#: code:addons/slnee_hr_eos/models/hr_employee_eos.py:262
+#, python-format
+msgid "Please define employee date of join!"
+msgstr "يرجى تحديد تاريخ الموظف للانضمام!"
+
+#. module: slnee_hr_eos
+#: code:addons/slnee_hr_eos/models/hr_employee_eos.py:164
+#: code:addons/slnee_hr_eos/models/hr_employee_eos.py:260
+#, python-format
+msgid "Please define employee date of leaving!"
+msgstr "يرجى تحديد تاريخ الموظف من مغادرته!"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_employee_eos_form
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: slnee_hr_eos
+#: selection:hr.employee.eos,state:0
+msgid "Refused"
+msgstr "رفض"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_remaining_leave
+msgid "Remaining Leave"
+msgstr "الإجازة المتبقية"
+
+#. module: slnee_hr_eos
+#: selection:hr.employee.eos,type:0
+msgid "Resignation"
+msgstr "استقالة"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_current_month_salary
+msgid "Salary of Current month"
+msgstr "راتب الشهر الحالي"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_employee_eos_form
+msgid "Set to Draft"
+msgstr "تعيين كمسودة"
+
+#. module: slnee_hr_eos
+#: model:mail.message.subtype,name:slnee_hr_eos.mt_employee_eos_validate
+msgid "Stage Changed"
+msgstr "تغيرت المرحلة"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_state
+msgid "Status"
+msgstr "الحالة "
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_employee_eos_form
+msgid "Submit"
+msgstr "عرض"
+
+#. module: slnee_hr_eos
+#: selection:hr.employee.eos,type:0
+msgid "Termination"
+msgstr "نهاية"
+
+#. module: slnee_hr_eos
+#: code:addons/slnee_hr_eos/models/hr_employee_eos.py:398
+#, python-format
+msgid "The employee must have a home address."
+msgstr "يجب أن يكون لدى الموظف عنوان المنزل."
+
+#. module: slnee_hr_eos
+#: code:addons/slnee_hr_eos/models/hr_employee_eos.py:400
+#, python-format
+msgid "The employee must have a payable account set on his home address."
+msgstr "يجب أن يكون لدى الموظف حساب مدفوع على عنوان منزله."
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,help:slnee_hr_eos.field_hr_employee_eos_journal_id
+msgid "The journal used when the eos is done."
+msgstr "المجلة المستخدمة عند الانتهاء من eos."
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_hr_employee_eos_filter
+msgid "To Approve"
+msgstr "للاعتماد"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_payable_eos
+msgid "Total Amount"
+msgstr "إجمالي المبلغ"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_total_eos
+msgid "Total Award"
+msgstr "اجمالى الجائزة"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_calc_year
+msgid "Total Years"
+msgstr "مجموع السنوات"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_type
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_hr_employee_eos_filter
+msgid "Type"
+msgstr "النوع"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_user_id
+msgid "User"
+msgstr "المستخدم"
+
+#. module: slnee_hr_eos
+#: model:ir.ui.view,arch_db:slnee_hr_eos.view_employee_eos_form
+msgid "Validate"
+msgstr "اعتماد "
+
+#. module: slnee_hr_eos
+#: selection:hr.employee.eos,state:0
+msgid "Validated"
+msgstr "التحقق من صحة"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_date_valid
+msgid "Validation Date"
+msgstr "تاريخ التحقق من الصحة"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_user_valid
+msgid "Validation by"
+msgstr "التحقق من قبل"
+
+#. module: slnee_hr_eos
+#: selection:hr.employee.eos,state:0
+msgid "Waiting Approval"
+msgstr "في انتظار الموافقة"
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,help:slnee_hr_eos.field_hr_employee_eos_state
+msgid "When the eos request is created the status is 'Draft'.\n"
+" It is confirmed by the user and request is sent to finance, the status is 'Waiting Confirmation'.        \n"
+"If the finance accepts it, the status is 'Accepted'."
+msgstr "عند إنشاء طلب eos ، تكون الحالة "مسودة". \ n "
+"يتم تأكيد ذلك من قبل المستخدم ويتم إرسال الطلب للتمويل ، الحالة" تأكيد الحجز ". \ n"
+"إذا قبل التمويل ذلك ، فستكون الحالة" مقبولة "."
+
+#. module: slnee_hr_eos
+#: model:ir.model.fields,field_description:slnee_hr_eos.field_hr_employee_eos_year_id
+msgid "Year"
+msgstr "عام"
+
+#. module: slnee_hr_eos
+#: code:addons/slnee_hr_eos/models/hr_employee_eos.py:142
+#, python-format
+msgid "You cannot remove the record which is in %s state!"
+msgstr "لا يمكنك إزالة السجل الموجود في حالة٪ s!"
+

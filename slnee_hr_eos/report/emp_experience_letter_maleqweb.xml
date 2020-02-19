@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="emp_experience_letter_maleqweb">
+        <t t-foreach="docs" t-as="o">
+        <t t-call="web.external_layout">
+        <div class="page" style="font-size:20px;">
+             <div class="container">
+                <div class="row" >
+                    <span t-set="current_date" t-value="time.strftime('%Y-%m-%d')"/>
+                    <div class="col-xs-12" style="text-align:justify; font-size:20px;">
+                        <p>Corresponding to: <span t-esc="time.strftime('%Y')"/>G </p>
+                    </div>
+                </div>
+            </div>
+             <div class="container">
+                <div class="row" style=" font-weight: bold; ">
+                    <div class="col-xs-12" style="text-align:justify; font-size:20px;">
+                        <span>To Whom It May Concern</span><br/><br/>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row" style="font-weight: bold;">
+                    <div class="col-xs-12" style="text-align:justify; font-size:20px;">
+                        <span>Subject: Service Certificate</span><br/><br/>
+                    </div>
+                </div>
+            </div>
+              <div class="container">
+                <div class="row" >
+                    <div class="col-xs-12" style="text-align:justify; font-size:20px;">
+                        <span>This is to certify that</span> <span t-esc="o.employee_id.name"></span><span>, was an employee for us as</span> <span t-esc="o.employee_id.job_id.name"></span> <span>in</span> <span t-esc="o.employee_id.department_id.name"></span>  <span>Department from</span>  <span t-esc="o.date_of_join"> </span>  <span>, till</span> <span t-esc="o.date_of_leave"/> <span>.</span><br/>
+                        <span></span><br/>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row" >
+                    <div class="col-xs-12" style="text-align:justify; font-size:20px;">
+                        <span>His employment with us was ended by his resignation and we confirm that he has been released without any obligations towards us.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row" >
+                    <div class="col-xs-12" style="text-align:justify; font-size:20px;">
+                        <span>This certificate has been issued upon his request without any responsibility against us.</span><br/><br/>
+                    </div>
+                </div>
+            </div>
+             <div class="container">
+                <div class="row" style="font-weight: bold;">
+                    <div class="col-xs-12" style="text-align:justify; font-size:20px;">
+                        <span>Yours sincerely,</span>
+                    </div>
+                </div>
+            </div>
+             <div class="container">
+                <div class="row" style="font-weight: bold;">
+                    <div class="col-xs-12" style="text-align:justify; font-size:20px;">
+                        <span>_______________________</span><br/>
+                        <span>Administration Manager</span><br/>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </t>
+    </t>
+</template>
+</odoo>

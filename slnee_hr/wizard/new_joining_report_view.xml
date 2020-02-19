@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="new_joining_employee_reports_view" model="ir.ui.view">
+        <field name="name">joining.employee.reports.form</field>
+        <field name="model">joining.employee.reports</field>
+        <field name="arch" type="xml">
+            <form string="Joining Employee Reports">
+                <group>
+                    <group>
+                        <field name="start_date"/>
+                    </group>
+                    <group>
+                        <field name="end_date"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="print_reports" string="Print" type="object" class="oe_highlight"/>
+                    or
+                    <button  class="oe_link" string="Cancel" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_joining_employee_reports_form" model="ir.actions.act_window">
+        <field name="name">Joining Employee Reports</field>
+        <field name="res_model">joining.employee.reports</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="view_id" ref="new_joining_employee_reports_view"/>
+    </record>
+
+    <report
+        id="action_report_joining_employee"
+        string="New Joining Employee"
+        model="joining.employee.reports"
+        report_type="qweb-pdf"
+        name="slnee_hr.report_new_joining_employee"
+        file="slnee_hr.report_new_joining_employee"
+    />
+
+</odoo>

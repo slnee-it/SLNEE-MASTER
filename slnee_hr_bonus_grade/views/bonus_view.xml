@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="hr_bonus_grade_employee_bonus_form" model="ir.ui.view">
+        <field name="name">hr.bonus.grade</field>
+        <field name="model">employee.bonus</field>
+        <field name="inherit_id" ref="slnee_hr_bonus.employee_bonus_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='employee_bonus_ids']" position="attributes">
+                <attribute name="context">{'employee_id': employee_id, 'job_id': job_id, 'default_grade_id': grade_id}</attribute>
+            </xpath>
+            <field name="job_id" position="before">
+                <field name="grade_id" />
+            </field>
+            <xpath expr="//field[@name='employee_bonus_ids']/tree[@name='bonus_line_tree']/field[@name='new_job_id']" position="after">
+                <field name="grade_id" invisible="1"/>
+                <field name="new_grade_id" />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="hr_bonus_grade_view_employee_bonus_filter" model="ir.ui.view">
+        <field name="name">employee.bonus.filter.select</field>
+        <field name="model">employee.bonus</field>
+        <field name="inherit_id" ref="slnee_hr_bonus.view_employee_bonus_filter"/>
+        <field name="arch" type="xml">
+            <field name="department_id" position="after">
+                <field name="grade_id" string="Grade"/>
+            </field>
+            <filter name="department">
+                <filter string="Grade" context="{'group_by':'grade_id'}"/>
+            </filter>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="hr_bonus_grade_employee_bonus_lines_form">
+        <field name="name">Employee Bonus Lines</field>
+        <field name="model">employee.bonus.lines</field>
+        <field name="inherit_id" ref="slnee_hr_bonus.employee_bonus_lines_form"/>
+        <field name="arch" type="xml">
+            <field name="job_id" position="before">
+                <field name="grade_id" attrs="{'readonly':[('state','in',('done','approve','cancel'))]}"/>
+            </field>
+            <field name="fiscalyear_id" position="after">
+                <field name="new_grade_id" attrs="{'readonly':[('state','in',('done','approve','cancel'))]}"/>
+            </field>
+        </field>
+    </record>
+</odoo>

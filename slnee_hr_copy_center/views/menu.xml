@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- Copy Center Menu  -->
+    <menuitem id="menu_hr_admin_copy_center" parent="hr_admin.menu_hr_admin" name="Copy Center Request"
+              action="action_hr_admin_copy_center" sequence="6" groups="base.group_user,hr_admin.group_admin_manager"/>
+    <menuitem id="hr_admin.menu_admin_report_id" name="Admin Reports" parent="hr_admin.menu_hr_admin"
+              action="hr_admin.action_admin_reports_form"/>
+</odoo>

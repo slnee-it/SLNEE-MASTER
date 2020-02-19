@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="HrDashboardMain">
+        <div class="o_dashboards">
+            <div class="container-fluid o_hr_dashboard">
+            </div>
+        </div>
+    </t>
+    <t t-name="LoginEmployeeDetails">
+        <div class="row main-section">
+            <div class="col-md-2 col-sm-2 dummy"></div>
+            <div class="col-md-2 col-sm-2 employee-prof">
+                <div class="card">
+                    <div>
+                        <div class="media">
+                            <div class="employee-icon">
+                                <t t-if="widget.login_employee['image']">
+                                    <img class="align-self-center rounded-circle mr-3" alt=""
+                                        t-att-src="'data:image/png;base64,'+widget.login_employee['image']"/>
+                                </t>
+                                <t t-else="">
+                                    <img class="align-self-center rounded-circle mr-3" alt=""
+                                        src="data:image/png;base64,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"/>
+                                </t>
+                            </div>
+                            <div class="media-body employee-name">
+                                <h2 class="text-color display-6"><t t-esc="widget.login_employee['full_name']"/> </h2>
+                                <t t-if="widget.login_employee['arabic_name']">
+                                    <h2 class="text-color display-6"><t t-esc="widget.login_employee['arabic_name'] || ''"/> </h2>
+                                </t>
+
+                                <t t-if="widget.login_employee['job_id']">
+                                    <p class="text-light"><t t-esc="widget.login_employee['job_id'][1]"/></p>
+                                </t>
+                                <t t-if="!widget.login_employee['job_id']">
+                                    <p class="text-light" style="color:#b6b6b6 !important">Add job title</p>
+                                </t>
+                            </div>
+                            <div class="employee-details">
+                                <div class="employee-gender">
+                                    <t t-if="widget.login_employee['gender'] == 'male'">
+                                        <p><i class="fa fa-mars"></i></p>
+                                        <p class="text-light">Male</p>
+                                    </t>
+                                    <t t-if="widget.login_employee['gender'] == 'female'">
+                                        <p><i class="fa fa-venus"></i></p>
+                                        <p class="text-light">Female</p>
+                                    </t>
+                                    <t t-if="widget.login_employee['gender'] == 'other'">
+                                        Other
+                                        <p class="text-light">Other</p>
+                                    </t>
+                                    <t t-if="!widget.login_employee['gender']">
+                                        <p class="text-light" style="color:#b6b6b6 !important">Gender</p>
+                                        <p class="text-light" style="color:#b6b6b6 !important">---</p>
+                                    </t>
+
+                                </div>
+                                <div class="employee-age">
+                                    <t t-if="widget.login_employee['age']">
+                                        <p class="text-light"><t t-esc="widget.login_employee['age']"/></p>
+                                        <p>Age</p>
+                                    </t>
+                                    <t t-if="!widget.login_employee['age']">
+                                        <p class="text-light" style="color:#b6b6b6 !important">DOB</p>
+                                        <p style="color:#b6b6b6 !important">--/--/----</p>
+                                    </t>
+                                </div>
+                                <div class="employee-experience">
+                                    <t t-if="widget.login_employee['experience']">
+                                        <p class="text-light">Joined </p>
+                                        <p><t t-esc="widget.login_employee['experience']"/></p>
+                                        <p>Ago</p>
+                                    </t>
+                                    <t t-if="!widget.login_employee['experience']">
+                                        <p class="text-light" style="color:#b6b6b6 !important">Joined</p>
+                                        <p class="text-light" style="color:#b6b6b6 !important">Date</p>
+                                        <p class="text-light" style="color:#b6b6b6 !important">--/--/----</p>
+                                    </t>
+                                </div>
+                                <div class="employee-country">
+                                    <t t-if="widget.login_employee['country_id']">
+                                        <p class="text-light"><t t-esc="widget.login_employee['country_id'][1]"/></p>
+                                        <p class="text-light">Nationality</p>
+                                    </t>
+                                    <t t-if="!widget.login_employee['country_id']">
+                                        <p class="text-light" style="color:#b6b6b6 !important">Nationality</p>
+                                        <p style="color:#b6b6b6 !important">- - -</p>
+                                    </t>
+                                </div>
+                                <div class="employee-mobile">
+                                    <t t-if="widget.login_employee['mobile_phone']">
+                                        <p class="text-light"><t t-esc="widget.login_employee['mobile_phone']"/></p>
+                                        <p>Mobile</p>
+                                    </t>
+                                    <t t-if="!widget.login_employee['mobile_phone']">
+                                        <p class="text-light" style="color:#b6b6b6 !important">Mobile</p>
+                                        <p style="color:#b6b6b6 !important">- - -</p>
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 hr_payslip oh-payslip">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="stat-widget-one">
+                            <div class="stat-icon dib"><i class="fa fa-money"/></div>
+                            <div class="stat-content dib">
+                                <div class="stat-text">Payslips</div>
+                                <div class="stat-digit"><t t-esc="widget.login_employee['payslip_count']"/></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="col-md-2 col-sm-2 hr_timesheets oh-payslip oh-timesheets">-->
+                <!--<div class="card">-->
+                    <!--<div class="card-body">-->
+                        <!--<div class="stat-widget-one">-->
+                            <!--<div class="stat-icon dib"><i class="fa fa-clock-o"/></div>-->
+                            <!--<div class="stat-content dib">-->
+                                <!--<div class="stat-text">Timesheets</div>-->
+                                <!--<div class="stat-digit"><t t-esc="widget.login_employee['emp_timesheets']"/></div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <div class="col-md-2 col-sm-2 hr_contract oh-payslip oh-contracts">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="stat-widget-one">
+                            <div class="stat-icon dib"><i class="fa fa-fw fa-book"/></div>
+                            <div class="stat-content dib">
+                                <div class="stat-text">Contracts</div>
+                                <div class="stat-digit"><t t-esc="widget.login_employee['contracts_count']"/></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="col-md-2 col-sm-2 hr_loan oh-payslip oh-loan">-->
+                <!--<div class="card">-->
+                    <!--<div class="card-body">-->
+                        <!--<div class="stat-widget-one">-->
+                            <!--<div class="stat-icon dib"><i class="fa fa-fw fa-money"/></div>-->
+                            <!--<div class="stat-content dib">-->
+                                <!--<div class="stat-text">Loans</div>-->
+                                <!--<div class="stat-digit"><t t-esc="widget.login_employee['loans_count']"/></div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <div class="col-md-2 col-sm-2 hr_expense oh-payslip oh-expense">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="stat-widget-one">
+                            <div class="stat-icon dib"><i class="fa fa-fw fa-money"/></div>
+                            <div class="stat-content dib">
+                                <div class="stat-text">Expenses</div>
+                                <div class="stat-digit"><t t-esc="widget.login_employee['expenses_count']"/></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 hr_attendance_login">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="stat-widget-one">
+                            <t t-if="widget.login_employee['attendance_state'] =='checked_out'">
+                                <div class="stat-icon dib hr_attendance_btn">
+                                    <i class="fa fa-sign-in o_hr_attendance_sign_in_out_icon"/>
+                                </div>
+                                <div class="stat-content dib">
+                                    <div class="stat-text">Check In</div>
+                                </div>
+                            </t>
+                            <t t-if="widget.login_employee['attendance_state'] =='checked_in'">
+                                <div class="stat-icon dib hr_attendance_btn">
+                                    <i class="fa fa-sign-out o_hr_attendance_sign_in_out_icon"/>
+                                </div>
+                                <div class="stat-content dib">
+                                    <div class="stat-text">Check out</div>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+    <t t-name="ManagerDashboard">
+        <div class="employee_dashboard_main">
+            <div class="row main-section">
+                <div class="col-md-2 col-sm-2 dummy"></div>
+                <div class="col-sm-3 col-lg-3" style="padding-left: 0px;">
+                <div class="col-sm-12 col-lg-12 leave-manager">
+                    <div class="col-sm-6 col-lg-6 hr_leave_request_approve" >
+                        <div class=" text-color">
+                            <div class="card-body pb-0">
+                                <p class="stat-title">Leave Requests</p>
+                                <h4 class="mb-0">
+                                    <p class="stat-count"><t t-esc="widget.login_employee.leaves_to_approve"/></p>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-6" style="padding:0px">
+                        <div class="col-sm-12 col-lg-12 leaves_request_today">
+                            <div class=" text-color">
+                                <div class="card-body">
+                                     <p class="stat-title">Today</p>
+                                    <h4 class="mb-0">
+                                        <p class="stat-count"><t t-esc="widget.login_employee.leaves_today"/></p>
+                                    </h4>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-lg-12 leaves_request_month">
+                            <div class=" text-color">
+                                <div class="card-body">
+                                    <p class="stat-title">This Month</p>
+                                    <h4 class="mb-0">
+
+                                    <p class="stat-count"><t t-esc="widget.login_employee.leaves_this_month"/></p>
+                                    </h4>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-12" style="padding-right: 0;">
+                    <div class="col-sm-12 col-lg-12 hr_leave_allocations_approve">
+                        <div class="card text-color">
+                            <div class="card-body pb-0">
+                                <p class="stat-title">Leave Allocation Requests</p>
+                                 <h4 class="mb-0">
+                                    <p class="stat-count"><t t-esc="widget.login_employee.leaves_alloc_req"/></p>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-12 hr_job_application_approve">
+                        <div class="card text-color">
+                            <div class="card-body pb-0">
+                                <p class="stat-title">Job Applications</p>
+                                <h4 class="mb-0">
+                                    <p class="stat-count"><t t-esc="widget.login_employee.job_applications"/></p>
+                                </h4>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-sm-7 col-lg-7">
+                    <div class="col-sm-12 col-lg-12  graph_view" style="padding:0">
+                        <div class="text-color hr-chart-1">
+                            <div class="card-body pb-0">
+                                <h4 class="mb-0">
+                                </h4>
+                                <p class="stat-head" style="padding : 0px;">Department Employees</p>
+
+                            </div>
+                            <div class="emp_graph"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row main-section">
+                <div class="col-md-2 col-sm-2 dummy"></div>
+                <div class="col-sm-10 col-lg-10  monthly_leave_graph_view">
+                    <div class="card text-color">
+                        <div class="card-body pb-0">
+                            <h4 class="mb-0">
+                            </h4>
+                            <p class="stat-head" style="padding : 0px;">Monthly Leave Analysis</p>
+
+                        </div>
+                        <div class="leave_graph" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+    <t t-name="EmployeeDashboard">
+        <div class="row main-section">
+            <div class="col-md-2 col-sm-2 dummy"></div>
+            <div class="col-md-4 col-lg-3">
+                <div class="hr_notification" >
+                        <div class="hr_notification_head">
+                        Upcoming Birthdays
+                        </div>
+                    <div class="col-xs-12">
+                        <t t-foreach="widget.employee_birthday" t-as="employee">
+                        <div class="col-sm-12 col-lg-12" style="padding:0;">
+                            <div class="text-color">
+                                <div class="">
+                                <div class="media">
+                                <a href="#" style="float: left;padding-right: 6%;">
+                                <img class="align-self-center rounded-circle mr-3" alt=""
+                                    t-att-src="widget.get_emp_image_url(employee[0])"/>
+                                </a>
+                                <div class="media-body">
+                                <h2 class="text-color display-6" style="font-size: 15px;"><t t-esc="employee[1]"/> </h2>
+                                <p><t t-esc="employee[3]"/></p>
+                                <p class="text-light"><t t-esc="employee[2]"/></p>
+                                </div></div></div></div>
+                            </div>
+                        </t>
+                    </div>
+                 </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="col-xs-12  hr_notification" style="padding: 0;">
+                    <div class="col-xs-12" style="padding:0;">
+                        <div class="hr_notification_head">
+                        Upcoming Events
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <t t-foreach="widget.upcoming_events" t-as="event">
+                        <div class="col-sm-12 col-lg-12" style="padding:0;">
+                            <div class="text-color">
+                                <div class="">
+                                <div class="media">
+                                <div class="media-body">
+                                <h2 class="text-color display-6" style="font-size: 15px;"><t t-esc="event[0]"/> </h2>
+                                <p>Date : <t t-esc="event[1]"/> - <t t-esc="event[2]"/></p>
+                                <t t-if="event[3]">
+                                    <p >Venue : <t t-esc="event[3]"/></p>
+                                </t>
+                                <t t-if="event[4]">
+                                    <p >Online</p>
+                                </t>
+                                </div></div></div></div>
+                            </div>
+                        </t>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <div class="row main-section">
+             <div class="col-md-2 col-sm-2 dummy"></div>
+             <div class="col-md-10 col-lg-10 col-sm-10" >
+                <div class="col-xs-12 monthly_leave_trend" style="padding:0px;">
+                    <div class="card text-color">
+                        <div class="card-body pb-0">
+                            <h4 class="mb-0">
+                            </h4>
+                            <p class="stat-head" style="padding : 0px;">My Leave Analysis</p>
+
+                        </div>
+                        <div class="leave_trend" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="EmployeeWarning">
+        <div>
+            <p>Error : Could not find employee linked to user</p>
+            <p>Please contact system admin for the setup</p>
+        </div>
+    </t>
+
+</templates>

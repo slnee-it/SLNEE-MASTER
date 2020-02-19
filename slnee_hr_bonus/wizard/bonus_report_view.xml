@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="bonus_report_form_view" model="ir.ui.view">
+        <field name="name">Bonus Report Form</field>
+        <field name="model">bonus.report</field>
+        <field name="arch" type="xml">
+            <form string="Form String">
+                <group>
+                    <field name="excel_file" filename="filename" readonly="1"/>
+                    <field name="filename" invisible="1"/>
+                </group>
+                <footer> 
+                    <button name="print_bonus_report" string="Print" type="object" class="oe_highlight"/>
+                    or
+                    <button  class="oe_link" string="Cancel" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <act_window
+        id="action_bonus_export_form"
+        name="Bonus Export"
+        res_model="bonus.report"
+        src_model="employee.bonus.batches"
+        view_id="bonus_report_form_view"
+        target="new"
+        />
+        <!--<record id="action_bonus_report_form" model="ir.actions.act_window">
+            <field name="name">Bonus Report</field>
+            <field name="res_model">bonus.report</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="bonus_report_form_view"/>
+        </record>
+         <menuitem id="menu_bonus_report" name="Bonus Report" action="action_bonus_report_form" groups="base.group_no_one" parent="slnee_hr_letters.menu_employee_bonus" sequence="11"/> -->
+</odoo>

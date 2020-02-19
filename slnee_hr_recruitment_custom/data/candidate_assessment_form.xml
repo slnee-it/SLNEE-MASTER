@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+    	<!--survey-->
+        <record model="survey.survey" id="candidate_assessment_form">
+            <field name="title">Candidate Assessment Form</field>
+        </record>
+        
+    	<!--survey_pages-->
+        <record id="candidate_assessment_form_page1" model="survey.page">
+            <field name="title">Candidate Assessment Form</field>
+            <field name="survey_id" ref="candidate_assessment_form"/>
+            <field eval="1" name="sequence"/>
+        </record>
+        
+        <record id="candidate_assessment_form_page3" model="survey.page">
+            <field name="title">Candidate Assessment Form</field>
+            <field name="survey_id" ref="candidate_assessment_form"/>
+            <field eval="2" name="sequence"/>
+        </record>
+        <record id="candidate_assessment_form_page2" model="survey.page">
+            <field name="title">Candidate Assessment Form</field>
+            <field name="survey_id" ref="candidate_assessment_form" />
+            <field eval="3" name="sequence"/>
+        </record>
+        
+    	<!-- Question -->
+        <record id="candidate_name" model="survey.question">
+            <field name="question">Candidate Name</field>   
+            <field name="type">textbox</field>   
+            <field name="constr_mandatory" eval="True" />
+            <field name="page_id" ref="candidate_assessment_form_page1"/> 
+            <field eval="1" name="sequence"/>
+        </record>
+        <record id="vacancy_title" model="survey.question">
+            <field name="question">Vacancy Title</field>   
+            <field name="type">textbox</field>   
+            <field name="constr_mandatory" eval="True" />
+            <field name="page_id" ref="candidate_assessment_form_page1"/> 
+            <field eval="2" name="sequence"/>
+        </record>
+        <record id="department" model="survey.question">
+            <field name="question">Department</field>   
+            <field name="type">textbox</field>   
+            <field name="constr_mandatory" eval="True" />
+            <field name="page_id" ref="candidate_assessment_form_page1"/> 
+            <field eval="3" name="sequence"/>
+        </record>
+        
+        <record id="interview_type" model="survey.question">
+            <field name="question">Interview Type</field>   
+            <field name="type">simple_choice</field>
+            <!-- <field name="labels_ids" eval="[(6,0,[interview_type_answer1,interview_type_answer2,interview_type_answer3,interview_type_answer4])]"/> -->
+            <field name="constr_mandatory" eval="True" />
+            <field name="page_id" ref="candidate_assessment_form_page1"/> 
+            <field eval="5" name="sequence"/>
+        </record>
+            <record id="interview_type_answer1" model="survey.label">
+                <field name="question_id" ref="interview_type"/>
+                <field name="sequence">1</field>
+	            <field name="value">First</field>
+	        </record>
+	        <record id="interview_type_answer2" model="survey.label">
+                <field name="question_id" ref="interview_type"/>
+                <field name="sequence">2</field>
+	            <field name="value">Second</field>
+	        </record>
+	        <record id="interview_type_answer3" model="survey.label">
+                <field name="question_id" ref="interview_type"/>
+                <field name="sequence">3</field>
+	            <field name="value">Third</field>
+	        </record>
+	        <record id="interview_type_answer4" model="survey.label">
+                <field name="question_id" ref="interview_type"/>
+                <field name="sequence">4</field>
+	            <field name="value">Other</field>
+	        </record>
+
+        <record id="conducted_by" model="survey.question">
+            <field name="question">Conducted by</field>   
+            <field name="type">textbox</field>
+            <field name="constr_mandatory" eval="True" />
+            <field name="page_id" ref="candidate_assessment_form_page1"/> 
+            <field eval="6" name="sequence"/>
+        </record>
+        
+        <record id="performance" model="survey.question">
+            <field name="question">Indicate the rating by circling the number that reflects your assessment of the candidate’s performance </field>   
+            <field name="type">simple_choice</field>
+            <!-- <field name="labels_ids" eval="[(6,0,[performance_answer1,performance_answer2,performance_answer3,performance_answer4,performance_answer5])]"/> -->
+            <field name="constr_mandatory" eval="True" />
+            <field name="page_id" ref="candidate_assessment_form_page1"/> 
+            <field eval="7" name="sequence"/>
+        </record>
+            <record id="performance_answer1" model="survey.label">
+                <field name="question_id" ref="performance"/>
+                <field name="sequence">1</field>
+	            <field name="value">Poor demonstration skills and behaviors required for the role</field>
+	        </record>
+	        <record id="performance_answer2" model="survey.label">
+	            <field name="question_id" ref="performance"/>
+                <field name="sequence">2</field>
+	            <field name="value">Marginal  demonstration skills and behaviors required for the role</field>
+	        </record>
+	        <record id="performance_answer3" model="survey.label">
+	            <field name="question_id" ref="performance"/>
+                <field name="sequence">3</field>
+	            <field name="value">Good demonstration skills and behaviors required for the role</field>
+	        </record>
+	        <record id="performance_answer4" model="survey.label">
+	            <field name="question_id" ref="performance"/>
+                <field name="sequence">4</field>
+	            <field name="value">Very good demonstration skills and behaviors required for the role</field>
+	        </record>
+	        <record id="performance_answer5" model="survey.label">
+	            <field name="question_id" ref="performance"/>
+                <field name="sequence">5</field>
+	            <field name="value">Excellent demonstration skills and behaviors required for the role</field>
+	        </record>
+        
+        <record id="general_summary" model="survey.question">
+            <field name="question">General Summary (Over all comments and reason for decision or areas to probe further)</field>   
+            <field name="type">free_text</field>
+            <field name="page_id" ref="candidate_assessment_form_page1"/> 
+            <field eval="8" name="sequence"/>
+        </record>
+
+        <!--page-3-->
+        <record id="salary" model="survey.question">
+            <field name="question">Expected Salary</field>   
+            <field name="type">textbox</field>
+            <field name="page_id" ref="candidate_assessment_form_page3"/> 
+            <field eval="1" name="sequence"/>
+        </record>
+        <record id="benefits" model="survey.question">
+            <field name="question">Benefits</field>   
+            <field name="type">textbox</field>
+            <field name="page_id" ref="candidate_assessment_form_page3"/> 
+            <field eval="2" name="sequence"/>
+        </record>
+        <record id="allowances" model="survey.question">
+            <field name="question">Allowances</field>   
+            <field name="type">textbox</field>
+            <field name="page_id" ref="candidate_assessment_form_page3"/> 
+            <field eval="3" name="sequence"/>
+        </record>
+        <record id="other_allow" model="survey.question">
+            <field name="question">Other</field>   
+            <field name="type">textbox</field>
+            <field name="page_id" ref="candidate_assessment_form_page3"/> 
+            <field eval="4" name="sequence"/>
+        </record>
+        
+        <record id="recommendation" model="survey.question">
+            <field name="question">Recommendation</field>   
+            <field name="type">simple_choice</field>
+            <field name="constr_mandatory" eval="True" />
+            <!-- <field name="labels_ids" eval="[(6,0,[recommendation_answer1,recommendation_answer2,recommendation_answer3,recommendation_answer4,recommendation_answer5])]"/> -->
+            <field name="page_id" ref="candidate_assessment_form_page3"/> 
+            <field eval="11" name="sequence"/>
+        </record>
+            <record id="recommendation_answer1" model="survey.label">
+                <field name="question_id" ref="recommendation"/>
+                <field name="sequence">1</field>
+	            <field name="value">Hire</field>
+	        </record>
+	        <record id="recommendation_answer2" model="survey.label">
+	        <field name="question_id" ref="recommendation"/>
+                <field name="sequence">2</field>
+	            <field name="value">Reject</field>
+	        </record>
+	        <record id="recommendation_answer3" model="survey.label">
+	            <field name="question_id" ref="recommendation"/>
+                <field name="sequence">3</field>
+	            <field name="value">Hold</field>
+	        </record>
+	        <record id="recommendation_answer4" model="survey.label">
+	            <field name="question_id" ref="recommendation"/>
+                <field name="sequence">4</field>
+	            <field name="value">Further interview</field>
+	        </record>
+	        <record id="recommendation_answer5" model="survey.label">
+	            <field name="question_id" ref="recommendation"/>
+                <field name="sequence">5</field>
+	            <field name="value">Other</field>
+	        </record>
+        
+        <!--page-2-->
+        <record id="reason" model="survey.question">
+            <field name="question">Reason for Leaving; Reason for joining your company Career plans</field>   
+            <field name="type">textbox</field>   
+            <field name="page_id" ref="candidate_assessment_form_page2"/> 
+            <field eval="1" name="sequence"/>
+        </record>
+        <record id="current_salary" model="survey.question">
+            <field name="question">Current Salary and benefits and sought salary/notice period</field>   
+            <field name="type">textbox</field>   
+            <field name="page_id" ref="candidate_assessment_form_page2"/> 
+            <field eval="2" name="sequence"/>
+        </record>
+        <record id="work_permit" model="survey.question">
+            <field name="question">Work Permit required (if yes please specify)</field>   
+            <field name="type">textbox</field>   
+            <field name="page_id" ref="candidate_assessment_form_page2"/> 
+            <field eval="3" name="sequence"/>
+        </record>
+        
+        <record id="business_focus" model="survey.question">
+            <field name="question">Business Focus - 
+E.g. What do you consider to be the most significant factors currently affecting business?
+What are the biggest challenges faced by professional service firms?
+What business opportunities you have spotted in your current or previous role?
+</field>   
+            <field name="type">textbox</field>
+            <field name="page_id" ref="candidate_assessment_form_page2"/> 
+            <field eval="4" name="sequence"/>
+        </record>
+        
+        <record id="accountability" model="survey.question">
+            <field name="question">Accountability – 
+E.g. Give me an example of a time when you recently took on additional responsibility? 
+Discuss a difficult situation that you have handled recently? 
+Give example of a time when you had to demonstrate high levels of drive to achieve goals?  
+</field>   
+            <field name="type">textbox</field>
+            <field name="page_id" ref="candidate_assessment_form_page2"/> 
+            <field eval="5" name="sequence"/>
+        </record>
+        
+        
+        <record id="drive_and_resilience" model="survey.question">
+            <field name="question">Drive and Resilience – 
+E.g. Describe your proudest achievement? 
+Ask about the goals set in last few years? 
+What you have found particularly challenging at work?  
+</field>   
+            <field name="type">textbox</field>
+            <field name="page_id" ref="candidate_assessment_form_page2"/> 
+            <field eval="6" name="sequence"/>
+        </record>
+        
+        <record id="feedback_and_learning" model="survey.question">
+            <field name="question">Feedback and Learning – 
+E.g. How do you keep up to date with the development in your specialist area? 
+Have you carried out coaching/development responsibilities with members of your team? From what aspects of work you have learnt most during your career?  
+</field>   
+            <field name="type">textbox</field>
+            <field name="page_id" ref="candidate_assessment_form_page2"/> 
+            <field eval="7" name="sequence"/>
+        </record>
+        
+        <record id="developing_people" model="survey.question">
+            <field name="question">Developing People– 
+E.g. Tell me how you provide direction to your staff? 
+Discuss the situation which best describe your leadership style? 
+What is your vision for your discipline/market?
+</field>   
+            <field name="type">textbox</field>
+            <field name="page_id" ref="candidate_assessment_form_page2"/> 
+            <field eval="8" name="sequence"/>
+        </record>
+        
+        
+        <record id="building_relationships" model="survey.question">
+            <field name="question">Building Relationships– 
+E.g. Discuss about the situation when the opinion of others with in a team caused you to change your approach? 
+What feedback have other given about your role within a team? 
+Do you see yourself primarily as a team member or a team leader and what brings you to the view?
+</field>   
+            <field name="type">textbox</field>
+            <field name="page_id" ref="candidate_assessment_form_page2"/> 
+            <field eval="9" name="sequence"/>
+        </record>
+        
+        <record id="problem_solving" model="survey.question">
+            <field name="question">Problem Solving– 
+E.g. Can you think of an assignment, part or all of which you needed a new approach and how did you decide on that approach? 
+Can you tell about a complex problem you have had to overcome in your work recently?
+</field>   
+            <field name="type">textbox</field>
+            <field name="page_id" ref="candidate_assessment_form_page2"/> 
+            <field eval="10" name="sequence"/>
+        </record>
+        
+        <record id="making_an_impact" model="survey.question">
+            <field name="question">Making an Impact– 
+E.g. Discuss about the situation when you have persuaded some one to your point of view? 
+Give me a recent example of when you negotiated a successful outcome?
+</field>   
+            <field name="type">textbox</field>
+            <field name="page_id" ref="candidate_assessment_form_page2"/> 
+            <field eval="11" name="sequence"/>
+        </record>
+        
+        <record id="professionalism" model="survey.question">
+            <field name="question">Professionalism– 
+E.g. How do you ensure your work is of a constantly high standard? 
+Give example to deal with the angry and dissatisfied client? 
+How do you monitor and control the performance of people in your team?
+</field>   
+            <field name="type">textbox</field>
+            <field name="page_id" ref="candidate_assessment_form_page2"/> 
+            <field eval="12" name="sequence"/>
+        </record>
+        
+        <record id="delivering_quality_service" model="survey.question">
+            <field name="question">Delivering Quality Service– 
+E.g. How successful have you been in retaining clients, give example? 
+How you determine your client needs? 
+How you dealt with most difficult client?
+</field>   
+            <field name="type">textbox</field>
+            <field name="page_id" ref="candidate_assessment_form_page2"/> 
+            <field eval="13" name="sequence"/>
+        </record>
+        
+        
+        <record id="career_motivation" model="survey.question">
+            <field name="question">Career Motivation– 
+E.g. Why have you applied for this role? 
+What you will enjoy most/least about this role? 
+What will you find most challenging? 
+What differentiates Your company? 
+What are your longer terms career plans?
+</field>   
+            <field name="type">textbox</field>
+            <field name="page_id" ref="candidate_assessment_form_page2"/> 
+            <field eval="14" name="sequence"/>
+        </record>
+        
+        <record id="technical_knowledge" model="survey.question">
+            <field name="question">Technical Knowledge</field>   
+            <field name="type">free_text</field>
+            <field name="page_id" ref="candidate_assessment_form_page2"/> 
+            <field eval="15" name="sequence"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <!-- GR config -->
+        <menuitem id="menu_hr_employee_rec_visa" name="Recruiter Visa Request" parent="slnee_hr.menu_gr"
+                  sequence="6" action="action_hr_employee_rec_visa" groups="hr.group_hr_user"/>
+</odoo>

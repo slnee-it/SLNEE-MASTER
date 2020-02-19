@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!--survey-->
+        <record model="survey.survey" id="exit_employee_form">
+            <field name="title">Exit Questionnaire (staff)</field>
+            <!-- <field name="response_user">0</field> -->
+        </record>
+
+        <!--survey_pages-->
+        <record id="exit_employee_form_page1" model="survey.page">
+            <field name="title">Exit Questionnaire (staff)</field>
+            <field name="survey_id" ref="exit_employee_form"/>
+            <field eval="1" name="sequence"/>
+        </record>
+
+        <record id="exit_employee_form_page2" model="survey.page">
+            <field name="title">Please rate the main reasons behind your leave: </field>
+            <field name="survey_id" ref="exit_employee_form"/>
+            <field eval="2" name="sequence"/>
+        </record>
+
+        <record id="exit_employee_form_page3" model="survey.page">
+            <field name="title">Others:
+                                Please specify </field>
+            <field name="survey_id" ref="exit_employee_form"/>
+            <field eval="3" name="sequence"/>
+        </record>
+
+
+    <!--Question-->
+    <!--page-1-->
+        <record id="staff_name" model="survey.question">
+            <field name="question">Employee Name</field>
+            <field name="type">textbox</field>
+            <field name="constr_mandatory" eval="True" />
+            <field name="page_id" ref="exit_employee_form_page1"/>
+            <field eval="1" name="sequence"/>
+        </record>
+        <record id="line_manager_name" model="survey.question">
+            <field name="question">Manager's Name</field>
+            <field name="type">textbox</field>
+            <field name="constr_mandatory" eval="True" />
+            <field name="page_id" ref="exit_employee_form_page1"/>
+            <field eval="3" name="sequence"/>
+        </record>
+        <record id="staff_department" model="survey.question">
+            <field name="question">Department</field>
+            <field name="type">textbox</field>
+            <field name="constr_mandatory" eval="True" />
+            <field name="page_id" ref="exit_employee_form_page1"/>
+            <field eval="4" name="sequence"/>
+        </record>
+
+   <!--page-2-->
+        <record id="leave_reason_q1_answer1" model="survey.label">
+            <field name="value">Major reason</field>
+        </record>
+        <record id="leave_reason_q1_answer2" model="survey.label">
+            <field name="value">Minor reason</field>
+        </record>
+        <record id="leave_reason_q1_answer3" model="survey.label">
+            <field name="value">Not a reason</field>
+        </record>
+        <record id="leave_reason_question1" model="survey.question">
+            <field name="question">Compensation and Benefits</field>
+            <field name="type">simple_choice</field>
+            <field name="labels_ids" eval="[(4, ref('leave_reason_q1_answer1')), (4, ref('leave_reason_q1_answer2')), (4, ref('leave_reason_q1_answer3'))]"/>
+            <field name="page_id" ref="exit_employee_form_page2"/>
+            <field eval="1" name="sequence"/>
+        </record>
+
+        <record id="leave_reason_q2_answer1" model="survey.label">
+            <field name="value">Major reason</field>
+        </record>
+        <record id="leave_reason_q2_answer2" model="survey.label">
+            <field name="value">Minor reason</field>
+        </record>
+        <record id="leave_reason_q2_answer3" model="survey.label">
+            <field name="value">Not a reason</field>
+        </record>
+        <record id="leave_reason_question2" model="survey.question">
+            <field name="question">Career Development (training, learning, promotion, etc.)</field>
+            <field name="type">simple_choice</field>
+            <field name="labels_ids" eval="[(4, ref('leave_reason_q2_answer1')), (4, ref('leave_reason_q2_answer2')), (4, ref('leave_reason_q2_answer3'))]"/>
+            <field name="page_id" ref="exit_employee_form_page2"/>
+            <field eval="2" name="sequence"/>
+        </record>
+
+
+        <record id="leave_reason_q3_answer1" model="survey.label">
+            <field name="value">Major reason</field>
+        </record>
+        <record id="leave_reason_q3_answer2" model="survey.label">
+            <field name="value">Minor reason</field>
+        </record>
+        <record id="leave_reason_q3_answer3" model="survey.label">
+            <field name="value">Not a reason</field>
+        </record>
+        <record id="leave_reason_question3" model="survey.question">
+            <field name="question">Your immediate Manager/ supervisor (style, leadership, etc.)</field>
+            <field name="type">simple_choice</field>
+            <field name="labels_ids" eval="[(4, ref('leave_reason_q3_answer1')), (4, ref('leave_reason_q3_answer2')),(4, ref('leave_reason_q3_answer3'))]"/>
+            <field name="page_id" ref="exit_employee_form_page2"/>
+            <field eval="3" name="sequence"/>
+        </record>
+
+        <record id="leave_reason_q4_answer1" model="survey.label">
+            <field name="value">Major reason</field>
+        </record>
+        <record id="leave_reason_q4_answer2" model="survey.label">
+            <field name="value">Minor reason</field>
+        </record>
+        <record id="leave_reason_q4_answer3" model="survey.label">
+            <field name="value">Not a reason</field>
+        </record>
+        <record id="leave_reason_question4" model="survey.question">
+            <field name="question">Environment (peers, atmosphere management support, office setup…etc.)</field>
+            <field name="type">simple_choice</field>
+            <field name="labels_ids" eval="[(4, ref('leave_reason_q4_answer1')), (4, ref('leave_reason_q4_answer2')), (4, ref('leave_reason_q4_answer3'))]"/>
+            <field name="page_id" ref="exit_employee_form_page2"/>
+            <field eval="4" name="sequence"/>
+        </record>
+
+        <record id="leave_reason_q5_answer1" model="survey.label">
+            <field name="value">Major reason</field>
+        </record>
+        <record id="leave_reason_q5_answer2" model="survey.label">
+            <field name="value">Minor reason</field>
+        </record>
+        <record id="leave_reason_q5_answer3" model="survey.label">
+            <field name="value">Not a reason</field>
+        </record>
+        <record id="leave_reason_question5" model="survey.question">
+            <field name="question">Nature of the job (Job not interesting)</field>
+            <field name="type">simple_choice</field>
+            <field name="labels_ids" eval="[(4, ref('leave_reason_q5_answer1')), (4, ref('leave_reason_q5_answer2')), (4, ref('leave_reason_q5_answer3'))]"/>
+            <field name="page_id" ref="exit_employee_form_page2"/>
+            <field eval="5" name="sequence"/>
+        </record>
+
+
+        <record id="leave_reason_q6_answer1" model="survey.label">
+            <field name="value">Major reason</field>
+        </record>
+        <record id="leave_reason_q6_answer2" model="survey.label">
+            <field name="value">Minor reason</field>
+        </record>
+        <record id="leave_reason_q6_answer3" model="survey.label">
+            <field name="value">Not a reason</field>
+        </record>
+        <record id="leave_reason_question6" model="survey.question">
+            <field name="question">Work Load / Stress / working hours </field>
+            <field name="type">simple_choice</field>
+            <field name="labels_ids" eval="[(4, ref('leave_reason_q6_answer1')), (4, ref('leave_reason_q6_answer2')), (4, ref('leave_reason_q6_answer3'))]"/>
+            <field name="page_id" ref="exit_employee_form_page2"/>
+            <field eval="6" name="sequence"/>
+        </record>
+
+
+        <record id="leave_reason_q7_answer1" model="survey.label">
+            <field name="value">Major reason</field>
+        </record>
+        <record id="leave_reason_q7_answer2" model="survey.label">
+            <field name="value">Minor reason</field>
+        </record>
+        <record id="leave_reason_q7_answer3" model="survey.label">
+            <field name="value">Not a reason</field>
+        </record>
+        <record id="leave_reason_question7" model="survey.question">
+            <field name="question">Personal reasons </field>
+            <field name="type">simple_choice</field>
+            <field name="labels_ids" eval="[(4, ref
+                ('leave_reason_q7_answer1')), (4, ref('leave_reason_q7_answer2')), (4, ref('leave_reason_q7_answer3'))]"/>
+            <field name="page_id" ref="exit_employee_form_page2"/>
+            <field eval="7" name="sequence"/>
+        </record>
+
+    <!--page-3-->
+        <record id="assessment" model="survey.question">
+            <field name="question">Overall assessment
+(Please tell us about any improvements company can make to avoid one or more of the above main leaving reasons)</field>
+            <field name="type">free_text</field>
+            <field name="constr_mandatory" eval="True" />
+            <field name="page_id" ref="exit_employee_form_page3"/>
+            <field eval="1" name="sequence"/>
+        </record>
+        <record id="advantage" model="survey.question">
+            <field name="question">Advantages of working in your company
+(Please identify advantages of working in your company)</field>
+            <field name="type">free_text</field>
+            <field name="constr_mandatory" eval="True" />
+            <field name="page_id" ref="exit_employee_form_page3"/>
+            <field eval="2" name="sequence"/>
+        </record>
+
+        <record id="future_prospects_q1_answer1" model="survey.label">
+            <field name="value">Yes</field>
+        </record>
+        <record id="future_prospects_q1_answer2" model="survey.label">
+            <field name="value">No</field>
+        </record>
+
+        <record id="future_prospects_question1" model="survey.question">
+            <field name="question">I would consider joining your company in the future in the same Department</field>
+            <field name="type">simple_choice</field>
+            <field name="labels_ids" eval="[(4, ref('future_prospects_q1_answer1')), (4, ref('future_prospects_q1_answer2'))]"/>
+            <field name="constr_mandatory" eval="True" />
+            <field name="page_id" ref="exit_employee_form_page3"/>
+            <field eval="3" name="sequence"/>
+        </record>
+
+        <record id="future_prospects_q2_answer1" model="survey.label">
+            <field name="value">Yes</field>
+        </record>
+        <record id="future_prospects_q2_answer2" model="survey.label">
+            <field name="value">No</field>
+        </record>
+
+        <record id="future_prospects_question2" model="survey.question">
+            <field name="question">I would consider joining your company in the future in a different Department</field>
+            <field name="type">simple_choice</field>
+            <field name="labels_ids" eval="[(4, ref('future_prospects_q2_answer1')), (4, ref('future_prospects_q2_answer2'))]"/>
+            <field name="constr_mandatory" eval="True" />
+            <field name="page_id" ref="exit_employee_form_page3"/>
+            <field eval="4" name="sequence"/>
+        </record>
+
+        <record id="future_prospects_q3_answer1" model="survey.label">
+            <field name="value">Yes</field>
+        </record>
+        <record id="future_prospects_q3_answer2" model="survey.label">
+            <field name="value">No</field>
+        </record>
+
+        <record id="future_prospects_question3" model="survey.question">
+            <field name="question">I would consider working with my manager in the future in a different Organization </field>
+            <field name="type">simple_choice</field>
+            <field name="labels_ids" eval="[(4, ref('future_prospects_q3_answer1')),(4, ref('future_prospects_q3_answer2'))]"/>
+            <field name="constr_mandatory" eval="True" />
+            <field name="page_id" ref="exit_employee_form_page3"/>
+            <field eval="5" name="sequence"/>
+        </record>
+
+        <record id="new_job_q1_answer1" model="survey.label">
+            <field name="value">Yes</field>
+        </record>
+        <record id="new_job_q1_answer2" model="survey.label">
+            <field name="value">No</field>
+        </record>
+
+        <record id="new_job_question1" model="survey.question">
+            <field name="question">Are you intending to continue working immediately?</field>
+            <field name="type">simple_choice</field>
+            <field name="labels_ids" eval="[(4, ref('new_job_q1_answer1')),(4, ref('new_job_q1_answer2'))]"/>
+            <field name="constr_mandatory" eval="True" />
+            <field name="page_id" ref="exit_employee_form_page3"/>
+            <field eval="7" name="sequence"/>
+        </record>
+
+        <record id="new_job_q2_answer1" model="survey.label">
+            <field name="value">Yes</field>
+        </record>
+        <record id="new_job_q2_answer2" model="survey.label">
+            <field name="value">No</field>
+        </record>
+
+        <record id="new_job_question2" model="survey.question">
+            <field name="question">Does your new position offer higher remuneration?
+</field>
+            <field name="type">simple_choice</field>
+            <field name="labels_ids" eval="[(4, ref('new_job_q2_answer1')),(4, ref('new_job_q2_answer2'))]"/>
+            <field name="constr_mandatory" eval="True" />
+            <field name="page_id" ref="exit_employee_form_page3"/>
+            <field eval="8" name="sequence"/>
+        </record>
+
+        <record id="new_job_q3_answer1" model="survey.label">
+            <field name="value">Yes</field>
+        </record>
+        <record id="new_job_q3_answer2" model="survey.label">
+            <field name="value">No</field>
+        </record>
+
+        <record id="new_job_question3" model="survey.question">
+            <field name="question">Does your new position offer greater career responsibility?
+</field>
+            <field name="type">simple_choice</field>
+            <field name="labels_ids" eval="[(4, ref('new_job_q3_answer1')), (4, ref('new_job_q3_answer2'))]"/>
+            <field name="constr_mandatory" eval="True" />
+            <field name="page_id" ref="exit_employee_form_page3"/>
+            <field eval="9" name="sequence"/>
+        </record>
+    </data>
+</odoo>

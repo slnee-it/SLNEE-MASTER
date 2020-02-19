@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+     <!-- Leaves Deduction -->
+    <record id="hr_salary_rule_leave_deduction" model="hr.salary.rule">
+        <field name="name">Leaves Deduction</field>
+        <field name="category_id" ref="hr_payroll.DED"/>
+        <field name="code">Unpaid Leave</field>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = (worked_days.unpaid_leave and worked_days.unpaid_leave.number_of_days > 0)</field>
+        <field name="sequence" eval="120"/>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result=-((contract.wage/30)*
+                                                     ((worked_days.unpaid_leave and worked_days.unpaid_leave.number_of_days)
+                                                    +(worked_days.sick_leaves and worked_days.sick_leaves.number_of_days)
+                                                    +(worked_days.maternity_leave and worked_days.maternity_leave.number_of_days)) or 0)</field>
+    </record>
+
+    <!-- Salary Structure -->
+     <record id="hr_payroll.structure_base" model="hr.payroll.structure">
+        <field name="name">Company Salary Structures</field>
+        <field name="rule_ids" eval="[(4,ref('hr_salary_rule_leave_deduction'))]" />
+        <field name="company_id" ref="base.main_company"/>
+    </record>
+
+</odoo>

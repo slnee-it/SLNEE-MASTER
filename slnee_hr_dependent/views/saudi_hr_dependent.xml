@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="slnee_hr_dependent_view_employee_form" model="ir.ui.view">
+        <field name="name">saudi.hr.dependent.employee.form</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <button name="toggle_active" position="before">
+                <field name="dependent_ids" invisible="1"/>
+                <button name="action_dependents" type="object" class="oe_stat_button" icon="fa fa-users" groups="base.group_user" help="Dependent">
+                    <field string="Dependents" name="dependent_count" widget="statinfo"/>
+                </button>
+            </button>
+        </field>
+    </record>
+
+    <record id="employee_dependent_view_form" model="ir.ui.view">
+        <field name="name">employee.dependent.form</field>
+        <field name="model">employee.dependent</field>
+        <field name="arch" type="xml">
+            <form string="Dependent">
+                <header>
+                </header>
+                <sheet>
+                    <group>
+                        <group name="personal_info" string="Personal Information">
+                            <field name="name"/>
+                            <field name="arabic_name"/>
+                            <field name="employee_id" invisible="1"/>
+                            <field name="birthdate" />
+                            <field name="nationality" placeholder="Country of Person" />
+                            <field name="relation"/>
+                            <field name="dependent_type" invisible="1"/>
+                            <field name="religion" attrs="{'invisible': [('is_saudi','=',True)]}"/>
+                            <field name="is_saudi" invisible="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Document">
+                            <field name="document_ids" context="{'default_employee_id':employee_id}"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+     <record id="employee_dependent_view_tree" model="ir.ui.view">
+        <field name="name">employee.dependent.tree</field>
+        <field name="model">employee.dependent</field>
+        <field name="arch" type="xml">
+            <tree string="Dependent">
+                <field name="name" />
+                <field name="employee_id" invisible="1"/>
+                <field name="birthdate" />
+                <field name="relation"/>
+                <field name="nationality" string='Nationality'/>
+                <field name="dependent_type" invisible="1"/>
+                <field name="is_saudi" invisible="1"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_employee_dependent">
+        <field name="name">Dependent</field>
+        <field name="res_model">employee.dependent</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">search,tree,form</field>
+        <field name="context">{'search_default_group_state': 1, 'search_default_group_employee_id': 1}</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Click to define a new Document Type.</p>
+        </field>
+    </record>
+
+</odoo>

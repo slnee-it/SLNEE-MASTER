@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <!-- Scheduler for Expiration of Employee's Document -->
+    <record forcecreate="True" id="ir_cron_documents_scheduler_action" model="ir.cron">
+        <field name="name">Scheduled Employee's Documents Expiration</field>
+        <field name="model_id" ref="model_res_documents"/>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="numbercall">-1</field>
+        <field eval="False" name="doall"/>
+        <field name="state">code</field>
+        <field name="code">model.run_scheduler()</field>
+        <field name="doall" eval="False"/>
+    </record>
+
+    <!--Employee's Documents Expiration Notification template -->
+    <record id="email_template_res_documents_notify" model="mail.template">
+        <field name="name">Document Expiration Notification - Send by Email</field>
+        <field name="email_from"><![CDATA[${'noreply@localhost'}]]></field>
+        <field name="subject">${object.employee_id.name} Document Expiration</field>
+        <field name="model_id" ref="res_documents.model_res_documents"/>
+        <field name="auto_delete" eval="True"/>
+        <field name="body_html"><![CDATA[
+            <div style="font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255); ">
+                <p>Hello, <strong>${object.employee_id.name}</strong></p>
+                <p>This is to inform you that your document <strong>${object.type_id.name}</strong> will expire at the close of business hours on <strong>${object.expiry_date}</strong> by operation of law. You shall be notified in writing within the date or after this date should renew your <strong>${object.type_id.name}</strong> </p>
+                <p>For more information see below details,</p>
+                <p style="border-left: 1px solid #8e0000; margin-left: 30px;">
+                   &nbsp;&nbsp;<strong>REFERENCES</strong><br />
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subject: <strong>${object.employee_id.name}'s ${object.type_id.name} Expiration</strong><br />
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Employee: ${object.employee_id.name}<br />
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document: ${object.type_id.name}<br />
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Duration: <strong> ${object.issue_date} - ${object.expiry_date} </strong><br />
+                </p>
+                <p> This Document will be expired on <strong> ${object.expiry_date} </strong>.</p>
+                <br/><br/>
+                Thanks,<br/>
+                Administrator.
+            </div>
+        ]]></field>
+    </record>
+</odoo>

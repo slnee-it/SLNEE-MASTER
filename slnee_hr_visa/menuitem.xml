@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <report
+        id="business_visa_new"
+        string="Embassy Business Visa Report"
+        model="hr.visa"
+        name="slnee_hr_visa.business_visa_report_new"
+        report_type="qweb-pdf"
+        file="slnee_hr_visa.business_visa_report_new"
+        attachment="(object.employee_id.name + '.pdf')"/>
+
+    <report
+        id="embassy_visitvisa_new"
+        string="Embassy Visit Visa Report"
+        model="hr.visa"
+        name="slnee_hr_visa.embassy_visit_visa_report_new"
+        report_type="qweb-pdf"
+        file="slnee_hr_visa.embassy_visit_visa_report_new"
+        attachment="(object.employee_id.name + '.pdf')"/>
+
+    <report
+        id="visit_visa_new"
+        string="Visit Visa Report"
+        model="hr.visa"
+        name="slnee_hr_visa.visit_visa_report_new"
+        report_type="qweb-pdf"
+        file="slnee_hr_visa.visit_visa_report_new"
+        attachment="(object.employee_id.name + '.pdf')"/>
+</odoo>

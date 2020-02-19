@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- from  hr_overtime -->
+    <record id="view_hr_overtime_payslip_form" model="ir.ui.view">
+        <field name="name">hr.overtime.payslip.form</field>
+        <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
+        <field name="model">hr.payslip</field>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='credit_note']" position="after">
+                <field name="payment_days" />
+            </xpath>
+            <xpath expr="//field[@name='worked_days_line_ids']/tree/field[@name='contract_id']" position="attributes">
+                <attribute name="domain">"[('employee_id','=',parent.employee_id),('date_start','&lt;=',parent.date_to),'|',('date_end','&gt;=',parent.date_from),('date_end','=',False)]"</attribute>
+            </xpath>
+            <xpath expr="//field[@name='input_line_ids']/tree/field[@name='contract_id']" position="attributes">
+                <attribute name="domain">"[('employee_id','=',parent.employee_id),('date_start','&lt;=',parent.date_to),'|',('date_end','&gt;=',parent.date_from),('date_end','=',False)]"</attribute>
+            </xpath>
+            <xpath expr="//field[@name='line_ids']/tree/field[@name='quantity']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Payslip journal id -->
+    <record id="hr_contract_form_inherit1" model="ir.ui.view">
+        <field name="name">hr.contract.view.form.inherit</field>
+        <field name="model">hr.contract</field>
+        <field name="inherit_id" ref="hr_payroll_account.hr_contract_form_inherit"/>
+        <field name="arch" type="xml">
+            <field name="journal_id" position="attributes">
+                <attribute name="required">1</attribute>
+            </field>
+        </field>
+    </record>
+
+</odoo>

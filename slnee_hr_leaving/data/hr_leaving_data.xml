@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--HR Employee Leaving related subtypes for messaging / Chatter -->
+    <record id="mt_employee_leaving_new" model="mail.message.subtype">
+        <field name="name">Leaving Created</field>
+        <field name="res_model">hr.employee.leaving</field>
+        <field name="default" eval="False"/>
+        <field name="description">Leaving Created</field>
+    </record>
+    <record id="mt_employee_leaving_confirm" model="mail.message.subtype">
+        <field name="name">Leaving Confirmed</field>
+        <field name="res_model">hr.employee.leaving</field>
+        <field name="description">Leaving Confirmed</field>
+    </record>
+    <record id="mt_employee_leaving_validate" model="mail.message.subtype">
+        <field name="name">Leaving Validated</field>
+        <field name="res_model">hr.employee.leaving</field>
+        <field name="default" eval="False"/>
+        <field name="description">Leaving Validated</field>
+    </record>
+    <record id="mt_employee_leaving_approve" model="mail.message.subtype">
+        <field name="name">Leaving Approved</field>
+        <field name="res_model">hr.employee.leaving</field>
+        <field name="description">Leaving Approved</field>
+    </record>
+    <record id="mt_employee_leaving_cancel" model="mail.message.subtype">
+        <field name="name">Leaving Refused</field>
+        <field name="res_model">hr.employee.leaving</field>
+        <field name="default" eval="False"/>
+        <field name="description">Leaving Refused</field>
+    </record>
+    <record id="mt_employee_leaving_stage" model="mail.message.subtype">
+        <field name="name">Stage Changed</field>
+        <field name="res_model">hr.employee.leaving</field>
+        <field name="default" eval="False"/>
+        <field name="description">Stage changed</field>
+    </record>
+</odoo>

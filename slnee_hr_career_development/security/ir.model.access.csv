@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_career_development_user,access_career_development_user,model_hr_career_development,base.group_user,1,0,0,0
+access_career_development_manager,access_career_development_manager,model_hr_career_development,hr.group_hr_manager,1,1,1,1
+access_career_development_lines_user,access_career_development_lines_user,model_hr_career_development_lines,base.group_user,1,0,0,0
+access_career_development_lines_manager,access_career_development_lines_manager,model_hr_career_development_lines,hr.group_hr_manager,1,1,1,1

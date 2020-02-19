@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="email_template_required_document" model="mail.template">
+        <field name="name">Required document for sponsorship transfer</field>
+        <field name="model_id" ref="slnee_hr_sponsorship_transfer.model_hr_sponsorship_transfer"/>
+        <field name="email_from"><![CDATA[${object.company_id.name} <${(object.company_id.email or user.email)|safe}>]]></field>
+        <field name="email_to">${(object.employee_id.work_email)}</field>
+        <field name="subject">Required Document For Sponsorship Transfer</field>
+        <field name="body_html"><![CDATA[
+            <div style="font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34);
+                background-color: #FFF; ">
+                <p>Hello <b>${object.employee_id.name}</b>,</p>
+                <p><b>Please provide this required document</b></p>
+                <p><b>1.</b> Demand letter from your previous company<br/>
+                   <b>2.</b> All passports (original) valid<br/>
+                   <b>3.</b> Iqama valid original<br/>
+                   <b>4.</b> 3 release letters from the first sponsor to:<br/>
+                   <div style="margin-left: 20px; margin-top: 0px;">
+                        <b>A.</b> Immigration(Jawazat)<br/>
+                        <b>B.</b> Our company<br/>
+                        <b>C.</b> Labor office<br/>
+                   </div>
+                   <b>5.</b> 2 photos<br/>
+                   <b>6.</b> Medical report (on line + hard copy)<br/>
+                   <b>7.</b> Pay traffic plenty (if any)<br/>
+                   <b>8.</b> Agreement on Sponsorship transfer on line in Labor office<br/>
+                   <b>9.</b> Cancel entry exit visa(if you have)<br/>
+                </p>
+                <div style="font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px;
+                color: rgb(34, 34, 34); background-color: #FFF; margin-left: 0px; ">
+                <p>Regards,</p>
+                <p>${(object.company_id.name)}</p>
+            </div>]]>
+        </field>
+        <field name="auto_delete" eval="False"/>
+    </record>
+</odoo>

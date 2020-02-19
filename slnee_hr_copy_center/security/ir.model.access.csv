@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_advance_hr_copy_center_user,access_advance_hr_copy_center,model_copy_center,base.group_user,1,1,1,0
+access_advance_hr_copy_center_admin_user,access_advance_hr_copy_center,model_copy_center,base.group_user,1,1,1,0
+access_advance_hr_copy_center_admin_manager,access_advance_hr_copy_center,model_copy_center,hr_admin.group_admin_manager,1,1,1,1
+access_advance_hr_copy_center_manager,access_advance_hr_copy_center,model_copy_center,hr.group_hr_manager,1,1,1,1
+access_product_line_user,access_product_line,model_product_line,base.group_user,1,1,1,0
+access_product_line_admin_user,access_product_line,model_product_line,base.group_user,1,1,1,0
+access_product_line_admin_manager,access_product_line,model_product_line,hr_admin.group_admin_manager,1,1,1,1
+access_product_line_manager,access_product_line,model_product_line,hr.group_hr_manager,1,1,1,1

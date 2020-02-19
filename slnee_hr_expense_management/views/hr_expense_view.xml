@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="l10n_sa_view_expenses_form_inherit" model="ir.ui.view">
+        <field name="name">l10n_sa.hr.expense.form</field>
+        <field name="model">hr.expense</field>
+        <field name="inherit_id" ref="hr_expense.hr_expense_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='submit_expenses']" position="attributes">
+                <attribute name="string">Submit</attribute>
+            </xpath>
+            <xpath expr="//header" position="inside">
+                <button name="reset_expenses" states="refused" string="Set to Draft" type="object" groups="base.group_user"/>
+            </xpath>
+            <field name="state" widget="statusbar"
+                statusbar_visible="draft,reported,done"
+                position="replace">
+                <field name="state" widget="statusbar"
+                    statusbar_visible="draft,reported,done"
+                    statusbar_colors='{"reported":"blue","refused":"red"}'/>
+            </field>
+            <xpath expr="//field[@name='employee_id']" position="replace">
+                <field name="employee_id"/>
+                <field name="department_id" />
+                <field name="job_id"/>
+                <field name="source" attrs="{'readonly':[('state','not in',['draft'])]}"></field>
+                <field name="visibility_reimburse" invisible="1"/>
+                <field name="include_salary" attrs="{'readonly':[('state','not in',['draft', 'confirm'])]}" />
+            </xpath>
+            <xpath expr="//field[@name='company_id']" position="before">
+                <field name="slip_id" readonly="1"/>
+            </xpath>
+            <xpath expr="//field[@name='total_amount']" position="attributes">
+                <attribute name="attrs">{'invisible':True}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='date']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='tax_ids']" position="after">
+                <field name="date"/>
+            </xpath>
+            <xpath expr="//field[@name='date']" position="attributes">
+                <attribute name="string">Requested Date</attribute>
+            </xpath>
+            <xpath expr="//field[@name='date']" position="after">
+                <field name="requested_by" attrs="{'readonly':[('state','not in',['draft'])]}" />
+            </xpath>
+            <xpath expr="//field[@name='company_id']" position="attributes">
+                <attribute name="attrs">{'readonly':[('state','not in',['draft','confirm'])]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='description']" position="replace">
+                <notebook>
+                    <page string="Description">
+                        <group>
+                            <div>
+                                <field name="description" placeholder="Free Notes"/>
+                            </div>
+                            <group class="oe_subtotal_footer oe_right">
+                                <field name="employee_contribution"/>
+                                <field name="company_contribution" attrs="{'readonly':[('state','not in',['draft', 'confirm'])]}"/>
+                                <field name="total_amount" class="oe_subtotal_footer_separator"/>
+                            </group>
+                        </group>
+                    </page>
+                    <page string="Extra Information" groups="base.group_no_one">
+                        <group name="extra_info" col="4">
+                            <field name="create_uid" readonly="1"/>
+                            <field name="create_date" readonly="1"/>
+                            <field name="write_uid" readonly="1"/>
+                            <field name="write_date" readonly="1"/>
+                            <field name="refused_by" attrs="{'invisible':[('refused_by','=',False)]}"/>
+                            <field name="refused_date" attrs="{'invisible':[('refused_date','=',False)]}"/>
+                        </group>
+                    </page>
+                </notebook>
+            </xpath>
+            <xpath expr="//field[@name='payment_mode']" position="attributes">
+                <attribute name="attrs">{'invisible':True}</attribute>
+            </xpath>
+            <xpath expr="//label[@for='payment_mode']" position="attributes">
+                <attribute name="attrs">{'invisible':True}</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="slnee_hr_expense_view_hr_expense_sheet_form" model="ir.ui.view">
+        <field name="name">hr.expense.sheet.form</field>
+        <field name="model">hr.expense.sheet</field>
+        <field name="inherit_id" ref="hr_expense.view_hr_expense_sheet_form" />
+        <field name="arch" type="xml">
+            <button name='approve_expense_sheets' position="attributes">
+                <attribute name="states">submit</attribute>
+                <attribute name="groups">hr.group_hr_manager</attribute>
+            </button>
+            <field name="expense_line_ids" position="after">
+                <group col="4" string="Extra Information" attrs="{'invisible':['|','|', ('approved_by','=',False), ('approved_date','=',False), ('date_of_approve','=',False)]}">
+                    <field name="approved_by" attrs="{'invisible':[('approved_by','=',False)]}" readonly="1"/>
+                    <field name="approved_date" attrs="{'invisible':[('approved_date','=',False)]}" readonly="1"/>
+                    <field name="date_of_approve" attrs="{'invisible':[('date_of_approve','=',False)]}" readonly="1"/>
+                </group>
+            </field>
+        </field>
+    </record>
+
+</odoo>

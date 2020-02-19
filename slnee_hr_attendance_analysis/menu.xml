@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Root Menu -->
+    <menuitem id="hr_attendance.menu_hr_attendance_root" name="Attendances" sequence="13" groups="hr_attendance.group_hr_attendance" web_icon="hr_attendance,static/description/icon.png"/>
+
+    <!-- <menuitem id="next_id_56" name="Contract" parent="hr.menu_hr_configuration" sequence="30" groups="base.group_no_one"/> -->
+    <menuitem action="open_view_attendance" id="menu_open_view_attendance" parent="hr_attendance.menu_hr_attendance_root" groups="hr.group_hr_manager"/>
+    <menuitem action="resource.action_resource_calendar_form" id="menu_view_resource_calendar" parent="hr_attendance.menu_hr_attendance_root" sequence="60"/>
+
+</odoo>

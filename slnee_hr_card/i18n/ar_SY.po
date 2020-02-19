@@ -1,0 +1,416 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_card
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-12 09:29+0000\n"
+"PO-Revision-Date: 2018-09-12 09:29+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_card
+#: model:ir.ui.view,arch_db:slnee_hr_card.report_employee_idcard
+msgid "<span><strong>Mail</strong></span>"
+msgstr "<span><strong>بريد</strong></span>"
+
+#. module: slnee_hr_card
+#: model:ir.ui.view,arch_db:slnee_hr_card.report_employee_idcard
+msgid "<strong>Address</strong>"
+msgstr "<strong>عنوان</strong>"
+
+#. module: slnee_hr_card
+#: model:ir.ui.view,arch_db:slnee_hr_card.report_employee_idcard
+msgid "<strong>Birth Date</strong>"
+msgstr "<strong>تاريخ الميلاد</strong>"
+
+#. module: slnee_hr_card
+#: model:ir.ui.view,arch_db:slnee_hr_card.report_employee_idcard
+msgid "<strong>Department</strong>"
+msgstr "<strong> قسم، أقسام</strong>"
+
+#. module: slnee_hr_card
+#: model:ir.ui.view,arch_db:slnee_hr_card.report_employee_idcard
+msgid "<strong>Gender</strong>"
+msgstr "<strong>جنس</strong>"
+
+#. module: slnee_hr_card
+#: model:ir.ui.view,arch_db:slnee_hr_card.report_employee_idcard
+msgid "<strong>Mobile</strong>"
+msgstr "<strong>التليفون المحمول</strong>"
+
+#. module: slnee_hr_card
+#: selection:hr.employee.card,card_type:0
+msgid "Access Card"
+msgstr "بطاقة دخول"
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_access_type
+msgid "Access Type"
+msgstr "نوع الوصول"
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_approved_by
+msgid "Approved By"
+msgstr "التي وافقت عليها"
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_approved_date
+msgid "Approved Date"
+msgstr "التسجيل المعتمدة"
+
+#. module: slnee_hr_card
+#: selection:hr.employee.card,card_type:0
+msgid "Business Card"
+msgstr "بطاقة الأعمال"
+
+#. module: slnee_hr_card
+#: code:addons/slnee_hr_card/models/hr_employee_card.py:63
+#, python-format
+msgid "Card Confirmed."
+msgstr "تم تأكيد البطاقة."
+
+#. module: slnee_hr_card
+#: code:addons/slnee_hr_card/models/hr_employee_card.py:100
+#, python-format
+msgid "Card Created."
+msgstr "بطاقة تم إنشاؤها."
+
+#. module: slnee_hr_card
+#: code:addons/slnee_hr_card/models/hr_employee_card.py:72
+#, python-format
+msgid "Card Done."
+msgstr "البطاقة تم."
+
+#. module: slnee_hr_card
+#: model:ir.ui.view,arch_db:slnee_hr_card.hr_employee_card_form_view
+msgid "Card Information"
+msgstr "معلومات البطاقة"
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_card_no
+#: model:ir.ui.view,arch_db:slnee_hr_card.hr_employee_card_form_view
+msgid "Card No"
+msgstr "بطاقة لا"
+
+#. module: slnee_hr_card
+#: code:addons/slnee_hr_card/models/hr_employee_card.py:90
+#, python-format
+msgid "Card Refused."
+msgstr "رفض بطاقة."
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_card_type
+#: model:ir.ui.view,arch_db:slnee_hr_card.view_hr_employee_card_filter
+msgid "Card Type"
+msgstr "نوع البطاقة"
+
+#. module: slnee_hr_card
+#: code:addons/slnee_hr_card/models/hr_employee_card.py:81
+#, python-format
+msgid "Card is in progress."
+msgstr "البطاقة قيد التقدم."
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: slnee_hr_card
+#: model:ir.ui.view,arch_db:slnee_hr_card.hr_employee_card_form_view
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: slnee_hr_card
+#: model:ir.ui.view,arch_db:slnee_hr_card.view_hr_employee_card_filter
+msgid "Confirmed"
+msgstr "مؤكد"
+
+#. module: slnee_hr_card
+#: selection:hr.employee.card,status:0
+msgid "Consultant"
+msgstr "مستشار"
+
+#. module: slnee_hr_card
+#: selection:hr.employee.card,status:0
+msgid "Contractor"
+msgstr "مقاول"
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_department_id
+#: model:ir.ui.view,arch_db:slnee_hr_card.view_hr_employee_card_filter
+msgid "Department"
+msgstr "القسم"
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_description
+#: model:ir.ui.view,arch_db:slnee_hr_card.hr_employee_card_form_view
+msgid "Description"
+msgstr "الوصف"
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: slnee_hr_card
+#: selection:hr.employee.card,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_card.hr_employee_card_form_view
+msgid "Done"
+msgstr "القيام به"
+
+#. module: slnee_hr_card
+#: selection:hr.employee.card,state:0
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_employee_id
+#: model:ir.ui.view,arch_db:slnee_hr_card.view_hr_employee_card_filter
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: slnee_hr_card
+#: model:ir.actions.act_window,name:slnee_hr_card.action_hr_employee_card_view
+#: model:ir.ui.menu,name:slnee_hr_card.menu_hr_employee_card
+#: model:ir.ui.view,arch_db:slnee_hr_card.hr_employee_card_form_view
+#: model:ir.ui.view,arch_db:slnee_hr_card.hr_employee_card_tree_view
+msgid "Employee Card"
+msgstr "بطاقة موظف"
+
+#. module: slnee_hr_card
+#: model:ir.ui.view,arch_db:slnee_hr_card.hr_employee_card_form_view
+msgid "Employee Information"
+msgstr "معلومات الموظف"
+
+#. module: slnee_hr_card
+#: model:ir.ui.view,arch_db:slnee_hr_card.hr_employee_card_form_view
+msgid "Extra Information"
+msgstr "معلومات اضافية"
+
+#. module: slnee_hr_card
+#: selection:hr.employee.card,access_type:0
+msgid "Full"
+msgstr "كامل"
+
+#. module: slnee_hr_card
+#: model:ir.ui.view,arch_db:slnee_hr_card.view_hr_employee_card_filter
+msgid "Group By..."
+msgstr "تجميع حسب.."
+
+#. module: slnee_hr_card
+#: model:ir.model,name:slnee_hr_card.model_hr_employee_card
+msgid "HR Employee Card"
+msgstr "بطاقة موظف الموارد البشرية"
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: slnee_hr_card
+#: selection:hr.employee.card,card_type:0
+msgid "ID Card"
+msgstr "بطاقة الهوية"
+
+#. module: slnee_hr_card
+#: selection:hr.employee.card,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_card.hr_employee_card_form_view
+msgid "In Progress"
+msgstr "في تقدم"
+
+#. module: slnee_hr_card
+#: model:ir.ui.view,arch_db:slnee_hr_card.view_hr_employee_card_filter
+msgid "Inprogress"
+msgstr "في تقدم"
+
+#. module: slnee_hr_card
+#: model:ir.ui.view,arch_db:slnee_hr_card.view_hr_employee_card_filter
+msgid "Job"
+msgstr "العمل"
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_job_id
+msgid "Job Title"
+msgstr "المسمى الوظيفي"
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: slnee_hr_card
+#: selection:hr.employee.card,access_type:0
+msgid "Limited"
+msgstr "محدود"
+
+#. module: slnee_hr_card
+#: selection:hr.employee.card,reason:0
+msgid "Lost Card"
+msgstr "البطاقة المفقودة"
+
+#. module: slnee_hr_card
+#: model:ir.ui.view,arch_db:slnee_hr_card.view_hr_employee_card_filter
+msgid "Month"
+msgstr "الشهر"
+
+#. module: slnee_hr_card
+#: selection:hr.employee.card,reason:0
+msgid "New Card"
+msgstr "بطاقة جديدة"
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_branch_id
+msgid "Office"
+msgstr "مكتب"
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_period_of_stay
+msgid "Period of Stay"
+msgstr "فترة الإقامة"
+
+#. module: slnee_hr_card
+#: selection:hr.employee.card,status:0
+msgid "Permanent"
+msgstr "دائم"
+
+#. module: slnee_hr_card
+#: model:ir.ui.view,arch_db:slnee_hr_card.hr_employee_card_form_view
+msgid "Print Card"
+msgstr "بطاقة الطباعة"
+
+#. module: slnee_hr_card
+#: model:ir.actions.report,name:slnee_hr_card.action_report_employee_idcard
+msgid "Print ID card"
+msgstr "طباعة بطاقة الهوية"
+
+#. module: slnee_hr_card
+#: model:ir.ui.view,arch_db:slnee_hr_card.hr_employee_card_form_view
+msgid "Put the description here..."
+msgstr "ضع الوصف هنا ..."
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_reason
+msgid "Reason"
+msgstr "السبب"
+
+#. module: slnee_hr_card
+#: model:ir.ui.view,arch_db:slnee_hr_card.hr_employee_card_form_view
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: slnee_hr_card
+#: selection:hr.employee.card,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_card.view_hr_employee_card_filter
+msgid "Refused"
+msgstr "رفض"
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_refused_by
+msgid "Refused By"
+msgstr "رفض بواسطة"
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_refused_date
+msgid "Refused Date"
+msgstr "تاريخ رفض"
+
+#. module: slnee_hr_card
+#: selection:hr.employee.card,reason:0
+msgid "Replace for Damaged"
+msgstr "لاستبدال التالف"
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_requested_date
+msgid "Requested Date"
+msgstr "تاريخ طلب"
+
+#. module: slnee_hr_card
+#: model:ir.ui.view,arch_db:slnee_hr_card.view_hr_employee_card_filter
+msgid "Search Employee Card"
+msgstr "بحث بطاقة الموظف"
+
+#. module: slnee_hr_card
+#: selection:hr.employee.card,status:0
+msgid "Secondee"
+msgstr "منتدب"
+
+#. module: slnee_hr_card
+#: model:ir.ui.view,arch_db:slnee_hr_card.hr_employee_card_form_view
+msgid "Select Employee"
+msgstr "حدد الموظف"
+
+#. module: slnee_hr_card
+#: model:ir.ui.view,arch_db:slnee_hr_card.hr_employee_card_form_view
+msgid "Set to Draft"
+msgstr "تعيين كمسودة"
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_state
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_status
+#: model:ir.ui.view,arch_db:slnee_hr_card.view_hr_employee_card_filter
+msgid "Status"
+msgstr "الحالة "
+
+#. module: slnee_hr_card
+#: model:ir.ui.view,arch_db:slnee_hr_card.view_hr_employee_card_filter
+msgid "To Approve"
+msgstr "للاعتماد"
+
+#. module: slnee_hr_card
+#: selection:hr.employee.card,status:0
+msgid "Visitor"
+msgstr "زائر"
+
+#. module: slnee_hr_card
+#: selection:hr.employee.card,state:0
+msgid "Waiting Approval"
+msgstr "في انتظار الموافقة"
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_work_email
+msgid "Work Email"
+msgstr "البريد الإلكتروني للعمل"
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_work_mobile
+msgid "Work Mobile"
+msgstr "محمول العمل"
+
+#. module: slnee_hr_card
+#: model:ir.model.fields,field_description:slnee_hr_card.field_hr_employee_card_work_phone
+msgid "Work Telephone"
+msgstr "تليفون العمل"
+
+#. module: slnee_hr_card
+#: code:addons/slnee_hr_card/models/hr_employee_card.py:23
+#, python-format
+msgid "You cannot remove the record which is in %s state!"
+msgstr "لا يمكنك إزالة السجل الموجود في حالة٪ s!"
+

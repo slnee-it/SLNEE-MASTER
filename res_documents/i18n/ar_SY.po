@@ -1,0 +1,347 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* res_documents
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-06 12:58+0000\n"
+"PO-Revision-Date: 2018-08-06 12:58+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: res_documents
+#: model:mail.template,body_html:res_documents.email_template_res_documents_notify
+msgid "\n"
+"            <div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255); \">\n"
+"                <p>Hello, <strong>${object.employee_id.name}</strong></p>\n"
+"                <p>This is to inform you that your document <strong>${object.type_id.name}</strong> will expire at the close of business hours on <strong>${object.expiry_date}</strong> by operation of law. You shall be notified in writing within the date or after this date should renew your <strong>${object.type_id.name}</strong> </p>\n"
+"                <p>For more information see below details,</p>\n"
+"                <p style=\"border-left: 1px solid #8e0000; margin-left: 30px;\">\n"
+"                   &nbsp;&nbsp;<strong>REFERENCES</strong><br />\n"
+"                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subject: <strong>${object.employee_id.name}'s ${object.type_id.name} Expiration</strong><br />\n"
+"                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Employee: ${object.employee_id.name}<br />\n"
+"                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document: ${object.type_id.name}<br />\n"
+"                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Duration: <strong> ${object.issue_date} - ${object.expiry_date} </strong><br />\n"
+"                </p>\n"
+"                <p> This Document will be expired on <strong> ${object.expiry_date} </strong>.</p>\n"
+"                <br/><br/>\n"
+"                Thanks,<br/>\n"
+"                Administrator.\n"
+"            </div>\n"
+"        "
+msgstr "\n"
+"            <div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255); \">\n"
+"                <p>مرحبا، <strong>${object.employee_id.name}</strong></p>\n"
+"                <p>هذا هو لإعلامك أن المستند الخاص بك <strong>${object.type_id.name}</strong> ستنتهي في ختام ساعات العمل <strong>${object.expiry_date}</strong> عن طريق تشغيل القانون. يجب أن يتم إخطار خطي في غضون التاريخ أو بعد هذا التاريخ يجب تجديد الخاص بك <strong>${object.type_id.name}</strong> </p>\n"
+"                <p>لمزيد من المعلومات انظر أدناه التفاصيل ،</p>\n"
+"                <p style=\"border-left: 1px solid #8e0000; margin-left: 30px;\">\n"
+"                   &nbsp;&nbsp;<strong>المراجع</strong><br />\n"
+"                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subject: <strong>${object.employee_id.name}الصورة ${object.type_id.name} انتهاء الصلاحية</strong><br />\n"
+"                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Employee: ${object.employee_id.name}<br />\n"
+"                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document: ${object.type_id.name}<br />\n"
+"                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Duration: <strong> ${object.issue_date} - ${object.expiry_date} </strong><br />\n"
+"                </p>\n"
+"                <p> هذه الوثيقة سوف تنتهي صلاحيتها <strong> ${object.expiry_date} </strong>.</p>\n"
+"                <br/><br/>\n"
+"                شكر،<br/>\n"
+"                مدير.\n"
+"            </div>\n"
+"        "
+
+#. module: res_documents
+#: model:mail.template,body_html:res_documents.email_template_res_document_expire
+msgid "\n"
+"        <p>Hello ${object.employee_id.name},</p><br/>\n"
+"        <p style=\"color:red\">Your Document <b>${object.type_id.name}</b> is <b>${object.doc_number}</b> has been expired on ${object.expiry_date}.</p><br/>\n"
+"        <p>Thank you,</p>\n"
+"        <p>${user.name}</p>\n"
+"        "
+msgstr "\n"
+"        <p>مرحبا ${object.employee_id.name},</p><br/>\n"
+"        <p style=\"color:red\">المستند الخاص بك <b>${object.type_id.name}</b> هو <b>${object.doc_number}</b> قد انتهت صلاحيتها ${object.expiry_date}.</p><br/>\n"
+"        <p>شكرا لكم،</p>\n"
+"        <p>${user.name}</p>\n"
+"        "
+
+#. module: res_documents
+#: model:mail.template,body_html:res_documents.email_template_res_document
+msgid "\n"
+"        <p>Hello ${object.employee_id.name},</p><br/>\n"
+"        <p>Your Document <b>${object.type_id.name}</b> is <b>${object.doc_number}</b> has been issue of ${object.issue_date} by ${user.name}.</p><br/>\n"
+"        <p>Thank you,</p>\n"
+"        <p>${user.name}</p>\n"
+"        "
+msgstr "\n"
+"        <p>مرحبا ${object.employee_id.name},</p><br/>\n"
+"        <p>المستند الخاص بك <b>${object.type_id.name}</b> هو <b>${object.doc_number}</b> وقد تم إصدار ${object.issue_date} بواسطة ${user.name}.</p><br/>\n"
+"        <p>شكرا لكم،</p>\n"
+"        <p>${user.name}</p>\n"
+"        "
+
+#. module: res_documents
+#: model:mail.template,subject:res_documents.email_template_res_documents_notify
+msgid "${object.employee_id.name} Document Expiration"
+msgstr "${object.employee_id.name} انتهاء صلاحية الوثيقة"
+
+#. module: res_documents
+#: model:ir.ui.view,arch_db:res_documents.res_documents_view_form
+msgid "Attachment"
+msgstr "مرفق"
+
+#. module: res_documents
+#: model:ir.model.fields,field_description:res_documents.field_res_documents_attachment_ids
+msgid "Attachments"
+msgstr "المُرفقات"
+
+#. module: res_documents
+#: model:ir.actions.act_window,help:res_documents.action_res_document_type
+#: model:ir.actions.act_window,help:res_documents.action_res_documents
+msgid "Click to define a new Document Type."
+msgstr "انقر لتحديد نوع مستند جديد."
+
+#. module: res_documents
+#: model:ir.model.fields,field_description:res_documents.field_res_document_type_code
+msgid "Code"
+msgstr "الشفرة"
+
+#. module: res_documents
+#: sql_constraint:res.document.type:0
+msgid "Code must be unique per Document!"
+msgstr "يجب أن تكون الشفرة فريدة لكل مستند!"
+
+#. module: res_documents
+#: model:ir.model.fields,field_description:res_documents.field_res_documents_company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: res_documents
+#: selection:res.documents,state:0
+msgid "Confirmed"
+msgstr "تم تأكيد"
+
+#. module: res_documents
+#: model:ir.model.fields,field_description:res_documents.field_res_document_type_create_uid
+#: model:ir.model.fields,field_description:res_documents.field_res_documents_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: res_documents
+#: model:ir.model.fields,field_description:res_documents.field_res_document_type_create_date
+#: model:ir.model.fields,field_description:res_documents.field_res_documents_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: res_documents
+#: model:ir.model.fields,field_description:res_documents.field_res_documents_expiry_date
+msgid "Date of Expiry"
+msgstr "تاريخ انتهاء الصلاحية"
+
+#. module: res_documents
+#: model:ir.model.fields,field_description:res_documents.field_res_documents_hijri_expiry_date
+msgid "Date of Expiry(Hijri)"
+msgstr "(تاريخ انتهاء الصلاحية (المقالات"
+
+#. module: res_documents
+#: model:ir.model.fields,field_description:res_documents.field_res_documents_issue_date
+msgid "Date of Issue"
+msgstr "تاريخ الإصدار"
+
+#. module: res_documents
+#: model:ir.model.fields,field_description:res_documents.field_res_document_type_display_name
+#: model:ir.model.fields,field_description:res_documents.field_res_documents_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: res_documents
+#: model:ir.actions.act_window,name:res_documents.action_res_documents
+#: model:ir.model.fields,field_description:res_documents.field_hr_employee_document_ids
+msgid "Document"
+msgstr "وثيقة"
+
+#. module: res_documents
+#: model:ir.ui.view,arch_db:res_documents.res_documents_view_form
+msgid "Document Details"
+msgstr "تفاصيل المستند"
+
+#. module: res_documents
+#: model:mail.template,subject:res_documents.email_template_res_document_expire
+msgid "Document Expire"
+msgstr "وثيقة انتهاء الصلاحية"
+
+#. module: res_documents
+#: model:mail.template,subject:res_documents.email_template_res_document
+msgid "Document Issue"
+msgstr "وثيقة القضية"
+
+#. module: res_documents
+#: model:ir.actions.act_window,name:res_documents.action_res_document_type
+#: model:ir.ui.menu,name:res_documents.menu_hr_document_type
+#: model:ir.ui.view,arch_db:res_documents.view_res_document_type_form
+#: model:ir.ui.view,arch_db:res_documents.view_res_document_type_tree
+msgid "Document Type"
+msgstr "نوع الوثيقة"
+
+#. module: res_documents
+#: model:ir.model.fields,field_description:res_documents.field_hr_employee_documents_count
+#: model:ir.ui.menu,name:res_documents.menu_hr_document
+#: model:ir.ui.view,arch_db:res_documents.res_documents_view_employee_form
+msgid "Documents"
+msgstr "الوثائق"
+
+#. module: res_documents
+#: selection:res.documents,state:0
+msgid "Draft"
+msgstr "مشروع"
+
+#. module: res_documents
+#: model:ir.model,name:res_documents.model_hr_employee
+#: model:ir.model.fields,field_description:res_documents.field_res_documents_employee_id
+#: model:ir.ui.view,arch_db:res_documents.res_documents_view_search
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: res_documents
+#: model:ir.ui.view,arch_db:res_documents.res_documents_view_form
+msgid "Employee Details"
+msgstr "تفاصيل موظف"
+
+#. module: res_documents
+#: selection:res.documents,state:0
+msgid "Expiry"
+msgstr "انقضاء"
+
+#. module: res_documents
+#: model:ir.model.fields,field_description:res_documents.field_res_document_type_id
+#: model:ir.model.fields,field_description:res_documents.field_res_documents_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: res_documents
+#: model:ir.ui.view,arch_db:res_documents.res_documents_view_form
+msgid "Issue"
+msgstr "القضية"
+
+#. module: res_documents
+#: selection:res.documents,state:0
+msgid "Issued"
+msgstr "نشر"
+
+#. module: res_documents
+#: model:ir.model.fields,field_description:res_documents.field_res_document_type___last_update
+#: model:ir.model.fields,field_description:res_documents.field_res_documents___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: res_documents
+#: model:ir.model.fields,field_description:res_documents.field_res_document_type_write_uid
+#: model:ir.model.fields,field_description:res_documents.field_res_documents_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: res_documents
+#: model:ir.model.fields,field_description:res_documents.field_res_document_type_write_date
+#: model:ir.model.fields,field_description:res_documents.field_res_documents_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: res_documents
+#: model:ir.model.fields,field_description:res_documents.field_res_documents_manager_id
+msgid "Manager"
+msgstr "المدير"
+
+#. module: res_documents
+#: model:ir.model.fields,field_description:res_documents.field_res_document_type_name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: res_documents
+#: model:ir.model.fields,field_description:res_documents.field_res_documents_notes
+#: model:ir.ui.view,arch_db:res_documents.res_documents_view_form
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: res_documents
+#: model:ir.model.fields,field_description:res_documents.field_res_documents_doc_number
+msgid "Number"
+msgstr "عدد"
+
+#. module: res_documents
+#: model:ir.model.fields,field_description:res_documents.field_res_documents_issue_place
+msgid "Place of Issue"
+msgstr "مكان الإصدار"
+
+#. module: res_documents
+#: model:ir.model.fields,field_description:res_documents.field_res_documents_position
+msgid "Position"
+msgstr "موقف"
+
+#. module: res_documents
+#: model:ir.model.fields,field_description:res_documents.field_res_documents_profession
+msgid "Profession"
+msgstr "مهنة"
+
+#. module: res_documents
+#: model:ir.ui.view,arch_db:res_documents.res_documents_view_form
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: res_documents
+#: selection:res.documents,state:0
+msgid "Refused"
+msgstr "رفض"
+
+#. module: res_documents
+#: model:ir.ui.view,arch_db:res_documents.res_documents_view_form
+#: selection:res.documents,state:0
+msgid "Renew"
+msgstr "جدد"
+
+#. module: res_documents
+#: model:ir.actions.server,name:res_documents.ir_cron_documents_scheduler_action_ir_actions_server
+#: model:ir.cron,cron_name:res_documents.ir_cron_documents_scheduler_action
+#: model:ir.cron,name:res_documents.ir_cron_documents_scheduler_action
+msgid "Scheduled Employee's Documents Expiration"
+msgstr "انتهاء صلاحية وثائق الموظف المجدولة"
+
+#. module: res_documents
+#: model:ir.ui.view,arch_db:res_documents.res_documents_view_form
+msgid "Set to Draft"
+msgstr "تعيين كمسودة"
+
+#. module: res_documents
+#: model:ir.model.fields,field_description:res_documents.field_res_documents_state
+#: model:ir.ui.view,arch_db:res_documents.res_documents_view_search
+msgid "Status"
+msgstr "الحالة "
+
+#. module: res_documents
+#: model:ir.ui.view,arch_db:res_documents.res_documents_view_form
+msgid "Submit"
+msgstr "خضع"
+
+#. module: res_documents
+#: model:ir.model.fields,field_description:res_documents.field_res_documents_type_id
+msgid "Type"
+msgstr "النوع"
+
+#. module: res_documents
+#: model:ir.model.fields,field_description:res_documents.field_res_documents_is_visible_on_report
+msgid "Visible on Report"
+msgstr "مرئية على تقرير"
+
+#. module: res_documents
+#: model:ir.model,name:res_documents.model_res_document_type
+msgid "res.document.type"
+msgstr "res.document.type"
+
+#. module: res_documents
+#: model:ir.model,name:res_documents.model_res_documents
+msgid "res.documents"
+msgstr "res.documents"
+

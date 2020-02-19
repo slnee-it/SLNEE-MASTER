@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_employee_rec_visa_form" model="ir.ui.view">
+        <field name="name">Visa Request</field>
+        <field name="model">hr.employee.rec.visa</field>
+        <field name="arch" type="xml">
+            <form string="Visa Request">
+                <header>
+                    <button name="visa_confirm" string="Submit" states="draft" type="object" class="oe_highlight" groups="hr_recruitment.group_hr_recruitment_manager"/>
+                    <button name="visa_inprogress" string="In Progress" states="confirm" groups="hr.group_hr_user" type="object" class="oe_highlight" />
+                    <button name="visa_received" string="Received" states="inprogress"
+                            groups="hr.group_hr_user" type="object" class="oe_highlight" />
+                    <button name="visa_refuse" string="Refuse" groups="base.group_user"
+                            states="confirm,inprogress" type="object"/>
+                    <button name="generate_expense" string="Generate Expense" attrs="{'invisible': ['|', ('state', 'not in', ('received','refused')), ('expense_ids', '!=', [])]}"
+                            type="object" class="oe_highlight" groups="hr_expense.group_hr_expense_manager,hr_admin.group_admin_manager"/>
+                    <button name="set_draft" string="Set as Draft" states="refused" type="object" groups="hr.group_hr_user"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirm" statusbar_colors='{"confirm":"blue","refused":"red"}' />
+                </header>
+                <sheet>
+                    <div class="oe_button_box">
+                        <button type="object" name="view_expense" string="Expense" class="oe_stat_button" icon="fa-book"
+                                attrs="{'invisible':[('expense_ids','=',[])]}" groups="hr_admin.group_admin_manager,base.group_user">
+                        </button>
+                    </div>
+                    <separator string="Employee Information"/>
+                    <group>
+                        <group>
+                            <field name="employee_id" attrs="{'readonly':[('state','!=', 'draft')]}" placeholder="Select Employee"/>
+                            <field name="email" placeholder="Email Id.."  attrs="{'readonly':[('state','!=', 'draft')]}"/>
+                            <field name="department_id" placeholder="Select Department" />
+                            <!-- <field name="job_id" placeholder="Select Job"/> -->
+                            <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"
+                                   attrs="{'readonly':[('state','!=', 'draft')]}"/>
+                        </group>
+                        <group>
+                            <!-- <field name="nationality" placeholder="Select Nationality"  attrs="{'readonly':[('state','!=', 'draft')]}"/> -->
+
+                            <!-- <field name="passport_id" placeholder="Passport Number..."  attrs="{'readonly':[('state','!=', 'draft')]}"/> -->
+                            <field name="request_by_id" attrs="{'readonly':[('state','!=', 'draft')]}"/>
+                        </group>
+                    </group>
+                    <separator string="Visa Information"/>
+                    <group>
+                        <group>
+                            <field name="visa_for" attrs="{'readonly':[('state','!=', 'draft')]}"/>
+                            <field name="reason_of_visa" attrs="{'readonly':[('state','!=', 'draft')]}" />
+                            <!-- <field name="country_id" attrs="{'readonly':[('state','!=', 'draft')]}"></field> -->
+                            <field name="visa_ref" attrs="{'readonly':[('state','!=', 'inprogress')],
+                                        'required':[('state','in',['inprogress','received'])], 'invisible':[('visa_ref','in',['draft','confirm'])]}"/>
+                            <field name="visa_title" attrs="{'readonly':[('state','=', 'received')]}"/>
+                            <label for="period_of_stay" />
+                            <div>
+                                <field name="period_of_stay" class="oe_inline"/> <label string="Month(s)" class="oe_inline"/>
+                            </div>
+                            <label for="payment_mode"/>
+                            <div>
+                                <field name="payment_mode" widget="radio"  attrs="{'readonly':[('state','!=','draft')]}"/>
+                            </div>
+                        </group>
+                        <group>
+                            <field name="visa_type" attrs="{'readonly':[('state','!=', 'draft')],'invisible':[('reason_of_visa','in',['new_join_employee'])]}"/>
+                            <field name="requested_date_from" attrs="{'readonly':[('state','!=', 'draft')]}"/>
+                            <field name="requested_date_to" attrs="{'readonly':[('state','!=', 'draft')]}"/>
+                            <field name="approved_date_from" attrs="{'readonly':[('state','!=', 'inprogress')],
+                                        'required':[('state','in',['inprogress','received'])], 'invisible':[('state','in',['draft','confirm'])]}" />
+                            <field name="approved_date_to" attrs="{'readonly':[('state','!=', 'inprogress')],
+                                        'invisible':[('state','in',['draft','confirm'])]}" />
+                            <field name="handled_by_id" attrs="{'required':[('state','in',['confirm','inprogress','received'])],
+                                        'invisible':[('state','in',['draft'])],'readonly':[('state','=', 'received')]}"/>
+                        </group>
+                    </group>
+                    <separator string="Required Documents" colspan="4" attrs="{'invisible':[('reason_of_visa','in',['new_join_employee',False])]}"/>
+                    <field name="required_documents" nolabel="True" attrs="{'invisible':[('reason_of_visa','in',['new_join_employee',False])]}"/>
+                    <notebook>
+                        <page string="Description">
+                            <field name="description" placeholder="Put the description here" nolabel="True"
+                                   attrs="{'readonly':[('state','=', 'received')]}"/>
+                        </page>
+                        <page string="Family Details" attrs="{'invisible':[('visa_for','=','individual')]}">
+                            <field name="family_visa_ids" nolabel="True"  attrs="{'invisible':[('visa_for','=','individual')],
+                                        'readonly':[('state','=', 'received')]}">
+                                <tree editable="bottom">
+                                    <field name="member_name"/>
+                                    <field name="gender" required="1"/>
+                                    <field name="birth_date" required="1"/>
+                                    <field name="relation" required="1"/>
+                                    <field name="id_number" required="1"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Contact Persons in KSA" attrs="{'invisible':[('reason_of_visa','!=','new_join_employee')]}">
+                            <field name="contact_person_ids" attrs="{'readonly':[('state','!=','draft')]}">
+                                <tree>
+                                    <field name="name"/>
+                                    <field name="phone"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Expense">
+                            <group>
+                                <field name="expense_ids" invisible="1"/>
+                                <group attrs="{'required':[('payment_mode','!=','company_account')],
+                                                'invisible':[('payment_mode','=','company_account')]}">
+                                    <field name="emp_contribution" attrs="{'readonly':[('expense_ids','!=', [])]}"/>
+                                </group>
+                                <group attrs="{'required':[('payment_mode','!=','own_account')],
+                                               'invisible':[('payment_mode','=','own_account')]}">
+                                    <field name="company_contribution" groups="hr.group_hr_user" attrs="{'readonly':[('expense_ids','!=', [])]}"/>
+                                    <field name="expense_total" invisible="1"/>
+                                </group>
+                            </group>
+                            <group string="Notes" colspan="4">
+                                <field name="expense_note" nolabel="1" attrs="{'readonly':[('expense_ids','!=',[])]}"/>
+                            </group>
+                        </page>
+                        <page string="Extra Information" groups="base.group_no_one">
+                            <group name="extra_info" col="4">
+                                <field name="create_uid" readonly="1" />
+                                <field name="create_date" readonly="1" />
+                                <field name="write_uid" readonly="1" />
+                                <field name="write_date" readonly="1" />
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+    <record id="hr_employee_rec_visa_tree" model="ir.ui.view">
+        <field name="name">Visa Request</field>
+        <field name="model">hr.employee.rec.visa</field>
+        <field name="arch" type="xml">
+            <tree string="Visa Request">
+                <field name="employee_id"/>
+                <field name="visa_ref"/>
+                <field name="reason_of_visa"/>
+                <!-- <field name="country_id"/> -->
+                <!-- <field name="passport_id"/> -->
+                <field name="visa_type"/>
+                <field name="approved_date_to" string="Date To"/>
+                <field name="approved_date_from" string="Date From"/>
+                <field name="state"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+            </tree>
+        </field>
+    </record>
+    <record id="view_hr_employee_rec_visa_filter" model="ir.ui.view">
+        <field name="name">visa.list.select</field>
+        <field name="model">hr.employee.rec.visa</field>
+        <field name="arch" type="xml">
+            <search string="Filter">
+                <field name="name" filter_domain="['|',('name','ilike',self),('visa_ref','ilike',self)]" string="Visa"/>
+                <filter string="In Progress" domain="[('state','=',('inprogress'))]" help="Visa that has sent for process." />
+                <filter string="Confirm" domain="[('state','=',('confirm'))]" help="Visa that has been waiting for approval of Manager." />
+                <filter string="Received" domain="[('state','=',('received'))]" help="Visa that has been refused" />
+                <filter string="Refuse" domain="[('state','=',('refused'))]" help="Visa that has been refused" />
+                <group expand="0" string="Group By...">
+                    <filter string="Employee" context="{'group_by':'employee_id'}"/>
+                    <filter string="Reason of Visa" context="{'group_by':'reason_of_visa'}"/>
+                    <filter string="Country" context="{'group_by':'country_id'}"/>
+                    <filter string="Type" context="{'group_by':'visa_type'}"/>
+                    <!-- <filter string="Job Position" context="{'group_by':'job_id'}"/> -->
+                    <filter string="Department" context="{'group_by':'department_id'}"/>
+                    <filter string="State" context="{'group_by':'state'}"/>
+                    <filter string="Company" context="{'group_by':'company_id'}"  groups="base.group_multi_company"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_hr_employee_rec_visa" model="ir.actions.act_window">
+        <field name="name">Recruiter Visa Request</field>
+        <field name="res_model">hr.employee.rec.visa</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

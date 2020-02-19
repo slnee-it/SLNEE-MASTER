@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Employee Bonus -->
+    <record model="ir.ui.view" id="employee_bonus_form">
+        <field name="name">Employee Bonus</field>
+        <field name="model">employee.bonus</field>
+        <field name="arch" type="xml">
+            <form string="Employee Bonus">
+                <sheet>
+                <separator string="Employee Details"/>
+                <group name="bouns_info">
+                    <group>
+                        <field name="employee_id" placeholder='Select Employee...' required="1"/>
+                        <field name="department_id"/>
+                        <field name="job_id"/>
+                    </group>
+                    <group>
+                        <field name="country_id"/>
+                        <field name="gender"/>
+                        <field name="date_of_join"/>
+                        <field name="branch_id" domain="[('company_id', '=', company_id)]" groups="slnee_hr_branch.group_company_branch"/>
+                        <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
+                        <field name="no_of_months" invisible="1"/>
+                    </group>
+                </group>
+                <notebook>
+                    <page string="Employee Bonus Lines">
+                        <field nolabel="1" name="employee_bonus_ids" options="{'reload_on_button': True}" context="{'employee_id': employee_id, 'job_id': job_id}">
+                        <tree string="Employee Bonus Lines" name="bonus_line_tree">
+                            <field name="fiscalyear_id"/>
+                            <field name="effective_date"/>
+                            <field name="proposed_hike"/>
+                            <field name="proposed_amount" invisible="1"/>
+                            <field name="accepted_hike"/>
+                            <field name="accepted_amount" invisible="1"/>
+                            <field name="bonus"/>
+                            <field name="bonus_percentage" invisible="1"/>
+                            <field name="job_id" invisible="1"/>
+                            <field name="new_job_id"/>
+                            <field name="dialogue"/>
+                            <field name="state"/>
+                            <button string="Send Email" name="send_mail" icon="fa fa-envelope" type="object" states="done" class="oe_highlight" groups="hr.group_hr_user" />
+                            <button string="Set to Draft" name="set_to_draft" icon="fa fa-cog" type="object" states="cancel" class="oe_highlight" groups="hr.group_hr_user"/>
+                            <button name="action_button_confirm" states="draft" string="Confirm" type="object" icon="fa fa-check" class="oe_highlight" groups="hr.group_hr_user"/>
+                            <button name="action_button_approve" states="confirm" string="Approve" type="object" icon="fa fa-thumbs-o-up" class="oe_highlight" groups="hr.group_hr_user"/>
+                            <button name="action_button_cancel" string="Cancel" states="draft,confirm" type="object" icon="fa fa-times" class="oe_highlight" groups="hr.group_hr_user"/>
+                            <button name="action_button_done" string="Done" states="approve" type="object" icon="fa fa-thumbs-up" class="oe_highlight" groups="hr.group_hr_user"/>
+                        </tree>
+                        </field>
+                    </page>
+                </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="employee_bonus_tree_view" model="ir.ui.view">
+        <field name="name">employee.bonus.tree</field>
+        <field name="model">employee.bonus</field>
+        <field name="arch" type="xml">
+            <tree string="Employee Bonus">
+                <field name="employee_id" />
+                <field name="branch_id" groups="slnee_hr_branch.group_company_branch"/>
+                <field name="department_id" />
+                <field name="gender"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_employee_bonus_filter" model="ir.ui.view">
+        <field name="name">employee.bonus.filter.select</field>
+        <field name="model">employee.bonus</field>
+        <field name="arch" type="xml">
+            <search string="Search Employee Bonus">
+                <field name="employee_id"/>
+                <field name="employee_id" string="Employee"/>
+                <field name="branch_id" string="Office" groups="slnee_hr_branch.group_company_branch"/>
+                <field name="company_id" string="Company" groups="base.group_multi_company"/>
+                <field name="department_id" string="Department"/>
+                <field name="job_id" string="Job Position"/>
+                <separator/>
+                <group expand="0" string="Group By...">
+                    <filter string="Office" context="{'group_by':'branch_id'}" groups="slnee_hr_branch.group_company_branch"/>
+                    <filter string="Company" context="{'group_by':'company_id'}" groups="base.group_multi_company"/>
+                    <filter name="department" string="Department" context="{'group_by':'department_id'}"/>
+                    <filter string="Job Position" context="{'group_by':'job_id'}"/>
+                    <filter string="Nationality" context="{'group_by':'country_id'}"/>
+                    <filter string="Gender" context="{'group_by':'gender'}"/>
+                </group>
+           </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_view_employee_bonus">
+        <field name="name">Employee Bonus</field>
+        <field name="res_model">employee.bonus</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_employee_bonus_filter"/>
+        <field name="help" type="html">
+          <p class="oe_view_nocontent_create">
+            Click to define Employees Bonus.
+          </p>
+        </field>
+    </record>
+
+    <!-- Employee Bonus Lines -->
+    <record model="ir.ui.view" id="employee_bonus_lines_form">
+        <field name="name">Employee Bonus Lines</field>
+        <field name="model">employee.bonus.lines</field>
+        <field name="arch" type="xml">
+            <form string="Employee Bonus Lines" create="false">
+                <header groups="base.group_user">
+                    <button string="Send Email" name="send_mail" type="object" states="done" class="oe_highlight"
+                            groups="hr.group_hr_manager"/>
+                    <button name="set_to_draft" states="cancel,done" string="Set to Draft" type="object" groups="hr.group_hr_user"/>
+                    <button name="action_button_confirm" states="draft" string="Confirm" type="object" class="oe_highlight"
+                            groups="hr.group_hr_user"/>
+                    <button name="action_button_approve" states="confirm" string="Approve" class="oe_highlight" type="object"
+                            groups="hr.group_hr_manager"/>
+                    <button name="action_button_done" states="approve" string="Done" class="oe_highlight" type="object"
+                            groups="hr.group_hr_manager"/>
+                    <button name="action_button_cancel" string="Cancel" states="confirm" type="object"
+                            groups="hr.group_hr_manager"/>
+                    <field name="state" widget="statusbar" statusbar_visible="confirm" statusbar_colors='{"exception":"red","cancel":"red"}'/>
+                </header>
+                <sheet>
+                    <group string="Bonus Information">
+                        <group>
+                            <field name="employee_id" attrs="{'readonly':[('state','in',('done','approve','cancel'))]}"
+                                   placeholder='Select Employee...' required="1"/>
+                            <field name="job_id" attrs="{'readonly':[('state','in',('done','approve','cancel'))]}"/>
+                            <field name="contract_id" required="1" attrs="{'readonly':[('state','in',('done','approve','cancel'))]}"/>
+                            <field name="effective_date" attrs="{'readonly':[('state','in', ('done','cancel'))]}"/>
+                            <field name="proposed_hike" attrs="{'readonly':[('state','in',('done','approve','cancel'))]}"/>
+                            <field name="accepted_hike" attrs="{'readonly':[('state','in',('done','approve','cancel'))]}"/>
+                            <field name="bonus" attrs="{'readonly':[('state','in',('done','approve','cancel'))]}"/>
+                            <field name="period_ids" widget="many2many_tags" attrs="{'readonly':[('state','in',('done','approve','cancel'))]}"
+                                   domain="[('fiscalyear_id','=',fiscalyear_id)]"/>
+                            <field name="my_pd" attrs="{'readonly':[('state','in', ('done','cancel'))]}"/>
+                            <field name="dialogue" attrs="{'readonly':[('state','in', ('done','cancel'))]}"/>
+                        </group>
+                        <group>
+                            <field name="fiscalyear_id" attrs="{'readonly':[('state','in',('done','approve','cancel'))]}"/>
+                            <field name="new_job_id" attrs="{'readonly':[('state','in',('done','approve','cancel'))]}"/>
+                            <field name="wage" attrs="{'readonly':[('state','in',('done','approve','cancel'))]}"/>
+                            <field name="proposed_amount"/>
+                            <field name="accepted_amount"/>
+                            <field name="bonus_percentage"/>
+                            <field name="tcc" attrs="{'readonly':[('state','in', ('done','cancel'))]}"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Extra Info." groups="base.group_no_one">
+                            <group name="extra_info" col="4">
+                                <field name="create_uid" readonly="1" />
+                                <field name="create_date" readonly="1" />
+                                <field name="write_uid" readonly="1" />
+                                <field name="write_date" readonly="1" />
+                                <field name="approved_by" />
+                                <field name="approved_date" />
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers" groups="base.group_user"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_employee_bonus_lines_filter" model="ir.ui.view">
+        <field name="name">employee.bonus.lines.filter.select</field>
+        <field name="model">employee.bonus.lines</field>
+        <field name="arch" type="xml">
+            <search string="Search Employee Bonus Lines">
+                <filter icon="terp-dolar_ok!" string="Confirm" domain="[('state','=','confirm')]"  help="Confirmed"/>
+                <filter icon="terp-dolar_ok!" string="Approve" domain="[('state','=','approve')]"  help="Approved"/>
+                <filter icon="terp-dolar_ok!" string="Done" domain="[('state','=','done')]"  help="Done"/>
+                <filter icon="terp-dolar_ok!" string="Cancel" domain="[('state','=','cancel')]"  help="Cancelled"/>
+                <field name="employee_id" string="Employee"/>
+                <field name="fiscalyear_id" string="Fiscal Year"/>
+                <field name="state" string="Stage"/>
+                <separator/>
+                <group expand="0" string="Group By...">
+                    <filter string="Employee" context="{'group_by':'employee_id'}"/>
+                    <filter string="Fiscal Year" context="{'group_by':'fiscalyear_id'}"/>
+                    <filter string="Stage" context="{'group_by':'state'}"/>
+                </group>
+           </search>
+        </field>
+    </record>
+
+    <record id="employee_bonus_lines_tree_view" model="ir.ui.view">
+        <field name="name">employee.bonus.lines.tree</field>
+        <field name="model">employee.bonus.lines</field>
+        <field name="arch" type="xml">
+            <tree string="Employee Bonus Lines" create="false">
+                <field name="employee_id" />
+                <field name="fiscalyear_id"/>
+                <field name="effective_date"/>
+                <field name="proposed_hike"/>
+                <field name="proposed_amount"/>
+                <field name="accepted_hike"/>
+                <field name="accepted_amount"/>
+                <field name="bonus"/>
+                <field name="bonus_percentage"/>
+                <field name="state"/>
+                <field name="contract_id" invisible="1"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_view_employee_bonus_lines">
+        <field name="name">Employee Bonus Lines</field>
+        <field name="res_model">employee.bonus.lines</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_employee_bonus_lines_filter"/>
+        <field name="help" type="html">
+          <p class="oe_view_nocontent_create">
+            Click to define Employees Bonus Lines.
+          </p>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,256 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_expense_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-30 12:21+0000\n"
+"PO-Revision-Date: 2015-04-30 12:21+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_expense_management
+#: field:hr.expense.expense,company_contribution:0
+msgid "- Company Contribution"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: field:hr.expense.expense,approved_by:0
+msgid "Approved By"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: field:hr.expense.expense,approved_date:0
+#: field:hr.expense.expense,date_of_approve:0
+msgid "Approved Date"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: field:hr.expense.expense,employee_code:0
+msgid "Employee Code"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: field:hr.expense.expense,employee_contribution:0
+msgid "Employee Contribution"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: model:ir.model,name:slnee_hr_expense_management.model_hr_expense_expense
+msgid "Expense"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: view:hr.expense.expense:slnee_hr_expense_management.l10n_sa_view_expenses_form_inherit
+msgid "Expense Date"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: view:hr.expense.expense:slnee_hr_expense_management.l10n_sa_view_expenses_form_inherit
+msgid "Expense Lines"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: code:addons/slnee_hr_expense_management/hr_expense.py:207
+#, python-format
+msgid "Expense Validated"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: view:hr.expense.expense:slnee_hr_expense_management.l10n_sa_view_expenses_form_inherit
+msgid "Extra Information"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: field:hr.expense.expense,fiscalyear_id:0
+msgid "Fiscal Year"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: view:hr.expense.expense:slnee_hr_expense_management.l10n_sa_view_expenses_form_inherit
+msgid "Generate Accounting Entries"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: view:hr.expense.expense:slnee_hr_expense_management.l10n_sa_view_expenses_form_inherit
+msgid "If Checked Company Contribution will be reimbursed and no effects for amount to pay. If not checked amount to pay will be deducted from salary and no effects for company contribution"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: field:hr.expense.expense,include_salary:0
+msgid "Include in Salary"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: field:hr.expense.expense,job_id:0
+#: model:ir.model,name:slnee_hr_expense_management.model_hr_job
+msgid "Job Position"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: field:hr.job,local_pd_product_id:0
+msgid "Local Per Day Product"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: code:addons/slnee_hr_expense_management/hr_expense.py:144
+#: code:addons/slnee_hr_expense_management/hr_expense.py:163
+#, python-format
+msgid "Maximum Payable Limit for School Reimburshment is Exceeded"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: view:hr.expense.expense:slnee_hr_expense_management.l10n_sa_view_expenses_form_inherit
+msgid "Open Accounting Entries"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: field:hr.job,overseas_pd_product_id:0
+msgid "Overseas Per Day Product"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: field:hr.expense.expense,slip_id:0
+msgid "Payslip"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: field:hr.expense.expense,refused_by:0
+msgid "Refused By"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: field:hr.expense.expense,refused_date:0
+msgid "Refused on"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: field:hr.expense.expense,requested_by:0
+msgid "Requested By"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: view:hr.expense.expense:slnee_hr_expense_management.l10n_sa_view_expenses_form_inherit
+msgid "Requested Date"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: field:hr.expense.expense,sanctioned_amount:0
+msgid "Sanctioned Amount"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: field:hr.expense.expense,school_reimbursement:0
+msgid "School Reimburse"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: field:hr.expense.expense,is_reimbursement:0
+msgid "Should Reimburse"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: field:hr.expense.expense,source:0
+msgid "Source"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: view:hr.expense.expense:slnee_hr_expense_management.l10n_sa_view_expenses_form_inherit
+msgid "Submit"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: help:hr.expense.expense,sanctioned_amount:0
+msgid "The sanctioned amount is 2/3 amount of claimed amount. Maximum sanctioned amount limit is 37500.00/fiscal year"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: view:hr.expense.expense:slnee_hr_expense_management.l10n_sa_view_expenses_form_inherit
+msgid "Total"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: field:hr.expense.expense,actual_amount:0
+msgid "Total Amount"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: view:hr.expense.expense:slnee_hr_expense_management.l10n_sa_view_expenses_form_inherit
+msgid "Validate"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: field:hr.expense.expense,validated_by:0
+msgid "Validated By"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: field:hr.expense.expense,validated_date:0
+msgid "Validated Date"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: field:hr.expense.expense,visibility_reimburse:0
+msgid "Visibility School Reimburse"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: code:addons/slnee_hr_expense_management/hr_expense.py:144
+#: code:addons/slnee_hr_expense_management/hr_expense.py:163
+#, python-format
+msgid "Warning"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: code:addons/slnee_hr_expense_management/hr_expense.py:122
+#, python-format
+msgid "Warning!"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: code:addons/slnee_hr_expense_management/hr_expense.py:122
+#, python-format
+msgid "You cannot remove the record which is in %s state!"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: view:hr.expense.expense:slnee_hr_expense_management.l10n_sa_view_expenses_form_inherit
+msgid "base.group_user"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: view:hr.expense.expense:slnee_hr_expense_management.l10n_sa_view_expenses_form_inherit
+msgid "cancelled"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: view:hr.expense.expense:slnee_hr_expense_management.l10n_sa_view_expenses_form_inherit
+msgid "confirm,validate,accepted"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: view:hr.expense.expense:slnee_hr_expense_management.l10n_sa_view_expenses_form_inherit
+msgid "slnee_hr.group_hr_assistant"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: view:hr.expense.expense:slnee_hr_expense_management.l10n_sa_view_expenses_form_inherit
+msgid "slnee_hr.group_hr_assistant,slnee_hr.group_line_manager"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: view:hr.expense.expense:slnee_hr_expense_management.l10n_sa_view_expenses_form_inherit
+msgid "validate"
+msgstr ""
+
+#. module: slnee_hr_expense_management
+#: view:hr.expense.expense:slnee_hr_expense_management.l10n_sa_view_expenses_form_inherit
+msgid "{'readonly':[('state','not in',['draft','confirm'])]}"
+msgstr ""
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="email_template_res_document" model="mail.template">
+        <field name="name">Document - Send by Email</field>
+        <field name="email_from">${object.company_id.email}</field>
+        <field name="email_to">${object.employee_id.work_email}</field>
+        <field name="subject">Document Issue</field>
+        <field name="model_id" ref="res_documents.model_res_documents"/>
+        <field name="auto_delete" eval="False"/>
+        <field name="lang">${object.employee_id.user_id.partner_id.lang}</field>
+        <field name="body_html"><![CDATA[
+        <p>Hello ${object.employee_id.name},</p><br/>
+        <p>Your Document <b>${object.type_id.name}</b> is <b>${object.doc_number}</b> has been issue of ${object.issue_date} by ${user.name}.</p><br/>
+        <p>Thank you,</p>
+        <p>${user.name}</p>
+        ]]></field>
+    </record>
+
+    <record id="email_template_res_document_expire" model="mail.template">
+        <field name="name">Document - Send by Email</field>
+        <field name="email_from">${object.company_id.email}</field>
+        <field name="email_to">${object.employee_id.work_email}</field>
+        <field name="subject">Document Expire</field>
+        <field name="model_id" ref="res_documents.model_res_documents"/>
+        <field name="auto_delete" eval="False"/>
+        <field name="lang">${object.employee_id.user_id.partner_id.lang}</field>
+        <field name="body_html"><![CDATA[
+        <p>Hello ${object.employee_id.name},</p><br/>
+        <p style="color:red">Your Document <b>${object.type_id.name}</b> is <b>${object.doc_number}</b> has been expired on ${object.expiry_date}.</p><br/>
+        <p>Thank you,</p>
+        <p>${user.name}</p>
+        ]]></field>
+    </record>
+
+</odoo>

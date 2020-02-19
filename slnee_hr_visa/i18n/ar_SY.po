@@ -1,0 +1,790 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_visa
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-11 13:15+0000\n"
+"PO-Revision-Date: 2018-09-11 13:15+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.embassy_visit_visa_report_new
+msgid "\"\n"
+"\n"
+"                 in the"
+msgstr "\"\n"
+"\n"
+"                 في ال"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.business_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.embassy_visit_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.visit_visa_report_new
+msgid "(Saudi Riyals only)."
+msgstr "(بالريال السعودي فقط)."
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.business_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.embassy_visit_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.visit_visa_report_new
+msgid ",is employed with"
+msgstr "يعمل مع"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.business_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.embassy_visit_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.visit_visa_report_new
+msgid "<font face=\"Helvetica\">\n"
+"                    We would highly appreciate your assistance if you kindly issue\n"
+"                </font>"
+msgstr "<font face=\"Helvetica\">\n"
+"                    نحن نقدر عاليا مساعدتك إذا كنت تفضل إصدار\n"
+"                </font>"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.business_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.embassy_visit_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.visit_visa_report_new
+msgid "<font face=\"Helvetica\">Sincerely yours,</font>"
+msgstr "<font face=\"Helvetica\">صديقك المخلص,</font>"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.business_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.embassy_visit_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.visit_visa_report_new
+msgid "<span style=\"P1\">The Consular General – Visa Section </span><br/>\n"
+"            <span style=\"P1\">Embassy of </span><br/>"
+msgstr "<span style=\"P1\">القنصلية العامة - قسم التأشيرات</span><br/>\n"
+"            <span style=\"P1\">Embassy of </span><br/>"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_form
+msgid "<span style=\"margin-right:5px;\" attrs=\"{'invisible':[('days','=',0.0)]}\"> Days </span>"
+msgstr "<span style=\"margin-right:5px;\" attrs=\"{'invisible':[('days','=',0.0)]}\"> أيام </span>"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_form
+msgid "<span style=\"margin-right:5px;\" attrs=\"{'invisible':[('months','=',0.0)]}\"> Months </span>"
+msgstr "<span style=\"margin-right:5px;\" attrs=\"{'invisible':[('months','=',0.0)]}\"> الشهور </span>"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_form
+msgid "<span style=\"margin-right:5px;\" attrs=\"{'invisible':[('years','=',0.0)]}\"> Years </span>"
+msgstr "<span style=\"margin-right:5px;\" attrs=\"{'invisible':[('years','=',0.0)]}\"> Years </span>"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.business_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.embassy_visit_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.visit_visa_report_new
+msgid "Adminstration Manager"
+msgstr "مدير الادارة"
+
+#. module: slnee_hr_visa
+#: selection:hr.visa,purpose_of_visa:0
+msgid "Annual Vacation"
+msgstr "عطلة سنوية"
+
+#. module: slnee_hr_visa
+#: code:addons/slnee_hr_visa/models/hr_visa.py:154
+#, python-format
+msgid "Approve Date to must be greater then Approve Date from."
+msgstr "الموافقة على التاريخ يجب أن يكون أكبر ثم الموافقة على التاريخ من."
+
+#. module: slnee_hr_visa
+#: selection:hr.visa,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_visa.view_visa_filter
+msgid "Approved"
+msgstr "وافق"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_approved_date
+msgid "Approved Date"
+msgstr "التسجيل المعتمدة"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_approved_date_from
+msgid "Approved Date From"
+msgstr "تاريخ الموافقة من"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_approved_date_to
+msgid "Approved Date To"
+msgstr "تاريخ الموافقة على"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_approved_by
+msgid "Approved by"
+msgstr "التي وافقت عليها"
+
+#. module: slnee_hr_visa
+#: selection:hr.visa,purpose_of_visa:0
+msgid "Business Trip"
+msgstr "رحلة عمل"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.business_visa_report_new
+msgid "Business Visa"
+msgstr "تاشيرة رجال أعمال"
+
+#. module: slnee_hr_visa
+#: selection:employee.family.visa,relation:0
+msgid "Child"
+msgstr "طفل"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_client_id
+msgid "Client Name"
+msgstr "اسم العميل"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_company_id
+#: model:ir.ui.view,arch_db:slnee_hr_visa.view_visa_filter
+msgid "Company"
+msgstr "الشركة"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.view_visa_filter
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_employee_family_visa_create_uid
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_employee_family_visa_create_date
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_tree
+msgid "Date From"
+msgstr "التاريخ من"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_tree
+msgid "Date To"
+msgstr "التاريخ الى"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_employee_family_visa_birth_date
+msgid "Date of Birth"
+msgstr "تاريخ الميلاد"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_days
+msgid "Days"
+msgstr "أيام"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.business_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.embassy_visit_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.visit_visa_report_new
+msgid "Dear Sir"
+msgstr "سيدى العزيز"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_department_id
+#: model:ir.ui.view,arch_db:slnee_hr_visa.view_visa_filter
+msgid "Department"
+msgstr "القسم"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.business_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.embassy_visit_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.visit_visa_report_new
+msgid "Department. His gross salary is SR"
+msgstr " قسم، أقسام. راتبه الإجمالي هو ريال"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_requested_date_from
+msgid "Departure Date"
+msgstr "تاريخ المغادرة"
+
+#. module: slnee_hr_visa
+#: code:addons/slnee_hr_visa/models/hr_visa.py:144
+#, python-format
+msgid "Departure Date must be greater then Return Date."
+msgstr "يجب أن يكون تاريخ المغادرة أكبر من تاريخ العودة."
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_description
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_form
+msgid "Description"
+msgstr "الوصف"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_employee_family_visa_display_name
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_email
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_form
+msgid "Email Id.."
+msgstr "عنوان الايميل.."
+
+#. module: slnee_hr_visa
+#: model:ir.actions.report,name:slnee_hr_visa.business_visa_new
+msgid "Embassy Business Visa Report"
+msgstr "تقرير السفارة الأمريكية للأعمال"
+
+#. module: slnee_hr_visa
+#: model:ir.actions.report,name:slnee_hr_visa.embassy_visitvisa_new
+msgid "Embassy Visit Visa Report"
+msgstr "تقرير السفارة زيارة التأشيرات"
+
+#. module: slnee_hr_visa
+#: selection:hr.visa,purpose_of_visa:0
+msgid "Emergency"
+msgstr "حالة طوارئ"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_employee_family_visa_employee_id
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_employee_id
+#: model:ir.ui.view,arch_db:slnee_hr_visa.view_visa_filter
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: slnee_hr_visa
+#: model:ir.model,name:slnee_hr_visa.model_employee_family_visa
+msgid "Employee Family Visa"
+msgstr "تأشيرة العائلة للموظف"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_form
+msgid "Employee Information"
+msgstr "معلومات الموظف"
+
+#. module: slnee_hr_visa
+#: code:addons/slnee_hr_visa/models/hr_visa.py:254
+#, python-format
+msgid "Error! Approved Date From must be less than Approved Date To."
+msgstr "خطأ! تاريخ الموافقة من يجب أن يكون أقل من تاريخ الموافقة إلى."
+
+#. module: slnee_hr_visa
+#: code:addons/slnee_hr_visa/models/hr_visa.py:244
+#, python-format
+msgid "Error! Departure Date must be less than Return Date."
+msgstr "خطأ! يجب أن يكون تاريخ المغادرة أقل من تاريخ الإرجاع."
+
+#. module: slnee_hr_visa
+#: selection:hr.visa,reason_of_visa:0
+msgid "Exit re-entry Visa"
+msgstr "الخروج من تأشيرة إعادة الدخول"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_form
+msgid "Expense"
+msgstr "المصروفات"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_expense_ids
+msgid "Expenses"
+msgstr "نفقات"
+
+#. module: slnee_hr_visa
+#: selection:hr.visa,reason_of_visa:0
+msgid "Extension of Exit re-entry Visa"
+msgstr "تمديد تأشيرة خروج العودة"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_form
+msgid "Extra Information"
+msgstr "معلومات اضافية"
+
+#. module: slnee_hr_visa
+#: selection:hr.visa,visa_for:0
+msgid "Family"
+msgstr "أسرة"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_family_visa_ids
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_form
+msgid "Family Details"
+msgstr "تفاصيل عائلية"
+
+#. module: slnee_hr_visa
+#: selection:employee.family.visa,gender:0
+msgid "Female"
+msgstr "إناثا"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.view_visa_filter
+msgid "Filter"
+msgstr "فلتر"
+
+#. module: slnee_hr_visa
+#: selection:hr.visa,reason_of_visa:0
+msgid "Final Exit"
+msgstr "خروج نهائي"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_employee_family_visa_gender
+msgid "Gender"
+msgstr "الجنس"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_form
+msgid "Generate Expense"
+msgstr "توليد المصروفات"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.view_visa_filter
+msgid "Group By..."
+msgstr "تجميع حسب.."
+
+#. module: slnee_hr_visa
+#: model:ir.model,name:slnee_hr_visa.model_hr_visa
+msgid "HR Visa"
+msgstr "تأشيرة الموارد البشرية"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_handled_by
+msgid "Handled by"
+msgstr "أنجز من قبل"
+
+#. module: slnee_hr_visa
+#: selection:hr.visa,purpose_of_visa:0
+msgid "Holiday"
+msgstr "يوم الاجازة"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_employee_family_visa_id
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_employee_family_visa_id_number
+msgid "ID Number"
+msgstr "رقم الهوية"
+
+#. module: slnee_hr_visa
+#: selection:hr.visa,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_form
+#: model:ir.ui.view,arch_db:slnee_hr_visa.view_visa_filter
+msgid "In Progress"
+msgstr "في تَقَدم "
+
+#. module: slnee_hr_visa
+#: selection:hr.visa,visa_for:0
+msgid "Individual"
+msgstr "فرد"
+
+#. module: slnee_hr_visa
+#: selection:hr.visa,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_form
+#: model:ir.ui.view,arch_db:slnee_hr_visa.view_visa_filter
+msgid "Issued"
+msgstr "نشر"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_employee_family_visa___last_update
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_employee_family_visa_write_uid
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_employee_family_visa_write_date
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.business_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.visit_visa_report_new
+msgid "Level ”  in the"
+msgstr "المستوى "في"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_required_documents
+msgid "List of Documents Required"
+msgstr "قائمة الوثائق المطلوبة"
+
+#. module: slnee_hr_visa
+#: selection:employee.family.visa,gender:0
+msgid "Male"
+msgstr "الذكر"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_employee_family_visa_member_name
+msgid "Member Name (As in Passport)"
+msgstr "اسم العضو (كما في جواز السفر)"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_months
+msgid "Months"
+msgstr "الشهور"
+
+#. module: slnee_hr_visa
+#: selection:hr.visa,ticket_type:0
+msgid "Multiple"
+msgstr "مضاعف"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_nationality
+msgid "Nationality"
+msgstr "جنسية"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_form
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_old_visa_ref
+msgid "Old Visa Number"
+msgstr "رقم التأشيرة القديمة"
+
+#. module: slnee_hr_visa
+#: selection:hr.visa,purpose_of_visa:0
+msgid "Other"
+msgstr "آخر"
+
+#. module: slnee_hr_visa
+#: code:addons/slnee_hr_visa/models/hr_visa.py:329
+#, python-format
+msgid "Please Enter Values For Visa Number, Approved Date From and Approved Date To"
+msgstr "يرجى إدخال قيم للحصول على رقم تأشيرة ، تاريخ معتمد من وتاريخ موافقة إلى"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_purpose_of_visa
+msgid "Purpose of Visa"
+msgstr "الغرض من التأشيرة"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_form
+msgid "Put the description here"
+msgstr "وضع وصف هنا"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.view_visa_filter
+msgid "Reason of Visa"
+msgstr "سبب التأشيرة"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_form
+#: model:ir.ui.view,arch_db:slnee_hr_visa.view_visa_filter
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: slnee_hr_visa
+#: selection:hr.visa,state:0
+msgid "Refused"
+msgstr "رفض"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_employee_family_visa_relation
+msgid "Relation"
+msgstr "علاقة"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_form
+msgid "Required Documents"
+msgstr "المستندات المطلوبة"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_requested_date_to
+msgid "Return Date"
+msgstr "تاريخ العودة"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.business_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.embassy_visit_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.visit_visa_report_new
+msgid "Saudi Arabia"
+msgstr "المملكة العربية السعودية"
+
+#. module: slnee_hr_visa
+#: selection:hr.visa,purpose_of_visa:0
+msgid "Secondment"
+msgstr "إعارة"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_form
+msgid "Select Department"
+msgstr "وزارة حدد"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_form
+msgid "Select Employee"
+msgstr "حدد الموظف"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_form
+msgid "Set as Draft"
+msgstr "تعيين كمسودة"
+
+#. module: slnee_hr_visa
+#: selection:hr.visa,ticket_type:0
+msgid "Single"
+msgstr "غير مرتبطة"
+
+#. module: slnee_hr_visa
+#: selection:employee.family.visa,relation:0
+msgid "Spouse"
+msgstr "الزوج"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_state
+#: model:ir.ui.view,arch_db:slnee_hr_visa.view_visa_filter
+msgid "State"
+msgstr "المحافظة"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_form
+msgid "Submit"
+msgstr "عرض"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.business_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.embassy_visit_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.visit_visa_report_new
+msgid "This is to advise that"
+msgstr "هذا هو لتقديم المشورة ذلك"
+
+#. module: slnee_hr_visa
+#: selection:hr.visa,state:0
+msgid "To Submit"
+msgstr "لتقديم"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_expense_total
+msgid "Total Expense"
+msgstr "المصاريف الكلية"
+
+#. module: slnee_hr_visa
+#: selection:hr.visa,purpose_of_visa:0
+msgid "Training"
+msgstr "تدريب"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_ticket_type
+#: model:ir.ui.view,arch_db:slnee_hr_visa.view_visa_filter
+msgid "Type"
+msgstr "النوع"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_reason_of_visa
+msgid "Type of Visa"
+msgstr "نوع التأشيرة"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_form
+msgid "Validate"
+msgstr "اعتماد "
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_employee_family_visa_visa_id
+#: model:ir.ui.view,arch_db:slnee_hr_visa.view_visa_filter
+#: model:product.product,name:slnee_hr_visa.hr_visa_request
+#: model:product.template,name:slnee_hr_visa.hr_visa_request_product_template
+msgid "Visa"
+msgstr "تأشيرة"
+
+#. module: slnee_hr_visa
+#: code:addons/slnee_hr_visa/models/hr_visa.py:267
+#, python-format
+msgid "Visa Confirmed."
+msgstr "التأشيرة مؤكد."
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_years
+msgid "Visa Duration"
+msgstr "مدة التأشيرة"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_visa_for
+msgid "Visa For"
+msgstr "تأشيرة ل"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_form
+msgid "Visa Information"
+msgstr "معلومات التأشيرة"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_visa_ref
+msgid "Visa Number"
+msgstr "رقم الفيزا"
+
+#. module: slnee_hr_visa
+#: model:ir.actions.act_window,name:slnee_hr_visa.action_hr_visa
+#: model:ir.ui.menu,name:slnee_hr_visa.menu_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_form
+#: model:ir.ui.view,arch_db:slnee_hr_visa.hr_visa_tree
+msgid "Visa Request"
+msgstr "طلب تأشيرة"
+
+#. module: slnee_hr_visa
+#: code:addons/slnee_hr_visa/models/hr_visa.py:290
+#, python-format
+msgid "Visa Request Approved."
+msgstr "تمت الموافقة على طلب التأشيرة."
+
+#. module: slnee_hr_visa
+#: code:addons/slnee_hr_visa/models/hr_visa.py:347
+#, python-format
+msgid "Visa Request Created."
+msgstr "طلب التأشيرة تم إنشاؤه."
+
+#. module: slnee_hr_visa
+#: code:addons/slnee_hr_visa/models/hr_visa.py:327
+#, python-format
+msgid "Visa Request Received."
+msgstr "طلب التأشيرة المستلمة."
+
+#. module: slnee_hr_visa
+#: code:addons/slnee_hr_visa/models/hr_visa.py:338
+#, python-format
+msgid "Visa Request Refused."
+msgstr "طلب التأشيرة مرفوض."
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_visa_title
+msgid "Visa Title"
+msgstr "عنوان التأشيرة"
+
+#. module: slnee_hr_visa
+#: code:addons/slnee_hr_visa/models/hr_visa.py:300
+#, python-format
+msgid "Visa is In progress."
+msgstr "التأشيرة قيد التقدم."
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.view_visa_filter
+msgid "Visa that has been approved."
+msgstr "التأشيرة التي تمت الموافقة عليها."
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.view_visa_filter
+msgid "Visa that has been refused"
+msgstr "التأشيرة التي تم رفضها"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.view_visa_filter
+msgid "Visa that has been waiting for approval of Manager."
+msgstr "التأشيرة التي تنتظر موافقة المدير."
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.view_visa_filter
+msgid "Visa that has sent for process."
+msgstr "التأشيرة التي أرسلت للعملية."
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.embassy_visit_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.visit_visa_report_new
+msgid "Visit Visa"
+msgstr "تأشيرة زيارة"
+
+#. module: slnee_hr_visa
+#: model:ir.actions.report,name:slnee_hr_visa.visit_visa_new
+msgid "Visit Visa Report"
+msgstr "زيارة تقرير التأشيرات"
+
+#. module: slnee_hr_visa
+#: selection:hr.visa,state:0
+msgid "Waiting Approval"
+msgstr "في انتظار الموافقة"
+
+#. module: slnee_hr_visa
+#: code:addons/slnee_hr_visa/models/hr_visa.py:133
+#, python-format
+msgid "You cannot remove the record which is in %s state!"
+msgstr "لا يمكنك إزالة السجل الموجود في حالة٪ s!"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.business_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.embassy_visit_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.visit_visa_report_new
+msgid "_____________________________"
+msgstr "_____________________________"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.business_visa_report_new
+msgid "a Business Visa for"
+msgstr "تأشيرة تجارية ل"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.embassy_visit_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.visit_visa_report_new
+msgid "a visit Visa for"
+msgstr "زيارة تأشيرة ل"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.business_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.embassy_visit_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.visit_visa_report_new
+msgid "and Passport No."
+msgstr "وجواز السفر."
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.business_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.embassy_visit_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.visit_visa_report_new
+msgid "as a full time employee since"
+msgstr "كموظف بدوام كامل منذ ذلك الحين"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.business_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.embassy_visit_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.visit_visa_report_new
+msgid "her."
+msgstr "لها."
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.business_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.embassy_visit_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.visit_visa_report_new
+msgid "him."
+msgstr "له."
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.business_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.embassy_visit_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.visit_visa_report_new
+msgid "in the capacity of"
+msgstr "في قدرة"
+
+#. module: slnee_hr_visa
+#: model:ir.model.fields,field_description:slnee_hr_visa.field_hr_visa_name
+msgid "name"
+msgstr "اسم"
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.business_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.embassy_visit_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.visit_visa_report_new
+msgid "national, holder of ID / Iqama No."
+msgstr "وطني ، حامل بطاقة الهوية / الإقامة."
+
+#. module: slnee_hr_visa
+#: model:ir.ui.view,arch_db:slnee_hr_visa.business_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.embassy_visit_visa_report_new
+#: model:ir.ui.view,arch_db:slnee_hr_visa.visit_visa_report_new
+msgid "would like to request a visa for"
+msgstr "ترغب في طلب تأشيرة ل"
+

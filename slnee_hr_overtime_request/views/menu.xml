@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_analytic_overtime" name="Analytic Overtime" parent="hr_attendance.menu_hr_attendance_root" groups="hr.group_hr_manager,base.group_user"/>
+    <menuitem id="menu_analytic_overtime_action" parent="menu_analytic_overtime" action="action_view_analytic_overtime" sequence="0" groups="hr.group_hr_manager"/>
+    <menuitem id="menu_action_view_analytic_overtime_response" parent="menu_analytic_overtime" action="action_view_analytic_overtime_response" sequence="1" groups="base.group_user"/>
+</odoo>

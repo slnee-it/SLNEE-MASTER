@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="copy_center_user_rule" model="ir.rule">
+        <field name="name">Copy Center User</field>
+        <field ref="model_copy_center" name="model_id"/>
+        <field name="domain_force">[('employee_id.user_id','=',user.id)]</field>
+        <field name="groups" eval="[(4, ref('base.group_user'))]"/>
+    </record>
+	<record id="copy_center_comp_rule" model="ir.rule">
+        <field name="name">Copy Center multi-company</field>
+        <field name="model_id" ref="model_copy_center"/>
+        <field name="groups" eval="[(4, ref('hr_admin.group_admin_manager')),(4, ref('hr.group_hr_user'))]"/>
+        <field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+    </record>
+</odoo>

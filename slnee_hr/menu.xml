@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <menuitem id="hr.menu_human_resources_configuration" name="Configuration" parent="hr.menu_hr_root" groups="group_gr_assistant,hr.group_hr_user,group_line_manager,group_hof" sequence="99"/>
+        <menuitem id="menu_gr" name="GR Operations" sequence="14" web_icon="slnee_hr,static/description/gr-operations.png"/>
+        <!-- <menuitem id="menu_gr_visa" name="GR Operation" sequence="10" parent="hr.menu_hr_root" /> -->
+        <!-- <menuitem id="menu_hr_hr_config" parent="hr.menu_human_resources_configuration" name="HR" sequence="10" groups="group_hr_assistant"/> -->
+        <menuitem action="hr.open_view_categ_form" id="hr.menu_view_employee_category_form" parent="hr.menu_human_resources_configuration" sequence="1" groups="base.group_no_one,hr.group_hr_user"/>
+        <!-- <menuitem action="hr.open_module_tree_department" id="hr.menu_hr_department_tree" parent="hr_recruitment.menu_hr_recruitment_recruitment" sequence="7" groups="base.group_hr_manager,base.group_hr_user"/> -->
+        <menuitem action="base.action_res_partner_bank_account_form" id="menu_action_res_partner_bank_form_inherit" parent="hr.menu_human_resources_configuration"/>
+        <menuitem id="slnee_hr_groups_configuration.menu_hr_groups_config_action" parent="hr.menu_human_resources_configuration" sequence="0" action="slnee_hr_groups_configuration.action_view_hr_groups_config" groups="hr.group_hr_manager"/>
+        <!-- <menuitem id="menu_hr_branch" action="slnee_hr_groups_configuration.action_hr_branch" parent="hr.menu_human_resources_configuration" sequence="20"/> -->
+        <!--TO DO <menuitem id="menu_hr_document_type" action="action_res_document_type" parent="hr_recruitment.menu_hr_recruitment_configuration" sequence="12"/> -->
+        <!-- <menuitem id="menu_hr_branch" action="action_hr_branch" parent="menu_hr_hr_config" sequence="20"/> -->
+        <!--<menuitem id="menu_hr_employee_card" parent="hr.menu_hr_main" action="action_hr_employee_card_view" sequence="4" groups="base.group_user"/>-->
+        <menuitem action="hr.open_view_employee_list_my" id="hr.menu_open_view_employee_list_my" sequence="3" parent="hr.menu_hr_main"/>
+
+        <!-- <menuitem id="menu_hr_iqama" parent="hr.menu_hr_main" action="action_hr_iqama_view" sequence="6"/> -->
+
+        <!-- Menu for Public Year -->
+        <!-- <menuitem action="action_public_year" id="menu_public_year_view" parent="hr.menu_human_resources_configuration" sequence="20" groups="hr.group_hr_manager"/> -->
+
+        <!-- menu for reports -->
+        <menuitem id="menu_reports" parent="hr.menu_hr_root" sequence="98" name="Reports" groups="hr.group_hr_user"/>
+
+        <menuitem id="menu_employee_reports" parent="slnee_hr.menu_reports" sequence="1" name="Head Counts" action="slnee_hr.action_employee_reports_form" groups="hr.group_hr_user"/>
+
+        <menuitem id="menu_joining_employee_reports" parent="slnee_hr.menu_reports" sequence="2" name="New Joining Employees" action="slnee_hr.action_joining_employee_reports_form" groups="hr.group_hr_user"/>
+
+</odoo>

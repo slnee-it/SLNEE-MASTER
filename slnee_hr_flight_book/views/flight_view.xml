@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="flight_booking_tree_view" model="ir.ui.view">
+        <field name="name">flight.booking.tree.view</field>
+        <field name="model">flight.booking</field>
+        <field name="arch" type="xml">
+            <tree string="Flight Booking">
+                <field name="employee_id"/>
+                <field name="type"/>
+                <field name="source"/>
+                <field name="destination"/>
+                <field name="reason"/>
+                <field name="state"/>
+                <field name="departure_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="flight_booking_form_view" model="ir.ui.view">
+        <field name="name">flight.booking.form.view</field>
+        <field name="model">flight.booking</field>
+        <field name="arch" type="xml">
+            <form string="Flight Booking">
+                <header>
+                    <button name="flight_booking_confirm" string="Confirm"
+                        states="draft" type="object" class="oe_highlight" groups="base.group_user,hr_admin.group_admin_manager"/>
+                    <button name="flight_booking_validate" string="Approve"
+                        states="confirm" type="object" groups="hr.group_hr_user" class="oe_highlight" />
+                    <button name="flight_booking_inprogress" string="In Progress"
+                        states="validate1,validate" type="object" groups="hr_admin.group_admin_manager" class="oe_highlight" />
+                    <button name="ticket_received" string="Received"
+                        states="in_progress" type="object" groups="hr_admin.group_admin_manager" class="oe_highlight" />
+                    <button name="generate_expense" string="Generate Expense"
+                        type="object" class="oe_highlight"
+                        attrs="{'invisible':['|',('state','!=', 'received'),('expense_ids','!=',[])]}" groups="hr_admin.group_admin_manager"/>
+                    <button name="flight_booking_refuse" string="Refuse"
+                        states="validate,in_progress,confirm,validate1" groups="hr.group_hr_user,hr_admin.group_admin_manager"
+                        type="object"/>
+                    <button name="set_draft" string="Set as Draft"
+                        states="refuse,used,unused,refund" type="object"/>
+                    <field name="state" widget="statusbar"
+                        statusbar_visible="draft,confirm,validate"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box">
+                        <button type="object" name="view_expense" string="Expense" class="oe_stat_button" icon="fa-book"
+                                attrs="{'invisible':[('expense_ids','=',[])]}" groups="hr_admin.group_admin_manager">
+                        </button>
+                    </div>
+                    <group>
+                        <group string="Ticket Type">
+                            <field name="ticket_type" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Employee Information">
+                            <field name="employee_id" Placeholder="Select Employee..."
+                                attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="department_id"/>
+                            <field name="job_id"/>
+                            <field name="branch_id" domain="[('company_id', '=', company_id)]" groups="slnee_hr_branch.group_company_branch"/>
+                            <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"
+                                   attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="expense_ids" invisible="1"/>
+                            <label for="payment_mode" groups="hr_admin.group_admin_manager"/>
+                            <div>
+                                <field name="payment_mode" widget="radio"  attrs="{'readonly':[('state','!=','received')]}" groups="hr_admin.group_admin_manager"/>
+                            </div>
+                        </group>
+                        <group string="Travel Information">
+                            <field name="type" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="reason" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="source" attrs="{'readonly':[('state','!=','draft')]}" Placeholder="Departure from..."/>
+                            <field name="destination" attrs="{'readonly':[('state','!=','draft')]}" Placeholder="Boarding to..."/>
+                            <field name="seats" attrs="{'readonly':[('state','!=','draft')]}" />
+                            <field name="departure_date" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="arrival_date" attrs="{'invisible': [('type', '=', 'single')], 'required':
+                                  ['|',('type', '=', 'return'),('type', '=', 'hotel')], 'readonly':[('state','!=','draft')]}"/>
+                            <field name="po_number" attrs="{'readonly':[('state','!=','in_progress')]}"
+                                   groups="hr_admin.group_admin_manager"/>
+                            <field name="supplier_id"
+                                attrs="{'readonly':[('state','!=','in_progress')]}" Placeholder="Select Supplier"
+                                domain="[('supplier','=','True')]" context="{'default_supplier':1}"
+                                groups="hr_admin.group_admin_manager"/>
+                        </group>
+                    </group>
+                    <group string="Group Members" attrs="{'invisible':['|',('ticket_type','=','single'),('ticket_type','=', False)]}">
+                        <field name="group_member_ids" nolabel="1" attrs="{'readonly':[('state','!=','draft')]}">
+                            <tree editable="bottom">
+                                <field name="name"/>
+                                <field name="type"/>
+                            </tree>
+                            <form>
+                                <field name="name"/>
+                                <field name="type"/>
+                            </form>
+                        </field>
+                    </group>
+                    <notebook>
+                        <page string="Ticket Details" name="ticket_details">
+                            <field name="booking_lines" nolabel="1"  options="{'reload_on_button': True}"
+                                   attrs="{'readonly':[('state','not in',['in_progress'])]}"
+                                   context="{'default_source':source,'default_destination':destination,
+                                            'default_employee_id':employee_id,'default_travel_date':departure_date,
+                                            'default_seats':seats, 'default_company_id': company_id}">
+                                <tree>
+                                    <field name="ticket_no"/>
+                                    <field name="airline"/>
+                                    <field name="travel_date"/>
+                                    <field name="source"/>
+                                    <field name="booking_id" invisible="1"/>
+                                    <field name="destination"/>
+                                    <field name="invoice_amount" sum="Total"/>
+                                    <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
+                                </tree>
+                                <form string="Ticket Details">
+                                    <group>
+                                        <group string="Airlines Details">
+                                            <field name="employee_id" invisible="1"/>
+                                            <field name="airline" placeholder="Select Airlines..."/>
+                                            <field name="ticket_no" placeholder="Enter ticket number..."/>
+                                            <field name="booking_id" placeholder="Enter your remarks..." invisible="1"/>
+                                            <field name="flight_class"/>
+                                            <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
+                                        </group>
+                                        <group string="Travel Details">
+                                            <field name="travel_date" />
+                                            <field name="source" Placeholder="Departure from..."/>
+                                            <field name="destination" Placeholder="Boarding to..." />
+                                            <field name="seats"/>
+                                        </group>
+                                    </group>
+                                    <group string="Invoice Details">
+                                        <field name="invoice_amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                                        <field name="currency_id" invisible="1"/>
+                                    </group>
+                                    <separator string="Remarks" colspan="4"/>
+                                    <field name="remarks" placeholder="Enter your remarks..."/>
+                                </form>
+                            </field>
+                        </page>
+                        <page string="Description" name="description">
+                            <field name="description" placeholder="Put the description here"
+                                   attrs="{'readonly':[('state','!=','draft')]}"/>
+                        </page>
+                        <page string="Expense" groups="hr_admin.group_admin_manager">
+                            <group>
+                                <group attrs="{'invisible':[('payment_mode','=','company_account')]}">
+                                    <field name="emp_contribution" attrs="{'required':[('payment_mode','!=','company_account')],
+                                            'readonly':['|',('expense_ids','!=', []), ('state','not in',['draft','confirm', 'received'])]}"/>
+                                </group>
+                                <group>
+                                    <field name="company_contribution" attrs="{'required':[('payment_mode','!=','own_account')],
+                                        'invisible':[('payment_mode','=','own_account')], 'readonly':['|', ('expense_ids','!=', []), ('state','not in',['draft','confirm', 'received'])]}"/>
+                                    <field name="expense_ids" invisible="1"/>
+                                    <field name="expense_total" invisible="1"/>
+                                </group>
+                                <group string="Notes" colspan="4">
+                                    <field name="expense_note" nolabel="1" attrs="{'readonly':[('expense_ids','!=',[])]}"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Extra Information" groups="base.group_no_one">
+                            <group col="4">
+                                <field name="create_uid" readonly="1"/>
+                                <field name="create_date" readonly="1"/>
+                                <field name="write_uid" readonly="1"/>
+                                <field name="write_date" readonly="1"/>
+                                <field name="approved_by" attrs="{'invisible':[('approved_by','=',False)]}"/>
+                                <field name="approved_date" attrs="{'invisible':[('approved_date','=',False)]}"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="flight_booking_filter" model="ir.ui.view">
+        <field name="name">flight_booking.select</field>
+        <field name="model">flight.booking</field>
+        <field name="arch" type="xml">
+            <search string="Filter">
+                <filter string="Draft" domain="[('state','=',('draft'))]"
+                    help="Flight request " />
+                <filter string="Waiting Approval" domain="[('state','=',('confirm'))]"
+                    help="Flight request has been waiting for approval" />
+                <filter string="Approved" domain="[('state','=',('validate'))]"
+                    help="Flight request approved" />
+                <filter string="In Progress" domain="[('state','=',('in_progress'))]"
+                    help="Flight request In process" />
+                <filter string="Received" domain="[('state','=',('received'))]"
+                    help="Flight request receive for confirm" />
+                <filter string="Refused" domain="[('state','=',('refuse'))]"
+                    help="Flight request has been refused" />
+                <group expand="0" string="Group By...">
+                    <filter string="Employee" context="{'group_by':'employee_id'}"/>
+                    <filter string="Supplier" context="{'group_by':'supplier_id'}"/>
+                    <filter string="Job Position" context="{'group_by':'job_id'}"/>
+                    <filter string="Department" context="{'group_by':'department_id'}"/>
+                    <filter string="Type" context="{'group_by':'type'}"/>
+                    <filter string="Source" context="{'group_by':'source'}"/>
+                    <filter string="Destination" context="{'group_by':'destination'}"/>
+                    <filter string="State" context="{'group_by':'state'}"/>
+                    <filter string="Purpose of Travel" context="{'group_by':'reason'}"/>
+                    <filter string="Month" context="{'group_by':'departure_date'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="action_flight_booking_view" model="ir.actions.act_window">
+        <field name="name">Flight Booking</field>
+        <field name="res_model">flight.booking</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_tree_flight_booking" model="ir.actions.act_window.view">
+        <field eval="1" name="sequence" />
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="flight_booking_tree_view" />
+        <field name="act_window_id" ref="action_flight_booking_view" />
+    </record>
+
+    <record id="action_form_flight_booking" model="ir.actions.act_window.view">
+        <field eval="2" name="sequence" />
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="flight_booking_form_view" />
+        <field name="act_window_id" ref="action_flight_booking_view" />
+    </record>
+
+    <record id="portal_user_flight_booking_action" model="ir.actions.act_window">
+        <field name="name">Flight Booking</field>
+        <field name="res_model">flight.booking</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="flight_booking_tree_view"/>
+        <field name="context">{"portal":'True'}</field>
+        <field name="search_view_id" ref="flight_booking_filter"/>
+    </record>
+
+    <!-- Ticket Details - Booking Lines -->
+    <record id="flight_booking_line_tree_view" model="ir.ui.view">
+        <field name="name">flight.booking.line.tree.view</field>
+        <field name="model">flight.booking.line</field>
+        <field name="arch" type="xml">
+            <tree string="Ticket Details" create="false">
+                <field name="employee_id" invisible="1"/>
+                <field name="booking_id"/>
+                <field name="ticket_no"/>
+                <field name="airline"/>
+                <field name="travel_date"/>
+                <field name="source"/>
+                <field name="destination"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="flight_booking_line_form_view" model="ir.ui.view">
+        <field name="name">flight.booking.line.form.view</field>
+        <field name="model">flight.booking.line</field>
+        <field name="arch" type="xml">
+            <form string="Ticket Details" create="false" edit="false">
+                <sheet>
+                    <group>
+                        <group string="Airlines Details">
+                            <field name="employee_id"/>
+                            <field name="airline" placeholder="Select Airlines..."/>
+                            <field name="ticket_no" placeholder="Enter ticket number..."/>
+                            <field name="booking_id" placeholder="Enter your remarks..." required="1"/>
+                            <field name="flight_class"/>
+                            <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
+                        </group>
+                        <group string="Travel Details">
+                            <field name="travel_date"/>
+                            <field name="source" Placeholder="Departure from..."/>
+                            <field name="destination" Placeholder="Boarding to..."/>
+                            <field name="seats"/>
+                        </group>
+                    </group>
+                    <group string="Invoice Details">
+                        <!-- <field name="ticket_price_quated"/> -->
+                        <field name="invoice_amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                        <field name="currency_id" invisible="1"/>
+                    </group>
+                    <separator string="Remarks" colspan="4"/>
+                    <field name="remarks" placeholder="Enter your remarks..."/>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="flight_booking_line_filter" model="ir.ui.view">
+        <field name="name">flight.booking.line.select</field>
+        <field name="model">flight.booking.line</field>
+        <field name="arch" type="xml">
+            <search string="Filter">
+                <field name="ticket_no" string="Ticket No" filter_domain="['|','|','|',('ticket_no','ilike',self),
+                            ('airline','ilike',self), ('source','ilike',self),('destination','ilike',self)]" />
+                <group expand="0" string="Group By...">
+                    <filter string="Airlines" context="{'group_by':'airline'}"/>
+                    <filter string="Source" context="{'group_by':'source'}"/>
+                    <filter string="Destination" context="{'group_by':'destination'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_flight_booking_line" model="ir.actions.act_window">
+        <field name="name">Ticket Details</field>
+        <field name="res_model">flight.booking.line</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Airline -->
+    <record id="airline_tree_view" model="ir.ui.view">
+        <field name="name">airline.tree.view</field>
+        <field name="model">airlines</field>
+        <field name="arch" type="xml">
+            <tree string="Airlines" editable="top">
+                <field name="name"/>
+                <field name="code"/>
+            </tree>
+        </field>
+    </record>
+    <record id="airlines_form_view" model="ir.ui.view">
+        <field name="name">airlines.form.view</field>
+        <field name="model">airlines</field>
+        <field name="arch" type="xml">
+            <form string="Airlines">
+                <group col="4">
+                    <field name="name"/>
+                    <field name="code"/>
+                </group>
+            </form>
+        </field>
+    </record>
+    <record id="action_airlines" model="ir.actions.act_window">
+        <field name="name">Airlines</field>
+        <field name="res_model">airlines</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

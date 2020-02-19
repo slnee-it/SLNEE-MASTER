@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!--Country Angola-->
+        <record id="base.ao" model="res.country">
+            <field name="arabic_country_name">أنجولا</field>
+        </record>
+
+        <!--Country Australia-->
+        <record id="base.au" model="res.country">
+            <field name="arabic_country_name">أستراليا</field>
+        </record>
+
+        <!--Country Bangladesh-->
+        <record id="base.bd" model="res.country">
+            <field name="arabic_country_name">بنغلاديش</field>
+        </record>
+
+        <!--Country Canada-->
+        <record id="base.ca" model="res.country">
+            <field name="arabic_country_name">كندا</field>
+        </record>
+
+        <!--Country Eritrea-->
+        <record id="base.er" model="res.country">
+            <field name="arabic_country_name">إريتريا</field>
+        </record>
+
+        <!--Country Egypt-->
+        <record id="base.eg" model="res.country">
+            <field name="arabic_country_name">مصر</field>
+        </record>
+
+        <!--Country Ethiopia-->
+        <record id="base.et" model="res.country">
+            <field name="arabic_country_name">أثيوبيا</field>
+        </record>
+
+        <!--Country France-->
+        <record id="base.fr" model="res.country">
+            <field name="arabic_country_name">فرنسا</field>
+        </record>
+
+        <!--Country Iraq-->
+        <record id="base.iq" model="res.country">
+            <field name="arabic_country_name">العراق</field>
+        </record>
+
+        <!--Country Ireland-->
+        <record id="base.ie" model="res.country">
+            <field name="arabic_country_name">أيرلندا</field>
+        </record>
+
+        <!--Country India-->
+        <record id="base.in" model="res.country">
+            <field name="arabic_country_name">الهند</field>
+        </record>
+
+        <!--Country Jordan-->
+        <record id="base.jo" model="res.country">
+            <field name="arabic_country_name">الأردن</field>
+        </record>
+
+        <!--Country Lebanon-->
+        <record id="base.lb" model="res.country">
+            <field name="arabic_country_name">لبنان</field>
+        </record>
+
+        <!--Country Sri Lanka-->
+        <record id="base.lk" model="res.country">
+            <field name="arabic_country_name">سري ل انكا</field>
+        </record>
+
+        <!--Country Mauritania-->
+        <record id="base.mr" model="res.country">
+            <field name="arabic_country_name">موريتانيا</field>
+        </record>
+
+        <!--Country Nepal-->
+        <record id="base.np" model="res.country">
+            <field name="arabic_country_name">نيبال</field>
+        </record>
+
+        <!--Country Morocco-->
+        <record id="base.ma" model="res.country">
+            <field name="arabic_country_name">المغرب</field>
+        </record>
+
+        <!--Country Malaysia-->
+        <record id="base.my" model="res.country">
+            <field name="arabic_country_name">ماليزيا</field>
+        </record>
+
+        <!--Country New Zealand-->
+        <record id="base.nz" model="res.country">
+            <field name="arabic_country_name">نيوزيلندا</field>
+        </record>
+
+        <!--Country Philippines-->
+        <record id="base.ph" model="res.country">
+            <field name="arabic_country_name">الفلبين</field>
+        </record>
+
+        <!--Country Pakistan-->
+        <record id="base.pk" model="res.country">
+            <field name="arabic_country_name">باكستان</field>
+        </record>
+
+        <!--Country Palestinian Territory-->
+        <record id="base.ps" model="res.country">
+            <field name="arabic_country_name">الأراضي الفلسطينية</field>
+        </record>
+
+        <!--Country Russian Federation-->
+        <record id="base.ru" model="res.country">
+            <field name="arabic_country_name">الاتحاد الروسي</field>
+        </record>
+
+        <!--Country Saudi Arabia-->
+        <record id="base.sa" model="res.country">
+            <field name="arabic_country_name">العربية السعودية</field>
+        </record>
+
+        <!--Country Sudan-->
+        <record id="base.sd" model="res.country">
+            <field name="arabic_country_name">سودان</field>
+        </record>
+
+        <!--Country Syria-->
+        <record id="base.sy" model="res.country">
+            <field name="arabic_country_name">سوريا</field>
+        </record>
+
+        <!--Country United Kingdom-->
+        <record id="base.uk" model="res.country">
+            <field name="arabic_country_name">المملكة المتحدة</field>
+        </record>
+
+        <!--Country USA-->
+        <record id="base.us" model="res.country">
+            <field name="arabic_country_name">الولايات المتحدة الأمريكية</field>
+        </record>
+
+        <!--Country Yemen-->
+        <record id="base.ye" model="res.country">
+            <field name="arabic_country_name">يمني</field>
+        </record>
+
+    </data>
+</odoo>

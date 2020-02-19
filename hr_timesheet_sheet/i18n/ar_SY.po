@@ -1,0 +1,672 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* hr_timesheet_sheet
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-12 08:28+0000\n"
+"PO-Revision-Date: 2018-09-12 08:28+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "<span class=\"o_stat_text\">Timesheet</span>"
+msgstr "<span class=\"o_stat_text\">ورقة التوقيت</span>"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "Add new line"
+msgstr "أضف سطر جديد"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model,name:hr_timesheet_sheet.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "التحليل الخط"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "Approve"
+msgstr "موافقه"
+
+#. module: hr_timesheet_sheet
+#: selection:hr_timesheet.sheet,state:0
+#: model:mail.message.subtype,name:hr_timesheet_sheet.mt_timesheet_approved
+msgid "Approved"
+msgstr "مقبول"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model,name:hr_timesheet_sheet.model_hr_attendance
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_day_total_attendance
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "Attendance"
+msgstr "حضور"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_attendance_count
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_attendances_ids
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "Attendances"
+msgstr "الحضور"
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:511
+#, python-format
+msgid "Cannot approve a non-submitted sheet."
+msgstr "لا يمكن الموافقة على ورقة غير مقدمة."
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.res_config_settings_view_form
+msgid "Choose which timesheet sheet ranges should be used by default"
+msgstr "اختر أي نطاقات ورقة الجدول الزمني يجب أن تستخدم بشكل افتراضي"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model,name:hr_timesheet_sheet.model_res_company
+msgid "Companies"
+msgstr "الشركات"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "Compute Timesheet"
+msgstr "حساب الجدول الزمني"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.view_hr_timesheet_sheet_filter
+msgid "Confirmed Timesheet Sheets"
+msgstr "أوراق جدول زمني مؤكد"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_line_count_timesheets
+msgid "Count Timesheets"
+msgstr "عدد الجداول الزمنية"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_create_uid
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_line_create_uid
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_day_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_create_date
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_line_create_date
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_day_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_line_date
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_day_name
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_date_start
+msgid "Date From"
+msgstr "التاريخ من"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_line_value_x
+msgid "Date Name"
+msgstr "اسم التاريخ"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_date_end
+msgid "Date To"
+msgstr "التاريخ للإنتهاء"
+
+#. module: hr_timesheet_sheet
+#: selection:res.company,sheet_range:0
+msgid "Day"
+msgstr "يوم"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_department_id
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.view_hr_timesheet_sheet_filter
+msgid "Department"
+msgstr "القسم"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "Details"
+msgstr "التفاصيل"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_day_total_difference
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_total_difference
+msgid "Difference"
+msgstr "الفرق"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_display_name
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_line_display_name
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_day_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model,name:hr_timesheet_sheet.model_hr_employee
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_employee_id
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "Employee's Name"
+msgstr "اسم الموظف"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.view_hr_timesheet_sheet_filter
+msgid "Employees"
+msgstr "الموظفون"
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:748
+#, python-format
+msgid "Error code: Cannot have 0 timesheets."
+msgstr "رمز الخطأ: لا يمكن أن يكون 0 الجداول الزمنية."
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.view_hr_timesheet_sheet_filter
+msgid "Group By"
+msgstr "تجميع حسب"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model,name:hr_timesheet_sheet.model_hr_department
+msgid "HR Department"
+msgstr "قسم الموارد البشرية"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "Hours"
+msgstr "الساعات"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_id
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_line_id
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_day_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,help:hr_timesheet_sheet.field_hr_timesheet_sheet_add_line_project_id
+msgid "If selected, the associated project is added to the timesheet sheet when clicked the button."
+msgstr "إذا تم تحديده ، فسيتم إضافة المشروع المرتبط إلى ورقة الجدول الزمني عند النقر فوق الزر."
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,help:hr_timesheet_sheet.field_hr_timesheet_sheet_add_line_task_id
+msgid "If selected, the associated task is added to the timesheet sheet when clicked the button."
+msgstr "في حالة التحديد ، تتم إضافة المهمة المرتبطة إلى ورقة الجدول الزمني عند النقر فوق الزر."
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.view_hr_timesheet_sheet_filter
+msgid "In Draft"
+msgstr "في السجل"
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:436
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:450
+#, python-format
+msgid "In order to create a sheet for this employee, you must link him/her to an user."
+msgstr "لإنشاء ورقة لهذا الموظف ، يجب عليك ربطه بمستخدم."
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet___last_update
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_line___last_update
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_day___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_line_write_uid
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_day_write_uid
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_line_write_date
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_day_write_date
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_day_holiday_ids
+msgid "Leave Request"
+msgstr "طلب الاجازة"
+
+#. module: hr_timesheet_sheet
+#: selection:res.company,sheet_range:0
+msgid "Month"
+msgstr "شهر"
+
+#. module: hr_timesheet_sheet
+#: model:ir.actions.act_window,name:hr_timesheet_sheet.act_hr_timesheet_sheet_my_timesheets
+#: model:ir.ui.menu,name:hr_timesheet_sheet.menu_act_hr_timesheet_sheet_my_timesheets
+msgid "My Timesheet Sheets"
+msgstr "صحائف الجدول الزمني الخاص بي"
+
+#. module: hr_timesheet_sheet
+#: model:ir.actions.act_window,help:hr_timesheet_sheet.act_hr_timesheet_sheet_my_timesheets
+msgid "New timesheet sheet."
+msgstr "ورقة جدول زمني جديد."
+
+#. module: hr_timesheet_sheet
+#: model:ir.actions.act_window,help:hr_timesheet_sheet.act_hr_timesheet_sheet_form
+msgid "New timesheet to approve."
+msgstr "جدول زمني جديد للموافقة."
+
+#. module: hr_timesheet_sheet
+#: model:hr.salary.rule,name:hr_timesheet_sheet.hr_salary_rule_overtime_allowance
+msgid "Normal Working Day Overtime Allowance"
+msgstr "بدل العمل الإضافي ليوم العمل العادي"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_name
+msgid "Note"
+msgstr "ملاحظة"
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:509
+#, python-format
+msgid "Only an HR Officer or Manager can approve sheets."
+msgstr "يمكن لموظف أو مدير الموارد البشرية فقط الموافقة على الأوراق."
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:486
+#, python-format
+msgid "Only an HR Officer or Manager can refuse sheets or reset them to draft."
+msgstr "يمكن لموظف أو مدير الموارد البشرية فقط رفض الأوراق أو إعادة تعيينها لصياغتها."
+
+#. module: hr_timesheet_sheet
+#: selection:hr_timesheet.sheet,state:0
+msgid "Open"
+msgstr "فتح"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_day_total_overtime
+msgid "Overtime"
+msgstr "متأخر , بعد فوات الوقت"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_payslip_worked_days_overtime_hours
+msgid "Overtime Hours"
+msgstr "ساعات العمل الإضافي"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model,name:hr_timesheet_sheet.model_hr_payslip
+msgid "Pay Slip"
+msgstr "ظرف المرتب"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model,name:hr_timesheet_sheet.model_hr_payslip_worked_days
+msgid "Payslip Worked Days"
+msgstr "قسيمة الدفع يوم عمل"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_period_ids
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "Period"
+msgstr "فترة"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_line_project_id
+msgid "Project"
+msgstr "المشروع"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_line_value_y
+msgid "Project Name"
+msgstr "اسم المشروع"
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/hr_payroll.py:69
+#, python-format
+msgid "Public Holiday Working Days paid at 250%"
+msgstr "أيام عمل العطلة العامة المدفوعة بنسبة 250٪"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_line_unit_amount
+msgid "Quantity"
+msgstr "الكمية"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_day_reason
+msgid "Reason"
+msgstr "السبب"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,help:hr_timesheet_sheet.field_hr_timesheet_sheet_user_id
+msgid "Related user name for the resource to manage its access."
+msgstr "اسم المستخدم ذو الصلة للمورد لإدارة وصوله."
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.view_hr_timesheet_sheet_filter
+msgid "Search Timesheet"
+msgstr "ابحث عن سجل الدوام"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_add_line_project_id
+msgid "Select Project"
+msgstr "حدد المشروع"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_add_line_task_id
+msgid "Select Task"
+msgstr "اختر المهمة"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "Set to Draft"
+msgstr "تعيين كمسودة"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_account_analytic_line_sheet_id
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_account_analytic_line_sheet_id_computed
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_attendance_sheet_id
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_attendance_sheet_id_computed
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_line_sheet_id
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_day_sheet_id
+msgid "Sheet"
+msgstr "ورقة"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_state
+msgid "Status"
+msgstr "الحالة "
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "Submit to Manager"
+msgstr "تقدم إلى مدير"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "Summary"
+msgstr "الملخص"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_line_task_id
+msgid "Task"
+msgstr "المهمة"
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:303
+#, python-format
+msgid "The Company in the Timesheet Sheet and in the Department must be the same."
+msgstr "يجب أن تكون الشركة في صحيفة الجدول الزمني وفي الإدارة نفسها."
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:290
+#, python-format
+msgid "The Company in the Timesheet Sheet and in the Employee must be the same."
+msgstr "يجب أن تكون الشركة في ورقة الجدول الزمني وفي الموظف نفس."
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:316
+#, python-format
+msgid "The Company in the Timesheet Sheet and in the Project must be the same."
+msgstr "يجب أن تكون الشركة في صحيفة الجدول الزمني وفي المشروع نفسها."
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:329
+#, python-format
+msgid "The Company in the Timesheet Sheet and in the Task must be the same."
+msgstr "يجب أن تكون الشركة في ورقة الجدول الزمني والمهمة نفسها."
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,help:hr_timesheet_sheet.field_res_company_sheet_range
+#: model:ir.model.fields,help:hr_timesheet_sheet.field_res_config_settings_sheet_range
+msgid "The range of your Timesheet Sheet."
+msgstr "نطاق صحيفة الجدول الزمني الخاص بك."
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:254
+#, python-format
+msgid "The start date cannot be later than the end date."
+msgstr "لا يمكن أن يكون تاريخ البدء بعد تاريخ الانتهاء."
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "Timesheet Activities"
+msgstr "أنشطة الجدول الزمني"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.res_config_settings_view_form
+msgid "Timesheet Options"
+msgstr "خيارات الجدول الزمني"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "Timesheet Period"
+msgstr "فترة سجل الحضور"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model,name:hr_timesheet_sheet.model_hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "Timesheet Sheet"
+msgstr "ورقة الجدول الزمني"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model,name:hr_timesheet_sheet.model_hr_timesheet_sheet_line
+msgid "Timesheet Sheet Line"
+msgstr "خط ورقة الجدول الزمني"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_res_company_sheet_range
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_res_config_settings_sheet_range
+msgid "Timesheet Sheet Range"
+msgstr "نطاق ورقة الجدول الزمني"
+
+#. module: hr_timesheet_sheet
+#: model:ir.actions.act_window,name:hr_timesheet_sheet.act_hr_employee_2_hr_timesheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_employee_timesheet_count
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_tree_simplified
+msgid "Timesheet Sheets"
+msgstr "أوراق الجدول الزمني"
+
+#. module: hr_timesheet_sheet
+#: model:ir.actions.act_window,name:hr_timesheet_sheet.act_hr_timesheet_sheet_form
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_department_timesheet_sheet_to_approve_count
+#: model:ir.ui.menu,name:hr_timesheet_sheet.menu_act_hr_timesheet_sheet_form
+msgid "Timesheet Sheets to Approve"
+msgstr "أوراق الجدول الزمني للموافقة"
+
+#. module: hr_timesheet_sheet
+#: model:mail.message.subtype,description:hr_timesheet_sheet.mt_timesheet_approved
+msgid "Timesheet approved"
+msgstr "وافق الجدول الزمني"
+
+#. module: hr_timesheet_sheet
+#: model:ir.actions.act_window,help:hr_timesheet_sheet.act_hr_timesheet_sheet_my_timesheets
+msgid "Timesheet sheets can also be invoiced to customers, depending on\n"
+"             the configuration of each project's related contract."
+msgstr "يمكن أيضًا إصدار فواتير بالصفائح الزمنية إلى العملاء ، بناءً على \ n "
+"تكوين كل عقد متعلق بالمشروع."
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_line_ids
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_timesheet_ids
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_department_view_kanban
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_employee_extd_form
+msgid "Timesheets"
+msgstr "الجداول الزمنيه "
+
+#. module: hr_timesheet_sheet
+#: model:mail.message.subtype,name:hr_timesheet_sheet.mt_department_timesheet_approved
+msgid "Timesheets Approved"
+msgstr "الجداول الزمنية المعتمدة"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model,name:hr_timesheet_sheet.model_hr_timesheet_sheet_sheet_day
+msgid "Timesheets by Period"
+msgstr "الجداول الزمنية حسب الفترة"
+
+#. module: hr_timesheet_sheet
+#: model:ir.actions.act_window,help:hr_timesheet_sheet.act_hr_timesheet_sheet_form
+msgid "Timesheets can also be invoiced to customers, depending on the\n"
+"            configuration of each project's related contract."
+msgstr "يمكن أيضًا إصدار فواتير بالصفائح إلى العملاء ، بناءً على \ n "
+"تكوين كل عقد متعلق بالمشروع."
+
+#. module: hr_timesheet_sheet
+#: model:ir.actions.act_window,name:hr_timesheet_sheet.hr_timesheet_action_from_department
+#: model:mail.message.subtype,name:hr_timesheet_sheet.mt_department_timesheet_confirmed
+msgid "Timesheets to Approve"
+msgstr "الجداول الزمنية للموافقة"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.menu,name:hr_timesheet_sheet.menu_hr_to_approve
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.view_hr_timesheet_sheet_filter
+msgid "To Approve"
+msgstr "للاعتماد"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "Total"
+msgstr "الإجمالي "
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_total_attendance
+msgid "Total Attendance"
+msgstr "مجموع الحضور"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_total_overtime
+msgid "Total Overtime"
+msgstr "مجموع العمل الإضافي"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_sheet_day_total_timesheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_total_timesheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "Total Timesheet"
+msgstr "سجل الدوام الكلي"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.view_hr_timesheet_sheet_filter
+msgid "Unread Messages"
+msgstr "الرسائل الجديدة"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.view_hr_timesheet_sheet_filter
+msgid "Unvalidated Timesheet Sheets"
+msgstr "أوراق جدول زمني غير معتمد"
+
+#. module: hr_timesheet_sheet
+#: model:ir.model.fields,field_description:hr_timesheet_sheet.field_hr_timesheet_sheet_user_id
+msgid "User"
+msgstr "المستخدم"
+
+#. module: hr_timesheet_sheet
+#: selection:hr_timesheet.sheet,state:0
+#: model:mail.message.subtype,name:hr_timesheet_sheet.mt_timesheet_confirmed
+msgid "Waiting Approval"
+msgstr "في انتظار الموافقة"
+
+#. module: hr_timesheet_sheet
+#: selection:res.company,sheet_range:0
+msgid "Week"
+msgstr "الأسبوع"
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:462
+#, python-format
+msgid "Week "
+msgstr "أسبوع"
+
+#. module: hr_timesheet_sheet
+#: model:hr.salary.rule,name:hr_timesheet_sheet.hr_salary_rule_weekend_overtime_allowance
+msgid "Weekend Day Overtime Allowance"
+msgstr "بدل العمل الإضافي ليوم عطلة نهاية الأسبوع"
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/hr_payroll.py:59
+#, python-format
+msgid "Weekends Working Days paid at 200%"
+msgstr "أيام العمل في عطلة نهاية الأسبوع المدفوعة بنسبة 200 ٪"
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/hr_department.py:40
+#: code:addons/hr_timesheet_sheet/models/hr_employee.py:34
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:343
+#, python-format
+msgid "You cannot change the company, as this %s (%s) is assigned to %s (%s)."
+msgstr "لا يمكنك تغيير الشركة ، حيث يتم تعيين٪ s (٪ s) هذه إلى٪ s (٪ s)."
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:473
+#, python-format
+msgid "You cannot delete a timesheet sheet which is already confirmed."
+msgstr "لا يمكنك حذف ورقة جدول زمني تم تأكيدها بالفعل."
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:429
+#, python-format
+msgid "You cannot duplicate a sheet."
+msgstr "لا يمكنك تكرار ورقة."
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/hr_timesheet_sheet.py:276
+#, python-format
+msgid "You cannot have 2 sheets that overlap!\n"
+"Please use the menu 'Timesheet Sheet' to avoid this problem."
+msgstr "لا يمكنك الحصول على ورقتين تتداخلان! \ n "
+"الرجاء استخدام القائمة" ورقة الجدول الزمني "لتجنب هذه المشكلة."
+
+#. module: hr_timesheet_sheet
+#: code:addons/hr_timesheet_sheet/models/account_analytic_line.py:77
+#, python-format
+msgid "You cannot modify an entry in a confirmed timesheet sheet."
+msgstr "لا يمكنك تعديل إدخال في ورقة جدول زمني مؤكد."
+
+#. module: hr_timesheet_sheet
+#: model:ir.actions.act_window,help:hr_timesheet_sheet.act_hr_timesheet_sheet_form
+msgid "You must record timesheets every day and confirm at the end\n"
+"            of the week. Once the timesheet is confirmed, it should be\n"
+"            validated by a manager."
+msgstr "يجب عليك تسجيل الجداول الزمنية كل يوم وتأكيدها في النهاية \ n "
+"من الأسبوع. بمجرد تأكيد الجدول الزمني ، يجب أن يكون \ n"
+"التحقق من صحة من قبل مدير."
+
+#. module: hr_timesheet_sheet
+#: model:ir.actions.act_window,help:hr_timesheet_sheet.act_hr_timesheet_sheet_my_timesheets
+msgid "You must record timesheets in the sheet every day and confirm at the end\n"
+"             of the week. Once the timesheet sheet is confirmed, it should be\n"
+"             validated by a manager."
+msgstr "يجب عليك تسجيل الجداول الزمنية في الورقة كل يوم وتأكيدها في النهاية \ n "
+"من الأسبوع. بمجرد تأكيد ورقة الجدول الزمني ، يجب أن يكون \ n"
+"التحقق من صحة من قبل مدير."
+
+#. module: hr_timesheet_sheet
+#: model:ir.model,name:hr_timesheet_sheet.model_res_config_settings
+msgid "res.config.settings"
+msgstr "الدقة.التكوين.إعدادات"
+
+#. module: hr_timesheet_sheet
+#: model:ir.ui.view,arch_db:hr_timesheet_sheet.hr_timesheet_sheet_form
+msgid "to"
+msgstr "إلى"
+
+#. module: hr_timesheet_sheet
+#: model:mail.message.subtype,description:hr_timesheet_sheet.mt_timesheet_confirmed
+msgid "waiting approval"
+msgstr "موافقة الانتظار"
+

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="hr_employee_card_form_view" model="ir.ui.view">
+        <field name="name">hr.employee.card.form.view</field>
+        <field name="model">hr.employee.card</field>
+        <field name="arch" type="xml">
+            <form string="Employee Card">
+                <header>
+                    <button name="card_confirm" string="Confirm" states="draft" type="object" class="oe_highlight"/>
+                    <button name="card_inprogress" string="In Progress" states="confirm" type="object"
+                            class="oe_highlight" groups="hr.group_hr_user"/>
+                    <button name="print_id_card" class="oe_highlight" string="Print Card" type="object"
+                            groups="hr.group_hr_user" attrs="{'invisible': ['|', ('card_type','!=','id_card'),
+                            ('state','not in',['inprogress','done'])]}"/>
+                    <button name="card_done" string="Done" states="inprogress" type="object" class="oe_highlight"
+                            groups="hr.group_hr_user"/>
+                    <button name="card_refuse" string="Refuse" states="confirm,inprogress" type="object"
+                            groups="hr.group_hr_user"/>
+                    <button name="set_draft" string="Set to Draft" states="refuse,done" type="object"
+                            groups="hr.group_hr_user, base.group_user"/>
+                    <field name="state" widget="statusbar" statusbar_visible="confirm"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group string="Employee Information">
+                            <field name="employee_id" attrs="{'readonly':[('state','!=','draft')]}"
+                                   placeholder="Select Employee" groups="hr.group_hr_user"/>
+                            <field name="department_id" />
+                            <field name="job_id" />
+                            <field name="branch_id" domain="[('company_id', '=', company_id)]" groups="slnee_hr_branch.group_company_branch"/>
+                            <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"
+                                   attrs="{'readonly':[('state','!=','draft')]}"/>
+                        </group>
+                        <group string="Card Information">
+                            <field name="card_type" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="card_no" attrs="{'readonly':[('state','in',['done'])],
+                            'invisible':[('card_type','=','business')], 'required':[('state','=','inprogress'), ('card_type','!=','business')]}"
+                                   placeholder="Card No"/>
+                            <field name="requested_date" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="reason" attrs="{'required':[('card_type','in',['access','id_card'])],
+                            'readonly':[('state','!=','draft')],'invisible':[('card_type','=','business')]}"/>
+                            <field name="status" attrs="{'readonly':[('state','!=','draft')],
+                            'invisible':[('card_type','=','business')],'required':[('card_type','in',['access','id_card'])]}"/>
+                            <field name="access_type" attrs="{'readonly':[('state','!=','draft')],
+                            'invisible':[('card_type','in',['business','id_card'])],'required':[('card_type','=','access')]}"/>
+                            <field name="period_of_stay" attrs="{'readonly':[('state','!=','draft')],'invisible':['|',('card_type','=','business'),('status','=','permanent')]}"/>
+                            <field name="work_phone" attrs="{'readonly':[('state','!=','draft')],'invisible':[('card_type','in',['access','id_card'])]}"/>
+                            <field name="work_mobile" attrs="{'readonly':[('state','!=','draft')],'invisible':[('card_type','in',['access','id_card'])]}"/>
+                            <field name="work_email" attrs="{'readonly':[('state','!=','draft')],'invisible':[('card_type','in',['access','id_card'])]}"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Description">
+                            <group  colspan="4">
+                                <field name="description" placeholder="Put the description here..." nolabel="1"
+                                       attrs="{'readonly': [('state','!=','draft')]}"/>
+                            </group>
+                        </page>
+                        <page string="Extra Information" groups="base.group_no_one">
+                            <group col="4">
+                                <field name="create_uid" readonly="1"/>
+                                <field name="create_date" readonly="1"/>
+                                <field name="write_uid" readonly="1"/>
+                                <field name="write_date" readonly="1"/>
+                                <field name="approved_by" attrs="{'invisible':[('approved_by','=',False)]}"/>
+                                <field name="approved_date" attrs="{'invisible':[('approved_date','=',False)]}"/>
+                                <field name="refused_by" attrs="{'invisible':[('refused_by','=',False)]}"/>
+                                <field name="refused_date" attrs="{'invisible':[('refused_date','=',False)]}"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+    <record id="hr_employee_card_tree_view" model="ir.ui.view">
+        <field name="name">hr.employee.card.tree.view</field>
+        <field name="model">hr.employee.card</field>
+        <field name="arch" type="xml">
+            <tree string="Employee Card">
+                <field name="employee_id"/>
+                <field name="department_id"/>
+                <field name="job_id"/>
+                <field name="branch_id" groups="slnee_hr_branch.group_company_branch"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+                <field name="card_type"/>
+                <field name="requested_date"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_hr_employee_card_filter" model="ir.ui.view">
+        <field name="name">hr.employee.card.filter</field>
+        <field name="model">hr.employee.card</field>
+        <field name="arch" type="xml">
+            <search string="Search Employee Card">
+                <field name="employee_id"/>
+                <filter icon="terp-check" domain="[('state','=','draft')]" string="To Approve"/>
+                <filter icon="terp-check" domain="[('state','=','confirm')]" string="Confirmed"/>
+                <filter icon="terp-check" domain="[('state','=','inprogress')]" string="Inprogress"/>
+                <filter icon="terp-check" domain="[('state','=','refuse')]" string="Refused"/>
+                <group expand="0" string="Group By...">
+                    <filter name="group_name" string="Employee" context="{'group_by':'employee_id'}"/>
+                    <filter string="Job" context="{'group_by':'job_id'}"/>
+                    <filter string="Department" icon="terp-personal+" context="{'group_by':'department_id'}"/>
+                    <filter string="Status" icon="terp-stock_effects-object-colorize" context="{'group_by':'state'}"/>
+                    <filter string="Card Type" icon="terp-stock_effects-object-colorize" context="{'group_by':'card_type'}"/>
+                    <filter string="Month" icon="terp-stock_effects-object-colorize" context="{'group_by':'requested_date'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_hr_employee_card_view" model="ir.actions.act_window">
+        <field name="name">Employee Card</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hr.employee.card</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

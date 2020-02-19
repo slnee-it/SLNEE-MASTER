@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem name="Portal Operations" id="portal_operation_parent" parent="hr_admin.menu_hr_admin" sequence="0"
+              groups="base.group_portal"/>
+    <menuitem id="menu_flight_booking" parent="hr_admin.menu_hr_admin" action="action_flight_booking_view" sequence="2"
+              groups="base.group_user"/>
+    <menuitem id="menu_flight_booking_line" parent="hr_admin.menu_hr_admin" action="action_flight_booking_line" sequence="3"
+              groups="base.group_user" />
+    <menuitem id="menu_airlines" action="action_airlines" parent="hr_admin.menu_hr_admin_config" sequence="8"
+              groups="hr_admin.group_admin_manager"/>
+    <menuitem id="hr_admin.menu_admin_report_id" name="Admin Reports" parent="hr_admin.menu_hr_admin"
+              action="hr_admin.action_admin_reports_form"/>
+</odoo>

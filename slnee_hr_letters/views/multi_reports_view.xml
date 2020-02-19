@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_multi_reports_form" model="ir.ui.view">
+        <field name="name">slnee_hr_letters Letters</field>
+        <field name="model">multi.reports</field>
+        <field name="arch" type="xml">
+            <form string="Letters">
+                <header>
+                    <button name="print_report" string="Print" type="object" groups="hr.group_hr_manager" class="oe_highlight" states="approve" />
+                    <button name="letter_confirm" string="Submit" states="draft" type="object" class="oe_highlight" />
+                    <button name="letter_inprogress" string="In Progress" states="confirm" type="object" class="oe_highlight" groups="hr.group_hr_manager" />
+                    <button name="letter_approve" string="Approve" states="inprogress" type="object" class="oe_highlight" groups="hr.group_hr_manager" />
+                    <button name="letter_refuse" string="Refuse" states="confirm,inprogress" type="object" groups="hr.group_hr_manager" />
+                    <button name="set_draft" string="Set to Draft" states="refuse" type="object" groups="hr.group_hr_manager,base.group_user" />
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirm" />
+                </header>
+                <sheet>
+                    <group colspan="4" col="4">
+                        <field name="employee_id" attrs="{'readonly':[('state','not in',['draft','confirm'])]}" />
+                        <field name="date" attrs="{'readonly':[('state','not in',['draft','confirm'])]}" />
+                        <field name="report_type" attrs="{'readonly':[('state','not in',['draft','confirm'])]}" />
+                        <field name="handled_by_id" attrs="{'readonly':[('state','!=','confirm')],'invisible':[('state','=','draft')],'required':[('state','=','approve')]}" />
+                        <field name="manager_id" domain="[('user_id.is_authorized','=','True')]" attrs="{'required':[('state','=','inprogress')],'invisible':[('state','not in',['inprogress','approve'])],'readonly':[('state','!=','inprogress')]}" />
+                    </group>
+                    <notebook>
+                        <page string="Description">
+                            <group colspan="4">
+                                <field name="description" placeholder="Put the description here..." nolabel="1" attrs="{'readonly': [('state','not in',['draft','confirm'])]}" />
+                            </group>
+                        </page>
+                        <page string="Extra Information" groups="base.group_no_one">
+                            <group col="4">
+                                <field name="create_uid" readonly="1"/>
+                                <field name="create_date" readonly="1"/>
+                                <field name="write_uid" readonly="1"/>
+                                <field name="write_date" readonly="1"/>
+                                <field name="approved_by" attrs="{'invisible':[('approved_by','=',False)]}" />
+                                <field name="approved_date" attrs="{'invisible':[('approved_date','=',False)]}" />
+                                <field name="refused_by" attrs="{'invisible':[('refused_by','=',False)]}" />
+                                <field name="refused_date" attrs="{'invisible':[('refused_date','=',False)]}" />
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers" />
+                    <field name="message_ids" widget="mail_thread" />
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_multi_reports_tree" model="ir.ui.view">
+        <field name="name">slnee_hr_letters Letters</field>
+        <field name="model">multi.reports</field>
+        <field name="arch" type="xml">
+            <tree string="Letters">
+                <field name="employee_id" />
+                <field name="date" />
+                <field name="report_type" />
+                <field name="handled_by_id" />
+                <field name="manager_id" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_multi_reports_form" model="ir.actions.act_window">
+        <field name="name">Letters</field>
+        <field name="res_model">multi.reports</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_multi_reports_tree" />
+    </record>
+</odoo>

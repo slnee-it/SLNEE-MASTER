@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="slnee_hr.slnee_advance_hr_hr_employee_others" model="ir.rule">
+        <field name="name">HR Employee Others</field>
+        <field name="model_id" ref="hr.model_hr_employee"/>
+        <field name="domain_force">[(1,'=',1)]</field>
+        <field name="groups" eval="[(4,ref('hr.group_hr_user'))]"/>
+    </record>
+
+    <!-- External -->
+    <record id="external_training_employee" model="ir.rule">
+        <field name="name">Employee External Training</field>
+        <field name="model_id" ref="model_hr_employee_training"/>
+        <field name="domain_force">[('employee_id.user_id','=',user.id)]</field>
+        <field name="groups" eval="[(4,ref('base.group_user'))]"/>
+    </record>
+    <record id="external_training_talent" model="ir.rule">
+        <field name="name">Employee External Training Talent</field>
+        <field name="model_id" ref="model_hr_employee_training"/>
+        <field name="domain_force">[(1,'=',1)]</field>
+        <field name="groups" eval="[(4,ref('hr.group_hr_user'))]"/>
+    </record>
+
+    <!-- Internal -->
+    <record id="event_employee_invitation" model="ir.rule">
+        <field name="name">Event Employee Invitation</field>
+        <field name="model_id" ref="model_event_event"/>
+        <field name="domain_force">[('employee_ids','child_of',(user.employee_id.id))]</field>
+        <field name="groups" eval="[(4,ref('base.group_user'))]"/>
+    </record>
+    <record id="event_talent_acquisition_assistant" model="ir.rule">
+        <field name="name">Event Talent Acquisition Assistant</field>
+        <field name="model_id" ref="model_event_event"/>
+        <field name="domain_force">[(1,'=',1)]</field>
+        <field name="groups" eval="[(4,ref('hr.group_hr_user'))]"/>
+    </record>
+
+</odoo>

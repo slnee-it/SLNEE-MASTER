@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_timesheet_sheet_user,hr_timesheet.sheet,model_hr_timesheet_sheet,base.group_user,1,1,1,1
+access_hr_timesheet_sheet_sheet_day,access_hr_timesheet_sheet_sheet_day,model_hr_timesheet_sheet_sheet_day,base.group_user,1,1,1,0
+access_hr_timesheet_sheet_sheet_day_officer,access_hr_timesheet_sheet_sheet_day_officer,model_hr_timesheet_sheet_sheet_day,hr.group_hr_user,1,1,1,1

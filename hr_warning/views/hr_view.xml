@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="hr_employee_warning_view_form" model="ir.ui.view">
+        <field name="name">hr.employee.warning.form</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='toggle_active']" position="before">
+                <field name="issue_warning_ids" invisible="1"/>
+                <button name="act_hr_employee_warning"
+                    class="oe_stat_button"
+                    icon="fa fa-exclamation-triangle"
+                    type="object">
+                    <field name="warning_count" widget="statinfo" string="Warning"/>
+                </button>
+            </xpath>
+        </field>
+    </record>
+</odoo>

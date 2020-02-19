@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="hr_attendance_view_form_inherit" model="ir.ui.view">
+        <field name="name">hr.attendance.form</field>
+        <field name="model">hr.attendance</field>
+        <field name="inherit_id" ref="hr_attendance.hr_attendance_view_form"></field>
+        <field name="arch" type="xml">
+            <field name="check_out" position="after">
+                <field name="duration" widget="float_time"/>
+                <field name="outside_calendar_duration"   widget="float_time"/>
+                <field name="inside_calendar_duration"  widget="float_time" />
+            </field>
+        </field>
+    </record>
+
+    <record id="view_attendance_analysis" model="ir.ui.view">
+        <field name="name">hr.attendance.analysis</field>
+        <field name="model">hr.attendance</field>
+        <field name="priority" eval="17"/>
+        <field name="arch" type="xml">
+            <tree string="Employee attendances analysis">
+                <field name="employee_id"  />
+                <!-- <field name="check_in" string="Check In"/>
+                <field name="check_out"/> -->
+                <field name="duration"  sum="Total hours" widget="float_time"/>
+                <field name="outside_calendar_duration" sum="Overtime"  widget="float_time"/>
+                <field name="inside_calendar_duration" sum="Within working schedule" widget="float_time" />
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_hr_attendance_filter">
+        <field name="name">view_hr_attendance_filter</field>
+        <field name="model">hr.attendance</field>
+        <field name="arch" type="xml">
+            <search string="Hr Attendance Search">
+                <filter icon="terp-go-today" string="Today" name="today" domain="[('check_in','&gt;=',datetime.datetime.now().replace(hour=0, minute=0, second=0)),('check_in','&lt;=',datetime.datetime.now().replace(hour=23, minute=59, second=59))]" />
+                <separator orientation="vertical"/>
+                <field name="employee_id"/>
+                <field name="check_in" string="Check IN"/>
+                <field name="end_datetime"/>
+                <newline/>
+                <group expand="0" string="Group By...">
+                    <filter name="employee" string="Employee" icon="terp-personal" context="{'group_by':'employee_id'}"/>
+                    <separator orientation="vertical"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_hr_attendance_calendar">
+        <field name="name">view_hr_attendance.calendar</field>
+        <field name="model">hr.attendance</field>
+        <field name="arch" type="xml">
+            <calendar string="Calendar View" date_start="check_in" date_stop="check_out" color="employee_id">
+                <field name="duration"/>
+                <field name="outside_calendar_duration"/>
+                <field name="inside_calendar_duration"/>
+            </calendar>
+        </field>
+    </record>
+
+    <record id="open_view_attendance" model="ir.actions.act_window">
+        <field name="name">Attendance Analysis</field>
+        <field name="res_model">hr.attendance</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form,calendar</field>
+        <field name="domain">[('check_in', '!=', False)]</field>
+        <field name="view_id" ref="view_attendance_analysis"/>
+        <field name="search_view_id" ref="view_hr_attendance_filter" />
+    </record>
+
+</odoo>

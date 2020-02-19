@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="hr_hr_employee_view_form2_inherit" model="ir.ui.view">
+        <field name="name">hr.hr.employee.view.form2</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr_contract.hr_hr_employee_view_form2"/>
+        <field name="arch" type="xml">
+            <field name="manager" position="replace">
+                <field name="manager" string="Is Head of Function"/>
+            </field>
+            <xpath expr="//field[@name='place_of_birth']" position="attributes">
+                <attribute name="placeholder">Place Of Birth</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="hr_contract_view_inherit_overtime_form1" model="ir.ui.view">
+        <field name="name">hr.contract.view.inherit.overtime.form1</field>
+        <field name="model">hr.contract</field>
+        <field name="inherit_id" ref="hr_contract.hr_contract_view_form" />
+        <field name="priority" eval="8"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="replace">
+                <notebook>
+                    <page string="Information" name="information">
+                        <group>
+                            <group name="salary_and_advantages" string="Salary and Advantages">
+                                <field name="wage"/>
+                                <field name="advantages" nolabel="1" placeholder="Advantages..." colspan="2"/>
+                            </group>
+                            <group name="duration_group" string="Duration">
+                                <label for="date_start" string="Duration"/>
+                                <div>
+                                    <field name="date_start" class="oe_inline"/> - <field name="date_end" class="oe_inline"/>
+                                </div>
+                                <field name="resource_calendar_id" required="0"/>
+                                <field name="is_leaving" attrs="{'invisible':[('is_leaving','=',False)]}"/>
+                                <label for="notice_start_date" string="Leaving Notice Period " attrs="{'invisible':[('is_leaving','=',False)]}"/>
+                                <div attrs="{'invisible':[('is_leaving','=',False)]}">
+                                    <field name="notice_start_date" class="oe_inline" /> - <field name="notice_end_date" class="oe_inline"/>
+                                </div>
+                            </group>
+                        </group>
+                        <separator string="Notes"/>
+                        <field name="notes"/>
+                    </page>
+                    <page string="Allowances">
+                        <group>
+                            <group name="other_allowance">
+                                <field name="mobile"/>
+                                <field name="mobile_allowance" attrs="{'invisible': [('mobile','!=',True)], 'required': [('mobile','=',True)]}" />
+                                <field name="signon_bonus"/>
+                                <field name="signon_bonus_amount" attrs="{'invisible': [('signon_bonus','!=',True)], 'required': [('signon_bonus','=',True)]}" />
+                                <field name="period_ids" widget="many2many_tags" attrs="{'invisible': [('signon_bonus','!=',True)], 'required': [('signon_bonus','=',True)]}" />
+                                <!--<field name="is_iron_allowance"/>
+                                <field name="iron_allowance" attrs="{'invisible': [('is_iron_allowance','!=',True)],'required': [('is_iron_allowance','=',True)]}"/>-->
+                            </group>
+                        </group>
+                    </page>
+                    <page string="Extra Information" groups="base.group_no_one">
+                        <group col="4">
+                            <field name="create_uid" readonly="1"/>
+                            <field name="create_date" readonly="1"/>
+                            <field name="write_uid" readonly="1"/>
+                            <field name="write_date" readonly="1"/>
+                        </group>
+                    </page>
+                </notebook>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="hr_contract_view_search" model="ir.ui.view">
+        <field name="name">hr.contract.view.search</field>
+        <field name="model">hr.contract</field>
+        <field name="inherit_id" ref="hr_contract.hr_contract_view_search" />
+        <field name="arch" type="xml">
+            <search string="Search Contract">
+                <field name="employee_id"/>
+                <filter string="Saudi" domain="[('employee_id.is_saudi','=','True')]"/>
+                <filter string="Non-Saudi" domain="[('employee_id.is_saudi','!=','True')]"/>
+                <filter string="To be Renew" icon="terp-go-today" domain="[('state','=','pending')]"/>
+           </search>
+        </field>
+    </record>
+
+    <!-- Contract View -->
+    <record id="hr_contract_view_tree" model="ir.ui.view">
+        <field name="name">hr.contract.view.tree</field>
+        <field name="model">hr.contract</field>
+        <field name="inherit_id" ref="hr_contract.hr_contract_view_tree" />
+        <field name="arch" type="xml">
+            <xpath expr="//tree" position="attributes">
+                <attribute name="colors">red:state=='close';blue:state=='pending';gray:state=='draft';green:state=='open';</attribute>
+            </xpath>
+            <xpath expr="//field[@name='employee_id']" position="after">
+                <!-- <field name="notify_date" invisible="1"/> -->
+                <field name="state" invisible="1"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="view_grade_form_inherit" model="ir.ui.view">
+        <field name="name">hr.grade.form</field>
+        <field name="model">hr.grade</field>
+        <field name="inherit_id" ref="slnee_hr_grade.view_grade_form" />
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="mobile_allowance"/>
+            </field>
+        </field>
+    </record>
+</odoo>

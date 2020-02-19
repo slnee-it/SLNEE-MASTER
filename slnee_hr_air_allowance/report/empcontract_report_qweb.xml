@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <template id="slnee_hr_air_allowance_empcontract_report_qweb" inherit_id="slnee_hr_contract.empcontract_report_qweb">
+        <xpath expr="//div[@id='family_medical_insurance']" position="after">
+            <div class="container" t-if="o.air_allowance">
+                <div class="row" style="color:blue; font-weight: bold;">
+                    <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                        <span>Annual Airfare Allowance:</span>
+                    </div>
+                    <div class="col-xs-6  text-right font-weight: bold;">
+                        <span>:بدل التذاكر السنوي</span>
+                        <br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6" style="text-align:justify; font-size:20px;">
+                        <span>The Employee is entitled to annual airfare allowance as per company policy for Employee (SAR______), spouse (______) plus two dependent children (80% each of adult fare), in case of infant (12.5% of adult fare) from Saudi Arabia to your point of origin which shall be payable in equal monthly instalments.</span>
+                    </div>
+                    <div class="col-xs-6  text-right ">
+                        <span>يحق للموظف الحصول على بدل تذاكر سفر</span>
+                        <br />
+                        <span>سنوية وفقا لسياسة الشركة, للموظف(2400</span>
+                        <br />
+                        <span>ر.س.) و الزوجة(2400 ر.س.) و اثنين من</span>
+                        <br />
+                        <span>الأطفال( 80% لكل من الأطفال) إذا كان هناك</span>
+                        <br />
+                        <span>رضيع (12.5% سن الراشد)  من المملكة</span>
+                        <br />
+                        <span>العربية السعودية إلى بلد المنشأ و التي تكون</span>
+                        <br />
+                        <span>.مستحقة الدفع على أقساط شهرية متساوية</span>
+                        <br />
+                        <span />
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

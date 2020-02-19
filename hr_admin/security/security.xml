@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Groups -->
+    <record id="group_admin_manager" model="res.groups">
+        <field name="name">Admin Manager</field>
+        <field name="users" eval="[(4, ref('base.user_root'))]"/>
+        <field name="implied_ids" eval="[(4, ref('hr.group_hr_user'))]"/>
+    </record>
+
+    <!-- Rules -->
+    <record id="hr_emp_rule" model="ir.rule">
+        <field name="name">Employee</field>
+        <field name="model_id" ref="hr.model_hr_employee"/>
+        <field name="groups" eval="[(4, ref('base.group_user'))]"/>
+        <field name="domain_force">[('user_id','=',user.id)]</field>
+    </record>
+    <record id="hr_manager_rule" model="ir.rule">
+        <field name="name">Manager</field>
+        <field name="model_id" ref="hr.model_hr_employee"/>
+        <field name="groups" eval="[(4, ref('hr_admin.group_admin_manager')),(4, ref('hr.group_hr_user'))]"/>
+        <field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+    </record>
+    <record id="slnee_advance_hr_hr_employee_others" model="ir.rule">
+        <field name="name">HR Employee Others</field>
+        <field name="model_id" ref="hr.model_hr_employee"/>
+        <field name="domain_force">[(1,'=',1)]</field>
+        <field name="groups" eval="[(4,ref('hr_admin.group_admin_manager'))]"/>
+    </record>
+
+</odoo>

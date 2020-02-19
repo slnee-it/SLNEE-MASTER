@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Leave Configuration Menu -->
+    <menuitem name="Configuration" action="hr_holidays.open_view_holiday_status" id="hr_holidays.menu_hr_holidays_configuration" parent="hr_holidays.menu_hr_holidays_root" sequence="120" groups="hr_holidays.group_hr_holidays_manager"/>
+
+    <!-- Public Holiday Menu -->
+    <menuitem action="open_public_holidays_view" id="menu_public_holidays_view" parent="hr_holidays.menu_hr_holidays_root" sequence="20" groups="hr_holidays.group_hr_holidays_manager"/>
+
+    <!-- Leave Allocation and Holiday -->
+    <menuitem id="menu_leaves_allocation_action" parent="hr_holidays.menu_hr_holidays_approvals" action="action_view_leaves_allocation" sequence="30" groups="hr.group_hr_manager"/>
+    <menuitem parent="hr_holidays.menu_hr_holidays_my_leaves" id="hr_holidays.menu_open_allocation_holidays" action="hr_holidays.open_allocation_holidays" groups="hr.group_hr_manager"/>
+
+</odoo>

@@ -1,0 +1,383 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_leaving
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-12 11:20+0000\n"
+"PO-Revision-Date: 2018-09-12 11:20+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_leaving
+#: model:mail.template,body_html:slnee_hr_leaving.email_template_resigned_emp_aknowledgement
+msgid "\n"
+"                <div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"\n"
+"                    <p>Dear ${object.employee_id.name},</p>\n"
+"\n"
+"                    <p style=\"margin-left: 30px;\">\n"
+"                       It is with regret that we acknowledge your resignation, effective <b>${object.notice_start_date or ''}</b>. Your notice period from <b>${object.notice_start_date or ''}</b> to <b>${object.notice_end_date or ''}</b>. Your exit on <b>${object.exit_date or ''}</b>. In preparation for your last day, we offer the following information:\n"
+"                    </p>\n"
+"                    <p style=\"margin-left: 30px;\">\n"
+"                       <ul>\n"
+"                            <li> Your final paycheck, including payment for all accrued, unused vacation, will be issued on <b>${object.notice_end_date or ''}</b>\n"
+"                            <li> Notify the payroll department of any changes in your permanent address to avoid a delay in receiving your final paycheck and tax-related paperwork.\n"
+"                            <li> For other information please contact <b>${object.contact_person.name or ''}</b> at <b>${object.contact_person.email or ''}</b>.\n"
+"                            <li> Please return all company property before your exit date.\n"
+"                       </ul>\n"
+"                    </p>\n"
+"                    <p style=\"margin-left: 30px;\">\n"
+"                       If you have any questions, please contact me at <b>${object.approved_by.email}</b>.\n"
+"                    </p>\n"
+"                    We are sorry to see you leave and wish you the best of luck in your future endeavors.\n"
+"                    <br/><br/>\n"
+"                    Sincerely,\n"
+"                    <br/>\n"
+"                    HR Department,\n"
+"                </div>\n"
+"            "
+msgstr "\n"
+"                <div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"\n"
+"                    <p>العزيز ${object.employee_id.name},</p>\n"
+"\n"
+"                    <p style=\"margin-left: 30px;\">\n"
+"                       من المؤسف أن نعترف باستقالتك وفعاليتها <b>${object.notice_start_date or ''}</b>. فترة إشعارك من <b>${object.notice_start_date or ''}</b> to <b>${object.notice_end_date or ''}</b>. خروجك على <b>${object.exit_date or ''}</b>. استعدادًا لليوم الأخير ، نقدم المعلومات التالية:\n"
+"                    </p>\n"
+"                    <p style=\"margin-left: 30px;\">\n"
+"                       <ul>\n"
+"                            <li> سيتم إصدار شيك راتبك النهائي ، بما في ذلك الدفع لجميع الإجازات المتراكمة وغير المستخدمة ، في يوم <b>${object.notice_end_date or ''}</b>\n"
+"                            <li> إخطار قسم كشوف المرتبات بأي تغييرات في عنوانك الدائم لتجنب التأخير في استلام الأوراق المالية النهائية الخاصة بك والأوراق المتعلقة بالضرائب.\n"
+"                            <li> لمزيد من المعلومات يرجى الاتصال <b>${object.contact_person.name or ''}</b> at <b>${object.contact_person.email or ''}</b>.\n"
+"                            <li> يرجى إعادة جميع ممتلكات الشركة قبل تاريخ الخروج.\n"
+"                       </ul>\n"
+"                    </p>\n"
+"                    <p style=\"margin-left: 30px;\">\n"
+"                       إذا كان لديك أي أسئلة ، يرجى الاتصال بي على <b>${object.approved_by.email}</b>.\n"
+"                    </p>\n"
+"                    نأسف لرؤيتك ونتمنى لك حظًا سعيدًا في مساعيك المستقبلية.\n"
+"                    <br/><br/>\n"
+"                    بإخلاص,\n"
+"                    <br/>\n"
+"                    قسم الموارد البشرية،\n"
+"                </div>\n"
+"            "
+
+#. module: slnee_hr_leaving
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.hr_employee_leaving_form_view
+msgid "Approve"
+msgstr "موافقه"
+
+#. module: slnee_hr_leaving
+#: selection:hr.employee.leaving,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.view_hr_employee_leaving_filter
+msgid "Approved"
+msgstr "وافق"
+
+#. module: slnee_hr_leaving
+#: model:ir.model.fields,field_description:slnee_hr_leaving.field_hr_employee_leaving_approved_by
+msgid "Approved By"
+msgstr "التي وافقت عليها"
+
+#. module: slnee_hr_leaving
+#: model:ir.model.fields,field_description:slnee_hr_leaving.field_hr_employee_leaving_approved_date
+msgid "Approved Date"
+msgstr "التسجيل المعتمدة"
+
+#. module: slnee_hr_leaving
+#: model:ir.model.fields,field_description:slnee_hr_leaving.field_hr_employee_leaving_company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: slnee_hr_leaving
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.hr_employee_leaving_form_view
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: slnee_hr_leaving
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.view_hr_employee_leaving_filter
+msgid "Confirmed"
+msgstr "مؤكد"
+
+#. module: slnee_hr_leaving
+#: model:ir.model.fields,field_description:slnee_hr_leaving.field_hr_employee_leaving_contact_person
+msgid "Contact Person"
+msgstr "الشخص الذي يمكن الاتصال به"
+
+#. module: slnee_hr_leaving
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.hr_employee_leaving_form_view
+msgid "Create By"
+msgstr "تم اعداده بواسطة"
+
+#. module: slnee_hr_leaving
+#: model:ir.model.fields,field_description:slnee_hr_leaving.field_hr_employee_leaving_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: slnee_hr_leaving
+#: model:ir.model.fields,field_description:slnee_hr_leaving.field_hr_employee_leaving_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: slnee_hr_leaving
+#: model:ir.model.fields,field_description:slnee_hr_leaving.field_hr_employee_leaving_department_id
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.view_hr_employee_leaving_filter
+msgid "Department"
+msgstr "القسم"
+
+#. module: slnee_hr_leaving
+#: model:ir.model.fields,field_description:slnee_hr_leaving.field_hr_employee_leaving_description
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.hr_employee_leaving_form_view
+msgid "Description"
+msgstr "الوصف"
+
+#. module: slnee_hr_leaving
+#: model:ir.model.fields,field_description:slnee_hr_leaving.field_hr_employee_leaving_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: slnee_hr_leaving
+#: selection:hr.employee.leaving,state:0
+msgid "Draft"
+msgstr "مشروع"
+
+#. module: slnee_hr_leaving
+#: model:ir.model.fields,field_description:slnee_hr_leaving.field_hr_employee_leaving_employee_id
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.view_hr_employee_leaving_filter
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: slnee_hr_leaving
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.hr_employee_leaving_form_view
+msgid "Employee Information"
+msgstr "معلومات الموظف"
+
+#. module: slnee_hr_leaving
+#: model:ir.actions.act_window,name:slnee_hr_leaving.action_hr_employee_leaving_view
+#: model:ir.ui.menu,name:slnee_hr_leaving.menu_hr_employee_leaving
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.hr_employee_leaving_form_view
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.hr_employee_leaving_tree_view
+msgid "Employee Leaving"
+msgstr "ترك الموظف"
+
+#. module: slnee_hr_leaving
+#: model:ir.model.fields,field_description:slnee_hr_leaving.field_hr_employee_leaving_exit_date
+msgid "Exit Date"
+msgstr "تاريخ الخروج"
+
+#. module: slnee_hr_leaving
+#: constraint:hr.employee.leaving:0
+msgid "Exit Date must be greater than Notice End Date"
+msgstr "يجب أن يكون تاريخ الخروج أكبر من تاريخ انتهاء الإشعار"
+
+#. module: slnee_hr_leaving
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.hr_employee_leaving_form_view
+msgid "Extra Information"
+msgstr "معلومات اضافية"
+
+#. module: slnee_hr_leaving
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.view_hr_employee_leaving_filter
+msgid "Group By..."
+msgstr "تجميع حسب.."
+
+#. module: slnee_hr_leaving
+#: model:ir.model,name:slnee_hr_leaving.model_hr_employee_leaving
+msgid "HR Employee Leaving"
+msgstr "موظف الموارد البشرية ترك"
+
+#. module: slnee_hr_leaving
+#: model:ir.model.fields,field_description:slnee_hr_leaving.field_hr_employee_leaving_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: slnee_hr_leaving
+#: model:ir.model.fields,field_description:slnee_hr_leaving.field_hr_employee_leaving___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: slnee_hr_leaving
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.hr_employee_leaving_form_view
+msgid "Last Updated By"
+msgstr "آخر تحديث بواسطة"
+
+#. module: slnee_hr_leaving
+#: model:ir.model.fields,field_description:slnee_hr_leaving.field_hr_employee_leaving_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: slnee_hr_leaving
+#: model:ir.model.fields,field_description:slnee_hr_leaving.field_hr_employee_leaving_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: slnee_hr_leaving
+#: model:ir.ui.menu,name:slnee_hr_leaving.menu_hr_leaving
+msgid "Leaving"
+msgstr "مغادرة"
+
+#. module: slnee_hr_leaving
+#: model:mail.message.subtype,description:slnee_hr_leaving.mt_employee_leaving_approve
+#: model:mail.message.subtype,name:slnee_hr_leaving.mt_employee_leaving_approve
+msgid "Leaving Approved"
+msgstr "ترك معتمد"
+
+#. module: slnee_hr_leaving
+#: model:mail.message.subtype,description:slnee_hr_leaving.mt_employee_leaving_confirm
+#: model:mail.message.subtype,name:slnee_hr_leaving.mt_employee_leaving_confirm
+msgid "Leaving Confirmed"
+msgstr "ترك مؤكد"
+
+#. module: slnee_hr_leaving
+#: model:mail.message.subtype,description:slnee_hr_leaving.mt_employee_leaving_new
+#: model:mail.message.subtype,name:slnee_hr_leaving.mt_employee_leaving_new
+msgid "Leaving Created"
+msgstr "ترك الإنشاء"
+
+#. module: slnee_hr_leaving
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.hr_employee_leaving_form_view
+msgid "Leaving Information"
+msgstr "ترك المعلومات"
+
+#. module: slnee_hr_leaving
+#: model:mail.message.subtype,description:slnee_hr_leaving.mt_employee_leaving_cancel
+#: model:mail.message.subtype,name:slnee_hr_leaving.mt_employee_leaving_cancel
+msgid "Leaving Refused"
+msgstr "ترك رفض"
+
+#. module: slnee_hr_leaving
+#: model:mail.message.subtype,description:slnee_hr_leaving.mt_employee_leaving_validate
+#: model:mail.message.subtype,name:slnee_hr_leaving.mt_employee_leaving_validate
+msgid "Leaving Validated"
+msgstr "ترك التحقق من صحة"
+
+#. module: slnee_hr_leaving
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.view_hr_employee_leaving_filter
+msgid "Month"
+msgstr "الشهر"
+
+#. module: slnee_hr_leaving
+#: model:ir.model.fields,field_description:slnee_hr_leaving.field_hr_employee_leaving_notice_end_date
+msgid "Notice End Date"
+msgstr "تاريخ انتهاء الإشعار"
+
+#. module: slnee_hr_leaving
+#: constraint:hr.employee.leaving:0
+msgid "Notice End Date must be greater than Notice Start Date"
+msgstr "يجب أن يكون تاريخ انتهاء الإشعار أكبر من تاريخ بدء الإشعار"
+
+#. module: slnee_hr_leaving
+#: model:ir.model.fields,field_description:slnee_hr_leaving.field_hr_employee_leaving_notice_start_date
+msgid "Notice Start Date"
+msgstr "إشعار تاريخ البدء"
+
+#. module: slnee_hr_leaving
+#: constraint:hr.employee.leaving:0
+msgid "Notice Start Date must be greater than Requested Date"
+msgstr "يجب أن يكون تاريخ بدء الإشعار أكبر من تاريخ الطلب"
+
+#. module: slnee_hr_leaving
+#: model:ir.model.fields,field_description:slnee_hr_leaving.field_hr_employee_leaving_branch_id
+msgid "Office"
+msgstr "مكتب"
+
+#. module: slnee_hr_leaving
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.hr_employee_leaving_form_view
+msgid "Please enter reason for leaving"
+msgstr "يرجى إدخال سبب المغادرة"
+
+#. module: slnee_hr_leaving
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.hr_employee_leaving_form_view
+msgid "Put the description here..."
+msgstr "ضع الوصف هنا ..."
+
+#. module: slnee_hr_leaving
+#: model:ir.model.fields,field_description:slnee_hr_leaving.field_hr_employee_leaving_reason
+msgid "Reason"
+msgstr "السبب"
+
+#. module: slnee_hr_leaving
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.hr_employee_leaving_form_view
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: slnee_hr_leaving
+#: selection:hr.employee.leaving,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.view_hr_employee_leaving_filter
+msgid "Refused"
+msgstr "مرفوض"
+
+#. module: slnee_hr_leaving
+#: model:ir.model.fields,field_description:slnee_hr_leaving.field_hr_employee_leaving_requested_date
+msgid "Requested Date"
+msgstr "تاريخ طلب"
+
+#. module: slnee_hr_leaving
+#: model:mail.template,subject:slnee_hr_leaving.email_template_resigned_emp_aknowledgement
+msgid "Resignation Acknowledgement : (Ref ${object.name or 'n/a' })"
+msgstr "الإقرار بالاستقالة: (Ref ${object.name or 'n/a' })"
+
+#. module: slnee_hr_leaving
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.view_hr_employee_leaving_filter
+msgid "Search Employee Leaving"
+msgstr "البحث ترك الموظف"
+
+#. module: slnee_hr_leaving
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.hr_employee_leaving_form_view
+msgid "Select Employee"
+msgstr "حدد الموظف"
+
+#. module: slnee_hr_leaving
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.hr_employee_leaving_form_view
+msgid "Set to Draft"
+msgstr "تعيين كمسودة"
+
+#. module: slnee_hr_leaving
+#: model:mail.message.subtype,name:slnee_hr_leaving.mt_employee_leaving_stage
+msgid "Stage Changed"
+msgstr "تغيرت المرحلة"
+
+#. module: slnee_hr_leaving
+#: model:mail.message.subtype,description:slnee_hr_leaving.mt_employee_leaving_stage
+msgid "Stage changed"
+msgstr "تغيرت المرحلة"
+
+#. module: slnee_hr_leaving
+#: model:ir.model.fields,field_description:slnee_hr_leaving.field_hr_employee_leaving_state
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.view_hr_employee_leaving_filter
+msgid "Status"
+msgstr "الحالة "
+
+#. module: slnee_hr_leaving
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.view_hr_employee_leaving_filter
+msgid "To Approve"
+msgstr "للاعتماد"
+
+#. module: slnee_hr_leaving
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.hr_employee_leaving_form_view
+msgid "Validate"
+msgstr "اعتماد "
+
+#. module: slnee_hr_leaving
+#: selection:hr.employee.leaving,state:0
+#: model:ir.ui.view,arch_db:slnee_hr_leaving.view_hr_employee_leaving_filter
+msgid "Validated"
+msgstr "التحقق من صحة"
+
+#. module: slnee_hr_leaving
+#: selection:hr.employee.leaving,state:0
+msgid "Waiting Approval"
+msgstr "في انتظار الموافقة"
+
+#. module: slnee_hr_leaving
+#: code:addons/slnee_hr_leaving/models/hr_employee_leaving.py:29
+#, python-format
+msgid "You cannot remove the record which is in %s state!"
+msgstr "لا يمكنك إزالة السجل الموجود في حالة٪ s!"
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Rules -->
+    <record id="employee_manager_rule" model="ir.rule">
+        <field name="name">Manager</field>
+        <field name="model_id" ref="model_res_documents"/>
+        <field name="groups" eval="[(4, ref('hr.group_hr_manager'))]"/>
+        <field name="domain_force">['|',('manager_id','=',False), ('manager_id.user_id','=', user.id)]</field>
+    </record>
+</odoo>

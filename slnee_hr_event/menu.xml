@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- <menuitem name="Learning and Development" id="event.event_configuration" parent="event.event_main_menu" groups="slnee_hr_event.group_talent_acquisition_assistant,base.group_user"/> -->
+    <!-- <menuitem name="Events" id="event.event_main_menu" sequence="12" groups="event.group_event_user" web_icon="event,static/description/icon.png"/> -->
+
+    <menuitem name="Training Types" id="event.menu_event_type" action="event.action_event_type" parent="event.menu_event_configuration" groups="base.group_user" sequence="1"/>
+    <!-- menu items -->
+    <!-- <menuitem id="hr.menu_hr_configuration" name="Configuration" parent="hr.menu_hr_root" groups="group_talent_acquisition_assistant" sequence="50"/> -->
+    <!-- <menuitem id="hr_recruitment.menu_hr_recruitment_degree" name="Degrees" parent="hr_recruitment.menu_hr_recruitment_recruitment" action="hr_recruitment.hr_recruitment_degree_action" sequence="5" groups="group_talent_acquisition_assistant"/> -->
+
+    <menuitem name="Learning and Development" id="event.event_main_menu"/>
+    <menuitem name="Internal Trainings" id="event.menu_event_event"
+        action="event.action_event_view" parent="event.event_main_menu" sequence="1" />
+    <menuitem id="menu_employee_training" name="External Trainings" parent="event.event_main_menu"
+        sequence="2" action="action_employee_training"/>
+</odoo>

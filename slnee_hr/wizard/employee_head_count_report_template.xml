@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="report_employee_head_count">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.internal_layout">
+                    <div class="page">
+                        <div class="text-center">
+                            <span>
+                                <h3><t t-esc="o.based_on"/> wise Employees</h3>
+                            </span>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <table class="table table-condensed" t-foreach="o.get_dept()" t-as="data">
+                                        <thead>
+                                            <tr><th><span t-esc="o.based_on"/> : <span t-esc="data"/></th></tr>
+                                            <tr>
+                                                <th class="col-xs-4">Code</th>
+                                                <th class="col-xs-4">Name</th>
+                                                <th class="col-xs-4">Joining Date</th>
+                                                <th class="col-xs-4 text-right">Status</th>
+                                            </tr>
+                                        </thead>
+                                         <tbody t-foreach="o.get_emp(data)" t-as="emp">
+                                            <tr><td class="col-xs-4"><span t-esc="emp.get('code')"/></td>
+                                                <td class="col-xs-4"><span t-esc="emp.get('name')"/></td>
+                                                <td class="col-xs-4"><span t-esc="emp.get('joining_date')"/></td>
+                                                <td class="col-xs-4 text-right"><span t-esc="emp.get('status')"/></td>
+                                            </tr>
+                                        </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>

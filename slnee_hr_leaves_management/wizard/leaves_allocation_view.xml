@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="leaves_allocation_view">
+        <field name="name">Leaves Allocation</field>
+        <field name="model">leaves.allocation</field>
+        <field name="arch" type="xml">
+            <form string="Leaves Allocation">
+                <group col="4">
+                    <field name="name" string="Task Summary" colspan="4"/>
+                    <field name="holiday_status_id" />
+                    <label for="number_of_days_temp"/>
+                    <div>
+                        <field name="number_of_days_temp" class="oe_inline"/> days
+                    </div>
+                    <newline/>
+                    <field name="date"/>
+                    <field name="fiscalyear"/>
+                    <field name="company_id" groups="base.group_multi_company"/>
+                    <field name="carry_forward_limit" attrs="{'invisible': [('carry_forward', '!=', True)]}"/>
+                    <field name="override_limit" attrs="{'invisible': [('override', '!=', True)]}"/>
+                    <field name="carry_forward" invisible="1"/>
+                    <field name="override" invisible="1"/>
+                </group>
+                <group>
+                    <group>
+                        <field name="target" attrs="{'invisible': [('holiday_status_id','=',False)]}"/>
+                    </group>
+                    <group>
+                        <field name="branch_ids" widget="many2many_tags" attrs="{'invisible': [('target','!=','branch')]}"/>
+                        <field name="department_ids" widget="many2many_tags" attrs="{'invisible': ['|',('holiday_status_id','=',False),('target','!=','department')]}"/>
+                        <field name="job_ids" widget="many2many_tags" attrs="{'invisible': [('target','!=','job')]}"/>
+                    </group>
+                </group>
+                <group col="4" string="Auto Validation">
+                    <field name="is_auto_validate"/>
+                    <field name="is_double_validation" attrs="{'invisible': [('double_validation', '=', False)]}"/>
+                    <field name="double_validation" invisible="1"/>
+                </group>
+                <group>
+                    <separator string="Employee"/>
+                    <field name="employee_ids" colspan="4" nolabel="1" widget="one2many" mode="tree">
+                        <tree string="Invitation details" editable="top">
+                            <field name="employee_id" />
+                            <field name="department_id"/>
+                        </tree>
+                    </field>
+                    <separator string="Description"/>
+                    <field name="description" nolabel="1" colspan="4"/>
+                </group>
+                <footer>
+                    <button string="OK" name="allocate_leave" type="object" class="oe_highlight"/>
+                    or
+                    <button string="Cancel" class="oe_link" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_view_leaves_allocation">
+        <field name="name">Mass Leaves Allocation</field>
+        <field name="res_model">leaves.allocation</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

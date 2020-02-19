@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Training Expense Product -->
+     <record id="training_exp" model="product.product">
+        <field name="list_price">400.0</field>
+        <field name="standard_price">400.0</field>
+        <field name="type">service</field>
+        <field name="name">Training Expense</field>
+        <field name="default_code">TE</field>
+        <field name="uom_id" ref="product.product_uom_day"/>
+        <field name="uom_po_id" ref="product.product_uom_day"/>
+        <field name="categ_id" ref="hr_expense.cat_expense"/>
+        <field name="can_be_expensed" eval="True" />
+    </record>
+
+    <!--External Training related subtypes for messaging / Chatter -->
+
+   <!-- <record id="mt_ex_training_new" model="mail.message.subtype">
+        <field name="name">Training Created</field>
+        <field name="res_model">hr.employee.training</field>
+        <field name="default" eval="False"/>
+        <field name="description">Training Created</field>
+    </record>
+
+    <record id="mt_ex_training_confirm" model="mail.message.subtype">
+        <field name="name">Training Waiting Approval</field>
+        <field name="res_model">hr.employee.training</field>
+        <field name="default" eval="False"/>
+        <field name="description">Training Waiting Approval</field>
+    </record>
+
+    <record id="mt_ex_training_validate" model="mail.message.subtype">
+        <field name="name">Training In Progress</field>
+        <field name="res_model">hr.employee.training</field>
+        <field name="default" eval="False"/>
+        <field name="description">Training In Progress</field>
+    </record>
+
+    <record id="mt_ex_training_approve" model="mail.message.subtype">
+        <field name="name">Training Approved</field>
+        <field name="res_model">hr.employee.training</field>
+        <field name="default" eval="False"/>
+        <field name="description">Training Approved</field>
+    </record>
+
+    <record id="mt_ex_training_cancel" model="mail.message.subtype">
+        <field name="name">Training Refused</field>
+        <field name="res_model">hr.employee.training</field>
+        <field name="default" eval="False"/>
+        <field name="description">Training Refused</field>
+    </record>
+
+    <record id="mt_ex_training_stage" model="mail.message.subtype">
+        <field name="name">Stage Changed</field>
+        <field name="res_model">hr.employee.training</field>
+        <field name="default" eval="False"/>
+        <field name="description">Stage Changed</field>
+    </record>
+-->
+</odoo>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.ui.view" id="l10n_sa_analytic_overtime_tree_view">
+        <field name="name">Overtime Request Tree</field>
+        <field name="model">analytic.overtime</field>
+        <field name="arch" type="xml">
+         <tree string="Analytic Overtime Request">
+          <field name="name" string="Task Summary"/>
+                <field name="date" string="Start Date"/>
+                <field name="end_date" string="End Date"/>
+                <field name="duration" widget="float_time"/>
+                <field name="state"/>
+         </tree>
+        </field>
+    </record>
+
+    <record id="view_hr_overtime_req_filter" model="ir.ui.view">
+        <field name="name">hr.overtime.req.filter</field>
+        <field name="model">analytic.overtime</field>
+        <field name="arch" type="xml">
+            <search string="Search Overtime Request">
+                <group expand="0" string="Group By...">
+                    <filter name="group_name" string="Status" context="{'group_by':'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="l10n_sa_analytic_overtime_view">
+        <field name="name">Overtime Request</field>
+        <field name="model">analytic.overtime</field>
+        <field name="arch" type="xml">
+        <form string="Analytic Overtime Request">
+         <header>
+               <button name="do_confirm" string="Confirm" states="tentative" type="object" class="oe_highlight"/>
+               <button name="create_attendees" states="confirmed" string="Send mail" type="object" class="oe_highlight"/>
+               <button name="do_done" states="waiting" string="Validate" type="object" class="oe_highlight" />
+               <button name="do_cancel" string="Cancel" states="tentative,confirmed" type="object"/>
+               <field name="state" widget="statusbar" statusbar_visible="tentative,confirmed" />
+            </header>
+            <sheet>
+                <group col="6">
+                    <field name="name" string="Task Summary"
+                        colspan="4" required="1" attrs="{'readonly': [('state','in',['done', 'confirmed'])]}"/>
+                    <newline/>
+                    <field name="date" string="Start Date" required="1" attrs="{'readonly': [('state','in',['done', 'confirmed'])]}"/>
+                    <field name="duration" widget="float_time" attrs="{'readonly': [('state','in',['done', 'confirmed'])]}"/>
+                    <field name="end_date" string="End Date" required="1" attrs="{'readonly': [('state','in',['done', 'confirmed'])]}"/>
+                </group>
+                <group colspan="4">
+                    <group>
+                        <field name="target" attrs="{'readonly': [('state','in',['done', 'confirmed'])]}"/>
+                        <field name="country_ids" widget="many2many_tags" attrs="{'invisible': [('target','!=','country')], 'readonly': [('state','in',['done', 'confirmed'])]}"/>
+                        <field name="state_ids" widget="many2many_tags" attrs="{'invisible': [('target','!=','state')], 'readonly': [('state','in',['done', 'confirmed'])]}"/>
+                        <field name="company_ids" widget="many2many_tags" attrs="{'invisible': [('target','!=','company')], 'readonly': [('state','in',['done', 'confirmed'])]}"/>
+                        <field name="department_ids" widget="many2many_tags" attrs="{'invisible': [('target','!=','department')], 'readonly': [('state','in',['done', 'confirmed'])]}"/>
+                        <field name="job_ids" widget="many2many_tags" attrs="{'invisible': [('target','!=','job')], 'readonly': [('state','in',['done', 'confirmed'])]}"/>
+                    </group>
+                </group>
+                <notebook>
+                <page string="Event">
+                    <separator string="Visibility"/>
+                    <group>
+                         <field name="user_id" string="Responsible User" attrs="{'readonly': [('state','=','done')]}"/>
+                    </group>
+                    <separator string="Description"/>
+                    <field name="description"/>
+                </page>
+                <page string="Invitation Detail">
+                    <field name="attendee_ids" colspan="4"
+                        nolabel="1" options="{'reload_on_button': True}" widget="one2many" mode="tree" attrs="{'readonly': [('state','=','done')]}">
+                        <tree string="Invitation details" editable="top">
+                            <field name="user_id" string="From" attrs="{'readonly': [('state','in',['done', 'confirmed'])]}"/>
+                               <field name="employee_id" string="To" attrs="{'readonly': [('state','in',['done', 'confirmed'])]}"/>
+                            <field name="email" attrs="{'readonly': [('state','in',['done', 'confirmed'])]}"/>
+                            <field name="state"/>
+                            <field name="mail_sent"/>
+                            <button name="do_accept" string="Accept" states="needs-action" type="object" icon="gtk-apply"/>
+                            <button name="do_decline" string="Decline" states="needs-action,accepted" type="object" icon="gtk-cancel"/>
+                        </tree>
+                    </field>
+                </page>
+               </notebook>
+            </sheet>
+            <div class="oe_chatter">
+                <field name="message_follower_ids" widget="mail_followers"/>
+                <field name="message_ids" widget="mail_thread"/>
+            </div>
+        </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_view_analytic_overtime">
+        <field name="name">Analytic Overtime Request</field>
+        <field name="res_model">analytic.overtime</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+          <p class="oe_view_nocontent_create">
+            Click to define Analytic Overtime Request.
+          </p> 
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="overtime_attendees_response_obj">
+        <field name="name">Attendee Response</field>
+        <field name="model">analytic.overtime.attendee</field>
+        <field name="arch" type="xml">
+            <form string="Analytic Overtime Response">
+                <header>
+                   <button name="do_accept" string="Confirm" states="needs-action" type="object" class="oe_highlight"/>
+                   <button name="do_decline" states="needs-action" string="Decline" type="object" class="oe_highlight"/>
+                   <field name="state" widget="statusbar" statusbar_visible="tentative" />
+                </header>
+                <sheet>
+                    <group col="4">
+                        <field name="user_id" attrs="{'readonly':[('state','=','accepted')]}"/>
+                        <field name="employee_id" attrs="{'readonly':[('state','=','accepted')]}"/>
+                        <field name="analytic_overtime_id" required="1" attrs="{'readonly':[('state','=','accepted')]}"/>
+                        <field name="email" attrs="{'readonly':[('state','=','accepted')]}"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="overtime_attendees_response_obj_tree">
+        <field name="name">Attendee Response Tree</field>
+        <field name="model">analytic.overtime.attendee</field>
+        <field name="arch" type="xml">
+            <tree string="Analytic Overtime Response">
+                <field name="employee_id"/>
+                <field name="analytic_overtime_id" required="1"/>
+                <field name="email"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_view_analytic_overtime_response">
+        <field name="name">Analytic Overtime Response</field>
+        <field name="res_model">analytic.overtime.attendee</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('employee_id.user_id' , '=', uid), ('state', '=', 'needs-action')]</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+              Click to define Analytic Overtime Response.
+            </p>
+        </field>
+    </record>
+</odoo>

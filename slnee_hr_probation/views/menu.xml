@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<odoo>
+<!-- Recruitment Root Menu -->
+    <menuitem name="Recruitment" id="hr_recruitment.menu_hr_recruitment_root" web_icon="hr_recruitment,static/description/icon.png"
+              groups="base.group_user" sequence="11"/>
+
+<!-- Employee Probation -->
+    <menuitem id="menu_emp_probation_review" name="Probation Period" parent="hr_recruitment.menu_hr_recruitment_root"
+              sequence="10" action="action_emp_probation_review" groups="base.group_user"/>
+</odoo>

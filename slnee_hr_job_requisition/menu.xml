@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Recruitment Root Menu -->
+    <menuitem name="Recruitment" id="hr_recruitment.menu_hr_recruitment_root" web_icon="hr_recruitment,static/description/icon.png" groups="hr.group_hr_user" sequence="11"/>
+    <!-- Job Requisition  -->
+    <menuitem parent="hr_recruitment.menu_hr_recruitment_root" id="menu_hr_requisition" action="action_hr_requisition" name="Job Requisition" sequence="6" groups="hr.group_hr_user"/>
+</odoo>

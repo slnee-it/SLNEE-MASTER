@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<odoo>
+    <!-- Insurance Menu -->
+    <menuitem name="Insurance" id="insurance_main_menu" parent="hr.menu_hr_root" sequence="40"/>
+    <menuitem name="Insurance" id="insurance_details" parent="insurance_main_menu" sequence="1" action="action_insurance_details_view"/>
+    <menuitem name="Claims" id="claims_details" parent="insurance_main_menu" sequence="2" action="action_claims_details_view"/>
+</odoo>

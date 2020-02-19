@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- <report auto="False" id="report_employment_reference" model="hr.experience"
+            name="experience" string="Employment Reference Check"
+            usage="default"/>
+ -->
+
+    <!-- <report
+            string="Employment Reference Check"
+            id="report_employment_reference"
+            model="hr.experience"
+            report_type="qweb-pdf"
+            name="hr_exp_info.report_employmentreference"
+            file="hr_exp_info.report_employmentreference"
+        /> -->
+
+    <record id="email_template_employment_reference" model="mail.template">
+        <field name="name">Employment Reference Check</field>
+        <field name="model_id" ref="model_hr_experience"/>
+        <field name="email_from"><![CDATA[${'noreply@localhost'}]]></field>
+        <field name="email_to">${(object.contact_email)}</field>
+        <field name="subject">Employment Reference Check</field>
+        <!-- <field name="report_template" ref="report_employment_reference"/> -->
+        <field name="report_name">Employment Reference Check</field>
+        <field name="body_html"><![CDATA[
+<div style="font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; ">
+    <p>Hello ${object.contact_name},</p>
+
+    <p>I am ${object.env.user.name} from ${object.env.user.company_id.name} Pvt.Ltd. This is with regard to referral check of ${object.employee_id.name or ''}, who worked with you as ${object.job_title}. Can you please let me know the following details about him/her:</p>
+    <ul>
+        <li>Period of Employment:</li>
+        <li>Designation:</li>
+        <li>Reason for leaving the organization:</li>
+        <li>Exit formalities:Completed / Uncompleted</li>
+        <li>Verified By:</li>
+    </ul>
+    <p>It would be very kind if you could spare a few minutes and provide your feedback.</p>
+    <p>Your cooperation and quick response by return e-mail would be highly appreciated.</p>
+    <p>Thanks & Regards,</p>
+    HR Manager
+</div>
+]]></field>
+    </record>
+</odoo>

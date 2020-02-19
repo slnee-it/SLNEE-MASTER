@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_insurance_details_user,access_insurance_details,model_insurance_details,base.group_user,1,0,0,0
+access_insurance_details_officer,access_insurance_details,model_insurance_details,hr.group_hr_user,1,1,1,0
+access_insurance_details_manager,access_insurance_details,model_insurance_details,hr.group_hr_manager,1,1,1,1
+access_claim_details_user,access_claim_details,model_claim_details,base.group_user,1,1,1,0
+access_claim_details_officer,access_claim_details,model_claim_details,hr.group_hr_user,1,1,1,0
+access_claim_details_manager,access_claim_details,model_claim_details,hr.group_hr_manager,1,1,1,1
+access_employee_class_user,access_employee_class,model_employee_class,base.group_user,1,0,0,0
+access_employee_class_officer,access_employee_class,model_employee_class,hr.group_hr_user,1,1,1,1
+access_insurance_premium_user,access_insurance_premium,model_insurance_premium,base.group_user,1,0,0,0
+access_employee_premium_officer,access_insurance_premium,model_insurance_premium,hr.group_hr_user,1,1,1,1

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="payslip_report_view" model="ir.ui.view">
+        <field name="name">payslip.report.form</field>
+        <field name="model">company.payslip.report</field>
+        <field name="arch" type="xml">
+            <form string="Payslip Report">
+                <group colspan="4" col="2">
+                    <field name="payslip_export_id"/>
+                    <field name="report_name"/>
+                    <field name="excel_file" filename="filename" readonly="1"/>
+                    <field name="filename" invisible="1"/>
+                </group>
+                <footer>
+                    <button name="print_payslip_report" string="Print" type="object" class="oe_highlight"/>
+                    or
+                    <button  class="oe_link" string="Cancel" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <act_window name="Payslip Report"
+        res_model="company.payslip.report"
+        src_model="hr.payslip.run"
+        view_mode="form"
+        target="new"
+        id="action_payslip_report_view"/>
+</odoo>

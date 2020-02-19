@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="business_visa_report_new">
+        <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="o">
+        <t t-call="web.basic_layout">
+            <div class="page" style="font-size:22px;marging-top">
+
+            <p style="font-weight: bold;">
+                <span t-field="o.create_date" t-field-options='{"format": "M/d/y"}'/>
+            </p>
+            <p>
+            <span style="P1">The Consular General – Visa Section </span><br/>
+            <span style="P1">Embassy of </span><br/>
+            <span style="P1">
+                <t t-if="o.employee_id"><span t-field="o.employee_id.branch_id" />,</t>
+                Saudi Arabia
+            </span>
+            </p>
+            <p style="font-weight: bold;">Business Visa </p>
+
+            <p style="P1">Dear Sir</p>
+
+            <p style="text-align:justify;">
+                <!-- <div style="display;inline ;color:white">..........</div> -->
+                <t>This is to advise that </t>
+
+                <t t-if="o.employee_id.name"><span t-field="o.employee_id.name" /></t>
+
+                <t t-if="o.employee_id.middle_name"><span t-field="o.employee_id.middle_name" /></t>
+
+                <t t-if="o.employee_id.last_name"><span t-field="o.employee_id.last_name" /></t>
+
+                <t>, a </t>
+
+                <t t-if="o.employee_id.country_id"><span t-field="o.employee_id.country_id.name" /></t>
+
+                <t>national, holder of ID / Iqama No. </t>
+
+                <t t-if='o.employee_id.document_ids' >
+                    <t t-foreach="o.employee_id.document_ids" t-as="doc_id">
+                        <t t-if="doc_id.type_id.code == 'nid'">
+                            <t t-if="doc_id.doc_number"><span t-field="doc_id.doc_number" /></t>
+                        </t>
+                        <t t-if="doc_id.type_id.code == 'ino'">
+                            <t t-if="doc_id.doc_number"><span t-field="doc_id.doc_number" />
+                            </t>
+                        </t>
+                    </t>
+                </t>
+                  and Passport No.
+                 <t t-if='o.employee_id.document_ids' >
+                    <t t-foreach="o.employee_id.document_ids" t-as="doc_id">
+                        <t t-if="doc_id.type_id.code == 'pno'">
+
+                            <t t-if="doc_id.doc_number"><span t-field="doc_id.doc_number" /></t>
+                        </t>
+                    </t>
+                </t>
+                ,is employed with
+                <t t-if="o.employee_id.user_id" ><sapn t-field="o.employee_id.user_id.company_id.name"></sapn></t>
+
+                <t t-if="o.employee_id" ><sapn t-field="o.employee_id.job_id.name"></sapn></t>
+
+                <t>as a full time employee since </t>
+
+                <t t-if="o.employee_id.date_of_join">
+                    <span t-field="o.employee_id.date_of_join" t-field-options='{"format": "M/d/y"}'/>
+                </t>
+
+                in the capacity of
+                <t t-if="o.employee_id.job_id"><span t-field="o.employee_id.job_id.name" /></t>"
+
+                <t t-if="o.employee_id"><span t-field="o.employee_id.grade_id" /></t>
+
+                Level ”  in the
+                <t t-if="o.employee_id.department_id"><span t-field="o.employee_id.department_id.name" /></t>
+
+                Department. His gross salary is SR
+                <t t-if="o.employee_id.contract_id"><span t-field="o.employee_id.contract_id.wage" /></t>
+
+                 (Saudi Riyals only).
+
+                <t t-if="o.employee_id"><span t-field="o.employee_id.name" /></t>
+
+                <t t-if="o.employee_id"><span t-field="o.employee_id.middle_name" /></t>
+
+                <t t-if="o.employee_id"><span t-field="o.employee_id.last_name" /></t>
+
+                would like to request a visa for
+                <t t-if="o.employee_id.gender">
+
+                    <span t-if="o.employee_id.gender == 'male' " >
+                        him.
+                    </span>
+                    <span t-if="o.employee_id.gender != 'male' " >
+                        her.
+                    </span>
+                </t>
+
+            </p>
+
+            <p style="text-align:justify;">
+                <font face="Helvetica">
+                    We would highly appreciate your assistance if you kindly issue
+                </font>
+                <font face="Helvetica">
+                    a Business Visa for
+
+                <t t-if="o.employee_id"><span t-field="o.employee_id.name" /></t>
+
+                <t t-if="o.employee_id"><span t-field="o.employee_id.middle_name" /></t>
+
+                <t t-if="o.employee_id"><span t-field="o.employee_id.last_name" /></t>
+
+                </font>
+            </p>
+            <p style="P2">
+                <font face="Helvetica">Sincerely yours,</font>
+            </p>
+            <p style="P7">_____________________________</p>
+            <p style="P11">Adminstration Manager</p>
+            </div>
+          </t>
+          </t>
+      </t>
+    </template>
+
+    <record id="paperformat_business_visa_report_new" model="report.paperformat">
+        <field name="name">Embassy Business Visa</field>
+        <field name="default" eval="True"/>
+        <field name="format">A4</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">20</field>
+        <field name="margin_bottom">20</field>
+        <field name="margin_left">20</field>
+        <field name="margin_right">20</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+        <field name="dpi">80</field>
+    </record>
+
+    <record id="business_visa_new" model="ir.actions.report">
+        <field name="paperformat_id" ref="paperformat_business_visa_report_new"/>
+    </record>
+</odoo>

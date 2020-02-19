@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_employee_card_user,access_hr_employee_card_user,model_hr_employee_card,base.group_user,1,1,1,0
+access_hr_employee_card_manager,access_hr_employee_card_manager,model_hr_employee_card,hr.group_hr_manager,1,1,1,1
+access_hr_employee_card_officer,access_hr_employee_card_officer,model_hr_employee_card,hr.group_hr_user,1,1,1,1
+access_hr_job_user,access_hr_job_user,hr.model_hr_job,base.group_user,1,0,0,0

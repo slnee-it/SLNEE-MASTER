@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<odoo>
+    <report
+       string="Employee Contract Report"
+       id="action_empcontract_report_qweb"
+       model="hr.contract"
+       report_type="qweb-pdf"
+       name="slnee_hr_contract.empcontract_report_qweb"
+       file="slnee_hr_contract.empcontract_report_qweb"
+       attachment_use="False"
+       attachment="(object.employee_id.name + '.pdf')"/>
+
+      <report
+       string="Newjoiner Employee Contract Report"
+       id="action_newjoin_empcontract_reportqweb"
+       model="hr.contract"
+       report_type="qweb-pdf"
+       name="slnee_hr_contract.newjoin_empcontract_reportqweb"
+       file="slnee_hr_contract.newjoin_empcontract_reportqweb"
+       attachment_use="False"
+       attachment="(object.employee_id.name + '.pdf')"/>
+
+</odoo>

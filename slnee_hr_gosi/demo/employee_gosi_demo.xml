@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="employee_gosi_fp" model="employee.gosi">
+            <field name="employee_id" ref="hr.employee_root"/>
+            <field name="gosi_no">4325435</field>
+        </record>
+        
+        <record id="employee_gosi_al" model="employee.gosi">
+            <field name="employee_id" ref="hr.employee_qdp"/>
+            <field name="gosi_no">4565435</field>
+         </record>
+
+        <record id="employee_gosi_mit" model="employee.gosi">
+            <field name="employee_id" ref="hr.employee_fpi"/>
+            <field name="gosi_no">2347657</field>
+        </record>
+
+        <record id="employee_gosi_niv" model="employee.gosi">
+            <field name="employee_id" ref="hr.employee_jep"/>
+            <field name="gosi_no">3458768</field>
+       	</record>
+
+        <record id="employee_gosi_jve" model="employee.gosi">
+            <field name="employee_id" ref="hr.employee_stw"/>
+            <field name="gosi_no">3459897</field>
+        </record>
+
+        <record id="hr.employee_root" model="hr.employee">
+            <field name="gosi_ids" ref="employee_gosi_fp"/>
+        </record>
+        <record id="hr.employee_qdp" model="hr.employee">
+            <field name="gosi_ids" ref="employee_gosi_al"/>
+        </record>
+        <record id="hr.employee_fpi" model="hr.employee">
+            <field name="gosi_ids" ref="employee_gosi_mit"/>
+        </record>
+        <record id="hr.employee_jep" model="hr.employee">
+            <field name="gosi_ids" ref="employee_gosi_niv"/>
+        </record>
+        <record id="hr.employee_stw" model="hr.employee">
+            <field name="gosi_ids" ref="employee_gosi_jve"/>
+        </record>
+
+    </data>
+</odoo>

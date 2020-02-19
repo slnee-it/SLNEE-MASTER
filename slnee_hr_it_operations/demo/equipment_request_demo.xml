@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="hr_it_operations_0" model="hr.it.operations">
+            <field name="employee_id" ref="hr.employee_qdp"/>
+            <field name="state">draft</field>
+            <field name="type">software</field>
+            <field name="description">Need to update my Operating System version.</field>
+            <field eval="0" name="is_damage"/>
+        </record>
+
+        <record id="hr_it_operations_1" model="hr.it.operations">
+            <field name="employee_id" ref="hr.employee_jgo"/>
+            <field name="state">confirm</field>
+            <field name="type">hardware</field>
+            <field name="description">My keyboard is not working properly. Please do the needful.</field>
+            <field eval="0" name="is_damage"/>
+        </record>
+
+        <record id="hr_it_operations_2" model="hr.it.operations">
+            <field name="employee_id" ref="hr.employee_jod"/>
+            <field name="state">validate</field>
+            <field name="type">hardware</field>
+            <field name="description">Needs a LCD monitor.</field>
+            <field eval="0" name="is_damage"/>
+        </record>
+    </data>
+</odoo>

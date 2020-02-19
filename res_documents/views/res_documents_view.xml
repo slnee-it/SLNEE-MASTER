@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- res Document Type -->
+    <record id="view_res_document_type_tree" model="ir.ui.view">
+        <field name="name">res.document.type.tree</field>
+        <field name="model">res.document.type</field>
+        <field name="arch" type="xml">
+            <tree string="Document Type" editable="bottom">
+                <field name="name"/>
+                <field name="code"/>
+            </tree>
+        </field>
+    </record>
+    <record id="view_res_document_type_form" model="ir.ui.view">
+        <field name="name">res.document.type.form</field>
+        <field name="model">res.document.type</field>
+        <field name="arch" type="xml">
+            <form string="Document Type">
+                <group>
+                    <field name="name"/>
+                    <field name="code"/>
+                </group>
+            </form>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="action_res_document_type">
+        <field name="name">Document Type</field>
+        <field name="res_model">res.document.type</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Click to define a new Document Type.</p>
+        </field>
+    </record>
+
+    <!-- add doc id in employee form -->
+    <record id="res_documents_view_employee_form" model="ir.ui.view">
+        <field name="name">res.doc.hr.employee.form</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <button name="toggle_active" position="before">
+                <field name="document_ids" invisible="1"/>
+                <button name="action_documents" type="object" class="oe_stat_button" icon="fa fa-file-o" groups="base.group_user" help="Documents">
+                    <field string="Documents" name="documents_count" widget="statinfo"/>
+                </button>
+            </button>
+           <!--  <xpath expr="//page[@name='public']" position="after">
+                <page name="documents" string="Documents" groups="base.group_user">
+                    <field name="document_ids" nolabel="1">
+                        <tree string="Documents">
+                            <field name="type_id" required="1" />
+                            <field name="doc_number" required="1" />
+                            <field name="profession" />
+                            <field name="issue_date" />
+                            <field name="expiry_date" />
+                            <field name="issue_place" />
+                            <field name="position" />
+                            <button name="action_mail" string="send mail" type="object" class="oe_highlight" icon="fa fa-envelope" style="width: 40px; height:25px;"/>
+                        </tree>
+                        <form>
+                            <header>
+                                <button name="action_mail" string="send mail" type="object" class="oe_highlight"/>
+                            </header>
+                            <group string="Document Details">
+                                <group>
+                                    <field name="type_id" required="1"/>
+                                    <field name="doc_number" required="1"/>
+                                    <field name="issue_place"/>
+                                </group>
+                                <group>
+                                    <field name="issue_date"/>
+                                    <field name="expiry_date"/>
+                                    <field name="hijri_expiry_date"/>
+                                    <field name="is_visible_on_report"/>
+                                </group>
+                            </group>
+                            <group string="Employee Details">
+                                <group>
+                                    <field name="employee_id"/>
+                                    <field name="profession"/>
+                                </group>
+                                <group>
+                                    <field name="position"/>
+                                    <field name="company_id" groups="base.group_multi_company"/>
+                                </group>
+                            </group>
+                            <notebook>
+                                <page string="Notes">
+                                    <field name="notes"/>
+                                </page>
+                            </notebook>
+                        </form>
+                    </field>
+                </page>
+            </xpath> -->
+        </field>
+    </record>
+
+    <record id="res_documents_view_form" model="ir.ui.view">
+        <field name="name">res.doc.form</field>
+        <field name="model">res.documents</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="document_submit" string="Submit" type="object" class="oe_highlight" states="draft,renew"/>
+                    <button name="document_issue" string="Issue" type="object" class="oe_highlight" states="confirm" groups="hr.group_hr_manager"/>
+                    <button name="document_refuse" string="Refuse" type="object" states="confirm"/>
+                    <button name="set_draft" string="Set to Draft" type="object" states="refuse"/>
+                    <button name="document_renew" string="Renew" type="object" class="oe_highlight" states="expiry"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirm,issue" />
+                </header>
+                <sheet>
+                    <group string="Document Details">
+                        <group>
+                            <field name="type_id" required="1" attrs="{'readonly':[('state', 'in', ['issue','expiry'])]}"/>
+                            <field name="doc_number" required="1" attrs="{'readonly':[('state', 'in', ['issue','expiry'])]}"/>
+                            <field name="issue_place" attrs="{'readonly':[('state', 'in', ['issue','expiry'])]}"/>
+                        </group>
+                        <group>
+                            <field name="issue_date" attrs="{'readonly':[('state', 'in', ['issue'])]}"/>
+                            <field name="expiry_date" attrs="{'readonly':[('state', 'in', ['issue','expiry'])]}"/>
+                            <field name="hijri_expiry_date" attrs="{'readonly':[('state', 'in', ['issue','expiry'])]}"/>
+                            <field name="is_visible_on_report" attrs="{'readonly':[('state', 'in', ['issue','expiry'])]}"/>
+                        </group>
+                    </group>
+                    <group string="Attachment">
+                        <field name="attachment_ids" widget="many2many_binary" attrs="{'readonly':[('state', 'in', ['issue','expiry'])]}" nolabel="1"/>
+                    </group>
+                    <group string="Employee Details">
+                        <group groups="hr.group_hr_user">
+                            <field name="employee_id" attrs="{'readonly':[('state', 'in', ['issue'])]}"/>
+                            <field name="manager_id" attrs="{'readonly':[('state', 'in', ['issue','expiry'])]}"/>
+                        </group>
+                        <group>
+                            <field name="profession" attrs="{'readonly':[('state', 'in', ['issue','expiry'])]}"/>
+                            <field name="position" attrs="{'readonly':[('state', 'in', ['issue','expiry'])]}"/>
+                            <field name="company_id" groups="base.group_multi_company" attrs="{'readonly':[('state', 'in', ['issue','expiry'])]}"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Notes">
+                            <field name="notes" attrs="{'readonly':[('state', 'in', ['issue','expiry'])]}"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="res_documents_view_tree" model="ir.ui.view">
+        <field name="name">res.doc.tree</field>
+        <field name="model">res.documents</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="type_id" required="1" />
+                <field name="doc_number" required="1" />
+                <field name="profession" />
+                <field name="issue_date" />
+                <field name="expiry_date" />
+                <field name="issue_place" />
+                <field name="position" />
+                <field name="state" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="res_documents_view_search" model="ir.ui.view">
+        <field name="name">res.doc.tree</field>
+        <field name="model">res.documents</field>
+        <field name="arch" type="xml">
+            <search>
+                <group>
+                    <filter name="group_employee_id" string="Employee" context="{'group_by':'employee_id'}"/>
+                    <filter name="group_state" string="Status" context="{'group_by':'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_res_documents">
+        <field name="name">Document</field>
+        <field name="res_model">res.documents</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">search,tree,form</field>
+        <field name="context">{'search_default_group_state': 1, 'search_default_group_employee_id': 1}</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Click to define a new Document Type.</p>
+        </field>
+    </record>
+
+</odoo>

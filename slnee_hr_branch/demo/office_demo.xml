@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="jeddah_office" model="hr.branch">
+            <field name="name">Jeddah</field>
+            <field name="code">Jed</field>
+            <field name="arabic_name">جدة</field>
+            <field name="company_name">YourCompany</field>
+        </record>
+        <record id="Riyadh_office" model="hr.branch">
+            <field name="name">Riyadh</field>
+            <field name="code">Riy</field>
+            <field name="arabic_name">الرياض</field>
+            <field name="company_name">YourCompany</field>
+        </record>
+        <record id="Al_khobar_office" model="hr.branch">
+            <field name="name">Al Khobar</field>
+            <field name="code">Al</field>
+            <field name="arabic_name">الخبر</field>
+            <field name="company_name">YourCompany</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!--Employee Class form view-->
+    <record id="employee_class_form_view" model="ir.ui.view">
+        <field name="name">employee.class.form.view</field>
+        <field name="model">employee.class</field>
+        <field name="arch" type="xml">
+            <form string="Class">
+                <group>
+                    <field name='name'/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <!--Insurance form view-->
+    <record id="insurance_details_form_view" model="ir.ui.view">
+        <field name="name">hr.insurance.details.form.view</field>
+        <field name="model">insurance.details</field>
+        <field name="arch" type="xml">
+            <form string="Insurance Details">
+                <header>
+                    <button name="action_confirm" string="Confirm" class="oe_highlight" type="object" states="draft"
+                            groups="hr.group_hr_user"/>
+                    <button name="action_done" type="object" string="Done" class="oe_highlight" states="confirmed"
+                            groups="hr.group_hr_user"/>
+                    <button name="action_cancelled" string="Cancel" type="object" states="draft,confirmed"
+                            groups="hr.group_hr_user"/>
+                    <button name="action_set_to_draft" string="Set to draft" class="oe_highlight" type="object" states="cancelled"
+                            groups="hr.group_hr_user"/>
+                    <field name="state" widget="statusbar" statusbar_visible="confirmed"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box oe_right">
+                        <button type="object" name="view_claims"  class="oe_stat_button" icon="fa-book" attrs="{'invisible':[('claim_count','=', 0)]}">
+                            <field name="claim_count" widget="statinfo" string="Claims"/>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Insurance Number" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group string="Employee Details">
+                            <field name="employee_id" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="gender"/>
+                            <field name="dob"/>
+                            <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
+                        </group>
+                        <group string="Policy Holder Details">
+                            <field name="class_id" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="relation" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="card_code" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="member_name" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Policy Details">
+                            <field name="start_date" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="end_date" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="insurance_amount" widget="monetary" options="{'currency_field': 'currency_id'}"
+                                   attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="responsible_id" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        </group>
+                        <group string="Supplier Details">
+                            <field name="supplier_id" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="premium_amount" widget="monetary" options="{'currency_field': 'currency_id'}"
+                                   attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="premium_type" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="currency_id" invisible="1"/>
+                            <field name="claims_ids" invisible="1"/>
+                        </group>
+                    </group>
+
+                    <notebook>
+                        <page string="Insurance Premium">
+                            <group>
+                                <field name="premium_ids" nolabel="1" attrs="{'readonly':[('state','!=','draft')]}">
+                                    <tree string="Insurance Premium" editable='bottom'>
+                                        <field name="sequence"/>
+                                        <field name="date"/>
+                                        <field name="amount"/>
+                                        <field name="is_invoice_created"/>
+                                        <field name="invoice_id" invisible='1'/>
+                                        <button name="create_invoice" type="object" string="Create Invoice" class="          oe_highlight"
+                                        attrs="{'invisible': [('is_invoice_created','=', True)]}" groups="hr.group_hr_user"/>
+                                        <button name="view_invoice_action" type="object" string="View Invoice"  attrs="{'invisible': [('is_invoice_created','=',False)]}" class="oe_stat_button" icon="fa-pencil-square-o" groups="hr.group_hr_user"/>
+                                        <button name="print_invoice" type="object" string="Print Invoice" attrs="{'invisible': [('is_invoice_created','=',False)]}" icon="fa fa-print" groups="hr.group_hr_user"/>
+                                    </tree>
+                                </field>
+                            </group>
+                        </page>
+                        <page string="Description">
+                            <group>
+                                <field name="note" nolabel="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <!--insurance tree view-->
+    <record id="insurance_details_tree_view" model="ir.ui.view">
+        <field name="name">Insurance Details Tree</field>
+        <field name="model">insurance.details</field>
+        <field name="arch" type="xml">
+            <tree string="Insurance Details">
+                <field name="name"/>
+                <field name="employee_id"/>
+                <field name="supplier_id"/>
+                <field name="premium_type"/>
+                <field name="insurance_amount"/>
+                <field name="premium_amount"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_insurance_details_view" model="ir.actions.act_window">
+        <field name="name">Insurance Details</field>
+        <field name="res_model">insurance.details</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Claim form View -->
+    <record id="claim_details_form_view" model="ir.ui.view">
+        <field name="name">claim.details.form.view</field>
+        <field name="model">claim.details</field>
+        <field name="groups_id" eval="[(4, ref('base.group_user'))]"/>
+        <field name="arch" type="xml">
+            <form string="Claim Details">
+                <header>
+                    <button name="action_confirm" string="Confirm" class="oe_highlight" type="object" states="draft"/>
+                    <button name="action_done" type="object" string="Done" class="oe_highlight" states="confirm"
+                            groups="hr.group_hr_user"/>
+                    <button name="action_set_to_draft" string="Set to draft" class="oe_highlight" type="object" states="refuse,cancel"
+                            groups="hr.group_hr_user"/>
+                    <button name="action_refuse" string="Refuse" type="object" states="confirm"
+                            groups="hr.group_hr_user"/>
+                    <button name="action_cancel" string="Cancel" type="object" states="draft"
+                            groups="hr.group_hr_user"/>
+                    <field name="state" widget="statusbar" statusbar_visible="confirm"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Claim Number" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group string="Insurance Details">
+                            <field name="insurance_id" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="responsible_id" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="employee_id" attrs="{'readonly':[('state','!=','draft')]}" groups="hr.group_hr_user"/>
+                        </group>
+                        <group string="Claim Details">
+                            <field name="date_applied" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            <field name="claim_amount" widget="monetary" options="{'currency_field': 'currency_id'}"
+                                   attrs="{'readonly':[('state','!=','draft')]}" />
+                            <field name="passed_amount" widget="monetary" options="{'currency_field': 'currency_id'}"
+                                   attrs="{'readonly':[('state','!=','confirm')], 'invisible':[('state','=','draft')],
+                                        'required':[('state','=','confirm')]}"/>
+                            <field name="currency_id" invisible="1"/>
+                            <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company" attrs="{'readonly':[('state','!=','draft')]}"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Description">
+                            <group>
+                                <field name="note" nolabel="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="claim_details_form_view_manager_inherite" model="ir.ui.view">
+        <field name="inherit_id" ref="slnee_hr_medical.claim_details_form_view"/>
+        <field name="name">claim.details.form.view</field>
+        <field name="model">claim.details</field>
+        <field name="priority">20</field>
+        <field name="groups_id" eval="[(4, ref('hr.group_hr_user')), (4, ref('hr.group_hr_manager'))]"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='passed_amount']" position="attributes">
+                <attribute name="readonly">0</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <!--claim tree view-->
+    <record id="claims_details_tree_view" model="ir.ui.view">
+        <field name="name">Claim Details Tree</field>
+        <field name="model">claim.details</field>
+        <field name="arch" type="xml">
+            <tree string="Claim Details">
+                <field name="name"/>
+                <field name="insurance_id"/>
+                <field name="date_applied"/>
+                <field name="claim_amount"/>
+                <field name="passed_amount"/>
+                <field name="responsible_id"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_claims_details_view" model="ir.actions.act_window">
+        <field name="name">Claims Details</field>
+        <field name="res_model">claim.details</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="claim_details_form_view_user_inherite" model="ir.ui.view">
+        <field name="inherit_id" ref="slnee_hr_medical.claim_details_form_view"/>
+        <field name="name">claim.details.form.view</field>
+        <field name="model">claim.details</field>
+        <field name="groups_id" eval="[(4, ref('base.group_user'))]"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='passed_amount']" position="attributes">
+                <attribute name="readonly">1</attribute>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

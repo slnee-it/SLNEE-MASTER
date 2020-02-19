@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Contract Type-->
+    <record id="hr_contract_type_trainee" model="hr.contract.type">
+        <field name="name">Trainee</field>
+    </record>
+
+    <!-- Rule Category-->
+    <record id="other" model="hr.salary.rule.category">
+        <field name="name">Other Allowance</field>
+        <field name="parent_id" ref="hr_payroll.ALW"/>
+        <field name="code">OTHER</field>
+    </record>
+
+    <record id="HRA" model="hr.salary.rule.category">
+        <field name="name">Housing Rent Allowance</field>
+        <field name="parent_id" ref="hr_payroll.ALW"/>
+        <field name="code">HRA</field>
+    </record>
+
+    <record id="TA" model="hr.salary.rule.category">
+        <field name="name">Transportation</field>
+        <field name="parent_id" ref="hr_payroll.ALW"/>
+        <field name="code">TA</field>
+    </record>
+
+
+    <!-- Payroll Rules -->
+    <!-- Basic -->
+    <record id="hr_payroll.hr_rule_basic" model="hr.salary.rule">
+        <field name="name">Basic</field>
+        <field name="sequence" eval="1"/>
+        <field name="code">BASIC</field>
+        <field name="category_id" ref="hr_payroll.BASIC"/>
+        <field name="condition_select">none</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = (contract.wage * payslip.payment_days) / 30</field>
+        <!-- <field name="amount_python_compute">result = ((contract.wage/1.35)*payslip.payment_days)/30</field> -->
+    </record>
+
+    <!--Transport Allowance-->
+    <record id="hr_salary_rule_transportationallowance" model="hr.salary.rule">
+       <field name="amount_select">percentage</field>
+       <field eval="10.0" name="amount_percentage"/>
+       <field name="amount_percentage_base">contract.wage</field>
+       <field name="code">TA</field>
+       <field name="category_id" ref="TA"/>
+       <field name="name">Transportation Allowance</field>
+       <field name="sequence" eval="10"/>
+   </record>
+
+    <!-- Other Allowance -->
+    <record id="hr_salary_rule_other_allowance" model="hr.salary.rule">
+        <field name="name">Other Allowance</field>
+        <field name="category_id" ref="other"/>
+        <field name="code">OTHER_ALLOWANCE</field>
+        <field name="sequence" eval="115"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = (inputs.OTHER_ALLOWANCE_DAYS and inputs.OTHER_ALLOWANCE_DAYS.amount > 0) or (inputs.OTHER_ALLOWANCE_HOURS and inputs.OTHER_ALLOWANCE_HOURS.amount > 0) or (inputs.OTHER_ALLOWANCE_PERCENTAGE and inputs.OTHER_ALLOWANCE_PERCENTAGE.amount > 0) or (inputs.OTHER_ALLOWANCE_AMOUNT and inputs.OTHER_ALLOWANCE_AMOUNT.amount > 0) </field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = (((contract.wage/30) * (inputs.OTHER_ALLOWANCE_DAYS and inputs.OTHER_ALLOWANCE_DAYS.amount)) + (((inputs.OTHER_ALLOWANCE_HOURS and inputs.OTHER_ALLOWANCE_HOURS.amount) * (contract.wage/30) * 1)/ 8) + ((contract.wage/100) * (inputs.OTHER_ALLOWANCE_PERCENTAGE and inputs.OTHER_ALLOWANCE_PERCENTAGE.amount)) + (inputs.OTHER_ALLOWANCE_AMOUNT and inputs.OTHER_ALLOWANCE_AMOUNT.amount)) </field>
+    </record>
+
+    <record id="hr_payroll.hr_rule_taxable" model="hr.salary.rule">
+        <field name="name">Gross</field>
+        <field name="sequence" eval="21"/>
+        <field name="code">GROSS</field>
+        <field name="category_id" ref="hr_payroll.GROSS"/>
+        <field name="condition_select">none</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = categories.BASIC + categories.ALW</field>
+        <!-- <field name="amount_python_compute">result = categories.BASIC + categories.HRA + categories.TA + categories.OTHER</field> -->
+    </record>
+
+    <!-- Reimbursement Allowance -->
+     <record id="hr_salary_rule_employee_reimbursement_allowance" model="hr.salary.rule">
+        <field name="name">Employee Reimbursement</field>
+        <field name="category_id" ref="hr_payroll.ALW"/>
+        <field name="code">REIMBURSEMENT</field>
+        <field name="sequence" eval="35"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = (inputs.REIMBURSEMENT and inputs.REIMBURSEMENT.amount > 0)</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = inputs.REIMBURSEMENT and inputs.REIMBURSEMENT.amount</field>
+    </record>
+
+    <!-- Deduction -->
+    <!-- Expense Deduction -->
+    <record id="hr_salary_rule_employee_eos_resignation" model="hr.salary.rule">
+        <field name="name">Employee Expense Deduction</field>
+        <field name="category_id" ref="hr_payroll.DED"/>
+        <field name="code">EXPENSE</field>
+        <field name="sequence" eval="116"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = (inputs.EXPENSE and inputs.EXPENSE.amount > 0)</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = -(inputs.EXPENSE and inputs.EXPENSE.amount)</field>
+    </record>
+
+    <record id="hr_salary_rule_other_deduction" model="hr.salary.rule">
+        <field name="name">Other Deduction</field>
+        <field name="category_id" ref="hr_payroll.DED"/>
+        <field name="code">OTHER_DEDUCTION</field>
+        <field name="sequence" eval="116"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = (inputs.OTHER_DEDUCTION_DAYS and inputs.OTHER_DEDUCTION_DAYS.amount > 0) or (inputs.OTHER_DEDUCTION_HOURS and inputs.OTHER_DEDUCTION_HOURS.amount > 0) or (inputs.OTHER_DEDUCTION_PERCENTAGE and inputs.OTHER_DEDUCTION_PERCENTAGE.amount > 0) or (inputs.OTHER_DEDUCTION_AMOUNT and inputs.OTHER_DEDUCTION_AMOUNT.amount > 0) </field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = -(((contract.wage/30) * (inputs.OTHER_DEDUCTION_DAYS and inputs.OTHER_DEDUCTION_DAYS.amount)) + (((inputs.OTHER_DEDUCTION_HOURS and inputs.OTHER_DEDUCTION_HOURS.amount) * (contract.wage/30) * 1)/ 8) + ((contract.wage/100) * (inputs.OTHER_DEDUCTION_PERCENTAGE and inputs.OTHER_DEDUCTION_PERCENTAGE.amount)) + (inputs.OTHER_DEDUCTION_AMOUNT and inputs.OTHER_DEDUCTION_AMOUNT.amount)) </field>
+    </record>
+
+    <!-- NET for Trainees and Contractors -->
+     <record id="hr_salary_rule_trainees_net" model="hr.salary.rule">
+        <field name="name">NET for trainees and contractors</field>
+        <field name="category_id" ref="hr_payroll.NET"/>
+        <field name="code">TCNET</field>
+        <field name="sequence" eval="300"/>
+        <field name="condition_select">none</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = contract.wage</field>
+    </record>
+
+    <!-- Salary Structure -->
+     <record id="hr_payroll.structure_base" model="hr.payroll.structure">
+        <field name="name">Company Salary Structures</field>
+        <field name="rule_ids" eval="[(4,ref('hr_payroll.hr_rule_basic')), (4,ref('hr_payroll.hr_rule_taxable')),(4,ref('hr_payroll.hr_rule_net')),
+            (4,ref('hr_salary_rule_employee_reimbursement_allowance')), (4,ref('hr_salary_rule_other_allowance')),
+            (4,ref('hr_salary_rule_other_deduction'))]" />
+        <field name="company_id" ref="base.main_company"/>
+    </record>
+
+    <!-- Salary Structure for trainees and contractors-->
+    <record id="hr_payroll_structure_trainees" model="hr.payroll.structure">
+        <field name="name">Your company Trainees and Contractor</field>
+        <field name="code">Your company-C</field>
+        <field name="parent_id" eval="False"/>
+        <field name="rule_ids" eval="[(6, 0, [ref('hr_salary_rule_trainees_net')])]" />
+        <field name="company_id" ref="base.main_company"/>
+    </record>
+
+</odoo>

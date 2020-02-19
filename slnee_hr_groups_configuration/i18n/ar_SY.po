@@ -1,0 +1,148 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* slnee_hr_groups_configuration
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-12 10:56+0000\n"
+"PO-Revision-Date: 2018-09-12 10:56+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: slnee_hr_groups_configuration
+#: model:ir.model.fields,field_description:slnee_hr_groups_configuration.field_hr_groups_configuration_admin_ids
+#: model:ir.ui.view,arch_db:slnee_hr_groups_configuration.hr_groups_config_form
+msgid "Admins"
+msgstr "مدراء"
+
+#. module: slnee_hr_groups_configuration
+#: model:ir.ui.view,arch_db:slnee_hr_groups_configuration.hr_groups_config_form
+msgid "Branch Details"
+msgstr "تفاصيل الفرع"
+
+#. module: slnee_hr_groups_configuration
+#: model:ir.actions.act_window,help:slnee_hr_groups_configuration.action_view_hr_groups_config
+msgid "Click to define Group Configuration."
+msgstr "انقر لتحديد تكوين المجموعة."
+
+#. module: slnee_hr_groups_configuration
+#: model:ir.model.fields,field_description:slnee_hr_groups_configuration.field_hr_groups_configuration_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: slnee_hr_groups_configuration
+#: model:ir.model.fields,field_description:slnee_hr_groups_configuration.field_hr_groups_configuration_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: slnee_hr_groups_configuration
+#: model:ir.model.fields,field_description:slnee_hr_groups_configuration.field_hr_groups_configuration_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: slnee_hr_groups_configuration
+#: model:ir.model.fields,field_description:slnee_hr_groups_configuration.field_hr_groups_configuration_driver_ids
+#: model:ir.ui.view,arch_db:slnee_hr_groups_configuration.hr_groups_config_form
+msgid "Drivers"
+msgstr "السائقين"
+
+#. module: slnee_hr_groups_configuration
+#: model:ir.model.fields,field_description:slnee_hr_groups_configuration.field_hr_groups_configuration_finance_ids
+#: model:ir.ui.view,arch_db:slnee_hr_groups_configuration.hr_groups_config_form
+msgid "Finances"
+msgstr "المالية"
+
+#. module: slnee_hr_groups_configuration
+#: model:ir.model.fields,field_description:slnee_hr_groups_configuration.field_hr_groups_configuration_gr_ids
+#: model:ir.ui.view,arch_db:slnee_hr_groups_configuration.hr_groups_config_form
+msgid "GRs"
+msgstr "الموارد الوراثية"
+
+#. module: slnee_hr_groups_configuration
+#: model:ir.actions.act_window,name:slnee_hr_groups_configuration.action_view_hr_groups_config
+#: model:ir.ui.menu,name:slnee_hr_groups_configuration.menu_hr_groups_config_action
+#: model:ir.ui.view,arch_db:slnee_hr_groups_configuration.hr_groups_config_tree
+msgid "Groups Configuration"
+msgstr "تكوين المجموعات"
+
+#. module: slnee_hr_groups_configuration
+#: model:ir.model,name:slnee_hr_groups_configuration.model_hr_groups_configuration
+msgid "HR Groups Configuration"
+msgstr "تكوين مجموعات الموارد البشرية"
+
+#. module: slnee_hr_groups_configuration
+#: model:ir.ui.view,arch_db:slnee_hr_groups_configuration.hr_groups_config_form
+msgid "HR Groups Configurations"
+msgstr "تكوينات مجموعات الموارد البشرية"
+
+#. module: slnee_hr_groups_configuration
+#: model:ir.model.fields,field_description:slnee_hr_groups_configuration.field_hr_groups_configuration_hr_ids
+#: model:ir.ui.view,arch_db:slnee_hr_groups_configuration.hr_groups_config_form
+msgid "HRs"
+msgstr "الحقوقي"
+
+#. module: slnee_hr_groups_configuration
+#: model:ir.model.fields,field_description:slnee_hr_groups_configuration.field_hr_groups_configuration_helpdesk_ids
+#: model:ir.ui.view,arch_db:slnee_hr_groups_configuration.hr_groups_config_form
+msgid "Helpdesks"
+msgstr "مكاتب المساعدة"
+
+#. module: slnee_hr_groups_configuration
+#: model:ir.model.fields,field_description:slnee_hr_groups_configuration.field_hr_groups_configuration_hop_ids
+#: model:ir.ui.view,arch_db:slnee_hr_groups_configuration.hr_groups_config_form
+msgid "HoPs"
+msgstr "القفزات"
+
+#. module: slnee_hr_groups_configuration
+#: model:ir.model.fields,field_description:slnee_hr_groups_configuration.field_hr_groups_configuration_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: slnee_hr_groups_configuration
+#: model:ir.model.fields,field_description:slnee_hr_groups_configuration.field_hr_groups_configuration___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: slnee_hr_groups_configuration
+#: model:ir.model.fields,field_description:slnee_hr_groups_configuration.field_hr_groups_configuration_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: slnee_hr_groups_configuration
+#: model:ir.model.fields,field_description:slnee_hr_groups_configuration.field_hr_groups_configuration_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: slnee_hr_groups_configuration
+#: model:ir.model.fields,field_description:slnee_hr_groups_configuration.field_hr_groups_configuration_branch_id
+msgid "Office"
+msgstr "مكتب"
+
+#. module: slnee_hr_groups_configuration
+#: sql_constraint:hr.groups.configuration:0
+msgid "Office must be unique per Configuration!"
+msgstr "يجب أن يكون المكتب فريدًا لكل تهيئة!"
+
+#. module: slnee_hr_groups_configuration
+#: model:ir.model.fields,field_description:slnee_hr_groups_configuration.field_hr_groups_configuration_payroll_ids
+#: model:ir.ui.view,arch_db:slnee_hr_groups_configuration.hr_groups_config_form
+msgid "Payrolls"
+msgstr "الوظائف"
+
+#. module: slnee_hr_groups_configuration
+#: model:ir.ui.view,arch_db:slnee_hr_groups_configuration.hr_groups_config_form
+msgid "Select Office..."
+msgstr "اختر مكتب ..."
+
+#. module: slnee_hr_groups_configuration
+#: model:ir.model.fields,field_description:slnee_hr_groups_configuration.field_hr_groups_configuration_talent_acquisition_ids
+#: model:ir.ui.view,arch_db:slnee_hr_groups_configuration.hr_groups_config_form
+msgid "Talent Acquisitions"
+msgstr "اكتساب المواهب"
+

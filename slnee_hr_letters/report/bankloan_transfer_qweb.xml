@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="bankloan_transfer_qweb" name="bankloan transfer">
+        <t t-call="web.html_container">
+            <t t-call="web.basic_layout">
+                <t t-foreach="docs" t-as="o">
+                    <div class="page" style="text-align: right;face :Helvetica; font-size:18px;">
+                        <t t-set="arg" t-value="{'employee_id' : [o.employee_id.id, o.employee_id.name],'date':o.date,'manager_id': [o.manager_id.id, o.manager_id.name]}"/>
+                        <t t-set="result" t-value="get_data" />
+                        <t t-foreach="result" t-as="data">
+                            <t t-set="islamic_date" t-value="get_islamic_date(o.date)"/>
+                            <p> التـاريخ : <t t-esc="islamic_date" /> هـ  </p>
+                            <p>
+                                الموافق
+                                <t t-if="data['date']">
+                                    <span t-esc="time.strftime('%d-%m-%Y', time.strptime(data['date'],'%Y-%m-%d'))"/></t> م
+                            </p>
+                            <p style="font-weight: bold;">/ السادة </p>
+                            <p style="font-weight: bold;">المحترمين</p>
+                            <p style="font-weight: bold;">المملكة العربية السعودية</p>
+                            <p >.السلام عليكم ورحمة الله وبركاته</p>
+                            <p><span>نفيدكم بأن الأستاذ /</span><t t-if="data['employee'].arabic_name" ><span t-esc="data['employee'].arabic_name" /></t>,<t t-if="data['emp_country']" ><span t-esc="data['emp_country']" /> </t></p>
+                            <p> <span>الجنسية بموجب إقامة/ بطاقة أحوال رقـم </span><t t-if="data['doc_number']"><span t-esc="data['doc_number']" /></t></p>
+                            <p> <span>ﺻﺎﺩﺭﺓ ﻣﻦ</span><t t-if="data['branch_id']"><span t-esc="data['branch_id']"/>,</t> <span>ﻫﻮ ﺃﺣﺪ اﻟﻤﻮﻇﻔﻴﻦ ﻓﻲ ﺷﺮﻛﺔ</span></p>
+                            <p>
+                                <t t-if="data['branch_id']" >
+                                    <span t-esc="data['branch_id']"/>
+                                </t> <span>فرع </span>
+                                <t style="font-weight: bold;">
+                                    <t t-if="o.employee_id.job_id" >
+                                        <span t-esc="o.employee_id.job_id.arabic_name" />
+                                    </t>
+                                    <t t-if="o.employee_id.user_id and o.employee_id.user_id.company_id" >
+                                        <span t-field="o.employee_id.user_id.company_id.arabic_name">
+                                        </span>
+                                    </t>
+                                </t>
+                            </p>
+                            <p> <t t-if="data['job_id']" ><span t-esc="data['job_id']"/></t><span> ويعمل بوظيفة </span></p>
+                            <p>
+                                <t t-if="data['join_date']"><span t-esc="time.strftime('%Y-%m-%d', time.strptime(data['join_date'],'%Y-%m-%d'))"/></t>
+                                <t style=" face :Helvetica; "> تاريخ منذ </t>
+                                <t t-if="data['department']"><span t-esc="data['department']"/> </t>
+                            </p>
+                            <p >: بياناته كتالي </p>
+                            <p><t>١.الراتب الأساسي :</t><t t-if="data['wage']">
+                                    <span t-esc="data['wage']"/>
+                                    </t><span>ريال</span> </p>
+                            <p><t>٢. بدل سكن :</t><t t-if="data['wage']">
+                                    <span t-esc="data['HRA']"/>
+                                    </t><span>ريال</span> </p>
+                            <p><t>٣. بدل نقل :</t><t t-if="data['wage']">
+                                    <span t-esc="data['TA']"/>
+                                    </t>  <span>ريال</span> </p>
+                            <p > : نحيطكم علما بتعهدنا بالقيام بما يلي </p>
+                            <p >استمــرار تحـويل الرواتـب الشـهرية للمــذكور أعــلاه لايـداعها في</p>
+                            <p>
+                                <t t-if="data['account_no'] "><span t-esc="data['account_no']"/></t>. <span>حســابه رقــم </span>
+                            </p>
+                            <p >وتحويل مستحقات نهاية الخدمة عند استقالته او تقاعده على أن لا يتم</p>
+                            <p >.الغاء التحويل الا باخلاء طرف البنك من قبلكم</p>
+                            <p >وقد منح له هذا الخطاب بناء على طلبه دون أدنى مسؤولية</p>
+                            <p >.او التزامات مالية اتجاه الشركة</p>
+                            <p >.وتقبلوا تحياتنا</p>
+                            <p style="text-align: left;  "><font face="Helvetica" size="16.0">__________________ </font></p>
+                            <p style="text-align: left;  ">
+                                <t t-if="data['manager']" ><t t-esc="data['manager']" /> </t></p>
+                            <p style="text-align: left;  ">
+                                <t t-if="data['auth_job_id']" ><t t-esc="data['auth_job_id']" /> </t>
+                            </p>
+                        </t>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <record id="paperformat_bankloan_transfer_qweb" model="report.paperformat">
+        <field name="name">bank loan transfer</field>
+        <field name="default" eval="True"/>
+        <field name="format">A4</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">20</field>
+        <field name="margin_bottom">20</field>
+        <field name="margin_left">15</field>
+        <field name="margin_right">15</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+        <field name="dpi">80</field>
+        <!-- <field name="report_ids" ref="bankloan_transfer"/> -->
+    </record>
+
+</odoo>
