@@ -1,7 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_payment_correlation_line_user,access.payment.correlation.line.accountant,model_payment_correlation_line,base.group_user,1,0,0,0
-access_payment_correlation_line_accountant,access.payment.correlation.line.accountant,model_payment_correlation_line,account.group_account_user,1,1,1,0
-access_payment_correlation_line_adviser,access.payment.correlation.line.adviser,model_payment_correlation_line,account.group_account_manager,1,1,1,1
-access_account_payment_ss,access.account.payment.s,account.model_account_payment,slnee_security.group_service_manager,1,1,0,0
-access_account_payment_gm,access.account.payment.gm,account.model_account_payment,slnee_security.group_gm,1,1,0,0
-access_account_payment_method_user,account.payment.method.user,account.model_account_payment_method,base.group_user,1,0,0,0
