@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="hr_gosi_form_view" model="ir.ui.view">
+        <field name="name">hr.gosi.form.view</field>
+        <field name="model">employee.gosi</field>
+        <field name="arch" type="xml">
+            <form string="Employee GOSI">
+                <sheet>
+                    <group>
+                        <group string="Employee Details">
+                            <field name="employee_id" />
+                            <field name="department_id"/>
+                            <field name="job_id"/>
+                            <field name="passport_no"/>
+                            <field name="country_id"/>
+                            <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
+                        </group>
+                        <group string="GOSI Details">
+                            <field name="region_type"/>
+                            <field name="iqama_no" attrs="{'invisible': [('region_type', '=', 'saudi')]}"/>
+                            <field name="issue_date"/>
+                            <field name="birth_date"/>
+                            <field name="hijri_birth_date" placeholder="Hijri Birth Date"/>
+                            <field name="gosi_no"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="GOSI">
+                            <field name="payslip_line_ids" nolabel="1" readonly="1" groups="hr_payroll.group_hr_payroll_user">
+                                <tree string="GOSI Deduction Details">
+                                    <field name="date"/>
+                                    <field name="payslip_id"/>
+                                    <field name="amount" sum="Total"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="HADAF">
+                            <field name="hadaf_line_ids" nolabel="1" readonly="1" groups="hr_payroll.group_hr_payroll_user">
+                                <tree>
+                                    <field name="payslip_id"/>
+                                    <field name="date"/>
+                                    <field name="amount"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                 </sheet>
+             </form>
+        </field>
+    </record>
+
+    <record id="hr_gosi_tree_view" model="ir.ui.view">
+        <field name="name">hr.gosi.tree.view</field>
+        <field name="model">employee.gosi</field>
+        <field name="arch" type="xml">
+            <tree string="Employee GOSI">
+                <field name="employee_id"/>
+                <field name="department_id"/>
+                <field name="job_id"/>
+                <field name="region_type"/>
+                <field name="iqama_no"/>
+                <field name="issue_date"/>
+                <field name="gosi_no"/>
+                <field name="country_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="hr_gosi_filter" model="ir.ui.view">
+         <field name="name">hr.gosi.select.list</field>
+         <field name="model">employee.gosi</field>
+         <field name="arch" type="xml">
+             <search>
+                 <field name="employee_id"/>
+                 <group expand="0" string="Group By...">
+                     <filter string="Type" context="{'group_by':'region_type'}"/>
+                     <filter string="Employee" context="{'group_by':'employee_id'}"/>
+                     <filter string="Department" context="{'group_by':'department_id'}"/>
+                     <filter string="Job Position" context="{'group_by':'job_id'}"/>
+                     <filter string="Nationality" context="{'group_by':'country_id'}"/>
+                 </group>
+             </search>
+         </field>
+    </record>
+
+    <record id="action_hr_gosi_view" model="ir.actions.act_window">
+        <field name="name">Employee GOSI</field>
+        <field name="res_model">employee.gosi</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="hr_form_view" model="ir.ui.view">
+        <field name="name">hr.employee.form</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='country_id']" position="after">
+                <field name="gosi_ids" domain="[('employee_id', '=', id)]" context="{'default_employee_id': id}"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- GOSI Menu-->
+    <menuitem id="menu_hr_gosi" parent="saudi_hr.menu_gr" action="action_hr_gosi_view" sequence="7" groups="hr.group_hr_user"/>
+</odoo>

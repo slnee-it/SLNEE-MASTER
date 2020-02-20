@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="employee_letter_chs" model="hr.iqama">
+            <field name="employee_id" ref="hr.employee_al"/>
+            <field name="type">employee</field>
+            <field name="state">draft</field>
+           <field name="birthdate">1991-11-11</field>
+            <field name="name">Rahul Khanna</field>
+        </record>
+
+        <record id="employee_letter_jog" model="hr.iqama">
+            <field name="employee_id" ref="hr.employee_mit"/>
+            <field name="type">employee</field>
+            <field name="state">confirm</field>
+            <field name="birthdate">1986-06-07</field>
+            <field name="name">Husaam Udeen</field>
+         </record>
+
+        <record id="employee_letter_lur_dependent" model="hr.iqama">
+            <field name="employee_id" ref="hr.employee_han"/>
+            <field name="type">family</field>
+            <field name="state">validate</field>
+            <field name="birthdate">1985-05-06</field>
+            <field name="nationality" ref="base.sa"/>
+            <field name="name">Asba Akram</field>
+            <field name="handled_by_id" ref="hr.employee_root"/>
+        </record>
+
+        <record id="employee_letter_jve" model="hr.iqama">
+            <field name="employee_id" ref="hr.employee_jth"/>
+            <field name="type">employee</field>
+            <field name="state">inprogress</field>
+            <field name="birthdate">1985-07-03</field>
+            <field name="name">Zaheena Sheikh</field>
+            <field name="handled_by_id" ref="hr.employee_root"/>
+       	</record>
+
+        <record id="employee_letter_jod" model="hr.iqama">
+            <field name="employee_id" ref="hr.employee_jod"/>
+            <field name="type">employee</field>
+            <field name="state">received</field>
+            <field name="birthdate">1985-07-03</field>
+            <field name="name">Usaamah somani</field>
+            <field name="handled_by_id" ref="hr.employee_root"/>
+            <field name="iqama_no">2546825135</field>
+            <field name="issue_date">2014-01-01</field>
+            <field name="expiry_date">2015-12-31</field>
+            <field name="hijri_expiry_date">Thursday 20 Raby` al-awal 1437 A.H</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,623 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* saudi_hr_iqama
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-06 09:16+0000\n"
+"PO-Revision-Date: 2018-08-06 09:16+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: saudi_hr_iqama
+#: model:mail.template,body_html:saudi_hr_iqama.hr_iqama_expiration_email
+msgid "\n"
+"                    <p>Hello ${object.handled_by_id.name},</p>\n"
+"                    <p>We are inform you that IQAMA of ${object.name} will expired on ${object.expiry_date}.</p>\n"
+"                    <p>Thank you,</p>\n"
+"            "
+msgstr "\n"
+"                    <p>مرحبا ${object.handled_by_id.name},</p>\n"
+"                    <p>نحن على علم بأن الإقامة من ${object.name} سوف تنتهي في ${object.expiry_date}.</p>\n"
+"                    <p>شكرا لكم،</p>\n"
+"            "
+
+#. module: saudi_hr_iqama
+#: model:mail.template,subject:saudi_hr_iqama.hr_iqama_expiration_email
+msgid "${object.employee_id.name} Reminder of IQAMA Expiration"
+msgstr "${object.employee_id.name} تذكير انتهاء صلاحية الإقامة"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "<span class=\"oe_grey\" style=\"font-size:12;margin-bottom:5px\">\n"
+"                                1. Birth Certificate and Vaccination Card.<br/>\n"
+"                                2. Two Photos.<br/>\n"
+"                                3. Original Passport.<br/>\n"
+"                                4. Medical Insurance. <br/>\n"
+"                                5. Original IQAMA of Father and Mother. <br/>\n"
+"                            </span>"
+msgstr "<span class=\"oe_grey\" style=\"font-size:12;margin-bottom:5px\">\n"
+"                                1. شهادة الميلاد وبطاقة التطعيم.<br/>\n"
+"                                2. صورتان.<br/>\n"
+"                                3. جواز السفر الأصلي.<br/>\n"
+"                                4. التأمين الطبي. <br/>\n"
+"                                5. الإقامة الأصلي من الأب والأم. <br/>\n"
+"                            </span>"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "<span class=\"oe_grey\" style=\"font-size:12;margin-bottom:5px\">\n"
+"                                1. Child Medical Report(Vaccination). <br/>\n"
+"                                2. Birth Certificate translate into Arabic language. <br/>\n"
+"                                3. Two Photos. <br/>\n"
+"                                4. Original Passport. <br/>\n"
+"                                5. Medical Insurance. <br/>\n"
+"                                6. Original IQAMA of Father and Mother. <br/>\n"
+"                            </span>"
+msgstr "<span class=\"oe_grey\" style=\"font-size:12;margin-bottom:5px\">\n"
+"                                1. تقرير الطفل الطبي (التطعيم). <br/>\n"
+"                                2. شهادة الميلاد تترجم إلى اللغة العربية. <br/>\n"
+"                                3. صورتين. <br/>\n"
+"                                4. جواز السفر الأصلي. <br/>\n"
+"                                5. التأمين الطبي. <br/>\n"
+"                                6. الإقامة الأصلي من الأب والأم. <br/>\n"
+"                            </span>"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "<span class=\"oe_grey\" style=\"font-size:12;margin-bottom:5px\">\n"
+"                                1. Original Medical Report.(if above 15 years). <br/>\n"
+"                                2. Birth Certificate translate into Arabic language. <br/>\n"
+"                                3. Two Photos for each. <br/>\n"
+"                                4. Original Passport. <br/>\n"
+"                                5. Medical Insurance. <br/>\n"
+"                            </span>"
+msgstr "<span class=\"oe_grey\" style=\"font-size:12;margin-bottom:5px\">\n"
+"                                1. التقرير الطبي الأصلي (إذا كان فوق 15 سنة). <br/>\n"
+"                                2. شهادة الميلاد تترجم إلى اللغة العربية. <br/>\n"
+"                                3. صورتين لكل منهما. <br/>\n"
+"                                4. جواز السفر الأصلي. <br/>\n"
+"                                5. التأمين الطبي. <br/>\n"
+"                            </span>"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "<span class=\"oe_grey\" style=\"font-size:12;margin-bottom:5px\">\n"
+"                                1. Original Passport. <br/>\n"
+"                                2. Two Photos. <br/>\n"
+"                                3. Original Medical Report. <br/>\n"
+"                            </span>"
+msgstr "<span class=\"oe_grey\" style=\"font-size:12;margin-bottom:5px\">\n"
+"                                1. جواز السفر الأصلي. <br/>\n"
+"                                2. صورتان. <br/>\n"
+"                                3. التقرير الطبي الأصلي. <br/>\n"
+"                            </span>"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "Add Family in IQAMA"
+msgstr "إضافة عائلة في الإقامة"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "Add New Born Baby in IQAMA (Born in KSA)"
+msgstr "إضافة مولود جديد في الإقامة (ولد في المملكة العربية السعودية)"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "Add New Born Baby in IQAMA (Born outside KSA)"
+msgstr "إضافة مولود جديد في الإقامة (مولود خارج المملكة العربية السعودية)"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_age
+msgid "Age"
+msgstr "عمر"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_filter
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "Approve"
+msgstr "موافقه"
+
+#. module: saudi_hr_iqama
+#: selection:hr.iqama,state:0
+msgid "Approved"
+msgstr "وافق"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_approved_date
+msgid "Approved Date"
+msgstr "التسجيل المعتمدة"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_approved_by
+msgid "Approved by"
+msgstr "التي وافقت عليها"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_arabic_name
+msgid "Arabic Name"
+msgstr "اسم عربي"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_arrival_date
+msgid "Arrival Date(In KSA)"
+msgstr "تاريخ الوصول (في المملكة العربية السعودية)"
+
+#. module: saudi_hr_iqama
+#: model:ir.actions.server,name:saudi_hr_iqama.iqama_expiration_cron_ir_actions_server
+#: model:ir.cron,cron_name:saudi_hr_iqama.iqama_expiration_cron
+#: model:ir.cron,name:saudi_hr_iqama.iqama_expiration_cron
+msgid "Check: IQAMA Expiry Notification"
+msgstr "تحقق: إخطار انتهاء الصلاحية الإقامة"
+
+#. module: saudi_hr_iqama
+#: selection:hr.iqama,relation:0
+msgid "Child"
+msgstr "طفل"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_company_id
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_filter
+msgid "Company"
+msgstr "الشركة"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_filter
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_birthdate
+msgid "Date of Birth"
+msgstr "تاريخ الميلاد"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_employee_dependent_expiry_date
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_expiry_date
+msgid "Date of Expiry"
+msgstr "تاريخ انتهاء الصلاحية"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_hijri_expiry_date
+msgid "Date of Expiry(Hijri)"
+msgstr "(تاريخ انتهاء الصلاحية (المقالات"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_employee_dependent_issue_date
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_issue_date
+msgid "Date of Issue"
+msgstr "تاريخ الإصدار"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_department_id
+msgid "Department"
+msgstr "القسم"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_description
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "Description"
+msgstr "الوصف"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: saudi_hr_iqama
+#: selection:hr.iqama,state:0
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: saudi_hr_iqama
+#: selection:hr.iqama,request_type:0
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_employee_id
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_filter
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_employee_code
+msgid "Employee Code"
+msgstr "كود موظف"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "Employee Details"
+msgstr "تفاصيل موظف"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.menu,name:saudi_hr_iqama.menu_gr_iqama
+msgid "Employee IQAMA"
+msgstr "موظف الإقامة"
+
+#. module: saudi_hr_iqama
+#: model:ir.model,name:saudi_hr_iqama.model_employee_dependent
+msgid "Employee dependent information"
+msgstr "معلومات تعتمد على الموظف"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "Extra Information"
+msgstr "معلومات اضافية"
+
+#. module: saudi_hr_iqama
+#: selection:hr.iqama,request_type:0
+msgid "Family"
+msgstr "أسرة"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "Family Details"
+msgstr "تفاصيل عائلية"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_filter
+msgid "Filter"
+msgstr "منقي"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "For New IQAMA"
+msgstr "ل الإقامة الجديد"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_filter
+msgid "Group By..."
+msgstr "مجموعة من..."
+
+#. module: saudi_hr_iqama
+#: model:ir.model,name:saudi_hr_iqama.model_hr_iqama
+msgid "HR IQAMA"
+msgstr "HR IQAMA"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_handled_by_id
+msgid "Handled By"
+msgstr "التعامل معها من قبل"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: saudi_hr_iqama
+#: model:ir.actions.act_window,name:saudi_hr_iqama.action_hr_iqama_view
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "IQAMA"
+msgstr "الإقامة"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_filter
+msgid "IQAMA                     that has been approved"
+msgstr "الإقامة التي تمت الموافقة عليها"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "IQAMA Details"
+msgstr "الإقامة التفاصيل"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_filter
+msgid "IQAMA Name"
+msgstr "اسم الإقامة"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_filter
+msgid "IQAMA No."
+msgstr "رقم الرواية"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_iqama_no
+msgid "IQAMA Number"
+msgstr "رقم الإقامة"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_iqama_position
+msgid "IQAMA Position"
+msgstr "موقع الإقامة"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "IQAMA Type"
+msgstr "نوع الإقامة"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_tree_view
+msgid "IQAMA dependant"
+msgstr "تعتمد الإقامة"
+
+#. module: saudi_hr_iqama
+#: code:addons/saudi_hr_iqama/models/hr_iqama.py:259
+#, python-format
+msgid "IQAMA need renewal"
+msgstr "يحتاج الإقامة للتجديد"
+
+#. module: saudi_hr_iqama
+#: code:addons/saudi_hr_iqama/models/hr_iqama.py:208
+#, python-format
+msgid "IQAMA request is In progress"
+msgstr "طلب الإقامة قيد التقدم"
+
+#. module: saudi_hr_iqama
+#: code:addons/saudi_hr_iqama/models/hr_iqama.py:228
+#, python-format
+msgid "IQAMA request is Received"
+msgstr "تم استلام طلب الإقامة"
+
+#. module: saudi_hr_iqama
+#: code:addons/saudi_hr_iqama/models/hr_iqama.py:218
+#, python-format
+msgid "IQAMA request is Refused"
+msgstr "تم رفض طلب الإقامة"
+
+#. module: saudi_hr_iqama
+#: code:addons/saudi_hr_iqama/models/hr_iqama.py:238
+#, python-format
+msgid "IQAMA request is Validated"
+msgstr "تم التحقق من صحة طلب الإقامة"
+
+#. module: saudi_hr_iqama
+#: code:addons/saudi_hr_iqama/models/hr_iqama.py:249
+#, python-format
+msgid "IQAMA request is reset to draft"
+msgstr "يتم إعادة تعيين طلب الإقامة إلى المسودة"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_filter
+msgid "IQAMA that                     has been issued"
+msgstr "الإقامة التي تم إصدارها"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_filter
+msgid "IQAMA that                     has been refused"
+msgstr "الإقامة التي تم رفضها"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_filter
+msgid "IQAMA that                     has been waiting for approval"
+msgstr "الإقامة التي تنتظر الموافقة"
+
+#. module: saudi_hr_iqama
+#: selection:hr.iqama,state:0
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "In Progress"
+msgstr "في تقدم"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_current_status
+msgid "In Saudi?"
+msgstr "?في السعودية"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.saudi_hr_iqama_view_employee_form
+msgid "Iqama Details"
+msgstr "الإقامة التفاصيل"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_employee_dependent_iqama_no
+msgid "Iqama Number"
+msgstr "الإقامة عدد"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_is_saudi
+msgid "Is Saudi"
+msgstr "هو مدير الخط"
+
+#. module: saudi_hr_iqama
+#: code:addons/saudi_hr_iqama/models/hr_iqama.py:77
+#, python-format
+msgid "Issue date must be greater then Expiry date."
+msgstr "يجب أن يكون تاريخ الإصدار أكبر من تاريخ انتهاء الصلاحية."
+
+#. module: saudi_hr_iqama
+#: selection:hr.iqama,state:0
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_filter
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "Issued"
+msgstr "نشر"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_job_id
+msgid "Job Position"
+msgstr "المناصب الوظيفية"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: saudi_hr_iqama
+#: selection:hr.iqama,religion:0
+msgid "Muslim"
+msgstr "مسلم"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "Name"
+msgstr "الاسم"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,help:saudi_hr_iqama.field_hr_iqama_name
+msgid "Name of the dependent"
+msgstr "اسم يعتمدون"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_name
+msgid "Name(As in Passport)"
+msgstr "(الاسم (كما في جواز السفر"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_nationality
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_filter
+msgid "Nationality"
+msgstr "جنسية"
+
+#. module: saudi_hr_iqama
+#: selection:hr.iqama,request_type:0
+msgid "New Born Baby"
+msgstr "طفل حديث الولادة"
+
+#. module: saudi_hr_iqama
+#: selection:hr.iqama,religion:0
+msgid "Non Muslim"
+msgstr "غير مسلم"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_branch_id
+msgid "Office"
+msgstr "مكتب"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "Other Details"
+msgstr "تفاصيل أخرى"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_employee_dependent_place_of_issue
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_place_of_issue
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "Place of Issue"
+msgstr "مكان الإصدار"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_profession
+msgid "Profession"
+msgstr "مهنة"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "Put the description here"
+msgstr "ضع الوصف هنا"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_filter
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "Refuse"
+msgstr "رفض"
+
+#. module: saudi_hr_iqama
+#: selection:hr.iqama,state:0
+msgid "Refused"
+msgstr "رفض"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_refused_by
+msgid "Refused by"
+msgstr "رفضت من قبل"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_refused_date
+msgid "Refused on"
+msgstr "رفض على"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_relation
+msgid "Relation"
+msgstr "علاقة"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_religion
+msgid "Religion"
+msgstr "دين"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "Renewal"
+msgstr "تجديد"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "Required Documents"
+msgstr "المستندات المطلوبة"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "Select Employee"
+msgstr "حدد الموظف"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "Select Nationality"
+msgstr "اختر الجنسية"
+
+#. module: saudi_hr_iqama
+#: selection:hr.iqama,relation:0
+msgid "Self"
+msgstr "الذات"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_employee_dependent_serial_number
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_serial_number
+msgid "Serial Number"
+msgstr "الرقم المسلسل"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_form_view
+msgid "Set to Draft"
+msgstr "تعيين كمسودة"
+
+#. module: saudi_hr_iqama
+#: selection:hr.iqama,relation:0
+msgid "Spouse"
+msgstr "الزوج"
+
+#. module: saudi_hr_iqama
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_filter
+msgid "State"
+msgstr "المحافظة"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_state
+msgid "Status"
+msgstr "الحالة "
+
+#. module: saudi_hr_iqama
+#: selection:hr.iqama,state:0
+msgid "To be Renewed"
+msgstr "ليتم تجديدها"
+
+#. module: saudi_hr_iqama
+#: model:ir.model.fields,field_description:saudi_hr_iqama.field_hr_iqama_request_type
+#: model:ir.ui.view,arch_db:saudi_hr_iqama.hr_iqama_filter
+msgid "Type"
+msgstr "النوع"
+
+#. module: saudi_hr_iqama
+#: selection:hr.iqama,state:0
+msgid "Waiting Approval"
+msgstr "في انتظار الموافقة"
+
+#. module: saudi_hr_iqama
+#: code:addons/saudi_hr_iqama/models/hr_iqama.py:167
+#, python-format
+msgid "You cannot remove the IQAMA record which is not in draft state!"
+msgstr "لا يمكنك إزالة سجل IQAMA الذي ليس في حالة المسودة!"
